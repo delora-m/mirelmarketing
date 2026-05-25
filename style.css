@@ -876,29 +876,50 @@ img{max-width:100%;display:block}
 
   .nav{
     height:auto;
-    min-height:86px;
+    min-height:118px;
     grid-template-columns:1fr;
-    padding:24px 22px;
+    padding:20px 22px 14px;
+    align-items:start;
+    gap:10px;
   }
 
-  .nav-links{
-    justify-content:flex-start;
-    gap:18px;
-    overflow-x:auto;
-    font-size:12px;
-    padding-bottom:6px;
-  }
-
-  .nav-links a{
-    padding:10px 0;
-  }
-
-  .nav-links a:after{
-    bottom:2px;
+  .nav-actions{
+    display:none;
   }
 
   .brand span{
     font-size:27px;
+  }
+
+  .nav-links{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:center;
+    gap:22px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    white-space:nowrap;
+    width:100%;
+    font-size:12px;
+    padding:0 0 8px;
+    margin-top:8px;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+  }
+
+  .nav-links::-webkit-scrollbar{
+    display:none;
+  }
+
+  .nav-links a{
+    flex:0 0 auto;
+    padding:8px 0 14px;
+    line-height:1;
+  }
+
+  .nav-links a:after{
+    bottom:2px;
   }
 
   .hero{
@@ -1075,56 +1096,5 @@ img{max-width:100%;display:block}
 
   .hero-buttons .btn{
     width:100%;
-  }
-}
-/* MOBILE NAV FIX */
-@media (max-width:760px){
-
-  .nav{
-    height:auto;
-    min-height:92px;
-    grid-template-columns:1fr;
-    padding:22px 22px 14px;
-    gap:14px;
-    position:sticky;
-    top:0;
-  }
-
-  .brand span{
-    font-size:27px;
-  }
-
-  .nav-links{
-    display:flex !important;
-    flex-wrap:nowrap !important;
-    justify-content:flex-start !important;
-    align-items:center !important;
-    gap:26px !important;
-    overflow-x:auto !important;
-    overflow-y:hidden !important;
-    white-space:nowrap !important;
-    width:100% !important;
-    padding:0 0 8px !important;
-    scrollbar-width:none;
-    -ms-overflow-style:none;
-  }
-
-  .nav-links::-webkit-scrollbar{
-    display:none;
-  }
-
-  .nav-links a{
-    flex:0 0 auto !important;
-    padding:8px 0 14px !important;
-    font-size:12px !important;
-    line-height:1 !important;
-  }
-
-  .nav-links a:after{
-    bottom:2px !important;
-  }
-
-  .nav-actions{
-    display:none !important;
   }
 }
