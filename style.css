@@ -1077,3 +1077,54 @@ img{max-width:100%;display:block}
     width:100%;
   }
 }
+/* MOBILE NAV FIX */
+@media (max-width:760px){
+
+  .nav{
+    height:auto;
+    min-height:92px;
+    grid-template-columns:1fr;
+    padding:22px 22px 14px;
+    gap:14px;
+    position:sticky;
+    top:0;
+  }
+
+  .brand span{
+    font-size:27px;
+  }
+
+  .nav-links{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    justify-content:flex-start !important;
+    align-items:center !important;
+    gap:26px !important;
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+    white-space:nowrap !important;
+    width:100% !important;
+    padding:0 0 8px !important;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+  }
+
+  .nav-links::-webkit-scrollbar{
+    display:none;
+  }
+
+  .nav-links a{
+    flex:0 0 auto !important;
+    padding:8px 0 14px !important;
+    font-size:12px !important;
+    line-height:1 !important;
+  }
+
+  .nav-links a:after{
+    bottom:2px !important;
+  }
+
+  .nav-actions{
+    display:none !important;
+  }
+}
