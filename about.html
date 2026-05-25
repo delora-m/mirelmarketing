@@ -1,1 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>About Mirel Marketing | Med Spa Marketing Agency</title>
+  <meta name="description" content="Mirel Marketing helps med spas and aesthetics clinics build premium perception, trusted systems, and conversion-focused patient journeys." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .about-hero{
+      display:grid;
+      grid-template-columns:1fr 1.08fr;
+      min-height:640px;
+      border-bottom:1px solid var(--line);
+      background:linear-gradient(110deg,#fbf7f1 0%,#fbf7f1 48%,#efe3dc 100%);
+    }
+
+    .about-hero-copy{
+      padding:96px 72px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .about-hero h1{
+      font-family:var(--serif);
+      font-size:76px;
+      line-height:.98;
+      letter-spacing:-.045em;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0 0 30px;
+      max-width:690px;
+    }
+
+    .about-hero h1 em{
+      color:var(--rose);
+      font-style:italic;
+      font-weight:400;
+    }
+
+    .about-hero p{
+      font-size:16px;
+      line-height:1.9;
+      color:var(--text-soft);
+      max-width:520px;
+      margin:0 0 34px;
+    }
+
+    .about-hero-image{
+      min-height:640px;
+      background:
+        linear-gradient(rgba(29,15,12,.12),rgba(29,15,12,.22)),
+        url('images/gold-necklace.jpg') center/cover no-repeat;
+    }
+
+    .about-problem{
+      display:grid;
+      grid-template-columns:.95fr .85fr 1fr;
+      gap:64px;
+      padding:86px 72px;
+      align-items:center;
+      background:#fbf7f1;
+      border-bottom:1px solid var(--line);
+    }
+
+    .about-problem h2{
+      font-family:var(--serif);
+      font-size:50px;
+      line-height:1;
+      letter-spacing:-.035em;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0 0 34px;
+    }
+
+    .about-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+
+    .about-list li{
+      padding:13px 0;
+      border-bottom:1px solid rgba(62,39,35,.12);
+      font-size:14px;
+      color:var(--text-soft);
+    }
+
+    .about-list li:before{
+      content:'×';
+      margin-right:14px;
+      color:var(--rose);
+    }
+
+    .about-change{
+      border-left:1px solid var(--line);
+      padding-left:52px;
+    }
+
+    .about-change h3{
+      font-family:var(--serif);
+      font-size:42px;
+      line-height:1.04;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0 0 20px;
+      letter-spacing:-.035em;
+    }
+
+    .about-change p{
+      font-size:15px;
+      line-height:1.85;
+      color:var(--text-soft);
+      margin:0;
+    }
+
+    .about-room{
+      min-height:300px;
+      background:
+        linear-gradient(rgba(29,15,12,.08),rgba(29,15,12,.12)),
+        url('images/treatment-room.jpg') center/cover no-repeat;
+      box-shadow:inset 0 0 0 1px rgba(62,39,35,.14);
+    }
+
+    .about-philosophy{
+      padding:90px 72px 96px;
+      background:linear-gradient(135deg,#f1e7df,#fbf7f1 58%,rgba(242,214,218,.22));
+      border-bottom:1px solid var(--line);
+      text-align:center;
+    }
+
+    .about-philosophy h2{
+      font-family:var(--serif);
+      font-size:48px;
+      line-height:1.05;
+      letter-spacing:-.035em;
+      font-weight:500;
+      margin:0 0 68px;
+      color:var(--espresso-deep);
+    }
+
+    .pillar-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      max-width:1200px;
+      margin:0 auto;
+      border-left:1px solid var(--line);
+    }
+
+    .pillar{
+      text-align:left;
+      padding:0 52px 4px;
+      border-right:1px solid var(--line);
+    }
+
+    .pillar span{
+      display:block;
+      font-family:var(--serif);
+      font-size:38px;
+      color:var(--rose);
+      margin-bottom:18px;
+    }
+
+    .pillar h3{
+      text-transform:uppercase;
+      letter-spacing:.34em;
+      font-size:12px;
+      color:var(--espresso);
+      margin:0 0 20px;
+    }
+
+    .pillar p{
+      font-size:14px;
+      line-height:1.8;
+      color:var(--text-soft);
+      margin:0 0 24px;
+    }
+
+    .about-founder{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      background:#fbf7f1;
+      border-bottom:1px solid var(--line);
+    }
+
+    .founder-image{
+      min-height:520px;
+      background:
+        linear-gradient(rgba(29,15,12,.08),rgba(29,15,12,.18)),
+        url('images/hero-face.jpg') center/cover no-repeat;
+    }
+
+    .founder-copy{
+      padding:88px 72px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .founder-copy h2{
+      font-family:var(--serif);
+      font-size:52px;
+      line-height:1.04;
+      letter-spacing:-.035em;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0 0 28px;
+    }
+
+    .founder-copy p{
+      font-size:15px;
+      line-height:1.9;
+      color:var(--text-soft);
+      max-width:560px;
+      margin:0 0 20px;
+    }
+
+    .signature{
+      margin-top:18px;
+      color:var(--espresso-deep);
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    .signature strong{
+      font-family:var(--serif);
+      font-size:22px;
+      font-weight:500;
+    }
+
+    .signature small{
+      display:block;
+      text-transform:uppercase;
+      letter-spacing:.28em;
+      color:var(--text-soft);
+      font-size:9px;
+      margin-top:4px;
+    }
+
+    .about-world{
+      background:#fbf7f1;
+      border-bottom:1px solid var(--line);
+    }
+
+    .world-label{
+      padding:44px 72px 18px;
+      text-transform:uppercase;
+      letter-spacing:.34em;
+      font-size:11px;
+      font-weight:650;
+      color:#8d6e63;
+    }
+
+    .world-grid{
+      display:grid;
+      grid-template-columns:1fr 1.1fr 1fr 1fr 1fr;
+      gap:6px;
+    }
+
+    .world-img{
+      min-height:245px;
+      background-size:cover;
+      background-position:center;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .world-img:after{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,rgba(62,39,35,.03),rgba(62,39,35,.18));
+      mix-blend-mode:multiply;
+    }
+
+    .w1{background-image:url('images/serum-dropper.jpg')}
+    .w2{background-image:url('images/spa-lobby.jpg')}
+    .w3{background-image:url('images/hero-face.jpg')}
+    .w4{background-image:url('images/gold-pour.jpg')}
+    .w5{background-image:url('images/luxury-box.jpg')}
+
+    .about-position{
+      padding:76px 72px;
+      text-align:center;
+      background:linear-gradient(135deg,#fbf7f1,#f4ebe5);
+      border-bottom:1px solid var(--line);
+    }
+
+    .about-position .eyebrow{
+      margin-bottom:22px;
+    }
+
+    .about-position h2{
+      font-family:var(--serif);
+      font-size:48px;
+      line-height:1.08;
+      letter-spacing:-.035em;
+      font-weight:500;
+      color:var(--espresso-deep);
+      max-width:940px;
+      margin:0 auto;
+    }
+
+    .about-position h2 em{
+      color:var(--rose);
+      font-style:italic;
+      font-weight:400;
+    }
+
+    .about-final{
+      padding:70px 72px;
+      text-align:center;
+      background:#fbf7f1;
+    }
+
+    .about-final h2{
+      font-family:var(--serif);
+      font-size:44px;
+      line-height:1.05;
+      font-weight:500;
+      letter-spacing:-.035em;
+      margin:0 0 26px;
+      color:var(--espresso-deep);
+    }
+
+    .about-final-actions{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    @media (max-width:1180px){
+      .about-hero,
+      .about-problem,
+      .about-founder{
+        grid-template-columns:1fr;
+      }
+
+      .about-hero-copy,
+      .about-problem,
+      .founder-copy,
+      .about-philosophy,
+      .about-position,
+      .about-final{
+        padding-left:34px;
+        padding-right:34px;
+      }
+
+      .about-change{
+        border-left:0;
+        padding-left:0;
+      }
+
+      .pillar-grid{
+        grid-template-columns:1fr;
+        border-left:0;
+      }
+
+      .pillar{
+        border-right:0;
+        border-bottom:1px solid var(--line);
+        padding:34px 0;
+      }
+
+      .pillar:last-child{
+        border-bottom:0;
+      }
+
+      .world-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .w2{
+        grid-column:span 1;
+      }
+    }
+
+    @media (max-width:760px){
+      .about-hero-copy{
+        padding:56px 22px 46px;
+      }
+
+      .about-hero h1{
+        font-size:50px;
+      }
+
+      .about-hero p{
+        font-size:14px;
+      }
+
+      .about-hero-image{
+        min-height:430px;
+      }
+
+      .about-problem{
+        padding:54px 22px;
+        gap:36px;
+      }
+
+      .about-problem h2,
+      .about-position h2,
+      .founder-copy h2{
+        font-size:38px;
+      }
+
+      .about-room{
+        min-height:260px;
+      }
+
+      .about-philosophy{
+        padding:56px 22px;
+      }
+
+      .about-philosophy h2{
+        font-size:36px;
+        margin-bottom:34px;
+      }
+
+      .founder-image{
+        min-height:390px;
+      }
+
+      .founder-copy{
+        padding:54px 22px;
+      }
+
+      .world-label{
+        padding:34px 22px 16px;
+      }
+
+      .world-grid{
+        grid-template-columns:1fr 1fr;
+        gap:5px;
+      }
+
+      .world-img{
+        min-height:180px;
+      }
+
+      .about-position{
+        padding:54px 22px;
+      }
+
+      .about-final{
+        padding:54px 22px;
+      }
+
+      .about-final h2{
+        font-size:34px;
+      }
+
+      .about-final-actions{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .about-final-actions .btn{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="site-shell">
+
+    <header class="nav" data-nav>
+      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="results.html">Results</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-dark">Book Consultation</a>
+        <a href="systems.html" class="btn btn-light">See Systems</a>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="about-hero">
+        <div class="about-hero-copy reveal">
+          <p class="eyebrow">About Mirel</p>
+          <h1>We help med spas feel as <em>premium</em> online as they do in person.</h1>
+          <p>
+            Mirel Marketing is built for aesthetics clinics that want more than attention.
+            We help your brand feel elevated, trusted, and ready for higher-quality consultations.
+          </p>
+          <div class="hero-buttons">
+            <a href="contact.html" class="btn btn-dark btn-large">Book a Consultation</a>
+            <a href="systems.html" class="btn btn-outline btn-large">See Our Systems</a>
+          </div>
+        </div>
+
+        <div class="about-hero-image reveal"></div>
+      </section>
+
+      <section class="about-problem">
+        <div class="reveal">
+          <p class="eyebrow">The Problem</p>
+          <h2>Most med spas look interchangeable online.</h2>
+          <ul class="about-list">
+            <li>Generic templates</li>
+            <li>Inconsistent branding</li>
+            <li>Low perceived value</li>
+            <li>Random social media</li>
+            <li>Ads without positioning</li>
+          </ul>
+        </div>
+
+        <div class="about-change reveal">
+          <h3>We built Mirel to change that.</h3>
+          <p>
+            We combine strategy, psychology, aesthetics, and conversion systems to help your clinic become the obvious premium choice — before a patient ever books.
+          </p>
+        </div>
+
+        <div class="about-room reveal"></div>
+      </section>
+
+      <section class="about-philosophy">
+        <p class="eyebrow reveal">Our Philosophy</p>
+        <h2 class="reveal">We believe growth comes from 3 things.</h2>
+
+        <div class="pillar-grid">
+          <article class="pillar reveal">
+            <span>01</span>
+            <h3>Aesthetics</h3>
+            <p>
+              Luxury visual direction that reflects the quality of your treatments and elevates how your clinic is perceived.
+            </p>
+            <a href="services.html" class="text-link">Learn more <span>→</span></a>
+          </article>
+
+          <article class="pillar reveal">
+            <span>02</span>
+            <h3>Psychology</h3>
+            <p>
+              Understanding what makes beauty clients feel trust, desire, confidence, and emotional safety before booking.
+            </p>
+            <a href="services.html" class="text-link">Learn more <span>→</span></a>
+          </article>
+
+          <article class="pillar reveal">
+            <span>03</span>
+            <h3>Systems</h3>
+            <p>
+              Turning attention into consultations with landing pages, follow-up flows, and conversion-focused patient journeys.
+            </p>
+            <a href="systems.html" class="text-link">Learn more <span>→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-founder">
+        <div class="founder-image reveal"></div>
+
+        <div class="founder-copy reveal">
+          <p class="eyebrow">Founder</p>
+          <h2>Why I chose the med spa industry.</h2>
+          <p>
+            Beauty brands are not sold like ordinary businesses.
+          </p>
+          <p>
+            Clients do not just buy treatments. They buy confidence, identity, aspiration, trust, and the feeling that they are choosing the right place.
+          </p>
+          <p>
+            Mirel was created to help clinics communicate that value before the consultation ever begins.
+          </p>
+
+          <div class="signature">
+            <strong>— Irem Delora</strong>
+            <small>Founder of Mirel Marketing</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-world">
+        <div class="world-label">Our World</div>
+
+        <div class="world-grid">
+          <div class="world-img w1 reveal"></div>
+          <div class="world-img w2 reveal"></div>
+          <div class="world-img w3 reveal"></div>
+          <div class="world-img w4 reveal"></div>
+          <div class="world-img w5 reveal"></div>
+        </div>
+      </section>
+
+      <section class="about-position">
+        <p class="eyebrow reveal">The Difference</p>
+        <h2 class="reveal">
+          We do not market med spas like local businesses. <br />
+          We position them like <em>luxury brands.</em>
+        </h2>
+      </section>
+
+      <section class="about-final">
+        <h2 class="reveal">Ready to elevate your clinic?</h2>
+        <div class="about-final-actions reveal">
+          <a href="contact.html" class="btn btn-dark btn-large">Book a Consultation</a>
+          <a href="systems.html" class="btn btn-outline btn-large">View Our Systems</a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
+      </a>
+
+      <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
+      <a href="#">Instagram</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+    </footer>
+
+  </div>
+
+  <script>
+    const nav = document.querySelector('[data-nav]');
+    const onScroll = () => {
+      if (window.scrollY > 20) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    };
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
