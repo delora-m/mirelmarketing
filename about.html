@@ -57,7 +57,7 @@
     .about-hero-image{
       min-height:640px;
       background:
-        linear-gradient(rgba(29,15,12,.10),rgba(29,15,12,.20)),
+        linear-gradient(rgba(29,15,12,.08),rgba(29,15,12,.16)),
         url('images/mirel-marketing-founder-editorial.jpg') center/cover no-repeat;
     }
 
@@ -434,12 +434,17 @@
       }
 
       .world-grid{
+        display:grid;
         grid-template-columns:1fr 1fr;
         gap:5px;
       }
 
       .world-img{
-        min-height:180px;
+        min-height:190px;
+      }
+
+      .world-img:last-child{
+        display:none;
       }
 
       .about-position{
