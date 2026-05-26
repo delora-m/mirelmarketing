@@ -9,11 +9,13 @@
   <meta property="og:description" content="Positioning aesthetics clinics to feel premium, trusted, and fully booked." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mirelmarketing.com" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="site-shell">
     <header class="nav" data-nav>
@@ -21,21 +23,21 @@
         <span>MIRÈL</span>
         <small>MARKETING</small>
       </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <nav class="nav-links" aria-label="Main navigation">
-  <a href="index.html" class="active">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="systems.html">Systems</a>
-  <a href="results.html">Results</a>
-  <a href="contact.html">Contact</a>
-  <a href="resources.html">Resources</a>
-</nav>
 
-<div class="nav-actions">
-  <a class="btn btn-dark" href="contact.html">Book Consultation</a>
-  <a class="btn btn-light" href="systems.html">See Systems</a>
-</div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="systems.html">Systems</a>
+        <a href="results.html">Results</a>
+        <a href="contact.html">Contact</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+        <a class="btn btn-light" href="systems.html">See Systems</a>
+      </div>
     </header>
 
     <main>
@@ -63,7 +65,7 @@
         </div>
       </section>
 
-      <section class="authority-strip reveal" aria-label="Positioning statement">
+      <section class="authority-strip reveal">
         <p>Most clinics compete on treatments.</p>
         <strong>We help you compete on perceived value.</strong>
         <span>Because premium patients choose the clinic that feels safest, most refined, and most intentional.</span>
@@ -126,22 +128,10 @@
           <a class="btn btn-dark" href="systems.html">See Systems</a>
         </div>
         <div class="metric-grid">
-          <article>
-            <strong>$50B+</strong>
-            <span>Med spa market opportunity</span>
-          </article>
-          <article>
-            <strong>100%</strong>
-            <span>Niche focus — med spas only</span>
-          </article>
-          <article>
-            <strong>3</strong>
-            <span>Core systems: ads, pages, follow-up</span>
-          </article>
-          <article>
-            <strong>Premium</strong>
-            <span>Positioning before promotion</span>
-          </article>
+          <article><strong>$50B+</strong><span>Med spa market opportunity</span></article>
+          <article><strong>100%</strong><span>Niche focus — med spas only</span></article>
+          <article><strong>3</strong><span>Core systems: ads, pages, follow-up</span></article>
+          <article><strong>Premium</strong><span>Positioning before promotion</span></article>
         </div>
       </section>
 
@@ -201,6 +191,7 @@
         if (entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold: 0.12 });
+
     items.forEach(item => observer.observe(item));
 
     const nav = document.querySelector('[data-nav]');
