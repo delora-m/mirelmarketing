@@ -1,1 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Mirel System | Luxury Med Spa Growth Systems</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .systems-page {
+      background: #f7f4ef;
+      color: #2a1d19;
+    }
+
+    .systems-hero {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      min-height: 92vh;
+      align-items: center;
+      gap: 0;
+      overflow: hidden;
+      border-bottom: 1px solid #e8e1d8;
+    }
+
+    .systems-copy {
+      padding: 7rem 5rem;
+      max-width: 620px;
+    }
+
+    .systems-label {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #8b7c70;
+      margin-bottom: 28px;
+    }
+
+    .systems-copy h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 5.4rem;
+      line-height: .95;
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+
+    .systems-copy h1 em {
+      font-style: italic;
+      color: #b88d93;
+      font-weight: 400;
+    }
+
+    .systems-copy p {
+      font-size: 17px;
+      line-height: 1.9;
+      color: #6b5d55;
+      margin-bottom: 40px;
+      max-width: 520px;
+    }
+
+    .systems-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .systems-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .big-idea {
+      padding: 120px 7%;
+      display: grid;
+      grid-template-columns: .95fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+      border-bottom: 1px solid #ece4da;
+    }
+
+    .big-idea img {
+      width: 100%;
+      border-radius: 0;
+      display: block;
+    }
+
+    .big-idea-copy h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 3.7rem;
+      line-height: 1.02;
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+
+    .big-idea-copy p {
+      color: #6d5d53;
+      line-height: 1.9;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 18px;
+      margin-top: 36px;
+    }
+
+    .problem-card {
+      background: #fbf8f4;
+      border: 1px solid #eee4da;
+      padding: 26px;
+    }
+
+    .problem-card h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .problem-card p {
+      font-size: 14px;
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    .system-flow {
+      padding: 130px 7%;
+      border-bottom: 1px solid #ece4da;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto 90px;
+    }
+
+    .section-heading p {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #9b897d;
+      margin-bottom: 18px;
+    }
+
+    .section-heading h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 4rem;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 28px;
+    }
+
+    .flow-card {
+      border-top: 1px solid #d8ccc0;
+      padding-top: 24px;
+    }
+
+    .flow-card span {
+      color: #b68b90;
+      font-size: 34px;
+      font-family: "Cormorant Garamond", serif;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .flow-card h3 {
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .flow-card p {
+      font-size: 14px;
+      color: #6f6259;
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+
+    .flow-card ul {
+      padding-left: 18px;
+      color: #6f6259;
+      line-height: 2;
+      font-size: 14px;
+    }
+
+    .ecosystem {
+      padding: 130px 7%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      border-bottom: 1px solid #ece4da;
+    }
+
+    .ecosystem img {
+      width: 100%;
+      display: block;
+    }
+
+    .ecosystem-copy h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+
+    .ecosystem-copy p {
+      color: #6f6259;
+      line-height: 1.9;
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    .ecosystem-points {
+      display: grid;
+      gap: 18px;
+      margin-top: 40px;
+    }
+
+    .ecosystem-points div {
+      border-bottom: 1px solid #e7ddd2;
+      padding-bottom: 18px;
+    }
+
+    .ecosystem-points strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    .systems-cta {
+      padding: 120px 7%;
+      background: linear-gradient(to right, #efe6dd, #f8f5f1);
+      display: grid;
+      grid-template-columns: 1fr .8fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .systems-cta h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 4.5rem;
+      line-height: .95;
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    .systems-cta h2 em {
+      color: #b78b91;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .systems-cta p {
+      color: #6e6157;
+      line-height: 1.9;
+      font-size: 16px;
+      max-width: 560px;
+    }
+
+    .cta-box {
+      background: #2d1b17;
+      padding: 50px;
+      color: white;
+    }
+
+    .cta-box h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2.3rem;
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,.72);
+      margin-bottom: 30px;
+      line-height: 1.9;
+    }
+
+    .cta-box .btn-light {
+      background: white;
+      color: #2d1b17;
+    }
+
+    @media(max-width:1100px){
+
+      .systems-hero,
+      .big-idea,
+      .ecosystem,
+      .systems-cta {
+        grid-template-columns: 1fr;
+      }
+
+      .flow-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .systems-copy {
+        padding: 5rem 7%;
+      }
+
+      .systems-copy h1,
+      .big-idea-copy h2,
+      .ecosystem-copy h2,
+      .systems-cta h2 {
+        font-size: 3.5rem;
+      }
+
+      .section-heading h2 {
+        font-size: 3rem;
+      }
+
+    }
+  </style>
+</head>
+
+<body class="systems-page">
+
+<div class="site-shell">
+
+<header class="nav" data-nav>
+
+  <a class="brand" href="index.html">
+    <span>MIRÈL</span>
+    <small>MARKETING</small>
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="systems.html" class="active">Systems</a>
+    <a href="results.html">Results</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+    <a class="btn btn-light" href="resources.html">Resources</a>
+  </div>
+
+</header>
+
+<main>
+
+<section class="systems-hero">
+
+  <div class="systems-copy">
+    <p class="systems-label">The Mirel System</p>
+
+    <h1>
+      A luxury growth system designed specifically for <em>med spas.</em>
+    </h1>
+
+    <p>
+      Most clinics focus only on ads. We build the entire ecosystem behind premium patient acquisition — positioning, perception, conversion systems, nurturing, and retention.
+    </p>
+
+    <div class="systems-buttons">
+      <a class="btn btn-dark btn-large" href="contact.html">Book Consultation</a>
+      <a class="btn btn-outline btn-large" href="services.html">Explore Services</a>
+    </div>
+  </div>
+
+  <div class="systems-image">
+    <img src="images/mirel-systems-hero.jpg" alt="">
+  </div>
+
+</section>
+
+<section class="big-idea">
+
+  <img src="images/mirel-system-strategy2.jpg" alt="">
+
+  <div class="big-idea-copy">
+
+    <p class="systems-label">The Big Idea</p>
+
+    <h2>
+      Most clinics focus only on getting leads. <br>
+      We focus on building a <em>brand and system</em> patients trust.
+    </h2>
+
+    <p>
+      Premium patients do not choose clinics randomly. They choose the clinic that feels safest, most refined, most consistent, and most trustworthy. That perception must exist before they ever book.
+    </p>
+
+    <div class="problem-grid">
+
+      <div class="problem-card">
+        <h3>Disconnected Branding</h3>
+        <p>Your clinic looks different across ads, Instagram, and website.</p>
+      </div>
+
+      <div class="problem-card">
+        <h3>Weak Conversion</h3>
+        <p>People click but do not trust enough to book consultations.</p>
+      </div>
+
+      <div class="problem-card">
+        <h3>Lead Leakage</h3>
+        <p>Interested patients disappear because nobody follows up correctly.</p>
+      </div>
+
+      <div class="problem-card">
+        <h3>Low Perceived Value</h3>
+        <p>Your online presence does not reflect the quality of your treatments.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="system-flow">
+
+  <div class="section-heading">
+    <p>The 5 Step Mirel System</p>
+    <h2>
+      Strategic. Refined. <br>
+      Built for booked calendars.
+    </h2>
+  </div>
+
+  <div class="flow-grid">
+
+    <div class="flow-card">
+      <span>01</span>
+      <h3>Positioning</h3>
+      <p>We define how your clinic should feel online.</p>
+
+      <ul>
+        <li>Luxury positioning</li>
+        <li>Visual direction</li>
+        <li>Messaging clarity</li>
+        <li>Audience alignment</li>
+      </ul>
+    </div>
+
+    <div class="flow-card">
+      <span>02</span>
+      <h3>Attraction</h3>
+      <p>Strategic paid ads designed for qualified patients.</p>
+
+      <ul>
+        <li>Meta Ads</li>
+        <li>Google Ads</li>
+        <li>Creative direction</li>
+        <li>Campaign optimization</li>
+      </ul>
+    </div>
+
+    <div class="flow-card">
+      <span>03</span>
+      <h3>Conversion</h3>
+      <p>Landing pages and booking systems that convert interest into consultations.</p>
+
+      <ul>
+        <li>Landing pages</li>
+        <li>Booking flow</li>
+        <li>Trust architecture</li>
+        <li>Mobile optimization</li>
+      </ul>
+    </div>
+
+    <div class="flow-card">
+      <span>04</span>
+      <h3>Nurture</h3>
+      <p>Follow-up systems that keep patients engaged automatically.</p>
+
+      <ul>
+        <li>Email flows</li>
+        <li>SMS sequences</li>
+        <li>Appointment reminders</li>
+        <li>Consultation nurture</li>
+      </ul>
+    </div>
+
+    <div class="flow-card">
+      <span>05</span>
+      <h3>Retention</h3>
+      <p>Creating experiences patients remember and return to.</p>
+
+      <ul>
+        <li>Brand consistency</li>
+        <li>Client experience</li>
+        <li>Long-term trust</li>
+        <li>Higher lifetime value</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="ecosystem">
+
+  <div>
+    <img src="images/mirel-ecosystem-system.jpg" alt="">
+  </div>
+
+  <div class="ecosystem-copy">
+
+    <p class="systems-label">The Ecosystem</p>
+
+    <h2>
+      Every part of your marketing should feel connected.
+    </h2>
+
+    <p>
+      Most agencies only run campaigns. Mirel builds a system where every touchpoint reinforces trust — ads, landing pages, follow-up, social media, perception, and patient experience.
+    </p>
+
+    <p>
+      That is how clinics stop relying on random bursts of leads and start building predictable demand.
+    </p>
+
+    <div class="ecosystem-points">
+
+      <div>
+        <strong>Luxury perception</strong>
+        <span>Your clinic should feel elevated before the consultation even starts.</span>
+      </div>
+
+      <div>
+        <strong>Higher-value patients</strong>
+        <span>Better positioning attracts patients who value quality over discounts.</span>
+      </div>
+
+      <div>
+        <strong>Consistent bookings</strong>
+        <span>Systems remove randomness and create sustainable growth.</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="systems-cta">
+
+  <div>
+
+    <p class="systems-label">Let's Build Something Exceptional</p>
+
+    <h2>
+      Ready to build a clinic people <em>remember?</em>
+    </h2>
+
+    <p>
+      We help med spas create a refined digital presence that attracts premium patients, increases trust, and turns interest into consistent consultations.
+    </p>
+
+  </div>
+
+  <div class="cta-box">
+
+    <h3>Build your growth ecosystem.</h3>
+
+    <p>
+      Positioning, paid ads, landing pages, automation, and retention — designed as one connected system.
+    </p>
+
+    <a class="btn btn-light btn-large" href="contact.html">
+      Book Consultation
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+  <a class="brand" href="index.html">
+    <span>MIRÈL</span>
+    <small>MARKETING</small>
+  </a>
+
+  <a href="mailto:delora@mirelmarketing.com">
+    delora@mirelmarketing.com
+  </a>
+
+  <a href="https://instagram.com" target="_blank">
+    Instagram
+  </a>
+
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms & Conditions</a>
+
+</footer>
+
+</div>
+
+</body>
+</html>
