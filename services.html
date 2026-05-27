@@ -1,1 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Services | Mirel Marketing</title>
+  <meta name="description" content="Mirel Marketing helps med spas attract premium patients with paid ads, conversion-focused landing pages, and automated follow-up systems." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .services-hero{
+      min-height:650px;
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      background:linear-gradient(110deg,#fbf7f1 0%,#fbf7f1 46%,#efe3dc 100%);
+      border-bottom:1px solid var(--line);
+      overflow:hidden;
+    }
+
+    .services-hero-copy{
+      padding:96px 72px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .services-hero h1{
+      font-family:var(--serif);
+      font-size:74px;
+      line-height:.98;
+      letter-spacing:-.045em;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0 0 30px;
+      max-width:720px;
+    }
+
+    .services-hero h1 em{
+      color:var(--rose);
+      font-style:italic;
+      font-weight:400;
+    }
+
+    .services-hero p{
+      font-size:16px;
+      line-height:1.9;
+      color:var(--text-soft);
+      max-width:520px;
+      margin:0 0 34px;
+    }
+
+    .services-hero-image{
+      min-height:650px;
+      background:
+        linear-gradient(90deg,rgba(251,247,241,.88) 0%,rgba(251,247,241,.45) 25%,rgba(29,15,12,.08) 100%),
+        url('images/mirel-services-hero.jpg?v=2') center/cover no-repeat;
+      position:relative;
+    }
+
+    .hero-seal{
+      position:absolute;
+      top:72px;
+      right:70px;
+      width:120px;
+      height:120px;
+      border:1px solid rgba(255,255,255,.55);
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-family:var(--serif);
+      font-size:58px;
+      font-weight:500;
+      backdrop-filter:blur(4px);
+      background:rgba(62,39,35,.12);
+    }
+
+    .services-overview{
+      padding:88px 72px 96px;
+      background:#fbf7f1;
+      border-bottom:1px solid var(--line);
+    }
+
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:0;
+      border-left:1px solid var(--line);
+      max-width:1280px;
+      margin:0 auto;
+    }
+
+    .service-card{
+      padding:18px 52px 8px;
+      border-right:1px solid var(--line);
+    }
+
+    .service-icon{
+      width:42px;
+      height:42px;
+      margin-bottom:48px;
+      color:var(--espresso);
+      opacity:.75;
+    }
+
+    .service-number{
+      display:block;
+      font-family:var(--serif);
+      font-size:18px;
+      color:var(--rose);
+      margin-bottom:24px;
+    }
+
+    .service-card h2{
+      font-family:var(--serif);
+      font-size:39px;
+      line-height:1.02;
+      font-weight:500;
+      letter-spacing:-.035em;
+      color:var(--espresso-deep);
+      margin:0 0 14px;
+    }
+
+    .service-kicker{
+      text-transform:uppercase;
+      letter-spacing:.28em;
+      font-size:10px;
+      font-weight:650;
+      color:var(--espresso);
+      margin-bottom:24px;
+    }
+
+    .service-card p{
+      font-size:14px;
+      line-height:1.8;
+      color:var(--text-soft);
+      margin:0 0 26px;
+    }
+
+    .service-card ul{
+      list-style:none;
+      padding:0;
+      margin:0 0 34px;
+    }
+
+    .service-card li{
+      font-size:13px;
+      line-height:1.8;
+      color:var(--text-soft);
+      margin-bottom:9px;
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+    }
+
+    .service-card li:before{
+      content:'✓';
+      color:var(--rose);
+      font-size:13px;
+      margin-top:1px;
+    }
+
+    .service-card .btn{
+      min-width:136px;
+      justify-content:center;
+    }
+
+    .result-section{
+      display:grid;
+      grid-template-columns:1fr 1.05fr;
+      gap:68px;
+      padding:86px 72px;
+      align-items:center;
+      background:linear-gradient(135deg,#f4ebe5,#fbf7f1 58%);
+      border-bottom:1px solid var(--line);
+    }
+
+    .result-image{
+      min-height:330px;
+      background:
+        linear-gradient(rgba(29,15,12,.04),rgba(29,15,12,.10)),
+        url('images/services-mirel-system.jpg?v=2') center/cover no-repeat;
+      box-shadow:inset 0 0 0 1px rgba(62,39,35,.12);
+    }
+
+    .result-copy h2{
+      font-family:var(--serif);
+      font-size:52px;
+      line-height:1.04;
+      letter-spacing:-.035em;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0 0 24px;
+      max-width:720px;
+    }
+
+    .result-copy p{
+      font-size:15px;
+      line-height:1.85;
+      color:var(--text-soft);
+      max-width:600px;
+      margin:0 0 30px;
+    }
+
+    .service-visuals{
+      padding:92px 72px;
+      background:#fbf7f1;
+      border-bottom:1px solid var(--line);
+    }
+
+    .service-visuals-header{
+      text-align:center;
+      max-width:760px;
+      margin:0 auto 64px;
+    }
+
+    .service-visuals-header h2{
+      font-family:var(--serif);
+      font-size:50px;
+      line-height:1.05;
+      letter-spacing:-.035em;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0 0 20px;
+    }
+
+    .service-visuals-header p{
+      font-size:15px;
+      line-height:1.85;
+      color:var(--text-soft);
+      margin:0;
+    }
+
+    .visual-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      max-width:1220px;
+      margin:0 auto;
+    }
+
+    .visual-card{
+      min-height:390px;
+      position:relative;
+      background-size:cover;
+      background-position:center;
+      overflow:hidden;
+    }
+
+    .visual-card:after{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,rgba(29,15,12,.05),rgba(29,15,12,.48));
+    }
+
+    .visual-card-content{
+      position:absolute;
+      left:28px;
+      right:28px;
+      bottom:26px;
+      z-index:2;
+      color:white;
+    }
+
+    .visual-card-content span{
+      display:block;
+      font-size:10px;
+      letter-spacing:.28em;
+      text-transform:uppercase;
+      margin-bottom:12px;
+      opacity:.86;
+    }
+
+    .visual-card-content h3{
+      font-family:var(--serif);
+      font-size:32px;
+      line-height:1.05;
+      font-weight:500;
+      margin:0;
+    }
+
+    .visual-ads{
+      background-image:url('images/services-mirel-paid-ads-system.jpg?v=2');
+    }
+
+    .visual-pages{
+      background-image:url('images/services-mirel-landing-page-system.jpg?v=2');
+    }
+
+    .visual-followup{
+      background-image:url('images/services-mirel-follow-up-system.jpg?v=2');
+    }
+
+    .process-section{
+      padding:90px 72px 94px;
+      background:linear-gradient(135deg,#fbf7f1,#f4ebe5);
+      border-bottom:1px solid var(--line);
+      text-align:center;
+    }
+
+    .process-section h2{
+      font-family:var(--serif);
+      font-size:46px;
+      line-height:1.05;
+      letter-spacing:-.035em;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0 0 68px;
+    }
+
+    .process-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      max-width:1240px;
+      margin:0 auto;
+      border-left:1px solid var(--line);
+    }
+
+    .process-step{
+      text-align:left;
+      padding:0 36px;
+      border-right:1px solid var(--line);
+    }
+
+    .process-step span{
+      display:block;
+      font-family:var(--serif);
+      font-size:22px;
+      color:var(--rose);
+      margin-bottom:18px;
+    }
+
+    .process-step h3{
+      text-transform:uppercase;
+      letter-spacing:.32em;
+      font-size:11px;
+      color:var(--espresso);
+      margin:0 0 18px;
+    }
+
+    .process-step p{
+      font-size:13px;
+      line-height:1.75;
+      color:var(--text-soft);
+      margin:0;
+    }
+
+    .services-final{
+      display:grid;
+      grid-template-columns:.95fr 1.05fr;
+      background:var(--espresso-deep);
+      color:white;
+    }
+
+    .services-final-image{
+      min-height:430px;
+      background:
+        linear-gradient(rgba(29,15,12,.06),rgba(29,15,12,.18)),
+        url('images/mirel-services-hero.jpg?v=2') center/cover no-repeat;
+    }
+
+    .services-final-copy{
+      padding:88px 72px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .services-final-copy h2{
+      font-family:var(--serif);
+      font-size:52px;
+      line-height:1.04;
+      letter-spacing:-.035em;
+      font-weight:500;
+      margin:0 0 24px;
+    }
+
+    .services-final-copy p{
+      color:rgba(255,255,255,.78);
+      font-size:15px;
+      line-height:1.85;
+      max-width:580px;
+      margin:0 0 32px;
+    }
+
+    .services-final-actions{
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .services-final .btn-outline{
+      color:white;
+      border-color:rgba(255,255,255,.38);
+    }
+
+    @media (max-width:1180px){
+      .services-hero,
+      .result-section,
+      .services-final{
+        grid-template-columns:1fr;
+      }
+
+      .services-hero-copy,
+      .services-overview,
+      .result-section,
+      .service-visuals,
+      .process-section,
+      .services-final-copy{
+        padding-left:34px;
+        padding-right:34px;
+      }
+
+      .services-grid,
+      .visual-grid,
+      .process-grid{
+        grid-template-columns:1fr;
+        border-left:0;
+      }
+
+      .service-card,
+      .process-step{
+        border-right:0;
+        border-bottom:1px solid var(--line);
+        padding:38px 0;
+      }
+
+      .service-card:last-child,
+      .process-step:last-child{
+        border-bottom:0;
+      }
+
+      .service-icon{
+        margin-bottom:28px;
+      }
+    }
+
+    @media (max-width:760px){
+      .services-hero-copy{
+        padding:56px 22px 46px;
+      }
+
+      .services-hero h1{
+        font-size:48px;
+      }
+
+      .services-hero p{
+        font-size:14px;
+      }
+
+      .services-hero-image{
+        min-height:430px;
+      }
+
+      .hero-seal{
+        width:86px;
+        height:86px;
+        font-size:42px;
+        top:30px;
+        right:24px;
+      }
+
+      .services-overview,
+      .result-section,
+      .service-visuals,
+      .process-section,
+      .services-final-copy{
+        padding:54px 22px;
+      }
+
+      .service-card h2,
+      .result-copy h2,
+      .service-visuals-header h2,
+      .process-section h2,
+      .services-final-copy h2{
+        font-size:36px;
+      }
+
+      .result-image,
+      .visual-card,
+      .services-final-image{
+        min-height:300px;
+      }
+
+      .services-final-actions{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .services-final-actions .btn{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="site-shell">
+
+    <header class="nav" data-nav>
+      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="systems.html">Systems</a>
+        <a href="results.html">Results</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+        <a class="btn btn-light" href="resources.html">Resources</a>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="services-hero">
+        <div class="services-hero-copy reveal">
+          <p class="eyebrow">Our Services</p>
+          <h1>Three services. One outcome: <em>a fully booked clinic.</em></h1>
+          <p>
+            We combine strategy, systems, and premium content direction to attract your ideal patients,
+            increase perceived value, and turn interest into consultations.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-dark btn-large" href="contact.html">Book a Consultation</a>
+            <a class="btn btn-outline btn-large" href="systems.html">See Our Systems</a>
+          </div>
+        </div>
+
+        <div class="services-hero-image reveal">
+          <div class="hero-seal">M</div>
+        </div>
+      </section>
+
+      <section class="services-overview">
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
+              <circle cx="24" cy="24" r="13"></circle>
+              <circle cx="24" cy="24" r="4"></circle>
+              <path d="M24 5v8M24 35v8M5 24h8M35 24h8"></path>
+            </svg>
+
+            <span class="service-number">01</span>
+            <h2>Meta & Google Ads</h2>
+            <div class="service-kicker">Paid Advertising</div>
+            <p>
+              We build campaigns that attract qualified patients who are already searching,
+              comparing, or emotionally ready to book.
+            </p>
+
+            <ul>
+              <li>Campaign strategy and setup</li>
+              <li>Audience targeting and offer angle</li>
+              <li>Creative direction and ad copy</li>
+              <li>Weekly performance refinement</li>
+            </ul>
+
+            <a class="btn btn-outline" href="contact.html">Learn More</a>
+          </article>
+
+          <article class="service-card reveal">
+            <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
+              <rect x="9" y="12" width="30" height="23"></rect>
+              <path d="M9 18h30M15 27h10M15 31h16M29 24h6v6h-6z"></path>
+            </svg>
+
+            <span class="service-number">02</span>
+            <h2>Patient Landing Pages</h2>
+            <div class="service-kicker">Conversion Design</div>
+            <p>
+              We design premium, treatment-specific landing pages that transform clicks
+              into confident consultation requests.
+            </p>
+
+            <ul>
+              <li>Treatment-specific page design</li>
+              <li>Premium conversion copywriting</li>
+              <li>Mobile-first patient journey</li>
+              <li>Form and booking integration</li>
+            </ul>
+
+            <a class="btn btn-outline" href="contact.html">Learn More</a>
+          </article>
+
+          <article class="service-card reveal">
+            <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
+              <rect x="9" y="14" width="30" height="22"></rect>
+              <path d="M9 16l15 12 15-12"></path>
+            </svg>
+
+            <span class="service-number">03</span>
+            <h2>Automated Follow-Up</h2>
+            <div class="service-kicker">Patient Nurturing</div>
+            <p>
+              We follow up with every qualified lead so interest does not get lost,
+              forgotten, or replaced by a competitor.
+            </p>
+
+            <ul>
+              <li>Automated email and SMS sequences</li>
+              <li>Fast lead-response structure</li>
+              <li>Seven-day nurture flow</li>
+              <li>Booking system integration</li>
+            </ul>
+
+            <a class="btn btn-outline" href="contact.html">Learn More</a>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="result-section">
+        <div class="result-image reveal"></div>
+
+        <div class="result-copy reveal">
+          <p class="eyebrow">The Result</p>
+          <h2>All three services work together to fill your appointment book.</h2>
+          <p>
+            Your clinic does not need random attention. It needs a system that makes people feel desire,
+            trust your expertise, understand your value, and take the next step.
+          </p>
+          <a class="btn btn-dark" href="contact.html">Book a Consultation</a>
+        </div>
+      </section>
+
+      <section class="service-visuals">
+        <div class="service-visuals-header reveal">
+          <p class="eyebrow">The System Behind The Beauty</p>
+          <h2>Premium marketing should feel as refined as your clinic.</h2>
+          <p>
+            Every campaign, page, and follow-up touchpoint is designed to feel intentional —
+            so your brand earns trust before the consultation begins.
+          </p>
+        </div>
+
+        <div class="visual-grid">
+          <article class="visual-card visual-ads reveal">
+            <div class="visual-card-content">
+              <span>Paid Ads</span>
+              <h3>Attract patients with premium positioning.</h3>
+            </div>
+          </article>
+
+          <article class="visual-card visual-pages reveal">
+            <div class="visual-card-content">
+              <span>Landing Pages</span>
+              <h3>Turn interest into confident action.</h3>
+            </div>
+          </article>
+
+          <article class="visual-card visual-followup reveal">
+            <div class="visual-card-content">
+              <span>Follow-Up</span>
+              <h3>Nurture every qualified lead with care.</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="process-section">
+        <p class="eyebrow reveal">Our Process</p>
+        <h2 class="reveal">Strategic. Refined. Results-driven.</h2>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>We learn your clinic, treatments, ideal patients, positioning, and growth goals.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>02</span>
+            <h3>Strategize</h3>
+            <p>We build a clear premium acquisition plan around your services and local market.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>03</span>
+            <h3>Implement</h3>
+            <p>We launch your campaigns, landing pages, creative direction, and follow-up systems.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>04</span>
+            <h3>Grow</h3>
+            <p>We refine, optimize, and scale what creates the best consultation quality.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="services-final">
+        <div class="services-final-image reveal"></div>
+
+        <div class="services-final-copy reveal">
+          <p class="eyebrow">Ready For A More Premium Patient Journey?</p>
+          <h2>Let’s build the system behind your next stage of growth.</h2>
+          <p>
+            If your clinic is ready to attract better-fit patients, increase perceived value,
+            and create a more polished path to booking, start with a strategy call.
+          </p>
+
+          <div class="services-final-actions">
+            <a class="btn btn-pink" href="contact.html">Book a Consultation</a>
+            <a class="btn btn-outline" href="systems.html">See Our Systems</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
+      </a>
+
+      <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
+      <a href="#">Instagram</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </footer>
+
+  </div>
+
+  <script>
+    const nav = document.querySelector('[data-nav]');
+
+    const onScroll = () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    const reveals = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach((el) => observer.observe(el));
+  </script>
+
+</body>
+</html>
