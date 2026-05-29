@@ -403,6 +403,268 @@ background-position:center;
   font-weight:400;
 }
 
+.systems-fit{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  background:linear-gradient(135deg,#fbf7f1,#f4ebe5);
+  border-bottom:1px solid var(--line);
+}
+
+.systems-fit-image{
+  min-height:520px;
+  background:
+    linear-gradient(rgba(29,15,12,.04),rgba(29,15,12,.10)),
+    url('images/mirel-system-clinic-space.jpg') center/cover no-repeat;
+}
+
+.systems-fit-copy{
+  padding:88px 72px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.systems-fit-copy h2{
+  font-family:var(--serif);
+  font-size:54px;
+  line-height:1.04;
+  letter-spacing:-.035em;
+  font-weight:500;
+  margin:0 0 26px;
+  color:var(--espresso-deep);
+}
+
+.systems-fit-copy p{
+  font-size:15px;
+  line-height:1.9;
+  color:var(--text-soft);
+  max-width:640px;
+  margin:0 0 18px;
+}
+
+.systems-fit-list{
+  list-style:none;
+  padding:0;
+  margin:28px 0 0;
+  max-width:620px;
+}
+
+.systems-fit-list li{
+  padding:15px 0;
+  border-bottom:1px solid rgba(62,39,35,.12);
+  color:var(--text-soft);
+  font-size:14px;
+}
+
+.systems-fit-list li:before{
+  content:'✦';
+  color:var(--rose);
+  margin-right:14px;
+}
+
+.authority-blush{
+  padding:38px 72px;
+  background:#f2d6da;
+  border-bottom:1px solid rgba(62,39,35,.08);
+  text-align:center;
+}
+
+.authority-blush p{
+  max-width:980px;
+  margin:0 auto;
+  font-family:var(--serif);
+  font-size:31px;
+  line-height:1.38;
+  letter-spacing:-.02em;
+  color:var(--espresso-deep);
+  font-style:italic;
+}
+
+.systems-final{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:var(--espresso-deep);
+  color:white;
+}
+
+.final-image{
+  min-height:430px;
+  background:
+    linear-gradient(rgba(29,15,12,.04),rgba(29,15,12,.16)),
+    url('images/mirel-system-final-cta.jpg') center/cover no-repeat;
+}
+
+.final-copy{
+  padding:86px 72px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.final-copy h2{
+  font-family:var(--serif);
+  font-size:54px;
+  line-height:1.04;
+  letter-spacing:-.035em;
+  font-weight:500;
+  margin:0 0 24px;
+  color:white;
+}
+
+.final-copy h2 em{
+  color:#f2d6da;
+  font-style:italic;
+  font-weight:400;
+}
+
+.final-copy p{
+  color:rgba(255,255,255,.74);
+  font-size:15px;
+  line-height:1.85;
+  max-width:590px;
+  margin:0 0 34px;
+}
+
+.final-actions{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.systems-final .btn-outline{
+  color:white;
+  border-color:rgba(255,255,255,.36);
+}
+
+/* RESPONSIVE FIXES FOR SYSTEMS PAGE */
+
+@media (max-width:1180px){
+
+  .system-flow,
+  .systems-fit,
+  .systems-final{
+    grid-template-columns:1fr;
+  }
+
+  .systems-pillars,
+  .system-flow,
+  .systems-big-quote,
+  .systems-world-header,
+  .systems-position,
+  .systems-fit-copy,
+  .final-copy{
+    padding-left:34px;
+    padding-right:34px;
+  }
+
+  .systems-pillar-grid{
+    grid-template-columns:1fr;
+    border-left:0;
+  }
+
+  .systems-pillar{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+    padding:32px 0;
+  }
+
+  .systems-pillar:last-child{
+    border-bottom:0;
+  }
+
+  .systems-world-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .systems-world-img{
+    min-height:260px;
+  }
+
+}
+
+@media (max-width:760px){
+
+  .systems-note{
+    padding:28px 22px;
+  }
+
+  .systems-note p{
+    font-size:24px;
+  }
+
+  .systems-pillars,
+  .system-flow,
+  .systems-big-quote,
+  .systems-world-header,
+  .systems-position,
+  .systems-fit-copy,
+  .final-copy{
+    padding:54px 22px;
+  }
+
+  .systems-pillars .section-title{
+    font-size:36px;
+  }
+
+  .systems-image-overlay h2,
+  .flow-copy h2,
+  .systems-big-quote h2,
+  .systems-world-header h2,
+  .systems-position h2,
+  .systems-fit-copy h2,
+  .final-copy h2{
+    font-size:40px;
+  }
+
+  .systems-full-image{
+    min-height:380px;
+    padding:46px 22px;
+  }
+
+  .flow-poster{
+    padding:30px 24px;
+  }
+
+  .flow-line strong{
+    font-size:31px;
+  }
+
+  .systems-world-grid{
+    grid-template-columns:1fr 1fr;
+    gap:5px;
+  }
+
+  .systems-world-img{
+    min-height:190px;
+  }
+
+  .systems-fit-image,
+  .final-image{
+    min-height:310px;
+  }
+
+  .authority-blush{
+    padding:30px 22px;
+  }
+
+  .authority-blush p{
+    font-size:23px;
+    line-height:1.45;
+  }
+
+  .final-actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .final-actions .btn{
+    width:100%;
+  }
+
+}
+
+
+
 .system-main span,
 .system-card span{
 position:absolute;
