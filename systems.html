@@ -219,6 +219,190 @@ background-position:center;
   font-weight:400;
 }
 
+.system-flow{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:72px;
+  align-items:center;
+  padding:96px 72px;
+  background:
+    radial-gradient(circle at 80% 18%, rgba(242,214,218,.28), transparent 34%),
+    linear-gradient(135deg,#f4ebe5,#fbf7f1 65%);
+  border-bottom:1px solid var(--line);
+}
+
+.flow-copy h2{
+  font-family:var(--serif);
+  font-size:56px;
+  line-height:1.04;
+  letter-spacing:-.035em;
+  font-weight:500;
+  color:var(--espresso-deep);
+  margin:0 0 26px;
+}
+
+.flow-copy p{
+  font-size:15px;
+  line-height:1.9;
+  color:var(--text-soft);
+  max-width:650px;
+  margin:0 0 18px;
+}
+
+.flow-poster{
+  padding:52px;
+  background:rgba(255,255,255,.38);
+  border:1px solid rgba(62,39,35,.10);
+}
+
+.flow-line{
+  display:grid;
+  gap:20px;
+}
+
+.flow-line div{
+  padding-bottom:22px;
+  border-bottom:1px solid rgba(62,39,35,.12);
+}
+
+.flow-line div:last-child{
+  border-bottom:0;
+  padding-bottom:0;
+}
+
+.flow-line span{
+  display:block;
+  font-family:var(--serif);
+  font-size:36px;
+  color:var(--rose);
+  margin-bottom:8px;
+}
+
+.flow-line strong{
+  display:block;
+  font-family:var(--serif);
+  font-size:38px;
+  line-height:1;
+  font-weight:500;
+  color:var(--espresso-deep);
+  margin-bottom:12px;
+}
+
+.flow-line p{
+  font-size:13px;
+  line-height:1.75;
+  color:var(--text-soft);
+  margin:0;
+}
+
+.systems-big-quote{
+  padding:96px 72px;
+  text-align:center;
+  background:#fbf7f1;
+  border-bottom:1px solid var(--line);
+}
+
+.systems-big-quote h2{
+  font-family:var(--serif);
+  font-size:64px;
+  line-height:1.02;
+  letter-spacing:-.04em;
+  font-weight:500;
+  max-width:980px;
+  margin:0 auto;
+  color:var(--espresso-deep);
+}
+
+.systems-big-quote h2 em{
+  color:var(--rose);
+  font-style:italic;
+  font-weight:400;
+}
+
+.systems-world{
+  background:#fbf7f1;
+  border-bottom:1px solid var(--line);
+}
+
+.systems-world-header{
+  padding:78px 72px 56px;
+  text-align:center;
+  max-width:860px;
+  margin:0 auto;
+}
+
+.systems-world-header h2{
+  font-family:var(--serif);
+  font-size:54px;
+  line-height:1.04;
+  letter-spacing:-.035em;
+  font-weight:500;
+  color:var(--espresso-deep);
+  margin:0;
+}
+
+.systems-world-grid{
+  display:grid;
+  grid-template-columns:1.1fr 1fr 1fr 1fr;
+  gap:6px;
+}
+
+.systems-world-img{
+  min-height:285px;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.systems-world-img:after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(62,39,35,.03),rgba(62,39,35,.18));
+  mix-blend-mode:multiply;
+}
+
+.sw1{
+  background-image:url('images/mirel-ads-system2.jpg');
+}
+
+.sw2{
+  background-image:url('images/mirel-conversion-system2.jpg');
+}
+
+.sw3{
+  background-image:url('images/mirel-followup-system.jpg');
+}
+
+.sw4{
+  background-image:url('images/mirel-system-clinic-space.jpg');
+}
+
+.systems-position{
+  padding:76px 72px;
+  text-align:center;
+  background:linear-gradient(135deg,#fbf7f1,#f4ebe5);
+  border-bottom:1px solid var(--line);
+}
+
+.systems-position h2{
+  font-family:var(--serif);
+  font-size:48px;
+  line-height:1.08;
+  letter-spacing:-.035em;
+  font-weight:500;
+  color:var(--espresso-deep);
+  max-width:980px;
+  margin:0 auto;
+}
+
+.systems-position h2 em{
+  color:var(--rose);
+  font-style:italic;
+  font-weight:400;
+}
+
 .system-main span,
 .system-card span{
 position:absolute;
