@@ -1258,3 +1258,111 @@ rel="stylesheet">
   }
 
 }
+
+</main>
+
+<footer class="footer">
+
+  <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+    <span>MIRÈL</span>
+    <small>MARKETING</small>
+  </a>
+
+  <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
+  <a href="#">Instagram</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms & Conditions</a>
+
+</footer>
+
+</div>
+
+<script>
+  const nav = document.querySelector('[data-nav]');
+
+  const onScroll = () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  };
+
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+
+  const reveals = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12 });
+
+  reveals.forEach((el) => observer.observe(el));
+</script>
+
+<style>
+  @media (max-width:1180px){
+
+    .resources-hero{
+      grid-template-columns:1fr;
+    }
+
+    .resources-hero-copy{
+      padding:90px 34px 60px;
+    }
+
+    .resources-hero-image{
+      min-height:440px;
+    }
+
+    .resources-hero-card{
+      left:34px;
+      bottom:34px;
+    }
+
+  }
+
+  @media (max-width:760px){
+
+    .resources-hero-copy{
+      padding:64px 22px 48px;
+    }
+
+    .resources-hero h1{
+      font-size:46px;
+    }
+
+    .resources-hero p:not(.eyebrow){
+      font-size:14px;
+    }
+
+    .resources-hero-image{
+      min-height:360px;
+    }
+
+    .resources-hero-card{
+      left:22px;
+      right:22px;
+      bottom:22px;
+      width:auto;
+      padding:24px;
+    }
+
+    .resources-hero-card strong{
+      font-size:24px;
+    }
+
+    .hero-buttons{
+      flex-direction:column;
+      align-items:stretch;
+    }
+
+    .hero-buttons .btn{
+      width:100%;
+    }
+
+  }
+</style>
+
+</body>
+</html>
