@@ -1,650 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Mirel Marketing</title>
+  <meta name="description" content="Book a strategy call with Mirel Marketing for luxury med spa growth systems, positioning, conversion and patient journey strategy." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .contact-page{
+      background:#fbf7f1;
+      color:var(--espresso-deep);
+      overflow-x:hidden;
+    }
+
+    .contact-hero{
+      display:grid;
+      grid-template-columns:.86fr 1.14fr;
+      min-height:670px;
+      background:
+        radial-gradient(circle at 10% 20%,rgba(242,214,218,.42),transparent 30%),
+        linear-gradient(110deg,#fbf7f1 0%,#fbf7f1 52%,#efe3dc 100%);
+      border-bottom:1px solid var(--line);
+    }
+
+    .contact-hero-copy{
+      padding:92px 72px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .contact-hero h1{
+      font-family:var(--serif);
+      font-size:72px;
+      line-height:.98;
+      letter-spacing:-.045em;
+      font-weight:500;
+      margin:0 0 28px;
+      color:var(--espresso-deep);
+      max-width:640px;
+    }
+
+    .contact-hero h1 em{
+      display:block;
+      color:var(--rose);
+      font-style:italic;
+      font-weight:400;
+    }
+
+    .contact-line{
+      width:64px;
+      height:1px;
+      background:var(--rose);
+      margin:0 0 30px;
+    }
+
+    .contact-hero p:not(.eyebrow){
+      font-size:16px;
+      line-height:1.9;
+      color:var(--text-soft);
+      max-width:520px;
+      margin:0 0 34px;
+    }
+
+    .contact-hero-image{
+      min-height:670px;
+      background:
+        linear-gradient(90deg,rgba(251,247,241,.48),rgba(251,247,241,.08)),
+        url('images/mirel-marketing-books.jpg') center/cover no-repeat;
+      position:relative;
+    }
+
+    .contact-hero-card{
+      position:absolute;
+      left:42px;
+      bottom:42px;
+      width:310px;
+      padding:30px;
+      background:rgba(251,247,241,.84);
+      border:1px solid rgba(62,39,35,.12);
+      backdrop-filter:blur(14px);
+    }
+
+    .contact-hero-card span{
+      display:block;
+      text-transform:uppercase;
+      letter-spacing:.28em;
+      font-size:9px;
+      font-weight:700;
+      color:var(--rose);
+      margin-bottom:14px;
+    }
+
+    .contact-hero-card strong{
+      display:block;
+      font-family:var(--serif);
+      font-size:30px;
+      line-height:1.04;
+      font-weight:500;
+      color:var(--espresso-deep);
+    }
+  </style>
+</head>
+
 <body class="contact-page">
+  <div class="site-shell">
 
-<div class="site-shell">
-
-<header class="nav" data-nav>
-
-  <a class="brand" href="index.html">
-    <span>MIRÈL</span>
-    <small>MARKETING</small>
-  </a>
-
-  <nav class="nav-links">
-
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="results.html">Results</a>
-    <a href="resources.html">Resources</a>
-    <a href="contact.html" class="active">Contact</a>
-
-  </nav>
-
-  <div class="nav-actions">
-
-    <a class="btn btn-dark" href="#">
-      Book a Consultation
-    </a>
-
-    <a class="btn btn-light" href="systems.html">
-      See Systems
-    </a>
-
-  </div>
-
-</header>
-
-<main>
-
-<!-- HERO -->
-
-<section class="contact-hero reveal">
-
-  <div class="contact-copy">
-
-    <p class="eyebrow">
-      Let's Connect
-    </p>
-
-    <h1>
-      Let’s talk.
-      <em>Book a 20-minute strategy call.</em>
-    </h1>
-
-    <div class="contact-divider"></div>
-
-    <p class="contact-intro">
-      No pitch. No pressure.
-      Just an honest conversation about your clinic,
-      your growth goals, and whether Mirel Marketing
-      is the right fit.
-    </p>
-
-    <div class="hero-buttons">
-
-      <a href="#"
-         class="btn btn-dark btn-large">
-        Book Your Free Strategy Call
+    <header class="nav" data-nav>
+      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
       </a>
 
-      <a href="#contact-methods"
-         class="text-link">
-        What to Expect →
-      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="systems.html">Systems</a>
+        <a href="results.html">Results</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
 
-    </div>
+      <div class="nav-actions">
+        <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+        <a class="btn btn-light" href="resources.html">Resources</a>
+      </div>
+    </header>
 
-  </div>
+    <main>
 
-  <div class="contact-hero-image">
+      <section class="contact-hero reveal">
+        <div class="contact-hero-copy">
+          <p class="eyebrow">Let’s Connect</p>
 
-    <img
-      src="images/mirel-marketing-books.jpg"
-      alt="Luxury editorial workspace">
+          <h1>
+            Let’s talk.
+            <em>Book a 20-minute strategy call.</em>
+          </h1>
 
-  </div>
+          <div class="contact-line"></div>
 
-</section>
+          <p>
+            No pressure. No generic pitch. Just a focused conversation about your clinic, your growth goals, and whether Mirel is the right fit.
+          </p>
 
-
-<!-- CONTACT METHODS -->
-
-<section id="contact-methods"
-         class="contact-grid reveal">
-
-  <!-- LEFT COLUMN -->
-
-  <div class="contact-details">
-
-    <div class="section-label">
-
-      <span>Other Ways To Reach Us</span>
-
-      <div class="line"></div>
-
-    </div>
-
-    <div class="contact-items">
-
-      <div class="contact-item">
-
-        <div class="contact-icon">
-          ✉
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-dark btn-large">Book Your Strategy Call</a>
+            <a href="#contact-details" class="btn btn-outline btn-large">What to Expect</a>
+          </div>
         </div>
 
-        <div>
+        <div class="contact-hero-image">
+          <div class="contact-hero-card">
+            <span>Strategy • Positioning • Growth</span>
+            <strong>A calmer way to start scaling.</strong>
+          </div>
+        </div>
+      </section>
 
-          <strong>Email</strong>
+        <section class="contact-expect reveal" id="contact-details">
+        <div class="expect-intro">
+          <p class="eyebrow">What To Expect</p>
 
-          <a href="mailto:delora@mirelmarketing.com">
-            delora@mirelmarketing.com
-          </a>
+          <h2>
+            A clear, calm conversation about where your clinic is now — and what needs to improve.
+          </h2>
+        </div>
+
+        <div class="expect-grid">
+          <article>
+            <span>01</span>
+            <h3>Brand Perception</h3>
+            <p>We look at how your clinic currently feels online and whether it communicates premium trust.</p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Patient Journey</h3>
+            <p>We discuss how people move from first impression to inquiry, consultation, and booking.</p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Growth Fit</h3>
+            <p>We identify whether positioning, ads, landing pages, or follow-up systems are the right next step.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-reach reveal">
+        <div class="reach-card">
+          <p class="eyebrow">Other Ways To Reach Us</p>
+
+          <div class="reach-list">
+            <div class="reach-item">
+              <span>✉</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
+              </div>
+            </div>
+
+            <div class="reach-item">
+              <span>◎</span>
+              <div>
+                <strong>Instagram</strong>
+                <a href="#">@mirel.marketing</a>
+              </div>
+            </div>
+
+            <div class="reach-item">
+              <span>⌖</span>
+              <div>
+                <strong>Based In</strong>
+                <p>Worldwide</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-card">
+            <span>⌁</span>
+            <div>
+              <strong>Prefer to schedule later?</strong>
+              <p>Save this page and book when your clinic is ready for a more intentional growth system.</p>
+              <a href="#">View Calendar →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="reach-image"></div>
+
+        <div class="reach-quote">
+          <span>“</span>
+
+          <h2>
+            We work with clinics that want to feel more premium, more trusted, and easier to choose.
+          </h2>
+
+          <p>
+            Quality over quantity. We partner with a limited number of clinics each month.
+          </p>
+        </div>
+      </section>
+
+      <style>
+        .contact-expect{
+          padding:88px 72px 96px;
+          background:#fbf7f1;
+          border-bottom:1px solid var(--line);
+        }
+
+        .expect-intro{
+          max-width:980px;
+          margin:0 auto 62px;
+          text-align:center;
+        }
+
+        .expect-intro h2{
+          font-family:var(--serif);
+          font-size:52px;
+          line-height:1.04;
+          letter-spacing:-.035em;
+          font-weight:500;
+          color:var(--espresso-deep);
+          margin:0;
+        }
+
+        .expect-grid{
+          display:grid;
+          grid-template-columns:repeat(3,1fr);
+          max-width:1180px;
+          margin:0 auto;
+          border-left:1px solid var(--line);
+        }
+
+        .expect-grid article{
+          padding:0 46px;
+          border-right:1px solid var(--line);
+        }
+
+        .expect-grid span{
+          display:block;
+          font-family:var(--serif);
+          font-size:42px;
+          color:var(--rose);
+          margin-bottom:22px;
+        }
+
+        .expect-grid h3{
+          text-transform:uppercase;
+          letter-spacing:.28em;
+          font-size:11px;
+          color:var(--espresso);
+          margin:0 0 18px;
+        }
+
+        .expect-grid p{
+          font-size:14px;
+          line-height:1.8;
+          color:var(--text-soft);
+          margin:0;
+        }
+
+        .contact-reach{
+          display:grid;
+          grid-template-columns:.9fr 1fr 1.08fr;
+          min-height:540px;
+          background:#fbf7f1;
+          border-bottom:1px solid var(--line);
+        }
+
+        .reach-card{
+          padding:78px 72px;
+          background:
+            radial-gradient(circle at 0% 0%,rgba(242,214,218,.30),transparent 34%),
+            linear-gradient(135deg,#f4ebe5,#fbf7f1 78%);
+        }
+
+        .reach-list{
+          display:grid;
+          gap:30px;
+          margin:0 0 54px;
+        }
+
+        .reach-item{
+          display:grid;
+          grid-template-columns:38px 1fr;
+          gap:18px;
+          align-items:start;
+        }
+
+        .reach-item > span{
+          font-size:24px;
+          line-height:1;
+          color:var(--rose);
+        }
+
+        .reach-item strong,
+        .schedule-card strong{
+          display:block;
+          font-size:14px;
+          color:var(--espresso);
+          margin-bottom:7px;
+        }
+
+        .reach-item a,
+        .reach-item p,
+        .schedule-card p,
+        .schedule-card a{
+          font-size:13px;
+          line-height:1.7;
+          color:var(--text-soft);
+          margin:0;
+        }
+
+        .schedule-card{
+          display:grid;
+          grid-template-columns:42px 1fr;
+          gap:18px;
+          padding:30px;
+          border:1px solid rgba(62,39,35,.14);
+          background:rgba(255,253,249,.44);
+        }
+
+        .schedule-card > span{
+          color:var(--rose);
+          font-size:28px;
+          line-height:1;
+        }
+
+        .schedule-card a{
+          display:inline-block;
+          margin-top:10px;
+          color:var(--espresso);
+          font-weight:600;
+        }
+
+        .reach-image{
+          min-height:540px;
+          background:
+            linear-gradient(rgba(29,15,12,.04),rgba(29,15,12,.18)),
+            url('images/mirel-founder-editorial.jpg') center/cover no-repeat;
+        }
+
+        .reach-quote{
+          padding:82px 72px;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          background:
+            radial-gradient(circle at 84% 20%,rgba(242,214,218,.35),transparent 34%),
+            #fbf7f1;
+        }
+
+        .reach-quote > span{
+          font-family:var(--serif);
+          font-size:70px;
+          line-height:.7;
+          color:var(--rose);
+          margin-bottom:22px;
+        }
+
+        .reach-quote h2{
+          font-family:var(--serif);
+          font-size:46px;
+          line-height:1.06;
+          letter-spacing:-.035em;
+          font-weight:500;
+          color:var(--espresso-deep);
+          max-width:620px;
+          margin:0 0 32px;
+        }
+
+        .reach-quote p{
+          text-transform:uppercase;
+          letter-spacing:.28em;
+          font-size:11px;
+          line-height:1.9;
+          color:var(--espresso);
+          font-weight:650;
+          max-width:470px;
+          margin:0;
+        }
+      </style>
+
+          <section class="contact-process reveal">
+
+        <div class="process-header">
+
+          <p class="eyebrow">Our Process</p>
+
+          <h2>
+            What happens after you book?
+          </h2>
+
+        </div>
+
+        <div class="process-grid">
+
+          <article class="process-card">
+
+            <span>01</span>
+
+            <h3>
+              Discovery Call
+            </h3>
+
+            <p>
+              We discuss your clinic,
+              your current positioning,
+              growth goals,
+              and where the biggest opportunities exist.
+            </p>
+
+          </article>
+
+          <article class="process-card">
+
+            <span>02</span>
+
+            <h3>
+              Strategic Review
+            </h3>
+
+            <p>
+              We identify gaps in perception,
+              trust building,
+              patient acquisition,
+              conversion,
+              and retention systems.
+            </p>
+
+          </article>
+
+          <article class="process-card">
+
+            <span>03</span>
+
+            <h3>
+              Recommended Direction
+            </h3>
+
+            <p>
+              If there is a strong fit,
+              we outline the next steps
+              and the systems that will create
+              the highest impact first.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <section class="contact-philosophy reveal">
+
+        <div class="philosophy-image"></div>
+
+        <div class="philosophy-content">
+
+          <p class="eyebrow">
+            The Mirel Philosophy
+          </p>
+
+          <h2>
+            Luxury is not about looking expensive.
+            It's about making patients feel confident before they ever walk through the door.
+          </h2>
+
+          <div class="contact-line"></div>
+
+          <p>
+            Most clinics focus on getting more clicks.
+            We focus on creating trust,
+            desire,
+            authority,
+            and a premium patient journey.
+          </p>
+
+          <p>
+            Because better perception creates better patients.
+          </p>
+
+        </div>
+
+      </section>
+
+      <style>
+
+        .contact-process{
+          padding:110px 72px;
+          background:#ffffff;
+          border-bottom:1px solid var(--line);
+        }
+
+        .process-header{
+          text-align:center;
+          max-width:900px;
+          margin:0 auto 70px;
+        }
+
+        .process-header h2{
+          font-family:var(--serif);
+          font-size:58px;
+          line-height:1.04;
+          letter-spacing:-.04em;
+          font-weight:500;
+          margin:0;
+          color:var(--espresso-deep);
+        }
+
+        .process-grid{
+          display:grid;
+          grid-template-columns:repeat(3,1fr);
+          gap:34px;
+          max-width:1250px;
+          margin:0 auto;
+        }
+
+        .process-card{
+          padding:46px;
+          background:#fbf7f1;
+          border:1px solid rgba(62,39,35,.08);
+          transition:.4s;
+        }
+
+        .process-card:hover{
+          transform:translateY(-6px);
+          box-shadow:0 20px 50px rgba(0,0,0,.05);
+        }
+
+        .process-card span{
+          display:block;
+          font-family:var(--serif);
+          font-size:56px;
+          color:var(--rose);
+          margin-bottom:24px;
+        }
+
+        .process-card h3{
+          font-family:var(--serif);
+          font-size:34px;
+          font-weight:500;
+          margin:0 0 18px;
+          color:var(--espresso-deep);
+        }
+
+        .process-card p{
+          font-size:14px;
+          line-height:1.9;
+          color:var(--text-soft);
+          margin:0;
+        }
+
+        .contact-philosophy{
+          display:grid;
+          grid-template-columns:1.05fr .95fr;
+          min-height:680px;
+          background:#fbf7f1;
+          border-bottom:1px solid var(--line);
+        }
+
+        .philosophy-image{
+          background:
+          linear-gradient(
+          rgba(29,15,12,.08),
+          rgba(29,15,12,.20)
+          ),
+          url('images/mirel-philosophy-luxury.jpg')
+          center/cover no-repeat;
+        }
+
+        .philosophy-content{
+          padding:100px 82px;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+        }
+
+        .philosophy-content h2{
+          font-family:var(--serif);
+          font-size:58px;
+          line-height:1.02;
+          letter-spacing:-.04em;
+          font-weight:500;
+          color:var(--espresso-deep);
+          margin:0 0 34px;
+        }
+
+        .philosophy-content p:not(.eyebrow){
+          font-size:15px;
+          line-height:1.9;
+          color:var(--text-soft);
+          max-width:560px;
+          margin:0 0 20px;
+        }
+
+      </style>
+
+            <!-- FINAL CTA -->
+
+      <section class="contact-final-cta reveal">
+
+        <div class="cta-background"></div>
+
+        <div class="cta-overlay">
+
+          <p class="eyebrow">
+            Ready To Elevate Your Clinic?
+          </p>
+
+          <h2>
+            Premium growth starts with
+            a better first impression.
+          </h2>
+
+          <p>
+            Positioning. Trust. Conversion.
+            Let's identify what is holding your clinic back
+            and create a growth system designed around
+            the patients you actually want.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#"
+               class="btn btn-dark btn-large">
+              Book Your Strategy Call
+            </a>
+
+            <a href="systems.html"
+               class="btn btn-light btn-large">
+              Explore The System
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+      <div class="footer-top">
+
+        <a class="brand"
+           href="index.html">
+
+          <span>MIRÈL</span>
+          <small>MARKETING</small>
+
+        </a>
+
+        <div class="footer-links">
+
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="systems.html">Systems</a>
+          <a href="results.html">Results</a>
+          <a href="resources.html">Resources</a>
 
         </div>
 
       </div>
 
-      <div class="contact-item">
+      <div class="footer-bottom">
 
-        <div class="contact-icon">
-          ◎
-        </div>
-
-        <div>
-
-          <strong>Instagram</strong>
-
-          <a href="#">
-            @mirel.marketing
-          </a>
-
-        </div>
-
-      </div>
-
-      <div class="contact-item">
-
-        <div class="contact-icon">
-          ⌖
-        </div>
-
-        <div>
-
-          <strong>Based In</strong>
-
-          <span>Worldwide</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- CALENDAR CARD -->
-
-    <div class="calendar-card">
-
-      <div class="calendar-icon">
-        📅
-      </div>
-
-      <div>
-
-        <strong>
-          Prefer to schedule later?
-        </strong>
-
-        <p>
-          Pick a time that works best for you.
-        </p>
+        <a href="mailto:delora@mirelmarketing.com">
+          delora@mirelmarketing.com
+        </a>
 
         <a href="#">
-          View calendar →
+          Instagram
+        </a>
+
+        <a href="#">
+          Privacy Policy
+        </a>
+
+        <a href="#">
+          Terms & Conditions
         </a>
 
       </div>
 
-    </div>
+    </footer>
 
   </div>
-
-  <!-- CENTER IMAGE -->
-
-  <div class="contact-editorial-image">
-
-    <img
-      src="images/mirel-founder-editorial.jpg"
-      alt="Founder working at desk">
-
-  </div>
-
-    <!-- RIGHT QUOTE COLUMN -->
-
-  <div class="contact-quote">
-
-    <div class="quote-mark">
-      “
-    </div>
-
-    <h2>
-      We work with med spas
-      who are ready to elevate
-      their brand, their systems,
-      and their results.
-    </h2>
-
-    <div class="quote-divider"></div>
-
-    <p class="quote-note">
-      Quality over quantity.
-      <br>
-      We partner with a limited
-      number of clinics each month.
-    </p>
-
-  </div>
-
-</section>
-
-<!-- CTA SECTION -->
-
-<section class="contact-cta reveal">
-
-  <div class="contact-cta-copy">
-
-    <p class="eyebrow">
-      Ready To Start?
-    </p>
-
-    <h2>
-      Let’s create a digital presence
-      that feels as premium
-      as your clinic.
-    </h2>
-
-    <p>
-      Whether you're looking to improve
-      positioning, patient acquisition,
-      conversion systems, or overall brand perception,
-      the first step is a conversation.
-    </p>
-
-    <div class="hero-buttons">
-
-      <a href="#"
-         class="btn btn-dark btn-large">
-        Book Your Strategy Call
-      </a>
-
-      <a href="systems.html"
-         class="btn btn-outline btn-large">
-        Explore The System
-      </a>
-
-    </div>
-
-  </div>
-
-  <div class="contact-cta-image">
-
-    <img
-      src="images/mirel-marketing-founder-editorial.jpg"
-      alt="Mirel Marketing Founder">
-
-  </div>
-
-</section>
-
-</main>
-
-<footer class="footer">
-
-  <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
-    <span>MIRÈL</span>
-    <small>MARKETING</small>
-  </a>
-
-  <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
-  <a href="#">Instagram</a>
-  <a href="privacy.html">Privacy Policy</a>
-  <a href="terms.html">Terms & Conditions</a>
-
-</footer>
-
-</div>
 
 <script>
-  const nav = document.querySelector('[data-nav]');
 
-  const onScroll = () => {
-    nav.classList.toggle('scrolled', window.scrollY > 20);
-  };
+const nav = document.querySelector('[data-nav]');
 
-  window.addEventListener('scroll', onScroll);
-  onScroll();
+const onScroll = () => {
+  nav.classList.toggle(
+    'scrolled',
+    window.scrollY > 20
+  );
+};
 
-  const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', onScroll);
+onScroll();
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.12 });
+const reveals =
+document.querySelectorAll('.reveal');
 
-  reveals.forEach((el) => observer.observe(el));
+const observer =
+new IntersectionObserver((entries)=>{
+
+entries.forEach((entry)=>{
+
+if(entry.isIntersecting){
+entry.target.classList.add('visible');
+}
+
+});
+
+},{
+threshold:.12
+});
+
+reveals.forEach(el=>observer.observe(el));
+
 </script>
 
 <style>
-  .contact-page{
-    background:#fbf7f1;
-    color:var(--espresso-deep);
-    overflow-x:hidden;
+
+.contact-final-cta{
+  position:relative;
+  min-height:720px;
+  overflow:hidden;
+}
+
+.cta-background{
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+  rgba(29,15,12,.50),
+  rgba(29,15,12,.55)
+  ),
+  url('images/mirel-treatment-experience.jpg')
+  center/cover no-repeat;
+}
+
+.cta-overlay{
+  position:relative;
+  z-index:2;
+
+  min-height:720px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  padding:120px 30px;
+}
+
+.cta-overlay .eyebrow{
+  color:rgba(255,255,255,.75);
+}
+
+.cta-overlay h2{
+  font-family:var(--serif);
+  font-size:72px;
+  line-height:.98;
+  letter-spacing:-.05em;
+  font-weight:500;
+
+  color:white;
+
+  max-width:920px;
+
+  margin:0 0 26px;
+}
+
+.cta-overlay p:not(.eyebrow){
+  max-width:680px;
+
+  font-size:15px;
+  line-height:1.9;
+
+  color:rgba(255,255,255,.80);
+
+  margin:0 0 34px;
+}
+
+.footer{
+  background:#fbf7f1;
+  padding:42px 72px;
+}
+
+.footer-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding-bottom:24px;
+
+  border-bottom:1px solid var(--line);
+}
+
+.footer-links{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.footer-links a,
+.footer-bottom a{
+  font-size:13px;
+  color:var(--text-soft);
+  text-decoration:none;
+}
+
+.footer-bottom{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+
+  padding-top:24px;
+}
+
+@media(max-width:1180px){
+
+  .contact-process,
+  .contact-expect,
+  .reach-card,
+  .reach-quote,
+  .philosophy-content{
+    padding-left:34px;
+    padding-right:34px;
   }
 
-  .contact-hero{
-    display:grid;
-    grid-template-columns:.92fr 1.08fr;
-    min-height:640px;
-    background:
-      radial-gradient(circle at 12% 16%,rgba(242,214,218,.38),transparent 30%),
-      linear-gradient(110deg,#fbf7f1 0%,#fbf7f1 52%,#efe3dc 100%);
-    border-bottom:1px solid var(--line);
+  .process-grid,
+  .expect-grid,
+  .contact-reach,
+  .contact-philosophy{
+    grid-template-columns:1fr;
   }
 
-  .contact-copy{
-    padding:92px 72px;
-    display:flex;
+  .cta-overlay h2{
+    font-size:52px;
+  }
+
+}
+
+@media(max-width:760px){
+
+  .contact-process,
+  .contact-expect{
+    padding:70px 22px;
+  }
+
+  .process-header h2,
+  .expect-intro h2,
+  .philosophy-content h2{
+    font-size:42px;
+  }
+
+  .cta-overlay h2{
+    font-size:40px;
+  }
+
+  .footer{
+    padding:34px 22px;
+  }
+
+  .footer-top,
+  .footer-bottom{
     flex-direction:column;
-    justify-content:center;
+    align-items:flex-start;
   }
 
-  .contact-copy h1{
-    font-family:var(--serif);
-    font-size:66px;
-    line-height:1;
-    letter-spacing:-.04em;
-    font-weight:500;
-    color:var(--espresso-deep);
-    margin:0 0 26px;
-    max-width:620px;
-  }
+}
 
-  .contact-copy h1 em{
-    display:block;
-    color:var(--rose);
-    font-style:italic;
-    font-weight:400;
-  }
-
-  .contact-divider,
-  .quote-divider{
-    width:58px;
-    height:1px;
-    background:var(--rose);
-    margin:0 0 28px;
-  }
-
-  .contact-intro{
-    font-size:15px;
-    line-height:1.85;
-    color:var(--text-soft);
-    max-width:500px;
-    margin:0 0 34px;
-  }
-
-  .contact-hero-image{
-    min-height:640px;
-    overflow:hidden;
-  }
-
-  .contact-hero-image img,
-  .contact-editorial-image img,
-  .contact-cta-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-  }
-
-  .contact-grid{
-    display:grid;
-    grid-template-columns:.86fr 1fr 1.14fr;
-    min-height:520px;
-    background:#fbf7f1;
-    border-bottom:1px solid var(--line);
-  }
-
-  .contact-details{
-    padding:78px 72px;
-    background:linear-gradient(135deg,#f4ebe5,#fbf7f1);
-  }
-
-  .section-label{
-    display:flex;
-    align-items:center;
-    gap:24px;
-    margin-bottom:44px;
-  }
-
-  .section-label span{
-    text-transform:uppercase;
-    letter-spacing:.32em;
-    font-size:11px;
-    font-weight:700;
-    color:#8d6e63;
-    white-space:nowrap;
-  }
-
-  .section-label .line{
-    flex:1;
-    height:1px;
-    background:var(--line);
-  }
-
-  .contact-items{
-    display:grid;
-    gap:30px;
-    margin-bottom:54px;
-  }
-
-  .contact-item{
-    display:grid;
-    grid-template-columns:42px 1fr;
-    gap:18px;
-    align-items:start;
-  }
-
-  .contact-icon{
-    font-size:27px;
-    color:var(--rose);
-    line-height:1;
-  }
-
-  .contact-item strong,
-  .calendar-card strong{
-    display:block;
-    font-size:14px;
-    color:var(--espresso);
-    margin-bottom:7px;
-  }
-
-  .contact-item a,
-  .contact-item span,
-  .calendar-card p,
-  .calendar-card a{
-    font-size:13px;
-    line-height:1.6;
-    color:var(--text-soft);
-    margin:0;
-  }
-
-  .calendar-card{
-    display:grid;
-    grid-template-columns:48px 1fr;
-    gap:18px;
-    padding:28px;
-    border:1px solid rgba(62,39,35,.16);
-    background:rgba(255,253,249,.34);
-  }
-
-  .calendar-icon{
-    font-size:28px;
-    color:var(--rose);
-  }
-
-  .calendar-card a{
-    display:inline-block;
-    margin-top:8px;
-    color:var(--espresso);
-  }
-
-  .contact-editorial-image{
-    min-height:520px;
-    overflow:hidden;
-  }
-
-  .contact-quote{
-    padding:84px 72px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    background:
-      radial-gradient(circle at 80% 25%,rgba(242,214,218,.34),transparent 32%),
-      #fbf7f1;
-  }
-
-  .quote-mark{
-    font-family:var(--serif);
-    font-size:62px;
-    color:var(--rose);
-    line-height:.7;
-    margin-bottom:18px;
-  }
-
-  .contact-quote h2{
-    font-family:var(--serif);
-    font-size:46px;
-    line-height:1.06;
-    letter-spacing:-.035em;
-    font-weight:500;
-    color:var(--espresso-deep);
-    margin:0 0 28px;
-    max-width:570px;
-  }
-
-  .quote-note{
-    text-transform:uppercase;
-    letter-spacing:.28em;
-    font-size:11px;
-    line-height:1.9;
-    color:var(--espresso);
-    margin:0;
-    font-weight:650;
-  }
-
-  .contact-cta{
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    background:var(--espresso-deep);
-    color:white;
-    border-bottom:1px solid rgba(255,255,255,.08);
-  }
-
-  .contact-cta-copy{
-    padding:86px 72px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-  }
-
-  .contact-cta-copy .eyebrow{
-    color:rgba(255,255,255,.72);
-  }
-
-  .contact-cta-copy h2{
-    font-family:var(--serif);
-    font-size:54px;
-    line-height:1.04;
-    letter-spacing:-.035em;
-    font-weight:500;
-    margin:0 0 24px;
-    color:white;
-    max-width:720px;
-  }
-
-  .contact-cta-copy p:not(.eyebrow){
-    color:rgba(255,255,255,.72);
-    font-size:15px;
-    line-height:1.85;
-    max-width:620px;
-    margin:0 0 34px;
-  }
-
-  .contact-cta .btn-outline{
-    color:white;
-    border-color:rgba(255,255,255,.36);
-  }
-
-  .contact-cta-image{
-    min-height:440px;
-    overflow:hidden;
-  }
-
-  @media (max-width:1180px){
-    .contact-hero,
-    .contact-grid,
-    .contact-cta{
-      grid-template-columns:1fr;
-    }
-
-    .contact-copy,
-    .contact-details,
-    .contact-quote,
-    .contact-cta-copy{
-      padding-left:34px;
-      padding-right:34px;
-    }
-
-    .contact-hero-image{
-      min-height:420px;
-    }
-
-    .contact-editorial-image{
-      min-height:420px;
-    }
-  }
-
-  @media (max-width:760px){
-    .contact-copy,
-    .contact-details,
-    .contact-quote,
-    .contact-cta-copy{
-      padding:54px 22px;
-    }
-
-    .contact-copy h1,
-    .contact-cta-copy h2{
-      font-size:42px;
-    }
-
-    .contact-quote h2{
-      font-size:38px;
-    }
-
-    .contact-hero-image,
-    .contact-editorial-image,
-    .contact-cta-image{
-      min-height:310px;
-    }
-
-    .section-label{
-      gap:14px;
-    }
-
-    .section-label span{
-      font-size:9px;
-      letter-spacing:.24em;
-    }
-
-    .contact-item{
-      grid-template-columns:34px 1fr;
-    }
-
-    .calendar-card{
-      grid-template-columns:1fr;
-    }
-
-    .hero-buttons{
-      flex-direction:column;
-      align-items:stretch;
-    }
-
-    .hero-buttons .btn{
-      width:100%;
-    }
-  }
 </style>
 
 </body>
