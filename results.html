@@ -113,8 +113,29 @@
       <div class="nav-actions">
         <a class="btn btn-dark" href="contact.html">Book Consultation</a>
         <a class="btn btn-light" href="resources.html">Resources</a>
+        
+        <button class="mobile-menu-toggle" data-menu-toggle aria-label="Open menu">
+  ☰
+</button>
+        
       </div>
     </header>
+
+    <div class="mobile-menu" data-mobile-menu>
+
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="systems.html">Systems</a>
+  <a href="results.html" class="active">Results</a>
+  <a href="contact.html">Contact</a>
+
+  <div class="mobile-menu-actions">
+    <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+    <a class="btn btn-light" href="resources.html">Resources</a>
+  </div>
+
+</div>
 
     <main>
 
@@ -1096,26 +1117,62 @@
   </div>
 
   <script>
-    const nav = document.querySelector('[data-nav]');
+const nav = document.querySelector('[data-nav]');
+const menuToggle = document.querySelector('[data-menu-toggle]');
+const mobileMenu = document.querySelector('[data-mobile-menu]');
 
-    const onScroll = () => {
-      nav.classList.toggle('scrolled', window.scrollY > 20);
-    };
+let lastScroll = 0;
 
-    window.addEventListener('scroll', onScroll);
-    onScroll();
+window.addEventListener('scroll', () => {
 
-    const reveals = document.querySelectorAll('.reveal');
+  const currentScroll = window.scrollY;
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.12 });
+  nav.classList.toggle('scrolled', currentScroll > 16);
 
-    reveals.forEach((el) => observer.observe(el));
+  if (currentScroll > lastScroll && currentScroll > 120) {
+
+    nav.classList.add('hide');
+
+    mobileMenu?.classList.remove('open');
+    document.body.classList.remove('menu-open');
+
+  } else {
+
+    nav.classList.remove('hide');
+
+  }
+
+  lastScroll = currentScroll;
+
+});
+
+    if (menuToggle && mobileMenu) {
+
+  menuToggle.addEventListener('click', (event) => {
+
+    event.stopPropagation();
+
+    mobileMenu.classList.toggle('open');
+
+    document.body.classList.toggle('menu-open');
+
+  });
+
+  mobileMenu.addEventListener('click', (event) => {
+
+    event.stopPropagation();
+
+  });
+
+  document.addEventListener('click', () => {
+
+    mobileMenu.classList.remove('open');
+
+    document.body.classList.remove('menu-open');
+
+  });
+
+}
   </script>
 
   <style>
