@@ -223,8 +223,21 @@ const menuToggle = document.querySelector('[data-menu-toggle]');
 const mobileMenu = document.querySelector('[data-mobile-menu]');
 
 if (menuToggle && mobileMenu) {
-  menuToggle.addEventListener('click', () => {
+  menuToggle.addEventListener('click', (event) => {
+    event.stopPropagation();
     mobileMenu.classList.toggle('open');
+  });
+
+  mobileMenu.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+
+  document.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+  });
+
+  window.addEventListener('scroll', () => {
+    mobileMenu.classList.remove('open');
   });
 }
     
