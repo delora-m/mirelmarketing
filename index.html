@@ -20,25 +20,45 @@
 <body>
   <div class="site-shell">
     <header class="nav" data-nav>
-      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
-        <span>MIRÈL</span>
-        <small>MARKETING</small>
-      </a>
 
-      <nav class="nav-links" aria-label="Main navigation">
-  <a href="index.html" class="active">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="systems.html">Systems</a>
-  <a href="results.html">Results</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+    <span>MIRÈL</span>
+    <small>MARKETING</small>
+  </a>
 
-<div class="nav-actions">
-  <a class="btn btn-dark" href="contact.html">Book Consultation</a>
-  <a class="btn btn-light" href="resources.html">Resources</a>
-</div>
-    </header>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="systems.html">Systems</a>
+    <a href="results.html">Results</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+    <a class="btn btn-light" href="resources.html">Resources</a>
+  </div>
+
+  <button class="mobile-menu-toggle" data-menu-toggle aria-label="Open menu">
+    ☰
+  </button>
+
+  <div class="mobile-menu" data-mobile-menu>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="systems.html">Systems</a>
+    <a href="results.html">Results</a>
+    <a href="contact.html">Contact</a>
+
+    <div class="mobile-menu-actions">
+      <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+      <a class="btn btn-light" href="resources.html">Resources</a>
+    </div>
+  </div>
+
+</header>
 
     <main>
       <section class="hero reveal">
@@ -198,6 +218,14 @@
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 16);
     });
+
+const menuToggle = document.querySelector('[data-menu-toggle]');
+const mobileMenu = document.querySelector('[data-mobile-menu]');
+
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');
+});
+    
   </script>
 </body>
 </html>
