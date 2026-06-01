@@ -131,6 +131,41 @@
       </nav>
 
       <div class="nav-actions">
+  <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+  <a class="btn btn-light" href="resources.html">Resources</a>
+</div>
+
+<button
+  class="mobile-menu-toggle"
+  data-menu-toggle
+  aria-label="Open menu">
+  ☰
+</button>
+
+</header>
+
+<div class="mobile-menu" data-mobile-menu>
+
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="systems.html">Systems</a>
+  <a href="results.html">Results</a>
+  <a href="contact.html" class="active">Contact</a>
+
+  <div class="mobile-menu-actions">
+    <a class="btn btn-dark" href="contact.html">
+      Book Consultation
+    </a>
+
+    <a class="btn btn-light" href="resources.html">
+      Resources
+    </a>
+  </div>
+
+</div>
+
+      <div class="nav-actions">
         <a class="btn btn-dark" href="contact.html">Book Consultation</a>
         <a class="btn btn-light" href="resources.html">Resources</a>
       </div>
@@ -810,39 +845,82 @@
 
   </div>
 
-<script>
+  <script>
 
 const nav = document.querySelector('[data-nav]');
+const menuToggle = document.querySelector('[data-menu-toggle]');
+const mobileMenu = document.querySelector('[data-mobile-menu]');
 
-const onScroll = () => {
-  nav.classList.toggle(
-    'scrolled',
-    window.scrollY > 20
-  );
-};
+let lastScroll = 0;
 
-window.addEventListener('scroll', onScroll);
-onScroll();
+window.addEventListener('scroll', () => {
 
-const reveals =
-document.querySelectorAll('.reveal');
+  const currentScroll = window.scrollY;
 
-const observer =
-new IntersectionObserver((entries)=>{
+  nav.classList.toggle('scrolled', currentScroll > 16);
 
-entries.forEach((entry)=>{
+  if (currentScroll > lastScroll && currentScroll > 120) {
 
-if(entry.isIntersecting){
-entry.target.classList.add('visible');
+    nav.classList.add('hide');
+
+    mobileMenu?.classList.remove('open');
+    document.body.classList.remove('menu-open');
+
+  } else {
+
+    nav.classList.remove('hide');
+
+  }
+
+  lastScroll = currentScroll;
+
+});
+
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+
+  });
+
+}, {
+  threshold: .12
+});
+
+reveals.forEach(el => observer.observe(el));
+
+if (menuToggle && mobileMenu) {
+
+  menuToggle.addEventListener('click', (event) => {
+
+    event.stopPropagation();
+
+    mobileMenu.classList.toggle('open');
+
+    document.body.classList.toggle('menu-open');
+
+  });
+
+  mobileMenu.addEventListener('click', (event) => {
+
+    event.stopPropagation();
+
+  });
+
+  document.addEventListener('click', () => {
+
+    mobileMenu.classList.remove('open');
+
+    document.body.classList.remove('menu-open');
+
+  });
+
 }
-
-});
-
-},{
-threshold:.12
-});
-
-reveals.forEach(el=>observer.observe(el));
 
 </script>
 
