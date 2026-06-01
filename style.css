@@ -1103,40 +1103,121 @@ img{max-width:100%;display:block}
     display:none;
   }
 
+/* MOBILE DRAWER MENU */
+
+.mobile-menu-toggle{
+  display:none;
+  border:1px solid rgba(62,39,35,.18);
+  background:rgba(255,253,249,.76);
+  color:var(--espresso-deep);
+  font-size:26px;
+  width:56px;
+  height:56px;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:.3s ease;
+}
+
+.mobile-menu-toggle:hover{
+  background:rgba(242,214,218,.34);
+}
+
+.mobile-menu{
+  display:none;
+}
+
+@media (max-width:760px){
+
+  .nav{
+    min-height:96px;
+    height:auto;
+    grid-template-columns:1fr auto;
+    padding:16px 22px;
+    align-items:center;
+    gap:14px;
+    position:sticky;
+    top:0;
+    z-index:200;
+  }
+
+  .brand span{
+    font-size:26px;
+  }
+
+  .brand small{
+    font-size:9px;
+    margin-top:8px;
+  }
+
+  .nav-links,
+  .nav-actions{
+    display:none;
+  }
+
   .mobile-menu-toggle{
     display:flex;
   }
 
   .mobile-menu{
-    display:none;
     grid-column:1 / -1;
     width:100%;
-    padding:20px 0 8px;
-    border-top:1px solid rgba(62,39,35,.10);
+    display:grid;
+    gap:0;
+
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+    visibility:hidden;
+
+    padding:0;
+    margin-top:0;
+
+    background:rgba(251,247,241,.98);
+    border-top:1px solid rgba(62,39,35,.12);
+
+    transition:max-height .45s ease, opacity .35s ease, padding .35s ease, margin .35s ease;
   }
 
   .mobile-menu.open{
-    display:grid;
-    gap:18px;
+    max-height:520px;
+    opacity:1;
+    visibility:visible;
+    padding:18px 0 8px;
+    margin-top:14px;
   }
 
-  .mobile-menu a{
-    font-size:15px;
+  .mobile-menu > a{
+    display:block;
+    padding:15px 0;
+    border-bottom:1px solid rgba(62,39,35,.08);
+    font-size:16px;
+    font-weight:500;
     color:var(--espresso-deep);
   }
 
-  .mobile-menu a.active{
+  .mobile-menu > a.active{
     color:var(--rose);
   }
 
   .mobile-menu-actions{
     display:grid;
     gap:12px;
-    padding-top:10px;
+    padding-top:18px;
   }
 
   .mobile-menu-actions .btn{
     width:100%;
+    min-height:56px;
+  }
+
+  .mobile-menu-actions .btn-dark{
+    color:#fff !important;
+  }
+
+  .mobile-menu-actions .btn-light{
+    color:var(--espresso-deep) !important;
+    background:rgba(255,253,249,.75);
   }
 
 }
