@@ -1360,3 +1360,53 @@ img{
   }
 
 }
+
+/* TABLET NAV FIX - keeps desktop-style navbar on tablets */
+
+@media (min-width:761px) and (max-width:1180px){
+
+  .nav{
+    grid-template-columns:170px 1fr auto !important;
+    padding:0 28px !important;
+    gap:22px !important;
+  }
+
+  .brand span{
+    font-size:30px !important;
+  }
+
+  .brand small{
+    font-size:9px !important;
+    letter-spacing:.42em !important;
+  }
+
+  .nav-links{
+    display:flex !important;
+    gap:22px !important;
+    justify-content:center !important;
+    font-size:12px !important;
+  }
+
+  .nav-links a{
+    padding:34px 0 !important;
+  }
+
+  .nav-actions{
+    display:flex !important;
+    gap:10px !important;
+  }
+
+  .nav-actions .btn{
+    min-height:44px !important;
+    padding:0 18px !important;
+    font-size:11px !important;
+  }
+
+  .mobile-menu-toggle{
+    display:none !important;
+  }
+
+  .mobile-menu{
+    display:none !important;
+  }
+}
