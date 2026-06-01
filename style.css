@@ -892,35 +892,8 @@ img{max-width:100%;display:block}
   }
 
   .nav-links{
-    display:flex;
-    flex-wrap:nowrap;
-    justify-content:flex-start;
-    align-items:center;
-    gap:22px;
-    overflow-x:auto;
-    overflow-y:hidden;
-    white-space:nowrap;
-    width:100%;
-    font-size:12px;
-    padding:0 0 8px;
-    margin-top:8px;
-    scrollbar-width:none;
-    -ms-overflow-style:none;
-  }
-
-  .nav-links::-webkit-scrollbar{
-    display:none;
-  }
-
-  .nav-links a{
-    flex:0 0 auto;
-    padding:8px 0 14px;
-    line-height:1;
-  }
-
-  .nav-links a:after{
-    bottom:2px;
-  }
+  display:none;
+}
 
   .hero{
     padding:42px 22px 46px;
