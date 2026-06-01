@@ -17,7 +17,7 @@ content="Luxury growth systems for med spas through positioning, conversion and 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
 rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 
 <style>
 
@@ -1203,60 +1203,54 @@ Positioning • Conversion • Retention
 </div>
 
 <script>
+  const reveals = document.querySelectorAll('.reveal');
 
-const nav = document.querySelector('[data-nav]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.12 });
 
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 16);
-});
+  reveals.forEach(item => observer.observe(item));
 
-const menuToggle = document.querySelector('[data-menu-toggle]');
-const mobileMenu = document.querySelector('[data-mobile-menu]');
+  const nav = document.querySelector('[data-nav]');
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
 
-if (menuToggle && mobileMenu) {
+  let lastScroll = 0;
 
-  menuToggle.addEventListener('click', (event) => {
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
 
-    event.stopPropagation();
+    nav.classList.toggle('scrolled', currentScroll > 16);
 
-    mobileMenu.classList.toggle('open');
-
-    document.body.classList.toggle('menu-open');
-
-  });
-
-  mobileMenu.addEventListener('click', (event) => {
-    event.stopPropagation();
-  });
-
-  document.addEventListener('click', () => {
-
-    mobileMenu.classList.remove('open');
-
-    document.body.classList.remove('menu-open');
-
-  });
-
-}
-
-const reveals = document.querySelectorAll('.reveal');
-
-const observer = new IntersectionObserver((entries) => {
-
-  entries.forEach(entry => {
-
-    if (entry.isIntersecting) {
-
-      entry.target.classList.add('visible');
-
+    if (currentScroll > lastScroll && currentScroll > 120) {
+      nav.classList.add('hide');
+      mobileMenu?.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    } else {
+      nav.classList.remove('hide');
     }
 
+    lastScroll = currentScroll;
   });
 
-}, { threshold: 0.12 });
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener('click', (event) => {
+      event.stopPropagation();
+      mobileMenu.classList.toggle('open');
+      document.body.classList.toggle('menu-open');
+    });
 
-reveals.forEach(item => observer.observe(item));
+    mobileMenu.addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
 
+    document.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    });
+  }
 </script>
 
 </body>
