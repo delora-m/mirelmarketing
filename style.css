@@ -1072,37 +1072,6 @@ img{max-width:100%;display:block}
   }
 }
 
-.mobile-menu-toggle{
-  display:none;
-  border:1px solid rgba(62,39,35,.18);
-  background:rgba(255,253,249,.65);
-  color:var(--espresso-deep);
-  font-size:24px;
-  width:52px;
-  height:52px;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
-}
-
-.mobile-menu{
-  display:none;
-}
-
-@media (max-width:760px){
-
-  .nav{
-    position:sticky;
-    top:0;
-    z-index:100;
-    grid-template-columns:1fr auto;
-  }
-
-  .nav-links,
-  .nav-actions{
-    display:none;
-  }
-
 /* MOBILE DRAWER MENU */
 
 .mobile-menu-toggle{
