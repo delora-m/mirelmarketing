@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
 
   <style>
     .services-hero{
@@ -526,7 +526,25 @@
         <a class="btn btn-dark" href="contact.html">Book Consultation</a>
         <a class="btn btn-light" href="resources.html">Resources</a>
       </div>
+
+      <button class="mobile-menu-toggle" data-menu-toggle aria-label="Open menu">
+        ☰
+      </button>
     </header>
+
+    <div class="mobile-menu" data-mobile-menu>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="systems.html">Systems</a>
+      <a href="results.html">Results</a>
+      <a href="contact.html">Contact</a>
+
+      <div class="mobile-menu-actions">
+        <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+        <a class="btn btn-light" href="resources.html">Resources</a>
+      </div>
+    </div>
 
     <main>
 
@@ -743,27 +761,55 @@
   </div>
 
   <script>
-    const nav = document.querySelector('[data-nav]');
-
-    const onScroll = () => {
-      nav.classList.toggle('scrolled', window.scrollY > 20);
-    };
-
-    window.addEventListener('scroll', onScroll);
-    onScroll();
-
-    const reveals = document.querySelectorAll('.reveal');
+    const items = document.querySelectorAll('.reveal');
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold: 0.12 });
 
-    reveals.forEach((el) => observer.observe(el));
+    items.forEach(item => observer.observe(item));
+
+    const nav = document.querySelector('[data-nav]');
+    const menuToggle = document.querySelector('[data-menu-toggle]');
+    const mobileMenu = document.querySelector('[data-mobile-menu]');
+
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      nav.classList.toggle('scrolled', currentScroll > 16);
+
+      if (currentScroll > lastScroll && currentScroll > 120) {
+        nav.classList.add('hide');
+        mobileMenu?.classList.remove('open');
+        document.body.classList.remove('menu-open');
+      } else {
+        nav.classList.remove('hide');
+      }
+
+      lastScroll = currentScroll;
+    });
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', (event) => {
+        event.stopPropagation();
+        mobileMenu.classList.toggle('open');
+        document.body.classList.toggle('menu-open');
+      });
+
+      mobileMenu.addEventListener('click', (event) => {
+        event.stopPropagation();
+      });
+
+      document.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        document.body.classList.remove('menu-open');
+      });
+    }
   </script>
 
 </body>
-</html>
+</html> " bunu ekledim services page de bu kod fazla mı aynı kodu yazmışsın sanırım twice?  iki kod vardı? 
