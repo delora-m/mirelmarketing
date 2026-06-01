@@ -204,36 +204,42 @@
     </footer>
   </div>
 
-  <script>
-    const items = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.12 });
+<script>
+  const items = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.12 });
 
-    items.forEach(item => observer.observe(item));
+  items.forEach(item => observer.observe(item));
 
-    const nav = document.querySelector('[data-nav]');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 16);
+  const nav = document.querySelector('[data-nav]');
+
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 16);
+  });
+
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
+
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener('click', (event) => {
+      event.stopPropagation();
+      mobileMenu.classList.toggle('open');
+      document.body.classList.toggle('menu-open');
     });
 
-const menuToggle = document.querySelector('[data-menu-toggle]');
-const mobileMenu = document.querySelector('[data-mobile-menu]');
+    mobileMenu.addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
 
-if (menuToggle && mobileMenu) {
-  menuToggle.addEventListener('click', (event) => {
-    event.stopPropagation();
-    mobileMenu.classList.toggle('open');
-  });
-
-  document.addEventListener('click', () => {
-    mobileMenu.classList.remove('open');
-  });
-
-}
-    
-  </script>
+    document.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    });
+  }
+</script>
+  
 </body>
 </html>
