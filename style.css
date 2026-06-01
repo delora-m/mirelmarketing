@@ -1397,10 +1397,10 @@ img{
   }
 
   .nav-actions .btn{
-    min-height:44px !important;
-    padding:0 18px !important;
+    min-height:40px !important;
+    padding:0 16px !important;
     font-size:11px !important;
-  }
+}
 
   .mobile-menu-toggle{
     display:none !important;
