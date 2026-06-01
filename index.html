@@ -206,6 +206,7 @@
 
 <script>
   const items = document.querySelectorAll('.reveal');
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -215,13 +216,26 @@
   items.forEach(item => observer.observe(item));
 
   const nav = document.querySelector('[data-nav]');
-
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 16);
-  });
-
   const menuToggle = document.querySelector('[data-menu-toggle]');
   const mobileMenu = document.querySelector('[data-mobile-menu]');
+
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+
+    nav.classList.toggle('scrolled', currentScroll > 16);
+
+    if (currentScroll > lastScroll && currentScroll > 120) {
+      nav.classList.add('hide');
+      mobileMenu?.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    } else {
+      nav.classList.remove('hide');
+    }
+
+    lastScroll = currentScroll;
+  });
 
   if (menuToggle && mobileMenu) {
     menuToggle.addEventListener('click', (event) => {
