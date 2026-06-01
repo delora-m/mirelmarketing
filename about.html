@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
 
   <style>
     .about-hero{
@@ -55,11 +55,11 @@
     }
 
     .about-hero-image{
-  min-height:640px;
-  background:
-    linear-gradient(rgba(29,15,12,.04),rgba(29,15,12,.10)),
-    url('images/mirel-marketing-founder-luxury.png') center center/cover no-repeat;
-}
+      min-height:640px;
+      background:
+        linear-gradient(rgba(29,15,12,.04),rgba(29,15,12,.10)),
+        url('images/mirel-marketing-founder-luxury.png') center center/cover no-repeat;
+    }
 
     .about-problem{
       display:grid;
@@ -485,19 +485,37 @@
       </a>
 
       <nav class="nav-links" aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="about.html" class="active">About</a>
-  <a href="services.html">Services</a>
-  <a href="systems.html">Systems</a>
-  <a href="results.html">Results</a>
-  <a href="contact.html">Contact</a>
-</nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="systems.html">Systems</a>
+        <a href="results.html">Results</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-<div class="nav-actions">
-  <a class="btn btn-dark" href="contact.html">Book Consultation</a>
-  <a class="btn btn-light" href="resources.html">Resources</a>
-</div>
+      <div class="nav-actions">
+        <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+        <a class="btn btn-light" href="resources.html">Resources</a>
+      </div>
+
+      <button class="mobile-menu-toggle" data-menu-toggle aria-label="Open menu">
+        ☰
+      </button>
     </header>
+
+    <div class="mobile-menu" data-mobile-menu>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="systems.html">Systems</a>
+      <a href="results.html">Results</a>
+      <a href="contact.html">Contact</a>
+
+      <div class="mobile-menu-actions">
+        <a class="btn btn-dark" href="contact.html">Book Consultation</a>
+        <a class="btn btn-light" href="resources.html">Resources</a>
+      </div>
+    </div>
 
     <main>
 
@@ -658,33 +676,61 @@
 
       <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
       <a href="#">Instagram</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms & Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
     </footer>
 
   </div>
 
   <script>
-    const nav = document.querySelector('[data-nav]');
-
-    const onScroll = () => {
-      nav.classList.toggle('scrolled', window.scrollY > 20);
-    };
-
-    window.addEventListener('scroll', onScroll);
-    onScroll();
-
-    const reveals = document.querySelectorAll('.reveal');
+    const items = document.querySelectorAll('.reveal');
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold: 0.12 });
 
-    reveals.forEach((el) => observer.observe(el));
+    items.forEach(item => observer.observe(item));
+
+    const nav = document.querySelector('[data-nav]');
+    const menuToggle = document.querySelector('[data-menu-toggle]');
+    const mobileMenu = document.querySelector('[data-mobile-menu]');
+
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      nav.classList.toggle('scrolled', currentScroll > 16);
+
+      if (currentScroll > lastScroll && currentScroll > 120) {
+        nav.classList.add('hide');
+        mobileMenu?.classList.remove('open');
+        document.body.classList.remove('menu-open');
+      } else {
+        nav.classList.remove('hide');
+      }
+
+      lastScroll = currentScroll;
+    });
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', (event) => {
+        event.stopPropagation();
+        mobileMenu.classList.toggle('open');
+        document.body.classList.toggle('menu-open');
+      });
+
+      mobileMenu.addEventListener('click', (event) => {
+        event.stopPropagation();
+      });
+
+      document.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        document.body.classList.remove('menu-open');
+      });
+    }
   </script>
 
 </body>
