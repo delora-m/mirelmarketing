@@ -20,33 +20,19 @@
       min-height:640px;
       border-bottom:1px solid var(--line);
       background:linear-gradient(110deg,#fbf7f1 0%,#fbf7f1 48%,#efe3dc 100%);
+      padding:0;
     }
 
     .about-hero-copy{
       padding:96px 72px;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
+      max-width:none;
     }
 
-   .about-hero h1{
-  font-family:var(--serif);
-  font-size:72px;
-  line-height:.95;
-  letter-spacing:-.05em;
-  font-weight:500;
-  color:var(--espresso-deep);
-  margin:0 0 30px;
-  max-width:780px;
-}
-
-    .about-hero h1 em{
-      color:var(--rose);
-      font-style:italic;
-      font-weight:400;
+    .about-hero h1{
+      max-width:780px;
     }
 
-    .about-hero p{
+    .about-hero p:not(.eyebrow){
       font-size:16px;
       line-height:1.9;
       color:var(--text-soft);
@@ -345,12 +331,6 @@
         grid-template-columns:1fr;
       }
 
-      .about-hero h1{
-  font-size:72px;
-  line-height:.96;
-  max-width:100%;
-}
-
       .about-hero-copy,
       .about-problem,
       .founder-copy,
@@ -359,6 +339,10 @@
       .about-final{
         padding-left:34px;
         padding-right:34px;
+      }
+
+      .about-hero h1{
+        max-width:100%;
       }
 
       .about-change{
@@ -392,14 +376,10 @@
 
     @media (max-width:760px){
       .about-hero-copy{
-        padding:56px 22px 46px;
+        padding:42px 22px 46px;
       }
 
-      .about-hero h1{
-        font-size:50px;
-      }
-
-      .about-hero p{
+      .about-hero p:not(.eyebrow){
         font-size:14px;
       }
 
@@ -525,8 +505,8 @@
 
     <main>
 
-      <section class="about-hero">
-        <div class="about-hero-copy reveal">
+      <section class="hero about-hero reveal">
+        <div class="hero-copy about-hero-copy">
           <p class="eyebrow">About Mirel</p>
 
           <h1>
@@ -544,7 +524,7 @@
           </div>
         </div>
 
-        <div class="about-hero-image reveal"></div>
+        <div class="about-hero-image"></div>
       </section>
 
       <section class="about-problem">
