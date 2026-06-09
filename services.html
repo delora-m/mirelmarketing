@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=6" />
 
   <style>
     .services-hero{
@@ -49,13 +49,13 @@
       font-weight:400;
     }
 
-    .services-hero p{
-      font-size:16px;
-      line-height:1.9;
-      color:var(--text-soft);
-      max-width:520px;
-      margin:0 0 34px;
-    }
+    .services-hero p:not(.eyebrow){
+  font-size:16px;
+  line-height:1.9;
+  color:var(--text-soft);
+  max-width:520px;
+  margin:0 0 34px;
+}
 
     .services-hero-image{
       min-height:650px;
@@ -454,9 +454,9 @@
         font-size:48px;
       }
 
-      .services-hero p{
-        font-size:14px;
-      }
+      .services-hero p:not(.eyebrow){
+  font-size:14px;
+}
 
       .services-hero-image{
         min-height:430px;
