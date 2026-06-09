@@ -11,13 +11,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=5" />
 
   <style>
     .about-hero{
       display:grid;
       grid-template-columns:1fr 1.08fr;
-      min-height:640px;
+      min-height:760px;
       border-bottom:1px solid var(--line);
       background:linear-gradient(110deg,#fbf7f1 0%,#fbf7f1 48%,#efe3dc 100%);
     }
@@ -37,7 +37,7 @@
   letter-spacing:-.052em;
   color:var(--espresso-deep);
   margin:0 0 34px;
-  max-width:650px;
+  max-width:none;
 }
 
     .about-hero h1 em{
@@ -344,8 +344,16 @@
       .about-founder{
         grid-template-columns:1fr;
       }
-      .about-hero h1{
+      
+      .about-hero-copy{
+  max-width:780px;
+  padding-right:0;
+}
+
+.about-hero h1{
+  max-width:none;
   font-size:72px;
+  line-height:.91;
 }
 
       .about-hero-copy,
@@ -388,14 +396,17 @@
     }
 
     @media (max-width:760px){
-      .about-hero-copy{
-        padding:56px 22px 46px;
-      }
+  .about-hero h1{
+    font-size:53px;
+    line-height:.96;
+    max-width:none;
+  }
 
       .about-hero h1{
   font-size:53px;
   line-height:.96;
 }
+      
       .about-hero p{
         font-size:14px;
       }
