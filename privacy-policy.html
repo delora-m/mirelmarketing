@@ -1,739 +1,1080 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Privacy Policy | Mirel Marketing</title>
-
   <meta
     name="description"
-    content="Privacy Policy for Mirel Marketing. Learn how we collect, use, store and protect personal information."
-  >
+    content="Read the Mirel Marketing Privacy Policy and learn how we collect, use, protect and manage personal information."
+  />
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=5" />
 
   <style>
+
     /* =========================
-       PRIVACY POLICY PAGE
+       PRIVACY POLICY
     ========================== */
 
-    .legal-hero {
-      padding: 90px 8% 75px;
-      text-align: center;
-      background: #f8f5f0;
-      border-bottom: 1px solid rgba(26, 26, 26, 0.12);
+    .legal-hero{
+      padding:100px 72px 82px;
+      text-align:center;
+      background:linear-gradient(135deg,#fbf7f1,#f4ebe5);
+      border-bottom:1px solid var(--line);
     }
 
-    .legal-eyebrow {
-      margin-bottom: 22px;
-      font-size: 12px;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      color: #a0785a;
+    .legal-hero .eyebrow{
+      margin-bottom:24px;
     }
 
-    .legal-hero h1 {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(46px, 6vw, 76px);
-      font-weight: 400;
-      line-height: 1.05;
-      color: #1a1a1a;
+    .legal-hero h1{
+      font-family:var(--serif);
+      font-size:72px;
+      line-height:.95;
+      letter-spacing:-.045em;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0;
     }
 
-    .legal-updated {
-      margin-top: 24px;
-      font-size: 13px;
-      color: #766c66;
+    .legal-updated{
+      margin-top:28px;
+      font-size:12px;
+      letter-spacing:.02em;
+      color:var(--text-soft);
     }
 
-    .legal-container {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 90px 7% 110px;
+
+    .legal-content{
+      max-width:900px;
+      margin:0 auto;
+      padding:86px 72px 110px;
     }
 
-    .legal-intro {
-      margin-bottom: 64px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 23px;
-      line-height: 1.65;
-      color: #2a211e;
+
+    .legal-intro{
+      font-family:var(--serif);
+      font-size:26px;
+      line-height:1.55;
+      color:var(--espresso-deep);
+      margin:0 0 70px;
     }
 
-    .legal-section {
-      margin-bottom: 54px;
+
+    .legal-section{
+      padding:0 0 52px;
+      margin:0 0 52px;
+      border-bottom:1px solid var(--line);
     }
 
-    .legal-section h2 {
-      margin: 0 0 20px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 31px;
-      font-weight: 400;
-      line-height: 1.2;
-      color: #1a1a1a;
+
+    .legal-section:last-of-type{
+      border-bottom:0;
     }
 
-    .legal-section h3 {
-      margin: 30px 0 12px;
-      font-size: 16px;
-      font-weight: 600;
-      color: #2a211e;
+
+    .legal-section h2{
+      font-family:var(--serif);
+      font-size:38px;
+      line-height:1.05;
+      letter-spacing:-.025em;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0 0 24px;
     }
+
+
+    .legal-section h3{
+      font-size:14px;
+      line-height:1.4;
+      font-weight:600;
+      color:var(--espresso-deep);
+      margin:28px 0 10px;
+    }
+
 
     .legal-section p,
-    .legal-section li {
-      font-size: 15px;
-      line-height: 1.85;
-      color: #625a55;
+    .legal-section li{
+      font-size:15px;
+      line-height:1.85;
+      color:var(--text-soft);
     }
 
-    .legal-section ul {
-      padding-left: 22px;
-      margin-top: 15px;
+
+    .legal-section p{
+      margin:0 0 18px;
     }
 
-    .legal-section li {
-      margin-bottom: 8px;
+
+    .legal-section ul{
+      margin:18px 0 20px;
+      padding-left:22px;
     }
 
-    .legal-section a {
-      color: #6c4438;
-      text-decoration: underline;
-      text-underline-offset: 4px;
+
+    .legal-section li{
+      margin-bottom:9px;
     }
 
-    .legal-divider {
-      width: 100%;
-      height: 1px;
-      margin: 55px 0;
-      background: rgba(26, 26, 26, 0.12);
+
+    .legal-section a,
+    .legal-contact a{
+      color:var(--espresso);
+      text-decoration:none;
+      border-bottom:1px solid rgba(62,39,35,.35);
     }
 
-    .legal-contact {
-      padding: 42px;
-      margin-top: 55px;
-      background: #f3eee8;
+
+    .legal-contact{
+      background:linear-gradient(
+        135deg,
+        #f1e7df,
+        #fbf7f1 65%,
+        rgba(242,214,218,.24)
+      );
+
+      border:1px solid var(--line);
+      padding:42px 46px;
+      margin-top:20px;
     }
 
-    .legal-contact h2 {
-      margin-top: 0;
+
+    .legal-contact h2{
+      font-family:var(--serif);
+      font-size:34px;
+      font-weight:500;
+      color:var(--espresso-deep);
+      margin:0 0 18px;
     }
 
-    @media (max-width: 768px) {
 
-      .legal-hero {
-        padding: 65px 7% 55px;
+    .legal-contact p{
+      font-size:14px;
+      line-height:1.8;
+      color:var(--text-soft);
+      margin:0 0 15px;
+    }
+
+
+    @media (max-width:760px){
+
+      .legal-hero{
+        padding:70px 22px 58px;
       }
 
-      .legal-container {
-        padding: 65px 7% 80px;
+      .legal-hero h1{
+        font-size:48px;
       }
 
-      .legal-intro {
-        font-size: 20px;
+      .legal-content{
+        padding:58px 22px 78px;
       }
 
-      .legal-section h2 {
-        font-size: 27px;
+      .legal-intro{
+        font-size:22px;
+        margin-bottom:54px;
       }
 
-      .legal-contact {
-        padding: 30px 24px;
+      .legal-section{
+        padding-bottom:40px;
+        margin-bottom:40px;
       }
+
+      .legal-section h2{
+        font-size:31px;
+      }
+
+      .legal-contact{
+        padding:30px 24px;
+      }
+
     }
+
   </style>
 </head>
 
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
+  <div class="site-shell">
 
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <div class="logo-main">MIRÈL</div>
-        <div class="logo-sub">MARKETING</div>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="nav" data-nav>
+
+      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
       </a>
-    </div>
 
-    <nav>
+
+      <nav class="nav-links" aria-label="Main navigation">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="systems.html">Systems</a>
+
+        <a href="results.html">Results</a>
+
+        <a href="contact.html">Contact</a>
+
+      </nav>
+
+
+      <div class="nav-actions">
+
+        <a class="btn btn-dark" href="contact.html">
+          Book Consultation
+        </a>
+
+        <a class="btn btn-light" href="resources.html">
+          Resources
+        </a>
+
+      </div>
+
+
+      <button
+        class="mobile-menu-toggle"
+        data-menu-toggle
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+    </header>
+
+
+
+    <!-- =========================
+         MOBILE MENU
+    ========================== -->
+
+    <div class="mobile-menu" data-mobile-menu>
+
       <a href="index.html">Home</a>
+
       <a href="about.html">About</a>
+
       <a href="services.html">Services</a>
+
       <a href="systems.html">Systems</a>
+
       <a href="results.html">Results</a>
+
       <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="header-actions">
-      <a href="contact.html" class="btn-dark">Book Consultation</a>
-      <a href="resources.html" class="btn-light">Resources</a>
-    </div>
-  </header>
 
 
-  <!-- =========================
-       HERO
-  ========================== -->
+      <div class="mobile-menu-actions">
 
-  <section class="legal-hero">
-
-    <div class="legal-eyebrow">
-      Legal
-    </div>
-
-    <h1>Privacy Policy</h1>
-
-    <div class="legal-updated">
-      Last updated: 10 August 2026
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       PRIVACY CONTENT
-  ========================== -->
-
-  <main class="legal-container">
-
-    <p class="legal-intro">
-      At Mirel Marketing, we respect your privacy and are committed to
-      handling personal information responsibly, transparently and securely.
-      This Privacy Policy explains how we collect, use and protect information
-      when you visit our website, contact us, book a consultation or otherwise
-      interact with Mirel Marketing.
-    </p>
-
-
-    <section class="legal-section">
-
-      <h2>1. Who We Are</h2>
-
-      <p>
-        Mirel Marketing is a marketing and growth consultancy serving
-        businesses, including medical aesthetics and med spa brands.
-      </p>
-
-      <p>
-        For the purposes of applicable data protection law, the organisation
-        responsible for determining how your personal information is used is
-        referred to as the “data controller”.
-      </p>
-
-      <p>
-        If you have any questions about this Privacy Policy or how your
-        personal information is handled, you can contact us at:
-      </p>
-
-      <p>
-        <a href="mailto:delora@mirelmarketing.com">
-          delora@mirelmarketing.com
+        <a class="btn btn-dark" href="contact.html">
+          Book Consultation
         </a>
-      </p>
 
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>2. Information We May Collect</h2>
-
-      <p>
-        Depending on how you interact with Mirel Marketing, we may collect
-        information including:
-      </p>
-
-      <ul>
-        <li>Your name.</li>
-        <li>Your email address.</li>
-        <li>Your telephone number, where provided.</li>
-        <li>Your company or clinic name.</li>
-        <li>Your job title or professional role.</li>
-        <li>
-          Information you provide when submitting an enquiry, requesting
-          information or booking a consultation.
-        </li>
-        <li>
-          Communications exchanged between you and Mirel Marketing.
-        </li>
-        <li>
-          Information relating to your business, marketing objectives or
-          service requirements where you choose to provide it.
-        </li>
-        <li>
-          Technical information such as browser type, device information,
-          IP address and website usage information where collected through
-          website technologies.
-        </li>
-      </ul>
-
-      <p>
-        We ask that you do not provide medical records, patient information
-        or other sensitive personal information through general website
-        contact forms or email unless specifically requested and an
-        appropriate arrangement has been established.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>3. How We Collect Information</h2>
-
-      <p>
-        We may collect personal information directly from you when you:
-      </p>
-
-      <ul>
-        <li>Contact us by email.</li>
-        <li>Complete a website form.</li>
-        <li>Book or request a consultation.</li>
-        <li>Download or request a resource.</li>
-        <li>Subscribe to communications where available.</li>
-        <li>Enter into discussions about our services.</li>
-        <li>Become a client of Mirel Marketing.</li>
-      </ul>
-
-      <p>
-        Certain technical information may also be collected automatically
-        when you use the website through cookies, server logs or similar
-        technologies, depending on the technologies enabled on the website.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>4. How We Use Your Information</h2>
-
-      <p>
-        We may use personal information for purposes including:
-      </p>
-
-      <ul>
-        <li>Responding to enquiries and consultation requests.</li>
-        <li>Communicating with prospective and existing clients.</li>
-        <li>Providing requested services.</li>
-        <li>Preparing proposals, strategies or service recommendations.</li>
-        <li>Managing client relationships.</li>
-        <li>Operating, maintaining and improving our website.</li>
-        <li>Understanding how visitors interact with our website.</li>
-        <li>Protecting our website, business and users from misuse or security threats.</li>
-        <li>Maintaining appropriate business, accounting and administrative records.</li>
-        <li>Complying with applicable legal and regulatory requirements.</li>
-      </ul>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>5. Our Lawful Bases for Processing</h2>
-
-      <p>
-        Where UK data protection law applies, we process personal information
-        only where we have an appropriate lawful basis.
-      </p>
-
-      <p>Depending on the circumstances, this may include:</p>
-
-      <h3>Consent</h3>
-
-      <p>
-        Where you have given us permission to use your information for a
-        particular purpose.
-      </p>
-
-      <h3>Contract</h3>
-
-      <p>
-        Where processing is necessary to take steps at your request before
-        entering into a contract or to perform a contract with you.
-      </p>
-
-      <h3>Legitimate Interests</h3>
-
-      <p>
-        Where processing is necessary for our legitimate business interests,
-        provided those interests are not overridden by your rights and
-        interests. This may include responding to business enquiries,
-        managing client relationships, improving our services and protecting
-        our business.
-      </p>
-
-      <h3>Legal Obligation</h3>
-
-      <p>
-        Where we need to process information to comply with a legal or
-        regulatory obligation.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>6. Marketing Communications</h2>
-
-      <p>
-        Where permitted by applicable law, we may communicate with business
-        contacts about Mirel Marketing services, resources or information
-        that we believe may be relevant to their professional interests.
-      </p>
-
-      <p>
-        Where consent is required, we will seek that consent before sending
-        marketing communications.
-      </p>
-
-      <p>
-        You can ask us to stop sending marketing communications at any time
-        by using any unsubscribe option provided or by contacting us at
-        <a href="mailto:delora@mirelmarketing.com">
-          delora@mirelmarketing.com
-        </a>.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>7. Cookies and Similar Technologies</h2>
-
-      <p>
-        Our website may use cookies and similar technologies to operate the
-        website, remember preferences, understand website performance or
-        provide certain features.
-      </p>
-
-      <p>
-        Some cookies are necessary for a website to function. Other cookies,
-        such as certain analytics or advertising technologies, may require
-        your consent depending on applicable law.
-      </p>
-
-      <p>
-        Where required, non-essential cookies will only be used after the
-        appropriate consent has been obtained.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>8. Sharing Your Information</h2>
-
-      <p>
-        We do not sell your personal information.
-      </p>
-
-      <p>
-        We may share information with trusted third parties where reasonably
-        necessary for operating our business or delivering our services.
-        These may include:
-      </p>
-
-      <ul>
-        <li>Website hosting and technical service providers.</li>
-        <li>Email and communication providers.</li>
-        <li>Scheduling and appointment-booking providers.</li>
-        <li>Cloud storage and business software providers.</li>
-        <li>Analytics providers where enabled.</li>
-        <li>Professional advisers such as accountants or legal advisers.</li>
-        <li>
-          Government bodies, regulators or law-enforcement authorities where
-          disclosure is legally required.
-        </li>
-      </ul>
-
-      <p>
-        Where third parties process personal information on our behalf, we
-        take reasonable steps to ensure that appropriate protections are in
-        place.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>9. International Data Transfers</h2>
-
-      <p>
-        Some of the service providers used by Mirel Marketing may process or
-        store information outside the country in which you are located.
-      </p>
-
-      <p>
-        Where applicable data protection law requires safeguards for an
-        international transfer of personal information, we will take
-        appropriate steps to ensure that such safeguards are used.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>10. How Long We Keep Your Information</h2>
-
-      <p>
-        We retain personal information only for as long as reasonably
-        necessary for the purpose for which it was collected, including
-        providing services, maintaining appropriate business records,
-        resolving disputes and complying with legal, accounting or
-        regulatory obligations.
-      </p>
-
-      <p>
-        Retention periods may therefore vary according to the nature of the
-        information and our relationship with you.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>11. How We Protect Your Information</h2>
-
-      <p>
-        We take reasonable technical and organisational measures designed to
-        protect personal information against unauthorised access, alteration,
-        disclosure, loss or misuse.
-      </p>
-
-      <p>
-        However, no internet transmission or electronic storage system can
-        guarantee absolute security.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>12. Your Privacy Rights</h2>
-
-      <p>
-        Depending on where you live and the law that applies, you may have
-        rights concerning your personal information. These may include the
-        right to:
-      </p>
-
-      <ul>
-        <li>Request access to personal information we hold about you.</li>
-        <li>Request correction of inaccurate or incomplete information.</li>
-        <li>Request deletion of your information in certain circumstances.</li>
-        <li>Request restriction of processing in certain circumstances.</li>
-        <li>Object to certain processing.</li>
-        <li>Request data portability where applicable.</li>
-        <li>
-          Withdraw consent at any time where processing is based on consent.
-        </li>
-      </ul>
-
-      <p>
-        These rights are not absolute and may depend on the circumstances and
-        lawful basis under which your information is processed.
-      </p>
-
-      <p>
-        To exercise a privacy right, contact:
-        <a href="mailto:delora@mirelmarketing.com">
-          delora@mirelmarketing.com
-        </a>.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>13. Right to Object</h2>
-
-      <p>
-        <strong>
-          Where we process your personal information on the basis of
-          legitimate interests, you may have the right to object to that
-          processing.
-        </strong>
-      </p>
-
-      <p>
-        You also have the right to object to the use of your personal
-        information for direct marketing purposes.
-      </p>
-
-      <p>
-        To object, contact us at
-        <a href="mailto:delora@mirelmarketing.com">
-          delora@mirelmarketing.com
-        </a>.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>14. Complaints</h2>
-
-      <p>
-        If you have concerns about how Mirel Marketing handles your personal
-        information, please contact us first so that we can try to resolve
-        the matter.
-      </p>
-
-      <p>
-        Where UK data protection law applies, you also have the right to
-        complain to the Information Commissioner's Office (ICO), the UK's
-        independent data protection regulator.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>15. Third-Party Websites</h2>
-
-      <p>
-        Our website may contain links to websites or services operated by
-        third parties. Mirel Marketing is not responsible for the privacy
-        practices of those third parties.
-      </p>
-
-      <p>
-        We recommend reviewing the privacy information provided by any
-        third-party website or service before providing personal information.
-      </p>
-
-    </section>
-
-
-    <div class="legal-divider"></div>
-
-
-    <section class="legal-section">
-
-      <h2>16. Changes to This Privacy Policy</h2>
-
-      <p>
-        We may update this Privacy Policy from time to time to reflect changes
-        to our website, services, business practices or legal requirements.
-      </p>
-
-      <p>
-        The date at the top of this page indicates when this Privacy Policy
-        was most recently updated.
-      </p>
-
-    </section>
-
-
-    <section class="legal-contact">
-
-      <h2>Contact</h2>
-
-      <p>
-        If you have questions about this Privacy Policy or the way your
-        personal information is handled, please contact:
-      </p>
-
-      <p>
-        <strong>Mirel Marketing</strong><br>
-
-        <a href="mailto:delora@mirelmarketing.com">
-          delora@mirelmarketing.com
+        <a class="btn btn-light" href="resources.html">
+          Resources
         </a>
-      </p>
 
-    </section>
+      </div>
 
-  </main>
+    </div>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
 
-  <footer>
+    <main>
 
-    <div class="footer-logo">
-      <a href="index.html">
-        <div class="logo-main">MIRÈL</div>
-        <div class="logo-sub">MARKETING</div>
+
+      <!-- =========================
+           HERO
+      ========================== -->
+
+      <section class="legal-hero">
+
+        <p class="eyebrow">
+          Legal
+        </p>
+
+        <h1>
+          Privacy Policy
+        </h1>
+
+        <div class="legal-updated">
+          Last updated: 10 August 2026
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           LEGAL CONTENT
+      ========================== -->
+
+      <div class="legal-content">
+
+
+        <p class="legal-intro">
+          At Mirel Marketing, we respect your privacy and are committed
+          to handling personal information responsibly, transparently
+          and securely. This Privacy Policy explains how we collect,
+          use and protect information when you visit our website,
+          contact us, book a consultation or otherwise interact with
+          Mirel Marketing.
+        </p>
+
+
+
+        <section class="legal-section">
+
+          <h2>1. Who We Are</h2>
+
+          <p>
+            Mirel Marketing is a marketing and growth consultancy
+            serving businesses, including medical aesthetics and
+            med spa brands.
+          </p>
+
+          <p>
+            For the purposes of applicable data protection law,
+            the organisation responsible for determining how your
+            personal information is used is referred to as the
+            “data controller”.
+          </p>
+
+          <p>
+            If you have any questions about this Privacy Policy
+            or how your personal information is handled,
+            you can contact us at:
+          </p>
+
+          <p>
+            <a href="mailto:delora@mirelmarketing.com">
+              delora@mirelmarketing.com
+            </a>
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>2. Information We May Collect</h2>
+
+          <p>
+            Depending on how you interact with Mirel Marketing,
+            we may collect information including:
+          </p>
+
+          <ul>
+
+            <li>Your name.</li>
+
+            <li>Your email address.</li>
+
+            <li>Your telephone number, where provided.</li>
+
+            <li>Your company or clinic name.</li>
+
+            <li>Your job title or professional role.</li>
+
+            <li>
+              Information you provide when submitting an enquiry,
+              requesting information or booking a consultation.
+            </li>
+
+            <li>
+              Communications exchanged between you and Mirel Marketing.
+            </li>
+
+            <li>
+              Information relating to your business, marketing
+              objectives or service requirements where you choose
+              to provide it.
+            </li>
+
+            <li>
+              Technical information such as browser type,
+              device information, IP address and website usage
+              information where collected through website technologies.
+            </li>
+
+          </ul>
+
+          <p>
+            We ask that you do not provide medical records,
+            patient information or other sensitive personal
+            information through general website contact forms
+            or email unless specifically requested and an
+            appropriate arrangement has been established.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>3. How We Collect Information</h2>
+
+          <p>
+            We may collect personal information directly from
+            you when you:
+          </p>
+
+          <ul>
+
+            <li>Contact us by email.</li>
+
+            <li>Complete a website form.</li>
+
+            <li>Book or request a consultation.</li>
+
+            <li>Download or request a resource.</li>
+
+            <li>Subscribe to communications where available.</li>
+
+            <li>Enter into discussions about our services.</li>
+
+            <li>Become a client of Mirel Marketing.</li>
+
+          </ul>
+
+          <p>
+            Certain technical information may also be collected
+            automatically when you use the website through cookies,
+            server logs or similar technologies, depending on the
+            technologies enabled on the website.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>4. How We Use Your Information</h2>
+
+          <p>
+            We may use personal information for purposes including:
+          </p>
+
+          <ul>
+
+            <li>
+              Responding to enquiries and consultation requests.
+            </li>
+
+            <li>
+              Communicating with prospective and existing clients.
+            </li>
+
+            <li>
+              Providing requested services.
+            </li>
+
+            <li>
+              Preparing proposals, strategies or service
+              recommendations.
+            </li>
+
+            <li>
+              Managing client relationships.
+            </li>
+
+            <li>
+              Operating, maintaining and improving our website.
+            </li>
+
+            <li>
+              Understanding how visitors interact with our website.
+            </li>
+
+            <li>
+              Protecting our website, business and users from
+              misuse or security threats.
+            </li>
+
+            <li>
+              Maintaining appropriate business, accounting
+              and administrative records.
+            </li>
+
+            <li>
+              Complying with applicable legal and regulatory
+              requirements.
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>5. Our Lawful Bases for Processing</h2>
+
+          <p>
+            Where UK data protection law applies, we process
+            personal information only where we have an appropriate
+            lawful basis.
+          </p>
+
+          <p>
+            Depending on the circumstances, this may include:
+          </p>
+
+
+          <h3>Consent</h3>
+
+          <p>
+            Where you have given us permission to use your
+            information for a particular purpose.
+          </p>
+
+
+          <h3>Contract</h3>
+
+          <p>
+            Where processing is necessary to take steps at
+            your request before entering into a contract or
+            to perform a contract with you.
+          </p>
+
+
+          <h3>Legitimate Interests</h3>
+
+          <p>
+            Where processing is necessary for our legitimate
+            business interests, provided those interests are
+            not overridden by your rights and interests.
+            This may include responding to business enquiries,
+            managing client relationships, improving our services
+            and protecting our business.
+          </p>
+
+
+          <h3>Legal Obligation</h3>
+
+          <p>
+            Where we need to process information to comply
+            with a legal or regulatory obligation.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>6. Marketing Communications</h2>
+
+          <p>
+            Where permitted by applicable law, we may communicate
+            with business contacts about Mirel Marketing services,
+            resources or information that we believe may be relevant
+            to their professional interests.
+          </p>
+
+          <p>
+            Where consent is required, we will seek that consent
+            before sending marketing communications.
+          </p>
+
+          <p>
+            You can ask us to stop sending marketing communications
+            at any time by using any unsubscribe option provided
+            or by contacting us at
+            <a href="mailto:delora@mirelmarketing.com">
+              delora@mirelmarketing.com
+            </a>.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>7. Cookies and Similar Technologies</h2>
+
+          <p>
+            Our website may use cookies and similar technologies
+            to operate the website, remember preferences,
+            understand website performance or provide certain
+            features.
+          </p>
+
+          <p>
+            Some cookies are necessary for a website to function.
+            Other cookies, such as certain analytics or advertising
+            technologies, may require your consent depending
+            on applicable law.
+          </p>
+
+          <p>
+            Where required, non-essential cookies will only be
+            used after the appropriate consent has been obtained.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>8. Sharing Your Information</h2>
+
+          <p>
+            We do not sell your personal information.
+          </p>
+
+          <p>
+            We may share information with trusted third parties
+            where reasonably necessary for operating our business
+            or delivering our services.
+          </p>
+
+          <p>
+            These may include:
+          </p>
+
+          <ul>
+
+            <li>Website hosting and technical service providers.</li>
+
+            <li>Email and communication providers.</li>
+
+            <li>Scheduling and appointment-booking providers.</li>
+
+            <li>Cloud storage and business software providers.</li>
+
+            <li>Analytics providers where enabled.</li>
+
+            <li>
+              Professional advisers such as accountants
+              or legal advisers.
+            </li>
+
+            <li>
+              Government bodies, regulators or law-enforcement
+              authorities where disclosure is legally required.
+            </li>
+
+          </ul>
+
+          <p>
+            Where third parties process personal information on
+            our behalf, we take reasonable steps to ensure that
+            appropriate protections are in place.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>9. International Data Transfers</h2>
+
+          <p>
+            Some of the service providers used by Mirel Marketing
+            may process or store information outside the country
+            in which you are located.
+          </p>
+
+          <p>
+            Where applicable data protection law requires
+            safeguards for an international transfer of personal
+            information, we will take appropriate steps to ensure
+            that such safeguards are used.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>10. How Long We Keep Your Information</h2>
+
+          <p>
+            We retain personal information only for as long as
+            reasonably necessary for the purpose for which it
+            was collected, including providing services,
+            maintaining appropriate business records,
+            resolving disputes and complying with legal,
+            accounting or regulatory obligations.
+          </p>
+
+          <p>
+            Retention periods may therefore vary according
+            to the nature of the information and our relationship
+            with you.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>11. How We Protect Your Information</h2>
+
+          <p>
+            We take reasonable technical and organisational
+            measures designed to protect personal information
+            against unauthorised access, alteration, disclosure,
+            loss or misuse.
+          </p>
+
+          <p>
+            However, no internet transmission or electronic
+            storage system can guarantee absolute security.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>12. Your Privacy Rights</h2>
+
+          <p>
+            Depending on where you live and the law that applies,
+            you may have rights concerning your personal
+            information.
+          </p>
+
+          <p>
+            These may include the right to:
+          </p>
+
+          <ul>
+
+            <li>
+              Request access to personal information we hold
+              about you.
+            </li>
+
+            <li>
+              Request correction of inaccurate or incomplete
+              information.
+            </li>
+
+            <li>
+              Request deletion of your information in certain
+              circumstances.
+            </li>
+
+            <li>
+              Request restriction of processing in certain
+              circumstances.
+            </li>
+
+            <li>
+              Object to certain processing.
+            </li>
+
+            <li>
+              Request data portability where applicable.
+            </li>
+
+            <li>
+              Withdraw consent at any time where processing
+              is based on consent.
+            </li>
+
+          </ul>
+
+          <p>
+            These rights are not absolute and may depend on
+            the circumstances and lawful basis under which your
+            information is processed.
+          </p>
+
+          <p>
+            To exercise a privacy right, contact
+            <a href="mailto:delora@mirelmarketing.com">
+              delora@mirelmarketing.com
+            </a>.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>13. Right to Object</h2>
+
+          <p>
+            Where we process your personal information on the
+            basis of legitimate interests, you may have the
+            right to object to that processing.
+          </p>
+
+          <p>
+            You also have the right to object to the use
+            of your personal information for direct marketing
+            purposes.
+          </p>
+
+          <p>
+            To object, contact us at
+            <a href="mailto:delora@mirelmarketing.com">
+              delora@mirelmarketing.com
+            </a>.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>14. Complaints</h2>
+
+          <p>
+            If you have concerns about how Mirel Marketing
+            handles your personal information, please contact
+            us first so that we can try to resolve the matter.
+          </p>
+
+          <p>
+            Where UK data protection law applies, you also have
+            the right to complain to the Information Commissioner's
+            Office (ICO), the UK's independent data protection
+            regulator.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>15. Third-Party Websites</h2>
+
+          <p>
+            Our website may contain links to websites or services
+            operated by third parties.
+          </p>
+
+          <p>
+            Mirel Marketing is not responsible for the privacy
+            practices of those third parties. We recommend reviewing
+            the privacy information provided by any third-party
+            website or service before providing personal information.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-section">
+
+          <h2>16. Changes to This Privacy Policy</h2>
+
+          <p>
+            We may update this Privacy Policy from time to time
+            to reflect changes to our website, services,
+            business practices or legal requirements.
+          </p>
+
+          <p>
+            The date at the top of this page indicates when
+            this Privacy Policy was most recently updated.
+          </p>
+
+        </section>
+
+
+
+        <section class="legal-contact">
+
+          <h2>Contact</h2>
+
+          <p>
+            If you have questions about this Privacy Policy
+            or the way your personal information is handled,
+            please contact:
+          </p>
+
+          <p>
+            <strong>Mirel Marketing</strong>
+            <br>
+
+            <a href="mailto:delora@mirelmarketing.com">
+              delora@mirelmarketing.com
+            </a>
+          </p>
+
+        </section>
+
+
+      </div>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Mirel Marketing Home"
+      >
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
       </a>
-    </div>
 
-    <div class="footer-email">
+
       <a href="mailto:delora@mirelmarketing.com">
         delora@mirelmarketing.com
       </a>
-    </div>
 
-    <div class="footer-links">
-      <a href="#" target="_blank" rel="noopener">Instagram</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-    </div>
 
-  </footer>
+      <a href="#">
+        Instagram
+      </a>
+
+
+      <a href="privacy-policy.html">
+        Privacy Policy
+      </a>
+
+
+      <a href="terms-and-conditions.html">
+        Terms &amp; Conditions
+      </a>
+
+    </footer>
+
+
+  </div>
+
+
+
+  <script>
+
+    const nav =
+      document.querySelector('[data-nav]');
+
+    const menuToggle =
+      document.querySelector('[data-menu-toggle]');
+
+    const mobileMenu =
+      document.querySelector('[data-mobile-menu]');
+
+
+    let lastScroll = 0;
+
+
+    window.addEventListener('scroll', () => {
+
+      const currentScroll =
+        window.scrollY;
+
+
+      nav.classList.toggle(
+        'scrolled',
+        currentScroll > 16
+      );
+
+
+      if (
+        currentScroll > lastScroll &&
+        currentScroll > 120
+      ) {
+
+        nav.classList.add('hide');
+
+        mobileMenu?.classList.remove('open');
+
+        document.body.classList.remove(
+          'menu-open'
+        );
+
+      }
+
+      else {
+
+        nav.classList.remove('hide');
+
+      }
+
+
+      lastScroll = currentScroll;
+
+    });
+
+
+    if (menuToggle && mobileMenu) {
+
+      menuToggle.addEventListener(
+        'click',
+        (event) => {
+
+          event.stopPropagation();
+
+          mobileMenu.classList.toggle('open');
+
+          document.body.classList.toggle(
+            'menu-open'
+          );
+
+        }
+      );
+
+
+      mobileMenu.addEventListener(
+        'click',
+        (event) => {
+
+          event.stopPropagation();
+
+        }
+      );
+
+
+      document.addEventListener(
+        'click',
+        () => {
+
+          mobileMenu.classList.remove('open');
+
+          document.body.classList.remove(
+            'menu-open'
+          );
+
+        }
+      );
+
+    }
+
+  </script>
+
 
 </body>
-
 </html>
