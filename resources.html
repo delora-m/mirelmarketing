@@ -7,52 +7,93 @@
 
   <title>Resources | Mirel Marketing</title>
 
-  <meta name="description" content="Free med spa marketing resources, positioning checklists, brand audit worksheets, consultation funnel guides, and luxury growth frameworks by Mirel Marketing." />
+  <meta
+    name="description"
+    content="Free med spa marketing resources, positioning checklists, brand audit worksheets, consultation funnel guides, and luxury growth frameworks by Mirel Marketing."
+  />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=5" />
+
 
   <style>
+
+    /* =========================================================
+       RESOURCES PAGE
+    ========================================================= */
+
     .resources-page{
       background:#fbf7f1;
       color:var(--espresso-deep);
       overflow-x:hidden;
     }
 
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
     .resources-hero{
       display:grid;
       grid-template-columns:.86fr 1.14fr;
       min-height:680px;
+
       background:
-        radial-gradient(circle at 12% 16%,rgba(242,214,218,.42),transparent 30%),
-        radial-gradient(circle at 88% 8%,rgba(62,39,35,.08),transparent 31%),
-        linear-gradient(110deg,#fbf7f1 0%,#fbf7f1 52%,#efe3dc 100%);
+        radial-gradient(
+          circle at 12% 16%,
+          rgba(242,214,218,.42),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 88% 8%,
+          rgba(62,39,35,.08),
+          transparent 31%
+        ),
+        linear-gradient(
+          110deg,
+          #fbf7f1 0%,
+          #fbf7f1 52%,
+          #efe3dc 100%
+        );
+
       border-bottom:1px solid var(--line);
     }
 
+
     .resources-hero-copy{
       padding:92px 72px;
+
       display:flex;
       flex-direction:column;
       justify-content:center;
+
       position:relative;
       z-index:2;
     }
 
+
     .resources-hero h1{
       font-family:var(--serif);
+
       font-size:72px;
       line-height:.98;
       letter-spacing:-.045em;
       font-weight:500;
+
       color:var(--espresso-deep);
+
       margin:0 0 28px;
+
       max-width:660px;
     }
+
 
     .resources-hero h1 em{
       color:var(--rose);
@@ -60,570 +101,2353 @@
       font-weight:400;
     }
 
+
     .resources-hero-line{
       width:68px;
       height:1px;
+
       background:var(--rose);
+
       margin:0 0 30px;
     }
+
 
     .resources-hero p:not(.eyebrow){
       font-size:16px;
       line-height:1.9;
+
       color:var(--text-soft);
+
       max-width:540px;
+
       margin:0 0 34px;
     }
 
+
     .resources-hero-image{
       min-height:680px;
+
       background:
-        linear-gradient(90deg,rgba(251,247,241,.45),rgba(251,247,241,.05)),
-        url('images/mirel-marketing-books.jpg') center/cover no-repeat;
+        linear-gradient(
+          90deg,
+          rgba(251,247,241,.45),
+          rgba(251,247,241,.05)
+        ),
+        url('images/mirel-marketing-books.jpg?v=2')
+        center/cover no-repeat;
+
       position:relative;
     }
 
+
     .resources-hero-card{
       position:absolute;
+
       left:42px;
       bottom:42px;
+
       width:320px;
+
       padding:30px;
+
       background:rgba(251,247,241,.86);
+
       border:1px solid rgba(62,39,35,.12);
+
       backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
     }
+
 
     .resources-hero-card span{
       display:block;
+
       text-transform:uppercase;
       letter-spacing:.28em;
+
       font-size:9px;
       font-weight:700;
+
       color:var(--rose);
+
       margin-bottom:14px;
     }
 
+
     .resources-hero-card strong{
       display:block;
+
       font-family:var(--serif);
+
       font-size:30px;
       line-height:1.04;
       font-weight:500;
+
       color:var(--espresso-deep);
     }
 
+
+
+    /* =========================================================
+       FEATURED RESOURCE
+    ========================================================= */
+
     .featured-resource{
       padding:110px 72px;
+
       background:#fbf7f1;
+
       border-bottom:1px solid var(--line);
     }
 
+
     .featured-header{
       max-width:900px;
+
       margin:0 auto 70px;
+
       text-align:center;
     }
 
+
     .featured-header h2{
       font-family:var(--serif);
+
       font-size:64px;
       line-height:1;
       letter-spacing:-.045em;
       font-weight:500;
+
       color:var(--espresso-deep);
+
       margin:0 0 22px;
     }
 
+
     .featured-header p:not(.eyebrow){
       max-width:700px;
+
       margin:0 auto;
+
       color:var(--text-soft);
+
       font-size:15px;
       line-height:1.9;
     }
 
+
     .featured-card{
       display:grid;
+
       grid-template-columns:.9fr 1.1fr;
+
       gap:60px;
+
       max-width:1250px;
+
       margin:0 auto;
+
       align-items:center;
     }
 
+
+    .featured-image{
+      overflow:hidden;
+
+      background:#f2ebe5;
+
+      border:1px solid var(--line);
+    }
+
+
     .featured-image img{
       width:100%;
+
       display:block;
+
       object-fit:cover;
     }
 
+
     .featured-grid{
       display:grid;
+
       gap:24px;
     }
 
+
     .featured-grid article{
       padding:26px 0;
+
       border-bottom:1px solid rgba(62,39,35,.10);
     }
+
 
     .featured-grid article:last-child{
       border-bottom:none;
     }
 
+
     .featured-grid span{
       display:block;
+
       text-transform:uppercase;
+
       letter-spacing:.28em;
+
       font-size:11px;
       font-weight:700;
+
       color:var(--rose);
+
       margin-bottom:16px;
     }
 
+
     .featured-grid ul{
       margin:0;
+
       padding-left:18px;
     }
 
+
     .featured-grid li{
       color:var(--text-soft);
+
       font-size:14px;
       line-height:2;
     }
+
 
     .featured-actions{
       margin-top:36px;
     }
 
-    <section class="featured-resource reveal">
-  <div class="featured-header">
-    <p class="eyebrow">Featured Resource</p>
 
-    <h2>High-Ticket Consultation Framework</h2>
 
-    <p>
-      A premium consultation system designed to help med spas increase trust,
-      perceived value, consultation quality, and treatment acceptance rates.
-    </p>
-  </div>
+    /* =========================================================
+       RESOURCE LIBRARY
+    ========================================================= */
 
-  <div class="featured-card">
+    .resource-library{
+      padding:110px 72px 120px;
 
-    <div class="featured-image">
-      <img src="images/mirel-high-ticket-consultation-framework.jpg"
-           alt="High-Ticket Consultation Framework">
-    </div>
+      background:
+        radial-gradient(
+          circle at 8% 0%,
+          rgba(242,214,218,.22),
+          transparent 25%
+        ),
+        #f6eee8;
 
-    <div class="featured-content">
+      border-bottom:1px solid var(--line);
+    }
 
-      <div class="featured-grid">
 
-        <article>
-          <span>Who It's For</span>
+    .library-header{
+      max-width:900px;
 
-          <ul>
-            <li>Med Spa Owners</li>
-            <li>Clinic Managers</li>
-            <li>Treatment Coordinators</li>
-          </ul>
-        </article>
+      margin:0 auto 70px;
 
-        <article>
-          <span>What You'll Learn</span>
+      text-align:center;
+    }
 
-          <ul>
-            <li>Premium Consultation Structure</li>
-            <li>Trust-Building Psychology</li>
-            <li>Objection Reduction</li>
-            <li>Higher Treatment Acceptance</li>
-          </ul>
-        </article>
 
-        <article>
-          <span>What's Inside</span>
+    .library-header h2{
+      font-family:var(--serif);
 
-          <ul>
-            <li>Consultation Flow Blueprint</li>
-            <li>Patient Confidence Framework</li>
-            <li>Value Communication Checklist</li>
-            <li>Follow-Up Recommendations</li>
-          </ul>
-        </article>
+      font-size:56px;
+      line-height:1.02;
+      letter-spacing:-.04em;
+
+      font-weight:500;
+
+      color:var(--espresso-deep);
+
+      margin:0 0 22px;
+    }
+
+
+    .library-header p:not(.eyebrow){
+      max-width:720px;
+
+      margin:0 auto;
+
+      color:var(--text-soft);
+
+      font-size:15px;
+      line-height:1.9;
+    }
+
+
+    .resource-grid{
+      display:grid;
+
+      grid-template-columns:repeat(3,1fr);
+
+      gap:18px;
+
+      max-width:1280px;
+
+      margin:0 auto;
+    }
+
+
+    .resource-card{
+      min-height:310px;
+
+      padding:38px 34px;
+
+      background:rgba(251,247,241,.88);
+
+      border:1px solid rgba(62,39,35,.11);
+
+      display:flex;
+
+      flex-direction:column;
+
+      transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+    }
+
+
+    .resource-card:hover{
+      transform:translateY(-5px);
+
+      background:#fbf7f1;
+
+      box-shadow:0 20px 50px rgba(62,39,35,.08);
+    }
+
+
+    .resource-card > span{
+      display:block;
+
+      text-transform:uppercase;
+
+      letter-spacing:.28em;
+
+      font-size:9px;
+      font-weight:700;
+
+      color:var(--rose);
+
+      margin-bottom:24px;
+    }
+
+
+    .resource-card h3{
+      font-family:var(--serif);
+
+      font-size:31px;
+      line-height:1.05;
+
+      letter-spacing:-.025em;
+
+      font-weight:500;
+
+      color:var(--espresso-deep);
+
+      margin:0 0 18px;
+    }
+
+
+    .resource-card p{
+      font-size:14px;
+      line-height:1.8;
+
+      color:var(--text-soft);
+
+      margin:0 0 28px;
+    }
+
+
+    .resource-card a{
+      margin-top:auto;
+
+      font-size:12px;
+      font-weight:600;
+
+      letter-spacing:.04em;
+
+      color:var(--espresso-deep);
+
+      text-decoration:none;
+    }
+
+
+
+    /* =========================================================
+       FREE TOOLS
+    ========================================================= */
+
+    .free-tools{
+      display:grid;
+
+      grid-template-columns:.72fr 1.28fr;
+
+      gap:80px;
+
+      padding:110px 72px;
+
+      background:#fbf7f1;
+
+      border-bottom:1px solid var(--line);
+    }
+
+
+    .tools-copy{
+      align-self:start;
+
+      position:sticky;
+
+      top:120px;
+    }
+
+
+    .tools-copy h2{
+      font-family:var(--serif);
+
+      font-size:52px;
+      line-height:1.02;
+
+      letter-spacing:-.04em;
+
+      font-weight:500;
+
+      color:var(--espresso-deep);
+
+      margin:0 0 24px;
+    }
+
+
+    .tools-copy p:not(.eyebrow){
+      font-size:15px;
+      line-height:1.9;
+
+      color:var(--text-soft);
+
+      max-width:500px;
+
+      margin:0;
+    }
+
+
+    .tools-grid{
+      display:grid;
+
+      grid-template-columns:1fr 1fr;
+
+      gap:18px;
+    }
+
+
+    .tool-card{
+      min-height:300px;
+
+      padding:36px;
+
+      border:1px solid var(--line);
+
+      background:
+        linear-gradient(
+          145deg,
+          #f4ebe5,
+          #fbf7f1
+        );
+
+      display:flex;
+
+      flex-direction:column;
+    }
+
+
+    .tool-card > span{
+      display:block;
+
+      font-family:var(--serif);
+
+      font-size:38px;
+
+      color:var(--rose);
+
+      margin-bottom:32px;
+    }
+
+
+    .tool-card h3{
+      font-family:var(--serif);
+
+      font-size:31px;
+      line-height:1.05;
+
+      letter-spacing:-.025em;
+
+      font-weight:500;
+
+      color:var(--espresso-deep);
+
+      margin:0 0 18px;
+    }
+
+
+    .tool-card p{
+      color:var(--text-soft);
+
+      font-size:14px;
+      line-height:1.8;
+
+      margin:0 0 28px;
+    }
+
+
+    .tool-card a{
+      margin-top:auto;
+
+      text-decoration:none;
+
+      font-size:12px;
+      font-weight:600;
+
+      color:var(--espresso-deep);
+    }
+
+
+
+    /* =========================================================
+       MIREL PHILOSOPHY
+    ========================================================= */
+
+    .resources-philosophy{
+      display:grid;
+
+      grid-template-columns:1fr 1fr;
+
+      min-height:660px;
+
+      background:#f1e7df;
+
+      border-bottom:1px solid var(--line);
+    }
+
+
+    .resources-philosophy-image{
+      min-height:660px;
+
+      background:
+        linear-gradient(
+          rgba(29,15,12,.06),
+          rgba(29,15,12,.20)
+        ),
+        url('images/mirel-luxury-marketing.png?v=2')
+        center/cover no-repeat;
+    }
+
+
+    .resources-philosophy-copy{
+      padding:90px 72px;
+
+      display:flex;
+
+      flex-direction:column;
+
+      justify-content:center;
+    }
+
+
+    .resources-philosophy-copy h2{
+      font-family:var(--serif);
+
+      font-size:48px;
+      line-height:1.02;
+
+      letter-spacing:-.035em;
+
+      font-weight:500;
+
+      color:var(--espresso-deep);
+
+      margin:0 0 12px;
+    }
+
+
+    .resources-philosophy-copy h3{
+      font-family:var(--serif);
+
+      font-size:38px;
+      line-height:1.05;
+
+      letter-spacing:-.03em;
+
+      font-style:italic;
+
+      font-weight:400;
+
+      color:var(--rose);
+
+      margin:0;
+    }
+
+
+    .resources-line{
+      width:68px;
+      height:1px;
+
+      background:var(--rose);
+
+      margin:34px 0;
+    }
+
+
+    .resources-philosophy-copy p:not(.eyebrow){
+      font-size:15px;
+      line-height:1.9;
+
+      color:var(--text-soft);
+
+      max-width:570px;
+
+      margin:0 0 17px;
+    }
+
+
+
+    /* =========================================================
+       START HERE
+    ========================================================= */
+
+    .start-here{
+      padding:110px 72px;
+
+      background:#fbf7f1;
+
+      border-bottom:1px solid var(--line);
+    }
+
+
+    .start-copy{
+      max-width:820px;
+
+      margin:0 auto 64px;
+
+      text-align:center;
+    }
+
+
+    .start-copy h2{
+      font-family:var(--serif);
+
+      font-size:56px;
+      line-height:1.02;
+
+      letter-spacing:-.04em;
+
+      font-weight:500;
+
+      color:var(--espresso-deep);
+
+      margin:0 0 20px;
+    }
+
+
+    .start-copy p:not(.eyebrow){
+      color:var(--text-soft);
+
+      font-size:15px;
+      line-height:1.8;
+
+      margin:0 auto;
+    }
+
+
+    .start-grid{
+      display:grid;
+
+      grid-template-columns:repeat(2,1fr);
+
+      max-width:1200px;
+
+      margin:0 auto;
+
+      border-top:1px solid var(--line);
+
+      border-left:1px solid var(--line);
+    }
+
+
+    .start-grid article{
+      padding:46px;
+
+      min-height:300px;
+
+      border-right:1px solid var(--line);
+
+      border-bottom:1px solid var(--line);
+
+      display:flex;
+
+      flex-direction:column;
+    }
+
+
+    .start-grid article > span{
+      display:block;
+
+      font-family:var(--serif);
+
+      font-size:34px;
+
+      color:var(--rose);
+
+      margin-bottom:28px;
+    }
+
+
+    .start-grid h3{
+      font-family:var(--serif);
+
+      font-size:31px;
+      line-height:1.05;
+
+      letter-spacing:-.025em;
+
+      font-weight:500;
+
+      color:var(--espresso-deep);
+
+      margin:0 0 18px;
+    }
+
+
+    .start-grid p{
+      font-size:14px;
+      line-height:1.8;
+
+      color:var(--text-soft);
+
+      margin:0 0 28px;
+    }
+
+
+    .start-grid a{
+      margin-top:auto;
+
+      color:var(--espresso-deep);
+
+      text-decoration:none;
+
+      font-size:12px;
+
+      font-weight:600;
+    }
+
+
+
+    /* =========================================================
+       FINAL CTA
+    ========================================================= */
+
+    .resources-final-cta{
+      min-height:570px;
+
+      position:relative;
+
+      overflow:hidden;
+
+      background:var(--espresso-deep);
+    }
+
+
+    .resources-final-bg{
+      position:absolute;
+
+      inset:0;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(29,15,12,.93),
+          rgba(29,15,12,.73),
+          rgba(29,15,12,.45)
+        ),
+        url('images/mirel-treatment-experience.jpg')
+        center/cover no-repeat;
+    }
+
+
+    .resources-final-overlay{
+      position:relative;
+
+      z-index:2;
+
+      min-height:570px;
+
+      max-width:820px;
+
+      padding:90px 72px;
+
+      display:flex;
+
+      flex-direction:column;
+
+      justify-content:center;
+    }
+
+
+    .resources-final-overlay .eyebrow{
+      color:#d7b7b1;
+    }
+
+
+    .resources-final-overlay h2{
+      font-family:var(--serif);
+
+      font-size:58px;
+      line-height:1;
+
+      letter-spacing:-.04em;
+
+      font-weight:500;
+
+      color:#fbf7f1;
+
+      margin:0 0 26px;
+    }
+
+
+    .resources-final-overlay > p:not(.eyebrow){
+      max-width:660px;
+
+      color:rgba(251,247,241,.76);
+
+      font-size:15px;
+      line-height:1.9;
+
+      margin:0 0 34px;
+    }
+
+
+    .resources-final-overlay .hero-buttons{
+      display:flex;
+
+      flex-wrap:wrap;
+
+      gap:14px;
+    }
+
+
+
+    /* =========================================================
+       TABLET
+    ========================================================= */
+
+    @media (max-width:1180px){
+
+      .resources-hero{
+        grid-template-columns:1fr;
+      }
+
+
+      .resources-hero-image{
+        min-height:520px;
+      }
+
+
+      .featured-card{
+        grid-template-columns:1fr;
+      }
+
+
+      .resource-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+
+      .free-tools{
+        grid-template-columns:1fr;
+      }
+
+
+      .tools-copy{
+        position:static;
+
+        max-width:780px;
+      }
+
+
+      .resources-philosophy{
+        grid-template-columns:1fr;
+      }
+
+
+      .resources-philosophy-image{
+        min-height:520px;
+      }
+
+    }
+
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width:760px){
+
+      .resources-hero-copy{
+        padding:64px 22px;
+      }
+
+
+      .resources-hero h1{
+        font-size:48px;
+      }
+
+
+      .resources-hero p:not(.eyebrow){
+        font-size:14px;
+      }
+
+
+      .resources-hero-image{
+        min-height:420px;
+      }
+
+
+      .resources-hero-card{
+        width:auto;
+
+        left:22px;
+        right:22px;
+        bottom:22px;
+
+        padding:24px;
+      }
+
+
+      .resources-hero-card strong{
+        font-size:26px;
+      }
+
+
+      .featured-resource{
+        padding:70px 22px;
+      }
+
+
+      .featured-header{
+        margin-bottom:46px;
+      }
+
+
+      .featured-header h2{
+        font-size:43px;
+      }
+
+
+      .featured-card{
+        gap:38px;
+      }
+
+
+      .resource-library{
+        padding:70px 22px;
+      }
+
+
+      .library-header{
+        margin-bottom:46px;
+      }
+
+
+      .library-header h2{
+        font-size:40px;
+      }
+
+
+      .resource-grid{
+        grid-template-columns:1fr;
+      }
+
+
+      .resource-card{
+        min-height:270px;
+
+        padding:32px 27px;
+      }
+
+
+      .free-tools{
+        padding:70px 22px;
+
+        gap:46px;
+      }
+
+
+      .tools-copy h2{
+        font-size:40px;
+      }
+
+
+      .tools-grid{
+        grid-template-columns:1fr;
+      }
+
+
+      .tool-card{
+        min-height:260px;
+
+        padding:30px 27px;
+      }
+
+
+      .resources-philosophy-image{
+        min-height:400px;
+      }
+
+
+      .resources-philosophy-copy{
+        padding:64px 22px;
+      }
+
+
+      .resources-philosophy-copy h2{
+        font-size:39px;
+      }
+
+
+      .resources-philosophy-copy h3{
+        font-size:30px;
+      }
+
+
+      .start-here{
+        padding:70px 22px;
+      }
+
+
+      .start-copy{
+        margin-bottom:44px;
+      }
+
+
+      .start-copy h2{
+        font-size:40px;
+      }
+
+
+      .start-grid{
+        grid-template-columns:1fr;
+      }
+
+
+      .start-grid article{
+        padding:32px 27px;
+
+        min-height:260px;
+      }
+
+
+      .resources-final-overlay{
+        padding:70px 22px;
+
+        min-height:560px;
+      }
+
+
+      .resources-final-overlay h2{
+        font-size:43px;
+      }
+
+
+      .resources-final-overlay .hero-buttons{
+        flex-direction:column;
+
+        align-items:stretch;
+      }
+
+
+      .resources-final-overlay .btn{
+        width:100%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+
+<body class="resources-page">
+
+  <div class="site-shell">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="nav" data-nav>
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Mirel Marketing Home"
+      >
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
+      </a>
+
+
+      <nav
+        class="nav-links"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="services.html">
+          Services
+        </a>
+
+        <a href="systems.html">
+          Systems
+        </a>
+
+        <a href="results.html">
+          Results
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+
+      <div class="nav-actions">
+
+        <a
+          class="btn btn-dark"
+          href="contact.html"
+        >
+          Book Consultation
+        </a>
+
+        <a
+          class="btn btn-light"
+          href="resources.html"
+        >
+          Resources
+        </a>
 
       </div>
 
-      <div class="featured-actions">
 
-        <a href="resources/high-ticket-consultation-framework.html"
-           class="btn btn-dark btn-large">
-          View Resource
+      <button
+        class="mobile-menu-toggle"
+        data-menu-toggle
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MOBILE MENU
+    ====================================================== -->
+
+    <div
+      class="mobile-menu"
+      data-mobile-menu
+    >
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="services.html">
+        Services
+      </a>
+
+      <a href="systems.html">
+        Systems
+      </a>
+
+      <a href="results.html">
+        Results
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
+
+      <div class="mobile-menu-actions">
+
+        <a
+          class="btn btn-dark"
+          href="contact.html"
+        >
+          Book Consultation
+        </a>
+
+        <a
+          class="btn btn-light"
+          href="resources.html"
+        >
+          Resources
         </a>
 
       </div>
 
     </div>
 
-  </div>
-</section>
 
-<section class="resource-library reveal" id="resource-library">
 
-  <div class="library-header">
+    <main>
 
-    <p class="eyebrow">Resource Library</p>
 
-    <h2>
-      Browse free strategy tools for premium med spa growth.
-    </h2>
+      <!-- =====================================================
+           HERO
+      ====================================================== -->
 
-    <p>
-      Short, practical resources designed to help clinic owners improve positioning,
-      trust, conversion, content, patient acquisition, and client experience.
-    </p>
+      <section class="resources-hero">
 
-  </div>
 
-  <div class="resource-grid">
+        <div class="resources-hero-copy reveal">
 
-    <article class="resource-card">
-      <span>Positioning</span>
-      <h3>Luxury Med Spa Positioning Checklist</h3>
-      <p>Evaluate how premium, trusted, and differentiated your clinic feels online.</p>
-      <a href="resources/positioning-checklist.html">View Resource →</a>
-    </article>
+          <p class="eyebrow">
+            Mirel Resources
+          </p>
 
-    <article class="resource-card">
-      <span>Brand</span>
-      <h3>Premium Brand Audit Worksheet</h3>
-      <p>Review your visual identity, messaging, trust signals, and brand consistency.</p>
-      <a href="resources/brand-audit.html">View Resource →</a>
-    </article>
 
-    <article class="resource-card">
-      <span>Conversion</span>
-      <h3>Consultation Funnel Guide</h3>
-      <p>Map the journey from first click to booked consultation with less friction.</p>
-      <a href="resources/consultation-funnel.html">View Resource →</a>
-    </article>
+          <h1>
+            Strategy tools for
+            <em>premium</em>
+            med spa growth.
+          </h1>
 
-    <article class="resource-card">
-      <span>Psychology</span>
-      <h3>Patient Psychology Worksheet</h3>
-      <p>Understand what makes premium patients feel trust, safety, and desire.</p>
-      <a href="resources/patient-psychology.html">View Resource →</a>
-    </article>
 
-    <article class="resource-card">
-      <span>Content</span>
-      <h3>Luxury Content Planner</h3>
-      <p>Plan educational and trust-building content that supports premium perception.</p>
-      <a href="resources/luxury-content-planner.html">View Resource →</a>
-    </article>
+          <div class="resources-hero-line"></div>
 
-    <article class="resource-card">
-      <span>Website</span>
-      <h3>Premium Website Audit</h3>
-      <p>Check whether your homepage communicates quality before patients scroll.</p>
-      <a href="resources/premium-website-audit.html">View Resource →</a>
-    </article>
 
-    <article class="resource-card">
-      <span>Acquisition</span>
-      <h3>Premium Patient Acquisition Blueprint</h3>
-      <p>Understand how premium clinics attract better-fit patients consistently.</p>
-      <a href="resources/patient-acquisition-blueprint.html">View Resource →</a>
-    </article>
+          <p>
+            Free frameworks, audits, checklists, and growth tools
+            designed to help med spa owners strengthen positioning,
+            patient trust, conversion, acquisition, and client experience.
+          </p>
 
-        <article class="resource-card">
-      <span>AI</span>
-      <h3>AI For Med Spas Guide</h3>
-      <p>Use AI thoughtfully for content, patient communication, and internal systems.</p>
-      <a href="resources/ai-for-med-spas.html">View Resource →</a>
-    </article>
 
-    <article class="resource-card">
-      <span>Content</span>
-      <h3>Before & After Content Checklist</h3>
-      <p>Create transformation content that feels ethical, premium, and trust-building.</p>
-      <a href="resources/before-after-checklist.html">View Resource →</a>
-    </article>
+          <div class="hero-buttons">
 
-    <article class="resource-card">
-      <span>Experience</span>
-      <h3>Premium Client Experience Worksheet</h3>
-      <p>Improve the moments that shape trust before, during, and after booking.</p>
-      <a href="resources/client-experience.html">View Resource →</a>
-    </article>
+            <a
+              href="#resource-library"
+              class="btn btn-dark btn-large"
+            >
+              Browse Resources
+            </a>
 
-    <article class="resource-card">
-      <span>Consultations</span>
-      <h3>High-Ticket Consultation Framework</h3>
-      <p>Build consultations that increase confidence, perceived value, and treatment acceptance.</p>
-      <a href="resources/high-ticket-consultation-framework.html">View Resource →</a>
-    </article>
 
-  </div>
-</section>
+            <a
+              href="systems.html"
+              class="btn btn-outline btn-large"
+            >
+              Explore Our Systems
+            </a>
 
-<section class="free-tools reveal">
+          </div>
 
-  <div class="tools-copy">
+        </div>
 
-    <p class="eyebrow">Free Tools</p>
 
-    <h2>
-      Quick audits for clinic owners who want clarity before scaling.
-    </h2>
 
-    <p>
-      These tools are designed to help you identify what may be weakening trust,
-      perceived value, and conversion before investing more into traffic.
-    </p>
+        <div class="resources-hero-image reveal">
 
-  </div>
+          <div class="resources-hero-card">
 
-  <div class="tools-grid">
+            <span>
+              Mirel Marketing
+            </span>
 
-    <article class="tool-card">
-      <span>01</span>
-      <h3>Med Spa Positioning Score</h3>
-      <p>Score your clinic's perceived value and positioning in under five minutes.</p>
-      <a href="resources/positioning-score.html">Open Tool →</a>
-    </article>
+            <strong>
+              Build perception before buying more attention.
+            </strong>
 
-    <article class="tool-card">
-      <span>02</span>
-      <h3>Homepage First Impression Audit</h3>
-      <p>Evaluate whether your homepage communicates premium trust immediately.</p>
-      <a href="resources/homepage-audit.html">Open Tool →</a>
-    </article>
+          </div>
 
-    <article class="tool-card">
-      <span>03</span>
-      <h3>Consultation Funnel Audit</h3>
-      <p>Find weak points between first click, inquiry, and booked consultation.</p>
-      <a href="resources/funnel-audit.html">Open Tool →</a>
-    </article>
+        </div>
 
-    <article class="tool-card">
-      <span>04</span>
-      <h3>Premium Brand Scorecard</h3>
-      <p>Measure how well your brand creates trust, consistency, and perceived value.</p>
-      <a href="resources/brand-scorecard.html">Open Tool →</a>
-    </article>
 
-  </div>
+      </section>
 
-</section>
 
-<section class="resources-philosophy reveal">
 
-  <div class="resources-philosophy-image"></div>
+      <!-- =====================================================
+           FEATURED RESOURCE
+      ====================================================== -->
 
-  <div class="resources-philosophy-copy">
+      <section class="featured-resource reveal">
 
-    <p class="eyebrow">
-      The Mirel Philosophy
-    </p>
 
-    <h2>
-      Most clinics compete for attention.
-    </h2>
+        <div class="featured-header">
 
-    <h3>
-      Premium clinics compete for perception.
-    </h3>
+          <p class="eyebrow">
+            Featured Resource
+          </p>
 
-    <div class="resources-line"></div>
 
-    <p>
-      Patients decide how much they trust a clinic long before they book a consultation.
-    </p>
+          <h2>
+            High-Ticket Consultation Framework
+          </h2>
 
-    <p>
-      Every image, page, message, review, and interaction contributes to the feeling of confidence they experience.
-    </p>
 
-    <p>
-      That's why Mirel focuses on positioning, trust, conversion, patient acquisition,
-      and client experience before chasing more traffic.
-    </p>
+          <p>
+            A premium consultation system designed to help med spas
+            increase trust, perceived value, consultation quality,
+            and treatment acceptance rates.
+          </p>
 
-  </div>
+        </div>
 
-</section>
 
-    <section class="start-here reveal">
 
-  <div class="start-copy">
+        <div class="featured-card">
 
-    <p class="eyebrow">
-      Start Here
-    </p>
 
-    <h2>
-      Not sure which resource to open first?
-    </h2>
+          <div class="featured-image">
 
-    <p>
-      Choose based on the challenge your clinic is facing right now.
-    </p>
+            <img
+              src="images/mirel-high-ticket-consultation-framework.jpg"
+              alt="High-Ticket Consultation Framework"
+            >
 
-  </div>
+          </div>
 
-  <div class="start-grid">
 
-    <article>
 
-      <span>01</span>
+          <div class="featured-content">
 
-      <h3>
-        Your clinic looks generic online.
-      </h3>
 
-      <p>
-        Start with the Luxury Med Spa Positioning Checklist
-        to understand what weakens premium perception.
-      </p>
+            <div class="featured-grid">
 
-      <a href="resources/positioning-checklist.html">
-        Open Positioning Checklist →
+
+              <article>
+
+                <span>
+                  Who It's For
+                </span>
+
+                <ul>
+                  <li>Med Spa Owners</li>
+                  <li>Clinic Managers</li>
+                  <li>Treatment Coordinators</li>
+                </ul>
+
+              </article>
+
+
+
+              <article>
+
+                <span>
+                  What You'll Learn
+                </span>
+
+                <ul>
+                  <li>Premium Consultation Structure</li>
+                  <li>Trust-Building Psychology</li>
+                  <li>Objection Reduction</li>
+                  <li>Higher Treatment Acceptance</li>
+                </ul>
+
+              </article>
+
+
+
+              <article>
+
+                <span>
+                  What's Inside
+                </span>
+
+                <ul>
+                  <li>Consultation Flow Blueprint</li>
+                  <li>Patient Confidence Framework</li>
+                  <li>Value Communication Checklist</li>
+                  <li>Follow-Up Recommendations</li>
+                </ul>
+
+              </article>
+
+
+            </div>
+
+
+
+            <div class="featured-actions">
+
+              <a
+                href="resources/high-ticket-consultation-framework.html"
+                class="btn btn-dark btn-large"
+              >
+                View Resource
+              </a>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================================
+           RESOURCE LIBRARY
+      ====================================================== -->
+
+      <section
+        class="resource-library reveal"
+        id="resource-library"
+      >
+
+
+        <div class="library-header">
+
+          <p class="eyebrow">
+            Resource Library
+          </p>
+
+
+          <h2>
+            Browse free strategy tools for premium med spa growth.
+          </h2>
+
+
+          <p>
+            Short, practical resources designed to help clinic owners
+            improve positioning, trust, conversion, content,
+            patient acquisition, and client experience.
+          </p>
+
+        </div>
+
+
+
+        <div class="resource-grid">
+
+
+          <article class="resource-card">
+
+            <span>
+              Positioning
+            </span>
+
+            <h3>
+              Luxury Med Spa Positioning Checklist
+            </h3>
+
+            <p>
+              Evaluate how premium, trusted, and differentiated
+              your clinic feels online.
+            </p>
+
+            <a href="resources/positioning-checklist.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+
+          <article class="resource-card">
+
+            <span>
+              Brand
+            </span>
+
+            <h3>
+              Premium Brand Audit Worksheet
+            </h3>
+
+            <p>
+              Review your visual identity, messaging, trust signals,
+              and brand consistency.
+            </p>
+
+            <a href="resources/brand-audit.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+
+          <article class="resource-card">
+
+            <span>
+              Conversion
+            </span>
+
+            <h3>
+              Consultation Funnel Guide
+            </h3>
+
+            <p>
+              Map the journey from first click to booked consultation
+              with less friction.
+            </p>
+
+            <a href="resources/consultation-funnel.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+
+          <article class="resource-card">
+
+            <span>
+              Psychology
+            </span>
+
+            <h3>
+              Patient Psychology Worksheet
+            </h3>
+
+            <p>
+              Understand what makes premium patients feel trust,
+              safety, and desire.
+            </p>
+
+            <a href="resources/patient-psychology.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+
+          <article class="resource-card">
+
+            <span>
+              Content
+            </span>
+
+            <h3>
+              Luxury Content Planner
+            </h3>
+
+            <p>
+              Plan educational and trust-building content
+              that supports premium perception.
+            </p>
+
+            <a href="resources/luxury-content-planner.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+
+          <article class="resource-card">
+
+            <span>
+              Website
+            </span>
+
+            <h3>
+              Premium Website Audit
+            </h3>
+
+            <p>
+              Check whether your homepage communicates quality
+              before patients scroll.
+            </p>
+
+            <a href="resources/premium-website-audit.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+
+          <article class="resource-card">
+
+            <span>
+              Acquisition
+            </span>
+
+            <h3>
+              Premium Patient Acquisition Blueprint
+            </h3>
+
+            <p>
+              Understand how premium clinics attract better-fit
+              patients consistently.
+            </p>
+
+            <a href="resources/patient-acquisition-blueprint.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+
+          <article class="resource-card">
+
+            <span>
+              AI
+            </span>
+
+            <h3>
+              AI For Med Spas Guide
+            </h3>
+
+            <p>
+              Use AI thoughtfully for content,
+              patient communication, and internal systems.
+            </p>
+
+            <a href="resources/ai-for-med-spas.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+
+          <article class="resource-card">
+
+            <span>
+              Content
+            </span>
+
+            <h3>
+              Before &amp; After Content Checklist
+            </h3>
+
+            <p>
+              Create transformation content that feels ethical,
+              premium, and trust-building.
+            </p>
+
+            <a href="resources/before-after-checklist.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+
+          <article class="resource-card">
+
+            <span>
+              Experience
+            </span>
+
+            <h3>
+              Premium Client Experience Worksheet
+            </h3>
+
+            <p>
+              Improve the moments that shape trust before,
+              during, and after booking.
+            </p>
+
+            <a href="resources/client-experience.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+
+          <article class="resource-card">
+
+            <span>
+              Consultations
+            </span>
+
+            <h3>
+              High-Ticket Consultation Framework
+            </h3>
+
+            <p>
+              Build consultations that increase confidence,
+              perceived value, and treatment acceptance.
+            </p>
+
+            <a href="resources/high-ticket-consultation-framework.html">
+              View Resource →
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================================
+           FREE TOOLS
+      ====================================================== -->
+
+      <section class="free-tools reveal">
+
+
+        <div class="tools-copy">
+
+          <p class="eyebrow">
+            Free Tools
+          </p>
+
+
+          <h2>
+            Quick audits for clinic owners who want clarity before scaling.
+          </h2>
+
+
+          <p>
+            These tools are designed to help you identify what may
+            be weakening trust, perceived value, and conversion
+            before investing more into traffic.
+          </p>
+
+        </div>
+
+
+
+        <div class="tools-grid">
+
+
+          <article class="tool-card">
+
+            <span>
+              01
+            </span>
+
+            <h3>
+              Med Spa Positioning Score
+            </h3>
+
+            <p>
+              Score your clinic's perceived value and positioning
+              in under five minutes.
+            </p>
+
+            <a href="resources/positioning-score.html">
+              Open Tool →
+            </a>
+
+          </article>
+
+
+
+          <article class="tool-card">
+
+            <span>
+              02
+            </span>
+
+            <h3>
+              Homepage First Impression Audit
+            </h3>
+
+            <p>
+              Evaluate whether your homepage communicates
+              premium trust immediately.
+            </p>
+
+            <a href="resources/homepage-audit.html">
+              Open Tool →
+            </a>
+
+          </article>
+
+
+
+          <article class="tool-card">
+
+            <span>
+              03
+            </span>
+
+            <h3>
+              Consultation Funnel Audit
+            </h3>
+
+            <p>
+              Find weak points between first click,
+              inquiry, and booked consultation.
+            </p>
+
+            <a href="resources/funnel-audit.html">
+              Open Tool →
+            </a>
+
+          </article>
+
+
+
+          <article class="tool-card">
+
+            <span>
+              04
+            </span>
+
+            <h3>
+              Premium Brand Scorecard
+            </h3>
+
+            <p>
+              Measure how well your brand creates trust,
+              consistency, and perceived value.
+            </p>
+
+            <a href="resources/brand-scorecard.html">
+              Open Tool →
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================================
+           PHILOSOPHY
+      ====================================================== -->
+
+      <section class="resources-philosophy reveal">
+
+
+        <div class="resources-philosophy-image"></div>
+
+
+
+        <div class="resources-philosophy-copy">
+
+
+          <p class="eyebrow">
+            The Mirel Philosophy
+          </p>
+
+
+          <h2>
+            Most clinics compete for attention.
+          </h2>
+
+
+          <h3>
+            Premium clinics compete for perception.
+          </h3>
+
+
+          <div class="resources-line"></div>
+
+
+          <p>
+            Patients decide how much they trust a clinic
+            long before they book a consultation.
+          </p>
+
+
+          <p>
+            Every image, page, message, review, and interaction
+            contributes to the feeling of confidence they experience.
+          </p>
+
+
+          <p>
+            That's why Mirel focuses on positioning, trust,
+            conversion, patient acquisition, and client experience
+            before chasing more traffic.
+          </p>
+
+
+        </div>
+
+
+      </section>
+
+
+
+      <!-- =====================================================
+           START HERE
+      ====================================================== -->
+
+      <section class="start-here reveal">
+
+
+        <div class="start-copy">
+
+
+          <p class="eyebrow">
+            Start Here
+          </p>
+
+
+          <h2>
+            Not sure which resource to open first?
+          </h2>
+
+
+          <p>
+            Choose based on the challenge your clinic is facing right now.
+          </p>
+
+
+        </div>
+
+
+
+        <div class="start-grid">
+
+
+          <article>
+
+            <span>
+              01
+            </span>
+
+
+            <h3>
+              Your clinic looks generic online.
+            </h3>
+
+
+            <p>
+              Start with the Luxury Med Spa Positioning Checklist
+              to understand what weakens premium perception.
+            </p>
+
+
+            <a href="resources/positioning-checklist.html">
+              Open Positioning Checklist →
+            </a>
+
+          </article>
+
+
+
+          <article>
+
+            <span>
+              02
+            </span>
+
+
+            <h3>
+              Your website gets visitors but few consultations.
+            </h3>
+
+
+            <p>
+              Start with the Consultation Funnel Guide
+              to identify friction in the booking journey.
+            </p>
+
+
+            <a href="resources/consultation-funnel.html">
+              Open Funnel Guide →
+            </a>
+
+          </article>
+
+
+
+          <article>
+
+            <span>
+              03
+            </span>
+
+
+            <h3>
+              You need more premium patients.
+            </h3>
+
+
+            <p>
+              Start with the Premium Patient Acquisition Blueprint
+              to understand how premium clinics attract
+              higher-value patients consistently.
+            </p>
+
+
+            <a href="resources/patient-acquisition-blueprint.html">
+              Open Acquisition Blueprint →
+            </a>
+
+          </article>
+
+
+
+          <article>
+
+            <span>
+              04
+            </span>
+
+
+            <h3>
+              Consultations aren't converting into treatments.
+            </h3>
+
+
+            <p>
+              Start with the High-Ticket Consultation Framework
+              to improve trust, confidence, and treatment acceptance.
+            </p>
+
+
+            <a href="resources/high-ticket-consultation-framework.html">
+              Open Consultation Framework →
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================================
+           FINAL CTA
+      ====================================================== -->
+
+      <section class="resources-final-cta reveal">
+
+
+        <div class="resources-final-bg"></div>
+
+
+
+        <div class="resources-final-overlay">
+
+
+          <p class="eyebrow">
+            Ready For The Next Step?
+          </p>
+
+
+          <h2>
+            Resources create clarity.
+            Systems create growth.
+          </h2>
+
+
+          <p>
+            If you discover opportunities inside these resources,
+            explore the systems we use to help med spas build
+            stronger positioning, higher trust, better patient acquisition,
+            and more valuable patient experiences.
+          </p>
+
+
+          <div class="hero-buttons">
+
+
+            <a
+              href="systems.html"
+              class="btn btn-dark btn-large"
+            >
+              Explore Systems
+            </a>
+
+
+            <a
+              href="contact.html"
+              class="btn btn-light btn-large"
+            >
+              Book Consultation
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+
+      </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Mirel Marketing Home"
+      >
+
+        <span>
+          MIRÈL
+        </span>
+
+        <small>
+          MARKETING
+        </small>
+
       </a>
 
-    </article>
 
-    <article>
 
-      <span>02</span>
-
-      <h3>
-        Your website gets visitors but few consultations.
-      </h3>
-
-      <p>
-        Start with the Consultation Funnel Guide
-        to identify friction in the booking journey.
-      </p>
-
-      <a href="resources/consultation-funnel.html">
-        Open Funnel Guide →
+      <a href="mailto:delora@mirelmarketing.com">
+        delora@mirelmarketing.com
       </a>
 
-    </article>
 
-    <article>
 
-      <span>03</span>
-
-      <h3>
-        You need more premium patients.
-      </h3>
-
-      <p>
-        Start with the Premium Patient Acquisition Blueprint
-        to understand how premium clinics attract higher-value patients consistently.
-      </p>
-
-      <a href="resources/patient-acquisition-blueprint.html">
-        Open Acquisition Blueprint →
+      <a
+        href="https://www.instagram.com/mirelmarketing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
       </a>
 
-    </article>
 
-    <article>
 
-      <span>04</span>
-
-      <h3>
-        Consultations aren't converting into treatments.
-      </h3>
-
-      <p>
-        Start with the High-Ticket Consultation Framework
-        to improve trust, confidence, and treatment acceptance.
-      </p>
-
-      <a href="resources/high-ticket-consultation-framework.html">
-        Open Consultation Framework →
+      <a href="privacy-policy.html">
+        Privacy Policy
       </a>
 
-    </article>
+
+
+      <a href="terms-and-conditions.html">
+        Terms &amp; Conditions
+      </a>
+
+
+    </footer>
+
 
   </div>
 
-</section>
 
-<section class="resources-final-cta reveal">
 
-  <div class="resources-final-bg"></div>
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
 
-  <div class="resources-final-overlay">
+  <script>
 
-    <p class="eyebrow">
-      Ready For The Next Step?
-    </p>
+    /* -----------------------------
+       REVEAL ANIMATION
+    ------------------------------ */
 
-    <h2>
-      Resources create clarity.
-      Systems create growth.
-    </h2>
+    const items =
+      document.querySelectorAll('.reveal');
 
-    <p>
-      If you discover opportunities inside these resources,
-      explore the systems we use to help med spas build stronger positioning,
-      higher trust, better patient acquisition,
-      and more valuable patient experiences.
-    </p>
 
-    <div class="hero-buttons">
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
 
-      <a href="systems.html"
-         class="btn btn-dark btn-large">
-        Explore Systems
-      </a>
+          entries.forEach((entry) => {
 
-      <a href="contact.html"
-         class="btn btn-light btn-large">
-        Book Consultation
-      </a>
+            if (entry.isIntersecting) {
 
-    </div>
+              entry.target.classList.add('visible');
 
-  </div>
+            }
 
-</section>
+          });
 
-</main>
+        },
+        {
+          threshold:0.12
+        }
+      );
 
-<footer class="footer">
 
-  <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
-    <span>MIRÈL</span>
-    <small>MARKETING</small>
-  </a>
+    items.forEach((item) => {
 
-  <a href="mailto:delora@mirelmarketing.com">
-    delora@mirelmarketing.com
-  </a>
+      observer.observe(item);
 
-  <a
-    href="https://www.instagram.com/mirelmarketing"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Instagram
-  </a>
+    });
 
-  <a href="privacy-policy.html">
-    Privacy Policy
-  </a>
 
-  <a href="terms-and-conditions.html">
-    Terms &amp; Conditions
-  </a>
 
-</footer>
+    /* -----------------------------
+       NAVIGATION
+    ------------------------------ */
 
-</div>
+    const nav =
+      document.querySelector('[data-nav]');
+
+
+    const menuToggle =
+      document.querySelector('[data-menu-toggle]');
+
+
+    const mobileMenu =
+      document.querySelector('[data-mobile-menu]');
+
+
+    let lastScroll = 0;
+
+
+
+    window.addEventListener('scroll', () => {
+
+
+      const currentScroll =
+        window.scrollY;
+
+
+      if (nav) {
+
+        nav.classList.toggle(
+          'scrolled',
+          currentScroll > 16
+        );
+
+      }
+
+
+      if (
+        nav &&
+        currentScroll > lastScroll &&
+        currentScroll > 120
+      ) {
+
+        nav.classList.add('hide');
+
+        mobileMenu?.classList.remove('open');
+
+        document.body.classList.remove(
+          'menu-open'
+        );
+
+      }
+
+      else if (nav) {
+
+        nav.classList.remove('hide');
+
+      }
+
+
+      lastScroll =
+        currentScroll;
+
+
+    });
+
+
+
+    /* -----------------------------
+       MOBILE MENU
+    ------------------------------ */
+
+    if (
+      menuToggle &&
+      mobileMenu
+    ) {
+
+
+      menuToggle.addEventListener(
+        'click',
+        (event) => {
+
+
+          event.stopPropagation();
+
+
+          mobileMenu.classList.toggle(
+            'open'
+          );
+
+
+          document.body.classList.toggle(
+            'menu-open'
+          );
+
+
+        }
+      );
+
+
+
+      mobileMenu.addEventListener(
+        'click',
+        (event) => {
+
+          event.stopPropagation();
+
+        }
+      );
+
+
+
+      document.addEventListener(
+        'click',
+        () => {
+
+
+          mobileMenu.classList.remove(
+            'open'
+          );
+
+
+          document.body.classList.remove(
+            'menu-open'
+          );
+
+
+        }
+      );
+
+
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>
