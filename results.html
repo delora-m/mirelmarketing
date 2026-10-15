@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Results | Mirel Marketing</title>
-  <meta name="description" content="Selected concept work, strategic directions, and luxury growth systems for med spas and aesthetic clinics by Mirel Marketing." />
+  <meta
+    name="description"
+    content="Selected concept work, strategic directions, and luxury growth systems for med spas and aesthetic clinics by Mirel Marketing."
+  />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,19 +20,16 @@
 
   <link rel="stylesheet" href="style.css?v=4" />
 
-  <!-- PERFORMANCE: load first-screen image immediately -->
+  <!-- PERFORMANCE: HERO IMAGE -->
   <link
     rel="preload"
     as="image"
-    href="images/mirel-results-hero-showcase.png"
+    href="images/mirel-results-hero-showcase.webp"
+    type="image/webp"
     fetchpriority="high"
   >
 
-  <!--
-    PERFORMANCE:
-    Add JS class as early as possible so off-screen CSS
-    background images are not downloaded immediately.
-  -->
+  <!-- PERFORMANCE: ACTIVATE LAZY BACKGROUND SYSTEM -->
   <script>
     document.documentElement.classList.add('js-lazy-bg');
   </script>
@@ -94,7 +94,7 @@
       min-height:430px;
       background:
         linear-gradient(rgba(29,15,12,.03),rgba(29,15,12,.12)),
-        url('images/mirel-results-hero-showcase.png') center/cover no-repeat;
+        url('images/mirel-results-hero-showcase.webp') center/cover no-repeat;
       position:relative;
       box-shadow:inset 0 0 0 1px rgba(62,39,35,.12);
     }
@@ -113,8 +113,7 @@
 
     /* =========================================================
        PERFORMANCE ONLY
-       Keeps the exact same layout, dimensions and visual styling.
-       Images activate when the element approaches the viewport.
+       No visual/layout changes.
     ========================================================= */
 
     html.js-lazy-bg
@@ -170,12 +169,19 @@
 
     <header class="nav" data-nav>
 
-      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Mirel Marketing Home"
+      >
         <span>MIRÈL</span>
         <small>MARKETING</small>
       </a>
 
-      <nav class="nav-links" aria-label="Main navigation">
+      <nav
+        class="nav-links"
+        aria-label="Main navigation"
+      >
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
@@ -185,13 +191,21 @@
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-dark" href="contact.html">
+
+        <a
+          class="btn btn-dark"
+          href="contact.html"
+        >
           Book Consultation
         </a>
 
-        <a class="btn btn-light" href="resources.html">
+        <a
+          class="btn btn-light"
+          href="resources.html"
+        >
           Resources
         </a>
+
       </div>
 
       <button
@@ -204,7 +218,11 @@
 
     </header>
 
-    <div class="mobile-menu" data-mobile-menu>
+
+    <div
+      class="mobile-menu"
+      data-mobile-menu
+    >
 
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -215,16 +233,24 @@
 
       <div class="mobile-menu-actions">
 
-        <a class="btn btn-dark" href="contact.html">
+        <a
+          class="btn btn-dark"
+          href="contact.html"
+        >
           Book Consultation
         </a>
 
-        <a class="btn btn-light" href="resources.html">
+        <a
+          class="btn btn-light"
+          href="resources.html"
+        >
           Resources
         </a>
 
       </div>
+
     </div>
+
 
     <main>
 
@@ -594,11 +620,12 @@
 
         .concept-studies{
           padding:78px 72px 88px;
-          background:linear-gradient(
-            135deg,
-            #f4ebe5,
-            #fbf7f1 62%
-          );
+          background:
+            linear-gradient(
+              135deg,
+              #f4ebe5,
+              #fbf7f1 62%
+            );
           border-bottom:1px solid var(--line);
         }
 
@@ -703,7 +730,7 @@
               rgba(29,15,12,.05),
               rgba(29,15,12,.16)
             ),
-            url('images/mirel-results-luxury-injector.png');
+            url('images/mirel-results-luxury-injector.webp');
         }
 
         .concept-image-2{
@@ -712,7 +739,7 @@
               rgba(29,15,12,.05),
               rgba(29,15,12,.16)
             ),
-            url('images/mirel-results-wellness-spa.png');
+            url('images/mirel-results-wellness-spa.webp');
         }
 
         .concept-image-3{
@@ -721,7 +748,7 @@
               rgba(29,15,12,.05),
               rgba(29,15,12,.16)
             ),
-            url('images/mirel-results-skin-clinic.png');
+            url('images/mirel-results-skin-clinic.webp');
         }
       </style>
 
@@ -1005,11 +1032,12 @@
         .optimization-strip{
           padding:72px 72px 76px;
           text-align:center;
-          background:linear-gradient(
-            135deg,
-            #f4ebe5,
-            #fbf7f1 70%
-          );
+          background:
+            linear-gradient(
+              135deg,
+              #f4ebe5,
+              #fbf7f1 70%
+            );
           border-bottom:1px solid var(--line);
         }
 
@@ -1083,42 +1111,43 @@
           content:'';
           position:absolute;
           inset:0;
-          background:linear-gradient(
-            180deg,
-            rgba(62,39,35,.02),
-            rgba(62,39,35,.20)
-          );
+          background:
+            linear-gradient(
+              180deg,
+              rgba(62,39,35,.02),
+              rgba(62,39,35,.20)
+            );
           mix-blend-mode:multiply;
         }
 
         .vr1{
           background-image:
-            url('images/mirel-results-showcase-01.png');
+            url('images/mirel-results-showcase-01.webp');
         }
 
         .vr2{
           background-image:
-            url('images/mirel-results-brand-positioning.png');
+            url('images/mirel-results-brand-positioning.webp');
         }
 
         .vr3{
           background-image:
-            url('images/mirel-results-social-media-ecosystem.png');
+            url('images/mirel-results-social-media-ecosystem.webp');
         }
 
         .vr4{
           background-image:
-            url('images/mirel-results-brand-editorial.png');
+            url('images/mirel-results-brand-editorial.webp');
         }
 
         .vr5{
           background-image:
-            url('images/serum-dropper.jpg');
+            url('images/serum-dropper.webp');
         }
 
         .vr6{
           background-image:
-            url('images/mirel-results-case-study-presentation.png');
+            url('images/mirel-results-case-study-presentation.webp');
         }
       </style>
 
@@ -1292,7 +1321,7 @@
               rgba(29,15,12,.08),
               rgba(29,15,12,.25)
             ),
-            url('images/mirel-results-patient-desire.png')
+            url('images/mirel-results-patient-desire.webp')
             center/cover no-repeat;
         }
 
@@ -1591,7 +1620,7 @@
               rgba(29,15,12,.08),
               rgba(29,15,12,.28)
             ),
-            url('images/mirel-results-final-editorial.png')
+            url('images/mirel-results-final-editorial.webp')
             center/cover no-repeat;
         }
 
@@ -1649,11 +1678,9 @@
         <small>MARKETING</small>
       </a>
 
-
       <a href="mailto:delora@mirelmarketing.com">
         delora@mirelmarketing.com
       </a>
-
 
       <a
         href="https://www.instagram.com/mirelmarketing"
@@ -1663,11 +1690,9 @@
         Instagram
       </a>
 
-
       <a href="privacy-policy.html">
         Privacy Policy
       </a>
-
 
       <a href="terms-and-conditions.html">
         Terms &amp; Conditions
@@ -1685,7 +1710,7 @@
   <script>
 
     /* =========================================================
-       PERFORMANCE: LAZY LOAD OFF-SCREEN BACKGROUND IMAGES
+       PERFORMANCE: LAZY LOAD WEBP BACKGROUND IMAGES
     ========================================================= */
 
     const lazyBackgrounds = [
@@ -1693,67 +1718,67 @@
       {
         selector: '.concept-image-1',
         image:
-          "linear-gradient(rgba(29,15,12,.05), rgba(29,15,12,.16)), url('images/mirel-results-luxury-injector.png')"
+          "linear-gradient(rgba(29,15,12,.05), rgba(29,15,12,.16)), url('images/mirel-results-luxury-injector.webp')"
       },
 
       {
         selector: '.concept-image-2',
         image:
-          "linear-gradient(rgba(29,15,12,.05), rgba(29,15,12,.16)), url('images/mirel-results-wellness-spa.png')"
+          "linear-gradient(rgba(29,15,12,.05), rgba(29,15,12,.16)), url('images/mirel-results-wellness-spa.webp')"
       },
 
       {
         selector: '.concept-image-3',
         image:
-          "linear-gradient(rgba(29,15,12,.05), rgba(29,15,12,.16)), url('images/mirel-results-skin-clinic.png')"
+          "linear-gradient(rgba(29,15,12,.05), rgba(29,15,12,.16)), url('images/mirel-results-skin-clinic.webp')"
       },
 
       {
         selector: '.vr1',
         image:
-          "url('images/mirel-results-showcase-01.png')"
+          "url('images/mirel-results-showcase-01.webp')"
       },
 
       {
         selector: '.vr2',
         image:
-          "url('images/mirel-results-brand-positioning.png')"
+          "url('images/mirel-results-brand-positioning.webp')"
       },
 
       {
         selector: '.vr3',
         image:
-          "url('images/mirel-results-social-media-ecosystem.png')"
+          "url('images/mirel-results-social-media-ecosystem.webp')"
       },
 
       {
         selector: '.vr4',
         image:
-          "url('images/mirel-results-brand-editorial.png')"
+          "url('images/mirel-results-brand-editorial.webp')"
       },
 
       {
         selector: '.vr5',
         image:
-          "url('images/serum-dropper.jpg')"
+          "url('images/serum-dropper.webp')"
       },
 
       {
         selector: '.vr6',
         image:
-          "url('images/mirel-results-case-study-presentation.png')"
+          "url('images/mirel-results-case-study-presentation.webp')"
       },
 
       {
         selector: '.philosophy-image',
         image:
-          "linear-gradient(rgba(29,15,12,.08), rgba(29,15,12,.25)), url('images/mirel-results-patient-desire.png')"
+          "linear-gradient(rgba(29,15,12,.08), rgba(29,15,12,.25)), url('images/mirel-results-patient-desire.webp')"
       },
 
       {
         selector: '.results-final-image',
         image:
-          "linear-gradient(rgba(29,15,12,.08), rgba(29,15,12,.28)), url('images/mirel-results-final-editorial.png')"
+          "linear-gradient(rgba(29,15,12,.08), rgba(29,15,12,.28)), url('images/mirel-results-final-editorial.webp')"
       }
 
     ];
@@ -1799,11 +1824,6 @@
 
             if (image) {
 
-              /*
-                First remove the CSS performance override,
-                then apply the original exact image.
-              */
-
               entry.target.classList.add(
                 'lazy-bg-loaded'
               );
@@ -1823,12 +1843,7 @@
         },
 
         {
-          /*
-            Start loading before the user actually
-            reaches the image.
-          */
-
-          rootMargin:'900px 0px',
+          rootMargin:'1400px 0px',
           threshold:0.01
         }
 
