@@ -9,9 +9,30 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="style.css?v=4" />
+
+  <!-- PERFORMANCE: load first-screen image immediately -->
+  <link
+    rel="preload"
+    as="image"
+    href="images/mirel-results-hero-showcase.png"
+    fetchpriority="high"
+  >
+
+  <!--
+    PERFORMANCE:
+    Add JS class as early as possible so off-screen CSS
+    background images are not downloaded immediately.
+  -->
+  <script>
+    document.documentElement.classList.add('js-lazy-bg');
+  </script>
 
   <style>
     .results-page{
@@ -89,6 +110,58 @@
       font-size:10px;
       font-weight:700;
     }
+
+    /* =========================================================
+       PERFORMANCE ONLY
+       Keeps the exact same layout, dimensions and visual styling.
+       Images activate when the element approaches the viewport.
+    ========================================================= */
+
+    html.js-lazy-bg
+    .concept-image-1:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .concept-image-2:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .concept-image-3:not(.lazy-bg-loaded){
+      background-image:
+        linear-gradient(
+          rgba(29,15,12,.05),
+          rgba(29,15,12,.16)
+        ) !important;
+    }
+
+    html.js-lazy-bg
+    .vr1:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .vr2:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .vr3:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .vr4:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .vr5:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .vr6:not(.lazy-bg-loaded){
+      background-image:none !important;
+    }
+
+    html.js-lazy-bg
+    .philosophy-image:not(.lazy-bg-loaded){
+      background-image:
+        linear-gradient(
+          rgba(29,15,12,.08),
+          rgba(29,15,12,.25)
+        ) !important;
+    }
+
+    html.js-lazy-bg
+    .results-final-image:not(.lazy-bg-loaded){
+      background-image:
+        linear-gradient(
+          rgba(29,15,12,.08),
+          rgba(29,15,12,.28)
+        ) !important;
+    }
   </style>
 </head>
 
@@ -96,6 +169,7 @@
   <div class="site-shell">
 
     <header class="nav" data-nav>
+
       <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
         <span>MIRÈL</span>
         <small>MARKETING</small>
@@ -111,16 +185,27 @@
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-dark" href="contact.html">Book Consultation</a>
-        <a class="btn btn-light" href="resources.html">Resources</a>
+        <a class="btn btn-dark" href="contact.html">
+          Book Consultation
+        </a>
+
+        <a class="btn btn-light" href="resources.html">
+          Resources
+        </a>
       </div>
 
-      <button class="mobile-menu-toggle" data-menu-toggle aria-label="Open menu">
+      <button
+        class="mobile-menu-toggle"
+        data-menu-toggle
+        aria-label="Open menu"
+      >
         ☰
       </button>
+
     </header>
 
     <div class="mobile-menu" data-mobile-menu>
+
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -129,16 +214,31 @@
       <a href="contact.html">Contact</a>
 
       <div class="mobile-menu-actions">
-        <a class="btn btn-dark" href="contact.html">Book Consultation</a>
-        <a class="btn btn-light" href="resources.html">Resources</a>
+
+        <a class="btn btn-dark" href="contact.html">
+          Book Consultation
+        </a>
+
+        <a class="btn btn-light" href="resources.html">
+          Resources
+        </a>
+
       </div>
     </div>
 
     <main>
 
+      <!-- =====================================================
+           HERO
+      ====================================================== -->
+
       <section class="results-hero reveal">
+
         <div class="results-hero-copy">
-          <p class="eyebrow">Selected Work</p>
+
+          <p class="eyebrow">
+            Selected Work
+          </p>
 
           <h1>
             We build med spa brands designed to feel
@@ -148,82 +248,187 @@
           <div class="results-hero-line"></div>
 
           <p>
-            From luxury positioning to conversion-focused systems, every detail is crafted to elevate perception and attract the right patients.
+            From luxury positioning to conversion-focused systems,
+            every detail is crafted to elevate perception and attract
+            the right patients.
           </p>
 
           <div class="hero-buttons">
-            <a href="#process" class="btn btn-dark btn-large">View Our Process</a>
-            <a href="contact.html" class="btn btn-outline btn-large">Book a Consultation</a>
+
+            <a
+              href="#process"
+              class="btn btn-dark btn-large"
+            >
+              View Our Process
+            </a>
+
+            <a
+              href="contact.html"
+              class="btn btn-outline btn-large"
+            >
+              Book a Consultation
+            </a>
+
           </div>
+
         </div>
 
         <div class="results-hero-visual"></div>
+
       </section>
 
-      <section class="results-approach reveal" id="process">
+
+      <!-- =====================================================
+           APPROACH
+      ====================================================== -->
+
+      <section
+        class="results-approach reveal"
+        id="process"
+      >
+
         <div class="approach-copy">
-          <p class="eyebrow">Our Approach</p>
+
+          <p class="eyebrow">
+            Our Approach
+          </p>
 
           <h2>
             We focus on perception before promotion.
           </h2>
 
           <p>
-            Most clinics try to run ads before fixing positioning, branding, visual consistency, trust perception, and client experience.
+            Most clinics try to run ads before fixing positioning,
+            branding, visual consistency, trust perception,
+            and client experience.
           </p>
 
           <p>
-            We help clinics create a luxury digital presence before scaling traffic — because premium patients need to feel trust before they take action.
+            We help clinics create a luxury digital presence
+            before scaling traffic — because premium patients
+            need to feel trust before they take action.
           </p>
 
-          <a href="systems.html" class="text-link">
+          <a
+            href="systems.html"
+            class="text-link"
+          >
             View Our Process <span>→</span>
           </a>
+
         </div>
+
 
         <div class="approach-grid">
+
           <article>
+
             <span>01</span>
-            <h3>Positioning</h3>
-            <p>We define what makes your clinic feel different, refined, and valuable.</p>
+
+            <h3>
+              Positioning
+            </h3>
+
+            <p>
+              We define what makes your clinic feel different,
+              refined, and valuable.
+            </p>
+
           </article>
 
+
           <article>
+
             <span>02</span>
-            <h3>Branding</h3>
-            <p>We create a visual identity that feels luxurious, calm, and trustworthy.</p>
+
+            <h3>
+              Branding
+            </h3>
+
+            <p>
+              We create a visual identity that feels luxurious,
+              calm, and trustworthy.
+            </p>
+
           </article>
 
+
           <article>
+
             <span>03</span>
-            <h3>Conversion</h3>
-            <p>We design experiences that turn visitors into booked consultations.</p>
+
+            <h3>
+              Conversion
+            </h3>
+
+            <p>
+              We design experiences that turn visitors
+              into booked consultations.
+            </p>
+
           </article>
 
+
           <article>
+
             <span>04</span>
-            <h3>Growth Systems</h3>
-            <p>We build systems that attract, nurture, and retain the right clients.</p>
+
+            <h3>
+              Growth Systems
+            </h3>
+
+            <p>
+              We build systems that attract, nurture,
+              and retain the right clients.
+            </p>
+
           </article>
+
         </div>
+
       </section>
 
+
+      <!-- =====================================================
+           CONCEPT CASE STUDIES
+      ====================================================== -->
+
       <section class="concept-studies reveal">
+
         <div class="concept-header">
-          <p class="eyebrow">Concept Case Studies</p>
-          <h2>Strategic directions. Elevated outcomes.</h2>
-          <p>
-            These concept studies show the standard, thinking, and visual direction behind the type of med spa brands we build.
+
+          <p class="eyebrow">
+            Concept Case Studies
           </p>
+
+          <h2>
+            Strategic directions. Elevated outcomes.
+          </h2>
+
+          <p>
+            These concept studies show the standard,
+            thinking, and visual direction behind
+            the type of med spa brands we build.
+          </p>
+
         </div>
 
+
         <div class="concept-grid">
+
           <article class="concept-card">
+
             <div class="concept-copy">
+
               <span>01</span>
-              <h3>Luxury Injector Concept</h3>
+
+              <h3>
+                Luxury Injector Concept
+              </h3>
+
               <p>
-                Elevated perceived value and attraction for a refined, premium clientele.
+                Elevated perceived value and attraction
+                for a refined, premium clientele.
               </p>
 
               <ul>
@@ -233,18 +438,33 @@
                 <li>Premium consultation funnel</li>
               </ul>
 
-              <a href="contact.html" class="text-link">Discuss This Direction <span>→</span></a>
+              <a
+                href="contact.html"
+                class="text-link"
+              >
+                Discuss This Direction <span>→</span>
+              </a>
+
             </div>
 
             <div class="concept-image concept-image-1"></div>
+
           </article>
 
+
           <article class="concept-card">
+
             <div class="concept-copy">
+
               <span>02</span>
-              <h3>Wellness Spa Concept</h3>
+
+              <h3>
+                Wellness Spa Concept
+              </h3>
+
               <p>
-                A calm, trust-building brand direction for clinics that want to feel like a destination.
+                A calm, trust-building brand direction
+                for clinics that want to feel like a destination.
               </p>
 
               <ul>
@@ -254,18 +474,33 @@
                 <li>High-conversion content</li>
               </ul>
 
-              <a href="contact.html" class="text-link">Discuss This Direction <span>→</span></a>
+              <a
+                href="contact.html"
+                class="text-link"
+              >
+                Discuss This Direction <span>→</span>
+              </a>
+
             </div>
 
             <div class="concept-image concept-image-2"></div>
+
           </article>
 
+
           <article class="concept-card">
+
             <div class="concept-copy">
+
               <span>03</span>
-              <h3>Skin Clinic Concept</h3>
+
+              <h3>
+                Skin Clinic Concept
+              </h3>
+
               <p>
-                A polished skin-focused presence designed to create confidence before booking.
+                A polished skin-focused presence
+                designed to create confidence before booking.
               </p>
 
               <ul>
@@ -275,13 +510,23 @@
                 <li>Before-and-after storytelling</li>
               </ul>
 
-              <a href="contact.html" class="text-link">Discuss This Direction <span>→</span></a>
+              <a
+                href="contact.html"
+                class="text-link"
+              >
+                Discuss This Direction <span>→</span>
+              </a>
+
             </div>
 
             <div class="concept-image concept-image-3"></div>
+
           </article>
+
         </div>
+
       </section>
+
 
       <style>
         .results-approach{
@@ -349,7 +594,11 @@
 
         .concept-studies{
           padding:78px 72px 88px;
-          background:linear-gradient(135deg,#f4ebe5,#fbf7f1 62%);
+          background:linear-gradient(
+            135deg,
+            #f4ebe5,
+            #fbf7f1 62%
+          );
           border-bottom:1px solid var(--line);
         }
 
@@ -450,83 +699,178 @@
 
         .concept-image-1{
           background-image:
-          linear-gradient(rgba(29,15,12,.05),rgba(29,15,12,.16)),
-          url('images/mirel-results-luxury-injector.png');
+            linear-gradient(
+              rgba(29,15,12,.05),
+              rgba(29,15,12,.16)
+            ),
+            url('images/mirel-results-luxury-injector.png');
         }
 
         .concept-image-2{
           background-image:
-          linear-gradient(rgba(29,15,12,.05),rgba(29,15,12,.16)),
-          url('images/mirel-results-wellness-spa.png');
+            linear-gradient(
+              rgba(29,15,12,.05),
+              rgba(29,15,12,.16)
+            ),
+            url('images/mirel-results-wellness-spa.png');
         }
 
         .concept-image-3{
           background-image:
-          linear-gradient(rgba(29,15,12,.05),rgba(29,15,12,.16)),
-          url('images/mirel-results-skin-clinic.png');
+            linear-gradient(
+              rgba(29,15,12,.05),
+              rgba(29,15,12,.16)
+            ),
+            url('images/mirel-results-skin-clinic.png');
         }
       </style>
 
+
+      <!-- =====================================================
+           FREE VALUE
+      ====================================================== -->
+
       <section class="results-free-value reveal">
+
         <div class="free-value-copy">
-          <p class="eyebrow">Free Value</p>
+
+          <p class="eyebrow">
+            Free Value
+          </p>
 
           <h2>
-            What we would look at before spending one dollar on ads.
+            What we would look at before spending
+            one dollar on ads.
           </h2>
 
           <p>
-            A clinic does not need more traffic if the brand experience is not ready to convert premium patients. These are the first areas we would review before scaling.
+            A clinic does not need more traffic if the brand experience
+            is not ready to convert premium patients.
+            These are the first areas we would review before scaling.
           </p>
+
         </div>
+
 
         <div class="audit-grid">
+
           <article>
+
             <span>01</span>
-            <h3>First Impression</h3>
-            <p>Does your website instantly communicate safety, quality, and premium care?</p>
+
+            <h3>
+              First Impression
+            </h3>
+
+            <p>
+              Does your website instantly communicate
+              safety, quality, and premium care?
+            </p>
+
           </article>
 
+
           <article>
+
             <span>02</span>
-            <h3>Visual Consistency</h3>
-            <p>Do your ads, website, Instagram, and booking page feel like one brand?</p>
+
+            <h3>
+              Visual Consistency
+            </h3>
+
+            <p>
+              Do your ads, website, Instagram,
+              and booking page feel like one brand?
+            </p>
+
           </article>
 
+
           <article>
+
             <span>03</span>
-            <h3>Offer Clarity</h3>
-            <p>Can a visitor understand what you do, who it is for, and why it matters?</p>
+
+            <h3>
+              Offer Clarity
+            </h3>
+
+            <p>
+              Can a visitor understand what you do,
+              who it is for, and why it matters?
+            </p>
+
           </article>
 
+
           <article>
+
             <span>04</span>
-            <h3>Trust Signals</h3>
-            <p>Do you show expertise, process, reassurance, and patient confidence clearly?</p>
+
+            <h3>
+              Trust Signals
+            </h3>
+
+            <p>
+              Do you show expertise, process,
+              reassurance, and patient confidence clearly?
+            </p>
+
           </article>
 
+
           <article>
+
             <span>05</span>
-            <h3>Booking Path</h3>
-            <p>Is the next step obvious, low-friction, and emotionally reassuring?</p>
+
+            <h3>
+              Booking Path
+            </h3>
+
+            <p>
+              Is the next step obvious, low-friction,
+              and emotionally reassuring?
+            </p>
+
           </article>
 
+
           <article>
+
             <span>06</span>
-            <h3>Follow-Up</h3>
-            <p>Do interested leads receive thoughtful reminders before they forget you?</p>
+
+            <h3>
+              Follow-Up
+            </h3>
+
+            <p>
+              Do interested leads receive thoughtful
+              reminders before they forget you?
+            </p>
+
           </article>
+
         </div>
+
       </section>
 
+
+      <!-- =====================================================
+           OPTIMIZATION
+      ====================================================== -->
+
       <section class="optimization-strip reveal">
-        <p class="eyebrow">What We Optimize For</p>
+
+        <p class="eyebrow">
+          What We Optimize For
+        </p>
 
         <h2>
           We help clinics improve what truly matters.
         </h2>
 
+
         <div class="optimization-grid">
+
           <article>
             <span>✦</span>
             <p>Perceived Value</p>
@@ -556,21 +900,40 @@
             <span>✦</span>
             <p>Brand Consistency</p>
           </article>
+
         </div>
+
       </section>
+
+
+      <!-- =====================================================
+           VISUAL SHOWCASE
+      ====================================================== -->
 
       <section class="visual-showcase reveal">
-        <p class="eyebrow">Visual Showcase</p>
+
+        <p class="eyebrow">
+          Visual Showcase
+        </p>
 
         <div class="showcase-results-grid">
+
           <div class="showcase-result-img vr1"></div>
+
           <div class="showcase-result-img vr2"></div>
+
           <div class="showcase-result-img vr3"></div>
+
           <div class="showcase-result-img vr4"></div>
+
           <div class="showcase-result-img vr5"></div>
+
           <div class="showcase-result-img vr6"></div>
+
         </div>
+
       </section>
+
 
       <style>
         .results-free-value{
@@ -642,7 +1005,11 @@
         .optimization-strip{
           padding:72px 72px 76px;
           text-align:center;
-          background:linear-gradient(135deg,#f4ebe5,#fbf7f1 70%);
+          background:linear-gradient(
+            135deg,
+            #f4ebe5,
+            #fbf7f1 70%
+          );
           border-bottom:1px solid var(--line);
         }
 
@@ -716,82 +1083,138 @@
           content:'';
           position:absolute;
           inset:0;
-          background:linear-gradient(180deg,rgba(62,39,35,.02),rgba(62,39,35,.20));
+          background:linear-gradient(
+            180deg,
+            rgba(62,39,35,.02),
+            rgba(62,39,35,.20)
+          );
           mix-blend-mode:multiply;
         }
 
         .vr1{
-          background-image:url('images/mirel-results-showcase-01.png');
+          background-image:
+            url('images/mirel-results-showcase-01.png');
         }
 
         .vr2{
-          background-image:url('images/mirel-results-brand-positioning.png');
+          background-image:
+            url('images/mirel-results-brand-positioning.png');
         }
 
         .vr3{
-          background-image:url('images/mirel-results-social-media-ecosystem.png');
+          background-image:
+            url('images/mirel-results-social-media-ecosystem.png');
         }
 
         .vr4{
-          background-image:url('images/mirel-results-brand-editorial.png');
+          background-image:
+            url('images/mirel-results-brand-editorial.png');
         }
 
         .vr5{
-          background-image:url('images/serum-dropper.jpg');
+          background-image:
+            url('images/serum-dropper.jpg');
         }
 
         .vr6{
-          background-image:url('images/mirel-results-case-study-presentation.png');
+          background-image:
+            url('images/mirel-results-case-study-presentation.png');
         }
       </style>
 
+
+      <!-- =====================================================
+           COMMITMENT
+      ====================================================== -->
+
       <section class="results-ethics reveal">
+
         <div class="ethics-statement">
-          <p class="eyebrow">Our Commitment</p>
+
+          <p class="eyebrow">
+            Our Commitment
+          </p>
 
           <h2>
-            We are building a curated portfolio with intention — not pretending to have results we have not earned yet.
+            We are building a curated portfolio with intention —
+            not pretending to have results we have not earned yet.
           </h2>
 
           <p>
-            Mirel Marketing is currently presenting concept studies, strategic directions, and visual systems to show the standard of work we are building toward. Every project is approached with clarity, honesty, and long-term brand thinking.
+            Mirel Marketing is currently presenting concept studies,
+            strategic directions, and visual systems to show the standard
+            of work we are building toward. Every project is approached
+            with clarity, honesty, and long-term brand thinking.
           </p>
+
         </div>
+
 
         <div class="ethics-card">
-          <span>Why this matters</span>
+
+          <span>
+            Why this matters
+          </span>
 
           <p>
-            Trust starts before the first consultation. That applies to your clinic — and it applies to us too. We believe in showing our process clearly, presenting concept work honestly, and building proof through real client outcomes over time.
+            Trust starts before the first consultation.
+            That applies to your clinic — and it applies to us too.
+            We believe in showing our process clearly,
+            presenting concept work honestly,
+            and building proof through real client outcomes over time.
           </p>
+
         </div>
+
       </section>
 
+
+      <!-- =====================================================
+           PHILOSOPHY
+      ====================================================== -->
+
       <section class="results-philosophy reveal">
+
         <div class="philosophy-image"></div>
 
         <div class="philosophy-copy">
-          <p class="eyebrow">The Mirel Standard</p>
+
+          <p class="eyebrow">
+            The Mirel Standard
+          </p>
 
           <h2>
             We don’t believe med spas should look generic online.
           </h2>
 
           <p>
-            A clinic that delivers premium care should not feel like every other local business on the internet. The way your brand looks, speaks, follows up, and guides patients should reflect the quality of the experience you provide in person.
+            A clinic that delivers premium care should not feel
+            like every other local business on the internet.
+            The way your brand looks, speaks, follows up,
+            and guides patients should reflect the quality
+            of the experience you provide in person.
           </p>
 
           <p>
-            That is why our work focuses on perceived value, trust architecture, visual consistency, and systems that make your clinic feel easier to choose.
+            That is why our work focuses on perceived value,
+            trust architecture, visual consistency,
+            and systems that make your clinic feel easier to choose.
           </p>
+
         </div>
+
       </section>
 
+
       <section class="results-value-banner reveal">
+
         <p>
-          Luxury clinics deserve branding and systems that reflect the quality of their experience in person.
+          Luxury clinics deserve branding and systems that reflect
+          the quality of their experience in person.
         </p>
+
       </section>
+
 
       <style>
         .results-ethics{
@@ -826,7 +1249,11 @@
         .ethics-card{
           padding:42px 40px;
           background:
-            radial-gradient(circle at 95% 0%,rgba(242,214,218,.42),transparent 35%),
+            radial-gradient(
+              circle at 95% 0%,
+              rgba(242,214,218,.42),
+              transparent 35%
+            ),
             rgba(255,253,249,.56);
           border:1px solid rgba(62,39,35,.13);
         }
@@ -861,8 +1288,12 @@
         .philosophy-image{
           min-height:520px;
           background:
-            linear-gradient(rgba(29,15,12,.08),rgba(29,15,12,.25)),
-            url('images/mirel-results-patient-desire.png') center/cover no-repeat;
+            linear-gradient(
+              rgba(29,15,12,.08),
+              rgba(29,15,12,.25)
+            ),
+            url('images/mirel-results-patient-desire.png')
+            center/cover no-repeat;
         }
 
         .philosophy-copy{
@@ -871,7 +1302,11 @@
           flex-direction:column;
           justify-content:center;
           background:
-            radial-gradient(circle at 90% 35%,rgba(242,214,218,.38),transparent 28%),
+            radial-gradient(
+              circle at 90% 35%,
+              rgba(242,214,218,.38),
+              transparent 28%
+            ),
             #fbf7f1;
         }
 
@@ -913,69 +1348,157 @@
         }
       </style>
 
+
+      <!-- =====================================================
+           RESOURCES
+      ====================================================== -->
+
       <section class="results-resources reveal">
+
         <div class="resources-copy">
-          <p class="eyebrow">Free Resources</p>
+
+          <p class="eyebrow">
+            Free Resources
+          </p>
 
           <h2>
-            Start improving your clinic’s online perception before we ever speak.
+            Start improving your clinic’s online perception
+            before we ever speak.
           </h2>
 
           <p>
-            These free resources are designed to help med spa owners think more clearly about brand perception, patient trust, and the digital journey from first impression to consultation.
+            These free resources are designed to help med spa owners
+            think more clearly about brand perception,
+            patient trust, and the digital journey
+            from first impression to consultation.
           </p>
+
         </div>
+
 
         <div class="resources-grid">
+
           <article>
+
             <span>01</span>
-            <h3>Premium Website Checklist</h3>
+
+            <h3>
+              Premium Website Checklist
+            </h3>
+
             <p>
-              A simple review list to see whether your website feels premium, trustworthy, and easy to book from.
+              A simple review list to see whether your website
+              feels premium, trustworthy, and easy to book from.
             </p>
-            <a href="resources.html" class="text-link">View Resource <span>→</span></a>
+
+            <a
+              href="resources.html"
+              class="text-link"
+            >
+              View Resource <span>→</span>
+            </a>
+
           </article>
 
+
           <article>
+
             <span>02</span>
-            <h3>Med Spa Positioning Notes</h3>
+
+            <h3>
+              Med Spa Positioning Notes
+            </h3>
+
             <p>
-              A practical guide to help you understand why premium patients choose trust before price.
+              A practical guide to help you understand
+              why premium patients choose trust before price.
             </p>
-            <a href="resources.html" class="text-link">View Resource <span>→</span></a>
+
+            <a
+              href="resources.html"
+              class="text-link"
+            >
+              View Resource <span>→</span>
+            </a>
+
           </article>
 
+
           <article>
+
             <span>03</span>
-            <h3>Patient Journey Audit</h3>
+
+            <h3>
+              Patient Journey Audit
+            </h3>
+
             <p>
-              A quick way to check where potential patients lose confidence before booking a consultation.
+              A quick way to check where potential patients
+              lose confidence before booking a consultation.
             </p>
-            <a href="resources.html" class="text-link">View Resource <span>→</span></a>
+
+            <a
+              href="resources.html"
+              class="text-link"
+            >
+              View Resource <span>→</span>
+            </a>
+
           </article>
+
         </div>
+
       </section>
 
+
+      <!-- =====================================================
+           FINAL CTA
+      ====================================================== -->
+
       <section class="results-final reveal">
+
         <div class="results-final-image"></div>
 
         <div class="results-final-copy">
-          <p class="eyebrow">Ready to Elevate Your Clinic?</p>
+
+          <p class="eyebrow">
+            Ready to Elevate Your Clinic?
+          </p>
 
           <h2>
-            Let’s build a digital presence that feels as premium as your services.
+            Let’s build a digital presence that feels
+            as premium as your services.
           </h2>
 
           <p>
-            Book a consultation to explore how Mirel can help your clinic increase perceived value, improve patient trust, and create a more refined path to booking.
+            Book a consultation to explore how Mirel can help
+            your clinic increase perceived value,
+            improve patient trust,
+            and create a more refined path to booking.
           </p>
 
           <div class="final-actions">
-            <a href="contact.html" class="btn btn-pink btn-large">Book a Consultation</a>
-            <a href="systems.html" class="btn btn-outline btn-large">View Systems</a>
+
+            <a
+              href="contact.html"
+              class="btn btn-pink btn-large"
+            >
+              Book a Consultation
+            </a>
+
+            <a
+              href="systems.html"
+              class="btn btn-outline btn-large"
+            >
+              View Systems
+            </a>
+
           </div>
+
         </div>
+
       </section>
+
 
       <style>
         .results-resources{
@@ -984,8 +1507,16 @@
           gap:72px;
           padding:88px 72px;
           background:
-            radial-gradient(circle at 12% 20%,rgba(242,214,218,.30),transparent 30%),
-            linear-gradient(135deg,#fbf7f1,#f4ebe5 78%);
+            radial-gradient(
+              circle at 12% 20%,
+              rgba(242,214,218,.30),
+              transparent 30%
+            ),
+            linear-gradient(
+              135deg,
+              #fbf7f1,
+              #f4ebe5 78%
+            );
           border-bottom:1px solid var(--line);
         }
 
@@ -1056,8 +1587,12 @@
         .results-final-image{
           min-height:430px;
           background:
-            linear-gradient(rgba(29,15,12,.08),rgba(29,15,12,.28)),
-            url('images/mirel-results-final-editorial.png') center/cover no-repeat;
+            linear-gradient(
+              rgba(29,15,12,.08),
+              rgba(29,15,12,.28)
+            ),
+            url('images/mirel-results-final-editorial.png')
+            center/cover no-repeat;
         }
 
         .results-final-copy{
@@ -1098,15 +1633,27 @@
 
     </main>
 
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer class="footer">
-      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Mirel Marketing Home"
+      >
         <span>MIRÈL</span>
         <small>MARKETING</small>
       </a>
 
+
       <a href="mailto:delora@mirelmarketing.com">
         delora@mirelmarketing.com
       </a>
+
 
       <a
         href="https://www.instagram.com/mirelmarketing"
@@ -1116,74 +1663,374 @@
         Instagram
       </a>
 
+
       <a href="privacy-policy.html">
         Privacy Policy
       </a>
 
+
       <a href="terms-and-conditions.html">
         Terms &amp; Conditions
       </a>
+
     </footer>
 
   </div>
 
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
   <script>
-    const reveals = document.querySelectorAll('.reveal');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.12 });
+    /* =========================================================
+       PERFORMANCE: LAZY LOAD OFF-SCREEN BACKGROUND IMAGES
+    ========================================================= */
 
-    reveals.forEach(item => observer.observe(item));
+    const lazyBackgrounds = [
 
-    const nav = document.querySelector('[data-nav]');
-    const menuToggle = document.querySelector('[data-menu-toggle]');
-    const mobileMenu = document.querySelector('[data-mobile-menu]');
+      {
+        selector: '.concept-image-1',
+        image:
+          "linear-gradient(rgba(29,15,12,.05), rgba(29,15,12,.16)), url('images/mirel-results-luxury-injector.png')"
+      },
+
+      {
+        selector: '.concept-image-2',
+        image:
+          "linear-gradient(rgba(29,15,12,.05), rgba(29,15,12,.16)), url('images/mirel-results-wellness-spa.png')"
+      },
+
+      {
+        selector: '.concept-image-3',
+        image:
+          "linear-gradient(rgba(29,15,12,.05), rgba(29,15,12,.16)), url('images/mirel-results-skin-clinic.png')"
+      },
+
+      {
+        selector: '.vr1',
+        image:
+          "url('images/mirel-results-showcase-01.png')"
+      },
+
+      {
+        selector: '.vr2',
+        image:
+          "url('images/mirel-results-brand-positioning.png')"
+      },
+
+      {
+        selector: '.vr3',
+        image:
+          "url('images/mirel-results-social-media-ecosystem.png')"
+      },
+
+      {
+        selector: '.vr4',
+        image:
+          "url('images/mirel-results-brand-editorial.png')"
+      },
+
+      {
+        selector: '.vr5',
+        image:
+          "url('images/serum-dropper.jpg')"
+      },
+
+      {
+        selector: '.vr6',
+        image:
+          "url('images/mirel-results-case-study-presentation.png')"
+      },
+
+      {
+        selector: '.philosophy-image',
+        image:
+          "linear-gradient(rgba(29,15,12,.08), rgba(29,15,12,.25)), url('images/mirel-results-patient-desire.png')"
+      },
+
+      {
+        selector: '.results-final-image',
+        image:
+          "linear-gradient(rgba(29,15,12,.08), rgba(29,15,12,.28)), url('images/mirel-results-final-editorial.png')"
+      }
+
+    ];
+
+
+    const lazyBackgroundMap = new Map();
+
+
+    lazyBackgrounds.forEach((item) => {
+
+      const element =
+        document.querySelector(item.selector);
+
+      if (element) {
+
+        lazyBackgroundMap.set(
+          element,
+          item.image
+        );
+
+      }
+
+    });
+
+
+    const backgroundObserver =
+      new IntersectionObserver(
+
+        (entries, observer) => {
+
+          entries.forEach((entry) => {
+
+            if (!entry.isIntersecting) {
+              return;
+            }
+
+
+            const image =
+              lazyBackgroundMap.get(
+                entry.target
+              );
+
+
+            if (image) {
+
+              /*
+                First remove the CSS performance override,
+                then apply the original exact image.
+              */
+
+              entry.target.classList.add(
+                'lazy-bg-loaded'
+              );
+
+              entry.target.style.backgroundImage =
+                image;
+
+            }
+
+
+            observer.unobserve(
+              entry.target
+            );
+
+          });
+
+        },
+
+        {
+          /*
+            Start loading before the user actually
+            reaches the image.
+          */
+
+          rootMargin:'900px 0px',
+          threshold:0.01
+        }
+
+      );
+
+
+    lazyBackgroundMap.forEach(
+      (image, element) => {
+
+        backgroundObserver.observe(
+          element
+        );
+
+      }
+    );
+
+
+    /* =========================================================
+       REVEAL ANIMATION
+    ========================================================= */
+
+    const reveals =
+      document.querySelectorAll(
+        '.reveal'
+      );
+
+
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
+
+          entries.forEach(
+            entry => {
+
+              if (
+                entry.isIntersecting
+              ) {
+
+                entry.target
+                  .classList
+                  .add('visible');
+
+              }
+
+            }
+          );
+
+        },
+        {
+          threshold:0.12
+        }
+      );
+
+
+    reveals.forEach(
+      item =>
+        observer.observe(item)
+    );
+
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
+
+    const nav =
+      document.querySelector(
+        '[data-nav]'
+      );
+
+    const menuToggle =
+      document.querySelector(
+        '[data-menu-toggle]'
+      );
+
+    const mobileMenu =
+      document.querySelector(
+        '[data-mobile-menu]'
+      );
+
 
     let lastScroll = 0;
 
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.scrollY;
 
-      nav.classList.toggle('scrolled', currentScroll > 16);
+    window.addEventListener(
+      'scroll',
+      () => {
 
-      if (currentScroll > lastScroll && currentScroll > 120) {
-        nav.classList.add('hide');
+        const currentScroll =
+          window.scrollY;
 
-        mobileMenu?.classList.remove('open');
-        document.body.classList.remove('menu-open');
-      } else {
-        nav.classList.remove('hide');
+
+        nav.classList.toggle(
+          'scrolled',
+          currentScroll > 16
+        );
+
+
+        if (
+          currentScroll > lastScroll &&
+          currentScroll > 120
+        ) {
+
+          nav.classList.add(
+            'hide'
+          );
+
+
+          mobileMenu
+            ?.classList
+            .remove('open');
+
+
+          document.body
+            .classList
+            .remove('menu-open');
+
+        }
+
+        else {
+
+          nav.classList.remove(
+            'hide'
+          );
+
+        }
+
+
+        lastScroll =
+          currentScroll;
+
       }
+    );
 
-      lastScroll = currentScroll;
-    });
 
-    if (menuToggle && mobileMenu) {
-      menuToggle.addEventListener('click', (event) => {
-        event.stopPropagation();
+    /* =========================================================
+       MOBILE MENU
+    ========================================================= */
 
-        mobileMenu.classList.toggle('open');
+    if (
+      menuToggle &&
+      mobileMenu
+    ) {
 
-        document.body.classList.toggle('menu-open');
-      });
+      menuToggle.addEventListener(
+        'click',
+        (event) => {
 
-      mobileMenu.addEventListener('click', (event) => {
-        event.stopPropagation();
-      });
+          event.stopPropagation();
 
-      document.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
 
-        document.body.classList.remove('menu-open');
-      });
+          mobileMenu
+            .classList
+            .toggle('open');
+
+
+          document.body
+            .classList
+            .toggle('menu-open');
+
+        }
+      );
+
+
+      mobileMenu.addEventListener(
+        'click',
+        (event) => {
+
+          event.stopPropagation();
+
+        }
+      );
+
+
+      document.addEventListener(
+        'click',
+        () => {
+
+          mobileMenu
+            .classList
+            .remove('open');
+
+
+          document.body
+            .classList
+            .remove('menu-open');
+
+        }
+      );
+
     }
+
   </script>
 
+
+  <!-- =====================================================
+       RESPONSIVE
+  ====================================================== -->
+
   <style>
+
     @media (max-width:1180px){
+
       .results-hero,
       .results-approach,
       .results-free-value,
@@ -1194,6 +2041,7 @@
         grid-template-columns:1fr;
       }
 
+
       .results-hero,
       .results-approach,
       .concept-studies,
@@ -1205,13 +2053,16 @@
         padding-right:34px;
       }
 
+
       .results-hero{
         gap:48px;
       }
 
+
       .results-hero-visual{
         min-height:430px;
       }
+
 
       .approach-grid,
       .optimization-grid,
@@ -1220,56 +2071,70 @@
         border-left:0;
       }
 
+
       .approach-grid article,
       .resources-grid article{
         border-right:0;
         border-bottom:1px solid var(--line);
       }
 
+
       .optimization-grid article{
         border-right:0;
         border-bottom:1px solid var(--line);
       }
 
+
       .concept-grid{
         grid-template-columns:1fr;
       }
+
 
       .concept-card{
         grid-template-columns:1fr;
       }
 
+
       .audit-grid{
         grid-template-columns:1fr;
       }
 
+
       .showcase-results-grid{
         grid-template-columns:repeat(3,1fr);
       }
+
 
       .results-final-copy,
       .philosophy-copy{
         padding-left:34px;
         padding-right:34px;
       }
+
     }
 
+
     @media (max-width:760px){
+
       .results-hero{
         padding:54px 22px;
       }
+
 
       .results-hero h1{
         font-size:46px;
       }
 
+
       .results-hero p:not(.eyebrow){
         font-size:14px;
       }
 
+
       .results-hero-visual{
         min-height:300px;
       }
+
 
       .results-approach,
       .concept-studies,
@@ -1279,6 +2144,7 @@
       .results-resources{
         padding:54px 22px;
       }
+
 
       .approach-copy h2,
       .concept-header h2,
@@ -1291,71 +2157,89 @@
         font-size:38px;
       }
 
+
       .concept-card{
         min-height:auto;
       }
+
 
       .concept-image{
         min-height:280px;
       }
 
+
       .optimization-grid{
         grid-template-columns:1fr;
       }
+
 
       .showcase-results-grid{
         grid-template-columns:1fr 1fr;
       }
 
+
       .showcase-result-img{
         min-height:210px;
       }
+
 
       .ethics-card{
         padding:30px 24px;
       }
 
+
       .ethics-card p{
         font-size:24px;
       }
+
 
       .results-philosophy{
         grid-template-columns:1fr;
       }
 
+
       .philosophy-image{
         min-height:320px;
       }
+
 
       .philosophy-copy{
         padding:54px 22px;
       }
 
+
       .results-value-banner{
         padding:34px 22px;
       }
+
 
       .results-value-banner p{
         font-size:26px;
       }
 
+
       .results-final-image{
         min-height:320px;
       }
 
+
       .results-final-copy{
         padding:54px 22px;
       }
+
 
       .final-actions{
         flex-direction:column;
         align-items:stretch;
       }
 
+
       .final-actions .btn{
         width:100%;
       }
+
     }
+
   </style>
 
 </body>
