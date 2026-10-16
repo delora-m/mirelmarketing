@@ -8,66 +8,94 @@
 
 <title>The Mirel System | Luxury Growth Systems for Med Spas</title>
 
-<meta name="description"
-content="Luxury growth systems for med spas through positioning, conversion and patient retention." />
+<meta
+  name="description"
+  content="Luxury growth systems for med spas through positioning, conversion and patient retention."
+/>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
-rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+>
 
 <link rel="stylesheet" href="style.css?v=6">
 
+<!-- PERFORMANCE: PRIMARY SYSTEMS IMAGE -->
+<link
+  rel="preload"
+  as="image"
+  href="images/mirel-systems-hero.webp"
+  type="image/webp"
+  fetchpriority="high"
+>
+
+<!-- PERFORMANCE: ENABLE LAZY BACKGROUND SYSTEM -->
+<script>
+  document.documentElement.classList.add('js-lazy-bg');
+</script>
+
 <style>
 
-/* SYSTEMS PAGE */
+/* =========================================================
+   SYSTEMS PAGE
+========================================================= */
 
 .systems-page{
-background:#fbf7f1;
-overflow-x:hidden;
+  background:#fbf7f1;
+  overflow-x:hidden;
 }
 
 .systems-hero{
-display:grid;
-grid-template-columns:.95fr 1.05fr;
-min-height:760px;
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  min-height:760px;
 
-background:
-radial-gradient(circle at 15% 15%, rgba(242,214,218,.35), transparent 30%),
-radial-gradient(circle at 80% 15%, rgba(200,184,162,.15), transparent 30%),
-linear-gradient(
-110deg,
-#fbf7f1 0%,
-#fbf7f1 50%,
-#efe3dc 100%
-);
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(242,214,218,.35),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(200,184,162,.15),
+      transparent 30%
+    ),
+    linear-gradient(
+      110deg,
+      #fbf7f1 0%,
+      #fbf7f1 50%,
+      #efe3dc 100%
+    );
 
-border-bottom:1px solid var(--line);
+  border-bottom:1px solid var(--line);
 }
 
 .systems-hero-copy{
-padding:96px 72px;
-display:flex;
-flex-direction:column;
-justify-content:center;
+  padding:96px 72px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
 .systems-hero-copy h1{
-font-family:var(--serif);
-font-size:78px;
-line-height:.96;
-font-weight:500;
-letter-spacing:-.045em;
-color:var(--espresso-deep);
-margin:0 0 30px;
-max-width:700px;
+  font-family:var(--serif);
+  font-size:78px;
+  line-height:.96;
+  font-weight:500;
+  letter-spacing:-.045em;
+  color:var(--espresso-deep);
+  margin:0 0 30px;
+  max-width:700px;
 }
 
 .systems-hero-copy h1 em{
-font-style:italic;
-font-weight:400;
-color:var(--rose);
+  font-style:italic;
+  font-weight:400;
+  color:var(--rose);
 }
 
 .systems-hero-copy p:not(.eyebrow){
@@ -79,51 +107,74 @@ color:var(--rose);
 }
 
 .systems-editorial{
-display:grid;
-grid-template-columns:1.3fr .8fr;
-gap:14px;
-padding:96px 72px 96px 0;
-align-items:stretch;
+  display:grid;
+  grid-template-columns:1.3fr .8fr;
+  gap:14px;
+  padding:96px 72px 96px 0;
+  align-items:stretch;
 }
 
+
+/* =========================================================
+   ABOVE-THE-FOLD IMAGES
+   WEBP + EAGER
+========================================================= */
+
 .system-main{
-background:
-linear-gradient(rgba(29,15,12,.03),rgba(29,15,12,.15)),
-url('images/mirel-systems-hero.jpg');
-background-size:cover;
-background-position:center;
-position:relative;
-min-height:540px;
+  background:
+    linear-gradient(
+      rgba(29,15,12,.03),
+      rgba(29,15,12,.15)
+    ),
+    url('images/mirel-systems-hero.webp');
+
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  min-height:540px;
 }
 
 .system-side{
-display:grid;
-grid-template-rows:1fr 1fr;
-gap:14px;
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  gap:14px;
 }
 
 .system-card{
-position:relative;
-background-size:cover;
-background-position:center;
-overflow:hidden;
+  position:relative;
+  background-size:cover;
+  background-position:center;
+  overflow:hidden;
 }
 
 .system-card-1{
-background:
-linear-gradient(rgba(29,15,12,.03),rgba(29,15,12,.15)),
-url('images/mirel-positioning-system.jpg');
-background-size:cover;
-background-position:center;
+  background:
+    linear-gradient(
+      rgba(29,15,12,.03),
+      rgba(29,15,12,.15)
+    ),
+    url('images/mirel-positioning-system.webp');
+
+  background-size:cover;
+  background-position:center;
 }
 
 .system-card-2{
-background:
-linear-gradient(rgba(29,15,12,.03),rgba(29,15,12,.15)),
-url('images/mirel-ecosystem-system.jpg');
-background-size:cover;
-background-position:center;
+  background:
+    linear-gradient(
+      rgba(29,15,12,.03),
+      rgba(29,15,12,.15)
+    ),
+    url('images/mirel-ecosystem-system.webp');
+
+  background-size:cover;
+  background-position:center;
 }
+
+
+/* =========================================================
+   AUTHORITY STRIP
+========================================================= */
 
 .systems-note{
   padding:34px 72px;
@@ -142,6 +193,11 @@ background-position:center;
   margin:0 auto;
   letter-spacing:-.02em;
 }
+
+
+/* =========================================================
+   PILLARS
+========================================================= */
 
 .systems-pillars{
   padding:92px 72px 98px;
@@ -191,14 +247,26 @@ background-position:center;
   margin:0;
 }
 
+
+/* =========================================================
+   FULL IMAGE
+========================================================= */
+
 .systems-full-image{
   min-height:520px;
   display:flex;
   align-items:flex-end;
   padding:70px 72px;
+
   background:
-    linear-gradient(180deg,rgba(29,15,12,.08),rgba(29,15,12,.50)),
-    url('images/mirel-system-strategy2.jpg') center/cover no-repeat;
+    linear-gradient(
+      180deg,
+      rgba(29,15,12,.08),
+      rgba(29,15,12,.50)
+    ),
+    url('images/mirel-system-strategy2.webp')
+    center/cover no-repeat;
+
   border-bottom:1px solid var(--line);
 }
 
@@ -219,15 +287,30 @@ background-position:center;
   font-weight:400;
 }
 
+
+/* =========================================================
+   PATIENT JOURNEY
+========================================================= */
+
 .system-flow{
   display:grid;
   grid-template-columns:.9fr 1.1fr;
   gap:72px;
   align-items:center;
   padding:96px 72px;
+
   background:
-    radial-gradient(circle at 80% 18%, rgba(242,214,218,.28), transparent 34%),
-    linear-gradient(135deg,#f4ebe5,#fbf7f1 65%);
+    radial-gradient(
+      circle at 80% 18%,
+      rgba(242,214,218,.28),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #f4ebe5,
+      #fbf7f1 65%
+    );
+
   border-bottom:1px solid var(--line);
 }
 
@@ -295,6 +378,11 @@ background-position:center;
   margin:0;
 }
 
+
+/* =========================================================
+   BIG QUOTE
+========================================================= */
+
 .systems-big-quote{
   padding:96px 72px;
   text-align:center;
@@ -318,6 +406,11 @@ background-position:center;
   font-style:italic;
   font-weight:400;
 }
+
+
+/* =========================================================
+   WORLD
+========================================================= */
 
 .systems-world{
   background:#fbf7f1;
@@ -359,25 +452,41 @@ background-position:center;
   content:'';
   position:absolute;
   inset:0;
-  background:linear-gradient(180deg,rgba(62,39,35,.03),rgba(62,39,35,.18));
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(62,39,35,.03),
+      rgba(62,39,35,.18)
+    );
+
   mix-blend-mode:multiply;
 }
 
 .sw1{
-  background-image:url('images/mirel-systems-world-patient-payment.png');
+  background-image:
+    url('images/mirel-systems-world-patient-payment.webp');
 }
 
 .sw2{
-  background-image:url('images/mirel-ads-system2.jpg');
+  background-image:
+    url('images/mirel-ads-system2.webp');
 }
 
 .sw3{
-  background-image:url('images/mirel-followup-system.jpg');
+  background-image:
+    url('images/mirel-followup-system.webp');
 }
 
 .sw4{
-  background-image:url('images/mirel-systems-world-skincare.png');
+  background-image:
+    url('images/mirel-systems-world-skincare.webp');
 }
+
+
+/* =========================================================
+   POSITIONING
+========================================================= */
 
 .systems-position{
   padding:76px 72px;
@@ -403,6 +512,11 @@ background-position:center;
   font-weight:400;
 }
 
+
+/* =========================================================
+   FIT
+========================================================= */
+
 .systems-fit{
   display:grid;
   grid-template-columns:.9fr 1.1fr;
@@ -412,9 +526,14 @@ background-position:center;
 
 .systems-fit-image{
   min-height:520px;
+
   background:
-    linear-gradient(rgba(29,15,12,.04),rgba(29,15,12,.10)),
-    url('images/mirel-system-clinic-space.jpg') center/cover no-repeat;
+    linear-gradient(
+      rgba(29,15,12,.04),
+      rgba(29,15,12,.10)
+    ),
+    url('images/mirel-system-clinic-space.webp')
+    center/cover no-repeat;
 }
 
 .systems-fit-copy{
@@ -462,6 +581,11 @@ background-position:center;
   margin-right:14px;
 }
 
+
+/* =========================================================
+   AUTHORITY
+========================================================= */
+
 .authority-blush{
   padding:38px 72px;
   background:#f2d6da;
@@ -480,6 +604,11 @@ background-position:center;
   font-style:italic;
 }
 
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
 .systems-final{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -489,9 +618,14 @@ background-position:center;
 
 .final-image{
   min-height:430px;
+
   background:
-    linear-gradient(rgba(29,15,12,.04),rgba(29,15,12,.16)),
-    url('images/mirel-system-final-cta.jpg') center/cover no-repeat;
+    linear-gradient(
+      rgba(29,15,12,.04),
+      rgba(29,15,12,.16)
+    ),
+    url('images/mirel-system-final-cta.webp')
+    center/cover no-repeat;
 }
 
 .final-copy{
@@ -536,7 +670,57 @@ background-position:center;
   border-color:rgba(255,255,255,.36);
 }
 
-/* RESPONSIVE FIXES FOR SYSTEMS PAGE */
+
+/* =========================================================
+   PERFORMANCE: LAZY BACKGROUND PLACEHOLDERS
+
+   Only below-the-fold imagery is delayed.
+   Dimensions/layout remain exactly unchanged.
+========================================================= */
+
+html.js-lazy-bg
+.systems-full-image:not(.lazy-bg-loaded){
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(29,15,12,.08),
+      rgba(29,15,12,.50)
+    ) !important;
+}
+
+html.js-lazy-bg
+.sw1:not(.lazy-bg-loaded),
+html.js-lazy-bg
+.sw2:not(.lazy-bg-loaded),
+html.js-lazy-bg
+.sw3:not(.lazy-bg-loaded),
+html.js-lazy-bg
+.sw4:not(.lazy-bg-loaded){
+  background-image:none !important;
+}
+
+html.js-lazy-bg
+.systems-fit-image:not(.lazy-bg-loaded){
+  background-image:
+    linear-gradient(
+      rgba(29,15,12,.04),
+      rgba(29,15,12,.10)
+    ) !important;
+}
+
+html.js-lazy-bg
+.final-image:not(.lazy-bg-loaded){
+  background-image:
+    linear-gradient(
+      rgba(29,15,12,.04),
+      rgba(29,15,12,.16)
+    ) !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE FIXES FOR SYSTEMS PAGE
+========================================================= */
 
 @media (max-width:1180px){
 
@@ -581,6 +765,7 @@ background-position:center;
   }
 
 }
+
 
 @media (max-width:760px){
 
@@ -664,83 +849,97 @@ background-position:center;
 }
 
 
+/* =========================================================
+   HERO IMAGE LABELS
+========================================================= */
 
 .system-main span,
 .system-card span{
-position:absolute;
-left:24px;
-bottom:24px;
-font-size:10px;
-font-weight:700;
-letter-spacing:.30em;
-text-transform:uppercase;
-color:white;
+  position:absolute;
+  left:24px;
+  bottom:24px;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.30em;
+  text-transform:uppercase;
+  color:white;
 }
+
 
 @media (max-width:1180px){
 
-.systems-hero{
-grid-template-columns:1fr;
+  .systems-hero{
+    grid-template-columns:1fr;
+  }
+
+  .systems-editorial{
+    padding:0 34px 72px;
+    grid-template-columns:1fr;
+  }
+
+  .system-side{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:auto;
+  }
+
 }
 
-.systems-editorial{
-padding:0 34px 72px;
-grid-template-columns:1fr;
-}
-
-.system-side{
-grid-template-columns:1fr 1fr;
-grid-template-rows:auto;
-}
-
-}
 
 @media (max-width:760px){
 
-.systems-hero-copy{
-padding:56px 22px 42px;
+  .systems-hero-copy{
+    padding:56px 22px 42px;
+  }
+
+  .systems-hero-copy h1{
+    font-size:50px;
+  }
+
+  .systems-editorial{
+    padding:0 22px 54px;
+  }
+
+  .system-side{
+    grid-template-columns:1fr;
+  }
+
+  .system-main{
+    min-height:360px;
+  }
+
+  .system-card{
+    min-height:220px;
+  }
+
 }
 
-.systems-hero-copy h1{
-font-size:50px;
-}
 
-.systems-editorial{
-padding:0 22px 54px;
-}
-
-.system-side{
-grid-template-columns:1fr;
-}
-
-.system-main{
-min-height:360px;
-}
-
-.system-card{
-min-height:220px;
-}
-
-}
+/* =========================================================
+   REVEAL
+========================================================= */
 
 .reveal{
   opacity:0;
   transform:translateY(28px);
-  transition:opacity .9s ease,transform .9s ease;
+  transition:
+    opacity .9s ease,
+    transform .9s ease;
 }
 
 .reveal.visible{
   opacity:1;
   transform:translateY(0);
 }
-  
+
 </style>
 
 </head>
 
+
 <body class="systems-page">
 
 <div class="site-shell">
+
 
 <header class="nav" data-nav>
 
@@ -759,15 +958,33 @@ min-height:220px;
   </nav>
 
   <div class="nav-actions">
-    <a class="btn btn-dark" href="contact.html">Book Consultation</a>
-    <a class="btn btn-light" href="resources.html">Resources</a>
+
+    <a
+      class="btn btn-dark"
+      href="contact.html"
+    >
+      Book Consultation
+    </a>
+
+    <a
+      class="btn btn-light"
+      href="resources.html"
+    >
+      Resources
+    </a>
+
   </div>
 
-<button class="mobile-menu-toggle" data-menu-toggle aria-label="Open menu">
-  ☰
-</button>
+  <button
+    class="mobile-menu-toggle"
+    data-menu-toggle
+    aria-label="Open menu"
+  >
+    ☰
+  </button>
 
 </header>
+
 
 <div class="mobile-menu" data-mobile-menu>
 
@@ -778,83 +995,111 @@ min-height:220px;
   <a href="results.html">Results</a>
   <a href="contact.html">Contact</a>
 
-<div class="mobile-menu-actions">
-  <a class="btn btn-dark" href="contact.html">Book Consultation</a>
-  <a class="btn btn-light" href="resources.html">Resources</a>
-</div>
+  <div class="mobile-menu-actions">
+
+    <a
+      class="btn btn-dark"
+      href="contact.html"
+    >
+      Book Consultation
+    </a>
+
+    <a
+      class="btn btn-light"
+      href="resources.html"
+    >
+      Resources
+    </a>
 
   </div>
 
+</div>
+
+
 <main>
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
 
 <section class="systems-hero">
 
-<div class="systems-hero-copy">
+  <div class="systems-hero-copy">
 
-<p class="eyebrow">
-The Mirel System
-</p>
+    <p class="eyebrow">
+      The Mirel System
+    </p>
 
-<h1>
-A luxury growth system built for <em>med spas.</em>
-</h1>
+    <h1>
+      A luxury growth system built for
+      <em>med spas.</em>
+    </h1>
 
-<p>
-A refined framework designed to attract,
-convert and retain higher-value patients
-through premium positioning, paid advertising,
-conversion systems and patient nurturing.
-</p>
+    <p>
+      A refined framework designed to attract,
+      convert and retain higher-value patients
+      through premium positioning, paid advertising,
+      conversion systems and patient nurturing.
+    </p>
 
-<div class="hero-buttons">
+    <div class="hero-buttons">
 
-<a href="contact.html"
-class="btn btn-dark btn-large">
-Book Consultation
-</a>
+      <a
+        href="contact.html"
+        class="btn btn-dark btn-large"
+      >
+        Book Consultation
+      </a>
 
-<a href="results.html"
-class="btn btn-outline btn-large">
-View Results
-</a>
+      <a
+        href="results.html"
+        class="btn btn-outline btn-large"
+      >
+        View Results
+      </a>
 
-</div>
+    </div>
 
-<div class="hero-note">
+    <div class="hero-note">
 
-<span>
-Positioning • Conversion • Retention
-</span>
+      <span>
+        Positioning • Conversion • Retention
+      </span>
 
-<i></i>
+      <i></i>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
-<div class="systems-editorial">
 
-<div class="system-main">
-<span>System</span>
-</div>
+  <div class="systems-editorial">
 
-<div class="system-side">
+    <div class="system-main">
+      <span>System</span>
+    </div>
 
-<div class="system-card system-card-1">
-<span>Positioning</span>
-</div>
+    <div class="system-side">
 
-<div class="system-card system-card-2">
-<span>Experience</span>
-</div>
+      <div class="system-card system-card-1">
+        <span>Positioning</span>
+      </div>
 
-</div>
+      <div class="system-card system-card-2">
+        <span>Experience</span>
+      </div>
 
-</div>
+    </div>
+
+  </div>
 
 </section>
 
-<!-- AUTHORITY STRIP -->
+
+<!-- =====================================================
+     AUTHORITY STRIP
+====================================================== -->
 
 <section class="systems-note reveal">
 
@@ -866,7 +1111,9 @@ Positioning • Conversion • Retention
 </section>
 
 
-<!-- 3 PILLARS -->
+<!-- =====================================================
+     3 PILLARS
+====================================================== -->
 
 <section class="systems-pillars reveal">
 
@@ -881,7 +1128,9 @@ Positioning • Conversion • Retention
 
       <span>01</span>
 
-      <h3>Positioning</h3>
+      <h3>
+        Positioning
+      </h3>
 
       <p>
         We shape how your clinic is perceived
@@ -891,11 +1140,14 @@ Positioning • Conversion • Retention
 
     </article>
 
+
     <article class="systems-pillar">
 
       <span>02</span>
 
-      <h3>Conversion</h3>
+      <h3>
+        Conversion
+      </h3>
 
       <p>
         We turn attention into consultations
@@ -905,11 +1157,14 @@ Positioning • Conversion • Retention
 
     </article>
 
+
     <article class="systems-pillar">
 
       <span>03</span>
 
-      <h3>Retention</h3>
+      <h3>
+        Retention
+      </h3>
 
       <p>
         We create consistency across every touchpoint
@@ -924,7 +1179,9 @@ Positioning • Conversion • Retention
 </section>
 
 
-<!-- FULL WIDTH EDITORIAL IMAGE -->
+<!-- =====================================================
+     FULL WIDTH EDITORIAL IMAGE
+====================================================== -->
 
 <section class="systems-full-image reveal">
 
@@ -943,7 +1200,10 @@ Positioning • Conversion • Retention
 
 </section>
 
-<!-- PATIENT JOURNEY FLOW -->
+
+<!-- =====================================================
+     PATIENT JOURNEY FLOW
+====================================================== -->
 
 <section class="system-flow reveal">
 
@@ -972,44 +1232,72 @@ Positioning • Conversion • Retention
 
   </div>
 
+
   <div class="flow-poster">
 
     <div class="flow-line">
 
       <div>
+
         <span>01</span>
-        <strong>Attract</strong>
+
+        <strong>
+          Attract
+        </strong>
+
         <p>
           Premium creative and paid ads that speak to
           desire, safety, and transformation.
         </p>
+
       </div>
 
+
       <div>
+
         <span>02</span>
-        <strong>Convert</strong>
+
+        <strong>
+          Convert
+        </strong>
+
         <p>
           Landing pages that remove doubt,
           clarify value, and make booking obvious.
         </p>
+
       </div>
 
+
       <div>
+
         <span>03</span>
-        <strong>Nurture</strong>
+
+        <strong>
+          Nurture
+        </strong>
+
         <p>
           Email and SMS follow-up so interest becomes
           consultation instead of a forgotten lead.
         </p>
+
       </div>
 
+
       <div>
+
         <span>04</span>
-        <strong>Retain</strong>
+
+        <strong>
+          Retain
+        </strong>
+
         <p>
           Brand consistency that helps patients return,
           refer, and trust higher-value offers.
         </p>
+
       </div>
 
     </div>
@@ -1018,7 +1306,10 @@ Positioning • Conversion • Retention
 
 </section>
 
-<!-- BIG QUOTE -->
+
+<!-- =====================================================
+     BIG QUOTE
+====================================================== -->
 
 <section class="systems-big-quote reveal">
 
@@ -1036,7 +1327,9 @@ Positioning • Conversion • Retention
 </section>
 
 
-<!-- EDITORIAL GRID -->
+<!-- =====================================================
+     EDITORIAL GRID
+====================================================== -->
 
 <section class="systems-world reveal">
 
@@ -1051,6 +1344,7 @@ Positioning • Conversion • Retention
     </h2>
 
   </div>
+
 
   <div class="systems-world-grid">
 
@@ -1067,7 +1361,9 @@ Positioning • Conversion • Retention
 </section>
 
 
-<!-- POSITIONING STRIP -->
+<!-- =====================================================
+     POSITIONING STRIP
+====================================================== -->
 
 <section class="systems-position reveal">
 
@@ -1080,7 +1376,10 @@ Positioning • Conversion • Retention
 
 </section>
 
-<!-- QUALIFICATION SECTION -->
+
+<!-- =====================================================
+     QUALIFICATION SECTION
+====================================================== -->
 
 <section class="systems-fit reveal">
 
@@ -1133,7 +1432,9 @@ Positioning • Conversion • Retention
 </section>
 
 
-<!-- BLUSH AUTHORITY STRIP -->
+<!-- =====================================================
+     BLUSH AUTHORITY STRIP
+====================================================== -->
 
 <section class="authority-blush reveal">
 
@@ -1145,7 +1446,10 @@ Positioning • Conversion • Retention
 
 </section>
 
-<!-- FINAL CTA -->
+
+<!-- =====================================================
+     FINAL CTA
+====================================================== -->
 
 <section class="systems-final">
 
@@ -1170,11 +1474,17 @@ Positioning • Conversion • Retention
 
     <div class="final-actions">
 
-      <a href="contact.html" class="btn btn-pink btn-large">
+      <a
+        href="contact.html"
+        class="btn btn-pink btn-large"
+      >
         Book a Consultation
       </a>
 
-      <a href="resources.html" class="btn btn-outline btn-large">
+      <a
+        href="resources.html"
+        class="btn btn-outline btn-large"
+      >
         View Resources
       </a>
 
@@ -1184,11 +1494,21 @@ Positioning • Conversion • Retention
 
 </section>
 
+
 </main>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
 
 <footer class="footer">
 
-  <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+  <a
+    class="brand"
+    href="index.html"
+    aria-label="Mirel Marketing Home"
+  >
     <span>MIRÈL</span>
     <small>MARKETING</small>
   </a>
@@ -1217,55 +1537,337 @@ Positioning • Conversion • Retention
 
 </div>
 
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
 <script>
-  const reveals = document.querySelectorAll('.reveal');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-  }, { threshold: 0.12 });
+  /* =========================================================
+     PERFORMANCE: LAZY LOAD BELOW-THE-FOLD WEBP BACKGROUNDS
+  ========================================================= */
 
-  reveals.forEach(item => observer.observe(item));
+  const lazyBackgrounds = [
 
-  const nav = document.querySelector('[data-nav]');
-  const menuToggle = document.querySelector('[data-menu-toggle]');
-  const mobileMenu = document.querySelector('[data-mobile-menu]');
+    {
+      selector: '.systems-full-image',
+      image:
+        "linear-gradient(180deg, rgba(29,15,12,.08), rgba(29,15,12,.50)), url('images/mirel-system-strategy2.webp')"
+    },
+
+    {
+      selector: '.sw1',
+      image:
+        "url('images/mirel-systems-world-patient-payment.webp')"
+    },
+
+    {
+      selector: '.sw2',
+      image:
+        "url('images/mirel-ads-system2.webp')"
+    },
+
+    {
+      selector: '.sw3',
+      image:
+        "url('images/mirel-followup-system.webp')"
+    },
+
+    {
+      selector: '.sw4',
+      image:
+        "url('images/mirel-systems-world-skincare.webp')"
+    },
+
+    {
+      selector: '.systems-fit-image',
+      image:
+        "linear-gradient(rgba(29,15,12,.04), rgba(29,15,12,.10)), url('images/mirel-system-clinic-space.webp')"
+    },
+
+    {
+      selector: '.final-image',
+      image:
+        "linear-gradient(rgba(29,15,12,.04), rgba(29,15,12,.16)), url('images/mirel-system-final-cta.webp')"
+    }
+
+  ];
+
+
+  const lazyBackgroundMap = new Map();
+
+
+  lazyBackgrounds.forEach((item) => {
+
+    const element =
+      document.querySelector(item.selector);
+
+    if (element) {
+
+      lazyBackgroundMap.set(
+        element,
+        item.image
+      );
+
+    }
+
+  });
+
+
+  const loadLazyBackground = (element) => {
+
+    const image =
+      lazyBackgroundMap.get(element);
+
+    if (!image) {
+      return;
+    }
+
+    element.classList.add(
+      'lazy-bg-loaded'
+    );
+
+    element.style.backgroundImage =
+      image;
+
+  };
+
+
+  if ('IntersectionObserver' in window) {
+
+    const backgroundObserver =
+      new IntersectionObserver(
+
+        (entries, observer) => {
+
+          entries.forEach((entry) => {
+
+            if (!entry.isIntersecting) {
+              return;
+            }
+
+            loadLazyBackground(
+              entry.target
+            );
+
+            observer.unobserve(
+              entry.target
+            );
+
+          });
+
+        },
+
+        {
+          rootMargin:'1400px 0px',
+          threshold:0.01
+        }
+
+      );
+
+
+    lazyBackgroundMap.forEach(
+      (image, element) => {
+
+        backgroundObserver.observe(
+          element
+        );
+
+      }
+    );
+
+  }
+
+  else {
+
+    /*
+      Fallback for browsers without
+      IntersectionObserver support.
+    */
+
+    lazyBackgroundMap.forEach(
+      (image, element) => {
+
+        loadLazyBackground(
+          element
+        );
+
+      }
+    );
+
+  }
+
+
+  /* =========================================================
+     REVEAL ANIMATION
+  ========================================================= */
+
+  const reveals =
+    document.querySelectorAll(
+      '.reveal'
+    );
+
+
+  const observer =
+    new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach(
+          entry => {
+
+            if (
+              entry.isIntersecting
+            ) {
+
+              entry.target
+                .classList
+                .add('visible');
+
+            }
+
+          }
+        );
+
+      },
+      {
+        threshold:0.12
+      }
+    );
+
+
+  reveals.forEach(
+    item =>
+      observer.observe(item)
+  );
+
+
+  /* =========================================================
+     NAVIGATION
+  ========================================================= */
+
+  const nav =
+    document.querySelector(
+      '[data-nav]'
+    );
+
+  const menuToggle =
+    document.querySelector(
+      '[data-menu-toggle]'
+    );
+
+  const mobileMenu =
+    document.querySelector(
+      '[data-mobile-menu]'
+    );
+
 
   let lastScroll = 0;
 
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY;
 
-    nav.classList.toggle('scrolled', currentScroll > 16);
+  window.addEventListener(
+    'scroll',
+    () => {
 
-    if (currentScroll > lastScroll && currentScroll > 120) {
-      nav.classList.add('hide');
-      mobileMenu?.classList.remove('open');
-      document.body.classList.remove('menu-open');
-    } else {
-      nav.classList.remove('hide');
+      const currentScroll =
+        window.scrollY;
+
+
+      nav.classList.toggle(
+        'scrolled',
+        currentScroll > 16
+      );
+
+
+      if (
+        currentScroll > lastScroll &&
+        currentScroll > 120
+      ) {
+
+        nav.classList.add(
+          'hide'
+        );
+
+        mobileMenu
+          ?.classList
+          .remove('open');
+
+        document.body
+          .classList
+          .remove('menu-open');
+
+      }
+
+      else {
+
+        nav.classList.remove(
+          'hide'
+        );
+
+      }
+
+
+      lastScroll =
+        currentScroll;
+
     }
+  );
 
-    lastScroll = currentScroll;
-  });
 
-  if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener('click', (event) => {
-      event.stopPropagation();
-      mobileMenu.classList.toggle('open');
-      document.body.classList.toggle('menu-open');
-    });
+  /* =========================================================
+     MOBILE MENU
+  ========================================================= */
 
-    mobileMenu.addEventListener('click', (event) => {
-      event.stopPropagation();
-    });
+  if (
+    menuToggle &&
+    mobileMenu
+  ) {
 
-    document.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      document.body.classList.remove('menu-open');
-    });
+    menuToggle.addEventListener(
+      'click',
+      (event) => {
+
+        event.stopPropagation();
+
+        mobileMenu
+          .classList
+          .toggle('open');
+
+        document.body
+          .classList
+          .toggle('menu-open');
+
+      }
+    );
+
+
+    mobileMenu.addEventListener(
+      'click',
+      (event) => {
+
+        event.stopPropagation();
+
+      }
+    );
+
+
+    document.addEventListener(
+      'click',
+      () => {
+
+        mobileMenu
+          .classList
+          .remove('open');
+
+        document.body
+          .classList
+          .remove('menu-open');
+
+      }
+    );
+
   }
+
 </script>
 
 </body>
