@@ -9,11 +9,36 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css?v=5" />
 
+
+  <!-- =====================================================
+       PERFORMANCE: PRELOAD ABOUT HERO
+  ====================================================== -->
+
+  <link
+    rel="preload"
+    as="image"
+    href="images/mirel-marketing-founder-luxury.webp"
+    type="image/webp"
+    fetchpriority="high"
+  >
+
+
+  <!-- =====================================================
+       PERFORMANCE: ENABLE LAZY BACKGROUNDS
+  ====================================================== -->
+
+  <script>
+    document.documentElement.classList.add('js-lazy-bg');
+  </script>
+
+
   <style>
+
     .about-hero{
       display:grid;
       grid-template-columns:1fr 1.08fr;
@@ -30,15 +55,15 @@
     }
 
     .about-hero h1{
-  font-family:var(--serif);
-  font-weight:500;
-  font-size:64px;
-  line-height:.96;
-  letter-spacing:-.045em;
-  color:var(--espresso-deep);
-  margin:0 0 30px;
-  max-width:620px;
-}
+      font-family:var(--serif);
+      font-weight:500;
+      font-size:64px;
+      line-height:.96;
+      letter-spacing:-.045em;
+      color:var(--espresso-deep);
+      margin:0 0 30px;
+      max-width:620px;
+    }
 
     .about-hero h1 em{
       color:var(--rose);
@@ -47,19 +72,29 @@
     }
 
     .about-hero p:not(.eyebrow){
-  font-size:16px;
-  line-height:1.9;
-  color:var(--text-soft);
-  max-width:520px;
-  margin:0 0 34px;
-}
+      font-size:16px;
+      line-height:1.9;
+      color:var(--text-soft);
+      max-width:520px;
+      margin:0 0 34px;
+    }
+
+
+    /* =====================================================
+       HERO IMAGE — WEBP + EAGER
+    ====================================================== */
 
     .about-hero-image{
       min-height:640px;
       background:
-        linear-gradient(rgba(29,15,12,.04),rgba(29,15,12,.10)),
-        url('images/mirel-marketing-founder-luxury.png') center center/cover no-repeat;
+        linear-gradient(
+          rgba(29,15,12,.04),
+          rgba(29,15,12,.10)
+        ),
+        url('images/mirel-marketing-founder-luxury.webp')
+        center center/cover no-repeat;
     }
+
 
     .about-problem{
       display:grid;
@@ -125,14 +160,26 @@
     .about-room{
       min-height:300px;
       background:
-        linear-gradient(rgba(29,15,12,.02),rgba(29,15,12,.06)),
-        url('images/mirel-luxury-marketing.png?v=2') center/cover no-repeat;
-      box-shadow:inset 0 0 0 1px rgba(62,39,35,.10);
+        linear-gradient(
+          rgba(29,15,12,.02),
+          rgba(29,15,12,.06)
+        ),
+        url('images/mirel-luxury-marketing.webp')
+        center/cover no-repeat;
+
+      box-shadow:
+        inset 0 0 0 1px rgba(62,39,35,.10);
     }
+
 
     .about-philosophy{
       padding:90px 72px 96px;
-      background:linear-gradient(135deg,#f1e7df,#fbf7f1 58%,rgba(242,214,218,.22));
+      background:linear-gradient(
+        135deg,
+        #f1e7df,
+        #fbf7f1 58%,
+        rgba(242,214,218,.22)
+      );
       border-bottom:1px solid var(--line);
       text-align:center;
     }
@@ -184,6 +231,7 @@
       margin:0 0 24px;
     }
 
+
     .about-founder{
       display:grid;
       grid-template-columns:1.05fr .95fr;
@@ -194,8 +242,12 @@
     .founder-image{
       min-height:520px;
       background:
-        linear-gradient(rgba(29,15,12,.12),rgba(29,15,12,.22)),
-        url('images/mirel-philosophy-luxury.jpg') center/cover no-repeat;
+        linear-gradient(
+          rgba(29,15,12,.12),
+          rgba(29,15,12,.22)
+        ),
+        url('images/mirel-philosophy-luxury.webp')
+        center/cover no-repeat;
     }
 
     .founder-copy{
@@ -245,6 +297,7 @@
       margin-top:4px;
     }
 
+
     .about-world{
       background:#fbf7f1;
       border-bottom:1px solid var(--line);
@@ -277,20 +330,50 @@
       content:'';
       position:absolute;
       inset:0;
-      background:linear-gradient(180deg,rgba(62,39,35,.03),rgba(62,39,35,.18));
+      background:
+        linear-gradient(
+          180deg,
+          rgba(62,39,35,.03),
+          rgba(62,39,35,.18)
+        );
       mix-blend-mode:multiply;
     }
 
-    .w1{background-image:url('images/mirel-brand-world.jpg')}
-    .w2{background-image:url('images/mirel-beauty-editorial.jpg')}
-    .w3{background-image:url('images/mirel-treatment-experience.jpg')}
-    .w4{background-image:url('images/mirel-luxury-brand-flatlay.jpg')}
-    .w5{background-image:url('images/mirel-marketing-books.jpg?v=2')}
+
+    .w1{
+      background-image:
+        url('images/mirel-brand-world.webp');
+    }
+
+    .w2{
+      background-image:
+        url('images/mirel-beauty-editorial.webp');
+    }
+
+    .w3{
+      background-image:
+        url('images/mirel-treatment-experience.webp');
+    }
+
+    .w4{
+      background-image:
+        url('images/mirel-luxury-brand-flatlay.webp');
+    }
+
+    .w5{
+      background-image:
+        url('images/mirel-marketing-books.webp');
+    }
+
 
     .about-position{
       padding:76px 72px;
       text-align:center;
-      background:linear-gradient(135deg,#fbf7f1,#f4ebe5);
+      background:linear-gradient(
+        135deg,
+        #fbf7f1,
+        #f4ebe5
+      );
       border-bottom:1px solid var(--line);
     }
 
@@ -315,6 +398,7 @@
       font-weight:400;
     }
 
+
     .about-final{
       padding:70px 72px;
       text-align:center;
@@ -338,23 +422,69 @@
       flex-wrap:wrap;
     }
 
+
+
+    /* =====================================================
+       PERFORMANCE: LAZY BACKGROUND PLACEHOLDERS
+    ====================================================== */
+
+    html.js-lazy-bg
+    .about-room:not(.lazy-bg-loaded){
+      background-image:
+        linear-gradient(
+          rgba(29,15,12,.02),
+          rgba(29,15,12,.06)
+        ) !important;
+    }
+
+
+    html.js-lazy-bg
+    .founder-image:not(.lazy-bg-loaded){
+      background-image:
+        linear-gradient(
+          rgba(29,15,12,.12),
+          rgba(29,15,12,.22)
+        ) !important;
+    }
+
+
+    html.js-lazy-bg
+    .w1:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .w2:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .w3:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .w4:not(.lazy-bg-loaded),
+    html.js-lazy-bg
+    .w5:not(.lazy-bg-loaded){
+      background-image:none !important;
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVE
+    ====================================================== */
+
     @media (max-width:1180px){
+
       .about-hero,
       .about-problem,
       .about-founder{
         grid-template-columns:1fr;
       }
-      
-      .about-hero-copy{
-  max-width:780px;
-  padding-right:0;
-}
 
-.about-hero h1{
-  font-size:72px;
-  line-height:.96;
-  max-width:780px;
-}
+      .about-hero-copy{
+        max-width:780px;
+        padding-right:0;
+      }
+
+      .about-hero h1{
+        font-size:72px;
+        line-height:.96;
+        max-width:780px;
+      }
 
       .about-hero-copy,
       .about-problem,
@@ -393,18 +523,21 @@
       .world-img:last-child{
         display:none;
       }
+
     }
 
+
     @media (max-width:760px){
-  .about-hero h1{
-    font-size:46px;
-    line-height:.98;
-    max-width:100%;
-  }
-      
+
+      .about-hero h1{
+        font-size:46px;
+        line-height:.98;
+        max-width:100%;
+      }
+
       .about-hero p:not(.eyebrow){
-  font-size:14px;
-}
+        font-size:14px;
+      }
 
       .about-hero-image{
         min-height:430px;
@@ -480,20 +613,34 @@
       .about-final-actions .btn{
         width:100%;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
+
   <div class="site-shell">
 
+
     <header class="nav" data-nav>
-      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Mirel Marketing Home"
+      >
         <span>MIRÈL</span>
         <small>MARKETING</small>
       </a>
 
-      <nav class="nav-links" aria-label="Main navigation">
+
+      <nav
+        class="nav-links"
+        aria-label="Main navigation"
+      >
         <a href="index.html">Home</a>
         <a href="about.html" class="active">About</a>
         <a href="services.html">Services</a>
@@ -502,17 +649,43 @@
         <a href="contact.html">Contact</a>
       </nav>
 
+
       <div class="nav-actions">
-        <a class="btn btn-dark" href="contact.html">Book Consultation</a>
-        <a class="btn btn-light" href="resources.html">Resources</a>
+
+        <a
+          class="btn btn-dark"
+          href="contact.html"
+        >
+          Book Consultation
+        </a>
+
+        <a
+          class="btn btn-light"
+          href="resources.html"
+        >
+          Resources
+        </a>
+
       </div>
 
-      <button class="mobile-menu-toggle" data-menu-toggle aria-label="Open menu">
+
+      <button
+        class="mobile-menu-toggle"
+        data-menu-toggle
+        aria-label="Open menu"
+      >
         ☰
       </button>
+
     </header>
 
-    <div class="mobile-menu" data-mobile-menu>
+
+
+    <div
+      class="mobile-menu"
+      data-mobile-menu
+    >
+
       <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
       <a href="services.html">Services</a>
@@ -520,111 +693,282 @@
       <a href="results.html">Results</a>
       <a href="contact.html">Contact</a>
 
+
       <div class="mobile-menu-actions">
-        <a class="btn btn-dark" href="contact.html">Book Consultation</a>
-        <a class="btn btn-light" href="resources.html">Resources</a>
+
+        <a
+          class="btn btn-dark"
+          href="contact.html"
+        >
+          Book Consultation
+        </a>
+
+        <a
+          class="btn btn-light"
+          href="resources.html"
+        >
+          Resources
+        </a>
+
       </div>
+
     </div>
+
+
 
     <main>
 
+
+      <!-- =================================================
+           HERO
+      ================================================== -->
+
       <section class="about-hero">
+
         <div class="about-hero-copy reveal">
-          <p class="eyebrow">About Mirel</p>
+
+          <p class="eyebrow">
+            About Mirel
+          </p>
+
 
           <h1>
-            We help med spas feel as <em>premium</em> online as they do in person.
+            We help med spas feel as
+            <em>premium</em>
+            online as they do in person.
           </h1>
+
 
           <p>
             Mirel Marketing is built for aesthetics clinics that want more than attention.
             We help your brand feel elevated, trusted, and ready for higher-quality consultations.
           </p>
 
+
           <div class="hero-buttons">
-            <a href="contact.html" class="btn btn-dark btn-large">Book a Consultation</a>
-            <a href="systems.html" class="btn btn-outline btn-large">See Our Systems</a>
+
+            <a
+              href="contact.html"
+              class="btn btn-dark btn-large"
+            >
+              Book a Consultation
+            </a>
+
+            <a
+              href="systems.html"
+              class="btn btn-outline btn-large"
+            >
+              See Our Systems
+            </a>
+
           </div>
+
         </div>
+
 
         <div class="about-hero-image reveal"></div>
+
       </section>
 
-      <section class="about-problem">
-        <div class="reveal">
-          <p class="eyebrow">The Problem</p>
 
-          <h2>Most med spas look interchangeable online.</h2>
+
+      <!-- =================================================
+           PROBLEM
+      ================================================== -->
+
+      <section class="about-problem">
+
+        <div class="reveal">
+
+          <p class="eyebrow">
+            The Problem
+          </p>
+
+
+          <h2>
+            Most med spas look interchangeable online.
+          </h2>
+
 
           <ul class="about-list">
-            <li>Generic templates</li>
-            <li>Inconsistent branding</li>
-            <li>Low perceived value</li>
-            <li>Random social media</li>
-            <li>Ads without positioning</li>
+
+            <li>
+              Generic templates
+            </li>
+
+            <li>
+              Inconsistent branding
+            </li>
+
+            <li>
+              Low perceived value
+            </li>
+
+            <li>
+              Random social media
+            </li>
+
+            <li>
+              Ads without positioning
+            </li>
+
           </ul>
+
         </div>
 
+
         <div class="about-change reveal">
-          <h3>We built Mirel to change that.</h3>
+
+          <h3>
+            We built Mirel to change that.
+          </h3>
+
 
           <p>
             We combine strategy, psychology, aesthetics, and conversion systems
             to help your clinic become the obvious premium choice —
             before a patient ever books.
           </p>
+
         </div>
 
+
         <div class="about-room reveal"></div>
+
       </section>
 
-      <section class="about-philosophy">
-        <p class="eyebrow reveal">Our Philosophy</p>
 
-        <h2 class="reveal">We believe growth comes from 3 things.</h2>
+
+      <!-- =================================================
+           PHILOSOPHY
+      ================================================== -->
+
+      <section class="about-philosophy">
+
+        <p class="eyebrow reveal">
+          Our Philosophy
+        </p>
+
+
+        <h2 class="reveal">
+          We believe growth comes from 3 things.
+        </h2>
+
 
         <div class="pillar-grid">
+
+
           <article class="pillar reveal">
-            <span>01</span>
-            <h3>Aesthetics</h3>
+
+            <span>
+              01
+            </span>
+
+            <h3>
+              Aesthetics
+            </h3>
+
             <p>
               Luxury visual direction that reflects the quality of your treatments
               and elevates how your clinic is perceived.
             </p>
-            <a href="services.html" class="text-link">Learn more <span>→</span></a>
+
+            <a
+              href="services.html"
+              class="text-link"
+            >
+              Learn more
+              <span>→</span>
+            </a>
+
           </article>
 
+
+
           <article class="pillar reveal">
-            <span>02</span>
-            <h3>Psychology</h3>
+
+            <span>
+              02
+            </span>
+
+            <h3>
+              Psychology
+            </h3>
+
             <p>
               Understanding what makes beauty clients feel trust,
               desire, confidence, and emotional safety before booking.
             </p>
-            <a href="services.html" class="text-link">Learn more <span>→</span></a>
+
+            <a
+              href="services.html"
+              class="text-link"
+            >
+              Learn more
+              <span>→</span>
+            </a>
+
           </article>
 
+
+
           <article class="pillar reveal">
-            <span>03</span>
-            <h3>Systems</h3>
+
+            <span>
+              03
+            </span>
+
+            <h3>
+              Systems
+            </h3>
+
             <p>
               Turning attention into consultations with landing pages,
               follow-up flows, and conversion-focused patient journeys.
             </p>
-            <a href="systems.html" class="text-link">Learn more <span>→</span></a>
+
+            <a
+              href="systems.html"
+              class="text-link"
+            >
+              Learn more
+              <span>→</span>
+            </a>
+
           </article>
+
+
         </div>
+
       </section>
 
+
+
+      <!-- =================================================
+           FOUNDER
+      ================================================== -->
+
       <section class="about-founder">
+
         <div class="founder-image reveal"></div>
 
+
         <div class="founder-copy reveal">
-          <p class="eyebrow">Founder</p>
 
-          <h2>Why I chose the med spa industry.</h2>
+          <p class="eyebrow">
+            Founder
+          </p>
 
-          <p>Beauty brands are not sold like ordinary businesses.</p>
+
+          <h2>
+            Why I chose the med spa industry.
+          </h2>
+
+
+          <p>
+            Beauty brands are not sold like ordinary businesses.
+          </p>
+
 
           <p>
             Clients do not just buy treatments.
@@ -632,130 +976,522 @@
             and the feeling that they are choosing the right place.
           </p>
 
+
           <p>
             Mirel was created to help clinics communicate that value
             before the consultation ever begins.
           </p>
 
+
           <div class="signature">
-            <strong>— Irem Delora</strong>
-            <small>Founder of Mirel Marketing</small>
+
+            <strong>
+              — Irem Delora
+            </strong>
+
+            <small>
+              Founder of Mirel Marketing
+            </small>
+
           </div>
+
         </div>
+
       </section>
+
+
+
+      <!-- =================================================
+           OUR WORLD
+      ================================================== -->
 
       <section class="about-world">
-        <div class="world-label">Our World</div>
+
+        <div class="world-label">
+          Our World
+        </div>
+
 
         <div class="world-grid">
+
           <div class="world-img w1 reveal"></div>
+
           <div class="world-img w2 reveal"></div>
+
           <div class="world-img w3 reveal"></div>
+
           <div class="world-img w4 reveal"></div>
+
           <div class="world-img w5 reveal"></div>
+
         </div>
+
       </section>
 
+
+
+      <!-- =================================================
+           POSITIONING
+      ================================================== -->
+
       <section class="about-position">
-        <p class="eyebrow reveal">The Difference</p>
+
+        <p class="eyebrow reveal">
+          The Difference
+        </p>
+
 
         <h2 class="reveal">
           We do not market med spas like local businesses.
           <br />
-          We position them like <em>luxury brands.</em>
+          We position them like
+          <em>luxury brands.</em>
         </h2>
+
       </section>
+
+
+
+      <!-- =================================================
+           FINAL CTA
+      ================================================== -->
 
       <section class="about-final">
-        <h2 class="reveal">Ready to elevate your clinic?</h2>
+
+        <h2 class="reveal">
+          Ready to elevate your clinic?
+        </h2>
+
 
         <div class="about-final-actions reveal">
-          <a href="contact.html" class="btn btn-dark btn-large">Book a Consultation</a>
-          <a href="systems.html" class="btn btn-outline btn-large">View Our Systems</a>
+
+          <a
+            href="contact.html"
+            class="btn btn-dark btn-large"
+          >
+            Book a Consultation
+          </a>
+
+          <a
+            href="systems.html"
+            class="btn btn-outline btn-large"
+          >
+            View Our Systems
+          </a>
+
         </div>
+
       </section>
+
 
     </main>
 
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer class="footer">
-  <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
-    <span>MIRÈL</span>
-    <small>MARKETING</small>
-  </a>
 
-  <a href="mailto:delora@mirelmarketing.com">
-    delora@mirelmarketing.com
-  </a>
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Mirel Marketing Home"
+      >
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
+      </a>
 
-  <a
-    href="https://www.instagram.com/mirelmarketing"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Instagram
-  </a>
 
-  <a href="privacy-policy.html">
-    Privacy Policy
-  </a>
+      <a href="mailto:delora@mirelmarketing.com">
+        delora@mirelmarketing.com
+      </a>
 
-  <a href="terms-and-conditions.html">
-    Terms &amp; Conditions
-  </a>
-</footer>
+
+      <a
+        href="https://www.instagram.com/mirelmarketing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+
+      <a href="privacy-policy.html">
+        Privacy Policy
+      </a>
+
+
+      <a href="terms-and-conditions.html">
+        Terms &amp; Conditions
+      </a>
+
+    </footer>
+
 
   </div>
 
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
   <script>
-    const items = document.querySelectorAll('.reveal');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.12 });
 
-    items.forEach(item => observer.observe(item));
+    /* =====================================================
+       PERFORMANCE: LAZY LOAD ABOUT WEBP BACKGROUNDS
+    ====================================================== */
 
-    const nav = document.querySelector('[data-nav]');
-    const menuToggle = document.querySelector('[data-menu-toggle]');
-    const mobileMenu = document.querySelector('[data-mobile-menu]');
+    const aboutLazyBackgrounds = [
+
+      {
+        selector: '.about-room',
+        image:
+          "linear-gradient(rgba(29,15,12,.02), rgba(29,15,12,.06)), url('images/mirel-luxury-marketing.webp')"
+      },
+
+      {
+        selector: '.founder-image',
+        image:
+          "linear-gradient(rgba(29,15,12,.12), rgba(29,15,12,.22)), url('images/mirel-philosophy-luxury.webp')"
+      },
+
+      {
+        selector: '.w1',
+        image:
+          "url('images/mirel-brand-world.webp')"
+      },
+
+      {
+        selector: '.w2',
+        image:
+          "url('images/mirel-beauty-editorial.webp')"
+      },
+
+      {
+        selector: '.w3',
+        image:
+          "url('images/mirel-treatment-experience.webp')"
+      },
+
+      {
+        selector: '.w4',
+        image:
+          "url('images/mirel-luxury-brand-flatlay.webp')"
+      },
+
+      {
+        selector: '.w5',
+        image:
+          "url('images/mirel-marketing-books.webp')"
+      }
+
+    ];
+
+
+    const aboutLazyBackgroundMap =
+      new Map();
+
+
+    aboutLazyBackgrounds.forEach(
+      (item) => {
+
+        const element =
+          document.querySelector(
+            item.selector
+          );
+
+
+        if (element) {
+
+          aboutLazyBackgroundMap.set(
+            element,
+            item.image
+          );
+
+        }
+
+      }
+    );
+
+
+    const loadAboutLazyBackground =
+      (element) => {
+
+        const image =
+          aboutLazyBackgroundMap.get(
+            element
+          );
+
+
+        if (!image) {
+          return;
+        }
+
+
+        element.classList.add(
+          'lazy-bg-loaded'
+        );
+
+
+        element.style.backgroundImage =
+          image;
+
+      };
+
+
+    if (
+      'IntersectionObserver' in window
+    ) {
+
+      const aboutBackgroundObserver =
+        new IntersectionObserver(
+
+          (entries, observer) => {
+
+            entries.forEach(
+              (entry) => {
+
+                if (
+                  !entry.isIntersecting
+                ) {
+                  return;
+                }
+
+
+                loadAboutLazyBackground(
+                  entry.target
+                );
+
+
+                observer.unobserve(
+                  entry.target
+                );
+
+              }
+            );
+
+          },
+
+          {
+            rootMargin:'1400px 0px',
+            threshold:0.01
+          }
+
+        );
+
+
+      aboutLazyBackgroundMap.forEach(
+        (image, element) => {
+
+          aboutBackgroundObserver.observe(
+            element
+          );
+
+        }
+      );
+
+    }
+
+    else {
+
+      aboutLazyBackgroundMap.forEach(
+        (image, element) => {
+
+          loadAboutLazyBackground(
+            element
+          );
+
+        }
+      );
+
+    }
+
+
+
+    /* =====================================================
+       EXISTING REVEAL ANIMATION
+    ====================================================== */
+
+    const items =
+      document.querySelectorAll(
+        '.reveal'
+      );
+
+
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
+
+          entries.forEach(
+            entry => {
+
+              if (
+                entry.isIntersecting
+              ) {
+
+                entry.target
+                  .classList
+                  .add('visible');
+
+              }
+
+            }
+          );
+
+        },
+        {
+          threshold:0.12
+        }
+      );
+
+
+    items.forEach(
+      item =>
+        observer.observe(item)
+    );
+
+
+
+    /* =====================================================
+       NAVIGATION
+    ====================================================== */
+
+    const nav =
+      document.querySelector(
+        '[data-nav]'
+      );
+
+
+    const menuToggle =
+      document.querySelector(
+        '[data-menu-toggle]'
+      );
+
+
+    const mobileMenu =
+      document.querySelector(
+        '[data-mobile-menu]'
+      );
+
 
     let lastScroll = 0;
 
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.scrollY;
 
-      nav.classList.toggle('scrolled', currentScroll > 16);
+    window.addEventListener(
+      'scroll',
+      () => {
 
-      if (currentScroll > lastScroll && currentScroll > 120) {
-        nav.classList.add('hide');
-        mobileMenu?.classList.remove('open');
-        document.body.classList.remove('menu-open');
-      } else {
-        nav.classList.remove('hide');
+        const currentScroll =
+          window.scrollY;
+
+
+        nav.classList.toggle(
+          'scrolled',
+          currentScroll > 16
+        );
+
+
+        if (
+          currentScroll > lastScroll &&
+          currentScroll > 120
+        ) {
+
+          nav.classList.add(
+            'hide'
+          );
+
+
+          mobileMenu
+            ?.classList
+            .remove('open');
+
+
+          document.body
+            .classList
+            .remove('menu-open');
+
+        }
+
+        else {
+
+          nav.classList.remove(
+            'hide'
+          );
+
+        }
+
+
+        lastScroll =
+          currentScroll;
+
       }
+    );
 
-      lastScroll = currentScroll;
-    });
 
-    if (menuToggle && mobileMenu) {
-      menuToggle.addEventListener('click', (event) => {
-        event.stopPropagation();
-        mobileMenu.classList.toggle('open');
-        document.body.classList.toggle('menu-open');
-      });
 
-      mobileMenu.addEventListener('click', (event) => {
-        event.stopPropagation();
-      });
+    /* =====================================================
+       MOBILE MENU
+    ====================================================== */
 
-      document.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        document.body.classList.remove('menu-open');
-      });
+    if (
+      menuToggle &&
+      mobileMenu
+    ) {
+
+      menuToggle.addEventListener(
+        'click',
+        (event) => {
+
+          event.stopPropagation();
+
+
+          mobileMenu
+            .classList
+            .toggle('open');
+
+
+          document.body
+            .classList
+            .toggle('menu-open');
+
+        }
+      );
+
+
+      mobileMenu.addEventListener(
+        'click',
+        (event) => {
+
+          event.stopPropagation();
+
+        }
+      );
+
+
+      document.addEventListener(
+        'click',
+        () => {
+
+          mobileMenu
+            .classList
+            .remove('open');
+
+
+          document.body
+            .classList
+            .remove('menu-open');
+
+        }
+      );
+
     }
+
   </script>
+
 
 </body>
 </html>
