@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
   <title>Med Spa Growth Systems | Mirel Marketing</title>
   <meta name="description" content="Mirel Marketing helps med spa owners uncover and fix revenue leaks in their patient journey so more leads become booked, paying, and returning patients.">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -16,6 +17,7 @@
   <meta property="og:url" content="https://mirelmarketing.com/">
   <meta property="og:site_name" content="Mirel Marketing">
   <meta property="og:image" content="https://mirelmarketing.com/images/hero-face.webp">
+
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Med Spa Growth Systems | Mirel Marketing">
   <meta name="twitter:description" content="Premium positioning, conversion systems and patient-journey strategy for med spas.">
@@ -24,19 +26,50 @@
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231d0f0c'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='58' font-family='Georgia' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- =====================================================
+       PERFORMANCE-OPTIMIZED FONT DELIVERY
+       Same Mirel fonts, without render-blocking CSS.
+  ====================================================== -->
 
-  <!-- Critical hero image -->
-  <link rel="preload" as="image" href="images/hero-face.webp" type="image/webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    rel="preload"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+    fetchpriority="high"
+    href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
+  >
+
+  <link
+    rel="preload"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+    fetchpriority="high"
+    href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
+  >
+
+  <!-- Desktop image priority; mobile heading gets priority -->
+
+  <link
+    rel="preload"
+    as="image"
+    href="images/hero-face.webp"
+    type="image/webp"
+    media="(min-width:1181px)"
+    fetchpriority="high"
+  >
 
   <script>
     document.documentElement.classList.add('js');
   </script>
 
-  <!-- Structured data -->
+  <!-- =====================================================
+       STRUCTURED DATA
+  ====================================================== -->
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -48,7 +81,9 @@
         "url":"https://mirelmarketing.com/",
         "email":"delora@mirelmarketing.com",
         "description":"Mirel Marketing builds premium growth and conversion systems for med spas and aesthetic clinics.",
-        "sameAs":["https://www.instagram.com/mirelmarketing"],
+        "sameAs":[
+          "https://www.instagram.com/mirelmarketing"
+        ],
         "areaServed":[
           {"@type":"Country","name":"United States"},
           {"@type":"Country","name":"United Kingdom"},
@@ -62,12 +97,16 @@
         "@id":"https://mirelmarketing.com/#website",
         "url":"https://mirelmarketing.com/",
         "name":"Mirel Marketing",
-        "publisher":{"@id":"https://mirelmarketing.com/#organization"}
+        "publisher":{
+          "@id":"https://mirelmarketing.com/#organization"
+        }
       },
       {
         "@type":"Service",
         "name":"Med Spa Growth Systems",
-        "provider":{"@id":"https://mirelmarketing.com/#organization"},
+        "provider":{
+          "@id":"https://mirelmarketing.com/#organization"
+        },
         "serviceType":"Patient journey optimization, premium positioning, conversion systems, paid advertising and follow-up systems"
       }
     ]
@@ -75,6 +114,35 @@
   </script>
 
   <style>
+
+    /* =====================================================
+       PERFORMANCE: DIRECT FONT DECLARATIONS
+       Preserving Cormorant Garamond and Inter.
+    ====================================================== */
+
+    @font-face {
+      font-family:'Cormorant Garamond';
+      font-style:normal;
+      font-weight:400 600;
+      font-display:swap;
+      src:url('https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family:'Cormorant Garamond';
+      font-style:italic;
+      font-weight:400 500;
+      font-display:swap;
+      src:url('https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family:'Inter';
+      font-style:normal;
+      font-weight:300 700;
+      font-display:swap;
+      src:url('https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2') format('woff2');
+    }
 
     /* =====================================================
        DESIGN TOKENS
@@ -357,7 +425,8 @@
 
     /* =====================================================
        HERO
-       Headline stays in normal text flow on all sizes.
+       Final layout preserved.
+       Hero copy is visible immediately for faster LCP.
     ====================================================== */
 
     .hero {
@@ -388,12 +457,6 @@
       line-height:.91;
       letter-spacing:-.052em;
     }
-
-    /*
-      IMPORTANT:
-      The pink text is inline on desktop and mobile.
-      It is no longer forced onto its own line.
-    */
 
     .hero h1 em {
       display:inline;
@@ -1177,6 +1240,7 @@
 
     /* =====================================================
        REVEAL ANIMATIONS
+       Below-the-fold animations remain unchanged.
     ====================================================== */
 
     .js .reveal {
@@ -1350,14 +1414,6 @@
       .nav-actions {
         display:none;
       }
-
-      /*
-        IMPORTANT:
-        We no longer use the ☰ text character.
-
-        Hamburger lines are built using CSS.
-        This prevents the blue iOS/Safari appearance.
-      */
 
       .mobile-menu-toggle {
         display:flex;
@@ -1730,7 +1786,11 @@
 
     <header class="nav" data-nav>
 
-      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Mirel Marketing Home"
+      >
         <span>MIRÈL</span>
         <small>MARKETING</small>
       </a>
@@ -1825,17 +1885,16 @@
 
       <!-- =================================================
            HERO
+           Visible immediately, without reveal delay.
       ================================================== -->
 
       <section class="hero">
 
-        <div class="hero-copy reveal">
+        <div class="hero-copy">
 
           <p class="eyebrow">
             Med Spa Growth Systems
           </p>
-
-          <!-- Pink text now follows the sentence naturally -->
 
           <h1>
             More traffic will not fix&nbsp;<em>a leaking patient journey.</em>
@@ -1868,15 +1927,18 @@
 
         </div>
 
-        <div class="hero-editorial" aria-label="Mirel editorial visual world">
+        <div
+          class="hero-editorial"
+          aria-label="Mirel editorial visual world"
+        >
 
           <figure class="editorial-main">
 
             <img
               src="images/hero-face.webp"
               alt="Premium aesthetics editorial portrait"
-              loading="eager"
-              fetchpriority="high"
+              loading="lazy"
+              fetchpriority="auto"
             >
 
             <span>Perception</span>
@@ -1890,7 +1952,7 @@
               <img
                 src="images/Jewelry.webp"
                 alt="Luxury jewellery editorial"
-                loading="eager"
+                loading="lazy"
                 fetchpriority="low"
               >
 
@@ -1903,7 +1965,7 @@
               <img
                 src="images/luxury-interior.webp"
                 alt="Luxury med spa interior"
-                loading="eager"
+                loading="lazy"
                 fetchpriority="low"
               >
 
@@ -2172,7 +2234,10 @@
 
         </div>
 
-        <div class="lookbook-grid" aria-label="Mirel visual world">
+        <div
+          class="lookbook-grid"
+          aria-label="Mirel visual world"
+        >
 
           <figure class="lookbook-img">
 
@@ -2386,7 +2451,10 @@
             during and after treatment.
           </p>
 
-          <a class="btn btn-outline btn-large" href="book.html">
+          <a
+            class="btn btn-outline btn-large"
+            href="book.html"
+          >
             See If We Are A Fit
           </a>
 
@@ -2425,7 +2493,10 @@
 
           <div class="button-row">
 
-            <a class="btn btn-dark btn-large" href="book.html">
+            <a
+              class="btn btn-dark btn-large"
+              href="book.html"
+            >
               Book Your Growth Strategy Review
             </a>
 
@@ -2462,6 +2533,7 @@
         <a href="book.html">Book</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+
         <a href="mailto:delora@mirelmarketing.com">
           delora@mirelmarketing.com
         </a>
@@ -2598,6 +2670,7 @@
 
       /* ===================================================
          REVEAL ANIMATIONS
+         Hero copy no longer uses .reveal.
       =================================================== */
 
       const revealItems = document.querySelectorAll('.reveal');
