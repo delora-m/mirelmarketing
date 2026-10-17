@@ -3,26 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
   <title>Med Spa Growth Systems | Mirel Marketing</title>
   <meta name="description" content="Mirel Marketing helps med spa owners uncover and fix revenue leaks in their patient journey so more leads become booked, paying, and returning patients.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#fbf7f1">
   <link rel="canonical" href="https://mirelmarketing.com/">
 
+  <!-- Social sharing -->
   <meta property="og:title" content="Med Spa Growth Systems | Mirel Marketing">
   <meta property="og:description" content="Premium positioning, patient-journey strategy, conversion systems and AI-powered execution for med spas.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mirelmarketing.com/">
   <meta property="og:site_name" content="Mirel Marketing">
   <meta property="og:image" content="https://mirelmarketing.com/images/hero-face.webp">
+
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Med Spa Growth Systems | Mirel Marketing">
   <meta name="twitter:description" content="Premium positioning, conversion systems and patient-journey strategy for med spas.">
   <meta name="twitter:image" content="https://mirelmarketing.com/images/hero-face.webp">
 
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231d0f0c'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='58' font-family='Georgia' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E">
 
+  <!-- Performance-optimized fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     rel="preload"
     as="font"
@@ -31,6 +37,7 @@
     fetchpriority="high"
     href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
   >
+
   <link
     rel="preload"
     as="font"
@@ -39,6 +46,8 @@
     fetchpriority="high"
     href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
   >
+
+  <!-- Prioritize hero image on desktop -->
   <link
     rel="preload"
     as="image"
@@ -52,6 +61,7 @@
     document.documentElement.classList.add('js');
   </script>
 
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -63,7 +73,11 @@
         "url":"https://mirelmarketing.com/",
         "email":"delora@mirelmarketing.com",
         "description":"Mirel Marketing builds premium growth and conversion systems for med spas and aesthetic clinics.",
-        "sameAs":["https://www.instagram.com/mirelmarketing"],
+        "sameAs":[
+          "https://www.instagram.com/mirelpartners/",
+          "https://www.youtube.com/@mirelpartners",
+          "https://www.linkedin.com/company/mirelmarketing/"
+        ],
         "areaServed":[
           {"@type":"Country","name":"United States"},
           {"@type":"Country","name":"United Kingdom"},
@@ -77,12 +91,16 @@
         "@id":"https://mirelmarketing.com/#website",
         "url":"https://mirelmarketing.com/",
         "name":"Mirel Marketing",
-        "publisher":{"@id":"https://mirelmarketing.com/#organization"}
+        "publisher":{
+          "@id":"https://mirelmarketing.com/#organization"
+        }
       },
       {
         "@type":"Service",
         "name":"Med Spa Growth Systems",
-        "provider":{"@id":"https://mirelmarketing.com/#organization"},
+        "provider":{
+          "@id":"https://mirelmarketing.com/#organization"
+        },
         "serviceType":"Patient journey optimization, premium positioning, conversion systems, paid advertising and follow-up systems"
       }
     ]
@@ -90,7 +108,11 @@
   </script>
 
   <style>
-    /* Font loading */
+
+    /* =====================================================
+       FONT LOADING
+    ====================================================== */
+
     @font-face {
       font-family:'Cormorant Garamond';
       font-style:normal;
@@ -98,6 +120,7 @@
       font-display:swap;
       src:url('https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2') format('woff2');
     }
+
     @font-face {
       font-family:'Cormorant Garamond';
       font-style:italic;
@@ -105,6 +128,7 @@
       font-display:swap;
       src:url('https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2') format('woff2');
     }
+
     @font-face {
       font-family:'Inter';
       font-style:normal;
@@ -112,6 +136,10 @@
       font-display:swap;
       src:url('https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2') format('woff2');
     }
+
+    /* =====================================================
+       DESIGN TOKENS
+    ====================================================== */
 
     :root {
       --cream:#fbf7f1;
@@ -132,6 +160,10 @@
       --sans:'Inter',Arial,sans-serif;
       --max:1760px;
     }
+
+    /* =====================================================
+       RESET
+    ====================================================== */
 
     *,
     *::before,
@@ -182,6 +214,10 @@
       background:var(--cream);
     }
 
+    /* =====================================================
+       ACCESSIBILITY
+    ====================================================== */
+
     .skip-link {
       position:fixed;
       left:18px;
@@ -202,6 +238,10 @@
       outline:3px solid rgba(169,104,109,.65);
       outline-offset:4px;
     }
+
+    /* =====================================================
+       TYPOGRAPHY
+    ====================================================== */
 
     .eyebrow {
       margin:0 0 24px;
@@ -233,6 +273,10 @@
       line-height:1.9;
       color:var(--text-soft);
     }
+
+    /* =====================================================
+       BUTTONS
+    ====================================================== */
 
     .btn {
       min-height:48px;
@@ -277,7 +321,9 @@
       gap:14px;
     }
 
-    /* Navigation */
+    /* =====================================================
+       NAVIGATION
+    ====================================================== */
 
     .nav {
       position:sticky;
@@ -370,13 +416,16 @@
       display:none;
     }
 
-    /* Hero */
+    /* =====================================================
+       HERO
+       Bottom spacing increased to 54px.
+    ====================================================== */
 
     .hero {
       display:grid;
       grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
       align-items:start;
-      padding:34px 72px 42px;
+      padding:34px 72px 54px;
       background:var(--cream);
       position:relative;
     }
@@ -417,8 +466,11 @@
       color:var(--text-soft);
     }
 
-    /* Revised order:
-       paragraph -> benefits -> CTA buttons */
+    /* =====================================================
+       HERO BENEFITS
+       31px above, 41px below.
+       Positioned before CTA buttons.
+    ====================================================== */
 
     .hero-benefits {
       display:flex;
@@ -426,7 +478,7 @@
       gap:12px 24px;
       list-style:none;
       padding:0;
-      margin:23px 0 28px;
+      margin:31px 0 41px;
     }
 
     .hero-benefits li {
@@ -450,7 +502,9 @@
       background:var(--rose);
     }
 
-    /* Hero images */
+    /* =====================================================
+       HERO IMAGES
+    ====================================================== */
 
     .hero-editorial {
       position:relative;
@@ -519,7 +573,9 @@
       min-height:0;
     }
 
-    /* Hero proof */
+    /* =====================================================
+       HERO PROOF
+    ====================================================== */
 
     .hero-proof {
       display:grid;
@@ -558,7 +614,9 @@
       color:var(--text-soft);
     }
 
-    /* Category momentum */
+    /* =====================================================
+       CATEGORY MOMENTUM
+    ====================================================== */
 
     .momentum {
       padding:92px 72px 86px;
@@ -578,6 +636,10 @@
       max-width:650px;
       margin-top:24px;
     }
+
+    /* =====================================================
+       METRIC GRID
+    ====================================================== */
 
     .metric-grid {
       display:grid;
@@ -639,7 +701,9 @@
       text-underline-offset:3px;
     }
 
-    /* International scope */
+    /* =====================================================
+       INTERNATIONAL SCOPE
+    ====================================================== */
 
     .international {
       margin-top:52px;
@@ -694,7 +758,9 @@
       background:var(--rose);
     }
 
-    /* Espresso statement */
+    /* =====================================================
+       ESPRESSO STATEMENT
+    ====================================================== */
 
     .statement {
       background:transparent;
@@ -733,6 +799,10 @@
       line-height:1.9;
       color:rgba(255,255,255,.68);
     }
+
+    /* =====================================================
+       PERCEPTION / CONVERSION / RETENTION
+    ====================================================== */
 
     .statement-bottom {
       padding:39px 72px 43px;
@@ -782,7 +852,9 @@
       color:rgba(62,39,35,.69);
     }
 
-    /* Visual standard */
+    /* =====================================================
+       THE VISUAL STANDARD
+    ====================================================== */
 
     .editorial-showcase {
       display:grid;
@@ -872,7 +944,9 @@
       pointer-events:none;
     }
 
-    /* Revenue path */
+    /* =====================================================
+       THE REVENUE PATH
+    ====================================================== */
 
     .journey {
       padding:89px 72px 0;
@@ -935,7 +1009,9 @@
       color:var(--text-soft);
     }
 
-    /* The Mirel difference */
+    /* =====================================================
+       THE MIREL DIFFERENCE
+    ====================================================== */
 
     .difference {
       display:grid;
@@ -1028,7 +1104,10 @@
       background:var(--rose);
     }
 
-    /* Quality over volume - cream background */
+    /* =====================================================
+       QUALITY OVER VOLUME
+       Cream background retained.
+    ====================================================== */
 
     .qualification {
       display:grid;
@@ -1069,7 +1148,9 @@
       background:rgba(255,253,249,.56);
     }
 
-    /* Final CTA */
+    /* =====================================================
+       FINAL CTA
+    ====================================================== */
 
     .final-cta {
       position:relative;
@@ -1136,7 +1217,9 @@
       border-color:transparent;
     }
 
-    /* Footer */
+    /* =====================================================
+       FOOTER
+    ====================================================== */
 
     .footer {
       min-height:108px;
@@ -1170,7 +1253,47 @@
       color:var(--text-soft);
     }
 
-    /* Reveal animations */
+    /* =====================================================
+       NEW: FOOTER SOCIAL LINKS
+       Understated editorial treatment.
+    ====================================================== */
+
+    .footer-social {
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:4px 17px;
+    }
+
+    .footer-social a {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      min-height:44px;
+      color:var(--espresso);
+      font-size:10px;
+      font-weight:600;
+      letter-spacing:.08em;
+    }
+
+    .footer-social a::before {
+      content:'';
+      display:block;
+      width:5px;
+      height:5px;
+      flex:0 0 5px;
+      border-radius:50%;
+      background:var(--rose);
+    }
+
+    .footer-social a:hover {
+      text-decoration:underline;
+      text-underline-offset:4px;
+    }
+
+    /* =====================================================
+       REVEAL ANIMATIONS
+    ====================================================== */
 
     .js .reveal {
       opacity:0;
@@ -1185,7 +1308,9 @@
       transform:none;
     }
 
-    /* Tablet */
+    /* =====================================================
+       TABLET
+    ====================================================== */
 
     @media (max-width:1180px) {
 
@@ -1326,7 +1451,9 @@
 
     }
 
-    /* Mobile navigation */
+    /* =====================================================
+       MOBILE NAVIGATION
+    ====================================================== */
 
     @media (max-width:900px) {
 
@@ -1441,7 +1568,9 @@
 
     }
 
-    /* Mobile */
+    /* =====================================================
+       MOBILE
+    ====================================================== */
 
     @media (max-width:650px) {
 
@@ -1453,16 +1582,18 @@
         font-size:27px;
       }
 
+      /* 54px hero section bottom spacing */
       .hero {
-        padding:25px 20px 44px;
+        padding:25px 20px 54px;
       }
 
       .hero-copy {
         padding:25px 0 40px;
       }
 
+      /* Slightly larger mobile headline */
       .hero h1 {
-        font-size:52px;
+        font-size:54px;
       }
 
       .hero h1 em {
@@ -1474,8 +1605,9 @@
         font-size:14px;
       }
 
+      /* Revised benefit spacing on mobile */
       .hero-benefits {
-        margin:19px 0 26px;
+        margin:31px 0 41px;
         gap:10px 18px;
       }
 
@@ -1667,11 +1799,25 @@
         align-items:flex-start;
       }
 
+      /* Closer footer link spacing */
       .footer-links {
         justify-content:flex-start;
+        gap:6px 9px;
+      }
+
+      /* Distinct but subtle social links */
+      .footer-social {
+        width:100%;
+        margin-top:2px;
+        padding-top:12px;
+        border-top:1px solid var(--line);
       }
 
     }
+
+    /* =====================================================
+       REDUCED MOTION
+    ====================================================== */
 
     @media (prefers-reduced-motion:reduce) {
 
@@ -1704,6 +1850,10 @@
 
   <div class="site-shell">
 
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
     <header class="nav" data-nav>
 
       <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
@@ -1712,20 +1862,39 @@
       </a>
 
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html" class="active" aria-current="page">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="systems.html">Systems</a>
-        <a href="results.html">Results</a>
+
+        <a href="index.html" class="active" aria-current="page">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="services.html">
+          Services
+        </a>
+
+        <a href="systems.html">
+          Systems
+        </a>
+
+        <a href="results.html">
+          Results
+        </a>
+
       </nav>
 
       <div class="nav-actions">
+
         <a class="btn btn-dark" href="book.html">
           Book Strategy Review
         </a>
+
         <a class="btn btn-outline" href="resources.html">
           Resources
         </a>
+
       </div>
 
       <button
@@ -1745,12 +1914,17 @@
 
     </header>
 
+    <!-- =====================================================
+         MOBILE MENU
+    ====================================================== -->
+
     <div
       class="mobile-menu"
       id="mobile-menu"
       data-mobile-menu
       aria-hidden="true"
     >
+
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -1758,18 +1932,25 @@
       <a href="results.html">Results</a>
 
       <div class="mobile-actions">
+
         <a class="btn btn-dark" href="book.html">
           Book Strategy Review
         </a>
+
         <a class="btn btn-outline" href="resources.html">
           Resources
         </a>
+
       </div>
+
     </div>
 
     <main id="main-content">
 
-      <!-- HERO -->
+      <!-- =================================================
+           HERO
+      ================================================== -->
+
       <section class="hero">
 
         <div class="hero-copy">
@@ -1788,7 +1969,7 @@
             paying, and returning patients.
           </p>
 
-          <!-- Revised: benefits before buttons -->
+          <!-- Benefits before CTA buttons -->
           <ul class="hero-benefits" aria-label="Mirel growth capabilities">
             <li>Premium Positioning</li>
             <li>Conversion Systems</li>
@@ -1797,48 +1978,63 @@
           </ul>
 
           <div class="button-row">
+
             <a class="btn btn-dark btn-large" href="book.html">
               Book a Growth Strategy Review
             </a>
+
             <a class="btn btn-outline btn-large" href="systems.html">
               See The System
             </a>
+
           </div>
 
         </div>
 
-        <div class="hero-editorial" aria-label="Mirel editorial visual world">
+        <div
+          class="hero-editorial"
+          aria-label="Mirel editorial visual world"
+        >
 
           <figure class="editorial-main">
+
             <img
               src="images/hero-face.webp"
               alt="Premium aesthetics editorial portrait"
               loading="lazy"
               fetchpriority="auto"
             >
+
             <span>Perception</span>
+
           </figure>
 
           <div class="editorial-side">
 
             <figure class="editorial-card">
+
               <img
                 src="images/Jewelry.webp"
                 alt="Luxury jewellery editorial"
                 loading="lazy"
                 fetchpriority="low"
               >
+
               <span>Desire</span>
+
             </figure>
 
             <figure class="editorial-card">
+
               <img
                 src="images/luxury-interior.webp"
                 alt="Luxury med spa interior"
                 loading="lazy"
                 fetchpriority="low"
               >
+
               <span>Trust</span>
+
             </figure>
 
           </div>
@@ -1847,7 +2043,10 @@
 
       </section>
 
-      <!-- HERO PROOF -->
+      <!-- =================================================
+           HERO PROOF
+      ================================================== -->
+
       <section class="hero-proof reveal">
 
         <article>
@@ -1876,31 +2075,41 @@
 
       </section>
 
-      <!-- CATEGORY MOMENTUM -->
+      <!-- =================================================
+           CATEGORY MOMENTUM
+      ================================================== -->
+
       <section class="momentum">
 
         <div class="momentum-head reveal">
+
           <p class="eyebrow">Category Momentum</p>
+
           <h2 class="section-title">
             The category is growing.
             Your conversion system has to keep up.
           </h2>
+
           <p class="body-copy">
             Demand is already moving through the aesthetics market.
             Mirel is built to help your clinic capture more value
             from the patient attention it already earns.
           </p>
+
         </div>
 
         <div class="metric-grid">
 
           <article class="reveal">
+
             <strong>≈38M</strong>
             <h3>Global Procedures</h3>
+
             <p>
               Aesthetic surgical and non-surgical procedures
               reported worldwide in 2024.
             </p>
+
             <div class="metric-source">
               <a
                 href="https://www.isaps.org/discover/about-isaps/global-statistics/global-survey-2024-full-report-and-press-releases/"
@@ -1910,41 +2119,57 @@
                 ISAPS Global Survey 2024
               </a>
             </div>
+
           </article>
 
           <article class="reveal">
+
             <strong>+42.5%</strong>
             <h3>Four-Year Growth</h3>
+
             <p>
               Increase in aesthetic procedures
               across the four years through 2024.
             </p>
-            <div class="metric-source">Source: ISAPS</div>
+
+            <div class="metric-source">
+              Source: ISAPS
+            </div>
+
           </article>
 
           <article class="reveal">
+
             <strong>6 Years</strong>
             <h3>Marketing Experience</h3>
+
             <p>
               Experience across strategy, content,
               positioning and digital growth.
             </p>
+
           </article>
 
           <article class="reveal">
+
             <strong>5</strong>
             <h3>Focus Markets</h3>
+
             <p>
               United States, United Kingdom,
               Australia, Canada and New Zealand.
             </p>
+
           </article>
 
         </div>
 
         <div class="international reveal">
+
           <div>
-            <h2>International by design.</h2>
+            <h2>
+              International by design.
+            </h2>
             <p>
               Strategy built for premium aesthetic clinics
               across leading English-speaking markets.
@@ -1958,245 +2183,341 @@
             <span>Canada</span>
             <span>New Zealand</span>
           </div>
+
         </div>
 
       </section>
 
-      <!-- DIAGNOSE BEFORE YOU SCALE -->
+      <!-- =================================================
+           DIAGNOSE BEFORE YOU SCALE
+      ================================================== -->
+
       <section class="statement">
 
         <div class="statement-top">
+
           <div class="statement-intro reveal">
-            <p class="eyebrow">Diagnose Before You Scale</p>
+
+            <p class="eyebrow">
+              Diagnose Before You Scale
+            </p>
+
             <h2>
               Growth gets expensive when every new lead
               enters the same broken journey.
             </h2>
+
             <p>
               More demand becomes more valuable when the experience
               preserves confidence, momentum and perceived value
               at every important step.
             </p>
+
           </div>
+
         </div>
 
         <div class="statement-bottom">
+
           <div class="statement-points">
 
             <article class="reveal">
+
               <span>01</span>
               <h3>Perception</h3>
+
               <p>
                 Does your clinic feel premium enough
                 to make the patient want to keep exploring?
               </p>
+
             </article>
 
             <article class="reveal">
+
               <span>02</span>
               <h3>Conversion</h3>
+
               <p>
                 Does interest move naturally toward
                 inquiry and consultation?
               </p>
+
             </article>
 
             <article class="reveal">
+
               <span>03</span>
               <h3>Retention</h3>
+
               <p>
                 Does patient value continue after
                 the first consultation and treatment?
               </p>
+
             </article>
 
           </div>
+
         </div>
 
       </section>
 
-      <!-- THE VISUAL STANDARD -->
+      <!-- =================================================
+           THE VISUAL STANDARD
+      ================================================== -->
+
       <section class="editorial-showcase">
 
         <div class="showcase-intro reveal">
-          <p class="eyebrow">The Visual Standard</p>
+
+          <p class="eyebrow">
+            The Visual Standard
+          </p>
+
           <h2>
             Premium should be felt before it is explained.
           </h2>
+
           <p>
             Patients form an impression before they read every detail.
             A strong visual world makes quality easier to perceive,
             trust and desire.
           </p>
+
           <a class="text-link" href="results.html">
             View Our Work
             <span aria-hidden="true">→</span>
           </a>
+
         </div>
 
         <div class="lookbook-grid" aria-label="Mirel visual world">
+
           <figure class="lookbook-img">
+
             <img
               src="images/mirel-visual-standard-jewelry.webp"
               alt="Premium Mirel jewellery visual"
               loading="lazy"
               decoding="async"
             >
+
           </figure>
+
           <figure class="lookbook-img">
+
             <img
               src="images/gold-pour.webp"
               alt="Luxury gold editorial visual"
               loading="lazy"
               decoding="async"
             >
+
           </figure>
+
           <figure class="lookbook-img">
+
             <img
               src="images/spa-lobby.webp"
               alt="Premium med spa interior"
               loading="lazy"
               decoding="async"
             >
+
           </figure>
+
         </div>
 
       </section>
 
-      <!-- THE REVENUE PATH -->
+      <!-- =================================================
+           THE REVENUE PATH
+      ================================================== -->
+
       <section class="journey">
 
         <div class="journey-intro reveal">
-          <p class="eyebrow">The Revenue Path</p>
+
+          <p class="eyebrow">
+            The Revenue Path
+          </p>
+
           <h2 class="section-title">
             One patient journey.
             Four moments that decide what happens next.
           </h2>
+
           <p class="body-copy">
             Premium patients rarely book because of one advertisement.
             Growth happens when perception, trust, conversion and
             follow-up work together as one coherent experience.
           </p>
+
         </div>
 
         <div class="journey-grid">
 
           <article class="reveal">
+
             <span>01</span>
             <h3>Attract</h3>
+
             <p>
               Earn attention with positioning
               that makes quality immediately visible.
             </p>
+
           </article>
 
           <article class="reveal">
+
             <span>02</span>
             <h3>Reassure</h3>
+
             <p>
               Build confidence and reduce
               the uncertainty that slows patient decisions.
             </p>
+
           </article>
 
           <article class="reveal">
+
             <span>03</span>
             <h3>Convert</h3>
+
             <p>
               Make the path from interest to consultation
               feel clear, natural and intentional.
             </p>
+
           </article>
 
           <article class="reveal">
+
             <span>04</span>
             <h3>Retain</h3>
+
             <p>
               Protect patient value through consistent
               follow-up, rebooking and experience.
             </p>
+
           </article>
 
         </div>
 
       </section>
 
-      <!-- THE MIREL DIFFERENCE -->
+      <!-- =================================================
+           THE MIREL DIFFERENCE
+      ================================================== -->
+
       <section class="difference">
 
         <figure class="difference-image reveal">
+
           <img
             src="images/gold-necklace.webp"
             alt="Luxury jewellery editorial representing premium brand perception"
             loading="lazy"
             decoding="async"
           >
+
         </figure>
 
         <div class="difference-copy reveal">
-          <p class="eyebrow">The Mirel Difference</p>
+
+          <p class="eyebrow">
+            The Mirel Difference
+          </p>
+
           <h2>
             Technology creates leverage.
             <em>Judgment creates the strategy.</em>
           </h2>
+
           <p>
             Mirel uses AI where it can improve analysis,
             iteration and execution — while positioning,
             diagnosis, creative judgment and commercial
             decisions remain human-led.
           </p>
+
           <ul class="proof-list">
+
             <li>
               Six years of marketing experience across strategy,
               content, positioning and digital growth.
             </li>
+
             <li>
               One focused niche: med spas and premium
               aesthetic clinics.
             </li>
+
             <li>
               Patient-journey strategy built around
               perception, conversion and retention.
             </li>
+
             <li>
               AI used as leverage for stronger execution,
               not as a substitute for strategic judgment.
             </li>
+
           </ul>
+
           <a class="text-link" href="about.html">
             About Mirel
             <span aria-hidden="true">→</span>
           </a>
+
         </div>
 
       </section>
 
-      <!-- QUALITY OVER VOLUME -->
+      <!-- =================================================
+           QUALITY OVER VOLUME
+      ================================================== -->
+
       <section class="qualification reveal">
 
         <div>
-          <p class="eyebrow">Quality Over Volume</p>
+
+          <p class="eyebrow">
+            Quality Over Volume
+          </p>
+
           <h2>
             Built for clinics that want to be chosen
             for trust, not discounts.
           </h2>
+
         </div>
 
         <div class="qualification-right">
+
           <p>
             Best fit if your clinic wants stronger perceived value,
             better-quality consultations, more consistent follow-up
             and a patient journey that feels intentional before,
             during and after treatment.
           </p>
+
           <a class="btn btn-outline btn-large" href="book.html">
             See If We Are A Fit
           </a>
+
         </div>
 
       </section>
 
-      <!-- FINAL CTA -->
+      <!-- =================================================
+           FINAL CTA
+      ================================================== -->
+
       <section class="final-cta">
 
         <img
@@ -2207,29 +2528,39 @@
         >
 
         <div class="final-cta-content reveal">
+
           <p class="eyebrow">
             30-Minute Med Spa Growth Strategy Review
           </p>
+
           <h2>
             Find the leak before you buy more traffic.
           </h2>
+
           <p>
             See where your patient journey may be losing
             perception, momentum, consultation opportunities
             or long-term patient value.
           </p>
+
           <div class="button-row">
+
             <a class="btn btn-dark btn-large" href="book.html">
               Book Your Growth Strategy Review
             </a>
+
           </div>
+
         </div>
 
       </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer class="footer">
 
       <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
@@ -2238,6 +2569,7 @@
       </a>
 
       <div class="footer-links">
+
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="systems.html">Systems</a>
@@ -2246,24 +2578,65 @@
         <a href="book.html">Book</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+
         <a href="mailto:delora@mirelmarketing.com">
           delora@mirelmarketing.com
         </a>
+
       </div>
+
+      <!-- New social media links -->
+      <nav class="footer-social" aria-label="Social media">
+
+        <a
+          href="https://www.instagram.com/mirelpartners/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://www.youtube.com/@mirelpartners"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/mirelmarketing/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+      </nav>
 
     </footer>
 
   </div>
 
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
   <script>
     (() => {
+
       const nav = document.querySelector('[data-nav]');
       const toggle = document.querySelector('[data-menu-toggle]');
       const menu = document.querySelector('[data-mobile-menu]');
 
       let lastScroll = window.scrollY;
 
+      /* ===================================================
+         MOBILE MENU
+      =================================================== */
+
       const setMenuState = (open) => {
+
         if (!toggle || !menu) return;
 
         menu.classList.toggle('open', open);
@@ -2289,16 +2662,19 @@
           'menu-open',
           open
         );
+
       };
 
       if (toggle && menu) {
 
         toggle.addEventListener('click', event => {
+
           event.stopPropagation();
 
           setMenuState(
             !menu.classList.contains('open')
           );
+
         });
 
         menu.addEventListener('click', event => {
@@ -2306,9 +2682,11 @@
         });
 
         menu.querySelectorAll('a').forEach(link => {
+
           link.addEventListener('click', () => {
             setMenuState(false);
           });
+
         });
 
         document.addEventListener('click', () => {
@@ -2316,19 +2694,29 @@
         });
 
         document.addEventListener('keydown', event => {
+
           if (event.key === 'Escape') {
             setMenuState(false);
           }
+
         });
 
         window.addEventListener('resize', () => {
+
           if (window.innerWidth > 900) {
             setMenuState(false);
           }
+
         }, { passive:true });
+
       }
 
+      /* ===================================================
+         NAVIGATION SCROLL
+      =================================================== */
+
       window.addEventListener('scroll', () => {
+
         const current = window.scrollY;
 
         nav?.classList.toggle(
@@ -2341,13 +2729,22 @@
           current > 130 &&
           !menu?.classList.contains('open')
         ) {
+
           nav?.classList.add('hide');
+
         } else {
+
           nav?.classList.remove('hide');
+
         }
 
         lastScroll = current;
+
       }, { passive:true });
+
+      /* ===================================================
+         REVEAL ANIMATIONS
+      =================================================== */
 
       const revealItems = document.querySelectorAll('.reveal');
 
@@ -2359,18 +2756,26 @@
         reduceMotion ||
         !('IntersectionObserver' in window)
       ) {
+
         revealItems.forEach(item => {
           item.classList.add('visible');
         });
+
       } else {
+
         const observer = new IntersectionObserver(
           (entries, instance) => {
+
             entries.forEach(entry => {
+
               if (!entry.isIntersecting) return;
 
               entry.target.classList.add('visible');
+
               instance.unobserve(entry.target);
+
             });
+
           },
           {
             threshold:.08
@@ -2380,7 +2785,9 @@
         revealItems.forEach(item => {
           observer.observe(item);
         });
+
       }
+
     })();
   </script>
 
