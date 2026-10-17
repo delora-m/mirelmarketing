@@ -204,10 +204,6 @@
 
       --porcelain:#fffdf9;
 
-      /*
-        Very pale dusty rose.
-        Nearly ivory, with only a soft rose undertone.
-      */
       --dusty-rose:#f8f3f4;
       --dusty-rose-deep:#f1e8ea;
 
@@ -1298,10 +1294,9 @@
     }
 
 
-    /*
-      Very pale powder rose.
-      Almost ivory, with only a subtle rose undertone.
-    */
+    /* =====================================================
+       STATEMENT PROOF — CREAM
+    ====================================================== */
 
     .statement-bottom{
 
@@ -1396,16 +1391,18 @@
 
     /* =====================================================
        05 — VISUAL STANDARD
-
-       One unified cream tone:
-       top space, copy area and bottom space now match.
+       FINAL: 3-IMAGE EDITORIAL COMPOSITION
     ====================================================== */
 
     .editorial-showcase{
 
       display:grid;
 
-      grid-template-columns:360px 1fr;
+      /*
+        Text column is intentionally wider now that
+        the fourth image has been removed.
+      */
+      grid-template-columns:430px 1fr;
 
       column-gap:0;
 
@@ -1423,7 +1420,7 @@
     .showcase-intro{
 
       padding:
-        65px 58px;
+        66px 64px;
 
       display:flex;
 
@@ -1438,15 +1435,19 @@
 
     .showcase-intro h2{
 
-      margin:0 0 23px;
+      margin:0 0 25px;
 
       font-family:var(--serif);
 
-      font-size:48px;
+      /*
+        Slightly larger for a more editorial,
+        luxury-magazine hierarchy.
+      */
+      font-size:54px;
 
-      line-height:.98;
+      line-height:.97;
 
-      letter-spacing:-.038em;
+      letter-spacing:-.04em;
 
       font-weight:500;
 
@@ -1455,11 +1456,13 @@
 
     .showcase-intro p:not(.eyebrow){
 
-      margin:0 0 34px;
+      max-width:330px;
 
-      font-size:13px;
+      margin:0 0 35px;
 
-      line-height:1.86;
+      font-size:14px;
+
+      line-height:1.88;
 
       color:var(--text-soft);
 
@@ -1503,11 +1506,16 @@
     }
 
 
+    /*
+      Serum image removed.
+      Three remaining visuals have more room to breathe.
+    */
+
     .lookbook-grid{
 
       display:grid;
 
-      grid-template-columns:1.25fr 1fr 1fr 1fr;
+      grid-template-columns:1.18fr 1fr 1fr;
 
       gap:6px;
 
@@ -1564,23 +1572,20 @@
 
     /* =====================================================
        06 — JOURNEY
-
-       Bottom padding intentionally removed.
-       Vertical dividers now end directly where the next
-       image-led section begins.
+       CREAM-WHITE + COMPLETE FRAME
     ====================================================== */
 
     .journey{
 
-  padding:
-    89px 72px
-    0;
+      padding:
+        89px 72px
+        0;
 
-  background:var(--porcelain);
+      background:var(--porcelain);
 
-  border-bottom:0;
+      border-bottom:0;
 
-}
+    }
 
 
     .journey-intro{
@@ -1616,7 +1621,12 @@
 
       grid-template-columns:repeat(4,1fr);
 
+      /*
+        Matching line above AND below.
+        This closes the four-column composition cleanly.
+      */
       border-top:1px solid rgba(62,39,35,.15);
+      border-bottom:1px solid rgba(62,39,35,.15);
 
     }
 
@@ -1854,7 +1864,6 @@
 
     /* =====================================================
        08 — QUALIFICATION
-       Same very pale powder rose.
     ====================================================== */
 
     .qualification{
@@ -2245,6 +2254,8 @@
       }
 
 
+      /* Visual Standard stacks cleanly on tablet */
+
       .editorial-showcase{
 
         grid-template-columns:1fr;
@@ -2258,30 +2269,48 @@
 
       .showcase-intro{
 
-        max-width:730px;
+        max-width:800px;
 
         margin:0 34px;
 
-        padding:55px 34px;
+        padding:
+          52px 34px
+          46px;
 
         background:var(--cream);
 
       }
 
 
+      .showcase-intro h2{
+
+        max-width:680px;
+
+        font-size:52px;
+
+      }
+
+
+      .showcase-intro p:not(.eyebrow){
+
+        max-width:560px;
+
+      }
+
+
       .lookbook-grid{
 
-        margin-top:22px;
+        margin-top:20px;
 
-        grid-template-columns:repeat(4,1fr);
+        grid-template-columns:1.18fr 1fr 1fr;
 
-        min-height:400px;
+        min-height:420px;
 
       }
 
 
       .lookbook-img{
-        min-height:400px;
+        min-height:420px;
       }
 
 
@@ -2472,24 +2501,31 @@
       }
 
 
+      /*
+        Keep all 3 lookbook images side-by-side on tablet.
+        Mobile gets the editorial 1 + 2 composition below.
+      */
+
       .lookbook-grid{
 
         grid-template-columns:
-          1.2fr 1fr;
+          repeat(3,1fr);
 
       }
 
 
       .lookbook-img{
+
         min-height:360px;
+
       }
 
 
       .lookbook-img:first-child{
 
-        grid-row:span 2;
+        grid-row:auto;
 
-        min-height:726px;
+        min-height:360px;
 
       }
 
@@ -2674,6 +2710,11 @@
       }
 
 
+      /* ===================================================
+         VISUAL STANDARD — MOBILE
+         First image large, two supporting images beneath.
+      =================================================== */
+
       .editorial-showcase{
 
         display:block;
@@ -2692,7 +2733,7 @@
           25px;
 
         padding:
-          48px 25px;
+          46px 25px;
 
         background:var(--cream);
 
@@ -2700,7 +2741,20 @@
 
 
       .showcase-intro h2{
-        font-size:43px;
+
+        font-size:45px;
+
+        line-height:.99;
+
+      }
+
+
+      .showcase-intro p:not(.eyebrow){
+
+        max-width:100%;
+
+        font-size:14px;
+
       }
 
 
@@ -2717,14 +2771,11 @@
       }
 
 
-      .lookbook-img,
-      .lookbook-img:first-child{
+      .lookbook-img{
 
         min-height:260px;
 
         height:260px;
-
-        grid-row:auto;
 
       }
 
@@ -2740,11 +2791,7 @@
       }
 
 
-      /*
-        Bottom space intentionally removed.
-        The next editorial image begins immediately after
-        the four journey columns.
-      */
+      /* Journey ends cleanly on its bottom rule */
 
       .journey{
 
@@ -2780,6 +2827,11 @@
 
       }
 
+
+      /*
+        The grid already has a final bottom border,
+        so the last card does not need another one.
+      */
 
       .difference-image{
         min-height:430px;
@@ -3474,7 +3526,7 @@
 
 
       <!-- =================================================
-           VISUAL STANDARD
+           VISUAL STANDARD — 3 IMAGES
       ================================================== -->
 
       <section class="editorial-showcase">
@@ -3549,18 +3601,6 @@
             <img
               src="images/spa-lobby.webp"
               alt="Premium med spa interior"
-              loading="lazy"
-              decoding="async"
-            >
-
-          </figure>
-
-
-          <figure class="lookbook-img">
-
-            <img
-              src="images/mirel-premium-skincare-scene.webp"
-              alt="Premium skincare editorial scene"
               loading="lazy"
               decoding="async"
             >
