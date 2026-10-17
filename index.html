@@ -26,7 +26,7 @@
 
   <meta
     name="theme-color"
-    content="#F8F5F0"
+    content="#fbf7f1"
   >
 
   <link
@@ -36,7 +36,7 @@
 
 
   <!-- =====================================================
-       SOCIAL
+       OPEN GRAPH
   ====================================================== -->
 
   <meta
@@ -46,7 +46,7 @@
 
   <meta
     property="og:description"
-    content="Premium positioning, conversion systems and patient-journey strategy for med spas."
+    content="Premium positioning, patient-journey strategy, conversion systems and AI-powered execution for med spas."
   >
 
   <meta
@@ -60,13 +60,33 @@
   >
 
   <meta
+    property="og:site_name"
+    content="Mirel Marketing"
+  >
+
+  <meta
     property="og:image"
     content="https://mirelmarketing.com/images/hero-face.webp"
   >
 
+
+  <!-- =====================================================
+       TWITTER
+  ====================================================== -->
+
   <meta
     name="twitter:card"
     content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Med Spa Growth Systems | Mirel Marketing"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Premium positioning, conversion systems and patient-journey strategy for med spas."
   >
 
   <meta
@@ -124,6 +144,54 @@
   </script>
 
 
+  <!-- =====================================================
+       STRUCTURED DATA
+  ====================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "@id":"https://mirelmarketing.com/#organization",
+        "name":"Mirel Marketing",
+        "url":"https://mirelmarketing.com/",
+        "email":"delora@mirelmarketing.com",
+        "description":"Mirel Marketing builds premium growth and conversion systems for med spas and aesthetic clinics.",
+        "sameAs":[
+          "https://www.instagram.com/mirelmarketing"
+        ],
+        "areaServed":[
+          {"@type":"Country","name":"United States"},
+          {"@type":"Country","name":"United Kingdom"},
+          {"@type":"Country","name":"Australia"},
+          {"@type":"Country","name":"Canada"},
+          {"@type":"Country","name":"New Zealand"}
+        ]
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://mirelmarketing.com/#website",
+        "url":"https://mirelmarketing.com/",
+        "name":"Mirel Marketing",
+        "publisher":{
+          "@id":"https://mirelmarketing.com/#organization"
+        }
+      },
+      {
+        "@type":"Service",
+        "name":"Med Spa Growth Systems",
+        "provider":{
+          "@id":"https://mirelmarketing.com/#organization"
+        },
+        "serviceType":"Patient journey optimization, premium positioning, conversion systems, paid advertising and follow-up systems"
+      }
+    ]
+  }
+  </script>
+
+
   <style>
 
     /* =====================================================
@@ -132,22 +200,21 @@
 
     :root{
 
-      --ivory:#F8F5F0;
-      --ivory-light:#FCFAF7;
-      --ivory-deep:#EFE6DE;
+      --cream:#fbf7f1;
+      --porcelain:#fffdf9;
 
-      --espresso:#3E2723;
-      --espresso-deep:#1D0F0C;
+      --espresso:#3e2723;
+      --espresso-deep:#1d0f0c;
 
-      --rose:#B7818C;
-      --rose-soft:#E7D1D6;
+      --rose:#a9686d;
+      --rose-soft:#f2d6da;
 
-      --gold:#B59468;
+      --gold:#b39364;
 
-      --text:#6D605A;
-      --muted:#93847D;
+      --line:rgba(62,39,35,.14);
+      --line-dark:rgba(62,39,35,.25);
 
-      --line:rgba(62,39,35,.12);
+      --text-soft:rgba(62,39,35,.70);
 
       --serif:
         'Cormorant Garamond',
@@ -159,10 +226,9 @@
         Arial,
         sans-serif;
 
-      --max:1450px;
+      --max:1760px;
 
     }
-
 
 
     /* =====================================================
@@ -186,7 +252,7 @@
       margin:0;
 
       background:
-        var(--ivory);
+        #f4eee8;
 
       color:
         var(--espresso-deep);
@@ -196,6 +262,9 @@
 
       -webkit-font-smoothing:
         antialiased;
+
+      text-rendering:
+        optimizeLegibility;
 
       overflow-x:hidden;
 
@@ -207,20 +276,17 @@
     }
 
 
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+
     img{
 
       display:block;
 
-      width:100%;
-
-    }
-
-
-    a{
-
-      color:inherit;
-
-      text-decoration:none;
+      max-width:100%;
 
     }
 
@@ -230,56 +296,108 @@
     }
 
 
+    .site-shell{
 
-    /* =====================================================
-       GENERAL
-    ====================================================== */
+      max-width:
+        var(--max);
 
-    .container{
+      margin:
+        0 auto;
 
-      width:min(
-        var(--max),
-        calc(100% - 104px)
-      );
-
-      margin-inline:auto;
+      background:
+        var(--cream);
 
     }
 
+
+    /* =====================================================
+       SKIP LINK / ACCESSIBILITY
+    ====================================================== */
+
+    .skip-link{
+
+      position:fixed;
+
+      left:18px;
+      top:18px;
+
+      z-index:5000;
+
+      padding:
+        11px 17px;
+
+      background:
+        var(--espresso-deep);
+
+      color:#fff;
+
+      transform:
+        translateY(-180%);
+
+    }
+
+
+    .skip-link:focus{
+      transform:none;
+    }
+
+
+    a:focus-visible,
+    button:focus-visible{
+
+      outline:
+        3px solid
+        rgba(169,104,109,.65);
+
+      outline-offset:
+        4px;
+
+    }
+
+
+    /* =====================================================
+       COMMON
+    ====================================================== */
 
     .eyebrow{
 
       margin:
         0 0
-        20px;
+        26px;
 
-      font-size:10px;
+      text-transform:
+        uppercase;
 
-      font-weight:600;
+      letter-spacing:
+        .36em;
 
-      line-height:1.5;
+      font-size:
+        10px;
 
-      letter-spacing:.34em;
+      font-weight:
+        650;
 
-      text-transform:uppercase;
-
-      color:#8F7770;
+      color:
+        #8d6e63;
 
     }
 
 
-    .serif-title{
+    .section-title{
 
       margin:0;
 
       font-family:
         var(--serif);
 
-      font-weight:500;
+      font-weight:
+        500;
 
-      letter-spacing:-.045em;
+      letter-spacing:
+        -.04em;
 
-      line-height:.96;
+      line-height:
+        .98;
 
       color:
         var(--espresso-deep);
@@ -287,14 +405,16 @@
     }
 
 
-    .serif-title em{
-
-      font-style:italic;
-
-      font-weight:400;
+    .section-title em{
 
       color:
         var(--rose);
+
+      font-style:
+        italic;
+
+      font-weight:
+        400;
 
     }
 
@@ -303,12 +423,14 @@
 
       margin:0;
 
+      font-size:
+        14px;
+
+      line-height:
+        1.9;
+
       color:
-        var(--text);
-
-      font-size:15px;
-
-      line-height:1.95;
+        var(--text-soft);
 
     }
 
@@ -317,42 +439,38 @@
        BUTTONS
     ====================================================== */
 
-    .button-row{
-
-      display:flex;
-
-      flex-wrap:wrap;
-
-      gap:12px;
-
-      margin-top:35px;
-
-    }
-
-
     .btn{
 
-      min-height:58px;
+      min-height:
+        48px;
 
       padding:
-        0 29px;
+        0 25px;
 
-      display:inline-flex;
+      display:
+        inline-flex;
 
       align-items:center;
       justify-content:center;
 
       border:
-        1px solid transparent;
+        1px solid
+        var(--line-dark);
 
-      font-size:11px;
+      font-size:
+        11px;
 
-      font-weight:600;
+      font-weight:
+        650;
+
+      white-space:
+        nowrap;
 
       transition:
-        transform .2s ease,
-        background .2s ease,
-        color .2s ease;
+        transform .28s ease,
+        background .28s ease,
+        color .28s ease,
+        box-shadow .28s ease;
 
     }
 
@@ -362,101 +480,140 @@
       transform:
         translateY(-2px);
 
+      box-shadow:
+        0 16px 44px
+        rgba(62,39,35,.13);
+
     }
 
 
     .btn-dark{
 
       background:
-        var(--espresso-deep);
+        linear-gradient(
+          135deg,
+          var(--espresso-deep),
+          var(--espresso)
+        );
 
       color:#fff;
+
+      border-color:
+        var(--espresso-deep);
 
     }
 
 
     .btn-outline{
 
-      border-color:
-        rgba(62,39,35,.19);
-
       background:
-        rgba(255,255,255,.26);
+        rgba(255,253,249,.48);
 
       color:
-        var(--espresso-deep);
+        var(--espresso);
 
     }
 
 
-    .btn-outline:hover{
+    .btn-large{
 
-      background:#fff;
+      min-height:
+        58px;
+
+      padding:
+        0 34px;
 
     }
 
+
+    .button-row{
+
+      display:flex;
+
+      flex-wrap:wrap;
+
+      gap:14px;
+
+    }
 
 
     /* =====================================================
-       NAV
+       NAVIGATION
     ====================================================== */
 
     .nav{
 
-      position:sticky;
+      position:
+        sticky;
 
       top:0;
 
       z-index:1000;
 
-      height:92px;
-
-      background:
-        rgba(248,245,240,.96);
-
-      border-bottom:
-        1px solid var(--line);
-
-      backdrop-filter:
-        blur(16px);
-
-    }
-
-
-    .nav-inner{
-
-      width:min(
-        var(--max),
-        calc(100% - 104px)
-      );
-
-      height:100%;
-
-      margin:auto;
+      height:
+        96px;
 
       display:grid;
 
       grid-template-columns:
-        230px
-        1fr
-        auto;
+        230px 1fr auto;
 
       align-items:center;
 
-      gap:30px;
+      gap:34px;
 
+      padding:
+        0 72px;
+
+      background:
+        rgba(251,247,241,.91);
+
+      backdrop-filter:
+        blur(22px);
+
+      border-bottom:
+        1px solid
+        rgba(62,39,35,.10);
+
+      transition:
+        height .3s ease,
+        transform .3s ease,
+        background .3s ease;
+
+    }
+
+
+    .nav.scrolled{
+
+      height:
+        82px;
+
+      background:
+        rgba(251,247,241,.97);
+
+    }
+
+
+    .nav.hide{
+      transform:translateY(-100%);
     }
 
 
     .brand{
 
-      display:flex;
+      display:
+        inline-flex;
 
-      flex-direction:column;
+      flex-direction:
+        column;
 
-      width:max-content;
+      width:
+        max-content;
 
       line-height:.9;
+
+      color:
+        var(--espresso-deep);
 
     }
 
@@ -466,22 +623,28 @@
       font-family:
         var(--serif);
 
-      font-size:34px;
+      font-size:
+        33px;
 
-      font-weight:600;
+      font-weight:
+        600;
 
-      letter-spacing:.18em;
+      letter-spacing:
+        .21em;
 
     }
 
 
     .brand small{
 
-      margin-top:9px;
+      margin-top:
+        9px;
 
-      font-size:9px;
+      font-size:
+        9px;
 
-      letter-spacing:.46em;
+      letter-spacing:
+        .46em;
 
     }
 
@@ -490,30 +653,65 @@
 
       display:flex;
 
-      align-items:center;
       justify-content:center;
 
-      gap:40px;
+      gap:42px;
+
+      font-size:
+        13px;
 
     }
 
 
     .nav-links a{
 
-      font-size:13px;
+      position:relative;
 
-      color:
-        var(--espresso-deep);
+      padding:
+        39px 0;
 
     }
 
 
-    .nav-links a.active{
+    .nav-links a::after{
 
-      padding-bottom:7px;
+      content:'';
 
-      border-bottom:
-        1px solid var(--rose);
+      position:absolute;
+
+      left:0;
+      right:0;
+      bottom:29px;
+
+      height:1px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--espresso),
+          var(--rose)
+        );
+
+      transform:
+        scaleX(0);
+
+      transform-origin:
+        right;
+
+      transition:
+        transform .3s ease;
+
+    }
+
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after{
+
+      transform:
+        scaleX(1);
+
+      transform-origin:
+        left;
 
     }
 
@@ -522,72 +720,89 @@
 
       display:flex;
 
-      gap:12px;
+      align-items:center;
+
+      gap:14px;
 
     }
 
 
-    .mobile-toggle,
+    .mobile-menu-toggle,
     .mobile-menu{
-
       display:none;
-
     }
-
 
 
     /* =====================================================
        HERO
-       Two worlds touching each other.
-       No floating image boxes.
+       IMAGE LAYOUT RESTORED FROM ORIGINAL DESIGN
     ====================================================== */
 
     .hero{
 
-      min-height:
-        calc(100vh - 92px);
-
       display:grid;
 
       grid-template-columns:
-        46% 54%;
+        .9fr 1.1fr;
+
+      min-height:
+        835px;
+
+      padding:
+        78px 72px 74px;
+
+      border-bottom:
+        1px solid var(--line);
 
       background:
 
         radial-gradient(
-          circle at 8% 17%,
-          rgba(231,209,214,.27),
-          transparent 27%
+          circle at 8% 18%,
+          rgba(242,214,218,.48),
+          transparent 28%
         ),
 
         linear-gradient(
-          110deg,
-          #FBF7F2,
-          #F6EFE8
+          90deg,
+          #fbf7f1 0%,
+          #fbf7f1 48%,
+          #efe2da 100%
         );
 
-      border-bottom:
-        1px solid var(--line);
+      position:relative;
+
+      overflow:hidden;
+
+    }
+
+
+    .hero::before{
+
+      content:'';
+
+      position:absolute;
+
+      inset:0;
+
+      background:
+
+        linear-gradient(
+          115deg,
+          transparent 0 54%,
+          rgba(179,147,100,.10) 54% 55%,
+          transparent 55%
+        );
+
+      pointer-events:none;
 
     }
 
 
     .hero-copy{
 
-      min-height:
-        calc(100vh - 92px);
+      position:relative;
 
-      padding:
-        75px
-        58px
-        65px
-        max(
-          52px,
-          calc(
-            (100vw - var(--max))
-            / 2
-          )
-        );
+      z-index:1;
 
       display:flex;
 
@@ -595,19 +810,41 @@
 
       justify-content:center;
 
+      max-width:
+        670px;
+
+      padding-right:
+        52px;
+
     }
 
 
     .hero h1{
 
-      max-width:680px;
+      margin:
+        0 0 32px;
+
+      font-family:
+        var(--serif);
 
       font-size:
         clamp(
-          62px,
-          6.2vw,
-          98px
+          68px,
+          6vw,
+          90px
         );
+
+      font-weight:
+        500;
+
+      line-height:
+        .91;
+
+      letter-spacing:
+        -.052em;
+
+      color:
+        var(--espresso-deep);
 
     }
 
@@ -616,30 +853,42 @@
 
       display:block;
 
-      margin-top:5px;
+      margin-top:
+        5px;
+
+      color:
+        var(--rose);
+
+      font-style:
+        italic;
+
+      font-weight:
+        400;
 
     }
 
 
-    .hero-description{
+    .hero-subtitle{
 
-      max-width:610px;
+      max-width:
+        590px;
 
-      margin-top:33px;
+      margin:
+        0 0 28px;
 
-      font-size:16px;
+      font-size:
+        16px;
 
-      line-height:1.95;
+      line-height:
+        1.85;
 
       color:
-        var(--text);
+        var(--text-soft);
 
     }
 
 
     .hero-pills{
-
-      max-width:620px;
 
       display:flex;
 
@@ -647,7 +896,8 @@
 
       gap:8px;
 
-      margin-top:28px;
+      margin-bottom:
+        31px;
 
     }
 
@@ -655,64 +905,93 @@
     .hero-pills span{
 
       padding:
-        11px 13px;
+        10px 12px;
 
       border:
         1px solid
-        rgba(62,39,35,.12);
+        rgba(62,39,35,.13);
 
       background:
-        rgba(255,255,255,.28);
+        rgba(255,255,255,.31);
 
-      font-size:8px;
+      text-transform:
+        uppercase;
 
-      line-height:1;
+      letter-spacing:
+        .16em;
 
-      letter-spacing:.18em;
+      font-size:
+        8px;
 
-      text-transform:uppercase;
-
-      color:#856F68;
+      color:
+        #856f68;
 
     }
 
 
+    /*
+      This is the OLD image composition:
+      one large main image + two stacked side images.
+    */
 
-    /* =====================================================
-       HERO COLLAGE
-       Images touch. One editorial composition.
-    ====================================================== */
+    .hero-editorial{
 
-    .hero-art{
+      position:relative;
+
+      z-index:1;
 
       display:grid;
 
       grid-template-columns:
-        70% 30%;
+        1.08fr .72fr;
 
-      min-height:
-        calc(100vh - 92px);
+      gap:
+        12px;
 
-      background:
-        var(--espresso-deep);
+      align-self:
+        center;
+
+      height:
+        670px;
 
     }
 
 
-    .hero-main{
+    .editorial-main,
+    .editorial-card{
 
       position:relative;
 
       overflow:hidden;
 
+      margin:0;
+
+      background:
+        #ded2c9;
+
+      box-shadow:
+
+        inset 0 0 0 1px
+        rgba(62,39,35,.15),
+
+        0 30px 90px
+        rgba(62,39,35,.12);
+
     }
 
 
-    .hero-main img{
+    .editorial-main img,
+    .editorial-card img{
 
+      width:100%;
       height:100%;
 
       object-fit:cover;
+
+    }
+
+
+    .editorial-main img{
 
       object-position:
         center top;
@@ -720,91 +999,87 @@
     }
 
 
-    .hero-side{
+    .editorial-card:first-child img{
+
+      object-position:
+        center 45%;
+
+    }
+
+
+    .editorial-main::after,
+    .editorial-card::after{
+
+      content:'';
+
+      position:absolute;
+
+      inset:0;
+
+      background:
+
+        linear-gradient(
+          180deg,
+          rgba(62,39,35,.01),
+          rgba(62,39,35,.19)
+        );
+
+      pointer-events:none;
+
+    }
+
+
+    .editorial-main span,
+    .editorial-card span{
+
+      position:absolute;
+
+      left:24px;
+      bottom:22px;
+
+      z-index:2;
+
+      color:
+        rgba(255,255,255,.88);
+
+      text-transform:
+        uppercase;
+
+      letter-spacing:
+        .30em;
+
+      font-size:
+        9px;
+
+    }
+
+
+    .editorial-side{
 
       display:grid;
 
       grid-template-rows:
         1fr 1fr;
 
-    }
-
-
-    .hero-side figure,
-    .hero-main{
-
-      margin:0;
+      gap:
+        12px;
 
     }
-
-
-    .hero-side figure{
-
-      position:relative;
-
-      overflow:hidden;
-
-    }
-
-
-    .hero-side img{
-
-      height:100%;
-
-      object-fit:cover;
-
-    }
-
-
-    .hero-image-overlay{
-
-      position:absolute;
-
-      inset:0;
-
-      pointer-events:none;
-
-      background:
-
-        linear-gradient(
-          180deg,
-          transparent 55%,
-          rgba(29,15,12,.28)
-        );
-
-    }
-
-
-    .image-word{
-
-      position:absolute;
-
-      left:23px;
-      bottom:22px;
-
-      z-index:2;
-
-      font-size:8px;
-
-      letter-spacing:.31em;
-
-      text-transform:uppercase;
-
-      color:
-        rgba(255,255,255,.9);
-
-    }
-
 
 
     /* =====================================================
-       HERO PROOF LINE
+       HERO PROOF
     ====================================================== */
 
     .hero-proof{
 
+      display:grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
       background:
-        #F9F5F0;
+        #faf6f1;
 
       border-bottom:
         1px solid var(--line);
@@ -812,32 +1087,13 @@
     }
 
 
-    .hero-proof-inner{
-
-      width:min(
-        var(--max),
-        calc(100% - 104px)
-      );
-
-      margin:auto;
-
-      display:grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
-    }
-
-
     .hero-proof article{
 
-      min-height:138px;
+      min-height:
+        135px;
 
       padding:
-        31px 30px;
-
-      border-right:
-        1px solid var(--line);
+        30px 42px;
 
       display:flex;
 
@@ -845,51 +1101,54 @@
 
       justify-content:center;
 
+      border-right:
+        1px solid var(--line);
+
     }
 
 
-    .hero-proof article:first-child{
-
-      border-left:
-        1px solid var(--line);
-
+    .hero-proof article:last-child{
+      border-right:0;
     }
 
 
     .hero-proof h3{
 
       margin:
-        0 0
-        10px;
+        0 0 10px;
 
-      font-size:8px;
+      text-transform:
+        uppercase;
 
-      line-height:1.4;
+      letter-spacing:
+        .26em;
 
-      letter-spacing:.27em;
+      font-size:
+        8px;
 
-      text-transform:uppercase;
-
-      color:#8A736B;
+      color:
+        #8d7168;
 
     }
 
 
     .hero-proof p{
 
+      max-width:
+        370px;
+
       margin:0;
 
-      max-width:365px;
+      font-size:
+        13px;
 
-      font-size:13px;
-
-      line-height:1.8;
+      line-height:
+        1.8;
 
       color:
-        var(--text);
+        var(--text-soft);
 
     }
-
 
 
     /* =====================================================
@@ -899,53 +1158,57 @@
     .momentum{
 
       padding:
-        115px 0
-        110px;
+        102px 72px
+        96px;
 
       background:
-        var(--ivory-light);
+        var(--porcelain);
+
+      border-bottom:
+        1px solid var(--line);
 
     }
 
 
-    .momentum-heading{
+    .momentum-head{
 
-      max-width:880px;
+      max-width:
+        880px;
 
-      margin-bottom:67px;
+      margin-bottom:
+        57px;
 
     }
 
 
-    .momentum-heading h2{
+    .momentum-head .section-title{
 
       font-size:
         clamp(
           51px,
-          5.2vw,
-          76px
+          5vw,
+          72px
         );
 
     }
 
 
-    .momentum-heading .body-copy{
+    .momentum-head .body-copy{
 
-      max-width:650px;
+      max-width:
+        650px;
 
-      margin-top:25px;
+      margin-top:
+        25px;
 
     }
 
 
-
     /* =====================================================
-       AUTHORITY NUMBERS
-       One clean line.
-       No giant boxes.
+       AUTHORITY / STATISTICS
     ====================================================== */
 
-    .authority-row{
+    .metric-grid{
 
       display:grid;
 
@@ -961,14 +1224,13 @@
     }
 
 
-    .authority-stat{
+    .metric-grid article{
 
-      position:relative;
-
-      min-height:260px;
+      min-height:
+        250px;
 
       padding:
-        42px 32px;
+        35px 31px;
 
       display:flex;
 
@@ -976,54 +1238,59 @@
 
       justify-content:center;
 
-    }
-
-
-    .authority-stat + .authority-stat{
-
-      border-left:
+      border-right:
         1px solid var(--line);
 
     }
 
 
-    .authority-value{
+    .metric-grid article:last-child{
+      border-right:0;
+    }
 
-      margin-bottom:17px;
+
+    .metric-grid strong{
+
+      display:block;
+
+      margin-bottom:
+        16px;
 
       font-family:
         var(--serif);
 
       font-size:
         clamp(
-          46px,
+          45px,
           4vw,
-          65px
+          61px
         );
 
-      line-height:.9;
+      font-weight:
+        500;
 
-      font-weight:500;
+      line-height:
+        .95;
 
-      letter-spacing:-.04em;
-
-      color:
-        var(--espresso-deep);
+      letter-spacing:
+        -.04em;
 
     }
 
 
-    .authority-label{
+    .metric-grid h3{
 
-      margin-bottom:10px;
+      margin:
+        0 0 10px;
 
-      font-size:8px;
+      text-transform:
+        uppercase;
 
-      font-weight:650;
+      letter-spacing:
+        .20em;
 
-      letter-spacing:.22em;
-
-      text-transform:uppercase;
+      font-size:
+        8px;
 
       color:
         var(--rose);
@@ -1031,37 +1298,57 @@
     }
 
 
-    .authority-stat p{
+    .metric-grid p{
 
-      max-width:260px;
+      max-width:
+        270px;
 
       margin:0;
 
-      font-size:12px;
+      font-size:
+        12px;
 
-      line-height:1.75;
+      line-height:
+        1.75;
 
       color:
-        var(--text);
+        var(--text-soft);
 
     }
 
 
-    .authority-source{
+    .metric-source{
 
-      margin-top:14px;
+      margin-top:
+        13px;
 
-      font-size:7px;
+      font-size:
+        7px;
 
-      letter-spacing:.10em;
+      line-height:
+        1.6;
 
-      text-transform:uppercase;
+      letter-spacing:
+        .10em;
+
+      text-transform:
+        uppercase;
 
       color:
-        var(--muted);
+        #9c8981;
 
     }
 
+
+    .metric-source a{
+
+      text-decoration:
+        underline;
+
+      text-underline-offset:
+        3px;
+
+    }
 
 
     /* =====================================================
@@ -1070,67 +1357,65 @@
 
     .international{
 
-      padding:
-        55px 0
-        0;
+      margin-top:
+        58px;
+
+      display:grid;
+
+      grid-template-columns:
+        .8fr 1.2fr;
+
+      gap:
+        45px;
+
+      align-items:end;
 
     }
 
 
-    .international-inner{
+    .international h2{
 
-      display:flex;
-
-      justify-content:space-between;
-
-      align-items:flex-end;
-
-      gap:50px;
-
-    }
-
-
-    .international-copy{
-
-      max-width:520px;
-
-    }
-
-
-    .international-copy h3{
-
-      margin:0;
+      margin:
+        0 0 12px;
 
       font-family:
         var(--serif);
 
-      font-size:39px;
+      font-size:
+        39px;
 
-      font-weight:500;
+      line-height:
+        1;
 
-      line-height:1;
+      letter-spacing:
+        -.03em;
 
-      letter-spacing:-.03em;
+      font-weight:
+        500;
 
     }
 
 
-    .international-copy p{
+    .international p{
 
-      margin:
-        14px 0 0;
+      max-width:
+        500px;
 
-      font-size:13px;
+      margin:0;
 
-      line-height:1.8;
+      font-size:
+        13px;
+
+      line-height:
+        1.8;
 
       color:
-        var(--text);
+        var(--text-soft);
 
     }
 
 
-    .country-line{
+    .market-list{
 
       display:flex;
 
@@ -1139,31 +1424,34 @@
       justify-content:flex-end;
 
       gap:
-        8px 24px;
-
-      max-width:700px;
+        10px 22px;
 
     }
 
 
-    .country-line span{
+    .market-list span{
 
       position:relative;
 
-      padding-left:15px;
+      padding-left:
+        15px;
 
-      font-size:9px;
+      text-transform:
+        uppercase;
 
-      letter-spacing:.16em;
+      letter-spacing:
+        .16em;
 
-      text-transform:uppercase;
+      font-size:
+        8px;
 
-      color:#78645E;
+      color:
+        #75615a;
 
     }
 
 
-    .country-line span::before{
+    .market-list span::before{
 
       content:'';
 
@@ -1186,37 +1474,28 @@
     }
 
 
-
     /* =====================================================
        DARK STATEMENT
-       Dramatic and symmetrical.
     ====================================================== */
 
     .statement{
 
       padding:
-        108px 0
-        96px;
+        93px 72px;
 
       background:
 
         radial-gradient(
-          circle at 14% 50%,
-          rgba(133,68,54,.24),
-          transparent 27%
-        ),
-
-        radial-gradient(
-          circle at 85% 20%,
-          rgba(181,148,104,.07),
-          transparent 30%
+          circle at 12% 50%,
+          rgba(138,69,55,.23),
+          transparent 25%
         ),
 
         linear-gradient(
           120deg,
-          #21100D,
-          #402019 52%,
-          #281310
+          #24110e,
+          #402019 53%,
+          #291410
         );
 
       color:#fff;
@@ -1224,11 +1503,13 @@
     }
 
 
-    .statement-main{
+    .statement-intro{
 
-      max-width:970px;
+      max-width:
+        930px;
 
-      margin:auto;
+      margin:
+        0 auto;
 
       text-align:center;
 
@@ -1238,7 +1519,7 @@
     .statement .eyebrow{
 
       color:
-        rgba(255,255,255,.56);
+        rgba(255,255,255,.58);
 
     }
 
@@ -1252,45 +1533,50 @@
 
       font-size:
         clamp(
-          52px,
-          5.4vw,
-          78px
+          50px,
+          5vw,
+          72px
         );
 
-      line-height:.98;
+      line-height:
+        .98;
 
-      letter-spacing:-.045em;
+      letter-spacing:
+        -.04em;
 
-      font-weight:500;
-
-      color:#FFF8F4;
+      font-weight:
+        500;
 
     }
 
 
-    .statement-main > p:last-child{
+    .statement-intro > p:last-child{
 
-      max-width:680px;
+      max-width:
+        680px;
 
       margin:
-        25px auto 0;
+        24px auto 0;
 
-      font-size:14px;
+      font-size:
+        14px;
 
-      line-height:1.9;
+      line-height:
+        1.9;
 
       color:
-        rgba(255,255,255,.69);
+        rgba(255,255,255,.68);
 
     }
 
 
-    .statement-grid{
+    .statement-points{
 
-      max-width:1120px;
+      max-width:
+        1100px;
 
       margin:
-        63px auto 0;
+        52px auto 0;
 
       display:grid;
 
@@ -1299,39 +1585,43 @@
 
       border-top:
         1px solid
-        rgba(255,255,255,.16);
+        rgba(255,255,255,.15);
 
     }
 
 
-    .statement-card{
+    .statement-points article{
 
       padding:
-        36px 31px
-        10px;
+        33px 30px
+        6px;
 
       text-align:center;
 
     }
 
 
-    .statement-card + .statement-card{
+    .statement-points article + article{
 
       border-left:
         1px solid
-        rgba(255,255,255,.16);
+        rgba(255,255,255,.15);
 
     }
 
 
-    .statement-number{
+    .statement-points span{
 
-      margin-bottom:17px;
+      display:block;
+
+      margin-bottom:
+        16px;
 
       font-family:
         var(--serif);
 
-      font-size:36px;
+      font-size:
+        34px;
 
       color:
         var(--rose-soft);
@@ -1339,90 +1629,69 @@
     }
 
 
-    .statement-card h3{
+    .statement-points h3{
 
       margin:
-        0 0
-        13px;
+        0 0 12px;
 
-      font-size:9px;
+      text-transform:
+        uppercase;
 
-      letter-spacing:.27em;
+      letter-spacing:
+        .27em;
 
-      text-transform:uppercase;
+      font-size:
+        8px;
 
       color:
-        rgba(255,255,255,.72);
+        rgba(255,255,255,.70);
 
     }
 
 
-    .statement-card p{
+    .statement-points p{
 
       margin:0;
 
-      font-size:13px;
+      font-size:
+        12px;
 
-      line-height:1.85;
+      line-height:
+        1.8;
 
       color:
-        rgba(255,255,255,.68);
+        rgba(255,255,255,.66);
 
     }
 
 
-
     /* =====================================================
-       EDITORIAL VISUAL SECTION
-       Image and copy literally touch.
+       VISUAL STANDARD
+       ORIGINAL OLD IMAGE LAYOUT RESTORED:
+       fixed text column + four-image horizontal lookbook.
     ====================================================== */
 
-    .editorial{
+    .editorial-showcase{
 
       display:grid;
 
       grid-template-columns:
-        53% 47%;
-
-      min-height:720px;
+        360px 1fr;
 
       background:
-        #F5EEE7;
+        var(--porcelain);
+
+      border-bottom:
+        1px solid var(--line);
 
     }
 
 
-    .editorial-image{
-
-      position:relative;
-
-      overflow:hidden;
-
-    }
-
-
-    .editorial-image img{
-
-      height:100%;
-
-      object-fit:cover;
-
-    }
-
-
-    .editorial-copy{
+    .showcase-intro{
 
       padding:
-        90px
-        max(
-          52px,
-          calc(
-            (100vw - var(--max))
-            / 2
-          )
-        )
-        90px
-        75px;
+        86px 58px
+        80px;
 
       display:flex;
 
@@ -1433,88 +1702,158 @@
     }
 
 
-    .editorial-copy h2{
+    .showcase-intro h2{
 
-      max-width:650px;
+      margin:
+        0 0 23px;
+
+      font-family:
+        var(--serif);
 
       font-size:
-        clamp(
-          49px,
-          4.8vw,
-          70px
-        );
+        48px;
+
+      line-height:
+        .98;
+
+      letter-spacing:
+        -.038em;
+
+      font-weight:
+        500;
 
     }
 
 
-    .editorial-copy .body-copy{
+    .showcase-intro p:not(.eyebrow){
 
-      max-width:590px;
+      margin:
+        0 0 34px;
 
-      margin-top:26px;
+      font-size:
+        13px;
 
-    }
+      line-height:
+        1.86;
 
-
-    .editorial-list{
-
-      margin-top:37px;
-
-      max-width:590px;
-
-      border-top:
-        1px solid var(--line);
+      color:
+        var(--text-soft);
 
     }
 
 
-    .editorial-list article{
+    .text-link{
+
+      display:inline-flex;
+
+      align-items:center;
+
+      gap:13px;
+
+      width:max-content;
+
+      text-transform:
+        uppercase;
+
+      letter-spacing:
+        .25em;
+
+      font-size:
+        9px;
+
+      font-weight:
+        650;
+
+      color:
+        var(--espresso);
+
+    }
+
+
+    .text-link span{
+
+      font-size:
+        15px;
+
+      transition:
+        transform .25s ease;
+
+    }
+
+
+    .text-link:hover span{
+
+      transform:
+        translateX(5px);
+
+    }
+
+
+    .lookbook-grid{
 
       display:grid;
 
       grid-template-columns:
-        150px 1fr;
+        1.25fr 1fr 1fr 1fr;
 
-      gap:22px;
+      gap:
+        6px;
 
-      padding:
-        20px 0;
-
-      border-bottom:
-        1px solid var(--line);
+      min-width:0;
 
     }
 
 
-    .editorial-list h3{
+    .lookbook-img{
+
+      position:relative;
+
+      min-height:
+        430px;
+
+      overflow:hidden;
 
       margin:0;
 
-      font-size:8px;
-
-      letter-spacing:.23em;
-
-      text-transform:uppercase;
-
-      color:
-        var(--rose);
+      background:
+        #e6ddd5;
 
     }
 
 
-    .editorial-list p{
+    .lookbook-img img{
 
-      margin:0;
+      width:100%;
+      height:100%;
 
-      font-size:12px;
+      object-fit:cover;
 
-      line-height:1.7;
-
-      color:
-        var(--text);
+      filter:
+        saturate(.94)
+        sepia(.04);
 
     }
 
+
+    .lookbook-img::after{
+
+      content:'';
+
+      position:absolute;
+
+      inset:0;
+
+      background:
+
+        linear-gradient(
+          180deg,
+          rgba(62,39,35,.01),
+          rgba(62,39,35,.17)
+        );
+
+      pointer-events:none;
+
+    }
 
 
     /* =====================================================
@@ -1524,101 +1863,358 @@
     .journey{
 
       padding:
-        113px 0;
+        96px 72px;
 
       background:
-        var(--ivory-light);
+
+        linear-gradient(
+          90deg,
+          #fbf7f1,
+          #f4ece6
+        );
+
+      border-bottom:
+        1px solid var(--line);
 
     }
 
 
-    .journey-heading{
+    .journey-intro{
 
-      max-width:890px;
+      max-width:
+        850px;
 
       margin:
         0 auto
-        62px;
+        54px;
 
       text-align:center;
 
     }
 
 
-    .journey-heading h2{
+    .journey-intro .section-title{
 
       font-size:
         clamp(
-          50px,
-          5vw,
-          73px
+          49px,
+          4.8vw,
+          68px
         );
 
     }
 
 
-    .journey-heading .body-copy{
+    .journey-intro .body-copy{
 
-      max-width:690px;
+      max-width:
+        670px;
 
       margin:
-        25px auto 0;
+        24px auto 0;
 
     }
 
 
-    .journey-line{
+    .journey-grid{
 
       display:grid;
 
       grid-template-columns:
         repeat(4,1fr);
 
+      border-top:
+        1px solid var(--line);
+
     }
 
 
-    .journey-item{
+    .journey-grid article{
 
       position:relative;
 
+      min-height:
+        255px;
+
       padding:
-        38px 30px
-        30px;
+        35px 29px;
 
       text-align:center;
 
     }
 
 
-    .journey-item::before{
+    .journey-grid article + article{
 
-      content:'';
-
-      position:absolute;
-
-      top:0;
-      left:0;
-      right:0;
-
-      height:1px;
-
-      background:
-        var(--line);
+      border-left:
+        1px solid var(--line);
 
     }
 
 
-    .journey-item:not(:last-child)::after{
+    .journey-grid span{
+
+      display:block;
+
+      margin-bottom:
+        18px;
+
+      font-family:
+        var(--serif);
+
+      font-size:
+        35px;
+
+      color:
+        var(--rose);
+
+    }
+
+
+    .journey-grid h3{
+
+      margin:
+        0 0 13px;
+
+      text-transform:
+        uppercase;
+
+      letter-spacing:
+        .27em;
+
+      font-size:
+        9px;
+
+    }
+
+
+    .journey-grid p{
+
+      max-width:
+        250px;
+
+      margin:auto;
+
+      font-size:
+        12px;
+
+      line-height:
+        1.8;
+
+      color:
+        var(--text-soft);
+
+    }
+
+
+    /* =====================================================
+       DIFFERENCE / HUMAN + AI
+       ORIGINAL 50 / 50 OLD IMAGE LAYOUT RESTORED.
+    ====================================================== */
+
+    .difference{
+
+      display:grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      background:
+        var(--porcelain);
+
+      border-bottom:
+        1px solid var(--line);
+
+    }
+
+
+    .difference-image{
+
+      position:relative;
+
+      min-height:
+        620px;
+
+      overflow:hidden;
+
+      margin:0;
+
+      background:
+        #e6ddd6;
+
+    }
+
+
+    .difference-image img{
+
+      width:100%;
+      height:100%;
+
+      object-fit:cover;
+
+    }
+
+
+    .difference-image::after{
 
       content:'';
 
       position:absolute;
 
-      top:-4px;
-      right:-4px;
+      inset:0;
 
-      width:9px;
-      height:9px;
+      background:
+
+        linear-gradient(
+          180deg,
+          rgba(62,39,35,.01),
+          rgba(62,39,35,.18)
+        );
+
+      pointer-events:none;
+
+    }
+
+
+    .difference-copy{
+
+      position:relative;
+
+      padding:
+        78px 78px;
+
+      display:flex;
+
+      flex-direction:column;
+
+      justify-content:center;
+
+      background:
+
+        radial-gradient(
+          circle at 88% 12%,
+          rgba(242,214,218,.27),
+          transparent 29%
+        ),
+
+        var(--porcelain);
+
+    }
+
+
+    .difference-copy h2{
+
+      max-width:
+        630px;
+
+      margin:
+        0 0 27px;
+
+      font-family:
+        var(--serif);
+
+      font-size:
+        clamp(
+          47px,
+          4.4vw,
+          63px
+        );
+
+      line-height:
+        .99;
+
+      letter-spacing:
+        -.04em;
+
+      font-weight:
+        500;
+
+    }
+
+
+    .difference-copy h2 em{
+
+      color:
+        var(--rose);
+
+      font-style:
+        italic;
+
+      font-weight:
+        400;
+
+    }
+
+
+    .difference-copy > p:not(.eyebrow){
+
+      max-width:
+        580px;
+
+      margin:0;
+
+      font-size:
+        14px;
+
+      line-height:
+        1.9;
+
+      color:
+        var(--text-soft);
+
+    }
+
+
+    .proof-list{
+
+      list-style:none;
+
+      padding:0;
+
+      margin:
+        31px 0
+        33px;
+
+      max-width:
+        580px;
+
+    }
+
+
+    .proof-list li{
+
+      position:relative;
+
+      padding:
+        13px 0
+        13px 24px;
+
+      border-bottom:
+        1px solid var(--line);
+
+      font-size:
+        12px;
+
+      line-height:
+        1.7;
+
+      color:
+        var(--text-soft);
+
+    }
+
+
+    .proof-list li::before{
+
+      content:'';
+
+      position:absolute;
+
+      left:0;
+      top:20px;
+
+      width:6px;
+      height:6px;
 
       border-radius:50%;
 
@@ -1628,352 +2224,43 @@
     }
 
 
-    .journey-number{
-
-      margin-bottom:20px;
-
-      font-family:
-        var(--serif);
-
-      font-size:37px;
-
-      color:
-        var(--rose);
-
-    }
-
-
-    .journey-item h3{
-
-      margin:
-        0 0
-        13px;
-
-      font-size:9px;
-
-      letter-spacing:.27em;
-
-      text-transform:uppercase;
-
-    }
-
-
-    .journey-item p{
-
-      margin:auto;
-
-      max-width:255px;
-
-      font-size:12px;
-
-      line-height:1.8;
-
-      color:
-        var(--text);
-
-    }
-
-
-
     /* =====================================================
-       IMAGE-LED HUMAN + AI
+       QUALIFICATION
     ====================================================== */
 
-    .human-ai{
+    .qualification{
 
       display:grid;
 
       grid-template-columns:
-        48% 52%;
+        .9fr 1.1fr;
 
-      min-height:680px;
-
-      background:
-        var(--espresso-deep);
-
-      color:#fff;
-
-    }
-
-
-    .human-ai-copy{
+      gap:
+        80px;
 
       padding:
-        88px
-        70px
-        88px
-        max(
-          52px,
-          calc(
-            (100vw - var(--max))
-            / 2
-          )
-        );
-
-      display:flex;
-
-      flex-direction:column;
-
-      justify-content:center;
-
-    }
-
-
-    .human-ai .eyebrow{
-
-      color:
-        rgba(255,255,255,.57);
-
-    }
-
-
-    .human-ai h2{
-
-      max-width:670px;
-
-      margin:0;
-
-      font-family:
-        var(--serif);
-
-      font-size:
-        clamp(
-          49px,
-          4.8vw,
-          69px
-        );
-
-      line-height:.98;
-
-      letter-spacing:-.045em;
-
-      font-weight:500;
-
-      color:#fff;
-
-    }
-
-
-    .human-ai-copy > p{
-
-      max-width:590px;
-
-      margin:
-        28px 0 0;
-
-      font-size:14px;
-
-      line-height:1.9;
-
-      color:
-        rgba(255,255,255,.68);
-
-    }
-
-
-    .ai-proof{
-
-      max-width:590px;
-
-      display:grid;
-
-      grid-template-columns:
-        repeat(2,1fr);
-
-      margin-top:37px;
-
-      border-top:
-        1px solid
-        rgba(255,255,255,.16);
-
-    }
-
-
-    .ai-proof article{
-
-      padding:
-        24px 20px
-        23px 0;
-
-      border-bottom:
-        1px solid
-        rgba(255,255,255,.16);
-
-    }
-
-
-    .ai-proof article:nth-child(even){
-
-      padding-left:25px;
-
-      border-left:
-        1px solid
-        rgba(255,255,255,.16);
-
-    }
-
-
-    .ai-proof strong{
-
-      display:block;
-
-      margin-bottom:8px;
-
-      font-family:
-        var(--serif);
-
-      font-size:33px;
-
-      line-height:1;
-
-      font-weight:500;
-
-      color:
-        var(--rose-soft);
-
-    }
-
-
-    .ai-proof span{
-
-      font-size:10px;
-
-      line-height:1.65;
-
-      color:
-        rgba(255,255,255,.64);
-
-    }
-
-
-    .human-ai-image{
-
-      position:relative;
-
-      overflow:hidden;
-
-    }
-
-
-    .human-ai-image img{
-
-      height:100%;
-
-      object-fit:cover;
-
-    }
-
-
-    .human-ai-image::after{
-
-      content:'';
-
-      position:absolute;
-
-      inset:0;
-
-      background:
-        linear-gradient(
-          90deg,
-          rgba(29,15,12,.18),
-          transparent 38%
-        );
-
-      pointer-events:none;
-
-    }
-
-
-
-    /* =====================================================
-       CLINIC EXPERIENCE
-       Full-bleed image with copy integrated over it.
-    ====================================================== */
-
-    .clinic{
-
-      position:relative;
-
-      min-height:740px;
-
-      display:flex;
+        80px 72px;
 
       align-items:center;
 
-      overflow:hidden;
-
-      background:#B49A81;
-
-    }
-
-
-    .clinic > img{
-
-      position:absolute;
-
-      inset:0;
-
-      width:100%;
-      height:100%;
-
-      object-fit:cover;
-
-    }
-
-
-    .clinic-overlay{
-
-      position:absolute;
-
-      inset:0;
-
       background:
 
         linear-gradient(
-          90deg,
-          rgba(29,15,12,.76) 0%,
-          rgba(29,15,12,.46) 37%,
-          rgba(29,15,12,.08) 66%,
-          transparent 100%
+          120deg,
+          #f3e7df,
+          #fbf7f1
         );
 
-    }
-
-
-    .clinic-content{
-
-      position:relative;
-
-      z-index:2;
-
-      width:min(
-        var(--max),
-        calc(100% - 104px)
-      );
-
-      margin:auto;
+      border-bottom:
+        1px solid var(--line);
 
     }
 
 
-    .clinic-copy{
+    .qualification h2{
 
-      max-width:620px;
-
-      color:#fff;
-
-    }
-
-
-    .clinic .eyebrow{
-
-      color:
-        rgba(255,255,255,.66);
-
-    }
-
-
-    .clinic h2{
+      max-width:
+        610px;
 
       margin:0;
 
@@ -1982,60 +2269,60 @@
 
       font-size:
         clamp(
-          51px,
-          5vw,
-          72px
+          44px,
+          4.3vw,
+          61px
         );
 
-      line-height:.98;
+      line-height:
+        1;
 
-      letter-spacing:-.045em;
+      letter-spacing:
+        -.04em;
 
-      font-weight:500;
+      font-weight:
+        500;
 
     }
 
 
-    .clinic p{
+    .qualification-right{
 
-      max-width:560px;
+      max-width:
+        600px;
+
+    }
+
+
+    .qualification-right p{
 
       margin:
-        26px 0 0;
+        0 0 28px;
 
-      font-size:14px;
+      font-size:
+        14px;
 
-      line-height:1.9;
+      line-height:
+        1.9;
 
       color:
-        rgba(255,255,255,.78);
+        var(--text-soft);
 
     }
-
-
-    .clinic .btn-outline{
-
-      color:#fff;
-
-      border-color:
-        rgba(255,255,255,.42);
-
-      background:
-        rgba(255,255,255,.08);
-
-    }
-
 
 
     /* =====================================================
        FINAL CTA
+       ORIGINAL OLD IMAGE STYLE RESTORED:
+       full image background with centered text.
     ====================================================== */
 
     .final-cta{
 
       position:relative;
 
-      min-height:590px;
+      min-height:
+        590px;
 
       display:grid;
 
@@ -2045,12 +2332,15 @@
 
       text-align:center;
 
-      background:#2A1714;
+      color:#fff;
+
+      background:
+        var(--espresso-deep);
 
     }
 
 
-    .final-cta-image{
+    .final-cta > img{
 
       position:absolute;
 
@@ -2064,7 +2354,9 @@
     }
 
 
-    .final-cta-overlay{
+    .final-cta::after{
+
+      content:'';
 
       position:absolute;
 
@@ -2072,40 +2364,38 @@
 
       background:
 
-        radial-gradient(
-          circle at center,
-          rgba(29,15,12,.48),
-          rgba(29,15,12,.80)
+        linear-gradient(
+          rgba(29,15,12,.66),
+          rgba(29,15,12,.81)
         );
 
     }
 
 
-    .final-content{
+    .final-cta-content{
 
       position:relative;
 
       z-index:2;
 
-      max-width:850px;
+      max-width:
+        850px;
 
       padding:
         70px 30px;
 
-      color:#fff;
-
     }
 
 
-    .final-content .eyebrow{
+    .final-cta .eyebrow{
 
       color:
-        rgba(255,255,255,.67);
+        rgba(255,255,255,.66);
 
     }
 
 
-    .final-content h2{
+    .final-cta h2{
 
       margin:0;
 
@@ -2114,30 +2404,36 @@
 
       font-size:
         clamp(
-          54px,
-          5.5vw,
-          79px
+          53px,
+          5.2vw,
+          76px
         );
 
-      line-height:.96;
+      line-height:
+        .97;
 
-      font-weight:500;
+      letter-spacing:
+        -.045em;
 
-      letter-spacing:-.045em;
+      font-weight:
+        500;
 
     }
 
 
-    .final-content p{
+    .final-cta p{
 
-      max-width:650px;
+      max-width:
+        660px;
 
       margin:
-        25px auto 0;
+        24px auto 0;
 
-      font-size:14px;
+      font-size:
+        14px;
 
-      line-height:1.9;
+      line-height:
+        1.9;
 
       color:
         rgba(255,255,255,.76);
@@ -2145,23 +2441,32 @@
     }
 
 
-    .final-content .button-row{
+    .final-cta .button-row{
 
       justify-content:center;
+
+      margin-top:
+        31px;
 
     }
 
 
-    .final-content .btn-dark{
+    .final-cta .btn-dark{
 
       background:
-        var(--rose-soft);
+        linear-gradient(
+          135deg,
+          #f3d7dc,
+          #e4bcc4
+        );
 
       color:
         var(--espresso-deep);
 
-    }
+      border-color:
+        transparent;
 
+    }
 
 
     /* =====================================================
@@ -2170,41 +2475,33 @@
 
     .footer{
 
+      min-height:
+        110px;
+
       padding:
-        38px 0;
-
-      border-top:
-        1px solid var(--line);
-
-      background:
-        var(--ivory-light);
-
-    }
-
-
-    .footer-inner{
-
-      width:min(
-        var(--max),
-        calc(100% - 104px)
-      );
-
-      margin:auto;
+        30px 72px;
 
       display:flex;
 
-      justify-content:space-between;
-
       align-items:center;
 
-      gap:30px;
+      justify-content:space-between;
+
+      flex-wrap:wrap;
+
+      gap:
+        20px 30px;
+
+      background:
+        var(--cream);
 
     }
 
 
     .footer .brand span{
 
-      font-size:27px;
+      font-size:
+        27px;
 
     }
 
@@ -2218,24 +2515,24 @@
       justify-content:flex-end;
 
       gap:
-        10px 22px;
+        11px 23px;
 
     }
 
 
     .footer-links a{
 
-      font-size:10px;
+      font-size:
+        10px;
 
       color:
-        var(--text);
+        var(--text-soft);
 
     }
 
 
-
     /* =====================================================
-       REVEAL
+       REVEALS
     ====================================================== */
 
     .js .reveal{
@@ -2243,7 +2540,7 @@
       opacity:0;
 
       transform:
-        translateY(16px);
+        translateY(15px);
 
       transition:
         opacity .65s ease,
@@ -2261,38 +2558,27 @@
     }
 
 
-
     /* =====================================================
        TABLET
     ====================================================== */
 
-    @media(max-width:1100px){
+    @media(max-width:1180px){
 
-      .container,
-      .nav-inner,
-      .hero-proof-inner,
-      .clinic-content,
-      .footer-inner{
-
-        width:
-          calc(100% - 64px);
-
-      }
-
-
-      .nav-inner{
+      .nav{
 
         grid-template-columns:
-          190px
-          1fr
-          auto;
+          190px 1fr auto;
+
+        padding:
+          0 34px;
 
       }
 
 
       .nav-links{
 
-        gap:23px;
+        gap:
+          23px;
 
       }
 
@@ -2310,84 +2596,32 @@
         grid-template-columns:
           1fr;
 
+        padding:
+          72px 34px;
+
       }
 
 
       .hero-copy{
 
-        min-height:auto;
+        max-width:
+          820px;
 
         padding:
-          80px
-          42px
-          65px;
+          0 0 55px;
 
       }
 
 
-      .hero h1{
+      .hero-editorial{
 
-        max-width:800px;
-
-      }
-
-
-      .hero-art{
-
-        min-height:720px;
+        height:
+          620px;
 
       }
 
 
-      .momentum-heading{
-
-        max-width:760px;
-
-      }
-
-
-      .authority-row{
-
-        grid-template-columns:
-          1fr 1fr;
-
-      }
-
-
-      .authority-stat:nth-child(3),
-      .authority-stat:nth-child(4){
-
-        border-top:
-          1px solid var(--line);
-
-      }
-
-
-      .authority-stat:nth-child(3){
-
-        border-left:0;
-
-      }
-
-
-      .international-inner{
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-      }
-
-
-      .country-line{
-
-        justify-content:flex-start;
-
-      }
-
-
-      .editorial,
-      .human-ai{
+      .hero-proof{
 
         grid-template-columns:
           1fr;
@@ -2395,37 +2629,36 @@
       }
 
 
-      .editorial-image{
+      .hero-proof article{
 
-        min-height:650px;
+        border-right:0;
 
-      }
-
-
-      .editorial-copy{
-
-        padding:
-          72px 42px;
+        border-bottom:
+          1px solid var(--line);
 
       }
 
 
-      .human-ai-copy{
+      .hero-proof article:last-child{
+        border-bottom:0;
+      }
 
-        padding:
-          75px 42px;
+
+      .momentum,
+      .statement,
+      .journey,
+      .qualification{
+
+        padding-left:
+          34px;
+
+        padding-right:
+          34px;
 
       }
 
 
-      .human-ai-image{
-
-        min-height:620px;
-
-      }
-
-
-      .journey-line{
+      .metric-grid{
 
         grid-template-columns:
           1fr 1fr;
@@ -2433,37 +2666,156 @@
       }
 
 
-      .journey-item:nth-child(3),
-      .journey-item:nth-child(4){
+      .metric-grid article:nth-child(2){
 
-        margin-top:25px;
+        border-right:0;
+
+      }
+
+
+      .metric-grid article:nth-child(3),
+      .metric-grid article:nth-child(4){
+
+        border-top:
+          1px solid var(--line);
+
+      }
+
+
+      .metric-grid article:nth-child(3){
+
+        border-left:0;
+
+      }
+
+
+      .international{
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .market-list{
+
+        justify-content:flex-start;
+
+      }
+
+
+      .editorial-showcase{
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .showcase-intro{
+
+        max-width:
+          730px;
+
+        padding:
+          70px 34px
+          46px;
+
+      }
+
+
+      .lookbook-grid{
+
+        grid-template-columns:
+          repeat(4,1fr);
+
+      }
+
+
+      .lookbook-img{
+
+        min-height:
+          330px;
+
+      }
+
+
+      .journey-grid{
+
+        grid-template-columns:
+          1fr 1fr;
+
+      }
+
+
+      .journey-grid article:nth-child(3){
+
+        border-left:0;
+
+        border-top:
+          1px solid var(--line);
+
+      }
+
+
+      .journey-grid article:nth-child(4){
+
+        border-top:
+          1px solid var(--line);
+
+      }
+
+
+      .difference{
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .difference-image{
+
+        min-height:
+          570px;
+
+      }
+
+
+      .difference-copy{
+
+        padding:
+          70px 34px;
+
+      }
+
+
+      .qualification{
+
+        grid-template-columns:
+          1fr;
+
+        gap:
+          35px;
 
       }
 
     }
 
 
-
     /* =====================================================
-       NAV MOBILE
+       MOBILE NAV
     ====================================================== */
 
     @media(max-width:900px){
 
       .nav{
 
-        height:80px;
-
-      }
-
-
-      .nav-inner{
-
-        height:80px;
+        height:
+          82px;
 
         grid-template-columns:
-          1fr
-          auto;
+          1fr auto;
 
       }
 
@@ -2476,22 +2828,25 @@
       }
 
 
-      .mobile-toggle{
+      .mobile-menu-toggle{
 
         display:flex;
 
-        width:48px;
-        height:48px;
+        width:50px;
+        height:50px;
 
         align-items:center;
         justify-content:center;
+
+        justify-self:end;
 
         border:
           1px solid var(--line);
 
         background:#fff;
 
-        font-size:22px;
+        font-size:
+          22px;
 
       }
 
@@ -2500,7 +2855,7 @@
 
         position:fixed;
 
-        top:80px;
+        top:82px;
         left:0;
         right:0;
 
@@ -2511,11 +2866,15 @@
         flex-direction:column;
 
         padding:
-          23px 30px
+          23px 28px
           30px;
 
         background:
-          rgba(248,245,240,.99);
+          rgba(251,247,241,.99);
+
+        box-shadow:
+          0 32px 65px
+          rgba(62,39,35,.14);
 
         opacity:0;
 
@@ -2553,7 +2912,8 @@
         border-bottom:
           1px solid var(--line);
 
-        font-size:14px;
+        font-size:
+          14px;
 
       }
 
@@ -2564,7 +2924,8 @@
 
         gap:10px;
 
-        padding-top:19px;
+        padding-top:
+          19px;
 
       }
 
@@ -2576,7 +2937,7 @@
       }
 
 
-      .hero-proof-inner{
+      .statement-points{
 
         grid-template-columns:
           1fr;
@@ -2584,33 +2945,7 @@
       }
 
 
-      .hero-proof article{
-
-        border-left:
-          1px solid var(--line);
-
-        border-bottom:
-          1px solid var(--line);
-
-      }
-
-
-      .hero-proof article:last-child{
-
-        border-bottom:0;
-
-      }
-
-
-      .statement-grid{
-
-        grid-template-columns:
-          1fr;
-
-      }
-
-
-      .statement-card + .statement-card{
+      .statement-points article + article{
 
         border-left:0;
 
@@ -2620,8 +2955,39 @@
 
       }
 
-    }
 
+      /*
+        Preserve old lookbook feeling,
+        but allow it to remain elegant on tablet.
+      */
+
+      .lookbook-grid{
+
+        grid-template-columns:
+          1.2fr 1fr;
+
+      }
+
+
+      .lookbook-img{
+
+        min-height:
+          360px;
+
+      }
+
+
+      .lookbook-img:first-child{
+
+        grid-row:
+          span 2;
+
+        min-height:
+          726px;
+
+      }
+
+    }
 
 
     /* =====================================================
@@ -2630,46 +2996,42 @@
 
     @media(max-width:650px){
 
-      .container,
-      .nav-inner,
-      .hero-proof-inner,
-      .clinic-content,
-      .footer-inner{
+      .nav{
 
-        width:
-          calc(100% - 38px);
+        padding:
+          0 20px;
 
       }
 
 
       .brand span{
 
-        font-size:27px;
+        font-size:
+          27px;
 
       }
 
 
-      .hero-copy{
+      .hero{
 
         padding:
-          57px 20px
-          52px;
+          55px 20px;
 
       }
 
 
       .hero h1{
 
-        font-size:53px;
-
-        line-height:.93;
+        font-size:
+          52px;
 
       }
 
 
-      .hero-description{
+      .hero-subtitle{
 
-        font-size:14px;
+        font-size:
+          14px;
 
       }
 
@@ -2691,24 +3053,30 @@
       }
 
 
-      .hero-art{
+      /*
+        Same OLD hero collage relationship,
+        stacked responsively.
+      */
+
+      .hero-editorial{
 
         grid-template-columns:
           1fr;
 
-        min-height:auto;
+        height:auto;
 
       }
 
 
-      .hero-main{
+      .editorial-main{
 
-        height:510px;
+        height:
+          500px;
 
       }
 
 
-      .hero-side{
+      .editorial-side{
 
         grid-template-columns:
           1fr 1fr;
@@ -2719,29 +3087,56 @@
       }
 
 
-      .hero-side figure{
+      .editorial-card{
 
-        height:260px;
+        height:
+          240px;
+
+      }
+
+
+      .hero-proof article{
+
+        padding:
+          28px 20px;
+
+      }
+
+
+      .momentum,
+      .statement,
+      .journey,
+      .qualification{
+
+        padding-left:
+          20px;
+
+        padding-right:
+          20px;
 
       }
 
 
       .momentum{
 
-        padding:
-          78px 0;
+        padding-top:
+          74px;
+
+        padding-bottom:
+          70px;
 
       }
 
 
-      .momentum-heading h2{
+      .momentum-head .section-title{
 
-        font-size:45px;
+        font-size:
+          44px;
 
       }
 
 
-      .authority-row{
+      .metric-grid{
 
         grid-template-columns:
           1fr;
@@ -2749,19 +3144,12 @@
       }
 
 
-      .authority-stat{
+      .metric-grid article{
 
-        min-height:220px;
+        min-height:
+          210px;
 
-        padding:
-          31px 7px;
-
-      }
-
-
-      .authority-stat + .authority-stat{
-
-        border-left:0;
+        border-right:0;
 
         border-top:
           1px solid var(--line);
@@ -2769,21 +3157,14 @@
       }
 
 
-      .authority-stat p{
+      .metric-grid article:first-child{
 
-        max-width:350px;
-
-      }
-
-
-      .international{
-
-        padding-top:44px;
+        border-top:0;
 
       }
 
 
-      .country-line{
+      .market-list{
 
         display:grid;
 
@@ -2798,67 +3179,111 @@
 
       .statement{
 
-        padding:
-          78px 0;
+        padding-top:
+          72px;
+
+        padding-bottom:
+          72px;
 
       }
 
 
       .statement h2{
 
-        font-size:45px;
+        font-size:
+          44px;
 
       }
 
 
-      .editorial-image{
+      .editorial-showcase{
 
-        min-height:480px;
+        display:block;
 
       }
 
 
-      .editorial-copy{
+      .showcase-intro{
 
         padding:
-          58px 21px;
+          60px 20px
+          42px;
 
       }
 
 
-      .editorial-copy h2{
+      .showcase-intro h2{
 
-        font-size:44px;
+        font-size:
+          43px;
 
       }
 
 
-      .editorial-list article{
+      /*
+        Old lookbook image family kept,
+        but arranged as elegant mobile collage.
+      */
+
+      .lookbook-grid{
 
         grid-template-columns:
-          1fr;
+          1fr 1fr;
 
-        gap:9px;
+        gap:
+          5px;
+
+      }
+
+
+      .lookbook-img,
+      .lookbook-img:first-child{
+
+        min-height:
+          260px;
+
+        height:
+          260px;
+
+        grid-row:auto;
+
+      }
+
+
+      .lookbook-img:first-child{
+
+        grid-column:
+          1 / -1;
+
+        min-height:
+          410px;
+
+        height:
+          410px;
 
       }
 
 
       .journey{
 
-        padding:
-          80px 0;
+        padding-top:
+          75px;
+
+        padding-bottom:
+          75px;
 
       }
 
 
-      .journey-heading h2{
+      .journey-intro .section-title{
 
-        font-size:45px;
+        font-size:
+          43px;
 
       }
 
 
-      .journey-line{
+      .journey-grid{
 
         grid-template-columns:
           1fr;
@@ -2866,136 +3291,99 @@
       }
 
 
-      .journey-item{
+      .journey-grid article{
+
+        min-height:auto;
+
+        border-left:0 !important;
+
+        border-top:
+          1px solid var(--line);
+
+      }
+
+
+      .difference-image{
+
+        min-height:
+          430px;
+
+      }
+
+
+      .difference-copy{
 
         padding:
-          31px 10px;
+          58px 20px;
 
       }
 
 
-      .journey-item:nth-child(3),
-      .journey-item:nth-child(4){
+      .difference-copy h2{
 
-        margin-top:0;
-
-      }
-
-
-      .journey-item:not(:last-child)::after{
-
-        display:none;
+        font-size:
+          43px;
 
       }
 
 
-      .human-ai-copy{
+      .qualification{
 
-        padding:
-          61px 21px;
+        padding-top:
+          58px;
 
-      }
-
-
-      .human-ai h2{
-
-        font-size:45px;
+        padding-bottom:
+          58px;
 
       }
 
 
-      .ai-proof{
+      .qualification h2{
 
-        grid-template-columns:
-          1fr;
-
-      }
-
-
-      .ai-proof article:nth-child(even){
-
-        padding-left:0;
-
-        border-left:0;
-
-      }
-
-
-      .human-ai-image{
-
-        min-height:470px;
-
-      }
-
-
-      .clinic{
-
-        min-height:690px;
-
-        align-items:flex-end;
-
-      }
-
-
-      .clinic-overlay{
-
-        background:
-
-          linear-gradient(
-            0deg,
-            rgba(29,15,12,.88) 0%,
-            rgba(29,15,12,.62) 45%,
-            rgba(29,15,12,.08) 80%
-          );
-
-      }
-
-
-      .clinic-copy{
-
-        padding-bottom:55px;
-
-      }
-
-
-      .clinic h2{
-
-        font-size:46px;
+        font-size:
+          42px;
 
       }
 
 
       .final-cta{
 
-        min-height:610px;
+        min-height:
+          610px;
 
       }
 
 
-      .final-content h2{
+      .final-cta h2{
 
-        font-size:49px;
+        font-size:
+          48px;
 
       }
 
 
-      .footer-inner{
+      .footer{
 
-        flex-direction:column;
+        padding:
+          32px 20px;
 
-        align-items:flex-start;
+        flex-direction:
+          column;
+
+        align-items:
+          flex-start;
 
       }
 
 
       .footer-links{
 
-        justify-content:flex-start;
+        justify-content:
+          flex-start;
 
       }
 
     }
-
 
 
     /* =====================================================
@@ -3016,9 +3404,9 @@
       *::before,
       *::after{
 
-        animation:none !important;
-
         transition:none !important;
+
+        animation:none !important;
 
       }
 
@@ -3038,35 +3426,34 @@
 </head>
 
 
-
 <body>
 
 
   <a
+    class="skip-link"
     href="#main-content"
-    style="
-      position:absolute;
-      left:-9999px;
-    "
   >
-    Skip to content
+    Skip to main content
   </a>
 
 
-
-  <!-- =====================================================
-       NAV
-  ====================================================== -->
-
-  <header class="nav">
+  <div class="site-shell">
 
 
-    <div class="nav-inner">
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header
+      class="nav"
+      data-nav
+    >
 
 
       <a
         class="brand"
         href="index.html"
+        aria-label="Mirel Marketing Home"
       >
 
         <span>
@@ -3080,7 +3467,6 @@
       </a>
 
 
-
       <nav
         class="nav-links"
         aria-label="Main navigation"
@@ -3089,6 +3475,7 @@
         <a
           href="index.html"
           class="active"
+          aria-current="page"
         >
           Home
         </a>
@@ -3112,7 +3499,6 @@
       </nav>
 
 
-
       <div class="nav-actions">
 
         <a
@@ -3132,24 +3518,25 @@
       </div>
 
 
-
       <button
-        class="mobile-toggle"
-        data-toggle
-        aria-label="Open menu"
+        class="mobile-menu-toggle"
+        data-menu-toggle
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="mobile-menu"
         aria-expanded="false"
       >
         ☰
       </button>
 
 
-    </div>
-
+    </header>
 
 
     <div
       class="mobile-menu"
-      data-menu
+      id="mobile-menu"
+      data-mobile-menu
       aria-hidden="true"
     >
 
@@ -3195,171 +3582,156 @@
     </div>
 
 
-  </header>
+    <main id="main-content">
 
 
+      <!-- =================================================
+           HERO
+      ================================================== -->
 
-  <main id="main-content">
-
-
-
-    <!-- =================================================
-         HERO
-    ================================================== -->
-
-    <section class="hero">
+      <section class="hero">
 
 
-      <div class="hero-copy reveal">
+        <div class="hero-copy reveal">
+
+          <p class="eyebrow">
+            Med Spa Growth Systems
+          </p>
 
 
-        <p class="eyebrow">
-          Med Spa Growth Systems
-        </p>
+          <h1>
+            More traffic will not fix
+            <em>
+              a leaking patient journey.
+            </em>
+          </h1>
 
 
-        <h1 class="serif-title">
-
-          More traffic will not fix
-
-          <em>
-            a leaking patient journey.
-          </em>
-
-        </h1>
+          <p class="hero-subtitle">
+            I help med spa owners uncover and fix revenue leaks
+            in their patient journey so more leads become booked,
+            paying, and returning patients.
+          </p>
 
 
-        <p class="hero-description">
-          I help med spa owners uncover and fix revenue leaks
-          in their patient journey so more leads become booked,
-          paying, and returning patients.
-        </p>
+          <div class="hero-pills">
+
+            <span>
+              Premium Positioning
+            </span>
+
+            <span>
+              Conversion Systems
+            </span>
+
+            <span>
+              AI-Powered Analysis
+            </span>
+
+            <span>
+              Patient Journey Growth
+            </span>
+
+          </div>
 
 
+          <div class="button-row">
 
-        <div class="hero-pills">
+            <a
+              class="btn btn-dark btn-large"
+              href="book.html"
+            >
+              Book a Growth Strategy Review
+            </a>
 
-          <span>
-            Premium Positioning
-          </span>
+            <a
+              class="btn btn-outline btn-large"
+              href="systems.html"
+            >
+              See The System
+            </a>
 
-          <span>
-            Conversion Systems
-          </span>
-
-          <span>
-            AI-Powered Analysis
-          </span>
-
-          <span>
-            Patient Journey Growth
-          </span>
-
-        </div>
-
-
-
-        <div class="button-row">
-
-          <a
-            class="btn btn-dark"
-            href="book.html"
-          >
-            Book a Growth Strategy Review
-          </a>
-
-          <a
-            class="btn btn-outline"
-            href="systems.html"
-          >
-            See The System
-          </a>
+          </div>
 
         </div>
 
 
-      </div>
+        <!--
+          OLD HERO IMAGE DESIGN RESTORED:
+          Main editorial image + two stacked images.
+        -->
+
+        <div
+          class="hero-editorial"
+          aria-label="Mirel editorial visual world"
+        >
 
 
-
-      <div class="hero-art">
-
-
-        <figure class="hero-main">
-
-          <img
-            src="images/hero-face.webp"
-            alt="Premium aesthetics editorial"
-            fetchpriority="high"
-            loading="eager"
-          >
-
-          <div class="hero-image-overlay"></div>
-
-          <figcaption class="image-word">
-            Perception
-          </figcaption>
-
-        </figure>
-
-
-
-        <div class="hero-side">
-
-
-          <figure>
+          <figure class="editorial-main">
 
             <img
-              src="images/Jewelry.webp"
-              alt="Luxury jewellery editorial"
+              src="images/hero-face.webp"
+              alt="Premium aesthetics editorial portrait"
               loading="eager"
+              fetchpriority="high"
             >
 
-            <div class="hero-image-overlay"></div>
-
-            <figcaption class="image-word">
-              Desire
-            </figcaption>
+            <span>
+              Perception
+            </span>
 
           </figure>
 
 
+          <div class="editorial-side">
 
-          <figure>
 
-            <img
-              src="images/luxury-interior.webp"
-              alt="Premium clinic interior"
-              loading="eager"
-            >
+            <figure class="editorial-card">
 
-            <div class="hero-image-overlay"></div>
+              <img
+                src="images/Jewelry.webp"
+                alt="Luxury jewellery editorial"
+                loading="eager"
+                fetchpriority="low"
+              >
 
-            <figcaption class="image-word">
-              Trust
-            </figcaption>
+              <span>
+                Desire
+              </span>
 
-          </figure>
+            </figure>
+
+
+            <figure class="editorial-card">
+
+              <img
+                src="images/luxury-interior.webp"
+                alt="Luxury med spa interior"
+                loading="eager"
+                fetchpriority="low"
+              >
+
+              <span>
+                Trust
+              </span>
+
+            </figure>
+
+
+          </div>
 
 
         </div>
 
 
-      </div>
+      </section>
 
 
-    </section>
+      <!-- =================================================
+           HERO PROOF
+      ================================================== -->
 
-
-
-    <!-- =================================================
-         HERO PROOF
-    ================================================== -->
-
-    <section class="hero-proof">
-
-
-      <div class="hero-proof-inner reveal">
+      <section class="hero-proof reveal">
 
 
         <article>
@@ -3369,12 +3741,11 @@
           </h3>
 
           <p>
-            Perception, inquiry, consultation,
-            treatment acceptance, follow-up and retention.
+            Perception, inquiry, consultation, treatment acceptance,
+            follow-up and retention.
           </p>
 
         </article>
-
 
 
         <article>
@@ -3384,12 +3755,11 @@
           </h3>
 
           <p>
-            The journey between existing demand and
-            booked, paying, returning patients.
+            The journey between existing patient demand
+            and booked, paying, returning patients.
           </p>
 
         </article>
-
 
 
         <article>
@@ -3406,31 +3776,24 @@
         </article>
 
 
-      </div>
+      </section>
 
 
-    </section>
+      <!-- =================================================
+           MOMENTUM + AUTHORITY
+      ================================================== -->
+
+      <section class="momentum">
 
 
-
-    <!-- =================================================
-         CATEGORY MOMENTUM
-    ================================================== -->
-
-    <section class="momentum">
-
-
-      <div class="container">
-
-
-        <div class="momentum-heading reveal">
+        <div class="momentum-head reveal">
 
           <p class="eyebrow">
             Category Momentum
           </p>
 
 
-          <h2 class="serif-title">
+          <h2 class="section-title">
             The category is growing.
             Your conversion system has to keep up.
           </h2>
@@ -3445,33 +3808,32 @@
         </div>
 
 
+        <div class="metric-grid">
 
-        <div class="authority-row">
 
+          <article class="reveal">
 
-          <article class="authority-stat reveal">
-
-            <div class="authority-value">
+            <strong>
               ≈38M
-            </div>
+            </strong>
 
-            <div class="authority-label">
+            <h3>
               Global Procedures
-            </div>
+            </h3>
 
             <p>
               Aesthetic surgical and non-surgical procedures
               reported worldwide in 2024.
             </p>
 
-            <div class="authority-source">
+            <div class="metric-source">
 
               <a
                 href="https://www.isaps.org/discover/about-isaps/global-statistics/global-survey-2024-full-report-and-press-releases/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ISAPS 2024
+                ISAPS Global Survey 2024
               </a>
 
             </div>
@@ -3479,39 +3841,37 @@
           </article>
 
 
+          <article class="reveal">
 
-          <article class="authority-stat reveal">
-
-            <div class="authority-value">
+            <strong>
               +42.5%
-            </div>
+            </strong>
 
-            <div class="authority-label">
+            <h3>
               Four-Year Growth
-            </div>
+            </h3>
 
             <p>
               Increase in aesthetic procedures across
               the four years through 2024.
             </p>
 
-            <div class="authority-source">
+            <div class="metric-source">
               Source: ISAPS
             </div>
 
           </article>
 
 
+          <article class="reveal">
 
-          <article class="authority-stat reveal">
-
-            <div class="authority-value">
+            <strong>
               6 Years
-            </div>
+            </strong>
 
-            <div class="authority-label">
+            <h3>
               Marketing Experience
-            </div>
+            </h3>
 
             <p>
               Experience across strategy, content,
@@ -3521,20 +3881,19 @@
           </article>
 
 
+          <article class="reveal">
 
-          <article class="authority-stat reveal">
-
-            <div class="authority-value">
+            <strong>
               5
-            </div>
+            </strong>
 
-            <div class="authority-label">
+            <h3>
               Focus Markets
-            </div>
+            </h3>
 
             <p>
-              United States, United Kingdom, Australia,
-              Canada and New Zealand.
+              United States, United Kingdom,
+              Australia, Canada and New Zealand.
             </p>
 
           </article>
@@ -3543,52 +3902,44 @@
         </div>
 
 
-
-        <div class="international">
-
-
-          <div class="international-inner reveal">
+        <div class="international reveal">
 
 
-            <div class="international-copy">
+          <div>
 
-              <h3>
-                International by design.
-              </h3>
+            <h2>
+              International by design.
+            </h2>
 
-              <p>
-                Strategy built for premium aesthetic clinics
-                across leading English-speaking markets.
-              </p>
+            <p>
+              Strategy built for premium aesthetic clinics
+              across leading English-speaking markets.
+            </p>
 
-            </div>
+          </div>
 
 
+          <div class="market-list">
 
-            <div class="country-line">
+            <span>
+              United States
+            </span>
 
-              <span>
-                United States
-              </span>
+            <span>
+              United Kingdom
+            </span>
 
-              <span>
-                United Kingdom
-              </span>
+            <span>
+              Australia
+            </span>
 
-              <span>
-                Australia
-              </span>
+            <span>
+              Canada
+            </span>
 
-              <span>
-                Canada
-              </span>
-
-              <span>
-                New Zealand
-              </span>
-
-            </div>
-
+            <span>
+              New Zealand
+            </span>
 
           </div>
 
@@ -3596,24 +3947,17 @@
         </div>
 
 
-      </div>
+      </section>
 
 
-    </section>
+      <!-- =================================================
+           DARK STATEMENT
+      ================================================== -->
+
+      <section class="statement">
 
 
-
-    <!-- =================================================
-         DARK STATEMENT
-    ================================================== -->
-
-    <section class="statement">
-
-
-      <div class="container">
-
-
-        <div class="statement-main reveal">
+        <div class="statement-intro reveal">
 
           <p class="eyebrow">
             Diagnose Before You Scale
@@ -3627,22 +3971,22 @@
 
 
           <p>
-            More demand only becomes more valuable when every stage
-            preserves confidence, momentum and perceived value.
+            More demand becomes more valuable when the experience
+            preserves confidence, momentum and perceived value
+            at every important step.
           </p>
 
         </div>
 
 
+        <div class="statement-points">
 
-        <div class="statement-grid">
 
+          <article class="reveal">
 
-          <article class="statement-card reveal">
-
-            <div class="statement-number">
+            <span>
               01
-            </div>
+            </span>
 
             <h3>
               Perception
@@ -3656,39 +4000,37 @@
           </article>
 
 
+          <article class="reveal">
 
-          <article class="statement-card reveal">
-
-            <div class="statement-number">
+            <span>
               02
-            </div>
+            </span>
 
             <h3>
               Conversion
             </h3>
 
             <p>
-              Does interest become an inquiry and consultation
-              without unnecessary uncertainty or friction?
+              Does interest move naturally toward inquiry
+              and consultation?
             </p>
 
           </article>
 
 
+          <article class="reveal">
 
-          <article class="statement-card reveal">
-
-            <div class="statement-number">
+            <span>
               03
-            </div>
+            </span>
 
             <h3>
               Retention
             </h3>
 
             <p>
-              Does the relationship continue after the first
-              inquiry and treatment?
+              Does patient value continue after the first
+              consultation and treatment?
             </p>
 
           </article>
@@ -3697,130 +4039,130 @@
         </div>
 
 
-      </div>
+      </section>
 
 
-    </section>
+      <!-- =================================================
+           VISUAL STANDARD
+           OLD LOOKBOOK IMAGE DESIGN ONLY
+      ================================================== -->
+
+      <section class="editorial-showcase">
 
 
+        <div class="showcase-intro reveal">
 
-    <!-- =================================================
-         EDITORIAL VISUAL STANDARD
-    ================================================== -->
-
-    <section class="editorial">
+          <p class="eyebrow">
+            The Visual Standard
+          </p>
 
 
-      <div class="editorial-image reveal">
+          <h2>
+            Premium should be felt before it is explained.
+          </h2>
 
-        <img
-          src="images/mirel-visual-standard-jewelry.webp"
-          alt="Mirel premium visual standard"
-          loading="lazy"
-          decoding="async"
+
+          <p>
+            Patients form an impression before they read every detail.
+            A strong visual world makes quality easier to perceive,
+            trust and desire.
+          </p>
+
+
+          <a
+            class="text-link"
+            href="results.html"
+          >
+            View Our Work
+
+            <span aria-hidden="true">
+              →
+            </span>
+
+          </a>
+
+        </div>
+
+
+        <!--
+          OLD FOUR-IMAGE LOOKBOOK LAYOUT RESTORED.
+        -->
+
+        <div
+          class="lookbook-grid"
+          aria-label="Mirel visual world"
         >
 
-      </div>
+
+          <figure class="lookbook-img">
+
+            <img
+              src="images/mirel-visual-standard-jewelry.webp"
+              alt="Premium Mirel jewellery visual"
+              loading="lazy"
+              decoding="async"
+            >
+
+          </figure>
 
 
+          <figure class="lookbook-img">
 
-      <div class="editorial-copy reveal">
+            <img
+              src="images/gold-pour.webp"
+              alt="Luxury gold editorial visual"
+              loading="lazy"
+              decoding="async"
+            >
 
-
-        <p class="eyebrow">
-          The Visual Standard
-        </p>
-
-
-        <h2 class="serif-title">
-          Premium should be felt
-          before it is explained.
-        </h2>
+          </figure>
 
 
-        <p class="body-copy">
-          Patients make judgments before they read every detail.
-          A strong digital presence makes the quality of the clinic
-          easier to perceive, trust and desire.
-        </p>
+          <figure class="lookbook-img">
+
+            <img
+              src="images/spa-lobby.webp"
+              alt="Premium med spa interior"
+              loading="lazy"
+              decoding="async"
+            >
+
+          </figure>
 
 
+          <figure class="lookbook-img">
 
-        <div class="editorial-list">
+            <img
+              src="images/mirel-premium-skincare-scene.webp"
+              alt="Premium skincare editorial scene"
+              loading="lazy"
+              decoding="async"
+            >
 
-
-          <article>
-
-            <h3>
-              Perception
-            </h3>
-
-            <p>
-              A visual world that feels refined,
-              intentional and worth choosing.
-            </p>
-
-          </article>
-
-
-
-          <article>
-
-            <h3>
-              Desire
-            </h3>
-
-            <p>
-              Enough aspiration to make the clinic
-              feel emotionally valuable.
-            </p>
-
-          </article>
-
-
-
-          <article>
-
-            <h3>
-              Confidence
-            </h3>
-
-            <p>
-              Enough clarity and reassurance
-              to make the next step feel safe.
-            </p>
-
-          </article>
+          </figure>
 
 
         </div>
 
 
-      </div>
+      </section>
 
 
-    </section>
+      <!-- =================================================
+           PATIENT JOURNEY
+      ================================================== -->
+
+      <section class="journey">
 
 
-
-    <!-- =================================================
-         PATIENT JOURNEY
-    ================================================== -->
-
-    <section class="journey">
-
-
-      <div class="container">
-
-
-        <div class="journey-heading reveal">
+        <div class="journey-intro reveal">
 
           <p class="eyebrow">
             The Revenue Path
           </p>
 
 
-          <h2 class="serif-title">
+          <h2 class="section-title">
             One patient journey.
             Four moments that decide what happens next.
           </h2>
@@ -3828,22 +4170,21 @@
 
           <p class="body-copy">
             Premium patients rarely book because of one advertisement.
-            Growth happens when perception, trust and follow-up
-            work together as one experience.
+            Growth happens when perception, trust, conversion and
+            follow-up work together as one coherent experience.
           </p>
 
         </div>
 
 
+        <div class="journey-grid">
 
-        <div class="journey-line">
 
+          <article class="reveal">
 
-          <article class="journey-item reveal">
-
-            <div class="journey-number">
+            <span>
               01
-            </div>
+            </span>
 
             <h3>
               Attract
@@ -3857,31 +4198,29 @@
           </article>
 
 
+          <article class="reveal">
 
-          <article class="journey-item reveal">
-
-            <div class="journey-number">
+            <span>
               02
-            </div>
+            </span>
 
             <h3>
               Reassure
             </h3>
 
             <p>
-              Build trust and reduce the uncertainty
+              Build confidence and reduce the uncertainty
               that slows patient decisions.
             </p>
 
           </article>
 
 
+          <article class="reveal">
 
-          <article class="journey-item reveal">
-
-            <div class="journey-number">
+            <span>
               03
-            </div>
+            </span>
 
             <h3>
               Convert
@@ -3889,18 +4228,17 @@
 
             <p>
               Make the path from interest to consultation
-              feel clear and natural.
+              feel clear, natural and intentional.
             </p>
 
           </article>
 
 
+          <article class="reveal">
 
-          <article class="journey-item reveal">
-
-            <div class="journey-number">
+            <span>
               04
-            </div>
+            </span>
 
             <h3>
               Retain
@@ -3917,265 +4255,206 @@
         </div>
 
 
-      </div>
+      </section>
 
 
-    </section>
+      <!-- =================================================
+           DIFFERENCE / HUMAN + AI
+           OLD LARGE IMAGE + COPY LAYOUT ONLY
+      ================================================== -->
 
+      <section class="difference">
 
 
-    <!-- =================================================
-         HUMAN + AI
-    ================================================== -->
+        <figure class="difference-image reveal">
 
-    <section class="human-ai">
+          <img
+            src="images/gold-necklace.webp"
+            alt="Luxury jewellery editorial representing premium brand perception"
+            loading="lazy"
+            decoding="async"
+          >
 
+        </figure>
 
-      <div class="human-ai-copy reveal">
 
-
-        <p class="eyebrow">
-          Human Strategy. AI-Powered Execution.
-        </p>
-
-
-        <h2>
-          Technology creates leverage.
-          Judgment creates the strategy.
-        </h2>
-
-
-        <p>
-          Mirel uses AI where it improves analysis, iteration
-          and execution — while positioning, diagnosis,
-          creative judgment and commercial decisions remain
-          human-led.
-        </p>
-
-
-
-        <div class="ai-proof">
-
-
-          <article>
-
-            <strong>
-              6 Years
-            </strong>
-
-            <span>
-              Marketing experience.
-            </span>
-
-          </article>
-
-
-
-          <article>
-
-            <strong>
-              1 Niche
-            </strong>
-
-            <span>
-              Med spas and premium aesthetic clinics.
-            </span>
-
-          </article>
-
-
-
-          <article>
-
-            <strong>
-              5 Markets
-            </strong>
-
-            <span>
-              International English-speaking focus.
-            </span>
-
-          </article>
-
-
-
-          <article>
-
-            <strong>
-              Human + AI
-            </strong>
-
-            <span>
-              Strategy-led execution.
-            </span>
-
-          </article>
-
-
-        </div>
-
-
-      </div>
-
-
-
-      <div class="human-ai-image reveal">
-
-        <img
-          src="images/mirel-premium-skincare-scene.webp"
-          alt="Premium skincare editorial scene"
-          loading="lazy"
-          decoding="async"
-        >
-
-      </div>
-
-
-    </section>
-
-
-
-    <!-- =================================================
-         CLINIC EXPERIENCE
-    ================================================== -->
-
-    <section class="clinic">
-
-
-      <img
-        src="images/spa-lobby.webp"
-        alt="Luxury med spa interior"
-        loading="lazy"
-        decoding="async"
-      >
-
-
-      <div class="clinic-overlay"></div>
-
-
-
-      <div class="clinic-content">
-
-
-        <div class="clinic-copy reveal">
-
+        <div class="difference-copy reveal">
 
           <p class="eyebrow">
-            The Mirel Standard
+            The Mirel Difference
           </p>
 
 
           <h2>
-            Your digital experience should match
-            the quality of the clinic itself.
+            Technology creates leverage.
+            <em>
+              Judgment creates the strategy.
+            </em>
           </h2>
 
 
           <p>
-            The website, messaging and patient journey should
-            reinforce the same care, confidence and refinement
-            patients expect when they walk through your doors.
+            Mirel uses AI where it can improve analysis,
+            iteration and execution — while positioning,
+            diagnosis, creative judgment and commercial
+            decisions remain human-led.
+          </p>
+
+
+          <ul class="proof-list">
+
+            <li>
+              Six years of marketing experience across strategy,
+              content, positioning and digital growth.
+            </li>
+
+            <li>
+              One focused niche: med spas and premium
+              aesthetic clinics.
+            </li>
+
+            <li>
+              Patient-journey strategy built around
+              perception, conversion and retention.
+            </li>
+
+            <li>
+              AI used as leverage for stronger execution,
+              not as a substitute for strategic judgment.
+            </li>
+
+          </ul>
+
+
+          <a
+            class="text-link"
+            href="about.html"
+          >
+            About Mirel
+
+            <span aria-hidden="true">
+              →
+            </span>
+
+          </a>
+
+        </div>
+
+
+      </section>
+
+
+      <!-- =================================================
+           QUALIFICATION
+      ================================================== -->
+
+      <section class="qualification reveal">
+
+
+        <div>
+
+          <p class="eyebrow">
+            Quality Over Volume
+          </p>
+
+
+          <h2>
+            Built for clinics that want to be chosen
+            for trust, not discounts.
+          </h2>
+
+        </div>
+
+
+        <div class="qualification-right">
+
+          <p>
+            Best fit if your clinic wants stronger perceived value,
+            better-quality consultations, more consistent follow-up
+            and a patient journey that feels intentional before,
+            during and after treatment.
+          </p>
+
+
+          <a
+            class="btn btn-outline btn-large"
+            href="book.html"
+          >
+            See If We Are A Fit
+          </a>
+
+        </div>
+
+
+      </section>
+
+
+      <!-- =================================================
+           FINAL CTA
+           OLD BACKGROUND IMAGE DESIGN ONLY
+      ================================================== -->
+
+      <section class="final-cta">
+
+
+        <img
+          src="images/home-page-serum-mirel.webp"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        >
+
+
+        <div class="final-cta-content reveal">
+
+          <p class="eyebrow">
+            30-Minute Med Spa Growth Strategy Review
+          </p>
+
+
+          <h2>
+            Find the leak before you buy more traffic.
+          </h2>
+
+
+          <p>
+            See where your patient journey may be losing
+            perception, momentum, consultation opportunities
+            or long-term patient value.
           </p>
 
 
           <div class="button-row">
 
             <a
-              class="btn btn-outline"
-              href="results.html"
+              class="btn btn-dark btn-large"
+              href="book.html"
             >
-              View Our Work
+              Book Your Growth Strategy Review
             </a>
 
           </div>
 
-
         </div>
 
 
-      </div>
+      </section>
 
 
-    </section>
+    </main>
 
 
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-    <!-- =================================================
-         FINAL CTA
-    ================================================== -->
-
-    <section class="final-cta">
-
-
-      <img
-        class="final-cta-image"
-        src="images/home-page-serum-mirel.webp"
-        alt=""
-        loading="lazy"
-        decoding="async"
-      >
-
-
-      <div class="final-cta-overlay"></div>
-
-
-
-      <div class="final-content reveal">
-
-
-        <p class="eyebrow">
-          30-Minute Med Spa Growth Strategy Review
-        </p>
-
-
-        <h2>
-          Find the leak before you buy more traffic.
-        </h2>
-
-
-        <p>
-          See where your patient journey may be losing
-          perception, momentum, consultation opportunities
-          or long-term value.
-        </p>
-
-
-        <div class="button-row">
-
-          <a
-            class="btn btn-dark"
-            href="book.html"
-          >
-            Book Your Growth Strategy Review
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-    </section>
-
-
-
-  </main>
-
-
-
-  <!-- =====================================================
-       FOOTER
-  ====================================================== -->
-
-  <footer class="footer">
-
-
-    <div class="footer-inner">
+    <footer class="footer">
 
 
       <a
         class="brand"
         href="index.html"
+        aria-label="Mirel Marketing Home"
       >
 
         <span>
@@ -4187,7 +4466,6 @@
         </small>
 
       </a>
-
 
 
       <div class="footer-links">
@@ -4217,11 +4495,11 @@
         </a>
 
         <a href="privacy-policy.html">
-          Privacy
+          Privacy Policy
         </a>
 
         <a href="terms-and-conditions.html">
-          Terms
+          Terms &amp; Conditions
         </a>
 
         <a href="mailto:delora@mirelmarketing.com">
@@ -4231,15 +4509,14 @@
       </div>
 
 
-    </div>
+    </footer>
 
 
-  </footer>
-
+  </div>
 
 
   <!-- =====================================================
-       JS
+       JAVASCRIPT
   ====================================================== -->
 
   <script>
@@ -4247,24 +4524,41 @@
     (() => {
 
 
+      const nav =
+        document.querySelector(
+          '[data-nav]'
+        );
+
+
       const toggle =
         document.querySelector(
-          '[data-toggle]'
+          '[data-menu-toggle]'
         );
 
 
       const menu =
         document.querySelector(
-          '[data-menu]'
+          '[data-mobile-menu]'
         );
 
 
+      let lastScroll =
+        window.scrollY;
 
-      const setMenu =
+
+
+      /* ===================================================
+         MOBILE MENU
+      =================================================== */
+
+      const setMenuState =
         (open) => {
 
 
-          if(!toggle || !menu){
+          if(
+            !toggle ||
+            !menu
+          ){
             return;
           }
 
@@ -4281,6 +4575,15 @@
             .setAttribute(
               'aria-expanded',
               String(open)
+            );
+
+
+          toggle
+            .setAttribute(
+              'aria-label',
+              open
+                ? 'Close navigation menu'
+                : 'Open navigation menu'
             );
 
 
@@ -4302,20 +4605,23 @@
 
 
 
-      if(toggle && menu){
+      if(
+        toggle &&
+        menu
+      ){
 
 
         toggle
           .addEventListener(
             'click',
-            (event) => {
+            event => {
 
 
               event
                 .stopPropagation();
 
 
-              setMenu(
+              setMenuState(
                 !menu
                   .classList
                   .contains('open')
@@ -4328,8 +4634,12 @@
         menu
           .addEventListener(
             'click',
-            event =>
-              event.stopPropagation()
+            event => {
+
+              event
+                .stopPropagation();
+
+            }
           );
 
 
@@ -4343,7 +4653,7 @@
                 .addEventListener(
                   'click',
                   () =>
-                    setMenu(false)
+                    setMenuState(false)
                 );
 
             }
@@ -4354,7 +4664,7 @@
           .addEventListener(
             'click',
             () =>
-              setMenu(false)
+              setMenuState(false)
           );
 
 
@@ -4369,10 +4679,32 @@
                 'Escape'
               ){
 
-                setMenu(false);
+                setMenuState(false);
 
               }
 
+            }
+          );
+
+
+        window
+          .addEventListener(
+            'resize',
+            () => {
+
+
+              if(
+                window.innerWidth >
+                900
+              ){
+
+                setMenuState(false);
+
+              }
+
+            },
+            {
+              passive:true
             }
           );
 
@@ -4380,22 +4712,110 @@
 
 
 
-      const reveals =
+      /* ===================================================
+         NAV SCROLL
+      =================================================== */
+
+      window
+        .addEventListener(
+          'scroll',
+          () => {
+
+
+            const current =
+              window.scrollY;
+
+
+            nav
+              ?.classList
+              .toggle(
+                'scrolled',
+                current > 16
+              );
+
+
+            if(
+              current >
+              lastScroll &&
+
+              current >
+              130 &&
+
+              !menu
+                ?.classList
+                .contains('open')
+            ){
+
+              nav
+                ?.classList
+                .add('hide');
+
+            }
+
+            else{
+
+              nav
+                ?.classList
+                .remove('hide');
+
+            }
+
+
+            lastScroll =
+              current;
+
+          },
+          {
+            passive:true
+          }
+        );
+
+
+
+      /* ===================================================
+         REVEALS
+      =================================================== */
+
+      const revealItems =
         document.querySelectorAll(
           '.reveal'
         );
 
 
+      const reduceMotion =
+        window.matchMedia(
+          '(prefers-reduced-motion: reduce)'
+        ).matches;
+
+
+
       if(
-        'IntersectionObserver'
-        in window
+        reduceMotion ||
+        !(
+          'IntersectionObserver'
+          in window
+        )
       ){
 
+        revealItems
+          .forEach(
+            item =>
+              item
+                .classList
+                .add('visible')
+          );
+
+      }
+
+      else{
 
         const observer =
           new IntersectionObserver(
 
-            entries => {
+            (
+              entries,
+              observerInstance
+            ) => {
 
 
               entries
@@ -4404,24 +4824,25 @@
 
 
                     if(
-                      entry
+                      !entry
                         .isIntersecting
                     ){
-
-                      entry
-                        .target
-                        .classList
-                        .add(
-                          'visible'
-                        );
-
-
-                      observer
-                        .unobserve(
-                          entry.target
-                        );
-
+                      return;
                     }
+
+
+                    entry
+                      .target
+                      .classList
+                      .add(
+                        'visible'
+                      );
+
+
+                    observerInstance
+                      .unobserve(
+                        entry.target
+                      );
 
                   }
                 );
@@ -4435,23 +4856,11 @@
           );
 
 
-        reveals
+        revealItems
           .forEach(
             item =>
               observer
                 .observe(item)
-          );
-
-      }
-
-      else{
-
-        reveals
-          .forEach(
-            item =>
-              item
-                .classList
-                .add('visible')
           );
 
       }
@@ -4463,5 +4872,4 @@
 
 
 </body>
-
 </html>
