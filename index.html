@@ -199,17 +199,17 @@
     :root{
 
       --cream:#fbf7f1;
-      --cream-soft:#f8f3ee;
+      --cream-soft:#fbf7f1;
       --cream-warm:#f4ece5;
 
       --porcelain:#fffdf9;
 
       /*
-        Much quieter dusty rose.
-        More shell / powder than pink.
+        Very pale dusty rose.
+        Nearly ivory, with only a soft rose undertone.
       */
-      --dusty-rose:#f3e9ea;
-      --dusty-rose-deep:#eadcdf;
+      --dusty-rose:#f8f3f4;
+      --dusty-rose-deep:#f1e8ea;
 
       --espresso:#3e2723;
       --espresso-deep:#21110e;
@@ -664,9 +664,6 @@
 
     /* =====================================================
        01 — HERO
-
-       Important spacing change:
-       less dead air between nav and composition.
     ====================================================== */
 
     .hero{
@@ -1302,9 +1299,8 @@
 
 
     /*
-      Very pale powder-rose.
-      The section reads as "warm light",
-      not as a pink block.
+      Very pale powder rose.
+      Almost ivory, with only a subtle rose undertone.
     */
 
     .statement-bottom{
@@ -1401,8 +1397,8 @@
     /* =====================================================
        05 — VISUAL STANDARD
 
-       Key change:
-       cream breathing room ABOVE and BELOW the images.
+       One unified cream tone:
+       top space, copy area and bottom space now match.
     ====================================================== */
 
     .editorial-showcase{
@@ -1414,8 +1410,8 @@
       column-gap:0;
 
       padding:
-        48px 0
-        50px;
+        44px 0
+        46px;
 
       background:var(--cream);
 
@@ -1435,7 +1431,7 @@
 
       justify-content:center;
 
-      background:var(--cream-soft);
+      background:var(--cream);
 
     }
 
@@ -1507,14 +1503,6 @@
     }
 
 
-    /*
-      Images retain the editorial edge-to-edge relationship
-      WITH EACH OTHER.
-
-      But the entire gallery now has ivory breathing room
-      above and below.
-    */
-
     .lookbook-grid{
 
       display:grid;
@@ -1576,17 +1564,21 @@
 
     /* =====================================================
        06 — JOURNEY
+
+       Bottom padding intentionally removed.
+       Vertical dividers now end directly where the next
+       image-led section begins.
     ====================================================== */
 
     .journey{
 
       padding:
         89px 72px
-        91px;
+        0;
 
       background:#f2e9e2;
 
-      border-bottom:1px solid var(--line);
+      border-bottom:0;
 
     }
 
@@ -1633,7 +1625,9 @@
 
       min-height:240px;
 
-      padding:32px 29px;
+      padding:
+        32px 29px
+        28px;
 
       text-align:center;
 
@@ -1860,7 +1854,7 @@
 
     /* =====================================================
        08 — QUALIFICATION
-       SAME PALE POWDER-ROSE
+       Same very pale powder rose.
     ====================================================== */
 
     .qualification{
@@ -1877,7 +1871,7 @@
 
       background:var(--dusty-rose);
 
-      border-bottom:1px solid rgba(62,39,35,.11);
+      border-bottom:1px solid rgba(62,39,35,.10);
 
     }
 
@@ -1926,7 +1920,7 @@
 
     .qualification .btn-outline{
 
-      background:rgba(255,253,249,.48);
+      background:rgba(255,253,249,.56);
 
     }
 
@@ -2251,17 +2245,13 @@
       }
 
 
-      /*
-        Cream breathing space survives tablet.
-      */
-
       .editorial-showcase{
 
         grid-template-columns:1fr;
 
         padding:
-          42px 0
-          44px;
+          40px 0
+          42px;
 
       }
 
@@ -2270,11 +2260,11 @@
 
         max-width:730px;
 
-        margin:
-          0 34px;
+        margin:0 34px;
 
-        padding:
-          55px 34px;
+        padding:55px 34px;
+
+        background:var(--cream);
 
       }
 
@@ -2291,9 +2281,7 @@
 
 
       .lookbook-img{
-
         min-height:400px;
-
       }
 
 
@@ -2402,8 +2390,7 @@
           23px 28px
           30px;
 
-        background:
-          rgba(251,247,241,.99);
+        background:rgba(251,247,241,.99);
 
         box-shadow:
           0 32px 65px
@@ -2469,8 +2456,7 @@
 
       .statement-points article{
 
-        padding:
-          29px 20px;
+        padding:29px 20px;
 
       }
 
@@ -2495,9 +2481,7 @@
 
 
       .lookbook-img{
-
         min-height:360px;
-
       }
 
 
@@ -2527,10 +2511,6 @@
         font-size:27px;
       }
 
-
-      /*
-        Mobile hero starts quickly after navigation too.
-      */
 
       .hero{
 
@@ -2694,18 +2674,13 @@
       }
 
 
-      /*
-        On mobile we still preserve the gallery's
-        cream frame above and below.
-      */
-
       .editorial-showcase{
 
         display:block;
 
         padding:
-          34px 0
-          36px;
+          32px 0
+          34px;
 
       }
 
@@ -2718,6 +2693,8 @@
 
         padding:
           48px 25px;
+
+        background:var(--cream);
 
       }
 
@@ -2763,11 +2740,17 @@
       }
 
 
+      /*
+        Bottom space intentionally removed.
+        The next editorial image begins immediately after
+        the four journey columns.
+      */
+
       .journey{
 
         padding-top:72px;
 
-        padding-bottom:72px;
+        padding-bottom:0;
 
       }
 
