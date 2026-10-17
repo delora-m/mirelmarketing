@@ -3421,6 +3421,677 @@
 
     }
 
+    /* =========================================================
+   MIREL — LIQUID SECTION FLOW
+   ONLY section transitions / background rhythm
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   MASTER FLOW COLORS
+
+   The page now moves through:
+
+   warm cream
+      ↓
+   porcelain
+      ↓
+   blush / warm stone
+      ↓
+   espresso
+      ↓
+   soft ivory
+      ↓
+   warm blush
+      ↓
+   dark cinematic CTA
+--------------------------------------------------------- */
+
+:root{
+
+  --flow-cream:
+    #fbf7f1;
+
+  --flow-porcelain:
+    #fffdf9;
+
+  --flow-warm:
+    #f5ede7;
+
+  --flow-blush:
+    #efe1dc;
+
+  --flow-taupe:
+    #e7d7cf;
+
+  --flow-brown-soft:
+    #553229;
+
+  --flow-brown:
+    #331a15;
+
+  --flow-brown-deep:
+    #21100d;
+
+}
+
+
+
+/* =========================================================
+   GLOBAL SECTION RHYTHM
+   ========================================================= */
+
+.hero,
+.hero-proof,
+.momentum,
+.statement,
+.editorial-showcase,
+.journey,
+.difference,
+.qualification,
+.final-cta{
+
+  position:relative;
+
+}
+
+
+/*
+   Remove the feeling of separate rectangular cards
+   stacked on top of each other.
+*/
+
+.hero,
+.hero-proof,
+.momentum,
+.editorial-showcase,
+.journey,
+.difference,
+.qualification{
+
+  border-bottom-color:
+    rgba(62,39,35,.075);
+
+}
+
+
+
+/* =========================================================
+   01 — HERO
+
+   Starts slightly blush / luminous,
+   ends in warm cream.
+
+   This makes the hero feel like the beginning of one
+   continuous visual world instead of a standalone banner.
+   ========================================================= */
+
+.hero{
+
+  background:
+
+    radial-gradient(
+      circle at 7% 17%,
+      rgba(242,214,218,.47),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 91% 5%,
+      rgba(179,147,100,.09),
+      transparent 31%
+    ),
+
+    linear-gradient(
+      180deg,
+      #faf4ef 0%,
+      #faf5f0 58%,
+      var(--flow-cream) 100%
+    );
+
+}
+
+
+
+/* =========================================================
+   02 — HERO PROOF
+
+   Hero and proof section now visually belong together.
+   No abrupt cream → another cream block.
+   ========================================================= */
+
+.hero-proof{
+
+  background:
+
+    linear-gradient(
+      180deg,
+      var(--flow-cream) 0%,
+      #faf6f2 48%,
+      var(--flow-porcelain) 100%
+    );
+
+}
+
+
+
+/* =========================================================
+   03 — CATEGORY MOMENTUM
+
+   Begins exactly where Hero Proof ends,
+   then slowly warms before entering the brown section.
+   ========================================================= */
+
+.momentum{
+
+  background:
+
+    radial-gradient(
+      circle at 88% 16%,
+      rgba(242,214,218,.13),
+      transparent 29%
+    ),
+
+    linear-gradient(
+      180deg,
+      var(--flow-porcelain) 0%,
+      #fcf9f5 35%,
+      var(--flow-warm) 76%,
+      var(--flow-blush) 100%
+    );
+
+}
+
+
+/*
+   Give the international area slightly more air so the
+   transition into brown feels deliberate, not accidental.
+*/
+
+.international{
+
+  padding-bottom:
+    17px;
+
+}
+
+
+
+/* =========================================================
+   04 — LIGHT → ESPRESSO TRANSITION
+
+   This is the most important fix.
+
+   Brown no longer appears as:
+       WHITE
+       ----------
+       BROWN
+
+   Instead it visually melts from warm stone into espresso.
+   ========================================================= */
+
+.statement{
+
+  padding-top:
+    145px;
+
+  padding-bottom:
+    135px;
+
+  border-top:0;
+
+  border-bottom:0;
+
+  background:
+
+    radial-gradient(
+      circle at 13% 55%,
+      rgba(154,83,67,.26),
+      transparent 29%
+    ),
+
+    radial-gradient(
+      circle at 86% 27%,
+      rgba(179,147,100,.07),
+      transparent 31%
+    ),
+
+    linear-gradient(
+      180deg,
+
+      var(--flow-blush) 0%,
+
+      var(--flow-brown-soft) 7%,
+
+      var(--flow-brown) 17%,
+
+      var(--flow-brown-deep) 44%,
+
+      #28130f 70%,
+
+      var(--flow-brown) 88%,
+
+      #5b3930 96%,
+
+      #dbc9c0 100%
+    );
+
+}
+
+
+/*
+   Because the first portion of the section is now a
+   transition zone, keep the actual content visually deep
+   inside the espresso field.
+*/
+
+.statement-intro,
+.statement-points{
+
+  position:relative;
+
+  z-index:2;
+
+}
+
+
+
+/* =========================================================
+   05 — ESPRESSO → VISUAL LOOKBOOK
+
+   Instead of instantly cutting from dark brown to white,
+   the first part of the visual-standard section retains
+   a small amount of warmth.
+   ========================================================= */
+
+.editorial-showcase{
+
+  background:
+
+    linear-gradient(
+      180deg,
+      #dbc9c0 0%,
+      #eee2dc 5%,
+      #f8f2ed 11%,
+      var(--flow-porcelain) 23%,
+      var(--flow-porcelain) 100%
+    );
+
+}
+
+
+/*
+   Keep the copy visually connected to the incoming warm
+   transition instead of making it look like a white card.
+*/
+
+.showcase-intro{
+
+  background:
+
+    linear-gradient(
+      180deg,
+      rgba(239,225,220,.68) 0%,
+      rgba(255,253,249,.83) 24%,
+      var(--flow-porcelain) 100%
+    );
+
+}
+
+
+
+/* =========================================================
+   06 — LOOKBOOK → JOURNEY
+
+   This transition is very subtle.
+
+   Editorial white gradually becomes dusty warm ivory.
+   ========================================================= */
+
+.journey{
+
+  background:
+
+    radial-gradient(
+      circle at 12% 8%,
+      rgba(242,214,218,.13),
+      transparent 26%
+    ),
+
+    linear-gradient(
+      180deg,
+      var(--flow-porcelain) 0%,
+      #faf6f2 36%,
+      #f7f0ea 72%,
+      #f1e5de 100%
+    );
+
+}
+
+
+
+/* =========================================================
+   07 — JOURNEY → DIFFERENCE
+
+   Difference should feel like the next editorial spread,
+   not a new webpage.
+
+   Start with the exact tone Journey ends on.
+   ========================================================= */
+
+.difference{
+
+  background:
+
+    linear-gradient(
+      180deg,
+      #f1e5de 0%,
+      #f6eee8 8%,
+      #fbf8f4 20%,
+      var(--flow-porcelain) 100%
+    );
+
+}
+
+
+.difference-copy{
+
+  background:
+
+    radial-gradient(
+      circle at 91% 10%,
+      rgba(242,214,218,.23),
+      transparent 31%
+    ),
+
+    linear-gradient(
+      180deg,
+      #f6eee8 0%,
+      var(--flow-porcelain) 22%,
+      var(--flow-porcelain) 100%
+    );
+
+}
+
+
+
+/* =========================================================
+   08 — DIFFERENCE → QUALIFICATION
+
+   Instead of another white section after white,
+   Qualification slowly introduces rose / warm stone.
+
+   This prepares the eye for the cinematic final CTA.
+   ========================================================= */
+
+.qualification{
+
+  background:
+
+    radial-gradient(
+      circle at 14% 36%,
+      rgba(242,214,218,.22),
+      transparent 31%
+    ),
+
+    linear-gradient(
+      180deg,
+      var(--flow-porcelain) 0%,
+      #f8f2ed 20%,
+      #f3e8e1 56%,
+      #ecddd5 82%,
+      #e5d2c8 100%
+    );
+
+}
+
+
+
+/* =========================================================
+   09 — QUALIFICATION → FINAL CTA
+
+   The image remains the same.
+
+   Only the overlay is redesigned so the beginning of the
+   dark cinematic CTA visually inherits the warm taupe above.
+   ========================================================= */
+
+.final-cta::after{
+
+  background:
+
+    linear-gradient(
+      180deg,
+
+      rgba(229,210,200,.33) 0%,
+
+      rgba(91,57,48,.47) 8%,
+
+      rgba(29,15,12,.67) 22%,
+
+      rgba(29,15,12,.77) 53%,
+
+      rgba(29,15,12,.85) 100%
+    );
+
+}
+
+
+
+/* =========================================================
+   10 — FOOTER TRANSITION
+
+   The footer should not suddenly jump from a cinematic
+   image to flat white.
+
+   It inherits espresso first, then softly returns to cream.
+   ========================================================= */
+
+.footer{
+
+  position:relative;
+
+  padding-top:
+    77px;
+
+  background:
+
+    linear-gradient(
+      180deg,
+      #2b1713 0px,
+      #54352e 5px,
+      #d9c8c0 43px,
+      #f1e8e2 66px,
+      var(--flow-cream) 110px,
+      var(--flow-cream) 100%
+    );
+
+  border-top:0;
+
+}
+
+
+
+/* =========================================================
+   VERTICAL RHYTHM
+
+   Sections now breathe at related intervals.
+
+   96 / 112 / 128 style rhythm instead of random heights.
+   ========================================================= */
+
+.momentum{
+
+  padding-top:
+    112px;
+
+  padding-bottom:
+    104px;
+
+}
+
+
+.journey{
+
+  padding-top:
+    108px;
+
+  padding-bottom:
+    108px;
+
+}
+
+
+.qualification{
+
+  padding-top:
+    91px;
+
+  padding-bottom:
+    91px;
+
+}
+
+
+
+/* =========================================================
+   SOFTER SECTION LINES
+
+   Borders should guide the eye, not announce every section.
+   ========================================================= */
+
+.hero,
+.hero-proof,
+.editorial-showcase,
+.journey,
+.difference,
+.qualification{
+
+  border-color:
+    rgba(62,39,35,.075);
+
+}
+
+
+
+/* =========================================================
+   MOBILE FLOW
+
+   Keep the same palette choreography on small screens.
+   Reduce huge transition zones so the page does not
+   become unnecessarily long.
+   ========================================================= */
+
+@media(max-width:650px){
+
+
+  .momentum{
+
+    padding-top:
+      78px;
+
+    padding-bottom:
+      76px;
+
+  }
+
+
+  .statement{
+
+    padding-top:
+      105px;
+
+    padding-bottom:
+      100px;
+
+    background:
+
+      radial-gradient(
+        circle at 20% 53%,
+        rgba(154,83,67,.24),
+        transparent 32%
+      ),
+
+      linear-gradient(
+        180deg,
+
+        var(--flow-blush) 0%,
+
+        #69453c 7%,
+
+        var(--flow-brown) 16%,
+
+        var(--flow-brown-deep) 46%,
+
+        var(--flow-brown) 85%,
+
+        #68463d 94%,
+
+        #dbc9c0 100%
+      );
+
+  }
+
+
+  .editorial-showcase{
+
+    background:
+
+      linear-gradient(
+        180deg,
+        #dbc9c0 0%,
+        #eee2dc 4%,
+        #f8f2ed 10%,
+        var(--flow-porcelain) 19%,
+        var(--flow-porcelain) 100%
+      );
+
+  }
+
+
+  .journey{
+
+    padding-top:
+      78px;
+
+    padding-bottom:
+      78px;
+
+  }
+
+
+  .qualification{
+
+    padding-top:
+      69px;
+
+    padding-bottom:
+      73px;
+
+  }
+
+
+  .footer{
+
+    padding-top:
+      66px;
+
+    background:
+
+      linear-gradient(
+        180deg,
+        #2b1713 0px,
+        #62443c 5px,
+        #ded0c8 36px,
+        #f0e8e2 56px,
+        var(--flow-cream) 92px,
+        var(--flow-cream) 100%
+      );
+
+  }
+
+}
+
   </style>
 
 </head>
