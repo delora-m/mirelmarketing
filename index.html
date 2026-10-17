@@ -10,9 +10,7 @@
     content="width=device-width, initial-scale=1.0, viewport-fit=cover"
   >
 
-  <title>
-    Med Spa Growth Systems | Mirel Marketing
-  </title>
+  <title>Med Spa Growth Systems | Mirel Marketing</title>
 
   <meta
     name="description"
@@ -195,28 +193,34 @@
   <style>
 
     /* =====================================================
-       TOKENS
+       DESIGN TOKENS
     ====================================================== */
 
     :root{
 
       --cream:#fbf7f1;
-      --cream-warm:#f5eee8;
+      --cream-soft:#f8f3ee;
+      --cream-warm:#f4ece5;
+
       --porcelain:#fffdf9;
 
-      --dusty-rose:#ead8dc;
-      --dusty-rose-deep:#ddc2c8;
+      /*
+        Much quieter dusty rose.
+        More shell / powder than pink.
+      */
+      --dusty-rose:#f3e9ea;
+      --dusty-rose-deep:#eadcdf;
 
       --espresso:#3e2723;
       --espresso-deep:#21110e;
 
       --rose:#a9686d;
-      --rose-soft:#f2d6da;
+      --rose-soft:#f1dcdf;
 
       --gold:#b39364;
 
-      --line:rgba(62,39,35,.13);
-      --line-dark:rgba(62,39,35,.23);
+      --line:rgba(62,39,35,.12);
+      --line-dark:rgba(62,39,35,.22);
 
       --text-soft:rgba(62,39,35,.70);
 
@@ -255,7 +259,7 @@
 
       margin:0;
 
-      background:#f3ece6;
+      background:#f2ebe5;
 
       color:var(--espresso-deep);
 
@@ -282,8 +286,17 @@
 
 
     img{
+
       display:block;
+
+      width:100%;
       max-width:100%;
+
+    }
+
+
+    figure{
+      margin:0;
     }
 
 
@@ -343,12 +356,12 @@
 
 
     /* =====================================================
-       COMMON TYPOGRAPHY
+       TYPOGRAPHY
     ====================================================== */
 
     .eyebrow{
 
-      margin:0 0 26px;
+      margin:0 0 24px;
 
       text-transform:uppercase;
 
@@ -510,11 +523,11 @@
 
       padding:0 72px;
 
-      background:rgba(251,247,241,.94);
+      background:rgba(251,247,241,.95);
 
-      backdrop-filter:blur(22px);
+      backdrop-filter:blur(20px);
 
-      border-bottom:1px solid rgba(62,39,35,.09);
+      border-bottom:1px solid rgba(62,39,35,.08);
 
       transition:
         height .3s ease,
@@ -651,7 +664,9 @@
 
     /* =====================================================
        01 — HERO
-       WARM CREAM
+
+       Important spacing change:
+       less dead air between nav and composition.
     ====================================================== */
 
     .hero{
@@ -660,11 +675,13 @@
 
       grid-template-columns:.9fr 1.1fr;
 
-      min-height:835px;
+      align-items:start;
 
-      padding:78px 72px 74px;
+      padding:
+        34px 72px
+        54px;
 
-      background:#fbf7f1;
+      background:var(--cream);
 
       position:relative;
 
@@ -681,18 +698,20 @@
 
       flex-direction:column;
 
-      justify-content:center;
+      justify-content:flex-start;
 
       max-width:670px;
 
-      padding-right:52px;
+      padding:
+        38px 52px
+        0 0;
 
     }
 
 
     .hero h1{
 
-      margin:0 0 32px;
+      margin:0 0 30px;
 
       font-family:var(--serif);
 
@@ -726,7 +745,7 @@
 
       max-width:590px;
 
-      margin:0 0 28px;
+      margin:0 0 26px;
 
       font-size:16px;
 
@@ -745,7 +764,7 @@
 
       gap:8px;
 
-      margin-bottom:31px;
+      margin-bottom:30px;
 
     }
 
@@ -756,7 +775,7 @@
 
       border:1px solid rgba(62,39,35,.13);
 
-      background:rgba(255,255,255,.35);
+      background:rgba(255,255,255,.32);
 
       text-transform:uppercase;
 
@@ -770,7 +789,7 @@
 
 
     /* =====================================================
-       HERO IMAGE COLLAGE
+       HERO EDITORIAL COLLAGE
     ====================================================== */
 
     .hero-editorial{
@@ -785,9 +804,9 @@
 
       gap:12px;
 
-      align-self:center;
+      align-self:start;
 
-      height:670px;
+      height:650px;
 
     }
 
@@ -799,13 +818,11 @@
 
       overflow:hidden;
 
-      margin:0;
-
       background:#ded2c9;
 
       box-shadow:
-        inset 0 0 0 1px rgba(62,39,35,.12),
-        0 26px 70px rgba(62,39,35,.10);
+        inset 0 0 0 1px rgba(62,39,35,.10),
+        0 22px 58px rgba(62,39,35,.08);
 
     }
 
@@ -813,7 +830,6 @@
     .editorial-main img,
     .editorial-card img{
 
-      width:100%;
       height:100%;
 
       object-fit:cover;
@@ -843,8 +859,8 @@
       background:
         linear-gradient(
           180deg,
-          transparent 58%,
-          rgba(29,15,12,.20)
+          transparent 60%,
+          rgba(29,15,12,.19)
         );
 
       pointer-events:none;
@@ -886,7 +902,6 @@
 
     /* =====================================================
        02 — HERO PROOF
-       SAME COLOR FAMILY — QUIET TRANSITION
     ====================================================== */
 
     .hero-proof{
@@ -906,9 +921,9 @@
 
     .hero-proof article{
 
-      min-height:135px;
+      min-height:124px;
 
-      padding:30px 42px;
+      padding:27px 42px;
 
       display:flex;
 
@@ -928,7 +943,7 @@
 
     .hero-proof h3{
 
-      margin:0 0 10px;
+      margin:0 0 9px;
 
       text-transform:uppercase;
 
@@ -949,7 +964,7 @@
 
       font-size:13px;
 
-      line-height:1.8;
+      line-height:1.76;
 
       color:var(--text-soft);
 
@@ -958,12 +973,13 @@
 
     /* =====================================================
        03 — CATEGORY MOMENTUM
-       PORCELAIN
     ====================================================== */
 
     .momentum{
 
-      padding:108px 72px 100px;
+      padding:
+        92px 72px
+        86px;
 
       background:var(--porcelain);
 
@@ -974,7 +990,7 @@
 
       max-width:880px;
 
-      margin-bottom:60px;
+      margin-bottom:52px;
 
     }
 
@@ -990,7 +1006,7 @@
 
       max-width:650px;
 
-      margin-top:25px;
+      margin-top:24px;
 
     }
 
@@ -1014,9 +1030,9 @@
 
     .metric-grid article{
 
-      min-height:250px;
+      min-height:235px;
 
-      padding:35px 31px;
+      padding:31px;
 
       display:flex;
 
@@ -1038,7 +1054,7 @@
 
       display:block;
 
-      margin-bottom:16px;
+      margin-bottom:15px;
 
       font-family:var(--serif);
 
@@ -1115,7 +1131,7 @@
 
     .international{
 
-      margin-top:58px;
+      margin-top:52px;
 
       display:grid;
 
@@ -1130,11 +1146,11 @@
 
     .international h2{
 
-      margin:0 0 12px;
+      margin:0 0 11px;
 
       font-family:var(--serif);
 
-      font-size:39px;
+      font-size:38px;
 
       line-height:1;
 
@@ -1212,10 +1228,7 @@
 
 
     /* =====================================================
-       04 — STATEMENT
-       CLEAN TWO-COLOR SPLIT
-       NO BLUR
-       NO GRADIENT TRANSITION
+       04 — DARK STATEMENT
     ====================================================== */
 
     .statement{
@@ -1225,7 +1238,9 @@
 
     .statement-top{
 
-      padding:99px 72px 82px;
+      padding:
+        82px 72px
+        72px;
 
       background:#291510;
 
@@ -1275,7 +1290,7 @@
 
       max-width:680px;
 
-      margin:24px auto 0;
+      margin:23px auto 0;
 
       font-size:14px;
 
@@ -1287,15 +1302,16 @@
 
 
     /*
-      This is the exact requested change.
-
-      01 / 02 / 03 now sit on their own
-      dusty-pink background beneath the brown message.
+      Very pale powder-rose.
+      The section reads as "warm light",
+      not as a pink block.
     */
 
     .statement-bottom{
 
-      padding:50px 72px 57px;
+      padding:
+        39px 72px
+        43px;
 
       background:var(--dusty-rose);
 
@@ -1321,7 +1337,7 @@
 
     .statement-points article{
 
-      padding:16px 34px 10px;
+      padding:15px 34px 10px;
 
       text-align:center;
 
@@ -1330,7 +1346,7 @@
 
     .statement-points article + article{
 
-      border-left:1px solid rgba(62,39,35,.17);
+      border-left:1px solid rgba(62,39,35,.14);
 
     }
 
@@ -1339,22 +1355,22 @@
 
       display:block;
 
-      margin-bottom:17px;
+      margin-bottom:15px;
 
       font-family:var(--serif);
 
-      font-size:37px;
+      font-size:36px;
 
       line-height:1;
 
-      color:#8f5964;
+      color:#91636b;
 
     }
 
 
     .statement-points h3{
 
-      margin:0 0 13px;
+      margin:0 0 12px;
 
       text-transform:uppercase;
 
@@ -1375,16 +1391,18 @@
 
       font-size:12px;
 
-      line-height:1.8;
+      line-height:1.78;
 
-      color:rgba(62,39,35,.72);
+      color:rgba(62,39,35,.69);
 
     }
 
 
     /* =====================================================
        05 — VISUAL STANDARD
-       CREAM
+
+       Key change:
+       cream breathing room ABOVE and BELOW the images.
     ====================================================== */
 
     .editorial-showcase{
@@ -1392,6 +1410,12 @@
       display:grid;
 
       grid-template-columns:360px 1fr;
+
+      column-gap:0;
+
+      padding:
+        48px 0
+        50px;
 
       background:var(--cream);
 
@@ -1402,7 +1426,8 @@
 
     .showcase-intro{
 
-      padding:90px 58px 84px;
+      padding:
+        65px 58px;
 
       display:flex;
 
@@ -1410,7 +1435,7 @@
 
       justify-content:center;
 
-      background:#f8f2ed;
+      background:var(--cream-soft);
 
     }
 
@@ -1482,9 +1507,13 @@
     }
 
 
-    /* =====================================================
-       LOOKBOOK
-    ====================================================== */
+    /*
+      Images retain the editorial edge-to-edge relationship
+      WITH EACH OTHER.
+
+      But the entire gallery now has ivory breathing room
+      above and below.
+    */
 
     .lookbook-grid{
 
@@ -1494,6 +1523,8 @@
 
       gap:6px;
 
+      min-height:555px;
+
     }
 
 
@@ -1501,11 +1532,9 @@
 
       position:relative;
 
-      min-height:430px;
+      min-height:555px;
 
       overflow:hidden;
-
-      margin:0;
 
       background:#e6ddd5;
 
@@ -1514,12 +1543,13 @@
 
     .lookbook-img img{
 
-      width:100%;
       height:100%;
 
       object-fit:cover;
 
-      filter:saturate(.94) sepia(.04);
+      filter:
+        saturate(.94)
+        sepia(.04);
 
     }
 
@@ -1535,8 +1565,8 @@
       background:
         linear-gradient(
           180deg,
-          transparent 62%,
-          rgba(62,39,35,.15)
+          transparent 63%,
+          rgba(62,39,35,.14)
         );
 
       pointer-events:none;
@@ -1546,12 +1576,13 @@
 
     /* =====================================================
        06 — JOURNEY
-       WARM CREAM
     ====================================================== */
 
     .journey{
 
-      padding:101px 72px;
+      padding:
+        89px 72px
+        91px;
 
       background:#f2e9e2;
 
@@ -1564,7 +1595,7 @@
 
       max-width:850px;
 
-      margin:0 auto 55px;
+      margin:0 auto 51px;
 
       text-align:center;
 
@@ -1582,7 +1613,7 @@
 
       max-width:670px;
 
-      margin:24px auto 0;
+      margin:23px auto 0;
 
     }
 
@@ -1600,9 +1631,9 @@
 
     .journey-grid article{
 
-      min-height:255px;
+      min-height:240px;
 
-      padding:35px 29px;
+      padding:32px 29px;
 
       text-align:center;
 
@@ -1620,7 +1651,7 @@
 
       display:block;
 
-      margin-bottom:18px;
+      margin-bottom:17px;
 
       font-family:var(--serif);
 
@@ -1661,7 +1692,6 @@
 
     /* =====================================================
        07 — DIFFERENCE
-       PORCELAIN + IMAGE
     ====================================================== */
 
     .difference{
@@ -1681,11 +1711,9 @@
 
       position:relative;
 
-      min-height:620px;
+      min-height:610px;
 
       overflow:hidden;
-
-      margin:0;
 
       background:#e6ddd6;
 
@@ -1694,7 +1722,6 @@
 
     .difference-image img{
 
-      width:100%;
       height:100%;
 
       object-fit:cover;
@@ -1713,8 +1740,8 @@
       background:
         linear-gradient(
           180deg,
-          transparent 60%,
-          rgba(62,39,35,.18)
+          transparent 61%,
+          rgba(62,39,35,.17)
         );
 
       pointer-events:none;
@@ -1724,7 +1751,7 @@
 
     .difference-copy{
 
-      padding:78px;
+      padding:72px 78px;
 
       display:flex;
 
@@ -1741,7 +1768,7 @@
 
       max-width:630px;
 
-      margin:0 0 27px;
+      margin:0 0 26px;
 
       font-family:var(--serif);
 
@@ -1788,7 +1815,7 @@
 
       padding:0;
 
-      margin:31px 0 33px;
+      margin:29px 0 31px;
 
       max-width:580px;
 
@@ -1799,7 +1826,7 @@
 
       position:relative;
 
-      padding:13px 0 13px 24px;
+      padding:12px 0 12px 24px;
 
       border-bottom:1px solid var(--line);
 
@@ -1819,7 +1846,7 @@
       position:absolute;
 
       left:0;
-      top:20px;
+      top:19px;
 
       width:6px;
       height:6px;
@@ -1833,7 +1860,7 @@
 
     /* =====================================================
        08 — QUALIFICATION
-       DUSTY ROSE
+       SAME PALE POWDER-ROSE
     ====================================================== */
 
     .qualification{
@@ -1844,21 +1871,19 @@
 
       gap:80px;
 
-      padding:88px 72px;
+      padding:72px;
 
       align-items:center;
 
-      background:#ead8dc;
+      background:var(--dusty-rose);
 
-      border-bottom:1px solid rgba(62,39,35,.12);
+      border-bottom:1px solid rgba(62,39,35,.11);
 
     }
 
 
     .qualification .eyebrow{
-
-      color:#815d64;
-
+      color:#82666c;
     }
 
 
@@ -1882,42 +1907,39 @@
 
 
     .qualification-right{
-
       max-width:600px;
-
     }
 
 
     .qualification-right p{
 
-      margin:0 0 28px;
+      margin:0 0 27px;
 
       font-size:14px;
 
       line-height:1.9;
 
-      color:rgba(62,39,35,.72);
+      color:rgba(62,39,35,.70);
 
     }
 
 
     .qualification .btn-outline{
 
-      background:rgba(255,253,249,.38);
+      background:rgba(255,253,249,.48);
 
     }
 
 
     /* =====================================================
        09 — FINAL CTA
-       CINEMATIC PHOTO
     ====================================================== */
 
     .final-cta{
 
       position:relative;
 
-      min-height:590px;
+      min-height:570px;
 
       display:grid;
 
@@ -1940,7 +1962,6 @@
 
       inset:0;
 
-      width:100%;
       height:100%;
 
       object-fit:cover;
@@ -1969,7 +1990,7 @@
 
       max-width:850px;
 
-      padding:70px 30px;
+      padding:65px 30px;
 
     }
 
@@ -2002,7 +2023,7 @@
 
       max-width:660px;
 
-      margin:24px auto 0;
+      margin:23px auto 0;
 
       font-size:14px;
 
@@ -2017,7 +2038,7 @@
 
       justify-content:center;
 
-      margin-top:31px;
+      margin-top:30px;
 
     }
 
@@ -2034,15 +2055,14 @@
 
 
     /* =====================================================
-       10 — FOOTER
-       CREAM
+       FOOTER
     ====================================================== */
 
     .footer{
 
-      min-height:110px;
+      min-height:108px;
 
-      padding:30px 72px;
+      padding:29px 72px;
 
       display:flex;
 
@@ -2089,18 +2109,18 @@
 
 
     /* =====================================================
-       REVEAL
+       REVEALS
     ====================================================== */
 
     .js .reveal{
 
       opacity:0;
 
-      transform:translateY(15px);
+      transform:translateY(14px);
 
       transition:
-        opacity .65s ease,
-        transform .65s ease;
+        opacity .62s ease,
+        transform .62s ease;
 
     }
 
@@ -2143,7 +2163,9 @@
 
         grid-template-columns:1fr;
 
-        padding:72px 34px;
+        padding:
+          34px 34px
+          54px;
 
       }
 
@@ -2152,13 +2174,15 @@
 
         max-width:820px;
 
-        padding:0 0 55px;
+        padding:
+          30px 0
+          48px;
 
       }
 
 
       .hero-editorial{
-        height:620px;
+        height:610px;
       }
 
 
@@ -2227,8 +2251,18 @@
       }
 
 
+      /*
+        Cream breathing space survives tablet.
+      */
+
       .editorial-showcase{
+
         grid-template-columns:1fr;
+
+        padding:
+          42px 0
+          44px;
+
       }
 
 
@@ -2236,18 +2270,30 @@
 
         max-width:730px;
 
-        padding:70px 34px 46px;
+        margin:
+          0 34px;
+
+        padding:
+          55px 34px;
 
       }
 
 
       .lookbook-grid{
+
+        margin-top:22px;
+
         grid-template-columns:repeat(4,1fr);
+
+        min-height:400px;
+
       }
 
 
       .lookbook-img{
-        min-height:330px;
+
+        min-height:400px;
+
       }
 
 
@@ -2276,12 +2322,12 @@
 
 
       .difference-image{
-        min-height:570px;
+        min-height:560px;
       }
 
 
       .difference-copy{
-        padding:70px 34px;
+        padding:65px 34px;
       }
 
 
@@ -2289,7 +2335,7 @@
 
         grid-template-columns:1fr;
 
-        gap:35px;
+        gap:33px;
 
       }
 
@@ -2352,9 +2398,12 @@
 
         flex-direction:column;
 
-        padding:23px 28px 30px;
+        padding:
+          23px 28px
+          30px;
 
-        background:rgba(251,247,241,.99);
+        background:
+          rgba(251,247,241,.99);
 
         box-shadow:
           0 32px 65px
@@ -2419,7 +2468,10 @@
 
 
       .statement-points article{
-        padding:30px 20px;
+
+        padding:
+          29px 20px;
+
       }
 
 
@@ -2429,18 +2481,23 @@
 
         border-top:
           1px solid
-          rgba(62,39,35,.16);
+          rgba(62,39,35,.14);
 
       }
 
 
       .lookbook-grid{
-        grid-template-columns:1.2fr 1fr;
+
+        grid-template-columns:
+          1.2fr 1fr;
+
       }
 
 
       .lookbook-img{
+
         min-height:360px;
+
       }
 
 
@@ -2471,8 +2528,25 @@
       }
 
 
+      /*
+        Mobile hero starts quickly after navigation too.
+      */
+
       .hero{
-        padding:55px 20px;
+
+        padding:
+          25px 20px
+          44px;
+
+      }
+
+
+      .hero-copy{
+
+        padding:
+          25px 0
+          40px;
+
       }
 
 
@@ -2529,7 +2603,7 @@
 
 
       .hero-proof article{
-        padding:28px 20px;
+        padding:26px 20px;
       }
 
 
@@ -2548,10 +2622,15 @@
 
       .momentum{
 
-        padding-top:74px;
+        padding-top:70px;
 
-        padding-bottom:70px;
+        padding-bottom:68px;
 
+      }
+
+
+      .momentum-head{
+        margin-bottom:42px;
       }
 
 
@@ -2567,7 +2646,7 @@
 
       .metric-grid article{
 
-        min-height:210px;
+        min-height:200px;
 
         border-right:0;
 
@@ -2594,9 +2673,9 @@
 
       .statement-top{
 
-        padding-top:72px;
+        padding-top:67px;
 
-        padding-bottom:68px;
+        padding-bottom:62px;
 
       }
 
@@ -2608,21 +2687,37 @@
 
       .statement-bottom{
 
-        padding-top:22px;
+        padding-top:20px;
 
-        padding-bottom:27px;
+        padding-bottom:23px;
 
       }
 
 
+      /*
+        On mobile we still preserve the gallery's
+        cream frame above and below.
+      */
+
       .editorial-showcase{
+
         display:block;
+
+        padding:
+          34px 0
+          36px;
+
       }
 
 
       .showcase-intro{
 
-        padding:60px 20px 42px;
+        margin:
+          0 20px
+          25px;
+
+        padding:
+          48px 25px;
 
       }
 
@@ -2634,9 +2729,13 @@
 
       .lookbook-grid{
 
+        margin-top:0;
+
         grid-template-columns:1fr 1fr;
 
         gap:5px;
+
+        min-height:auto;
 
       }
 
@@ -2666,10 +2765,15 @@
 
       .journey{
 
-        padding-top:75px;
+        padding-top:72px;
 
-        padding-bottom:75px;
+        padding-bottom:72px;
 
+      }
+
+
+      .journey-intro{
+        margin-bottom:42px;
       }
 
 
@@ -2700,7 +2804,7 @@
 
 
       .difference-copy{
-        padding:58px 20px;
+        padding:55px 20px;
       }
 
 
@@ -2711,9 +2815,9 @@
 
       .qualification{
 
-        padding-top:62px;
+        padding-top:57px;
 
-        padding-bottom:62px;
+        padding-bottom:57px;
 
       }
 
@@ -2724,7 +2828,7 @@
 
 
       .final-cta{
-        min-height:610px;
+        min-height:600px;
       }
 
 
@@ -2818,13 +2922,9 @@
         aria-label="Mirel Marketing Home"
       >
 
-        <span>
-          MIRÈL
-        </span>
+        <span>MIRÈL</span>
 
-        <small>
-          MARKETING
-        </small>
+        <small>MARKETING</small>
 
       </a>
 
@@ -2962,11 +3062,13 @@
 
 
           <h1>
+
             More traffic will not fix
 
             <em>
               a leaking patient journey.
             </em>
+
           </h1>
 
 
@@ -3138,7 +3240,7 @@
 
 
       <!-- =================================================
-           MOMENTUM
+           CATEGORY MOMENTUM
       ================================================== -->
 
       <section class="momentum">
@@ -3171,9 +3273,7 @@
 
           <article class="reveal">
 
-            <strong>
-              ≈38M
-            </strong>
+            <strong>≈38M</strong>
 
             <h3>
               Global Procedures
@@ -3201,9 +3301,7 @@
 
           <article class="reveal">
 
-            <strong>
-              +42.5%
-            </strong>
+            <strong>+42.5%</strong>
 
             <h3>
               Four-Year Growth
@@ -3223,9 +3321,7 @@
 
           <article class="reveal">
 
-            <strong>
-              6 Years
-            </strong>
+            <strong>6 Years</strong>
 
             <h3>
               Marketing Experience
@@ -3241,9 +3337,7 @@
 
           <article class="reveal">
 
-            <strong>
-              5
-            </strong>
+            <strong>5</strong>
 
             <h3>
               Focus Markets
@@ -3279,25 +3373,15 @@
 
           <div class="market-list">
 
-            <span>
-              United States
-            </span>
+            <span>United States</span>
 
-            <span>
-              United Kingdom
-            </span>
+            <span>United Kingdom</span>
 
-            <span>
-              Australia
-            </span>
+            <span>Australia</span>
 
-            <span>
-              Canada
-            </span>
+            <span>Canada</span>
 
-            <span>
-              New Zealand
-            </span>
+            <span>New Zealand</span>
 
           </div>
 
@@ -3309,7 +3393,7 @@
 
 
       <!-- =================================================
-           STATEMENT — TOP DARK / BOTTOM DUSTY ROSE
+           STATEMENT
       ================================================== -->
 
       <section class="statement">
@@ -3351,9 +3435,7 @@
 
             <article class="reveal">
 
-              <span>
-                01
-              </span>
+              <span>01</span>
 
               <h3>
                 Perception
@@ -3369,9 +3451,7 @@
 
             <article class="reveal">
 
-              <span>
-                02
-              </span>
+              <span>02</span>
 
               <h3>
                 Conversion
@@ -3387,9 +3467,7 @@
 
             <article class="reveal">
 
-              <span>
-                03
-              </span>
+              <span>03</span>
 
               <h3>
                 Retention
@@ -3547,9 +3625,7 @@
 
           <article class="reveal">
 
-            <span>
-              01
-            </span>
+            <span>01</span>
 
             <h3>
               Attract
@@ -3565,9 +3641,7 @@
 
           <article class="reveal">
 
-            <span>
-              02
-            </span>
+            <span>02</span>
 
             <h3>
               Reassure
@@ -3583,9 +3657,7 @@
 
           <article class="reveal">
 
-            <span>
-              03
-            </span>
+            <span>03</span>
 
             <h3>
               Convert
@@ -3601,9 +3673,7 @@
 
           <article class="reveal">
 
-            <span>
-              04
-            </span>
+            <span>04</span>
 
             <h3>
               Retain
@@ -3650,11 +3720,13 @@
 
 
           <h2>
+
             Technology creates leverage.
 
             <em>
               Judgment creates the strategy.
             </em>
+
           </h2>
 
 
@@ -3695,6 +3767,7 @@
             class="text-link"
             href="about.html"
           >
+
             About Mirel
 
             <span aria-hidden="true">
@@ -3822,13 +3895,9 @@
         aria-label="Mirel Marketing Home"
       >
 
-        <span>
-          MIRÈL
-        </span>
+        <span>MIRÈL</span>
 
-        <small>
-          MARKETING
-        </small>
+        <small>MARKETING</small>
 
       </a>
 
@@ -3890,26 +3959,24 @@
 
 
       const nav =
-        document.querySelector(
-          '[data-nav]'
-        );
+        document.querySelector('[data-nav]');
 
 
       const toggle =
-        document.querySelector(
-          '[data-menu-toggle]'
-        );
+        document.querySelector('[data-menu-toggle]');
 
 
       const menu =
-        document.querySelector(
-          '[data-mobile-menu]'
-        );
+        document.querySelector('[data-mobile-menu]');
 
 
       let lastScroll =
         window.scrollY;
 
+
+      /* ===================================================
+         MOBILE MENU
+      =================================================== */
 
       const setMenuState =
         (open) => {
@@ -3920,43 +3987,36 @@
           }
 
 
-          menu
-            .classList
-            .toggle(
-              'open',
-              open
-            );
+          menu.classList.toggle(
+            'open',
+            open
+          );
 
 
-          toggle
-            .setAttribute(
-              'aria-expanded',
-              String(open)
-            );
+          toggle.setAttribute(
+            'aria-expanded',
+            String(open)
+          );
 
 
-          toggle
-            .setAttribute(
-              'aria-label',
-              open
-                ? 'Close navigation menu'
-                : 'Open navigation menu'
-            );
+          toggle.setAttribute(
+            'aria-label',
+            open
+              ? 'Close navigation menu'
+              : 'Open navigation menu'
+          );
 
 
-          menu
-            .setAttribute(
-              'aria-hidden',
-              String(!open)
-            );
+          menu.setAttribute(
+            'aria-hidden',
+            String(!open)
+          );
 
 
-          document.body
-            .classList
-            .toggle(
-              'menu-open',
-              open
-            );
+          document.body.classList.toggle(
+            'menu-open',
+            open
+          );
 
       };
 
@@ -3983,7 +4043,9 @@
         menu.addEventListener(
           'click',
           event => {
+
             event.stopPropagation();
+
           }
         );
 
@@ -4041,7 +4103,7 @@
 
 
       /* ===================================================
-         NAV SCROLL
+         NAVIGATION SCROLL
       =================================================== */
 
       window.addEventListener(
@@ -4092,13 +4154,11 @@
 
 
       /* ===================================================
-         REVEALS
+         REVEAL
       =================================================== */
 
       const revealItems =
-        document.querySelectorAll(
-          '.reveal'
-        );
+        document.querySelectorAll('.reveal');
 
 
       const reduceMotion =
@@ -4115,7 +4175,8 @@
       ){
 
         revealItems.forEach(
-          item => item.classList.add('visible')
+          item =>
+            item.classList.add('visible')
         );
 
       }
@@ -4140,7 +4201,8 @@
                   }
 
 
-                  entry.target
+                  entry
+                    .target
                     .classList
                     .add('visible');
 
@@ -4163,7 +4225,8 @@
 
 
         revealItems.forEach(
-          item => observer.observe(item)
+          item =>
+            observer.observe(item)
         );
 
       }
