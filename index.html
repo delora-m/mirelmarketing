@@ -1391,17 +1391,13 @@
 
     /* =====================================================
        05 — VISUAL STANDARD
-       FINAL: 3-IMAGE EDITORIAL COMPOSITION
+       3-IMAGE EDITORIAL COMPOSITION
     ====================================================== */
 
     .editorial-showcase{
 
       display:grid;
 
-      /*
-        Text column is intentionally wider now that
-        the fourth image has been removed.
-      */
       grid-template-columns:430px 1fr;
 
       column-gap:0;
@@ -1439,10 +1435,6 @@
 
       font-family:var(--serif);
 
-      /*
-        Slightly larger for a more editorial,
-        luxury-magazine hierarchy.
-      */
       font-size:54px;
 
       line-height:.97;
@@ -1506,11 +1498,6 @@
     }
 
 
-    /*
-      Serum image removed.
-      Three remaining visuals have more room to breathe.
-    */
-
     .lookbook-grid{
 
       display:grid;
@@ -1572,7 +1559,6 @@
 
     /* =====================================================
        06 — JOURNEY
-       CREAM-WHITE + COMPLETE FRAME
     ====================================================== */
 
     .journey{
@@ -1621,11 +1607,8 @@
 
       grid-template-columns:repeat(4,1fr);
 
-      /*
-        Matching line above AND below.
-        This closes the four-column composition cleanly.
-      */
       border-top:1px solid rgba(62,39,35,.15);
+
       border-bottom:1px solid rgba(62,39,35,.15);
 
     }
@@ -1998,9 +1981,17 @@
     }
 
 
+    /*
+      FINAL POLISH:
+      More breathing room between the small strategy-review
+      line and the main headline.
+    */
+
     .final-cta .eyebrow{
 
       color:rgba(255,255,255,.67);
+
+      margin-bottom:42px;
 
     }
 
@@ -2254,8 +2245,6 @@
       }
 
 
-      /* Visual Standard stacks cleanly on tablet */
-
       .editorial-showcase{
 
         grid-template-columns:1fr;
@@ -2501,11 +2490,6 @@
       }
 
 
-      /*
-        Keep all 3 lookbook images side-by-side on tablet.
-        Mobile gets the editorial 1 + 2 composition below.
-      */
-
       .lookbook-grid{
 
         grid-template-columns:
@@ -2568,6 +2552,22 @@
 
       .hero h1{
         font-size:52px;
+      }
+
+
+      /*
+        FINAL MOBILE HERO FIX:
+        Pink sentence remains inline so it can begin
+        directly after "fix" instead of being forced
+        onto an entirely separate line.
+      */
+
+      .hero h1 em{
+
+        display:inline;
+
+        margin-top:0;
+
       }
 
 
@@ -2712,7 +2712,6 @@
 
       /* ===================================================
          VISUAL STANDARD — MOBILE
-         First image large, two supporting images beneath.
       =================================================== */
 
       .editorial-showcase{
@@ -2791,8 +2790,6 @@
       }
 
 
-      /* Journey ends cleanly on its bottom rule */
-
       .journey{
 
         padding-top:72px;
@@ -2827,11 +2824,6 @@
 
       }
 
-
-      /*
-        The grid already has a final bottom border,
-        so the last card does not need another one.
-      */
 
       .difference-image{
         min-height:430px;
@@ -2869,6 +2861,16 @@
 
       .final-cta h2{
         font-size:48px;
+      }
+
+
+      /*
+        Keep the CTA eyebrow/headline separation
+        generous on mobile as well.
+      */
+
+      .final-cta .eyebrow{
+        margin-bottom:38px;
       }
 
 
@@ -3097,13 +3099,7 @@
 
 
           <h1>
-
-            More traffic will not fix
-
-            <em>
-              a leaking patient journey.
-            </em>
-
+            More traffic will not fix&nbsp;<em>a leaking patient journey.</em>
           </h1>
 
 
@@ -3526,7 +3522,7 @@
 
 
       <!-- =================================================
-           VISUAL STANDARD — 3 IMAGES
+           VISUAL STANDARD
       ================================================== -->
 
       <section class="editorial-showcase">
