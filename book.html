@@ -208,12 +208,6 @@
     }
 
 
-    .book-hero-description strong{
-      color:var(--espresso-deep);
-      font-weight:500;
-    }
-
-
     .book-hero-micro{
       display:flex;
       flex-wrap:wrap;
@@ -266,7 +260,7 @@
 
 
     /* =====================================================
-       HERO IMAGE — EAGER
+       HERO IMAGE
     ====================================================== */
 
     .book-hero-image{
@@ -356,7 +350,7 @@
 
 
     /* =====================================================
-       PROBLEM / POSITIONING
+       PROBLEM
     ====================================================== */
 
     .book-leak{
@@ -461,7 +455,7 @@
 
 
     /* =====================================================
-       DIAGNOSTIC SECTION
+       DIAGNOSTIC
     ====================================================== */
 
     .book-diagnostic{
@@ -485,7 +479,7 @@
           rgba(29,15,12,.04),
           rgba(29,15,12,.18)
         ),
-        url('images/contact-med-spa-skin-consultation.webp')
+        url('images/book-patient-journey-diagnostic.webp')
         center/cover no-repeat;
     }
 
@@ -694,7 +688,7 @@
 
 
     /* =====================================================
-       WHAT HAPPENS NEXT
+       PROCESS
     ====================================================== */
 
     .book-process{
@@ -707,7 +701,7 @@
     .book-process-grid{
       display:grid;
 
-      grid-template-columns:.96fr 1.04fr;
+      grid-template-columns:1fr 1fr;
 
       min-height:700px;
     }
@@ -808,7 +802,7 @@
 
 
     /* =====================================================
-       NUMBERS / PREPARATION
+       NUMBERS
     ====================================================== */
 
     .book-numbers{
@@ -816,7 +810,7 @@
 
       grid-template-columns:1fr 1fr;
 
-      min-height:690px;
+      min-height:700px;
 
       background:#f4ebe5;
 
@@ -825,7 +819,7 @@
 
 
     .book-numbers-image{
-      min-height:690px;
+      min-height:700px;
 
       background:
         linear-gradient(
@@ -917,7 +911,7 @@
 
 
     /* =====================================================
-       BOOKING AREA
+       BOOKING
     ====================================================== */
 
     .book-reserve{
@@ -1055,7 +1049,7 @@
 
 
     /* =====================================================
-       PHILOSOPHY STRIP
+       PHILOSOPHY
     ====================================================== */
 
     .book-philosophy{
@@ -1281,6 +1275,11 @@
       }
 
 
+      .book-process-image{
+        order:-1;
+      }
+
+
       .book-leak-grid{
         grid-template-columns:1fr;
 
@@ -1486,7 +1485,6 @@
 
     <!-- =====================================================
          NAVIGATION
-         CONTACT REMOVED
     ====================================================== -->
 
     <header
@@ -1575,10 +1573,6 @@
 
 
 
-    <!-- =====================================================
-         MOBILE MENU
-    ====================================================== -->
-
     <div
       class="mobile-menu"
       data-mobile-menu
@@ -1632,15 +1626,11 @@
 
 
 
-      <!-- =====================================================
-           HERO
-      ====================================================== -->
+      <!-- HERO -->
 
       <section class="book-hero reveal">
 
-
         <div class="book-hero-copy">
-
 
           <p class="eyebrow">
             Med Spa Growth Strategy Review
@@ -1669,7 +1659,7 @@
 
             <a
               class="btn btn-dark btn-large"
-              href="https://calendar.app.google/XRgVxrLv394KExKj9"
+              href="https://calendar.app.google/Fd9EYR3SaJwPYP1LA"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1703,13 +1693,11 @@
 
           </div>
 
-
         </div>
 
 
 
         <div class="book-hero-image">
-
 
           <div class="book-hero-card">
 
@@ -1723,20 +1711,15 @@
 
           </div>
 
-
         </div>
-
 
       </section>
 
 
 
-      <!-- =====================================================
-           THE PROBLEM
-      ====================================================== -->
+      <!-- PROBLEM -->
 
       <section class="book-leak reveal">
-
 
         <div class="book-leak-header">
 
@@ -1757,7 +1740,6 @@
 
 
         <div class="book-leak-grid">
-
 
           <article class="book-leak-card">
 
@@ -1817,30 +1799,24 @@
 
           </article>
 
-
         </div>
-
 
       </section>
 
 
 
-      <!-- =====================================================
-           DIAGNOSTIC
-      ====================================================== -->
+      <!-- DIAGNOSTIC -->
 
       <section
         class="book-diagnostic reveal"
         id="diagnostic"
       >
 
-
         <div class="book-diagnostic-image"></div>
 
 
 
         <div class="book-diagnostic-copy">
-
 
           <p class="eyebrow">
             What We’ll Diagnose
@@ -1861,7 +1837,6 @@
 
 
           <div class="diagnostic-list">
-
 
             <div class="diagnostic-item">
 
@@ -1974,26 +1949,19 @@
 
             </div>
 
-
           </div>
 
-
         </div>
-
 
       </section>
 
 
 
-      <!-- =====================================================
-           PATIENT JOURNEY
-      ====================================================== -->
+      <!-- PATIENT JOURNEY -->
 
       <section class="book-journey reveal">
 
-
         <div class="book-journey-header">
-
 
           <p class="eyebrow">
             The Patient Journey
@@ -2012,164 +1980,78 @@
             from attention to long-term value.
           </p>
 
-
         </div>
 
 
 
         <div class="journey-track">
 
-
           <div class="journey-stage">
-
-            <span>
-              01
-            </span>
-
+            <span>01</span>
             <div>
-
-              <strong>
-                Attention
-              </strong>
-
-              <small>
-                They discover you.
-              </small>
-
+              <strong>Attention</strong>
+              <small>They discover you.</small>
             </div>
-
           </div>
 
 
-
           <div class="journey-stage">
-
-            <span>
-              02
-            </span>
-
+            <span>02</span>
             <div>
-
-              <strong>
-                Interest
-              </strong>
-
-              <small>
-                They consider you.
-              </small>
-
+              <strong>Interest</strong>
+              <small>They consider you.</small>
             </div>
-
           </div>
 
 
-
           <div class="journey-stage">
-
-            <span>
-              03
-            </span>
-
+            <span>03</span>
             <div>
-
-              <strong>
-                Inquiry
-              </strong>
-
-              <small>
-                They contact you.
-              </small>
-
+              <strong>Inquiry</strong>
+              <small>They contact you.</small>
             </div>
-
           </div>
 
 
-
           <div class="journey-stage">
-
-            <span>
-              04
-            </span>
-
+            <span>04</span>
             <div>
-
-              <strong>
-                Consultation
-              </strong>
-
-              <small>
-                They evaluate the decision.
-              </small>
-
+              <strong>Consultation</strong>
+              <small>They evaluate the decision.</small>
             </div>
-
           </div>
 
 
-
           <div class="journey-stage">
-
-            <span>
-              05
-            </span>
-
+            <span>05</span>
             <div>
-
-              <strong>
-                Treatment
-              </strong>
-
-              <small>
-                They become a patient.
-              </small>
-
+              <strong>Treatment</strong>
+              <small>They become a patient.</small>
             </div>
-
           </div>
 
 
-
           <div class="journey-stage">
-
-            <span>
-              06
-            </span>
-
+            <span>06</span>
             <div>
-
-              <strong>
-                Retention
-              </strong>
-
-              <small>
-                They return and refer.
-              </small>
-
+              <strong>Retention</strong>
+              <small>They return and refer.</small>
             </div>
-
           </div>
-
 
         </div>
-
 
       </section>
 
 
 
-      <!-- =====================================================
-           PROCESS
-      ====================================================== -->
+      <!-- PROCESS -->
 
       <section class="book-process reveal">
 
-
         <div class="book-process-grid">
 
-
           <div class="book-process-copy">
-
 
             <p class="eyebrow">
               What Happens Next
@@ -2185,9 +2067,7 @@
 
             <div class="book-process-step">
 
-              <span>
-                01
-              </span>
+              <span>01</span>
 
               <div>
 
@@ -2209,9 +2089,7 @@
 
             <div class="book-process-step">
 
-              <span>
-                02
-              </span>
+              <span>02</span>
 
               <div>
 
@@ -2234,9 +2112,7 @@
 
             <div class="book-process-step">
 
-              <span>
-                03
-              </span>
+              <span>03</span>
 
               <div>
 
@@ -2254,34 +2130,27 @@
 
             </div>
 
-
           </div>
 
 
 
           <div class="book-process-image"></div>
 
-
         </div>
-
 
       </section>
 
 
 
-      <!-- =====================================================
-           NUMBERS TO BRING
-      ====================================================== -->
+      <!-- NUMBERS -->
 
       <section class="book-numbers reveal">
-
 
         <div class="book-numbers-image"></div>
 
 
 
         <div class="book-numbers-copy">
-
 
           <p class="eyebrow">
             Come With The Numbers
@@ -2298,7 +2167,6 @@
             figures help us understand where revenue may be leaking
             and which stage deserves attention first.
           </p>
-
 
 
           <div class="number-checklist">
@@ -2329,33 +2197,26 @@
 
           </div>
 
-
         </div>
-
 
       </section>
 
 
 
-      <!-- =====================================================
-           BOOKING
-      ====================================================== -->
+      <!-- BOOKING -->
 
       <section
         class="book-reserve reveal"
         id="booking"
       >
 
-
         <div class="book-reserve-shell">
-
 
           <div class="book-reserve-image"></div>
 
 
 
           <div class="book-reserve-copy">
-
 
             <p class="eyebrow">
               Reserve Your Review
@@ -2379,25 +2240,19 @@
             <div class="book-reserve-details">
 
               <span>
-                <strong>
-                  Duration
-                </strong>
+                <strong>Duration</strong>
                 30 minutes
               </span>
 
 
               <span>
-                <strong>
-                  Format
-                </strong>
+                <strong>Format</strong>
                 Google Meet
               </span>
 
 
               <span>
-                <strong>
-                  Focus
-                </strong>
+                <strong>Focus</strong>
                 Growth bottlenecks &amp; revenue leaks
               </span>
 
@@ -2409,7 +2264,7 @@
 
               <a
                 class="btn btn-dark btn-large"
-                href="https://calendar.app.google/XRgVxrLv394KExKj9"
+                href="https://calendar.app.google/Fd9EYR3SaJwPYP1LA"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -2424,23 +2279,17 @@
               Mirel appointment calendar.
             </p>
 
-
           </div>
 
-
         </div>
-
 
       </section>
 
 
 
-      <!-- =====================================================
-           PHILOSOPHY
-      ====================================================== -->
+      <!-- PHILOSOPHY -->
 
       <section class="book-philosophy reveal">
-
 
         <p class="eyebrow">
           The Mirel Approach
@@ -2460,24 +2309,18 @@
           The system should serve the diagnosis — not the other way around.
         </p>
 
-
       </section>
 
 
 
-      <!-- =====================================================
-           FINAL CTA
-      ====================================================== -->
+      <!-- FINAL CTA -->
 
       <section class="book-final reveal">
-
 
         <div class="book-final-bg"></div>
 
 
-
         <div class="book-final-overlay">
-
 
           <p class="eyebrow">
             Your Next Growth Move Starts With Clarity
@@ -2498,16 +2341,14 @@
 
           <a
             class="btn btn-light btn-large"
-            href="https://calendar.app.google/XRgVxrLv394KExKj9"
+            href="https://calendar.app.google/Fd9EYR3SaJwPYP1LA"
             target="_blank"
             rel="noopener noreferrer"
           >
             Book Your Growth Strategy Review
           </a>
 
-
         </div>
-
 
       </section>
 
@@ -2516,35 +2357,23 @@
 
 
 
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
+    <!-- FOOTER -->
 
     <footer class="footer">
-
 
       <a
         class="brand"
         href="index.html"
         aria-label="Mirel Marketing Home"
       >
-
-        <span>
-          MIRÈL
-        </span>
-
-        <small>
-          MARKETING
-        </small>
-
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
       </a>
-
 
 
       <a href="mailto:delora@mirelmarketing.com">
         delora@mirelmarketing.com
       </a>
-
 
 
       <a
@@ -2556,11 +2385,9 @@
       </a>
 
 
-
       <a href="resources.html">
         Resources
       </a>
-
 
 
       <a href="privacy-policy.html">
@@ -2568,11 +2395,9 @@
       </a>
 
 
-
       <a href="terms-and-conditions.html">
         Terms &amp; Conditions
       </a>
-
 
     </footer>
 
@@ -2581,26 +2406,20 @@
 
 
 
-  <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
-
   <script>
 
-
     /* =====================================================
-       LAZY LOAD BOOK BACKGROUND IMAGES
+       LAZY LOAD BACKGROUND IMAGES
     ====================================================== */
 
     const bookLazyBackgrounds = [
-
 
       {
         selector:
           '.book-diagnostic-image',
 
         image:
-          "linear-gradient(rgba(29,15,12,.04), rgba(29,15,12,.18)), url('images/contact-med-spa-skin-consultation.webp')"
+          "linear-gradient(rgba(29,15,12,.04), rgba(29,15,12,.18)), url('images/book-patient-journey-diagnostic.webp')"
       },
 
 
@@ -2639,7 +2458,6 @@
           "linear-gradient(90deg, rgba(29,15,12,.80), rgba(29,15,12,.58), rgba(29,15,12,.38)), url('images/contact-luxury-med-spa-interior.webp')"
       }
 
-
     ];
 
 
@@ -2651,7 +2469,6 @@
 
     bookLazyBackgrounds.forEach(
       (item) => {
-
 
         const element =
           document.querySelector(
@@ -2668,7 +2485,6 @@
 
         }
 
-
       }
     );
 
@@ -2676,7 +2492,6 @@
 
     const loadBookLazyBackground =
       (element) => {
-
 
         const image =
           bookLazyBackgroundMap.get(
@@ -2697,7 +2512,6 @@
         element.style.backgroundImage =
           image;
 
-
       };
 
 
@@ -2707,16 +2521,13 @@
       in window
     ){
 
-
       const bookBackgroundObserver =
         new IntersectionObserver(
 
           (entries, observer) => {
 
-
             entries.forEach(
               (entry) => {
-
 
                 if(
                   !entry.isIntersecting
@@ -2734,10 +2545,8 @@
                   entry.target
                 );
 
-
               }
             );
-
 
           },
 
@@ -2762,11 +2571,9 @@
         }
       );
 
-
     }
 
     else{
-
 
       bookLazyBackgroundMap.forEach(
         (image, element) => {
@@ -2777,7 +2584,6 @@
 
         }
       );
-
 
     }
 
@@ -2813,7 +2619,6 @@
       'scroll',
       () => {
 
-
         const currentScroll =
           window.scrollY;
 
@@ -2829,7 +2634,6 @@
           currentScroll > 120
         ){
 
-
           nav?.classList.add(
             'hide'
           );
@@ -2844,16 +2648,13 @@
             .classList
             .remove('menu-open');
 
-
         }
 
         else{
 
-
           nav?.classList.remove(
             'hide'
           );
-
 
         }
 
@@ -2861,14 +2662,13 @@
         lastScroll =
           currentScroll;
 
-
       }
     );
 
 
 
     /* =====================================================
-       REVEAL ANIMATIONS
+       REVEAL
     ====================================================== */
 
     const reveals =
@@ -2882,27 +2682,21 @@
 
         (entries) => {
 
-
           entries.forEach(
             (entry) => {
-
 
               if(
                 entry.isIntersecting
               ){
 
-
                 entry.target
                   .classList
                   .add('visible');
 
-
               }
-
 
             }
           );
-
 
         },
 
@@ -2934,11 +2728,9 @@
       mobileMenu
     ){
 
-
       menuToggle.addEventListener(
         'click',
         (event) => {
-
 
           event.stopPropagation();
 
@@ -2951,7 +2743,6 @@
           document.body
             .classList
             .toggle('menu-open');
-
 
         }
       );
@@ -2973,7 +2764,6 @@
         'click',
         () => {
 
-
           mobileMenu
             .classList
             .remove('open');
@@ -2983,10 +2773,8 @@
             .classList
             .remove('menu-open');
 
-
         }
       );
-
 
     }
 
