@@ -3,30 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
   <title>Med Spa Growth Systems | Mirel Marketing</title>
   <meta name="description" content="Mirel Marketing helps med spa owners uncover and fix revenue leaks in their patient journey so more leads become booked, paying, and returning patients.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#fbf7f1">
   <link rel="canonical" href="https://mirelmarketing.com/">
 
-  <!-- Social sharing -->
   <meta property="og:title" content="Med Spa Growth Systems | Mirel Marketing">
   <meta property="og:description" content="Premium positioning, patient-journey strategy, conversion systems and AI-powered execution for med spas.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mirelmarketing.com/">
   <meta property="og:site_name" content="Mirel Marketing">
   <meta property="og:image" content="https://mirelmarketing.com/images/hero-face.webp">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Med Spa Growth Systems | Mirel Marketing">
   <meta name="twitter:description" content="Premium positioning, conversion systems and patient-journey strategy for med spas.">
   <meta name="twitter:image" content="https://mirelmarketing.com/images/hero-face.webp">
 
-  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231d0f0c'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='58' font-family='Georgia' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E">
 
-  <!-- Performance-optimized font delivery -->
+  <!-- Performance-optimized font loading -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
@@ -47,7 +43,6 @@
     href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
   >
 
-  <!-- Desktop image priority -->
   <link
     rel="preload"
     as="image"
@@ -73,9 +68,7 @@
         "url":"https://mirelmarketing.com/",
         "email":"delora@mirelmarketing.com",
         "description":"Mirel Marketing builds premium growth and conversion systems for med spas and aesthetic clinics.",
-        "sameAs":[
-          "https://www.instagram.com/mirelmarketing"
-        ],
+        "sameAs":["https://www.instagram.com/mirelmarketing"],
         "areaServed":[
           {"@type":"Country","name":"United States"},
           {"@type":"Country","name":"United Kingdom"},
@@ -89,16 +82,12 @@
         "@id":"https://mirelmarketing.com/#website",
         "url":"https://mirelmarketing.com/",
         "name":"Mirel Marketing",
-        "publisher":{
-          "@id":"https://mirelmarketing.com/#organization"
-        }
+        "publisher":{"@id":"https://mirelmarketing.com/#organization"}
       },
       {
         "@type":"Service",
         "name":"Med Spa Growth Systems",
-        "provider":{
-          "@id":"https://mirelmarketing.com/#organization"
-        },
+        "provider":{"@id":"https://mirelmarketing.com/#organization"},
         "serviceType":"Patient journey optimization, premium positioning, conversion systems, paid advertising and follow-up systems"
       }
     ]
@@ -108,7 +97,7 @@
   <style>
 
     /* =====================================================
-       PERFORMANCE: DIRECT FONT DECLARATIONS
+       FONTS
     ====================================================== */
 
     @font-face {
@@ -320,7 +309,7 @@
     }
 
     /* =====================================================
-       HEADER / DESKTOP NAVIGATION
+       NAVIGATION
     ====================================================== */
 
     .nav {
@@ -416,7 +405,6 @@
 
     /* =====================================================
        HERO
-       Layout preserved. Hero copy loads immediately.
     ====================================================== */
 
     .hero {
@@ -464,21 +452,39 @@
       color:var(--text-soft);
     }
 
-    .hero-pills {
+    /* =====================================================
+       NEW: PINK-DOTTED HERO BENEFITS
+       Below CTA buttons, without boxes.
+    ====================================================== */
+
+    .hero-benefits {
       display:flex;
       flex-wrap:wrap;
-      gap:8px;
-      margin-bottom:30px;
+      gap:12px 24px;
+      list-style:none;
+      padding:0;
+      margin:21px 0 0;
     }
 
-    .hero-pills span {
-      padding:10px 12px;
-      border:1px solid rgba(62,39,35,.13);
-      background:rgba(255,255,255,.32);
+    .hero-benefits li {
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      color:var(--espresso);
+      font-size:10px;
+      font-weight:500;
+      letter-spacing:.13em;
       text-transform:uppercase;
-      letter-spacing:.16em;
-      font-size:8px;
-      color:#856f68;
+      line-height:1.65;
+    }
+
+    .hero-benefits li::before {
+      content:'';
+      flex:0 0 6px;
+      width:6px;
+      height:6px;
+      border-radius:50%;
+      background:var(--rose);
     }
 
     /* =====================================================
@@ -554,7 +560,6 @@
 
     /* =====================================================
        HERO PROOF
-       Accessibility: heading levels and contrast improved.
     ====================================================== */
 
     .hero-proof {
@@ -1085,7 +1090,8 @@
     }
 
     /* =====================================================
-       QUALIFICATION
+       QUALITY OVER VOLUME
+       NEW: CREAM BACKGROUND
     ====================================================== */
 
     .qualification {
@@ -1094,7 +1100,7 @@
       gap:80px;
       padding:72px;
       align-items:center;
-      background:var(--dusty-rose);
+      background:var(--cream);
       border-bottom:1px solid rgba(62,39,35,.10);
     }
 
@@ -1198,7 +1204,6 @@
 
     /* =====================================================
        FOOTER
-       Accessibility: larger clickable link targets.
     ====================================================== */
 
     .footer {
@@ -1780,11 +1785,7 @@
 
     <header class="nav" data-nav>
 
-      <a
-        class="brand"
-        href="index.html"
-        aria-label="Mirel Marketing Home"
-      >
+      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
         <span>MIRÈL</span>
         <small>MARKETING</small>
       </a>
@@ -1898,13 +1899,6 @@
             paying, and returning patients.
           </p>
 
-          <div class="hero-pills">
-            <span>Premium Positioning</span>
-            <span>Conversion Systems</span>
-            <span>AI-Powered Analysis</span>
-            <span>Patient Journey Growth</span>
-          </div>
-
           <div class="button-row">
 
             <a class="btn btn-dark btn-large" href="book.html">
@@ -1916,6 +1910,14 @@
             </a>
 
           </div>
+
+          <!-- Pink dot benefits below buttons -->
+          <ul class="hero-benefits" aria-label="Mirel growth capabilities">
+            <li>Premium Positioning</li>
+            <li>Conversion Systems</li>
+            <li>AI-Powered Analysis</li>
+            <li>Patient Journey Growth</li>
+          </ul>
 
         </div>
 
@@ -1973,7 +1975,6 @@
 
       <!-- =================================================
            HERO PROOF
-           Accessibility heading hierarchy corrected.
       ================================================== -->
 
       <section class="hero-proof reveal">
@@ -2208,7 +2209,6 @@
 
       <!-- =================================================
            THE VISUAL STANDARD
-           THREE IMAGE LOOKBOOK
       ================================================== -->
 
       <section class="editorial-showcase">
@@ -2426,7 +2426,8 @@
       </section>
 
       <!-- =================================================
-           QUALIFICATION
+           QUALITY OVER VOLUME
+           CREAM BACKGROUND
       ================================================== -->
 
       <section class="qualification reveal">
@@ -2516,11 +2517,7 @@
 
     <footer class="footer">
 
-      <a
-        class="brand"
-        href="index.html"
-        aria-label="Mirel Marketing Home"
-      >
+      <a class="brand" href="index.html" aria-label="Mirel Marketing Home">
         <span>MIRÈL</span>
         <small>MARKETING</small>
       </a>
@@ -2535,7 +2532,6 @@
         <a href="book.html">Book</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-
         <a href="mailto:delora@mirelmarketing.com">
           delora@mirelmarketing.com
         </a>
@@ -2548,7 +2544,7 @@
 
   <!-- =====================================================
        JAVASCRIPT
-  ====================================================== -->
+    ====================================================== -->
 
   <script>
     (() => {
