@@ -1464,3 +1464,12 @@ img{
   }
 
 }
+/* =====================================================
+   GLOBAL NAVIGATION — CONTACT RETIRED
+===================================================== */
+
+.nav-links a[href="contact.html"],
+.mobile-menu > a[href="contact.html"],
+.footer a[href="contact.html"]{
+  display:none !important;
+}
