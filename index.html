@@ -26,11 +26,7 @@
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231d0f0c'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='58' font-family='Georgia' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E">
 
-  <!-- =====================================================
-       PERFORMANCE-OPTIMIZED FONT DELIVERY
-       Same Mirel fonts, without render-blocking CSS.
-  ====================================================== -->
-
+  <!-- Performance-optimized font delivery -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
@@ -51,8 +47,7 @@
     href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2"
   >
 
-  <!-- Desktop image priority; mobile heading gets priority -->
-
+  <!-- Desktop image priority -->
   <link
     rel="preload"
     as="image"
@@ -66,10 +61,7 @@
     document.documentElement.classList.add('js');
   </script>
 
-  <!-- =====================================================
-       STRUCTURED DATA
-  ====================================================== -->
-
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -117,7 +109,6 @@
 
     /* =====================================================
        PERFORMANCE: DIRECT FONT DECLARATIONS
-       Preserving Cormorant Garamond and Inter.
     ====================================================== */
 
     @font-face {
@@ -256,7 +247,7 @@
       letter-spacing:.36em;
       font-size:10px;
       font-weight:650;
-      color:#8d6e63;
+      color:#75564d;
     }
 
     .section-title {
@@ -425,8 +416,7 @@
 
     /* =====================================================
        HERO
-       Final layout preserved.
-       Hero copy is visible immediately for faster LCP.
+       Layout preserved. Hero copy loads immediately.
     ====================================================== */
 
     .hero {
@@ -564,6 +554,7 @@
 
     /* =====================================================
        HERO PROOF
+       Accessibility: heading levels and contrast improved.
     ====================================================== */
 
     .hero-proof {
@@ -587,12 +578,12 @@
       border-right:0;
     }
 
-    .hero-proof h3 {
+    .hero-proof h2 {
       margin:0 0 9px;
       text-transform:uppercase;
       letter-spacing:.26em;
       font-size:8px;
-      color:#8d7168;
+      color:#755a50;
     }
 
     .hero-proof p {
@@ -843,7 +834,6 @@
 
     /* =====================================================
        THE VISUAL STANDARD
-       THREE EDITORIAL IMAGES
     ====================================================== */
 
     .editorial-showcase {
@@ -1208,6 +1198,7 @@
 
     /* =====================================================
        FOOTER
+       Accessibility: larger clickable link targets.
     ====================================================== */
 
     .footer {
@@ -1234,13 +1225,16 @@
     }
 
     .footer-links a {
+      display:inline-flex;
+      align-items:center;
+      min-height:44px;
+      padding:7px 6px;
       font-size:10px;
       color:var(--text-soft);
     }
 
     /* =====================================================
        REVEAL ANIMATIONS
-       Below-the-fold animations remain unchanged.
     ====================================================== */
 
     .js .reveal {
@@ -1832,7 +1826,6 @@
       </div>
 
       <!-- Custom espresso hamburger icon -->
-
       <button
         class="mobile-menu-toggle"
         data-menu-toggle
@@ -1885,7 +1878,6 @@
 
       <!-- =================================================
            HERO
-           Visible immediately, without reveal delay.
       ================================================== -->
 
       <section class="hero">
@@ -1981,32 +1973,42 @@
 
       <!-- =================================================
            HERO PROOF
+           Accessibility heading hierarchy corrected.
       ================================================== -->
 
       <section class="hero-proof reveal">
 
         <article>
-          <h3>What Mirel Looks At</h3>
+
+          <h2>What Mirel Looks At</h2>
+
           <p>
             Perception, inquiry, consultation, treatment acceptance,
             follow-up and retention.
           </p>
+
         </article>
 
         <article>
-          <h3>What We Improve</h3>
+
+          <h2>What We Improve</h2>
+
           <p>
             The journey between existing patient demand
             and booked, paying, returning patients.
           </p>
+
         </article>
 
         <article>
-          <h3>Strategy Review</h3>
+
+          <h2>Strategy Review</h2>
+
           <p>
             A focused 30-minute review designed to identify
             where growth is losing momentum.
           </p>
+
         </article>
 
       </section>
@@ -2670,7 +2672,6 @@
 
       /* ===================================================
          REVEAL ANIMATIONS
-         Hero copy no longer uses .reveal.
       =================================================== */
 
       const revealItems = document.querySelectorAll('.reveal');
