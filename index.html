@@ -516,6 +516,58 @@
 
     }
 
+    
+/* Refined brown authority section */
+
+.authority-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 32px;
+  text-align: center;
+}
+
+.authority-message {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.authority-message h2 {
+  margin: 0 0 22px;
+  font-family: var(--serif);
+  font-size: clamp(38px, 4vw, 62px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+  color: #fff9f4;
+}
+
+.authority-message p {
+  max-width: 690px;
+  margin: 0 auto;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #d9cac0;
+}
+
+@media (max-width: 760px) {
+  .authority-strip {
+    padding: 55px 22px;
+  }
+
+  .authority-message h2 {
+    font-size: clamp(35px, 8vw, 46px);
+  }
+
+  .authority-message p {
+    font-size: 14px;
+  }
+}
+
+
   </style>
 
   <noscript>
@@ -719,21 +771,14 @@
 
       <!-- BROWN AUTHORITY SECTION -->
 
-      <section class="authority-strip reveal">
+      
+<section class="authority-strip reveal">
+  <div class="authority-message">
+    <h2>The decision begins long before the appointment.</h2>
+    <p>We shape the moments that make patients feel confident in choosing you.</p>
+  </div>
+</section>
 
-        <p>
-          Most clinics compete on treatments.
-        </p>
-
-        <strong>
-          We help you compete on perceived value.
-        </strong>
-
-        <span>
-          Because premium patients choose the clinic that feels safest, most refined, and most intentional.
-        </span>
-
-      </section>
 
       <!-- WHY MIREL -->
 
