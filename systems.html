@@ -1,1874 +1,2379 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>The Mirel System | Luxury Growth Systems for Med Spas</title>
-
-<meta
-  name="description"
-  content="Luxury growth systems for med spas through positioning, conversion and patient retention."
-/>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link
-  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
-  rel="stylesheet"
->
-
-<link rel="stylesheet" href="style.css?v=6">
-
-<!-- PERFORMANCE: PRIMARY SYSTEMS IMAGE -->
-<link
-  rel="preload"
-  as="image"
-  href="images/mirel-systems-hero.webp"
-  type="image/webp"
-  fetchpriority="high"
->
-
-<!-- PERFORMANCE: ENABLE LAZY BACKGROUND SYSTEM -->
-<script>
-  document.documentElement.classList.add('js-lazy-bg');
-</script>
-
-<style>
-
-/* =========================================================
-   SYSTEMS PAGE
-========================================================= */
-
-.systems-page{
-  background:#fbf7f1;
-  overflow-x:hidden;
-}
-
-.systems-hero{
-  display:grid;
-  grid-template-columns:.95fr 1.05fr;
-  min-height:760px;
-
-  background:
-    radial-gradient(
-      circle at 15% 15%,
-      rgba(242,214,218,.35),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 80% 15%,
-      rgba(200,184,162,.15),
-      transparent 30%
-    ),
-    linear-gradient(
-      110deg,
-      #fbf7f1 0%,
-      #fbf7f1 50%,
-      #efe3dc 100%
-    );
-
-  border-bottom:1px solid var(--line);
-}
-
-.systems-hero-copy{
-  padding:96px 72px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-
-.systems-hero-copy h1{
-  font-family:var(--serif);
-  font-size:78px;
-  line-height:.96;
-  font-weight:500;
-  letter-spacing:-.045em;
-  color:var(--espresso-deep);
-  margin:0 0 30px;
-  max-width:700px;
-}
-
-.systems-hero-copy h1 em{
-  font-style:italic;
-  font-weight:400;
-  color:var(--rose);
-}
-
-.systems-hero-copy p:not(.eyebrow){
-  font-size:16px;
-  line-height:1.9;
-  max-width:560px;
-  color:var(--text-soft);
-  margin:0 0 34px;
-}
-
-.systems-editorial{
-  display:grid;
-  grid-template-columns:1.3fr .8fr;
-  gap:14px;
-  padding:96px 72px 96px 0;
-  align-items:stretch;
-}
-
-
-/* =========================================================
-   ABOVE-THE-FOLD IMAGES
-   WEBP + EAGER
-========================================================= */
-
-.system-main{
-  background:
-    linear-gradient(
-      rgba(29,15,12,.03),
-      rgba(29,15,12,.15)
-    ),
-    url('images/mirel-systems-hero.webp');
-
-  background-size:cover;
-  background-position:center;
-  position:relative;
-  min-height:540px;
-}
-
-.system-side{
-  display:grid;
-  grid-template-rows:1fr 1fr;
-  gap:14px;
-}
-
-.system-card{
-  position:relative;
-  background-size:cover;
-  background-position:center;
-  overflow:hidden;
-}
-
-.system-card-1{
-  background:
-    linear-gradient(
-      rgba(29,15,12,.03),
-      rgba(29,15,12,.15)
-    ),
-    url('images/mirel-positioning-system.webp');
-
-  background-size:cover;
-  background-position:center;
-}
-
-.system-card-2{
-  background:
-    linear-gradient(
-      rgba(29,15,12,.03),
-      rgba(29,15,12,.15)
-    ),
-    url('images/mirel-ecosystem-system.webp');
-
-  background-size:cover;
-  background-position:center;
-}
-
-
-/* =========================================================
-   AUTHORITY STRIP
-========================================================= */
-
-.systems-note{
-  padding:34px 72px;
-  background:#f2d6da;
-  border-bottom:1px solid rgba(62,39,35,.08);
-  text-align:center;
-}
-
-.systems-note p{
-  font-family:var(--serif);
-  font-size:32px;
-  line-height:1.25;
-  color:var(--espresso-deep);
-  font-style:italic;
-  max-width:980px;
-  margin:0 auto;
-  letter-spacing:-.02em;
-}
-
-
-/* =========================================================
-   PILLARS
-========================================================= */
-
-.systems-pillars{
-  padding:92px 72px 98px;
-  background:#fbf7f1;
-  border-bottom:1px solid var(--line);
-}
-
-.systems-pillars .section-title{
-  max-width:860px;
-  margin:0 auto 60px;
-  text-align:center;
-}
-
-.systems-pillar-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  max-width:1180px;
-  margin:0 auto;
-  border-left:1px solid var(--line);
-}
-
-.systems-pillar{
-  padding:0 46px;
-  border-right:1px solid var(--line);
-}
-
-.systems-pillar span{
-  display:block;
-  font-family:var(--serif);
-  font-size:46px;
-  color:var(--rose);
-  margin-bottom:22px;
-}
-
-.systems-pillar h3{
-  text-transform:uppercase;
-  letter-spacing:.28em;
-  font-size:11px;
-  color:var(--espresso);
-  margin:0 0 18px;
-}
-
-.systems-pillar p{
-  font-size:14px;
-  line-height:1.8;
-  color:var(--text-soft);
-  margin:0;
-}
-
-
-/* =========================================================
-   FULL IMAGE
-========================================================= */
-
-.systems-full-image{
-  min-height:520px;
-  display:flex;
-  align-items:flex-end;
-  padding:70px 72px;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(29,15,12,.08),
-      rgba(29,15,12,.50)
-    ),
-    url('images/mirel-system-strategy2.webp')
-    center/cover no-repeat;
-
-  border-bottom:1px solid var(--line);
-}
-
-.systems-image-overlay h2{
-  font-family:var(--serif);
-  font-size:70px;
-  line-height:.98;
-  letter-spacing:-.045em;
-  font-weight:500;
-  color:white;
-  max-width:760px;
-  margin:0;
-}
-
-.systems-image-overlay h2 em{
-  color:#f2d6da;
-  font-style:italic;
-  font-weight:400;
-}
-
-
-/* =========================================================
-   PATIENT JOURNEY
-========================================================= */
-
-.system-flow{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:72px;
-  align-items:center;
-  padding:96px 72px;
-
-  background:
-    radial-gradient(
-      circle at 80% 18%,
-      rgba(242,214,218,.28),
-      transparent 34%
-    ),
-    linear-gradient(
-      135deg,
-      #f4ebe5,
-      #fbf7f1 65%
-    );
-
-  border-bottom:1px solid var(--line);
-}
-
-.flow-copy h2{
-  font-family:var(--serif);
-  font-size:56px;
-  line-height:1.04;
-  letter-spacing:-.035em;
-  font-weight:500;
-  color:var(--espresso-deep);
-  margin:0 0 26px;
-}
-
-.flow-copy p{
-  font-size:15px;
-  line-height:1.9;
-  color:var(--text-soft);
-  max-width:650px;
-  margin:0 0 18px;
-}
-
-.flow-poster{
-  padding:52px;
-  background:rgba(255,255,255,.38);
-  border:1px solid rgba(62,39,35,.10);
-}
-
-.flow-line{
-  display:grid;
-  gap:20px;
-}
-
-.flow-line div{
-  padding-bottom:22px;
-  border-bottom:1px solid rgba(62,39,35,.12);
-}
-
-.flow-line div:last-child{
-  border-bottom:0;
-  padding-bottom:0;
-}
-
-.flow-line span{
-  display:block;
-  font-family:var(--serif);
-  font-size:36px;
-  color:var(--rose);
-  margin-bottom:8px;
-}
-
-.flow-line strong{
-  display:block;
-  font-family:var(--serif);
-  font-size:38px;
-  line-height:1;
-  font-weight:500;
-  color:var(--espresso-deep);
-  margin-bottom:12px;
-}
-
-.flow-line p{
-  font-size:13px;
-  line-height:1.75;
-  color:var(--text-soft);
-  margin:0;
-}
-
-
-/* =========================================================
-   BIG QUOTE
-========================================================= */
-
-.systems-big-quote{
-  padding:96px 72px;
-  text-align:center;
-  background:#fbf7f1;
-  border-bottom:1px solid var(--line);
-}
-
-.systems-big-quote h2{
-  font-family:var(--serif);
-  font-size:64px;
-  line-height:1.02;
-  letter-spacing:-.04em;
-  font-weight:500;
-  max-width:980px;
-  margin:0 auto;
-  color:var(--espresso-deep);
-}
-
-.systems-big-quote h2 em{
-  color:var(--rose);
-  font-style:italic;
-  font-weight:400;
-}
-
-
-/* =========================================================
-   WORLD
-========================================================= */
-
-.systems-world{
-  background:#fbf7f1;
-  border-bottom:1px solid var(--line);
-}
-
-.systems-world-header{
-  padding:78px 72px 56px;
-  text-align:center;
-  max-width:860px;
-  margin:0 auto;
-}
-
-.systems-world-header h2{
-  font-family:var(--serif);
-  font-size:54px;
-  line-height:1.04;
-  letter-spacing:-.035em;
-  font-weight:500;
-  color:var(--espresso-deep);
-  margin:0;
-}
-
-.systems-world-grid{
-  display:grid;
-  grid-template-columns:1.1fr 1fr 1fr 1fr;
-  gap:6px;
-}
-
-.systems-world-img{
-  min-height:285px;
-  background-size:cover;
-  background-position:center;
-  position:relative;
-  overflow:hidden;
-}
-
-.systems-world-img:after{
-  content:'';
-  position:absolute;
-  inset:0;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(62,39,35,.03),
-      rgba(62,39,35,.18)
-    );
-
-  mix-blend-mode:multiply;
-}
-
-.sw1{
-  background-image:
-    url('images/mirel-systems-world-patient-payment.webp');
-}
-
-.sw2{
-  background-image:
-    url('images/mirel-ads-system2.webp');
-}
-
-.sw3{
-  background-image:
-    url('images/mirel-followup-system.webp');
-}
-
-.sw4{
-  background-image:
-    url('images/mirel-systems-world-skincare.webp');
-}
-
-
-/* =========================================================
-   POSITIONING
-========================================================= */
-
-.systems-position{
-  padding:76px 72px;
-  text-align:center;
-  background:linear-gradient(135deg,#fbf7f1,#f4ebe5);
-  border-bottom:1px solid var(--line);
-}
-
-.systems-position h2{
-  font-family:var(--serif);
-  font-size:48px;
-  line-height:1.08;
-  letter-spacing:-.035em;
-  font-weight:500;
-  color:var(--espresso-deep);
-  max-width:980px;
-  margin:0 auto;
-}
-
-.systems-position h2 em{
-  color:var(--rose);
-  font-style:italic;
-  font-weight:400;
-}
-
-
-/* =========================================================
-   FIT
-========================================================= */
-
-.systems-fit{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  background:linear-gradient(135deg,#fbf7f1,#f4ebe5);
-  border-bottom:1px solid var(--line);
-}
-
-.systems-fit-image{
-  min-height:520px;
-
-  background:
-    linear-gradient(
-      rgba(29,15,12,.04),
-      rgba(29,15,12,.10)
-    ),
-    url('images/mirel-system-clinic-space.webp')
-    center/cover no-repeat;
-}
-
-.systems-fit-copy{
-  padding:88px 72px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-
-.systems-fit-copy h2{
-  font-family:var(--serif);
-  font-size:54px;
-  line-height:1.04;
-  letter-spacing:-.035em;
-  font-weight:500;
-  margin:0 0 26px;
-  color:var(--espresso-deep);
-}
-
-.systems-fit-copy p{
-  font-size:15px;
-  line-height:1.9;
-  color:var(--text-soft);
-  max-width:640px;
-  margin:0 0 18px;
-}
-
-.systems-fit-list{
-  list-style:none;
-  padding:0;
-  margin:28px 0 0;
-  max-width:620px;
-}
-
-.systems-fit-list li{
-  padding:15px 0;
-  border-bottom:1px solid rgba(62,39,35,.12);
-  color:var(--text-soft);
-  font-size:14px;
-}
-
-.systems-fit-list li:before{
-  content:'✦';
-  color:var(--rose);
-  margin-right:14px;
-}
-
-
-/* =========================================================
-   AUTHORITY
-========================================================= */
-
-.authority-blush{
-  padding:38px 72px;
-  background:#f2d6da;
-  border-bottom:1px solid rgba(62,39,35,.08);
-  text-align:center;
-}
-
-.authority-blush p{
-  max-width:980px;
-  margin:0 auto;
-  font-family:var(--serif);
-  font-size:31px;
-  line-height:1.38;
-  letter-spacing:-.02em;
-  color:var(--espresso-deep);
-  font-style:italic;
-}
-
-
-/* =========================================================
-   FINAL CTA
-========================================================= */
-
-.systems-final{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  background:var(--espresso-deep);
-  color:white;
-}
-
-.final-image{
-  min-height:430px;
-
-  background:
-    linear-gradient(
-      rgba(29,15,12,.04),
-      rgba(29,15,12,.16)
-    ),
-    url('images/mirel-system-final-cta.webp')
-    center/cover no-repeat;
-}
-
-.final-copy{
-  padding:86px 72px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-
-.final-copy h2{
-  font-family:var(--serif);
-  font-size:54px;
-  line-height:1.04;
-  letter-spacing:-.035em;
-  font-weight:500;
-  margin:0 0 24px;
-  color:white;
-}
-
-.final-copy h2 em{
-  color:#f2d6da;
-  font-style:italic;
-  font-weight:400;
-}
-
-.final-copy p{
-  color:rgba(255,255,255,.74);
-  font-size:15px;
-  line-height:1.85;
-  max-width:590px;
-  margin:0 0 34px;
-}
-
-.final-actions{
-  display:flex;
-  gap:16px;
-  flex-wrap:wrap;
-}
-
-.systems-final .btn-outline{
-  color:white;
-  border-color:rgba(255,255,255,.36);
-}
-
-
-/* =========================================================
-   PERFORMANCE: LAZY BACKGROUND PLACEHOLDERS
-
-   Only below-the-fold imagery is delayed.
-   Dimensions/layout remain exactly unchanged.
-========================================================= */
-
-html.js-lazy-bg
-.systems-full-image:not(.lazy-bg-loaded){
-  background-image:
-    linear-gradient(
-      180deg,
-      rgba(29,15,12,.08),
-      rgba(29,15,12,.50)
-    ) !important;
-}
-
-html.js-lazy-bg
-.sw1:not(.lazy-bg-loaded),
-html.js-lazy-bg
-.sw2:not(.lazy-bg-loaded),
-html.js-lazy-bg
-.sw3:not(.lazy-bg-loaded),
-html.js-lazy-bg
-.sw4:not(.lazy-bg-loaded){
-  background-image:none !important;
-}
-
-html.js-lazy-bg
-.systems-fit-image:not(.lazy-bg-loaded){
-  background-image:
-    linear-gradient(
-      rgba(29,15,12,.04),
-      rgba(29,15,12,.10)
-    ) !important;
-}
-
-html.js-lazy-bg
-.final-image:not(.lazy-bg-loaded){
-  background-image:
-    linear-gradient(
-      rgba(29,15,12,.04),
-      rgba(29,15,12,.16)
-    ) !important;
-}
-
-
-/* =========================================================
-   RESPONSIVE FIXES FOR SYSTEMS PAGE
-========================================================= */
-
-@media (max-width:1180px){
-
-  .system-flow,
-  .systems-fit,
-  .systems-final{
-    grid-template-columns:1fr;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#fbf7f1">
+  <meta name="color-scheme" content="light">
+
+  <title>The Mirel System | Med Spa Patient Growth Systems</title>
+
+  <meta
+    name="description"
+    content="Discover Mirel's med spa growth system: premium positioning, booking conversion, AI-assisted patient follow-up and retention. Thoughtful strategy for clinics in the US, UK, Australia, Canada and New Zealand."
+  >
+
+  <link
+    rel="canonical"
+    href="https://mirelmarketing.com/systems.html"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mirel Marketing">
+
+  <meta
+    property="og:title"
+    content="The Mirel System | Med Spa Patient Growth Systems"
+  >
+
+  <meta
+    property="og:description"
+    content="One connected patient journey: positioning, conversion and thoughtful follow-up—designed for premium med spas."
+  >
+
+  <meta
+    property="og:url"
+    content="https://mirelmarketing.com/systems.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://mirelmarketing.com/images/mirel-systems-hero.webp"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="The Mirel System: premium aesthetic clinic growth strategy"
+  >
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="The Mirel System | Mirel Marketing"
+  >
+
+  <meta
+    name="twitter:description"
+    content="From first impression to paying and returning patients: a connected growth system for med spas."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://mirelmarketing.com/images/mirel-systems-hero.webp"
+  >
+
+  <!-- FAVICON -->
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231d0f0c'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-size='62' text-anchor='middle' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E"
+  >
+
+  <!-- FONTS AND SHARED STYLES -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
+  >
+
+  <link rel="stylesheet" href="style.css?v=6">
+
+  <!-- PRIMARY IMAGE PRELOAD -->
+
+  <link
+    rel="preload"
+    href="images/mirel-systems-hero.webp"
+    as="image"
+    type="image/webp"
+    media="(min-width: 761px)"
+    fetchpriority="high"
+  >
+
+  <!-- STRUCTURED DATA -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mirelmarketing.com/#organization",
+        "name": "Mirel Marketing",
+        "url": "https://mirelmarketing.com/",
+        "email": "delora@mirelmarketing.com",
+        "sameAs": [
+          "https://www.instagram.com/mirelpartners/",
+          "https://www.youtube.com/@mirelpartners",
+          "https://www.linkedin.com/company/mirelmarketing/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://mirelmarketing.com/systems.html#webpage",
+        "name": "The Mirel System | Med Spa Patient Growth Systems",
+        "url": "https://mirelmarketing.com/systems.html",
+        "isPartOf": {
+          "@id": "https://mirelmarketing.com/#website"
+        },
+        "about": {
+          "@id": "https://mirelmarketing.com/systems.html#service"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://mirelmarketing.com/systems.html#service",
+        "name": "Med Spa Growth Systems",
+        "serviceType": "Patient journey and conversion strategy for med spas",
+        "provider": {
+          "@id": "https://mirelmarketing.com/#organization"
+        },
+        "description": "Positioning, paid acquisition, patient booking conversion, consent-aware follow-up and retention systems with human oversight.",
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "United States"
+          },
+          {
+            "@type": "Country",
+            "name": "United Kingdom"
+          },
+          {
+            "@type": "Country",
+            "name": "Australia"
+          },
+          {
+            "@type": "Country",
+            "name": "Canada"
+          },
+          {
+            "@type": "Country",
+            "name": "New Zealand"
+          }
+        ]
+      }
+    ]
   }
+  </script>
 
-  .systems-pillars,
-  .system-flow,
-  .systems-big-quote,
-  .systems-world-header,
-  .systems-position,
-  .systems-fit-copy,
-  .final-copy{
-    padding-left:34px;
-    padding-right:34px;
-  }
+  <!-- LAZY BACKGROUND SUPPORT -->
 
-  .systems-pillar-grid{
-    grid-template-columns:1fr;
-    border-left:0;
-  }
+  <script>
+    document.documentElement.classList.add('js-lazy-bg');
+  </script>
 
-  .systems-pillar{
-    border-right:0;
-    border-bottom:1px solid var(--line);
-    padding:32px 0;
-  }
+  <style>
 
-  .systems-pillar:last-child{
-    border-bottom:0;
-  }
+    /* ==========================================
+       SYSTEMS PAGE
+       ORIGINAL EDITORIAL LAYOUT PRESERVED
+    ========================================== */
 
-  .systems-world-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
+    .systems-page {
+      background: #fbf7f1;
+      overflow-x: hidden;
+    }
 
-  .systems-world-img{
-    min-height:260px;
-  }
+    .systems-page .skip-link {
+      position: fixed;
+      top: -100px;
+      left: 16px;
+      z-index: 10002;
+      padding: 12px 18px;
+      background: #1d0f0c;
+      color: white;
+      font-size: 13px;
+    }
 
-}
+    .systems-page .skip-link:focus {
+      top: 12px;
+    }
 
+    .systems-page a:focus-visible,
+    .systems-page button:focus-visible {
+      outline: 3px solid #a9686d;
+      outline-offset: 4px;
+    }
 
-@media (max-width:760px){
+    .systems-page .mobile-menu:not(.open) {
+      pointer-events: none;
+    }
 
-  .systems-note{
-    padding:28px 22px;
-  }
+    .systems-page.menu-open {
+      overflow: hidden;
+    }
 
-  .systems-note p{
-    font-size:24px;
-  }
+    .systems-page .systems-hero-copy,
+    .systems-page .flow-copy,
+    .systems-page .systems-fit-copy,
+    .systems-page .final-copy {
+      min-width: 0;
+    }
 
-  .systems-pillars,
-  .system-flow,
-  .systems-big-quote,
-  .systems-world-header,
-  .systems-position,
-  .systems-fit-copy,
-  .final-copy{
-    padding:54px 22px;
-  }
+    /* ==========================================
+       HERO
+    ========================================== */
 
-  .systems-pillars .section-title{
-    font-size:36px;
-  }
+    .systems-hero {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      min-height: 760px;
 
-  .systems-image-overlay h2,
-  .flow-copy h2,
-  .systems-big-quote h2,
-  .systems-world-header h2,
-  .systems-position h2,
-  .systems-fit-copy h2,
-  .final-copy h2{
-    font-size:40px;
-  }
+      background:
+        radial-gradient(
+          circle at 15% 15%,
+          rgba(242,214,218,.43),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 80% 15%,
+          rgba(200,184,162,.22),
+          transparent 32%
+        ),
+        linear-gradient(
+          110deg,
+          #fbf7f1 0%,
+          #fcf7f3 47%,
+          #ecded7 100%
+        );
 
-  .systems-full-image{
-    min-height:380px;
-    padding:46px 22px;
-  }
+      border-bottom: 1px solid var(--line);
+    }
 
-  .flow-poster{
-    padding:30px 24px;
-  }
+    .systems-hero-copy {
+      padding: 96px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-  .flow-line strong{
-    font-size:31px;
-  }
+    .systems-hero-copy h1 {
+      font-family: var(--serif);
+      font-size: 78px;
+      line-height: .96;
+      font-weight: 500;
+      letter-spacing: -.045em;
+      color: var(--espresso-deep);
+      margin: 0 0 30px;
+      max-width: 700px;
+    }
 
-  .systems-world-grid{
-    grid-template-columns:1fr 1fr;
-    gap:5px;
-  }
+    .systems-hero-copy h1 em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--rose);
+    }
 
-  .systems-world-img{
-    min-height:190px;
-  }
+    .systems-hero-copy > p:not(.eyebrow) {
+      font-size: 16px;
+      line-height: 1.9;
+      max-width: 560px;
+      color: var(--text-soft);
+      margin: 0 0 34px;
+    }
 
-  .systems-fit-image,
-  .final-image{
-    min-height:310px;
-  }
+    /* ==========================================
+       HERO EDITORIAL GRID
+    ========================================== */
 
-  .authority-blush{
-    padding:30px 22px;
-  }
+    .systems-editorial {
+      display: grid;
+      grid-template-columns: 1.3fr .8fr;
+      gap: 14px;
+      padding: 96px 72px 96px 0;
+      align-items: stretch;
+      min-width: 0;
+    }
 
-  .authority-blush p{
-    font-size:23px;
-    line-height:1.45;
-  }
+    .system-main {
+      background:
+        linear-gradient(
+          rgba(29,15,12,.03),
+          rgba(29,15,12,.15)
+        ),
+        url('images/mirel-systems-hero.webp')
+        center/cover no-repeat;
 
-  .final-actions{
-    flex-direction:column;
-    align-items:stretch;
-  }
+      position: relative;
+      min-height: 540px;
+    }
 
-  .final-actions .btn{
-    width:100%;
-  }
+    .system-side {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 14px;
+      min-width: 0;
+    }
 
-}
+    .system-card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
 
+    .system-card-1 {
+      background-image:
+        linear-gradient(
+          rgba(29,15,12,.03),
+          rgba(29,15,12,.15)
+        ),
+        url('images/mirel-positioning-system.webp');
+    }
 
-/* =========================================================
-   HERO IMAGE LABELS
-========================================================= */
+    .system-card-2 {
+      background-image:
+        linear-gradient(
+          rgba(29,15,12,.03),
+          rgba(29,15,12,.15)
+        ),
+        url('images/mirel-ecosystem-system.webp');
+    }
 
-.system-main span,
-.system-card span{
-  position:absolute;
-  left:24px;
-  bottom:24px;
-  font-size:10px;
-  font-weight:700;
-  letter-spacing:.30em;
-  text-transform:uppercase;
-  color:white;
-}
+    .system-main span,
+    .system-card span {
+      position: absolute;
+      left: 24px;
+      bottom: 24px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .30em;
+      text-transform: uppercase;
+      color: white;
+    }
 
+    /* ==========================================
+       AUTHORITY STRIP
+    ========================================== */
 
-@media (max-width:1180px){
+    .systems-note {
+      padding: 34px 72px;
 
-  .systems-hero{
-    grid-template-columns:1fr;
-  }
+      background:
+        linear-gradient(
+          115deg,
+          #efd0d4,
+          #f2d6da 52%,
+          #e8c9c8
+        );
 
-  .systems-editorial{
-    padding:0 34px 72px;
-    grid-template-columns:1fr;
-  }
+      border-bottom: 1px solid rgba(62,39,35,.08);
+      text-align: center;
+    }
 
-  .system-side{
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:auto;
-  }
+    .systems-note p {
+      font-family: var(--serif);
+      font-size: 32px;
+      line-height: 1.25;
+      color: var(--espresso-deep);
+      font-style: italic;
+      max-width: 980px;
+      margin: 0 auto;
+      letter-spacing: -.02em;
+    }
 
-}
+    /* ==========================================
+       THREE PILLARS
+    ========================================== */
 
+    .systems-pillars {
+      padding: 92px 72px 98px;
 
-@media (max-width:760px){
+      background:
+        linear-gradient(
+          155deg,
+          #fffaf6 0%,
+          #fbf7f1 56%,
+          #f6ebe6 100%
+        );
 
-  .systems-hero-copy{
-    padding:56px 22px 42px;
-  }
+      border-bottom: 1px solid var(--line);
+    }
 
-  .systems-hero-copy h1{
-    font-size:50px;
-  }
+    .systems-pillars .section-title {
+      max-width: 860px;
+      margin: 0 auto 60px;
+      text-align: center;
+    }
 
-  .systems-editorial{
-    padding:0 22px 54px;
-  }
+    .systems-pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      max-width: 1180px;
+      margin: 0 auto;
+      border-left: 1px solid var(--line);
+    }
 
-  .system-side{
-    grid-template-columns:1fr;
-  }
+    .systems-pillar {
+      padding: 0 46px;
+      border-right: 1px solid var(--line);
+      min-width: 0;
+    }
 
-  .system-main{
-    min-height:360px;
-  }
+    .systems-pillar span {
+      display: block;
+      font-family: var(--serif);
+      font-size: 46px;
+      color: var(--rose);
+      margin-bottom: 22px;
+    }
 
-  .system-card{
-    min-height:220px;
-  }
+    .systems-pillar h3 {
+      text-transform: uppercase;
+      letter-spacing: .28em;
+      font-size: 11px;
+      color: var(--espresso);
+      margin: 0 0 18px;
+    }
 
-}
+    .systems-pillar p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--text-soft);
+      margin: 0;
+    }
 
+    /* ==========================================
+       FULL-WIDTH EDITORIAL IMAGE
+    ========================================== */
 
-/* =========================================================
-   REVEAL
-========================================================= */
+    .systems-full-image {
+      min-height: 520px;
+      display: flex;
+      align-items: flex-end;
+      padding: 70px 72px;
 
-.reveal{
-  opacity:0;
-  transform:translateY(28px);
-  transition:
-    opacity .9s ease,
-    transform .9s ease;
-}
+      background:
+        linear-gradient(
+          180deg,
+          rgba(29,15,12,.08),
+          rgba(29,15,12,.50)
+        ),
+        url('images/mirel-system-strategy2.webp')
+        center/cover no-repeat;
 
-.reveal.visible{
-  opacity:1;
-  transform:translateY(0);
-}
+      border-bottom: 1px solid var(--line);
+    }
 
-</style>
+    .systems-image-overlay h2 {
+      font-family: var(--serif);
+      font-size: 70px;
+      line-height: .98;
+      letter-spacing: -.045em;
+      font-weight: 500;
+      color: white;
+      max-width: 760px;
+      margin: 0;
+    }
+
+    .systems-image-overlay h2 em {
+      color: #f2d6da;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    /* ==========================================
+       PATIENT JOURNEY
+    ========================================== */
+
+    .system-flow {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 72px;
+      align-items: center;
+      padding: 96px 72px;
+
+      background:
+        radial-gradient(
+          circle at 80% 18%,
+          rgba(242,214,218,.34),
+          transparent 34%
+        ),
+        linear-gradient(
+          135deg,
+          #f1e3de 0%,
+          #fbf7f1 65%
+        );
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .flow-copy h2 {
+      font-family: var(--serif);
+      font-size: 56px;
+      line-height: 1.04;
+      letter-spacing: -.035em;
+      font-weight: 500;
+      color: var(--espresso-deep);
+      margin: 0 0 26px;
+    }
+
+    .flow-copy > p:not(.eyebrow) {
+      font-size: 15px;
+      line-height: 1.9;
+      color: var(--text-soft);
+      max-width: 650px;
+      margin: 0 0 18px;
+    }
+
+    /* UK / AU MARKET GUIDANCE */
+
+    .systems-market-note {
+      max-width: 650px;
+      padding: 17px 0 0 17px;
+      margin-top: 26px;
+      border-left: 2px solid rgba(169,104,109,.55);
+      color: var(--text-soft);
+    }
+
+    .systems-market-note strong {
+      display: block;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .21em;
+      color: var(--espresso);
+      margin-bottom: 9px;
+    }
+
+    .systems-market-note p {
+      font-size: 12px;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .systems-market-note a {
+      color: var(--espresso);
+      text-underline-offset: 3px;
+      text-decoration: underline;
+    }
+
+    /* PATIENT JOURNEY CARD */
+
+    .flow-poster {
+      padding: 52px;
+      background: rgba(255,255,255,.38);
+      border: 1px solid rgba(62,39,35,.10);
+    }
+
+    .flow-line {
+      display: grid;
+      gap: 20px;
+    }
+
+    .flow-line > div {
+      padding-bottom: 22px;
+      border-bottom: 1px solid rgba(62,39,35,.12);
+    }
+
+    .flow-line > div:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .flow-line span {
+      display: block;
+      font-family: var(--serif);
+      font-size: 36px;
+      color: var(--rose);
+      margin-bottom: 8px;
+    }
+
+    .flow-line strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 38px;
+      line-height: 1;
+      font-weight: 500;
+      color: var(--espresso-deep);
+      margin-bottom: 12px;
+    }
+
+    .flow-line p {
+      font-size: 13px;
+      line-height: 1.75;
+      color: var(--text-soft);
+      margin: 0;
+    }
+
+    /* ==========================================
+       EDITORIAL QUOTE
+    ========================================== */
+
+    .systems-big-quote {
+      padding: 96px 72px;
+      text-align: center;
+
+      background:
+        linear-gradient(
+          140deg,
+          #fbf7f1,
+          #f8f1ec 54%,
+          #f3e6e2
+        );
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .systems-big-quote h2 {
+      font-family: var(--serif);
+      font-size: 64px;
+      line-height: 1.02;
+      letter-spacing: -.04em;
+      font-weight: 500;
+      max-width: 980px;
+      margin: 0 auto;
+      color: var(--espresso-deep);
+    }
+
+    .systems-big-quote h2 em {
+      color: var(--rose);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    /* ==========================================
+       EDITORIAL IMAGE GALLERY
+    ========================================== */
+
+    .systems-world {
+      background:
+        linear-gradient(
+          130deg,
+          #fbf7f1,
+          #fffaf6
+        );
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .systems-world-header {
+      padding: 78px 72px 56px;
+      text-align: center;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .systems-world-header h2 {
+      font-family: var(--serif);
+      font-size: 54px;
+      line-height: 1.04;
+      letter-spacing: -.035em;
+      font-weight: 500;
+      color: var(--espresso-deep);
+      margin: 0;
+    }
+
+    .systems-world-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 1fr 1fr;
+      gap: 6px;
+    }
+
+    .systems-world-img {
+      min-height: 285px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .systems-world-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(62,39,35,.03),
+          rgba(62,39,35,.18)
+        );
+
+      mix-blend-mode: multiply;
+    }
+
+    .sw1 {
+      background-image:
+        url('images/mirel-systems-world-patient-payment.webp');
+    }
+
+    .sw2 {
+      background-image:
+        url('images/mirel-ads-system2.webp');
+    }
+
+    .sw3 {
+      background-image:
+        url('images/mirel-followup-system.webp');
+    }
+
+    .sw4 {
+      background-image:
+        url('images/mirel-systems-world-skincare.webp');
+    }
+
+    /* ==========================================
+       POSITIONING STRIP
+    ========================================== */
+
+    .systems-position {
+      padding: 76px 72px;
+      text-align: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          #fbf7f1,
+          #f1e0db
+        );
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .systems-position h2 {
+      font-family: var(--serif);
+      font-size: 48px;
+      line-height: 1.08;
+      letter-spacing: -.035em;
+      font-weight: 500;
+      color: var(--espresso-deep);
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .systems-position h2 em {
+      color: var(--rose);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    /* ==========================================
+       QUALIFICATION SECTION
+    ========================================== */
+
+    .systems-fit {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+
+      background:
+        linear-gradient(
+          135deg,
+          #fbf7f1,
+          #f0e3df
+        );
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .systems-fit-image {
+      min-height: 520px;
+
+      background:
+        linear-gradient(
+          rgba(29,15,12,.04),
+          rgba(29,15,12,.10)
+        ),
+        url('images/mirel-system-clinic-space.webp')
+        center/cover no-repeat;
+    }
+
+    .systems-fit-copy {
+      padding: 88px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .systems-fit-copy h2 {
+      font-family: var(--serif);
+      font-size: 54px;
+      line-height: 1.04;
+      letter-spacing: -.035em;
+      font-weight: 500;
+      margin: 0 0 26px;
+      color: var(--espresso-deep);
+    }
+
+    .systems-fit-copy p {
+      font-size: 15px;
+      line-height: 1.9;
+      color: var(--text-soft);
+      max-width: 640px;
+      margin: 0 0 18px;
+    }
+
+    .systems-fit-list {
+      list-style: none;
+      padding: 0;
+      margin: 28px 0 0;
+      max-width: 620px;
+    }
+
+    .systems-fit-list li {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(62,39,35,.12);
+      color: var(--text-soft);
+      font-size: 14px;
+    }
+
+    .systems-fit-list li::before {
+      content: '✦';
+      color: var(--rose);
+      margin-right: 14px;
+    }
+
+    /* ==========================================
+       FINAL AUTHORITY STRIP
+    ========================================== */
+
+    .authority-blush {
+      padding: 38px 72px;
+
+      background:
+        linear-gradient(
+          120deg,
+          #eed0d3,
+          #f2d6da 55%,
+          #ead1cb
+        );
+
+      border-bottom: 1px solid rgba(62,39,35,.08);
+      text-align: center;
+    }
+
+    .authority-blush p {
+      max-width: 980px;
+      margin: 0 auto;
+      font-family: var(--serif);
+      font-size: 31px;
+      line-height: 1.38;
+      letter-spacing: -.02em;
+      color: var(--espresso-deep);
+      font-style: italic;
+    }
+
+    /* ==========================================
+       FINAL CTA
+    ========================================== */
+
+    .systems-final {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      background:
+        linear-gradient(
+          120deg,
+          #1d0f0c,
+          #3e2723
+        );
+
+      color: white;
+    }
+
+    .final-image {
+      min-height: 430px;
+
+      background:
+        linear-gradient(
+          rgba(29,15,12,.04),
+          rgba(29,15,12,.16)
+        ),
+        url('images/mirel-system-final-cta.webp')
+        center/cover no-repeat;
+    }
+
+    .final-copy {
+      padding: 86px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .final-copy h2 {
+      font-family: var(--serif);
+      font-size: 54px;
+      line-height: 1.04;
+      letter-spacing: -.035em;
+      font-weight: 500;
+      margin: 0 0 24px;
+      color: white;
+    }
+
+    .final-copy h2 em {
+      color: #f2d6da;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .final-copy > p:not(.eyebrow) {
+      color: rgba(255,255,255,.78);
+      font-size: 15px;
+      line-height: 1.85;
+      max-width: 590px;
+      margin: 0 0 34px;
+    }
+
+    .final-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .systems-final .btn-outline {
+      color: white;
+      border-color: rgba(255,255,255,.36);
+      background: transparent;
+    }
+
+    .systems-final .btn-outline:hover {
+      border-color: rgba(255,255,255,.7);
+      background: rgba(255,255,255,.08);
+    }
+
+    .systems-final .eyebrow {
+      color: #ead8cf;
+    }
+
+    /* ==========================================
+       IMAGE LOADING
+    ========================================== */
+
+    html.js-lazy-bg
+    .systems-full-image:not(.lazy-bg-loaded) {
+      background-image:
+        linear-gradient(
+          180deg,
+          rgba(29,15,12,.08),
+          rgba(29,15,12,.50)
+        ) !important;
+    }
+
+    html.js-lazy-bg
+    .sw1:not(.lazy-bg-loaded),
+
+    html.js-lazy-bg
+    .sw2:not(.lazy-bg-loaded),
+
+    html.js-lazy-bg
+    .sw3:not(.lazy-bg-loaded),
+
+    html.js-lazy-bg
+    .sw4:not(.lazy-bg-loaded) {
+      background-image: none !important;
+    }
+
+    html.js-lazy-bg
+    .systems-fit-image:not(.lazy-bg-loaded) {
+      background-image:
+        linear-gradient(
+          rgba(29,15,12,.04),
+          rgba(29,15,12,.10)
+        ) !important;
+    }
+
+    html.js-lazy-bg
+    .final-image:not(.lazy-bg-loaded) {
+      background-image:
+        linear-gradient(
+          rgba(29,15,12,.04),
+          rgba(29,15,12,.16)
+        ) !important;
+    }
+
+    /* ==========================================
+       FOOTER SOCIAL LINKS
+       SAME AS HOMEPAGE
+    ========================================== */
+
+    .footer-social {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2px 15px;
+    }
+
+    .footer-social a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    /* ==========================================
+       TABLET RESPONSIVE
+    ========================================== */
+
+    @media (max-width: 1180px) {
+
+      .system-flow,
+      .systems-fit,
+      .systems-final {
+        grid-template-columns: 1fr;
+      }
+
+      .systems-pillars,
+      .system-flow,
+      .systems-big-quote,
+      .systems-world-header,
+      .systems-position,
+      .systems-fit-copy,
+      .final-copy {
+        padding-left: 34px;
+        padding-right: 34px;
+      }
+
+      .systems-pillar-grid {
+        grid-template-columns: 1fr;
+        border-left: 0;
+      }
+
+      .systems-pillar {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        padding: 32px 0;
+      }
+
+      .systems-pillar:last-child {
+        border-bottom: 0;
+      }
+
+      .systems-world-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+
+      .systems-world-img {
+        min-height: 260px;
+      }
+
+      .systems-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .systems-editorial {
+        padding: 0 34px 72px;
+        grid-template-columns: 1fr;
+      }
+
+      .system-side {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+
+      .footer-social {
+        justify-content: flex-start;
+        gap: 0 14px;
+      }
+
+      .footer-social a {
+        padding: 10px 2px;
+      }
+
+    }
+
+    /* ==========================================
+       MOBILE RESPONSIVE
+    ========================================== */
+
+    @media (max-width: 760px) {
+
+      .systems-note {
+        padding: 28px 22px;
+      }
+
+      .systems-note p {
+        font-size: 24px;
+      }
+
+      .systems-pillars,
+      .system-flow,
+      .systems-big-quote,
+      .systems-world-header,
+      .systems-position,
+      .systems-fit-copy,
+      .final-copy {
+        padding: 54px 22px;
+      }
+
+      .systems-pillars .section-title {
+        font-size: 36px;
+      }
+
+      .systems-image-overlay h2,
+      .flow-copy h2,
+      .systems-big-quote h2,
+      .systems-world-header h2,
+      .systems-position h2,
+      .systems-fit-copy h2,
+      .final-copy h2 {
+        font-size: 40px;
+      }
+
+      .systems-full-image {
+        min-height: 380px;
+        padding: 46px 22px;
+      }
+
+      .flow-poster {
+        padding: 30px 24px;
+      }
+
+      .flow-line strong {
+        font-size: 31px;
+      }
+
+      .systems-world-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+      }
+
+      .systems-world-img {
+        min-height: 190px;
+      }
+
+      .systems-fit-image,
+      .final-image {
+        min-height: 310px;
+      }
+
+      .authority-blush {
+        padding: 30px 22px;
+      }
+
+      .authority-blush p {
+        font-size: 23px;
+        line-height: 1.45;
+      }
+
+      .final-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .final-actions .btn {
+        width: 100%;
+      }
+
+      .systems-hero-copy {
+        padding: 56px 22px 42px;
+      }
+
+      .systems-hero-copy h1 {
+        font-size: 50px;
+      }
+
+      .systems-editorial {
+        padding: 0 22px 54px;
+      }
+
+      .system-side {
+        grid-template-columns: 1fr;
+      }
+
+      .system-main {
+        min-height: 360px;
+      }
+
+      .system-card {
+        min-height: 220px;
+      }
+
+      /* HOMEPAGE-MATCHING MOBILE FOOTER */
+
+      .footer-social {
+        justify-content: flex-start;
+        gap: 0 14px;
+        border-bottom: none;
+      }
+
+      .footer-social a {
+        padding: 10px 2px;
+        border-bottom: none !important;
+      }
+
+      .systems-page .footer > a {
+        border-bottom: none !important;
+      }
+
+      .systems-page .footer::before {
+        content: "";
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        height: 1px;
+        background: rgba(62,39,35,.10);
+      }
+
+    }
+
+    /* ==========================================
+       SMALL MOBILE DEVICES
+    ========================================== */
+
+    @media (max-width: 380px) {
+
+      .systems-hero-copy h1 {
+        font-size: clamp(42px,12vw,50px);
+      }
+
+      .systems-image-overlay h2,
+      .flow-copy h2,
+      .systems-big-quote h2,
+      .systems-world-header h2,
+      .systems-position h2,
+      .systems-fit-copy h2,
+      .final-copy h2 {
+        font-size: clamp(34px,10vw,40px);
+      }
+
+    }
+
+    /* ==========================================
+       REDUCED MOTION ACCESSIBILITY
+    ========================================== */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto !important;
+      }
+
+      .systems-page .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+
+      .systems-page .nav,
+      .systems-page .mobile-menu,
+      .systems-page .btn {
+        transition: none !important;
+      }
+
+    }
+
+  </style>
+
+  <noscript>
+    <style>
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
 
 </head>
 
-
 <body class="systems-page">
 
-<div class="site-shell">
-
-
-<header class="nav" data-nav>
-
-  <a class="brand" href="index.html">
-    <span>MIRÈL</span>
-    <small>MARKETING</small>
+  <a class="skip-link" href="#main-content">
+    Skip to main content
   </a>
 
-  <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="systems.html" class="active">Systems</a>
-    <a href="results.html">Results</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="site-shell">
 
-  <div class="nav-actions">
+    <!-- ======================================
+         NAVIGATION
+    ======================================= -->
 
-    <a
-      class="btn btn-dark"
-      href="contact.html"
-    >
-      Book Consultation
-    </a>
-
-    <a
-      class="btn btn-light"
-      href="resources.html"
-    >
-      Resources
-    </a>
-
-  </div>
-
-  <button
-    class="mobile-menu-toggle"
-    data-menu-toggle
-    aria-label="Open menu"
-  >
-    ☰
-  </button>
-
-</header>
-
-
-<div class="mobile-menu" data-mobile-menu>
-
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="systems.html" class="active">Systems</a>
-  <a href="results.html">Results</a>
-  <a href="contact.html">Contact</a>
-
-  <div class="mobile-menu-actions">
-
-    <a
-      class="btn btn-dark"
-      href="contact.html"
-    >
-      Book Consultation
-    </a>
-
-    <a
-      class="btn btn-light"
-      href="resources.html"
-    >
-      Resources
-    </a>
-
-  </div>
-
-</div>
-
-
-<main>
-
-
-<!-- =====================================================
-     HERO
-====================================================== -->
-
-<section class="systems-hero">
-
-  <div class="systems-hero-copy">
-
-    <p class="eyebrow">
-      The Mirel System
-    </p>
-
-    <h1>
-      A luxury growth system built for
-      <em>med spas.</em>
-    </h1>
-
-    <p>
-      A refined framework designed to attract,
-      convert and retain higher-value patients
-      through premium positioning, paid advertising,
-      conversion systems and patient nurturing.
-    </p>
-
-    <div class="hero-buttons">
+    <header class="nav" data-nav>
 
       <a
-        href="contact.html"
-        class="btn btn-dark btn-large"
+        class="brand"
+        href="index.html"
+        aria-label="Mirel Marketing home"
       >
-        Book Consultation
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
       </a>
+
+      <nav
+        class="nav-links"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a
+          href="systems.html"
+          class="active"
+          aria-current="page"
+        >
+          Systems
+        </a>
+
+        <a href="results.html">Results</a>
+
+      </nav>
+
+      <div class="nav-actions">
+
+        <a
+          class="btn btn-dark"
+          href="book.html"
+        >
+          Book Consultation
+        </a>
+
+        <a
+          class="btn btn-light"
+          href="resources.html"
+        >
+          Resources
+        </a>
+
+      </div>
+
+      <button
+        class="mobile-menu-toggle"
+        type="button"
+        data-menu-toggle
+        aria-controls="systems-mobile-menu"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
+
+    </header>
+
+    <!-- ======================================
+         MOBILE NAVIGATION
+    ======================================= -->
+
+    <nav
+      class="mobile-menu"
+      id="systems-mobile-menu"
+      data-mobile-menu
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+
+      <a href="index.html">Home</a>
+
+      <a href="about.html">About</a>
+
+      <a href="services.html">Services</a>
 
       <a
-        href="results.html"
-        class="btn btn-outline btn-large"
+        href="systems.html"
+        class="active"
+        aria-current="page"
       >
-        View Results
+        Systems
       </a>
 
-    </div>
+      <a href="results.html">Results</a>
 
-    <div class="hero-note">
+      <div class="mobile-menu-actions">
 
-      <span>
-        Positioning • Conversion • Retention
-      </span>
+        <a
+          class="btn btn-dark"
+          href="book.html"
+        >
+          Book Consultation
+        </a>
 
-      <i></i>
+        <a
+          class="btn btn-light"
+          href="resources.html"
+        >
+          Resources
+        </a>
 
-    </div>
-
-  </div>
-
-
-  <div class="systems-editorial">
-
-    <div class="system-main">
-      <span>System</span>
-    </div>
-
-    <div class="system-side">
-
-      <div class="system-card system-card-1">
-        <span>Positioning</span>
       </div>
 
-      <div class="system-card system-card-2">
-        <span>Experience</span>
-      </div>
+    </nav>
 
-    </div>
+    <main id="main-content">
 
-  </div>
+      <!-- ====================================
+           SECTION 01 — HERO
+      ===================================== -->
 
-</section>
+      <section
+        class="systems-hero"
+        aria-labelledby="systems-title"
+      >
 
+        <div class="systems-hero-copy">
 
-<!-- =====================================================
-     AUTHORITY STRIP
-====================================================== -->
+          <p class="eyebrow">
+            The Mirel System
+          </p>
 
-<section class="systems-note reveal">
+          <h1 id="systems-title">
+            A luxury growth system built for
+            <em>med spas.</em>
+          </h1>
 
-  <p>
-    Premium patients rarely choose the cheapest clinic.
-    They choose the clinic that feels safest.
-  </p>
+          <p>
+            Premium positioning, patient booking
+            experiences and human-led,
+            AI-assisted follow-up—connected
+            around one goal: more of the right
+            inquiries becoming booked, paying
+            and returning patients.
+          </p>
 
-</section>
+          <div class="hero-buttons">
 
+            <a
+              href="book.html#booking"
+              class="btn btn-dark btn-large"
+            >
+              Book a Growth Strategy Review
+            </a>
 
-<!-- =====================================================
-     3 PILLARS
-====================================================== -->
+            <a
+              href="results.html"
+              class="btn btn-outline btn-large"
+            >
+              View Results
+            </a>
 
-<section class="systems-pillars reveal">
+          </div>
 
-  <p class="section-title">
-    The Mirel System is built around
-    <em>three premium growth pillars.</em>
-  </p>
+          <div class="hero-note">
 
-  <div class="systems-pillar-grid">
+            <span>
+              Positioning • Conversion • Retention
+            </span>
 
-    <article class="systems-pillar">
+            <i aria-hidden="true"></i>
 
-      <span>01</span>
+          </div>
 
-      <h3>
-        Positioning
-      </h3>
+        </div>
 
-      <p>
-        We shape how your clinic is perceived
-        before a patient compares treatments,
-        location, technology, or price.
-      </p>
+        <!-- ORIGINAL THREE-IMAGE EDITORIAL LAYOUT -->
 
-    </article>
+        <div
+          class="systems-editorial"
+          aria-label="Editorial views of the Mirel growth system"
+        >
 
+          <div
+            class="system-main"
+            role="img"
+            aria-label="Mirel growth system visual"
+          >
+            <span aria-hidden="true">
+              System
+            </span>
+          </div>
 
-    <article class="systems-pillar">
+          <div class="system-side">
 
-      <span>02</span>
+            <div
+              class="system-card system-card-1"
+              role="img"
+              aria-label="Premium positioning visual"
+            >
+              <span aria-hidden="true">
+                Positioning
+              </span>
+            </div>
 
-      <h3>
-        Conversion
-      </h3>
+            <div
+              class="system-card system-card-2"
+              role="img"
+              aria-label="Connected patient experience visual"
+            >
+              <span aria-hidden="true">
+                Experience
+              </span>
+            </div>
 
-      <p>
-        We turn attention into consultations
-        through landing pages, trust architecture,
-        and frictionless booking journeys.
-      </p>
+          </div>
 
-    </article>
+        </div>
 
+      </section>
 
-    <article class="systems-pillar">
+      <!-- ====================================
+           SECTION 02 — AUTHORITY STRIP
+      ===================================== -->
 
-      <span>03</span>
-
-      <h3>
-        Retention
-      </h3>
-
-      <p>
-        We create consistency across every touchpoint
-        so patients remember, return,
-        and confidently refer others.
-      </p>
-
-    </article>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     FULL WIDTH EDITORIAL IMAGE
-====================================================== -->
-
-<section class="systems-full-image reveal">
-
-  <div class="systems-image-overlay">
-
-    <p class="eyebrow">
-      The Mirel Philosophy
-    </p>
-
-    <h2>
-      Luxury is
-      <em>consistency.</em>
-    </h2>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     PATIENT JOURNEY FLOW
-====================================================== -->
-
-<section class="system-flow reveal">
-
-  <div class="flow-copy">
-
-    <p class="eyebrow">
-      The Patient Journey
-    </p>
-
-    <h2>
-      From first impression
-      to booked consultation.
-    </h2>
-
-    <p>
-      Premium patients rarely book from one ad.
-      They move through perception, trust,
-      proof, timing, and emotional confidence.
-    </p>
-
-    <p>
-      Mirel connects every touchpoint so your clinic
-      feels consistent from the first scroll
-      to the final booking confirmation.
-    </p>
-
-  </div>
-
-
-  <div class="flow-poster">
-
-    <div class="flow-line">
-
-      <div>
-
-        <span>01</span>
-
-        <strong>
-          Attract
-        </strong>
+      <section
+        class="systems-note reveal"
+        aria-label="The Mirel philosophy of patient trust"
+      >
 
         <p>
-          Premium creative and paid ads that speak to
-          desire, safety, and transformation.
+          Patients need more than an attractive ad.
+          They need a reason to feel confident
+          in their choice.
         </p>
 
-      </div>
+      </section>
 
+      <!-- ====================================
+           SECTION 03 — THREE PILLARS
+      ===================================== -->
 
-      <div>
+      <section
+        class="systems-pillars reveal"
+        aria-labelledby="pillars-title"
+      >
 
-        <span>02</span>
+        <h2
+          id="pillars-title"
+          class="section-title"
+        >
+          The Mirel System is built around
+          <em>three premium growth pillars.</em>
+        </h2>
 
-        <strong>
-          Convert
-        </strong>
+        <div class="systems-pillar-grid">
+
+          <article class="systems-pillar">
+
+            <span aria-hidden="true">
+              01
+            </span>
+
+            <h3>
+              Positioning
+            </h3>
+
+            <p>
+              We help your clinic communicate
+              its distinctive value before
+              patients compare treatments,
+              expertise, trust signals or price.
+            </p>
+
+          </article>
+
+          <article class="systems-pillar">
+
+            <span aria-hidden="true">
+              02
+            </span>
+
+            <h3>
+              Conversion
+            </h3>
+
+            <p>
+              We connect clear landing pages,
+              reassuring information and booking
+              paths so interest has an obvious
+              next step.
+            </p>
+
+          </article>
+
+          <article class="systems-pillar">
+
+            <span aria-hidden="true">
+              03
+            </span>
+
+            <h3>
+              Retention
+            </h3>
+
+            <p>
+              We shape thoughtful touchpoints
+              after the inquiry and visit—helping
+              your team stay consistent and
+              patients feel remembered.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- ====================================
+           SECTION 04 — EDITORIAL IMAGE
+      ===================================== -->
+
+      <section
+        class="systems-full-image reveal"
+        aria-labelledby="philosophy-title"
+      >
+
+        <div class="systems-image-overlay">
+
+          <p class="eyebrow">
+            The Mirel Philosophy
+          </p>
+
+          <h2 id="philosophy-title">
+            Luxury is
+            <em>consistency.</em>
+          </h2>
+
+        </div>
+
+      </section>
+
+      <!-- ====================================
+           SECTION 05 — PATIENT JOURNEY
+      ===================================== -->
+
+      <section
+        class="system-flow reveal"
+        aria-labelledby="patient-journey-title"
+      >
+
+        <div class="flow-copy">
+
+          <p class="eyebrow">
+            The Patient Journey
+          </p>
+
+          <h2 id="patient-journey-title">
+            From first impression
+            to booked consultation.
+          </h2>
+
+          <p>
+            Patients rarely make a considered
+            treatment decision from a single ad.
+            They weigh the clinic's credibility,
+            the clarity of its advice, practical
+            details and whether the next step
+            feels right.
+          </p>
+
+          <p>
+            Mirel helps those touchpoints work
+            together—from first discovery to
+            the consultation and, where appropriate,
+            the follow-up that comes after.
+          </p>
+
+          <!-- INTERNATIONAL REGULATORY CONTEXT -->
+
+          <aside
+            class="systems-market-note"
+            aria-label="Official UK and Australian marketing guidance"
+          >
+
+            <strong>
+              Local trust. Local standards.
+            </strong>
+
+            <p>
+              Follow-up should respect the
+              market and the patient.
+
+              The UK's
+              <a
+                href="https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ICO
+              </a>
+              explains marketing email and text
+              rules; Australia's
+              <a
+                href="https://www.acma.gov.au/avoid-sending-spam"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ACMA
+              </a>
+              sets out consent, sender-identification
+              and unsubscribe requirements.
+
+              Every clinic's actual process needs
+              its own compliance review.
+            </p>
+
+          </aside>
+
+        </div>
+
+        <div class="flow-poster">
+
+          <div class="flow-line">
+
+            <div>
+
+              <span aria-hidden="true">
+                01
+              </span>
+
+              <strong>
+                Attract
+              </strong>
+
+              <p>
+                Considered positioning and
+                market-aware advertising that
+                communicate your clinic's
+                real strengths.
+              </p>
+
+            </div>
+
+            <div>
+
+              <span aria-hidden="true">
+                02
+              </span>
+
+              <strong>
+                Convert
+              </strong>
+
+              <p>
+                Helpful landing pages that
+                clarify treatment suitability,
+                answer questions and simplify
+                the booking journey.
+              </p>
+
+            </div>
+
+            <div>
+
+              <span aria-hidden="true">
+                03
+              </span>
+
+              <strong>
+                Nurture
+              </strong>
+
+              <p>
+                Consent-aware email and SMS
+                workflows, supported by AI
+                where useful and reviewed
+                by people.
+              </p>
+
+            </div>
+
+            <div>
+
+              <span aria-hidden="true">
+                04
+              </span>
+
+              <strong>
+                Retain
+              </strong>
+
+              <p>
+                Consistent communication and
+                experience that give patients
+                reasons to return and
+                recommend you.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ====================================
+           SECTION 06 — EDITORIAL QUOTE
+      ===================================== -->
+
+      <section
+        class="systems-big-quote reveal"
+        aria-labelledby="difference-title"
+      >
+
+        <p class="eyebrow">
+          The Difference
+        </p>
+
+        <h2 id="difference-title">
+          Most clinics market treatments.
+          <br>
+          We build
+          <em>perceived value.</em>
+        </h2>
+
+      </section>
+
+      <!-- ====================================
+           SECTION 07 — IMAGE GALLERY
+      ===================================== -->
+
+      <section
+        class="systems-world reveal"
+        aria-labelledby="world-title"
+      >
+
+        <div class="systems-world-header">
+
+          <p class="eyebrow">
+            The Mirel Standard
+          </p>
+
+          <h2 id="world-title">
+            Every touchpoint should
+            feel intentional.
+          </h2>
+
+        </div>
+
+        <div
+          class="systems-world-grid"
+          aria-hidden="true"
+        >
+
+          <div class="systems-world-img sw1"></div>
+
+          <div class="systems-world-img sw2"></div>
+
+          <div class="systems-world-img sw3"></div>
+
+          <div class="systems-world-img sw4"></div>
+
+        </div>
+
+      </section>
+
+      <!-- ====================================
+           SECTION 08 — POSITIONING
+      ===================================== -->
+
+      <section
+        class="systems-position reveal"
+        aria-labelledby="position-title"
+      >
+
+        <h2 id="position-title">
+          Patients may forget an ad.
+          <br>
+          They remember how your clinic
+          <em>made them feel.</em>
+        </h2>
+
+      </section>
+
+      <!-- ====================================
+           SECTION 09 — QUALIFICATION
+      ===================================== -->
+
+      <section
+        class="systems-fit reveal"
+        aria-labelledby="fit-title"
+      >
+
+        <div
+          class="systems-fit-image"
+          role="img"
+          aria-label="Refined aesthetic clinic interior"
+        ></div>
+
+        <div class="systems-fit-copy">
+
+          <p class="eyebrow">
+            Who This Is For
+          </p>
+
+          <h2 id="fit-title">
+            Built for clinics ready
+            for their next stage of growth.
+          </h2>
+
+          <p>
+            Mirel is designed for clinics that
+            want more than low-cost leads or
+            a short-lived campaign.
+          </p>
+
+          <p>
+            We work best with teams that care
+            about patient trust, treatment
+            experience and consistent growth—
+            across the United States,
+            United Kingdom, Australia,
+            Canada and New Zealand.
+          </p>
+
+          <ul class="systems-fit-list">
+
+            <li>
+              You value distinctive positioning
+              over discount-led marketing.
+            </li>
+
+            <li>
+              You want more qualified consultations,
+              not just more inquiries.
+            </li>
+
+            <li>
+              You want patients to understand
+              your quality of care.
+            </li>
+
+            <li>
+              You want follow-up systems that
+              support your team beyond the
+              first campaign.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+      <!-- ====================================
+           SECTION 10 — AUTHORITY STRIP
+      ===================================== -->
+
+      <section
+        class="authority-blush reveal"
+        aria-label="Patient trust statement"
+      >
 
         <p>
-          Landing pages that remove doubt,
-          clarify value, and make booking obvious.
+          Patients do not only consider treatment
+          outcomes. They consider trust, suitability
+          and the confidence of choosing
+          the right clinic.
         </p>
 
-      </div>
+      </section>
 
+      <!-- ====================================
+           SECTION 11 — FINAL CTA
+      ===================================== -->
 
-      <div>
+      <section
+        class="systems-final"
+        aria-labelledby="final-title"
+      >
 
-        <span>03</span>
+        <div
+          class="final-image reveal"
+          role="img"
+          aria-label="Premium med spa editorial scene"
+        ></div>
 
-        <strong>
-          Nurture
-        </strong>
+        <div class="final-copy reveal">
 
-        <p>
-          Email and SMS follow-up so interest becomes
-          consultation instead of a forgotten lead.
-        </p>
+          <p class="eyebrow">
+            Let's Build Something Exceptional
+          </p>
 
-      </div>
+          <h2 id="final-title">
+            Ready to create a clinic people
+            <em>remember?</em>
+          </h2>
 
+          <p>
+            Start with a 30-minute Med Spa
+            Growth Strategy Review.
 
-      <div>
+            We'll discuss where your patient
+            journey may be losing opportunities
+            and which improvements deserve
+            attention first.
+          </p>
 
-        <span>04</span>
+          <div class="final-actions">
 
-        <strong>
-          Retain
-        </strong>
+            <a
+              href="book.html#booking"
+              class="btn btn-pink btn-large"
+            >
+              Book a Growth Strategy Review
+            </a>
 
-        <p>
-          Brand consistency that helps patients return,
-          refer, and trust higher-value offers.
-        </p>
+            <a
+              href="resources.html"
+              class="btn btn-outline btn-large"
+            >
+              View Resources
+            </a>
 
-      </div>
+          </div>
 
-    </div>
+        </div>
 
-  </div>
+      </section>
 
-</section>
+    </main>
 
+    <!-- ======================================
+         FOOTER — MATCHES HOMEPAGE
+    ======================================= -->
 
-<!-- =====================================================
-     BIG QUOTE
-====================================================== -->
-
-<section class="systems-big-quote reveal">
-
-  <p class="eyebrow">
-    The Difference
-  </p>
-
-  <h2>
-    Most clinics market treatments.
-    <br>
-    We build
-    <em>perceived value.</em>
-  </h2>
-
-</section>
-
-
-<!-- =====================================================
-     EDITORIAL GRID
-====================================================== -->
-
-<section class="systems-world reveal">
-
-  <div class="systems-world-header">
-
-    <p class="eyebrow">
-      The Mirel Standard
-    </p>
-
-    <h2>
-      Every touchpoint should feel intentional.
-    </h2>
-
-  </div>
-
-
-  <div class="systems-world-grid">
-
-    <div class="systems-world-img sw1"></div>
-
-    <div class="systems-world-img sw2"></div>
-
-    <div class="systems-world-img sw3"></div>
-
-    <div class="systems-world-img sw4"></div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     POSITIONING STRIP
-====================================================== -->
-
-<section class="systems-position reveal">
-
-  <h2>
-    Premium patients don't remember ads.
-    <br>
-    They remember how your clinic
-    <em>made them feel.</em>
-  </h2>
-
-</section>
-
-
-<!-- =====================================================
-     QUALIFICATION SECTION
-====================================================== -->
-
-<section class="systems-fit reveal">
-
-  <div class="systems-fit-image"></div>
-
-  <div class="systems-fit-copy">
-
-    <p class="eyebrow">
-      Who This Is For
-    </p>
-
-    <h2>
-      Built for clinics ready
-      for their next stage of growth.
-    </h2>
-
-    <p>
-      Mirel is not designed for clinics chasing
-      cheap leads or short-term marketing tricks.
-    </p>
-
-    <p>
-      We work best with clinics that understand
-      brand perception, patient trust,
-      and long-term positioning.
-    </p>
-
-    <ul class="systems-fit-list">
-
-      <li>
-        You want premium positioning instead of discount marketing.
-      </li>
-
-      <li>
-        You want better consultations instead of more inquiries.
-      </li>
-
-      <li>
-        You want patients who value quality and trust.
-      </li>
-
-      <li>
-        You want systems that continue working after the campaign ends.
-      </li>
-
-    </ul>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     BLUSH AUTHORITY STRIP
-====================================================== -->
-
-<section class="authority-blush reveal">
-
-  <p>
-    Premium patients do not only buy treatment outcomes —
-    they buy trust, safety, and the feeling that they are
-    choosing the right clinic.
-  </p>
-
-</section>
-
-
-<!-- =====================================================
-     FINAL CTA
-====================================================== -->
-
-<section class="systems-final">
-
-  <div class="final-image reveal"></div>
-
-  <div class="final-copy reveal">
-
-    <p class="eyebrow">
-      Let’s Build Something Exceptional
-    </p>
-
-    <h2>
-      Ready to create a clinic people
-      <em>remember?</em>
-    </h2>
-
-    <p>
-      Let’s design a refined growth system that reflects
-      the quality of your clinic and attracts patients
-      who value excellence.
-    </p>
-
-    <div class="final-actions">
+    <footer class="footer">
 
       <a
-        href="contact.html"
-        class="btn btn-pink btn-large"
+        class="brand"
+        href="index.html"
+        aria-label="Mirel Marketing Home"
       >
-        Book a Consultation
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
       </a>
 
-      <a
-        href="resources.html"
-        class="btn btn-outline btn-large"
-      >
-        View Resources
+      <a href="mailto:delora@mirelmarketing.com">
+        delora@mirelmarketing.com
       </a>
 
-    </div>
+      <nav
+        class="footer-social"
+        aria-label="Mirel social media"
+      >
+
+        <a
+          href="https://www.instagram.com/mirelpartners/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://www.youtube.com/@mirelpartners"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/mirelmarketing/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+      </nav>
+
+      <a href="privacy-policy.html">
+        Privacy Policy
+      </a>
+
+      <a href="terms-and-conditions.html">
+        Terms &amp; Conditions
+      </a>
+
+    </footer>
 
   </div>
 
-</section>
+  <!-- ========================================
+       INTERACTION & PERFORMANCE JAVASCRIPT
+  ========================================= -->
 
+  <script>
 
-</main>
+    (() => {
 
+      'use strict';
 
-<!-- =====================================================
-     FOOTER
-====================================================== -->
+      const nav =
+        document.querySelector('[data-nav]');
 
-<footer class="footer">
+      const toggle =
+        document.querySelector('[data-menu-toggle]');
 
-  <a
-    class="brand"
-    href="index.html"
-    aria-label="Mirel Marketing Home"
-  >
-    <span>MIRÈL</span>
-    <small>MARKETING</small>
-  </a>
+      const menu =
+        document.querySelector('[data-mobile-menu]');
 
-  <a href="mailto:delora@mirelmarketing.com">
-    delora@mirelmarketing.com
-  </a>
+      let lastScroll = window.scrollY;
 
-  <a
-    href="https://www.instagram.com/mirelmarketing"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Instagram
-  </a>
+      /* ======================================
+         MOBILE MENU
+      ======================================= */
 
-  <a href="privacy-policy.html">
-    Privacy Policy
-  </a>
+      const setMenu = open => {
 
-  <a href="terms-and-conditions.html">
-    Terms &amp; Conditions
-  </a>
+        if (!toggle || !menu) return;
 
-</footer>
+        menu.classList.toggle(
+          'open',
+          open
+        );
 
-</div>
+        toggle.setAttribute(
+          'aria-expanded',
+          String(open)
+        );
 
+        toggle.setAttribute(
+          'aria-label',
+          open
+            ? 'Close navigation menu'
+            : 'Open navigation menu'
+        );
 
-<!-- =====================================================
-     JAVASCRIPT
-====================================================== -->
+        menu.setAttribute(
+          'aria-hidden',
+          String(!open)
+        );
 
-<script>
+        document.body.classList.toggle(
+          'menu-open',
+          open
+        );
 
-  /* =========================================================
-     PERFORMANCE: LAZY LOAD BELOW-THE-FOLD WEBP BACKGROUNDS
-  ========================================================= */
-
-  const lazyBackgrounds = [
-
-    {
-      selector: '.systems-full-image',
-      image:
-        "linear-gradient(180deg, rgba(29,15,12,.08), rgba(29,15,12,.50)), url('images/mirel-system-strategy2.webp')"
-    },
-
-    {
-      selector: '.sw1',
-      image:
-        "url('images/mirel-systems-world-patient-payment.webp')"
-    },
-
-    {
-      selector: '.sw2',
-      image:
-        "url('images/mirel-ads-system2.webp')"
-    },
-
-    {
-      selector: '.sw3',
-      image:
-        "url('images/mirel-followup-system.webp')"
-    },
-
-    {
-      selector: '.sw4',
-      image:
-        "url('images/mirel-systems-world-skincare.webp')"
-    },
-
-    {
-      selector: '.systems-fit-image',
-      image:
-        "linear-gradient(rgba(29,15,12,.04), rgba(29,15,12,.10)), url('images/mirel-system-clinic-space.webp')"
-    },
-
-    {
-      selector: '.final-image',
-      image:
-        "linear-gradient(rgba(29,15,12,.04), rgba(29,15,12,.16)), url('images/mirel-system-final-cta.webp')"
-    }
-
-  ];
-
-
-  const lazyBackgroundMap = new Map();
-
-
-  lazyBackgrounds.forEach((item) => {
-
-    const element =
-      document.querySelector(item.selector);
-
-    if (element) {
-
-      lazyBackgroundMap.set(
-        element,
-        item.image
-      );
-
-    }
-
-  });
-
-
-  const loadLazyBackground = (element) => {
-
-    const image =
-      lazyBackgroundMap.get(element);
-
-    if (!image) {
-      return;
-    }
-
-    element.classList.add(
-      'lazy-bg-loaded'
-    );
-
-    element.style.backgroundImage =
-      image;
-
-  };
-
-
-  if ('IntersectionObserver' in window) {
-
-    const backgroundObserver =
-      new IntersectionObserver(
-
-        (entries, observer) => {
-
-          entries.forEach((entry) => {
-
-            if (!entry.isIntersecting) {
-              return;
-            }
-
-            loadLazyBackground(
-              entry.target
-            );
-
-            observer.unobserve(
-              entry.target
-            );
-
-          });
-
-        },
-
-        {
-          rootMargin:'1400px 0px',
-          threshold:0.01
+        if (open) {
+          nav?.classList.remove('hide');
         }
 
+      };
+
+      toggle?.addEventListener(
+        'click',
+        e => {
+
+          e.stopPropagation();
+
+          setMenu(
+            !menu.classList.contains('open')
+          );
+
+        }
       );
 
+      menu
+        ?.querySelectorAll('a')
+        .forEach(
+          link => {
 
-    lazyBackgroundMap.forEach(
-      (image, element) => {
-
-        backgroundObserver.observe(
-          element
-        );
-
-      }
-    );
-
-  }
-
-  else {
-
-    /*
-      Fallback for browsers without
-      IntersectionObserver support.
-    */
-
-    lazyBackgroundMap.forEach(
-      (image, element) => {
-
-        loadLazyBackground(
-          element
-        );
-
-      }
-    );
-
-  }
-
-
-  /* =========================================================
-     REVEAL ANIMATION
-  ========================================================= */
-
-  const reveals =
-    document.querySelectorAll(
-      '.reveal'
-    );
-
-
-  const observer =
-    new IntersectionObserver(
-      (entries) => {
-
-        entries.forEach(
-          entry => {
-
-            if (
-              entry.isIntersecting
-            ) {
-
-              entry.target
-                .classList
-                .add('visible');
-
-            }
+            link.addEventListener(
+              'click',
+              () => setMenu(false)
+            );
 
           }
         );
 
-      },
-      {
-        threshold:0.12
-      }
-    );
+      document.addEventListener(
+        'click',
+        e => {
 
+          if (
+            menu?.classList.contains('open') &&
+            !menu.contains(e.target) &&
+            !toggle?.contains(e.target)
+          ) {
 
-  reveals.forEach(
-    item =>
-      observer.observe(item)
-  );
+            setMenu(false);
 
+          }
 
-  /* =========================================================
-     NAVIGATION
-  ========================================================= */
-
-  const nav =
-    document.querySelector(
-      '[data-nav]'
-    );
-
-  const menuToggle =
-    document.querySelector(
-      '[data-menu-toggle]'
-    );
-
-  const mobileMenu =
-    document.querySelector(
-      '[data-mobile-menu]'
-    );
-
-
-  let lastScroll = 0;
-
-
-  window.addEventListener(
-    'scroll',
-    () => {
-
-      const currentScroll =
-        window.scrollY;
-
-
-      nav.classList.toggle(
-        'scrolled',
-        currentScroll > 16
+        }
       );
 
+      document.addEventListener(
+        'keydown',
+        e => {
+
+          if (
+            e.key === 'Escape' &&
+            menu?.classList.contains('open')
+          ) {
+
+            setMenu(false);
+
+            toggle?.focus();
+
+          }
+
+        }
+      );
+
+      window.addEventListener(
+        'resize',
+        () => {
+
+          if (window.innerWidth > 760) {
+            setMenu(false);
+          }
+
+        },
+        {
+          passive: true
+        }
+      );
+
+      /* ======================================
+         STICKY NAVIGATION
+      ======================================= */
+
+      window.addEventListener(
+        'scroll',
+        () => {
+
+          const current = window.scrollY;
+
+          nav?.classList.toggle(
+            'scrolled',
+            current > 16
+          );
+
+          if (
+            current > lastScroll &&
+            current > 120 &&
+            !menu?.classList.contains('open')
+          ) {
+
+            nav?.classList.add('hide');
+
+          } else {
+
+            nav?.classList.remove('hide');
+
+          }
+
+          lastScroll = current;
+
+        },
+        {
+          passive: true
+        }
+      );
+
+      /* ======================================
+         LAZY BACKGROUND IMAGES
+      ======================================= */
+
+      const lazyElements =
+        document.querySelectorAll(
+          '.systems-full-image,' +
+          '.sw1,' +
+          '.sw2,' +
+          '.sw3,' +
+          '.sw4,' +
+          '.systems-fit-image,' +
+          '.final-image'
+        );
+
+      const activate = element => {
+
+        element.classList.add(
+          'lazy-bg-loaded'
+        );
+
+      };
+
+      if ('IntersectionObserver' in window) {
+
+        const imageObserver =
+          new IntersectionObserver(
+            (entries, observer) => {
+
+              entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                  activate(entry.target);
+
+                  observer.unobserve(
+                    entry.target
+                  );
+
+                }
+
+              });
+
+            },
+            {
+              rootMargin: '600px 0px',
+              threshold: 0.01
+            }
+          );
+
+        lazyElements.forEach(
+          element => imageObserver.observe(element)
+        );
+
+      } else {
+
+        lazyElements.forEach(activate);
+
+      }
+
+      /* ======================================
+         REVEAL ANIMATIONS
+      ======================================= */
+
+      const reveals =
+        document.querySelectorAll('.reveal');
+
+      const reduced =
+        window.matchMedia(
+          '(prefers-reduced-motion: reduce)'
+        ).matches;
 
       if (
-        currentScroll > lastScroll &&
-        currentScroll > 120
+        !reduced &&
+        'IntersectionObserver' in window
       ) {
 
-        nav.classList.add(
-          'hide'
+        const revealObserver =
+          new IntersectionObserver(
+            (entries, observer) => {
+
+              entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                  entry.target.classList.add(
+                    'visible'
+                  );
+
+                  observer.unobserve(
+                    entry.target
+                  );
+
+                }
+
+              });
+
+            },
+            {
+              threshold: 0.06,
+              rootMargin: '0px 0px 95px 0px'
+            }
+          );
+
+        reveals.forEach(
+          element => revealObserver.observe(element)
         );
 
-        mobileMenu
-          ?.classList
-          .remove('open');
+      } else {
 
-        document.body
-          .classList
-          .remove('menu-open');
-
-      }
-
-      else {
-
-        nav.classList.remove(
-          'hide'
+        reveals.forEach(
+          element => element.classList.add('visible')
         );
 
       }
 
+    })();
 
-      lastScroll =
-        currentScroll;
-
-    }
-  );
-
-
-  /* =========================================================
-     MOBILE MENU
-  ========================================================= */
-
-  if (
-    menuToggle &&
-    mobileMenu
-  ) {
-
-    menuToggle.addEventListener(
-      'click',
-      (event) => {
-
-        event.stopPropagation();
-
-        mobileMenu
-          .classList
-          .toggle('open');
-
-        document.body
-          .classList
-          .toggle('menu-open');
-
-      }
-    );
-
-
-    mobileMenu.addEventListener(
-      'click',
-      (event) => {
-
-        event.stopPropagation();
-
-      }
-    );
-
-
-    document.addEventListener(
-      'click',
-      () => {
-
-        mobileMenu
-          .classList
-          .remove('open');
-
-        document.body
-          .classList
-          .remove('menu-open');
-
-      }
-    );
-
-  }
-
-</script>
+  </script>
 
 </body>
 </html>
