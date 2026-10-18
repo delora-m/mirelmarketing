@@ -1,2164 +1,502 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Resources | Mirel Marketing</title>
-
-  <meta
-    name="description"
-    content="Free med spa marketing resources, positioning systems, brand audits, consultation funnel guides, content planners, website audits, and premium growth frameworks by Mirel Marketing."
-  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#fbf7f1">
+  <meta name="color-scheme" content="light">
+  <title>Free Med Spa Growth Resources &amp; Workbooks | Mirel Marketing</title>
+  <meta name="description" content="Explore Mirel Marketing's free med spa workbooks and guides for premium positioning, patient trust, consultation conversion, content, acquisition and smarter growth systems.">
+  <link rel="canonical" href="https://mirelmarketing.com/resources.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mirel Marketing">
+  <meta property="og:title" content="Free Med Spa Growth Resources &amp; Workbooks | Mirel Marketing">
+  <meta property="og:description" content="A curated library of free strategic tools to diagnose patient-journey friction and strengthen your med spa's positioning, consultation flow and growth decisions.">
+  <meta property="og:url" content="https://mirelmarketing.com/resources.html">
+  <meta property="og:image" content="https://mirelmarketing.com/images/resources-strategy-workspace.webp">
+  <meta property="og:image:alt" content="Mirel Marketing premium med spa resource workspace">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Med Spa Growth Resources | Mirel Marketing">
+  <meta name="twitter:description" content="Free med spa positioning, booking-conversion and patient-journey resources from Mirel Marketing.">
+  <meta name="twitter:image" content="https://mirelmarketing.com/images/resources-strategy-workspace.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231d0f0c'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-size='62' text-anchor='middle' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <link rel="stylesheet" href="style.css?v=7" />
-
-
-  <style>
-
-    /* =========================================================
-       RESOURCES PAGE
-    ========================================================= */
-
-    .resources-page{
-      background:#fbf7f1;
-      color:var(--espresso-deep);
-      overflow-x:hidden;
-    }
-
-
-    /* =========================================================
-       HERO
-    ========================================================= */
-
-    .resources-hero{
-      display:grid;
-      grid-template-columns:.86fr 1.14fr;
-      min-height:680px;
-
-      background:
-        radial-gradient(
-          circle at 12% 16%,
-          rgba(242,214,218,.42),
-          transparent 30%
-        ),
-        radial-gradient(
-          circle at 88% 8%,
-          rgba(62,39,35,.08),
-          transparent 31%
-        ),
-        linear-gradient(
-          110deg,
-          #fbf7f1 0%,
-          #fbf7f1 52%,
-          #efe3dc 100%
-        );
-
-      border-bottom:1px solid var(--line);
-    }
-
-
-    .resources-hero-copy{
-      padding:92px 72px;
-
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-
-      position:relative;
-      z-index:2;
-    }
-
-
-    .resources-hero h1{
-      font-family:var(--serif);
-
-      font-size:72px;
-      line-height:.98;
-      letter-spacing:-.045em;
-      font-weight:500;
-
-      color:var(--espresso-deep);
-
-      margin:0 0 28px;
-
-      max-width:660px;
-    }
-
-
-    .resources-hero h1 em{
-      color:var(--rose);
-      font-style:italic;
-      font-weight:400;
-    }
-
-
-    .resources-hero-line{
-      width:68px;
-      height:1px;
-
-      background:var(--rose);
-
-      margin:0 0 30px;
-    }
-
-
-    .resources-hero p:not(.eyebrow){
-      font-size:16px;
-      line-height:1.9;
-
-      color:var(--text-soft);
-
-      max-width:540px;
-
-      margin:0 0 34px;
-    }
-
-
-    .resources-hero-image{
-      min-height:680px;
-
-      background:
-        linear-gradient(
-          90deg,
-          rgba(251,247,241,.45),
-          rgba(251,247,241,.05)
-        ),
-        url('images/mirel-marketing-books.jpg?v=2')
-        center/cover no-repeat;
-
-      position:relative;
-    }
-
-
-    .resources-hero-card{
-      position:absolute;
-
-      left:42px;
-      bottom:42px;
-
-      width:320px;
-
-      padding:30px;
-
-      background:rgba(251,247,241,.86);
-
-      border:1px solid rgba(62,39,35,.12);
-
-      backdrop-filter:blur(14px);
-      -webkit-backdrop-filter:blur(14px);
-    }
-
-
-    .resources-hero-card span{
-      display:block;
-
-      text-transform:uppercase;
-      letter-spacing:.28em;
-
-      font-size:9px;
-      font-weight:700;
-
-      color:var(--rose);
-
-      margin-bottom:14px;
-    }
-
-
-    .resources-hero-card strong{
-      display:block;
-
-      font-family:var(--serif);
-
-      font-size:30px;
-      line-height:1.04;
-      font-weight:500;
-
-      color:var(--espresso-deep);
-    }
-
-
-
-    /* =========================================================
-       FEATURED RESOURCE
-    ========================================================= */
-
-    .featured-resource{
-      padding:110px 72px;
-
-      background:#fbf7f1;
-
-      border-bottom:1px solid var(--line);
-    }
-
-
-    .featured-header{
-      max-width:900px;
-
-      margin:0 auto 70px;
-
-      text-align:center;
-    }
-
-
-    .featured-header h2{
-      font-family:var(--serif);
-
-      font-size:64px;
-      line-height:1;
-      letter-spacing:-.045em;
-      font-weight:500;
-
-      color:var(--espresso-deep);
-
-      margin:0 0 22px;
-    }
-
-
-    .featured-header p:not(.eyebrow){
-      max-width:700px;
-
-      margin:0 auto;
-
-      color:var(--text-soft);
-
-      font-size:15px;
-      line-height:1.9;
-    }
-
-
-    .featured-card{
-      display:grid;
-
-      grid-template-columns:.9fr 1.1fr;
-
-      gap:60px;
-
-      max-width:1250px;
-
-      margin:0 auto;
-
-      align-items:center;
-    }
-
-
-    .featured-image{
-      overflow:hidden;
-
-      background:#f2ebe5;
-
-      border:1px solid var(--line);
-    }
-
-
-    .featured-image img{
-      width:100%;
-
-      display:block;
-
-      object-fit:cover;
-    }
-
-
-    .featured-grid{
-      display:grid;
-
-      gap:24px;
-    }
-
-
-    .featured-grid article{
-      padding:26px 0;
-
-      border-bottom:1px solid rgba(62,39,35,.10);
-    }
-
-
-    .featured-grid article:last-child{
-      border-bottom:none;
-    }
-
-
-    .featured-grid span{
-      display:block;
-
-      text-transform:uppercase;
-
-      letter-spacing:.28em;
-
-      font-size:11px;
-      font-weight:700;
-
-      color:var(--rose);
-
-      margin-bottom:16px;
-    }
-
-
-    .featured-grid ul{
-      margin:0;
-
-      padding-left:18px;
-    }
-
-
-    .featured-grid li{
-      color:var(--text-soft);
-
-      font-size:14px;
-      line-height:2;
-    }
-
-
-    .featured-actions{
-      margin-top:36px;
-    }
-
-
-
-    /* =========================================================
-       RESOURCE LIBRARY
-    ========================================================= */
-
-    .resource-library{
-      padding:110px 72px 120px;
-
-      background:
-        radial-gradient(
-          circle at 8% 0%,
-          rgba(242,214,218,.22),
-          transparent 25%
-        ),
-        #f6eee8;
-
-      border-bottom:1px solid var(--line);
-    }
-
-
-    .library-header{
-      max-width:900px;
-
-      margin:0 auto 70px;
-
-      text-align:center;
-    }
-
-
-    .library-header h2{
-      font-family:var(--serif);
-
-      font-size:56px;
-      line-height:1.02;
-      letter-spacing:-.04em;
-
-      font-weight:500;
-
-      color:var(--espresso-deep);
-
-      margin:0 0 22px;
-    }
-
-
-    .library-header p:not(.eyebrow){
-      max-width:720px;
-
-      margin:0 auto;
-
-      color:var(--text-soft);
-
-      font-size:15px;
-      line-height:1.9;
-    }
-
-
-    .resource-grid{
-      display:grid;
-
-      grid-template-columns:repeat(3,1fr);
-
-      gap:18px;
-
-      max-width:1280px;
-
-      margin:0 auto;
-    }
-
-
-    .resource-card{
-      min-height:310px;
-
-      padding:38px 34px;
-
-      background:rgba(251,247,241,.88);
-
-      border:1px solid rgba(62,39,35,.11);
-
-      display:flex;
-
-      flex-direction:column;
-
-      transition:
-        transform .3s ease,
-        box-shadow .3s ease,
-        background .3s ease;
-    }
-
-
-    .resource-card:hover{
-      transform:translateY(-5px);
-
-      background:#fbf7f1;
-
-      box-shadow:0 20px 50px rgba(62,39,35,.08);
-    }
-
-
-    .resource-card > span{
-      display:block;
-
-      text-transform:uppercase;
-
-      letter-spacing:.28em;
-
-      font-size:9px;
-      font-weight:700;
-
-      color:var(--rose);
-
-      margin-bottom:24px;
-    }
-
-
-    .resource-card h3{
-      font-family:var(--serif);
-
-      font-size:31px;
-      line-height:1.05;
-
-      letter-spacing:-.025em;
-
-      font-weight:500;
-
-      color:var(--espresso-deep);
-
-      margin:0 0 18px;
-    }
-
-
-    .resource-card p{
-      font-size:14px;
-      line-height:1.8;
-
-      color:var(--text-soft);
-
-      margin:0 0 28px;
-    }
-
-
-    .resource-card a{
-      margin-top:auto;
-
-      font-size:12px;
-      font-weight:600;
-
-      letter-spacing:.04em;
-
-      color:var(--espresso-deep);
-
-      text-decoration:none;
-    }
-
-
-    .resource-card a:hover{
-      opacity:.7;
-    }
-
-
-    .coming-soon{
-      margin-top:auto;
-
-      font-size:12px;
-      font-weight:600;
-
-      letter-spacing:.04em;
-
-      color:var(--espresso-deep);
-    }
-
-
-
-    /* =========================================================
-       MIREL PHILOSOPHY
-    ========================================================= */
-
-    .resources-philosophy{
-      display:grid;
-
-      grid-template-columns:1fr 1fr;
-
-      min-height:660px;
-
-      background:#f1e7df;
-
-      border-bottom:1px solid var(--line);
-    }
-
-
-    .resources-philosophy-image{
-      min-height:660px;
-
-      background:
-        linear-gradient(
-          rgba(29,15,12,.06),
-          rgba(29,15,12,.20)
-        ),
-        url('images/mirel-luxury-marketing.png?v=2')
-        center/cover no-repeat;
-    }
-
-
-    .resources-philosophy-copy{
-      padding:90px 72px;
-
-      display:flex;
-
-      flex-direction:column;
-
-      justify-content:center;
-    }
-
-
-    .resources-philosophy-copy h2{
-      font-family:var(--serif);
-
-      font-size:48px;
-      line-height:1.02;
-
-      letter-spacing:-.035em;
-
-      font-weight:500;
-
-      color:var(--espresso-deep);
-
-      margin:0 0 12px;
-    }
-
-
-    .resources-philosophy-copy h3{
-      font-family:var(--serif);
-
-      font-size:38px;
-      line-height:1.05;
-
-      letter-spacing:-.03em;
-
-      font-style:italic;
-
-      font-weight:400;
-
-      color:var(--rose);
-
-      margin:0;
-    }
-
-
-    .resources-line{
-      width:68px;
-      height:1px;
-
-      background:var(--rose);
-
-      margin:34px 0;
-    }
-
-
-    .resources-philosophy-copy p:not(.eyebrow){
-      font-size:15px;
-      line-height:1.9;
-
-      color:var(--text-soft);
-
-      max-width:570px;
-
-      margin:0 0 17px;
-    }
-
-
-
-    /* =========================================================
-       START HERE
-    ========================================================= */
-
-    .start-here{
-      padding:110px 72px;
-
-      background:#fbf7f1;
-
-      border-bottom:1px solid var(--line);
-    }
-
-
-    .start-copy{
-      max-width:820px;
-
-      margin:0 auto 64px;
-
-      text-align:center;
-    }
-
-
-    .start-copy h2{
-      font-family:var(--serif);
-
-      font-size:56px;
-      line-height:1.02;
-
-      letter-spacing:-.04em;
-
-      font-weight:500;
-
-      color:var(--espresso-deep);
-
-      margin:0 0 20px;
-    }
-
-
-    .start-copy p:not(.eyebrow){
-      color:var(--text-soft);
-
-      font-size:15px;
-      line-height:1.8;
-
-      margin:0 auto;
-    }
-
-
-    .start-grid{
-      display:grid;
-
-      grid-template-columns:repeat(2,1fr);
-
-      max-width:1200px;
-
-      margin:0 auto;
-
-      border-top:1px solid var(--line);
-
-      border-left:1px solid var(--line);
-    }
-
-
-    .start-grid article{
-      padding:46px;
-
-      min-height:300px;
-
-      border-right:1px solid var(--line);
-
-      border-bottom:1px solid var(--line);
-
-      display:flex;
-
-      flex-direction:column;
-    }
-
-
-    .start-grid article > span{
-      display:block;
-
-      font-family:var(--serif);
-
-      font-size:34px;
-
-      color:var(--rose);
-
-      margin-bottom:28px;
-    }
-
-
-    .start-grid h3{
-      font-family:var(--serif);
-
-      font-size:31px;
-      line-height:1.05;
-
-      letter-spacing:-.025em;
-
-      font-weight:500;
-
-      color:var(--espresso-deep);
-
-      margin:0 0 18px;
-    }
-
-
-    .start-grid p{
-      font-size:14px;
-      line-height:1.8;
-
-      color:var(--text-soft);
-
-      margin:0 0 28px;
-    }
-
-
-    .start-grid a{
-      margin-top:auto;
-
-      color:var(--espresso-deep);
-
-      text-decoration:none;
-
-      font-size:12px;
-
-      font-weight:600;
-    }
-
-
-
-    /* =========================================================
-       FINAL CTA
-    ========================================================= */
-
-    .resources-final-cta{
-      min-height:570px;
-
-      position:relative;
-
-      overflow:hidden;
-
-      background:var(--espresso-deep);
-    }
-
-
-    .resources-final-bg{
-      position:absolute;
-
-      inset:0;
-
-      background:
-        linear-gradient(
-          90deg,
-          rgba(29,15,12,.93),
-          rgba(29,15,12,.73),
-          rgba(29,15,12,.45)
-        ),
-        url('images/mirel-treatment-experience.jpg')
-        center/cover no-repeat;
-    }
-
-
-    .resources-final-overlay{
-      position:relative;
-
-      z-index:2;
-
-      min-height:570px;
-
-      max-width:820px;
-
-      padding:90px 72px;
-
-      display:flex;
-
-      flex-direction:column;
-
-      justify-content:center;
-    }
-
-
-    .resources-final-overlay .eyebrow{
-      color:#d7b7b1;
-    }
-
-
-    .resources-final-overlay h2{
-      font-family:var(--serif);
-
-      font-size:58px;
-      line-height:1;
-
-      letter-spacing:-.04em;
-
-      font-weight:500;
-
-      color:#fbf7f1;
-
-      margin:0 0 26px;
-    }
-
-
-    .resources-final-overlay > p:not(.eyebrow){
-      max-width:660px;
-
-      color:rgba(251,247,241,.76);
-
-      font-size:15px;
-      line-height:1.9;
-
-      margin:0 0 34px;
-    }
-
-
-    .resources-final-overlay .hero-buttons{
-      display:flex;
-
-      flex-wrap:wrap;
-
-      gap:14px;
-    }
-
-
-
-    /* =========================================================
-       TABLET
-    ========================================================= */
-
-    @media (max-width:1180px){
-
-      .resources-hero{
-        grid-template-columns:1fr;
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css?v=7">
+  <!-- Above-the-fold hero is the only resource image preloaded on desktop. -->
+  <link rel="preload" as="image" href="images/resources-strategy-workspace.webp" type="image/webp" media="(min-width: 761px)" fetchpriority="high">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mirelmarketing.com/#organization",
+        "name": "Mirel Marketing",
+        "url": "https://mirelmarketing.com/",
+        "email": "delora@mirelmarketing.com",
+        "sameAs": [
+          "https://www.instagram.com/mirelpartners/",
+          "https://www.youtube.com/@mirelpartners",
+          "https://www.linkedin.com/company/mirelmarketing/"
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://mirelmarketing.com/resources.html#webpage",
+        "url": "https://mirelmarketing.com/resources.html",
+        "name": "Free Med Spa Growth Resources & Workbooks",
+        "description": "Free positioning, consultation-conversion, content and patient-journey resources for med spa and aesthetic clinic owners.",
+        "publisher": { "@id": "https://mirelmarketing.com/#organization" },
+        "mainEntity": { "@id": "https://mirelmarketing.com/resources.html#library" }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://mirelmarketing.com/resources.html#library",
+        "name": "Mirel Marketing free resource library",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Premium Positioning Intelligence System", "url": "https://drive.google.com/file/d/1cwCr-FxpF0bA13hR2TLD1CgzhTIcNL_o/view" },
+          { "@type": "ListItem", "position": 2, "name": "Premium Brand Belief Audit", "url": "https://drive.google.com/file/d/1688-DcrfKQyKSrlbN0tBLEAogONem6UJ/view" },
+          { "@type": "ListItem", "position": 3, "name": "Consultation Funnel Guide", "url": "https://drive.google.com/file/d/16POfEs__rBQfg01RWCQ3I0vcI9d4XxQz/view" },
+          { "@type": "ListItem", "position": 4, "name": "The Patient Confidence Worksheet", "url": "https://drive.google.com/file/d/1mVYb987yWC0UGDZom83yRddeg8-596v0/view" },
+          { "@type": "ListItem", "position": 5, "name": "Content-to-Consultation Planner", "url": "https://drive.google.com/file/d/1VzG0RnqmnADID40Xm1R12dGeFu69Wsg9/view" },
+          { "@type": "ListItem", "position": 6, "name": "The Premium Website Audit", "url": "https://drive.google.com/file/d/15l-BnK5D1lQb1fUJafZ71mMnhEujUnoE/view" },
+          { "@type": "ListItem", "position": 7, "name": "The Premium Patient Acquisition Guide", "url": "https://drive.google.com/file/d/10qo6kdoM4BHWob_d0uI5T9f-P0nz0QHE/view" }
+        ]
       }
-
-
-      .resources-hero-image{
-        min-height:520px;
-      }
-
-
-      .featured-card{
-        grid-template-columns:1fr;
-      }
-
-
-      .resource-grid{
-        grid-template-columns:repeat(2,1fr);
-      }
-
-
-      .resources-philosophy{
-        grid-template-columns:1fr;
-      }
-
-
-      .resources-philosophy-image{
-        min-height:520px;
-      }
-
-    }
-
-
-
-    /* =========================================================
-       MOBILE
-    ========================================================= */
-
-    @media (max-width:760px){
-
-      .resources-hero-copy{
-        padding:64px 22px;
-      }
-
-
-      .resources-hero h1{
-        font-size:48px;
-      }
-
-
-      .resources-hero p:not(.eyebrow){
-        font-size:14px;
-      }
-
-
-      .resources-hero-image{
-        min-height:420px;
-      }
-
-
-      .resources-hero-card{
-        width:auto;
-
-        left:22px;
-        right:22px;
-        bottom:22px;
-
-        padding:24px;
-      }
-
-
-      .resources-hero-card strong{
-        font-size:26px;
-      }
-
-
-      .featured-resource{
-        padding:70px 22px;
-      }
-
-
-      .featured-header{
-        margin-bottom:46px;
-      }
-
-
-      .featured-header h2{
-        font-size:43px;
-      }
-
-
-      .featured-card{
-        gap:38px;
-      }
-
-
-      .resource-library{
-        padding:70px 22px;
-      }
-
-
-      .library-header{
-        margin-bottom:46px;
-      }
-
-
-      .library-header h2{
-        font-size:40px;
-      }
-
-
-      .resource-grid{
-        grid-template-columns:1fr;
-      }
-
-
-      .resource-card{
-        min-height:270px;
-
-        padding:32px 27px;
-      }
-
-
-      .resources-philosophy-image{
-        min-height:400px;
-      }
-
-
-      .resources-philosophy-copy{
-        padding:64px 22px;
-      }
-
-
-      .resources-philosophy-copy h2{
-        font-size:39px;
-      }
-
-
-      .resources-philosophy-copy h3{
-        font-size:30px;
-      }
-
-
-      .start-here{
-        padding:70px 22px;
-      }
-
-
-      .start-copy{
-        margin-bottom:44px;
-      }
-
-
-      .start-copy h2{
-        font-size:40px;
-      }
-
-
-      .start-grid{
-        grid-template-columns:1fr;
-      }
-
-
-      .start-grid article{
-        padding:32px 27px;
-
-        min-height:260px;
-      }
-
-
-      .resources-final-overlay{
-        padding:70px 22px;
-
-        min-height:560px;
-      }
-
-
-      .resources-final-overlay h2{
-        font-size:43px;
-      }
-
-
-      .resources-final-overlay .hero-buttons{
-        flex-direction:column;
-
-        align-items:stretch;
-      }
-
-
-      .resources-final-overlay .btn{
-        width:100%;
-      }
-
-    }
-
-  </style>
-
-</head>
-
-
-
-<body class="resources-page">
-
-  <div class="site-shell">
-
-
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
-
-    <header class="nav" data-nav>
-
-      <a
-        class="brand"
-        href="index.html"
-        aria-label="Mirel Marketing Home"
-      >
-        <span>MIRÈL</span>
-        <small>MARKETING</small>
-      </a>
-
-
-      <nav
-        class="nav-links"
-        aria-label="Main navigation"
-      >
-
-        <a href="index.html">
-          Home
-        </a>
-
-        <a href="about.html">
-          About
-        </a>
-
-        <a href="services.html">
-          Services
-        </a>
-
-        <a href="systems.html">
-          Systems
-        </a>
-
-        <a href="results.html">
-          Results
-        </a>
-
-        <a href="book.html">
-          Contact
-        </a>
-
-      </nav>
-
-
-      <div class="nav-actions">
-
-        <a
-          class="btn btn-dark"
-          href="book.html"
-        >
-          Book Consultation
-        </a>
-
-        <a
-          class="btn btn-light"
-          href="resources.html"
-        >
-          Resources
-        </a>
-
-      </div>
-
-
-      <button
-        class="mobile-menu-toggle"
-        data-menu-toggle
-        aria-label="Open menu"
-      >
-        ☰
-      </button>
-
-    </header>
-
-
-
-    <!-- =====================================================
-         MOBILE MENU
-    ====================================================== -->
-
-    <div
-      class="mobile-menu"
-      data-mobile-menu
-    >
-
-      <a href="index.html">
-        Home
-      </a>
-
-      <a href="about.html">
-        About
-      </a>
-
-      <a href="services.html">
-        Services
-      </a>
-
-      <a href="systems.html">
-        Systems
-      </a>
-
-      <a href="results.html">
-        Results
-      </a>
-
-      <a href="book.html">
-        Contact
-      </a>
-
-
-      <div class="mobile-menu-actions">
-
-        <a
-          class="btn btn-dark"
-          href="book.html"
-        >
-          Book Consultation
-        </a>
-
-        <a
-          class="btn btn-light"
-          href="resources.html"
-        >
-          Resources
-        </a>
-
-      </div>
-
-    </div>
-
-
-
-    <main>
-
-
-      <!-- =====================================================
-           HERO
-      ====================================================== -->
-
-      <section class="resources-hero">
-
-
-        <div class="resources-hero-copy reveal">
-
-          <p class="eyebrow">
-            Mirel Resources
-          </p>
-
-
-          <h1>
-            Strategy tools for
-            <em>premium</em>
-            med spa growth.
-          </h1>
-
-
-          <div class="resources-hero-line"></div>
-
-
-          <p>
-            Free frameworks, audits, worksheets, and growth tools
-            designed to help med spa owners strengthen positioning,
-            patient trust, conversion, acquisition, and client experience.
-          </p>
-
-
-          <div class="hero-buttons">
-
-            <a
-              href="#resource-library"
-              class="btn btn-dark btn-large"
-            >
-              Browse Resources
-            </a>
-
-
-            <a
-              href="systems.html"
-              class="btn btn-outline btn-large"
-            >
-              Explore Our Systems
-            </a>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="resources-hero-image reveal">
-
-          <div class="resources-hero-card">
-
-            <span>
-              Mirel Marketing
-            </span>
-
-            <strong>
-              Build perception before buying more attention.
-            </strong>
-
-          </div>
-
-        </div>
-
-
-      </section>
-
-
-
-      <!-- =====================================================
-           FEATURED RESOURCE
-      ====================================================== -->
-
-      <section class="featured-resource reveal">
-
-
-        <div class="featured-header">
-
-          <p class="eyebrow">
-            Featured Resource
-          </p>
-
-
-          <h2>
-            Consultation Funnel Guide™
-          </h2>
-
-
-          <p>
-            Identify where potential patients lose momentum
-            between inquiry and booking, then strengthen the journey
-            toward confirmed consultations.
-          </p>
-
-        </div>
-
-
-
-        <div class="featured-card">
-
-
-          <div class="featured-image">
-
-            <img
-              src="images/mirel-high-ticket-consultation-framework.jpg"
-              alt="Consultation Funnel Guide by Mirel Marketing"
-            >
-
-          </div>
-
-
-
-          <div class="featured-content">
-
-
-            <div class="featured-grid">
-
-
-              <article>
-
-                <span>
-                  Who It's For
-                </span>
-
-                <ul>
-                  <li>Med Spa Owners</li>
-                  <li>Clinic Managers</li>
-                  <li>Patient Acquisition Teams</li>
-                </ul>
-
-              </article>
-
-
-
-              <article>
-
-                <span>
-                  What You'll Learn
-                </span>
-
-                <ul>
-                  <li>How to map the patient journey</li>
-                  <li>Where booking friction may occur</li>
-                  <li>How follow-up affects conversion</li>
-                  <li>Where consultation opportunities may be lost</li>
-                </ul>
-
-              </article>
-
-
-
-              <article>
-
-                <span>
-                  What's Inside
-                </span>
-
-                <ul>
-                  <li>Patient Journey Mapping</li>
-                  <li>Booking Conversion Bottlenecks</li>
-                  <li>Lead Follow-Up Opportunities</li>
-                  <li>Consultation Optimization Framework</li>
-                </ul>
-
-              </article>
-
-
-            </div>
-
-
-
-            <div class="featured-actions">
-
-              <a
-                href="https://drive.google.com/file/d/16POfEs__rBQfg01RWCQ3I0vcI9d4XxQz/view?usp=drivesdk"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-dark btn-large"
-              >
-                View Resource
-              </a>
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-      </section>
-
-
-
-      <!-- =====================================================
-           RESOURCE LIBRARY
-      ====================================================== -->
-
-      <section
-        class="resource-library reveal"
-        id="resource-library"
-      >
-
-
-        <div class="library-header">
-
-          <p class="eyebrow">
-            Resource Library
-          </p>
-
-
-          <h2>
-            Browse free strategy tools for premium med spa growth.
-          </h2>
-
-
-          <p>
-            Practical resources designed to help clinic owners
-            improve positioning, trust, conversion, content,
-            patient acquisition, and client experience.
-          </p>
-
-        </div>
-
-
-
-        <div class="resource-grid">
-
-
-          <!-- 01 -->
-
-          <article class="resource-card">
-
-            <span>
-              Positioning
-            </span>
-
-            <h3>
-              Premium Positioning Intelligence System™
-            </h3>
-
-            <p>
-              Evaluate how clearly your clinic communicates
-              premium value, differentiation, authority, and trust.
-            </p>
-
-            <a
-              href="https://drive.google.com/file/d/1cwCr-FxpF0bA13hR2TLD1CgzhTIcNL_o/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Resource →
-            </a>
-
-          </article>
-
-
-
-          <!-- 02 -->
-
-          <article class="resource-card">
-
-            <span>
-              Brand
-            </span>
-
-            <h3>
-              Premium Brand Belief Audit™
-            </h3>
-
-            <p>
-              Review the beliefs, signals, messaging, and visual cues
-              that influence how patients perceive your clinic.
-            </p>
-
-            <a
-              href="https://drive.google.com/file/d/1688-DcrfKQyKSrlbN0tBLEAogONem6UJ/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Resource →
-            </a>
-
-          </article>
-
-
-
-          <!-- 03 -->
-
-          <article class="resource-card">
-
-            <span>
-              Conversion
-            </span>
-
-            <h3>
-              Consultation Funnel Guide™
-            </h3>
-
-            <p>
-              Map the journey from first inquiry to booked consultation
-              and identify where potential patients may be dropping off.
-            </p>
-
-            <a
-              href="https://drive.google.com/file/d/16POfEs__rBQfg01RWCQ3I0vcI9d4XxQz/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Resource →
-            </a>
-
-          </article>
-
-
-
-          <!-- 04 -->
-
-          <article class="resource-card">
-
-            <span>
-              Psychology
-            </span>
-
-            <h3>
-              The Patient Confidence Worksheet™
-            </h3>
-
-            <p>
-              Explore the factors that help patients feel
-              confident, safe, informed, and ready to move forward.
-            </p>
-
-            <a
-              href="https://drive.google.com/file/d/1mVYb987yWC0UGDZom83yRddeg8-596v0/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Resource →
-            </a>
-
-          </article>
-
-
-
-          <!-- 05 -->
-
-          <article class="resource-card">
-
-            <span>
-              Content
-            </span>
-
-            <h3>
-              Content-to-Consultation Planner™
-            </h3>
-
-            <p>
-              Plan content that builds authority and trust
-              while guiding potential patients toward consultation.
-            </p>
-
-            <a
-              href="https://drive.google.com/file/d/1VzG0RnqmnADID40Xm1R12dGeFu69Wsg9/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Resource →
-            </a>
-
-          </article>
-
-
-
-          <!-- 06 -->
-
-          <article class="resource-card">
-
-            <span>
-              Website
-            </span>
-
-            <h3>
-              The Premium Website Audit™
-            </h3>
-
-            <p>
-              Review whether your website communicates
-              credibility, premium value, clarity, and trust.
-            </p>
-
-            <a
-              href="https://drive.google.com/file/d/15l-BnK5D1lQb1fUJafZ71mMnhEujUnoE/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Resource →
-            </a>
-
-          </article>
-
-
-
-          <!-- 07 -->
-
-          <article class="resource-card">
-
-            <span>
-              Acquisition
-            </span>
-
-            <h3>
-              The Premium Patient Acquisition Guide™
-            </h3>
-
-            <p>
-              Understand how premium clinics attract
-              better-fit patients and build stronger acquisition systems.
-            </p>
-
-            <a
-              href="https://drive.google.com/file/d/10qo6kdoM4BHWob_d0uI5T9f-P0nz0QHE/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Resource →
-            </a>
-
-          </article>
-
-
-
-          <!-- 08 -->
-
-          <article class="resource-card">
-
-            <span>
-              Artificial Intelligence
-            </span>
-
-            <h3>
-              AI Growth for Med Spas™
-            </h3>
-
-            <p>
-              A practical guide to using AI for patient acquisition,
-              communication, follow-up, content, and clinic operations.
-            </p>
-
-            <div class="coming-soon">
-              Coming Soon
-            </div>
-
-          </article>
-
-
-        </div>
-
-      </section>
-
-
-
-      <!-- =====================================================
-           PHILOSOPHY
-      ====================================================== -->
-
-      <section class="resources-philosophy reveal">
-
-
-        <div class="resources-philosophy-image"></div>
-
-
-
-        <div class="resources-philosophy-copy">
-
-
-          <p class="eyebrow">
-            The Mirel Philosophy
-          </p>
-
-
-          <h2>
-            Most clinics compete for attention.
-          </h2>
-
-
-          <h3>
-            Premium clinics compete for perception.
-          </h3>
-
-
-          <div class="resources-line"></div>
-
-
-          <p>
-            Patients decide how much they trust a clinic
-            long before they book a consultation.
-          </p>
-
-
-          <p>
-            Every image, page, message, review, and interaction
-            contributes to the feeling of confidence they experience.
-          </p>
-
-
-          <p>
-            That's why Mirel focuses on positioning, trust,
-            conversion, patient acquisition, and client experience
-            before chasing more traffic.
-          </p>
-
-
-        </div>
-
-
-      </section>
-
-
-
-      <!-- =====================================================
-           START HERE
-      ====================================================== -->
-
-      <section class="start-here reveal">
-
-
-        <div class="start-copy">
-
-
-          <p class="eyebrow">
-            Start Here
-          </p>
-
-
-          <h2>
-            Not sure which resource to open first?
-          </h2>
-
-
-          <p>
-            Choose based on the challenge your clinic is facing right now.
-          </p>
-
-
-        </div>
-
-
-
-        <div class="start-grid">
-
-
-          <article>
-
-            <span>
-              01
-            </span>
-
-
-            <h3>
-              Your clinic doesn't feel differentiated.
-            </h3>
-
-
-            <p>
-              Start with the Premium Positioning Intelligence System™
-              to evaluate how clearly your clinic communicates
-              premium value and differentiation.
-            </p>
-
-
-            <a
-              href="https://drive.google.com/file/d/1cwCr-FxpF0bA13hR2TLD1CgzhTIcNL_o/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open Positioning System →
-            </a>
-
-          </article>
-
-
-
-          <article>
-
-            <span>
-              02
-            </span>
-
-
-            <h3>
-              Leads inquire but don't consistently book.
-            </h3>
-
-
-            <p>
-              Start with the Consultation Funnel Guide™
-              to identify friction between inquiry
-              and confirmed consultation.
-            </p>
-
-
-            <a
-              href="https://drive.google.com/file/d/16POfEs__rBQfg01RWCQ3I0vcI9d4XxQz/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open Funnel Guide →
-            </a>
-
-          </article>
-
-
-
-          <article>
-
-            <span>
-              03
-            </span>
-
-
-            <h3>
-              You want to attract better-fit patients.
-            </h3>
-
-
-            <p>
-              Start with The Premium Patient Acquisition Guide™
-              to strengthen the way your clinic approaches
-              patient acquisition.
-            </p>
-
-
-            <a
-              href="https://drive.google.com/file/d/10qo6kdoM4BHWob_d0uI5T9f-P0nz0QHE/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open Acquisition Guide →
-            </a>
-
-          </article>
-
-
-
-          <article>
-
-            <span>
-              04
-            </span>
-
-
-            <h3>
-              Your content isn't generating enough consultations.
-            </h3>
-
-
-            <p>
-              Start with the Content-to-Consultation Planner™
-              to connect your content strategy more directly
-              to trust and consultation intent.
-            </p>
-
-
-            <a
-              href="https://drive.google.com/file/d/1VzG0RnqmnADID40Xm1R12dGeFu69Wsg9/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open Content Planner →
-            </a>
-
-          </article>
-
-
-        </div>
-
-      </section>
-
-
-
-      <!-- =====================================================
-           FINAL CTA
-      ====================================================== -->
-
-      <section class="resources-final-cta reveal">
-
-
-        <div class="resources-final-bg"></div>
-
-
-
-        <div class="resources-final-overlay">
-
-
-          <p class="eyebrow">
-            Ready For The Next Step?
-          </p>
-
-
-          <h2>
-            Resources create clarity.
-            Systems create growth.
-          </h2>
-
-
-          <p>
-            If you discover opportunities inside these resources,
-            explore the systems we use to help med spas build
-            stronger positioning, higher trust, better patient acquisition,
-            and more valuable patient experiences.
-          </p>
-
-
-          <div class="hero-buttons">
-
-
-            <a
-              href="systems.html"
-              class="btn btn-dark btn-large"
-            >
-              Explore Systems
-            </a>
-
-
-            <a
-              href="book.html"
-              class="btn btn-light btn-large"
-            >
-              Book Consultation
-            </a>
-
-
-          </div>
-
-
-        </div>
-
-
-      </section>
-
-
-    </main>
-
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
-    <footer class="footer">
-
-
-      <a
-        class="brand"
-        href="index.html"
-        aria-label="Mirel Marketing Home"
-      >
-
-        <span>
-          MIRÈL
-        </span>
-
-        <small>
-          MARKETING
-        </small>
-
-      </a>
-
-
-
-      <a href="mailto:delora@mirelmarketing.com">
-        delora@mirelmarketing.com
-      </a>
-
-
-
-      <a
-        href="https://www.instagram.com/mirelmarketing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Instagram
-      </a>
-
-
-
-      <a href="privacy-policy.html">
-        Privacy Policy
-      </a>
-
-
-
-      <a href="terms-and-conditions.html">
-        Terms &amp; Conditions
-      </a>
-
-
-    </footer>
-
-
-  </div>
-
-
-
-  <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
-
-  <script>
-
-    /* -----------------------------
-       REVEAL ANIMATION
-    ------------------------------ */
-
-    const items =
-      document.querySelectorAll('.reveal');
-
-
-    const observer =
-      new IntersectionObserver(
-        (entries) => {
-
-          entries.forEach((entry) => {
-
-            if (entry.isIntersecting) {
-
-              entry.target.classList.add('visible');
-
-            }
-
-          });
-
-        },
-        {
-          threshold:0.12
-        }
-      );
-
-
-    items.forEach((item) => {
-
-      observer.observe(item);
-
-    });
-
-
-
-    /* -----------------------------
-       NAVIGATION
-    ------------------------------ */
-
-    const nav =
-      document.querySelector('[data-nav]');
-
-
-    const menuToggle =
-      document.querySelector('[data-menu-toggle]');
-
-
-    const mobileMenu =
-      document.querySelector('[data-mobile-menu]');
-
-
-    let lastScroll = 0;
-
-
-
-    window.addEventListener('scroll', () => {
-
-
-      const currentScroll =
-        window.scrollY;
-
-
-      if (nav) {
-
-        nav.classList.toggle(
-          'scrolled',
-          currentScroll > 16
-        );
-
-      }
-
-
-      if (
-        nav &&
-        currentScroll > lastScroll &&
-        currentScroll > 120
-      ) {
-
-        nav.classList.add('hide');
-
-        mobileMenu?.classList.remove('open');
-
-        document.body.classList.remove(
-          'menu-open'
-        );
-
-      }
-
-      else if (nav) {
-
-        nav.classList.remove('hide');
-
-      }
-
-
-      lastScroll =
-        currentScroll;
-
-
-    });
-
-
-
-    /* -----------------------------
-       MOBILE MENU
-    ------------------------------ */
-
-    if (
-      menuToggle &&
-      mobileMenu
-    ) {
-
-
-      menuToggle.addEventListener(
-        'click',
-        (event) => {
-
-
-          event.stopPropagation();
-
-
-          mobileMenu.classList.toggle(
-            'open'
-          );
-
-
-          document.body.classList.toggle(
-            'menu-open'
-          );
-
-
-        }
-      );
-
-
-
-      mobileMenu.addEventListener(
-        'click',
-        (event) => {
-
-          event.stopPropagation();
-
-        }
-      );
-
-
-
-      document.addEventListener(
-        'click',
-        () => {
-
-
-          mobileMenu.classList.remove(
-            'open'
-          );
-
-
-          document.body.classList.remove(
-            'menu-open'
-          );
-
-
-        }
-      );
-
-
-    }
-
-
+    ]
+  }
   </script>
 
+  <style>
+    /* Resources-only styling. Preserves the original page's six-section structure. */
+    .resources-page { background:#fbf7f1; color:var(--espresso-deep); overflow-x:clip; }
+    .resources-page * { box-sizing:border-box; }
+    .resources-page .skip-link { position:fixed; top:-100px; left:16px; z-index:10002; background:#1d0f0c; color:#fff; padding:13px 18px; font-size:13px; }
+    .resources-page .skip-link:focus { top:12px; }
+    .resources-page a:focus-visible, .resources-page button:focus-visible { outline:3px solid #a9686d; outline-offset:4px; }
+    .resources-page .reveal { transition-duration:.35s; }
+    .resources-page [id] { scroll-margin-top:100px; }
 
+    /* 01 — Hero: original two-column editorial composition. */
+    .resources-hero { display:grid; grid-template-columns:.86fr 1.14fr; min-height:680px; background:radial-gradient(circle at 12% 16%,rgba(242,214,218,.46),transparent 31%),radial-gradient(circle at 88% 8%,rgba(62,39,35,.09),transparent 33%),linear-gradient(110deg,#fbf7f1 0%,#fbf7f1 52%,#efe3dc 100%); border-bottom:1px solid var(--line); }
+    .resources-hero-copy { padding:92px 72px; display:flex; flex-direction:column; justify-content:center; position:relative; z-index:1; min-width:0; }
+    .resources-hero h1 { font-family:var(--serif); font-size:clamp(48px,4.9vw,72px); line-height:.98; letter-spacing:-.045em; font-weight:500; color:var(--espresso-deep); margin:0 0 28px; max-width:660px; }
+    .resources-hero h1 em { color:var(--rose); font-style:italic; font-weight:400; }
+    .resources-hero-line { width:68px; height:1px; background:var(--rose); margin:0 0 30px; }
+    .resources-hero p:not(.eyebrow) { font-size:16px; line-height:1.9; color:var(--text-soft); max-width:560px; margin:0 0 34px; }
+    .resources-hero-image { min-height:680px; position:relative; isolation:isolate; background:#e8d9d0; overflow:hidden; }
+    .resources-hero-image > img { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:cover; object-position:center 42%; }
+    .resources-hero-image::before { content:""; position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(90deg,rgba(251,247,241,.29),rgba(251,247,241,.02) 50%,rgba(29,15,12,.04)); }
+    .resources-hero-card { position:absolute; z-index:2; left:42px; bottom:42px; width:min(320px,calc(100% - 84px)); padding:30px; background:rgba(251,247,241,.90); border:1px solid rgba(62,39,35,.15); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); }
+    .resources-hero-card span { display:block; text-transform:uppercase; letter-spacing:.24em; font-size:10px; font-weight:700; color:var(--rose); margin-bottom:14px; }
+    .resources-hero-card strong { display:block; font-family:var(--serif); font-size:30px; line-height:1.04; font-weight:500; color:var(--espresso-deep); }
+
+    /* 02 — Featured resource: same image-left / learning-right layout. */
+    .featured-resource { padding:110px 72px; background:radial-gradient(circle at 93% 5%,rgba(242,214,218,.23),transparent 27%),linear-gradient(145deg,#fffaf6,#fbf7f1 76%); border-bottom:1px solid var(--line); }
+    .featured-header { max-width:900px; margin:0 auto 70px; text-align:center; }
+    .featured-header h2 { font-family:var(--serif); font-size:clamp(44px,4.5vw,64px); line-height:1; letter-spacing:-.045em; font-weight:500; color:var(--espresso-deep); margin:0 0 22px; }
+    .featured-header p:not(.eyebrow) { max-width:700px; margin:0 auto; color:var(--text-soft); font-size:15px; line-height:1.9; }
+    .featured-card { display:grid; grid-template-columns:.9fr 1.1fr; gap:60px; max-width:1250px; margin:0 auto; align-items:center; }
+    .featured-image { overflow:hidden; background:#f2ebe5; border:1px solid var(--line); aspect-ratio:4/4.5; min-width:0; }
+    .featured-image img { display:block; width:100%; height:100%; object-fit:contain; object-position:center; }
+    .featured-grid { display:grid; gap:24px; }
+    .featured-grid article { padding:26px 0; border-bottom:1px solid rgba(62,39,35,.10); }
+    .featured-grid article:last-child { border-bottom:none; }
+    .featured-grid span { display:block; text-transform:uppercase; letter-spacing:.24em; font-size:11px; font-weight:700; color:var(--rose); margin-bottom:16px; }
+    .featured-grid ul { margin:0; padding-left:19px; }
+    .featured-grid li { color:var(--text-soft); font-size:14px; line-height:1.9; }
+    .featured-actions { margin-top:36px; }
+    .featured-actions .btn { max-width:100%; }
+
+    /* 03 — Eight-card resource library (original three-column grid). */
+    .resource-library { padding:110px 72px 120px; background:radial-gradient(circle at 8% 0%,rgba(242,214,218,.35),transparent 26%),linear-gradient(135deg,#f2e5df,#faf5f0 70%); border-bottom:1px solid var(--line); }
+    .library-header { max-width:900px; margin:0 auto 70px; text-align:center; }
+    .library-header h2 { font-family:var(--serif); font-size:clamp(42px,4.1vw,56px); line-height:1.02; letter-spacing:-.04em; font-weight:500; color:var(--espresso-deep); margin:0 0 22px; }
+    .library-header p:not(.eyebrow) { max-width:720px; margin:0 auto; color:var(--text-soft); font-size:15px; line-height:1.9; }
+    .resource-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; max-width:1280px; margin:0 auto; }
+    .resource-card { min-height:310px; padding:38px 34px; background:rgba(255,253,249,.82); border:1px solid rgba(62,39,35,.13); display:flex; flex-direction:column; min-width:0; transition:transform .25s ease,box-shadow .25s ease,background .25s ease; }
+    .resource-card:hover { transform:translateY(-4px); background:#fffaf6; box-shadow:0 20px 50px rgba(62,39,35,.08); }
+    .resource-card > span { display:block; text-transform:uppercase; letter-spacing:.24em; font-size:10px; font-weight:700; color:var(--rose); margin-bottom:24px; }
+    .resource-card h3 { font-family:var(--serif); font-size:31px; line-height:1.05; letter-spacing:-.025em; font-weight:500; color:var(--espresso-deep); margin:0 0 18px; }
+    .resource-card p { font-size:14px; line-height:1.8; color:var(--text-soft); margin:0 0 28px; }
+    .resource-card a { margin-top:auto; display:inline-flex; align-items:center; min-height:44px; width:fit-content; font-size:12px; font-weight:600; letter-spacing:.04em; color:var(--espresso-deep); text-decoration:none; text-underline-offset:4px; }
+    .resource-card a:hover { text-decoration:underline; }
+    .coming-soon { margin-top:auto; display:inline-flex; align-items:center; width:fit-content; min-height:44px; font-size:12px; font-weight:600; letter-spacing:.04em; color:var(--espresso-deep); }
+    .library-note { margin:26px auto 0; max-width:1280px; color:var(--text-soft); font-size:12px; line-height:1.7; }
+
+    /* 04 — Philosophy: unchanged half-image / half-copy composition. */
+    .resources-philosophy { display:grid; grid-template-columns:1fr 1fr; min-height:660px; background:linear-gradient(130deg,#f1e5df,#fbf7f1); border-bottom:1px solid var(--line); }
+    .resources-philosophy-image { min-height:660px; position:relative; overflow:hidden; background:#e9d9d1; }
+    .resources-philosophy-image img { display:block; width:100%; height:100%; position:absolute; inset:0; object-fit:cover; object-position:center 43%; }
+    .resources-philosophy-copy { padding:90px 72px; display:flex; flex-direction:column; justify-content:center; min-width:0; }
+    .resources-philosophy-copy h2 { font-family:var(--serif); font-size:48px; line-height:1.02; letter-spacing:-.035em; font-weight:500; color:var(--espresso-deep); margin:0 0 12px; }
+    .resources-philosophy-copy h3 { font-family:var(--serif); font-size:38px; line-height:1.05; letter-spacing:-.03em; font-style:italic; font-weight:400; color:var(--rose); margin:0; }
+    .resources-line { width:68px; height:1px; background:var(--rose); margin:34px 0; }
+    .resources-philosophy-copy p:not(.eyebrow) { font-size:15px; line-height:1.9; color:var(--text-soft); max-width:570px; margin:0 0 17px; }
+
+    /* 05 — Start-here diagnosis: existing two-column choice grid. */
+    .start-here { padding:110px 72px; background:linear-gradient(145deg,#fffaf7,#fbf7f1 60%,#f5eae4); border-bottom:1px solid var(--line); }
+    .start-copy { max-width:820px; margin:0 auto 64px; text-align:center; }
+    .start-copy h2 { font-family:var(--serif); font-size:clamp(42px,4.1vw,56px); line-height:1.02; letter-spacing:-.04em; font-weight:500; color:var(--espresso-deep); margin:0 0 20px; }
+    .start-copy p:not(.eyebrow) { color:var(--text-soft); font-size:15px; line-height:1.8; margin:0 auto; }
+    .start-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); max-width:1200px; margin:0 auto; border-top:1px solid var(--line); border-left:1px solid var(--line); }
+    .start-grid article { padding:46px; min-height:300px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; flex-direction:column; min-width:0; }
+    .start-grid article > span { display:block; font-family:var(--serif); font-size:34px; color:var(--rose); margin-bottom:28px; }
+    .start-grid h3 { font-family:var(--serif); font-size:31px; line-height:1.05; letter-spacing:-.025em; font-weight:500; color:var(--espresso-deep); margin:0 0 18px; }
+    .start-grid p { font-size:14px; line-height:1.8; color:var(--text-soft); margin:0 0 28px; }
+    .start-grid a { display:inline-flex; align-items:center; min-height:44px; margin-top:auto; width:fit-content; color:var(--espresso-deep); text-decoration:none; font-size:12px; font-weight:600; }
+    .start-grid a:hover { text-decoration:underline; text-underline-offset:4px; }
+
+    /* 06 — Final dark editorial image CTA; same original overlay layout. */
+    .resources-final-cta { min-height:570px; position:relative; isolation:isolate; overflow:hidden; background:#1d0f0c; }
+    .resources-final-bg { position:absolute; inset:0; z-index:-2; }
+    .resources-final-bg img { display:block; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 48%; }
+    .resources-final-cta::before { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,rgba(29,15,12,.96),rgba(29,15,12,.85) 44%,rgba(29,15,12,.37)); pointer-events:none; }
+    .resources-final-overlay { position:relative; z-index:1; min-height:570px; max-width:820px; padding:90px 72px; display:flex; flex-direction:column; justify-content:center; }
+    .resources-final-overlay .eyebrow { color:#e2c1ba; }
+    .resources-final-overlay h2 { font-family:var(--serif); font-size:58px; line-height:1; letter-spacing:-.04em; font-weight:500; color:#fbf7f1; margin:0 0 26px; }
+    .resources-final-overlay > p:not(.eyebrow) { max-width:660px; color:rgba(251,247,241,.83); font-size:15px; line-height:1.9; margin:0 0 34px; }
+    .resources-final-overlay .hero-buttons { display:flex; flex-wrap:wrap; gap:14px; }
+    .resources-final-overlay .btn-light { background:#f5e4dd; border-color:#f5e4dd; color:#1d0f0c; }
+    .resources-final-overlay .btn-light:hover { background:#fbf7f1; }
+
+    /* Footer: same three accounts and horizontal presentation as Home. */
+    .resources-page .footer-social { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:2px 15px; }
+    .resources-page .footer-social a { display:inline-flex; align-items:center; min-height:44px; font-size:11px; white-space:nowrap; }
+
+    @media (max-width:1180px) {
+      .resources-hero { grid-template-columns:1fr; }
+      .resources-hero-image { min-height:520px; }
+      .resources-hero-copy { padding:80px 34px; }
+      .featured-resource, .resource-library, .start-here { padding-left:34px; padding-right:34px; }
+      .featured-card { grid-template-columns:1fr; max-width:800px; }
+      .featured-image { max-width:590px; width:100%; margin:0 auto; }
+      .resource-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .resources-philosophy { grid-template-columns:1fr; }
+      .resources-philosophy-image { min-height:520px; }
+      .resources-philosophy-copy { padding:74px 34px; }
+      .resources-final-overlay { padding-left:34px; padding-right:34px; }
+      .resources-page .footer-social { gap:0 14px; }
+      .resources-page .footer-social a { padding:10px 2px; }
+    }
+    @media (max-width:760px) {
+      .resources-hero-copy { padding:64px 22px; }
+      .resources-hero h1 { font-size:clamp(42px,11vw,48px); }
+      .resources-hero p:not(.eyebrow) { font-size:14px; }
+      .resources-hero-image { min-height:420px; }
+      .resources-hero-card { width:auto; left:22px; right:22px; bottom:22px; padding:24px; }
+      .resources-hero-card strong { font-size:26px; }
+      .featured-resource, .resource-library, .start-here { padding:70px 22px; }
+      .featured-header, .library-header { margin-bottom:46px; }
+      .featured-header h2 { font-size:43px; }
+      .featured-card { gap:38px; }
+      .featured-image { aspect-ratio:4/4.8; }
+      .library-header h2 { font-size:40px; }
+      .resource-grid { grid-template-columns:1fr; }
+      .resource-card { min-height:270px; padding:32px 27px; }
+      .resources-philosophy-image { min-height:400px; }
+      .resources-philosophy-copy { padding:64px 22px; }
+      .resources-philosophy-copy h2 { font-size:39px; }
+      .resources-philosophy-copy h3 { font-size:30px; }
+      .start-copy { margin-bottom:44px; }
+      .start-copy h2 { font-size:40px; }
+      .start-grid { grid-template-columns:1fr; }
+      .start-grid article { padding:32px 27px; min-height:260px; }
+      .resources-final-overlay { padding:70px 22px; min-height:560px; }
+      .resources-final-overlay h2 { font-size:43px; }
+      .resources-final-overlay .hero-buttons, .resources-hero-copy .hero-buttons { flex-direction:column; align-items:stretch; }
+      .resources-final-overlay .btn, .resources-hero-copy .btn { width:100%; white-space:normal; text-align:center; }
+      .resources-page .footer-social { justify-content:flex-start; grid-column:1 / -1; gap:0 14px; border-bottom:none; }
+      .resources-page .footer > a, .resources-page .footer-social a { border-bottom:none !important; }
+      .resources-page .footer-social a { padding:10px 2px; }
+      .resources-page .footer::before { content:""; grid-column:1 / -1; grid-row:2; width:100%; height:1px; background:rgba(62,39,35,.10); }
+    }
+    @media (max-width:380px) {
+      .resources-hero h1 { font-size:40px; }
+      .featured-header h2, .library-header h2, .start-copy h2, .resources-final-overlay h2 { font-size:38px; }
+      .resources-philosophy-copy h2 { font-size:35px; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      html { scroll-behavior:auto !important; }
+      .resources-page .reveal { opacity:1 !important; transform:none !important; transition:none !important; }
+      .resources-page .resource-card, .resources-page .btn, .resources-page .nav, .resources-page .mobile-menu { transition:none !important; }
+      .resources-page .resource-card:hover { transform:none; }
+    }
+  </style>
+  <noscript><style>.resources-page .reveal{opacity:1!important;transform:none!important}@media(max-width:760px){.resources-page .mobile-menu{display:flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;position:relative!important;top:auto!important;height:auto!important;transform:none!important}.resources-page .mobile-menu-toggle{display:none!important}}</style></noscript>
+</head>
+<body class="resources-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site-shell">
+    <header class="nav" data-nav>
+      <a class="brand" href="index.html" aria-label="Mirel Marketing Home"><span>MIRÈL</span><small>MARKETING</small></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="systems.html">Systems</a>
+        <a href="results.html">Results</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-dark" href="book.html">Book Consultation</a>
+        <a class="btn btn-light" href="resources.html" aria-current="page">Resources</a>
+      </div>
+      <button class="mobile-menu-toggle" type="button" data-menu-toggle aria-controls="resources-mobile-menu" aria-expanded="false" aria-label="Open navigation menu"><span aria-hidden="true">☰</span></button>
+    </header>
+    <nav class="mobile-menu" id="resources-mobile-menu" data-mobile-menu aria-label="Mobile navigation" aria-hidden="true" inert>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="systems.html">Systems</a>
+      <a href="results.html">Results</a>
+      <div class="mobile-menu-actions">
+        <a class="btn btn-dark" href="book.html">Book Consultation</a>
+        <a class="btn btn-light" href="resources.html" aria-current="page">Resources</a>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <!-- 01 — HERO -->
+      <section class="resources-hero" aria-labelledby="resources-title">
+        <div class="resources-hero-copy">
+          <p class="eyebrow">Mirel Resources</p>
+          <h1 id="resources-title">Strategy tools for <em>premium</em> med spa growth.</h1>
+          <div class="resources-hero-line" aria-hidden="true"></div>
+          <p>Free, practical workbooks for owners who want to understand why inquiries don't always become consultations—and how to strengthen the path from first impression to returning patient.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-dark btn-large" href="#resource-library">Browse Free Resources</a>
+            <a class="btn btn-outline btn-large" href="#start-here">Help Me Choose</a>
+          </div>
+        </div>
+        <div class="resources-hero-image">
+          <img src="images/resources-strategy-workspace.webp" alt="Premium strategy workspace with med spa growth planning materials" width="720" height="1080" loading="eager" fetchpriority="high" decoding="async">
+          <div class="resources-hero-card"><span>Mirel Marketing</span><strong>Understand the journey before you invest in more attention.</strong></div>
+        </div>
+      </section>
+
+      <!-- 02 — FEATURED WORKBOOK -->
+      <section class="featured-resource reveal" aria-labelledby="featured-title">
+        <div class="featured-header">
+          <p class="eyebrow">Featured Resource</p>
+          <h2 id="featured-title">Consultation Funnel Guide™</h2>
+          <p>More inquiries won't necessarily fix missed consultations. Learn how to examine the moments between a patient's first question, your team's response and a confirmed booking.</p>
+        </div>
+        <div class="featured-card">
+          <div class="featured-image">
+            <img src="images/resources-consultation-guide.webp" alt="Mirel Consultation Funnel Guide strategy workbook visual" width="720" height="1080" loading="lazy" decoding="async">
+          </div>
+          <div class="featured-content">
+            <div class="featured-grid">
+              <article><span>Who It's For</span><ul><li>Med spa and aesthetic clinic owners</li><li>Clinic managers</li><li>Patient acquisition and booking teams</li></ul></article>
+              <article><span>What You'll Examine</span><ul><li>The stages of your patient journey</li><li>Where inquiries may lose momentum</li><li>Response and follow-up friction</li><li>What makes booking feel easier or harder</li></ul></article>
+              <article><span>What You'll Take Away</span><ul><li>A clearer view of the consultation funnel</li><li>Questions to ask about missed bookings</li><li>Areas to prioritize before increasing ad spend</li><li>A practical starting point for your team</li></ul></article>
+            </div>
+            <div class="featured-actions">
+              <a href="https://drive.google.com/file/d/16POfEs__rBQfg01RWCQ3I0vcI9d4XxQz/view?usp=drivesdk" class="btn btn-dark btn-large" target="_blank" rel="noopener noreferrer" aria-label="Open Consultation Funnel Guide PDF in Google Drive (new tab)">View the Free Guide <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 — ORIGINAL EIGHT-RESOURCE LIBRARY -->
+      <section class="resource-library reveal" id="resource-library" aria-labelledby="library-title">
+        <div class="library-header">
+          <p class="eyebrow">Resource Library</p>
+          <h2 id="library-title">Find the right tool for the growth challenge in front of you.</h2>
+          <p>Start with what your clinic needs now: clearer positioning, greater patient confidence, stronger consultation conversion or a more connected marketing system. No invented results. Just practical frameworks to work through.</p>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card">
+            <span>01 / Positioning</span>
+            <h3>Premium Positioning Intelligence System™</h3>
+            <p>Examine whether patients understand what makes your clinic distinctive, credible and worth considering.</p>
+            <a href="https://drive.google.com/file/d/1cwCr-FxpF0bA13hR2TLD1CgzhTIcNL_o/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Premium Positioning Intelligence System PDF (new tab)">View Resource <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="resource-card">
+            <span>02 / Brand</span>
+            <h3>Premium Brand Belief Audit™</h3>
+            <p>Review the impressions, expectations and trust signals your brand creates before a consultation is booked.</p>
+            <a href="https://drive.google.com/file/d/1688-DcrfKQyKSrlbN0tBLEAogONem6UJ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Premium Brand Belief Audit PDF (new tab)">View Resource <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="resource-card">
+            <span>03 / Conversion</span>
+            <h3>Consultation Funnel Guide™</h3>
+            <p>Map what happens between an inquiry and a confirmed consultation, then identify potential friction.</p>
+            <a href="https://drive.google.com/file/d/16POfEs__rBQfg01RWCQ3I0vcI9d4XxQz/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Consultation Funnel Guide PDF (new tab)">View Resource <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="resource-card">
+            <span>04 / Psychology</span>
+            <h3>The Patient Confidence Worksheet™</h3>
+            <p>Explore how clarity, credible information and reassurance can support a patient's informed decision.</p>
+            <a href="https://drive.google.com/file/d/1mVYb987yWC0UGDZom83yRddeg8-596v0/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Patient Confidence Worksheet PDF (new tab)">View Resource <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="resource-card">
+            <span>05 / Content</span>
+            <h3>Content-to-Consultation Planner™</h3>
+            <p>Plan useful content that answers real patient questions and guides interest toward the appropriate next step.</p>
+            <a href="https://drive.google.com/file/d/1VzG0RnqmnADID40Xm1R12dGeFu69Wsg9/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Content-to-Consultation Planner PDF (new tab)">View Resource <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="resource-card">
+            <span>06 / Website</span>
+            <h3>The Premium Website Audit™</h3>
+            <p>Check whether your website communicates expertise, treatment clarity, premium value and an obvious booking path.</p>
+            <a href="https://drive.google.com/file/d/15l-BnK5D1lQb1fUJafZ71mMnhEujUnoE/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Premium Website Audit PDF (new tab)">View Resource <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="resource-card">
+            <span>07 / Acquisition</span>
+            <h3>The Premium Patient Acquisition Guide™</h3>
+            <p>Think beyond lead volume to patient fit, relevant messaging and a more deliberate acquisition journey.</p>
+            <a href="https://drive.google.com/file/d/10qo6kdoM4BHWob_d0uI5T9f-P0nz0QHE/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Premium Patient Acquisition Guide PDF (new tab)">View Resource <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="resource-card">
+            <span>08 / Artificial Intelligence</span>
+            <h3>AI Growth for Med Spas™</h3>
+            <p>Coming soon: a practical look at where carefully designed AI workflows may support content, inquiries and follow-up without replacing human care.</p>
+            <div class="coming-soon">Coming Soon</div>
+          </article>
+        </div>
+        <p class="library-note">Free educational tools; not medical, legal or financial advice. Adapt any patient communication or data-handling workflow to the rules in your location.</p>
+      </section>
+
+      <!-- 04 — PHILOSOPHY -->
+      <section class="resources-philosophy reveal" aria-labelledby="philosophy-title">
+        <div class="resources-philosophy-image">
+          <img src="images/resources-premium-workbook.webp" alt="Premium Mirel growth workbook and editorial planning materials" width="720" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="resources-philosophy-copy">
+          <p class="eyebrow">The Mirel Philosophy</p>
+          <h2 id="philosophy-title">Attention starts the conversation.</h2>
+          <h3>Confidence moves it forward.</h3>
+          <div class="resources-line" aria-hidden="true"></div>
+          <p>Patients often make sense of a clinic long before they speak to its team. Every clear answer, credible image and thoughtful next step helps shape that first impression.</p>
+          <p>Our resources are built around honest patient psychology: reduce confusion, communicate value and make informed decisions easier—not manufacture urgency.</p>
+          <p>Whether your clinic is in the United States, United Kingdom, Australia, Canada or New Zealand, the central question remains useful: where is your current patient journey creating avoidable friction?</p>
+        </div>
+      </section>
+
+      <!-- 05 — START HERE -->
+      <section class="start-here reveal" id="start-here" aria-labelledby="start-title">
+        <div class="start-copy">
+          <p class="eyebrow">Start Here</p>
+          <h2 id="start-title">Not sure which resource to open first?</h2>
+          <p>Choose the challenge that sounds most familiar. You don't need to complete every workbook before finding your first useful insight.</p>
+        </div>
+        <div class="start-grid">
+          <article>
+            <span>01</span>
+            <h3>You're attracting attention, but your clinic doesn't stand out.</h3>
+            <p>Start with the Premium Positioning Intelligence System™ to clarify what differentiates your clinic.</p>
+            <a href="https://drive.google.com/file/d/1cwCr-FxpF0bA13hR2TLD1CgzhTIcNL_o/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Premium Positioning Intelligence System PDF (new tab)">Open Positioning System <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Patients inquire, but bookings are inconsistent.</h3>
+            <p>Start with the Consultation Funnel Guide™ and trace the journey from first contact to confirmed consultation.</p>
+            <a href="https://drive.google.com/file/d/16POfEs__rBQfg01RWCQ3I0vcI9d4XxQz/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Consultation Funnel Guide PDF (new tab)">Open Funnel Guide <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>You want more of the right patients, not just more leads.</h3>
+            <p>Start with The Premium Patient Acquisition Guide™ to think more carefully about audience fit and acquisition.</p>
+            <a href="https://drive.google.com/file/d/10qo6kdoM4BHWob_d0uI5T9f-P0nz0QHE/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Premium Patient Acquisition Guide PDF (new tab)">Open Acquisition Guide <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Your content gets seen, but rarely starts a consultation.</h3>
+            <p>Start with the Content-to-Consultation Planner™ to connect useful content with patient questions and intent.</p>
+            <a href="https://drive.google.com/file/d/1VzG0RnqmnADID40Xm1R12dGeFu69Wsg9/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Content-to-Consultation Planner PDF (new tab)">Open Content Planner <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <!-- 06 — FINAL CTA -->
+      <section class="resources-final-cta reveal" aria-labelledby="final-title">
+        <div class="resources-final-bg" aria-hidden="true">
+          <img src="images/resources-growth-planning.webp" alt="" width="720" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="resources-final-overlay">
+          <p class="eyebrow">When You're Ready for the Next Step</p>
+          <h2 id="final-title">Resources create clarity. Systems turn insights into action.</h2>
+          <p>If a workbook exposes friction in your inquiry, booking or follow-up journey, a Med Spa Growth Strategy Review can help you decide what deserves attention first. We begin with diagnosis, not a generic marketing package.</p>
+          <div class="hero-buttons">
+            <a href="systems.html" class="btn btn-dark btn-large">Explore the Mirel System</a>
+            <a href="book.html#booking" class="btn btn-light btn-large">Book a Growth Strategy Review</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="index.html" aria-label="Mirel Marketing Home"><span>MIRÈL</span><small>MARKETING</small></a>
+      <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
+      <nav class="footer-social" aria-label="Mirel social media">
+        <a href="https://www.instagram.com/mirelpartners/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.youtube.com/@mirelpartners" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.linkedin.com/company/mirelmarketing/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+    </footer>
+  </div>
+
+  <script>
+    (() => {
+      'use strict';
+      const nav = document.querySelector('[data-nav]');
+      const toggle = document.querySelector('[data-menu-toggle]');
+      const mobileMenu = document.querySelector('[data-mobile-menu]');
+      let lastScroll = window.scrollY;
+
+      function setMenu(open) {
+        if (!mobileMenu || !toggle) return;
+        mobileMenu.classList.toggle('open', open);
+        mobileMenu.toggleAttribute('inert', !open);
+        mobileMenu.setAttribute('aria-hidden', String(!open));
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+        document.body.classList.toggle('menu-open', open);
+        if (open) nav?.classList.remove('hide');
+      }
+      toggle?.addEventListener('click', event => {
+        event.stopPropagation();
+        setMenu(!mobileMenu.classList.contains('open'));
+        if (mobileMenu.classList.contains('open')) mobileMenu.querySelector('a')?.focus();
+      });
+      mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+      document.addEventListener('click', event => {
+        if (mobileMenu?.classList.contains('open') && !mobileMenu.contains(event.target) && !toggle?.contains(event.target)) setMenu(false);
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && mobileMenu?.classList.contains('open')) { setMenu(false); toggle?.focus(); }
+      });
+      window.addEventListener('resize', () => { if (window.innerWidth > 760) setMenu(false); }, { passive:true });
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        nav?.classList.toggle('scrolled', y > 16);
+        if (y > lastScroll && y > 120 && !mobileMenu?.classList.contains('open')) nav?.classList.add('hide');
+        else nav?.classList.remove('hide');
+        lastScroll = y;
+      }, { passive:true });
+
+      const revealElements = document.querySelectorAll('.reveal');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if ('IntersectionObserver' in window && !reduceMotion) {
+        const observer = new IntersectionObserver((entries, io) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
+          });
+        }, { threshold:0.04, rootMargin:'0px 0px 120px 0px' });
+        revealElements.forEach(element => observer.observe(element));
+      } else {
+        revealElements.forEach(element => element.classList.add('visible'));
+      }
+    })();
+  </script>
 </body>
-
 </html>
