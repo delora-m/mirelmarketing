@@ -1473,3 +1473,45 @@ img{
 .footer a[href="contact.html"]{
   display:none !important;
 }
+
+
+/* ===================================================
+   MIREL PERFORMANCE REFINEMENT — OCTOBER 2026
+   Faster first paint without changing page layouts.
+=================================================== */
+
+/* Never hide the initial hero behind a reveal animation. */
+
+.hero.reveal,
+.book-hero.reveal,
+.results-hero.reveal,
+.about-hero .reveal,
+.services-hero .reveal,
+.systems-hero .reveal,
+.resources-hero .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* Keep subtle below-the-fold movement,
+   but avoid the original near-one-second delay. */
+
+.reveal {
+  transition-duration: .3s !important;
+}
+
+/* Honor reduced-motion preferences. */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .reveal.visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
