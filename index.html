@@ -3,99 +3,56 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
-    Mirel Marketing | Luxury Growth Systems for Med Spas
-  </title>
+  <title>Mirel Marketing | Luxury Growth Systems for Med Spas</title>
 
   <meta
     name="description"
     content="Mirel Marketing builds luxury growth systems for med spas through positioning, paid advertising, conversion-focused landing pages, and automated follow-up."
   >
 
-  <meta
-    name="robots"
-    content="index, follow, max-image-preview:large"
-  >
-
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#fbf7f1">
 
-  <link
-    rel="canonical"
-    href="https://mirelmarketing.com/"
-  >
-
-  <!-- OPEN GRAPH -->
+  <link rel="canonical" href="https://mirelmarketing.com/">
 
   <meta
     property="og:title"
     content="Mirel Marketing | Luxury Med Spa Growth Systems"
   >
-
   <meta
     property="og:description"
     content="Positioning aesthetics clinics to feel premium, trusted, and fully booked."
   >
-
   <meta property="og:type" content="website">
-
-  <meta
-    property="og:url"
-    content="https://mirelmarketing.com/"
-  >
-
-  <meta
-    property="og:site_name"
-    content="Mirel Marketing"
-  >
-
+  <meta property="og:url" content="https://mirelmarketing.com/">
+  <meta property="og:site_name" content="Mirel Marketing">
   <meta
     property="og:image"
     content="https://mirelmarketing.com/images/hero-face.webp"
   >
 
-  <!-- TWITTER / SOCIAL SHARING -->
-
   <meta name="twitter:card" content="summary_large_image">
-
   <meta
     name="twitter:title"
     content="Mirel Marketing | Luxury Growth Systems for Med Spas"
   >
-
   <meta
     name="twitter:description"
     content="Luxury positioning, patient trust, and thoughtful growth systems for premium med spas."
   >
-
   <meta
     name="twitter:image"
     content="https://mirelmarketing.com/images/hero-face.webp"
   >
-
-  <!-- FAVICON -->
 
   <link
     rel="icon"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231d0f0c'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-size='62' text-anchor='middle' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E"
   >
 
-  <!--
-    FONTS
-
-    The original Cormorant Garamond and Inter font
-    files are retained.
-
-    These URLs were checked against Google's
-    font stylesheet.
-
-    Only font delivery is optimized.
-    The font families are not replaced.
-  -->
+  <!-- ORIGINAL FONT PRELOADS -->
 
   <link
     rel="preconnect"
@@ -128,26 +85,11 @@
     crossorigin
   >
 
-  <!--
-    ORIGINAL MIREL STYLESHEET
-
-    This stylesheet contains the original:
-    - Hero gradient
-    - Decorative diagonal line
-    - All image sizes and positioning
-    - Typography
-    - Spacing
-    - Responsive layout
-  -->
+  <!-- ORIGINAL MIREL CSS -->
 
   <link rel="stylesheet" href="style.css?v=4">
 
-  <!--
-    HERO IMAGE PRELOAD
-
-    The original image remains a CSS background.
-    It is preloaded on desktop and tablet layouts.
-  -->
+  <!-- HERO WEBP PRELOAD -->
 
   <link
     rel="preload"
@@ -225,14 +167,6 @@
     document.documentElement.classList.add('js');
   </script>
 
-  <!--
-    HOMEPAGE-ONLY ENHANCEMENTS
-
-    Original styles are not overwritten.
-    New rules apply to technical features and
-    the newly added international section.
-  -->
-
   <style>
 
     /* ORIGINAL FONT FILES */
@@ -242,7 +176,6 @@
       font-style: normal;
       font-weight: 400 600;
       font-display: swap;
-
       src: url(
         'https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2'
       ) format('woff2');
@@ -253,7 +186,6 @@
       font-style: italic;
       font-weight: 400 500;
       font-display: swap;
-
       src: url(
         'https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2'
       ) format('woff2');
@@ -264,7 +196,6 @@
       font-style: normal;
       font-weight: 300 700;
       font-display: swap;
-
       src: url(
         'https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2'
       ) format('woff2');
@@ -304,11 +235,63 @@
           rgba(29,15,12,.70),
           rgba(29,15,12,.80)
         ) !important;
-
       background-color: #1d0f0c;
     }
 
-    /* STATISTIC SOURCE */
+    /* ==========================================
+       REVISION 1
+       BROWN AUTHORITY STRIP TEXT ALIGNMENT
+       Original background and section preserved.
+    ========================================== */
+
+    .authority-strip {
+      grid-template-columns: .76fr 1.14fr 1fr;
+      gap: 38px;
+    }
+
+    .authority-strip > p {
+      max-width: 265px;
+      line-height: 1.85;
+    }
+
+    .authority-strip > strong {
+      max-width: 510px;
+      line-height: 1.06;
+    }
+
+    .authority-strip > span {
+      max-width: 450px;
+      line-height: 1.85;
+      padding-left: 29px;
+    }
+
+    /* ==========================================
+       REVISION 2
+       LARGER WHY MIREL TITLE
+    ========================================== */
+
+    .why > .section-title {
+      font-size: clamp(50px, 4.25vw, 66px);
+    }
+
+    /* ==========================================
+       REVISION 3
+       THREE IMAGE EDITORIAL SHOWCASE
+       More breathing room for the text column.
+    ========================================== */
+
+    .editorial-showcase {
+      grid-template-columns: 410px 1fr;
+    }
+
+    .editorial-showcase .lookbook-grid {
+      grid-template-columns: 1.25fr 1fr 1fr;
+    }
+
+    /* ==========================================
+       REVISION 4
+       METRIC SOURCE — ORIGINAL
+    ========================================== */
 
     .metric-grid .metric-citation {
       display: inline;
@@ -316,7 +299,26 @@
       text-underline-offset: 3px;
     }
 
-    /* SOCIAL LINKS — ORIGINAL FOOTER GRID PRESERVED */
+    /* ==========================================
+       REVISION 5
+       REMOVE INTERNATIONAL DIVIDER
+    ========================================== */
+
+    .market-note-right {
+      border-left: 0;
+      padding-left: 0;
+    }
+
+    /* ==========================================
+       REVISION 6
+       FINAL CTA — SHOW MORE BACKGROUND IMAGE
+    ========================================== */
+
+    .final-cta {
+      min-height: 460px;
+    }
+
+    /* SOCIAL LINKS — ORIGINAL FOOTER */
 
     .footer-social {
       display: flex;
@@ -334,7 +336,7 @@
       white-space: nowrap;
     }
 
-    /* NEW INTERNATIONAL EDITORIAL SECTION */
+    /* INTERNATIONAL EDITORIAL SECTION */
 
     .market-note {
       position: relative;
@@ -379,7 +381,7 @@
       max-width: 570px;
       font-family: var(--serif);
       font-weight: 500;
-      font-size: clamp(39px,3.2vw,54px);
+      font-size: clamp(39px, 3.2vw, 54px);
       line-height: 1.02;
       letter-spacing: -.035em;
       color: var(--espresso-deep);
@@ -388,11 +390,6 @@
     .market-note h2 em {
       font-weight: 400;
       color: var(--rose);
-    }
-
-    .market-note-right {
-      padding-left: 35px;
-      border-left: 1px solid rgba(62,39,35,.16);
     }
 
     .market-note-right p {
@@ -428,6 +425,14 @@
 
     @media (max-width:1180px) {
 
+      .authority-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .editorial-showcase {
+        grid-template-columns: 1fr;
+      }
+
       .market-note {
         grid-template-columns: 1fr;
         gap: 27px;
@@ -444,6 +449,26 @@
     /* MOBILE */
 
     @media (max-width:760px) {
+
+      .authority-strip {
+        gap: 21px;
+      }
+
+      .authority-strip > span {
+        padding-left: 0;
+      }
+
+      .why > .section-title {
+        font-size: clamp(40px, 9.5vw, 50px);
+      }
+
+      .editorial-showcase .lookbook-grid {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+      }
+
+      .final-cta {
+        min-height: 410px;
+      }
 
       .market-note {
         padding: 46px 22px;
@@ -619,9 +644,7 @@
 
     <main id="main-content">
 
-      <!-- =================================================
-           HERO — ORIGINAL DESIGN & COPY
-      ================================================== -->
+      <!-- HERO -->
 
       <section class="hero reveal">
 
@@ -669,8 +692,6 @@
 
         </div>
 
-        <!-- ORIGINAL THREE-IMAGE COLLAGE -->
-
         <div
           class="hero-editorial"
           aria-label="Editorial luxury brand collage"
@@ -696,9 +717,7 @@
 
       </section>
 
-      <!-- =================================================
-           AUTHORITY STRIP — ORIGINAL
-      ================================================== -->
+      <!-- BROWN AUTHORITY SECTION -->
 
       <section class="authority-strip reveal">
 
@@ -716,9 +735,7 @@
 
       </section>
 
-      <!-- =================================================
-           WHY MIREL — ORIGINAL
-      ================================================== -->
+      <!-- WHY MIREL -->
 
       <section class="why reveal">
 
@@ -731,7 +748,6 @@
           <article>
 
             <span>01</span>
-
             <h3>Positioning</h3>
 
             <p>
@@ -743,7 +759,6 @@
           <article>
 
             <span>02</span>
-
             <h3>Conversion</h3>
 
             <p>
@@ -755,7 +770,6 @@
           <article>
 
             <span>03</span>
-
             <h3>Nurture</h3>
 
             <p>
@@ -768,9 +782,7 @@
 
       </section>
 
-      <!-- =================================================
-           THE VISUAL STANDARD — ORIGINAL FOUR IMAGES
-      ================================================== -->
+      <!-- VISUAL STANDARD: THREE IMAGES -->
 
       <section class="editorial-showcase reveal">
 
@@ -811,18 +823,11 @@
             data-lazy-bg
           ></div>
 
-          <div
-            class="lookbook-img img-serum"
-            data-lazy-bg
-          ></div>
-
         </div>
 
       </section>
 
-      <!-- =================================================
-           CONVERSION MAP — ORIGINAL
-      ================================================== -->
+      <!-- CONVERSION MAP -->
 
       <section class="conversion-map reveal">
 
@@ -845,45 +850,54 @@
         <div class="map-steps">
 
           <article>
+
             <span>01</span>
             <h3>Attract</h3>
+
             <p>
               Premium creative and paid ads that speak to desire, safety, and transformation.
             </p>
+
           </article>
 
           <article>
+
             <span>02</span>
             <h3>Reassure</h3>
+
             <p>
               Landing pages that remove doubt, clarify value, and make the next step obvious.
             </p>
+
           </article>
 
           <article>
+
             <span>03</span>
             <h3>Nurture</h3>
+
             <p>
               Email/SMS follow-up so interest becomes consultation instead of a forgotten lead.
             </p>
+
           </article>
 
           <article>
+
             <span>04</span>
             <h3>Retain</h3>
+
             <p>
               Brand consistency that helps patients return, refer, and trust higher-value offers.
             </p>
+
           </article>
 
         </div>
 
       </section>
 
-      <!-- =================================================
-           METRICS — VERIFIED GLOBAL AUTHORITY
-           ORIGINAL FOUR-COLUMN LAYOUT
-      ================================================== -->
+      <!-- METRICS -->
 
       <section class="metrics reveal">
 
@@ -939,7 +953,7 @@
             <strong>3</strong>
 
             <span>
-              Core systems: ads, pages, follow-up
+              A considered path from attention to consultation
             </span>
 
           </article>
@@ -949,7 +963,7 @@
             <strong>Premium</strong>
 
             <span>
-              Positioning before promotion
+              A brand presence worth choosing
             </span>
 
           </article>
@@ -958,11 +972,7 @@
 
       </section>
 
-      <!-- =================================================
-           NEW INTERNATIONAL EDITORIAL SECTION
-
-           No existing section's layout is changed.
-      ================================================== -->
+      <!-- INTERNATIONAL MARKETS -->
 
       <section
         class="market-note reveal"
@@ -1005,9 +1015,7 @@
 
       </section>
 
-      <!-- =================================================
-           THE DIFFERENCE — ORIGINAL
-      ================================================== -->
+      <!-- THE DIFFERENCE -->
 
       <section class="difference reveal">
 
@@ -1050,17 +1058,11 @@
             About Mirel <span>→</span>
           </a>
 
-          <div class="seal" aria-hidden="true">
-            M
-          </div>
-
         </div>
 
       </section>
 
-      <!-- =================================================
-           QUALIFICATION — ORIGINAL
-      ================================================== -->
+      <!-- QUALIFICATION -->
 
       <section class="qualification reveal">
 
@@ -1090,9 +1092,7 @@
 
       </section>
 
-      <!-- =================================================
-           FINAL CTA — ORIGINAL
-      ================================================== -->
+      <!-- FINAL CTA -->
 
       <section
         class="final-cta reveal"
@@ -1123,9 +1123,7 @@
 
     </main>
 
-    <!-- =====================================================
-         FOOTER — ORIGINAL STRUCTURE + SOCIAL PROFILES
-    ====================================================== -->
+    <!-- FOOTER -->
 
     <footer class="footer">
 
@@ -1134,10 +1132,8 @@
         href="index.html"
         aria-label="Mirel Marketing Home"
       >
-
         <span>MIRÈL</span>
         <small>MARKETING</small>
-
       </a>
 
       <a href="mailto:delora@mirelmarketing.com">
@@ -1187,17 +1183,10 @@
 
   </div>
 
-  <!-- =====================================================
-       JAVASCRIPT
-
-       Background loading, animations, navigation,
-       accessibility and mobile interaction.
-  ====================================================== -->
+  <!-- ORIGINAL INTERACTION AND PERFORMANCE SCRIPT -->
 
   <script>
     (() => {
-
-      /* BACKGROUND IMAGE LAZY LOADING */
 
       const deferred = document.querySelectorAll(
         '[data-lazy-bg]'
@@ -1213,7 +1202,6 @@
               if (!entry.isIntersecting) return;
 
               entry.target.classList.add('bg-loaded');
-
               observer.unobserve(entry.target);
 
             });
@@ -1236,8 +1224,6 @@
         });
 
       }
-
-      /* ORIGINAL REVEAL ANIMATIONS */
 
       const reveals = document.querySelectorAll('.reveal');
 
@@ -1264,7 +1250,6 @@
               if (!entry.isIntersecting) return;
 
               entry.target.classList.add('visible');
-
               observer.unobserve(entry.target);
 
             });
@@ -1281,8 +1266,6 @@
 
       }
 
-      /* NAVIGATION */
-
       const nav = document.querySelector('[data-nav]');
 
       const toggle = document.querySelector(
@@ -1294,8 +1277,6 @@
       );
 
       let lastScroll = window.scrollY;
-
-      /* MOBILE MENU STATE */
 
       function setMenu(open) {
 
@@ -1331,8 +1312,6 @@
 
       }
 
-      /* HAMBURGER BUTTON */
-
       toggle?.addEventListener('click', event => {
 
         event.stopPropagation();
@@ -1343,13 +1322,9 @@
 
       });
 
-      /* PREVENT IMMEDIATE OUTSIDE-CLOSE */
-
       menu?.addEventListener('click', event => {
         event.stopPropagation();
       });
-
-      /* CLOSE AFTER NAVIGATION */
 
       menu?.querySelectorAll('a').forEach(link => {
 
@@ -1359,13 +1334,9 @@
 
       });
 
-      /* CLOSE ON OUTSIDE CLICK */
-
       document.addEventListener('click', () => {
         setMenu(false);
       });
-
-      /* KEYBOARD ACCESSIBILITY */
 
       document.addEventListener('keydown', event => {
 
@@ -1375,14 +1346,11 @@
         ) {
 
           setMenu(false);
-
           toggle?.focus();
 
         }
 
       });
-
-      /* CLOSE MENU WHEN LEAVING MOBILE VIEW */
 
       window.addEventListener('resize', () => {
 
@@ -1394,8 +1362,6 @@
         passive: true
       });
 
-      /* SCROLL NAVIGATION */
-
       window.addEventListener('scroll', () => {
 
         const current = window.scrollY;
@@ -1406,7 +1372,6 @@
         );
 
         const scrollingDown = current > lastScroll;
-
         const menuOpen = menu?.classList.contains('open');
 
         if (
