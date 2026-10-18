@@ -1515,3 +1515,102 @@ img{
     transition: none !important;
   }
 }
+
+
+/* ==========================================
+   MIREL — UNIFIED MOBILE FOOTER
+   Home page layout reference
+   Centralized footer styling
+========================================== */
+
+@media (max-width: 760px) {
+
+  #mirel-site-footer {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: auto 1px auto auto !important;
+    height: auto !important;
+    padding: 34px 22px 38px !important;
+    gap: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    background: #fbf7f1 !important;
+    font-size: 12px !important;
+    color: var(--text-soft) !important;
+  }
+
+  #mirel-site-footer > .brand {
+    display: none !important;
+  }
+
+  #mirel-site-footer > a {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 16px 8px !important;
+    border-bottom: none !important;
+  }
+
+  #mirel-site-footer > a[href^="mailto:"] {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  #mirel-site-footer > .footer-social {
+    display: flex !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 0 14px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: none !important;
+  }
+
+  #mirel-site-footer .footer-social a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 44px !important;
+    padding: 10px 2px !important;
+    font-size: 11px !important;
+    white-space: nowrap !important;
+    border-bottom: none !important;
+  }
+
+  #mirel-site-footer::before {
+    content: "";
+    display: block;
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    width: 100%;
+    height: 1px;
+    background: rgba(62, 39, 35, .10);
+  }
+
+  #mirel-site-footer > a[href="privacy-policy.html"] {
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+  }
+
+  #mirel-site-footer > a[href="terms-and-conditions.html"] {
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+  }
+
+  #mirel-site-footer::after {
+    content: "© 2026 Mirel Marketing. All rights reserved.";
+    grid-column: 1 / -1 !important;
+    grid-row: 4 !important;
+    margin-top: 18px !important;
+    padding-top: 2px !important;
+    font-size: 11px !important;
+    color: var(--text-soft) !important;
+  }
+
+}
+
