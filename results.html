@@ -89,7 +89,7 @@
 
   <!-- SHARED STYLESHEET -->
 
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=8">
 
   <!-- PRIMARY IMAGE PRELOAD -->
 
@@ -1340,32 +1340,6 @@
         text-align: center;
       }
 
-      /* SAME FOOTER LAYOUT AS HOMEPAGE */
-
-      .results-page .footer-social {
-        justify-content: flex-start;
-        gap: 0 14px;
-        border-bottom: none;
-      }
-
-      .results-page .footer-social a {
-        padding: 10px 2px;
-        border-bottom: none !important;
-      }
-
-      .results-page .footer > a {
-        border-bottom: none !important;
-      }
-
-      .results-page .footer::before {
-        content: "";
-        grid-column: 1 / -1;
-        grid-row: 2;
-        width: 100%;
-        height: 1px;
-        background: rgba(62,39,35,.10);
-      }
-
       .results-page .hero-buttons {
         flex-direction: column;
         align-items: stretch;
@@ -2417,8 +2391,8 @@
          FOOTER — SAME AS HOMEPAGE
     ======================================= -->
 
-    <footer class="footer">
-
+<footer class="footer" id="mirel-site-footer">
+  
       <a
         class="brand"
         href="index.html"
