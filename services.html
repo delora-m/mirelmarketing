@@ -1,92 +1,130 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#fbf7f1">
+  <title>Med Spa Growth Services | Mirel Marketing</title>
+  <meta name="description" content="Paid advertising, patient landing pages and AI-assisted follow-up for premium med spas. Build a stronger path from patient inquiry to booking and return visits.">
+  <link rel="canonical" href="https://mirelmarketing.com/services.html">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Share previews use the existing Services hero image. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mirel Marketing">
+  <meta property="og:title" content="Med Spa Growth Services | Mirel Marketing">
+  <meta property="og:description" content="Three connected growth services: premium paid advertising, patient landing pages and thoughtful AI-assisted follow-up.">
+  <meta property="og:url" content="https://mirelmarketing.com/services.html">
+  <meta property="og:image" content="https://mirelmarketing.com/images/mirel-services-hero.webp">
+  <meta property="og:image:alt" content="Mirel Marketing med spa growth services">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Med Spa Growth Services | Mirel Marketing">
+  <meta name="twitter:description" content="Advertising, booking-page conversion and patient follow-up designed to work together.">
+  <meta name="twitter:image" content="https://mirelmarketing.com/images/mirel-services-hero.webp">
 
-  <title>Services | Mirel Marketing</title>
-
-  <meta
-    name="description"
-    content="Mirel Marketing helps med spas attract premium patients with paid ads, conversion-focused landing pages, and automated follow-up systems."
-  />
-
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231d0f0c'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-size='62' text-anchor='middle' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap">
 
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  <!-- Uses the same global stylesheet as Home/Book. -->
+  <link rel="stylesheet" href="style.css?v=6">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap"
-    rel="stylesheet"
-  >
+  <link rel="preload" as="image" href="images/mirel-services-hero.webp" type="image/webp" media="(min-width: 761px)" fetchpriority="high">
 
-  <link
-    rel="stylesheet"
-    href="style.css?v=6"
-  />
-
-
-  <!-- =====================================================
-       PERFORMANCE: PRELOAD HERO
-  ====================================================== -->
-
-  <link
-    rel="preload"
-    as="image"
-    href="images/mirel-services-hero.webp"
-    type="image/webp"
-    fetchpriority="high"
-  >
-
-
-  <!-- =====================================================
-       PERFORMANCE: ENABLE LAZY BACKGROUND SYSTEM
-  ====================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mirelmarketing.com/#organization",
+        "name": "Mirel Marketing",
+        "url": "https://mirelmarketing.com/",
+        "email": "delora@mirelmarketing.com",
+        "sameAs": [
+          "https://www.instagram.com/mirelpartners/",
+          "https://www.youtube.com/@mirelpartners",
+          "https://www.linkedin.com/company/mirelmarketing/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://mirelmarketing.com/services.html#webpage",
+        "name": "Med Spa Growth Services | Mirel Marketing",
+        "url": "https://mirelmarketing.com/services.html",
+        "about": {"@id": "https://mirelmarketing.com/services.html#services"}
+      },
+      {
+        "@type": "Service",
+        "@id": "https://mirelmarketing.com/services.html#services",
+        "name": "Med Spa Patient Growth Services",
+        "description": "Paid advertising, patient landing pages, and AI-assisted patient inquiry follow-up with human oversight.",
+        "provider": {"@id": "https://mirelmarketing.com/#organization"},
+        "areaServed": [
+          {"@type":"Country","name":"United States"},
+          {"@type":"Country","name":"United Kingdom"},
+          {"@type":"Country","name":"Australia"},
+          {"@type":"Country","name":"Canada"},
+          {"@type":"Country","name":"New Zealand"}
+        ],
+        "hasOfferCatalog": {
+          "@type":"OfferCatalog",
+          "name":"Growth services",
+          "itemListElement":[
+            {"@type":"OfferCatalog","name":"Meta and Google Ads"},
+            {"@type":"OfferCatalog","name":"Patient Landing Pages"},
+            {"@type":"OfferCatalog","name":"Automated Follow-Up"}
+          ]
+        }
+      }
+    ]
+  }
+  </script>
 
   <script>
     document.documentElement.classList.add('js-lazy-bg');
   </script>
 
-
   <style>
+    /* SERVICES PAGE
+       Original six sections, image assets, grids,
+       typography and breakpoints retained.
+       Gradients elevated to match Home. */
 
-
-    /* =====================================================
-       HERO
-    ====================================================== */
-
-    .services-hero{
+    .services-hero {
       min-height:650px;
       display:grid;
       grid-template-columns:.9fr 1.1fr;
-      background:linear-gradient(
-        110deg,
-        #fbf7f1 0%,
-        #fbf7f1 46%,
-        #efe3dc 100%
-      );
-      border-bottom:1px solid var(--line);
+      position:relative;
       overflow:hidden;
+      border-bottom:1px solid var(--line);
+      background:
+        radial-gradient(
+          circle at 9% 14%,
+          rgba(242,214,218,.42),
+          transparent 37%
+        ),
+        linear-gradient(
+          110deg,
+          #fbf7f1 0%,
+          #faf5f0 46%,
+          #efe0d9 100%
+        );
     }
 
-
-    .services-hero-copy{
+    .services-hero-copy {
       padding:96px 72px;
       display:flex;
       flex-direction:column;
       justify-content:center;
       position:relative;
       z-index:2;
+      min-width:0;
     }
 
-
-    .services-hero h1{
+    .services-hero h1 {
       font-family:var(--serif);
       font-size:74px;
       line-height:.98;
@@ -97,15 +135,13 @@
       max-width:720px;
     }
 
-
-    .services-hero h1 em{
+    .services-hero h1 em {
       color:var(--rose);
       font-style:italic;
       font-weight:400;
     }
 
-
-    .services-hero p:not(.eyebrow){
+    .services-hero-copy > p:not(.eyebrow) {
       font-size:16px;
       line-height:1.9;
       color:var(--text-soft);
@@ -113,12 +149,9 @@
       margin:0 0 34px;
     }
 
-
-    /* HERO = WEBP + EAGER */
-
-    .services-hero-image{
+    .services-hero-image {
       min-height:650px;
-
+      position:relative;
       background:
         linear-gradient(
           90deg,
@@ -128,12 +161,9 @@
         ),
         url('images/mirel-services-hero.webp')
         center/cover no-repeat;
-
-      position:relative;
     }
 
-
-    .hero-seal{
+    .hero-seal {
       position:absolute;
       top:72px;
       right:70px;
@@ -144,7 +174,7 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      color:white;
+      color:#fff;
       font-family:var(--serif);
       font-size:58px;
       font-weight:500;
@@ -152,36 +182,35 @@
       background:rgba(62,39,35,.12);
     }
 
+    /* SERVICES OVERVIEW */
 
-
-    /* =====================================================
-       SERVICES OVERVIEW
-    ====================================================== */
-
-    .services-overview{
+    .services-overview {
       padding:88px 72px 96px;
-      background:#fbf7f1;
       border-bottom:1px solid var(--line);
+      background:linear-gradient(
+        155deg,
+        #fffaf6 0%,
+        #fbf7f1 55%,
+        #f7eeeb 100%
+      );
     }
 
-
-    .services-grid{
+    .services-grid {
       display:grid;
-      grid-template-columns:repeat(3,1fr);
+      grid-template-columns:repeat(3,minmax(0,1fr));
       gap:0;
       border-left:1px solid var(--line);
       max-width:1280px;
       margin:0 auto;
     }
 
-
-    .service-card{
+    .service-card {
       padding:18px 52px 8px;
       border-right:1px solid var(--line);
+      min-width:0;
     }
 
-
-    .service-icon{
+    .service-icon {
       width:42px;
       height:42px;
       margin-bottom:48px;
@@ -189,8 +218,7 @@
       opacity:.75;
     }
 
-
-    .service-number{
+    .service-number {
       display:block;
       font-family:var(--serif);
       font-size:18px;
@@ -198,8 +226,7 @@
       margin-bottom:24px;
     }
 
-
-    .service-card h2{
+    .service-card h2 {
       font-family:var(--serif);
       font-size:39px;
       line-height:1.02;
@@ -209,33 +236,29 @@
       margin:0 0 14px;
     }
 
-
-    .service-kicker{
+    .service-kicker {
       text-transform:uppercase;
       letter-spacing:.28em;
       font-size:10px;
       font-weight:650;
       color:var(--espresso);
-      margin-bottom:24px;
+      margin:0 0 24px;
     }
 
-
-    .service-card p{
+    .service-card p {
       font-size:14px;
       line-height:1.8;
       color:var(--text-soft);
       margin:0 0 26px;
     }
 
-
-    .service-card ul{
+    .service-card ul {
       list-style:none;
       padding:0;
       margin:0 0 34px;
     }
 
-
-    .service-card li{
+    .service-card li {
       font-size:13px;
       line-height:1.8;
       color:var(--text-soft);
@@ -245,44 +268,43 @@
       align-items:flex-start;
     }
 
-
-    .service-card li:before{
+    .service-card li::before {
       content:'✓';
       color:var(--rose);
       font-size:13px;
       margin-top:1px;
+      flex:none;
     }
 
-
-    .service-card .btn{
+    .service-card .btn {
       min-width:136px;
       justify-content:center;
     }
 
+    /* RESULT SECTION */
 
-
-    /* =====================================================
-       RESULT SECTION
-    ====================================================== */
-
-    .result-section{
+    .result-section {
       display:grid;
       grid-template-columns:1fr 1.05fr;
       gap:68px;
       padding:86px 72px;
       align-items:center;
-      background:linear-gradient(
-        135deg,
-        #f4ebe5,
-        #fbf7f1 58%
-      );
       border-bottom:1px solid var(--line);
+      background:
+        radial-gradient(
+          circle at 92% 12%,
+          rgba(242,214,218,.34),
+          transparent 37%
+        ),
+        linear-gradient(
+          135deg,
+          #f4eae5 0%,
+          #fbf7f1 61%
+        );
     }
 
-
-    .result-image{
+    .result-image {
       min-height:330px;
-
       background:
         linear-gradient(
           rgba(29,15,12,.04),
@@ -290,13 +312,15 @@
         ),
         url('images/services-mirel-system.webp')
         center/cover no-repeat;
-
       box-shadow:
         inset 0 0 0 1px rgba(62,39,35,.12);
     }
 
+    .result-copy {
+      min-width:0;
+    }
 
-    .result-copy h2{
+    .result-copy h2 {
       font-family:var(--serif);
       font-size:52px;
       line-height:1.04;
@@ -307,8 +331,7 @@
       max-width:720px;
     }
 
-
-    .result-copy p{
+    .result-copy > p:not(.eyebrow) {
       font-size:15px;
       line-height:1.85;
       color:var(--text-soft);
@@ -316,27 +339,41 @@
       margin:0 0 30px;
     }
 
-
-
-    /* =====================================================
-       SERVICE VISUALS
-    ====================================================== */
-
-    .service-visuals{
-      padding:92px 72px;
-      background:#fbf7f1;
-      border-bottom:1px solid var(--line);
+    .service-research-note {
+      max-width:600px;
+      margin:0 0 28px;
+      padding:6px 0 6px 15px;
+      border-left:2px solid rgba(169,104,109,.60);
+      font-size:12px;
+      line-height:1.75;
+      color:var(--text-soft);
     }
 
+    .service-research-note a {
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
 
-    .service-visuals-header{
+    /* SERVICE VISUALS */
+
+    .service-visuals {
+      padding:92px 72px;
+      border-bottom:1px solid var(--line);
+      background:linear-gradient(
+        120deg,
+        #fbf7f1 0%,
+        #fffaf7 55%,
+        #f6eeea 100%
+      );
+    }
+
+    .service-visuals-header {
       text-align:center;
       max-width:760px;
       margin:0 auto 64px;
     }
 
-
-    .service-visuals-header h2{
+    .service-visuals-header h2 {
       font-family:var(--serif);
       font-size:50px;
       line-height:1.05;
@@ -346,25 +383,22 @@
       margin:0 0 20px;
     }
 
-
-    .service-visuals-header p{
+    .service-visuals-header > p:not(.eyebrow) {
       font-size:15px;
       line-height:1.85;
       color:var(--text-soft);
       margin:0;
     }
 
-
-    .visual-grid{
+    .visual-grid {
       display:grid;
-      grid-template-columns:repeat(3,1fr);
+      grid-template-columns:repeat(3,minmax(0,1fr));
       gap:18px;
       max-width:1220px;
       margin:0 auto;
     }
 
-
-    .visual-card{
+    .visual-card {
       min-height:390px;
       position:relative;
       background-size:cover;
@@ -372,22 +406,20 @@
       overflow:hidden;
     }
 
-
-    .visual-card:after{
+    .visual-card::after {
       content:'';
       position:absolute;
       inset:0;
-
       background:
         linear-gradient(
           180deg,
           rgba(29,15,12,.05),
           rgba(29,15,12,.48)
         );
+      pointer-events:none;
     }
 
-
-    .visual-card-content{
+    .visual-card-content {
       position:absolute;
       left:28px;
       right:28px;
@@ -396,8 +428,7 @@
       color:white;
     }
 
-
-    .visual-card-content span{
+    .visual-card-content span {
       display:block;
       font-size:10px;
       letter-spacing:.28em;
@@ -406,8 +437,7 @@
       opacity:.86;
     }
 
-
-    .visual-card-content h3{
+    .visual-card-content h3 {
       font-family:var(--serif);
       font-size:32px;
       line-height:1.05;
@@ -415,43 +445,41 @@
       margin:0;
     }
 
-
-    .visual-ads{
+    .visual-ads {
       background-image:
         url('images/services-mirel-paid-ads-system.webp');
     }
 
-
-    .visual-pages{
+    .visual-pages {
       background-image:
         url('images/services-mirel-landing-page-system.webp');
     }
 
-
-    .visual-followup{
+    .visual-followup {
       background-image:
         url('images/services-mirel-follow-up-system.webp');
     }
 
+    /* PROCESS SECTION */
 
-
-    /* =====================================================
-       PROCESS
-    ====================================================== */
-
-    .process-section{
+    .process-section {
       padding:90px 72px 94px;
-      background:linear-gradient(
-        135deg,
-        #fbf7f1,
-        #f4ebe5
-      );
       border-bottom:1px solid var(--line);
       text-align:center;
+      background:
+        radial-gradient(
+          circle at 5% 18%,
+          rgba(242,214,218,.28),
+          transparent 40%
+        ),
+        linear-gradient(
+          135deg,
+          #fbf7f1 0%,
+          #f3e8e3 100%
+        );
     }
 
-
-    .process-section h2{
+    .process-section h2 {
       font-family:var(--serif);
       font-size:46px;
       line-height:1.05;
@@ -461,24 +489,22 @@
       margin:0 0 68px;
     }
 
-
-    .process-grid{
+    .process-grid {
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+      grid-template-columns:repeat(4,minmax(0,1fr));
       max-width:1240px;
       margin:0 auto;
       border-left:1px solid var(--line);
     }
 
-
-    .process-step{
+    .process-step {
       text-align:left;
       padding:0 36px;
       border-right:1px solid var(--line);
+      min-width:0;
     }
 
-
-    .process-step span{
+    .process-step span {
       display:block;
       font-family:var(--serif);
       font-size:22px;
@@ -486,8 +512,7 @@
       margin-bottom:18px;
     }
 
-
-    .process-step h3{
+    .process-step h3 {
       text-transform:uppercase;
       letter-spacing:.32em;
       font-size:11px;
@@ -495,31 +520,28 @@
       margin:0 0 18px;
     }
 
-
-    .process-step p{
+    .process-step p {
       font-size:13px;
       line-height:1.75;
       color:var(--text-soft);
       margin:0;
     }
 
+    /* FINAL CTA */
 
-
-    /* =====================================================
-       FINAL CTA
-    ====================================================== */
-
-    .services-final{
+    .services-final {
       display:grid;
       grid-template-columns:.95fr 1.05fr;
-      background:var(--espresso-deep);
+      background:linear-gradient(
+        120deg,
+        #1d0f0c,
+        #3e2723
+      );
       color:white;
     }
 
-
-    .services-final-image{
+    .services-final-image {
       min-height:430px;
-
       background:
         linear-gradient(
           rgba(29,15,12,.06),
@@ -529,16 +551,15 @@
         center/cover no-repeat;
     }
 
-
-    .services-final-copy{
+    .services-final-copy {
       padding:88px 72px;
       display:flex;
       flex-direction:column;
       justify-content:center;
+      min-width:0;
     }
 
-
-    .services-final-copy h2{
+    .services-final-copy h2 {
       font-family:var(--serif);
       font-size:52px;
       line-height:1.04;
@@ -547,8 +568,7 @@
       margin:0 0 24px;
     }
 
-
-    .services-final-copy p{
+    .services-final-copy > p:not(.eyebrow) {
       color:rgba(255,255,255,.78);
       font-size:15px;
       line-height:1.85;
@@ -556,27 +576,27 @@
       margin:0 0 32px;
     }
 
-
-    .services-final-actions{
+    .services-final-actions {
       display:flex;
       gap:16px;
       flex-wrap:wrap;
     }
 
-
-    .services-final .btn-outline{
+    .services-final .btn-outline {
       color:white;
+      background:transparent;
       border-color:rgba(255,255,255,.38);
     }
 
+    .services-final .btn-outline:hover {
+      background:rgba(255,255,255,.10);
+      border-color:rgba(255,255,255,.7);
+    }
 
-
-    /* =====================================================
-       PERFORMANCE: LAZY BACKGROUND PLACEHOLDERS
-    ====================================================== */
+    /* LAZY BACKGROUND LOADING */
 
     html.js-lazy-bg
-    .result-image:not(.lazy-bg-loaded){
+    .result-image:not(.lazy-bg-loaded) {
       background-image:
         linear-gradient(
           rgba(29,15,12,.04),
@@ -584,19 +604,17 @@
         ) !important;
     }
 
-
     html.js-lazy-bg
     .visual-ads:not(.lazy-bg-loaded),
     html.js-lazy-bg
     .visual-pages:not(.lazy-bg-loaded),
     html.js-lazy-bg
-    .visual-followup:not(.lazy-bg-loaded){
+    .visual-followup:not(.lazy-bg-loaded) {
       background-image:none !important;
     }
 
-
     html.js-lazy-bg
-    .services-final-image:not(.lazy-bg-loaded){
+    .services-final-image:not(.lazy-bg-loaded) {
       background-image:
         linear-gradient(
           rgba(29,15,12,.06),
@@ -604,85 +622,115 @@
         ) !important;
     }
 
+    /* ACCESSIBILITY */
 
+    .services-page .skip-link {
+      position:fixed;
+      left:16px;
+      top:-100px;
+      z-index:10002;
+      padding:12px 18px;
+      background:#1d0f0c;
+      color:white;
+      font-size:13px;
+    }
 
-    /* =====================================================
-       RESPONSIVE
-    ====================================================== */
+    .services-page .skip-link:focus {
+      top:12px;
+    }
 
-    @media (max-width:1180px){
+    .services-page a:focus-visible,
+    .services-page button:focus-visible {
+      outline:3px solid #a9686d;
+      outline-offset:4px;
+    }
+
+    .services-page .mobile-menu:not(.open) {
+      pointer-events:none;
+    }
+
+    .services-page.menu-open {
+      overflow:hidden;
+    }
+
+    .services-final .eyebrow {
+      color:#ead8cf;
+    }
+
+    .services-final .btn-pink {
+      white-space:normal;
+      text-align:center;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:1180px) {
 
       .services-hero,
       .result-section,
-      .services-final{
+      .services-final {
         grid-template-columns:1fr;
       }
-
 
       .services-hero-copy,
       .services-overview,
       .result-section,
       .service-visuals,
       .process-section,
-      .services-final-copy{
+      .services-final-copy {
         padding-left:34px;
         padding-right:34px;
       }
 
-
       .services-grid,
       .visual-grid,
-      .process-grid{
+      .process-grid {
         grid-template-columns:1fr;
         border-left:0;
       }
 
-
       .service-card,
-      .process-step{
+      .process-step {
         border-right:0;
         border-bottom:1px solid var(--line);
         padding:38px 0;
       }
 
-
       .service-card:last-child,
-      .process-step:last-child{
+      .process-step:last-child {
         border-bottom:0;
       }
 
-
-      .service-icon{
+      .service-icon {
         margin-bottom:28px;
       }
-
     }
 
+    @media(min-width:761px) and (max-width:1180px) {
+      .services-hero h1 {
+        font-size:clamp(54px,7vw,74px);
+      }
+    }
 
+    @media(max-width:760px) {
 
-    @media (max-width:760px){
-
-      .services-hero-copy{
+      .services-hero-copy {
         padding:56px 22px 46px;
       }
 
-
-      .services-hero h1{
-        font-size:48px;
+      .services-hero h1 {
+        font-size:clamp(42px,11vw,48px);
       }
 
-
-      .services-hero p:not(.eyebrow){
+      .services-hero-copy > p:not(.eyebrow) {
         font-size:14px;
       }
 
-
-      .services-hero-image{
+      .services-hero-image {
         min-height:430px;
       }
 
-
-      .hero-seal{
+      .hero-seal {
         width:86px;
         height:86px;
         font-size:42px;
@@ -690,239 +738,230 @@
         right:24px;
       }
 
-
       .services-overview,
       .result-section,
       .service-visuals,
       .process-section,
-      .services-final-copy{
+      .services-final-copy {
         padding:54px 22px;
       }
-
 
       .service-card h2,
       .result-copy h2,
       .service-visuals-header h2,
       .process-section h2,
-      .services-final-copy h2{
+      .services-final-copy h2 {
         font-size:36px;
       }
 
-
       .result-image,
       .visual-card,
-      .services-final-image{
+      .services-final-image {
         min-height:300px;
       }
 
-
-      .services-final-actions{
+      .services-final-actions {
         flex-direction:column;
         align-items:stretch;
       }
 
-
-      .services-final-actions .btn{
+      .services-final-actions .btn {
         width:100%;
       }
 
+      .services-hero .hero-buttons .btn {
+        white-space:normal;
+        text-align:center;
+      }
+
+      .service-research-note {
+        font-size:12px;
+      }
     }
 
+    @media(max-width:380px) {
+
+      .services-hero h1 {
+        font-size:clamp(40px,11vw,44px);
+      }
+
+      .service-card h2,
+      .result-copy h2,
+      .service-visuals-header h2,
+      .process-section h2,
+      .services-final-copy h2 {
+        font-size:clamp(32px,9vw,36px);
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+      html {
+        scroll-behavior:auto!important;
+      }
+
+      .services-page .reveal {
+        opacity:1!important;
+        transform:none!important;
+        transition:none!important;
+      }
+
+      .services-page .btn,
+      .services-page .nav,
+      .services-page .mobile-menu {
+        transition:none!important;
+      }
+    }
   </style>
 
+  <noscript>
+    <style>
+      .reveal {
+        opacity:1!important;
+        transform:none!important;
+      }
+    </style>
+  </noscript>
 </head>
 
+<body class="services-page">
 
-
-<body>
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
 
   <div class="site-shell">
 
-
-    <!-- =====================================================
-         NAVIGATION
-    ====================================================== -->
+    <!-- NAVIGATION -->
 
     <header class="nav" data-nav>
 
       <a
         class="brand"
         href="index.html"
-        aria-label="Mirel Marketing Home"
+        aria-label="Mirel Marketing home"
       >
-
         <span>MIRÈL</span>
-
-        <small>
-          MARKETING
-        </small>
-
+        <small>MARKETING</small>
       </a>
 
+      <nav class="nav-links" aria-label="Main navigation">
 
-      <nav
-        class="nav-links"
-        aria-label="Main navigation"
-      >
-
-        <a href="index.html">
-          Home
-        </a>
-
-        <a href="about.html">
-          About
-        </a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
 
         <a
           href="services.html"
           class="active"
+          aria-current="page"
         >
           Services
         </a>
 
-        <a href="systems.html">
-          Systems
-        </a>
-
-        <a href="results.html">
-          Results
-        </a>
-
-        <a href="contact.html">
-          Contact
-        </a>
+        <a href="systems.html">Systems</a>
+        <a href="results.html">Results</a>
 
       </nav>
 
-
       <div class="nav-actions">
 
-        <a
-          class="btn btn-dark"
-          href="contact.html"
-        >
+        <a class="btn btn-dark" href="book.html">
           Book Consultation
         </a>
 
-        <a
-          class="btn btn-light"
-          href="resources.html"
-        >
+        <a class="btn btn-light" href="resources.html">
           Resources
         </a>
 
       </div>
 
-
       <button
         class="mobile-menu-toggle"
+        type="button"
         data-menu-toggle
-        aria-label="Open menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
       >
-        ☰
+        <span aria-hidden="true">☰</span>
       </button>
 
     </header>
 
+    <!-- MOBILE NAVIGATION -->
 
-
-    <!-- =====================================================
-         MOBILE MENU
-    ====================================================== -->
-
-    <div
+    <nav
       class="mobile-menu"
       data-mobile-menu
+      id="mobile-menu"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
     >
 
-      <a href="index.html">
-        Home
-      </a>
-
-      <a href="about.html">
-        About
-      </a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
 
       <a
         href="services.html"
         class="active"
+        aria-current="page"
       >
         Services
       </a>
 
-      <a href="systems.html">
-        Systems
-      </a>
-
-      <a href="results.html">
-        Results
-      </a>
-
-      <a href="contact.html">
-        Contact
-      </a>
-
+      <a href="systems.html">Systems</a>
+      <a href="results.html">Results</a>
 
       <div class="mobile-menu-actions">
 
-        <a
-          class="btn btn-dark"
-          href="contact.html"
-        >
+        <a class="btn btn-dark" href="book.html">
           Book Consultation
         </a>
 
-        <a
-          class="btn btn-light"
-          href="resources.html"
-        >
+        <a class="btn btn-light" href="resources.html">
           Resources
         </a>
 
       </div>
 
-    </div>
+    </nav>
 
+    <main id="main-content">
 
+      <!-- SECTION 1: HERO -->
 
-    <main>
+      <section
+        class="services-hero"
+        aria-labelledby="services-title"
+      >
 
-
-      <!-- =================================================
-           HERO
-      ================================================== -->
-
-      <section class="services-hero">
-
-
-        <div class="services-hero-copy reveal">
+        <div class="services-hero-copy">
 
           <p class="eyebrow">
             Our Services
           </p>
 
-
-          <h1>
-            Three services. One outcome:
-            <em>a fully booked clinic.</em>
+          <h1 id="services-title">
+            Three services. One goal:
+            <em>more booked, paying patients.</em>
           </h1>
 
-
           <p>
-            We combine strategy, systems, and premium content direction to attract your ideal patients,
-            increase perceived value, and turn interest into consultations.
+            We connect paid advertising,
+            conversion-focused landing pages and
+            thoughtful follow-up so qualified inquiries
+            have a clearer path to becoming paying
+            and returning patients.
           </p>
-
 
           <div class="hero-buttons">
 
             <a
               class="btn btn-dark btn-large"
-              href="contact.html"
+              href="book.html"
             >
-              Book a Consultation
+              Book a Growth Strategy Review
             </a>
-
 
             <a
               class="btn btn-outline btn-large"
@@ -935,30 +974,25 @@
 
         </div>
 
-
-
-        <div class="services-hero-image reveal">
-
-          <div class="hero-seal">
-            M
-          </div>
-
+        <div
+          class="services-hero-image"
+          aria-hidden="true"
+        >
+          <div class="hero-seal">M</div>
         </div>
-
 
       </section>
 
+      <!-- SECTION 2: SERVICES OVERVIEW -->
 
-
-      <!-- =================================================
-           SERVICES OVERVIEW
-      ================================================== -->
-
-      <section class="services-overview">
-
+      <section
+        class="services-overview"
+        aria-label="Our three growth services"
+      >
 
         <div class="services-grid">
 
+          <!-- SERVICE ONE -->
 
           <article class="service-card reveal">
 
@@ -968,79 +1002,46 @@
               fill="none"
               stroke="currentColor"
               stroke-width="1.3"
+              aria-hidden="true"
             >
-
-              <circle
-                cx="24"
-                cy="24"
-                r="13"
-              ></circle>
-
-              <circle
-                cx="24"
-                cy="24"
-                r="4"
-              ></circle>
-
-              <path
-                d="M24 5v8M24 35v8M5 24h8M35 24h8"
-              ></path>
-
+              <circle cx="24" cy="24" r="4"></circle>
+              <path d="M24 5v8M24 35v8M5 24h8M35 24h8"></path>
             </svg>
 
-
-            <span class="service-number">
-              01
-            </span>
-
+            <span class="service-number">01</span>
 
             <h2>
-              Meta & Google Ads
+              Meta &amp; Google Ads
             </h2>
-
 
             <div class="service-kicker">
               Paid Advertising
             </div>
 
-
             <p>
-              We build campaigns that attract qualified patients who are already searching,
-              comparing, or emotionally ready to book.
+              We build premium, market-aware campaigns
+              designed to reach people who are actively
+              considering your treatments — not just
+              generate clicks.
             </p>
 
-
             <ul>
-
-              <li>
-                Campaign strategy and setup
-              </li>
-
-              <li>
-                Audience targeting and offer angle
-              </li>
-
-              <li>
-                Creative direction and ad copy
-              </li>
-
-              <li>
-                Weekly performance refinement
-              </li>
-
+              <li>Campaign strategy and setup</li>
+              <li>Audience strategy and treatment positioning</li>
+              <li>Market-aware creative direction and ad copy</li>
+              <li>Performance and lead-quality refinement</li>
             </ul>
-
 
             <a
               class="btn btn-outline"
-              href="contact.html"
+              href="book.html#booking"
             >
-              Learn More
+              Discuss Paid Ads
             </a>
 
           </article>
 
-
+          <!-- SERVICE TWO -->
 
           <article class="service-card reveal">
 
@@ -1050,74 +1051,46 @@
               fill="none"
               stroke="currentColor"
               stroke-width="1.3"
+              aria-hidden="true"
             >
-
-              <rect
-                x="9"
-                y="12"
-                width="30"
-                height="23"
-              ></rect>
-
-              <path
-                d="M9 18h30M15 27h10M15 31h16M29 24h6v6h-6z"
-              ></path>
-
+              <rect x="9" y="12" width="30" height="23"></rect>
+              <path d="M9 18h30M15 27h10M15 31h16M29 24h6v6h-6z"></path>
             </svg>
 
-
-            <span class="service-number">
-              02
-            </span>
-
+            <span class="service-number">02</span>
 
             <h2>
               Patient Landing Pages
             </h2>
 
-
             <div class="service-kicker">
               Conversion Design
             </div>
 
-
             <p>
-              We design premium, treatment-specific landing pages that transform clicks
-              into confident consultation requests.
+              We create fast, mobile-first treatment
+              pages that answer patient questions,
+              clarify value and make booking
+              straightforward.
             </p>
 
-
             <ul>
-
-              <li>
-                Treatment-specific page design
-              </li>
-
-              <li>
-                Premium conversion copywriting
-              </li>
-
-              <li>
-                Mobile-first patient journey
-              </li>
-
-              <li>
-                Form and booking integration
-              </li>
-
+              <li>Treatment-specific page design</li>
+              <li>Trust-led conversion copywriting</li>
+              <li>Mobile-first booking experience</li>
+              <li>Form and booking integration</li>
             </ul>
-
 
             <a
               class="btn btn-outline"
-              href="contact.html"
+              href="book.html#booking"
             >
-              Learn More
+              Discuss Landing Pages
             </a>
 
           </article>
 
-
+          <!-- SERVICE THREE -->
 
           <article class="service-card reveal">
 
@@ -1127,89 +1100,62 @@
               fill="none"
               stroke="currentColor"
               stroke-width="1.3"
+              aria-hidden="true"
             >
-
-              <rect
-                x="9"
-                y="14"
-                width="30"
-                height="22"
-              ></rect>
-
-              <path
-                d="M9 16l15 12 15-12"
-              ></path>
-
+              <rect x="9" y="14" width="30" height="22"></rect>
+              <path d="M9 16l15 12 15-12"></path>
             </svg>
 
-
-            <span class="service-number">
-              03
-            </span>
-
+            <span class="service-number">03</span>
 
             <h2>
               Automated Follow-Up
             </h2>
 
-
             <div class="service-kicker">
               Patient Nurturing
             </div>
 
-
             <p>
-              We follow up with every qualified lead so interest does not get lost,
-              forgotten, or replaced by a competitor.
+              Human-led, AI-assisted workflows
+              help your team respond promptly,
+              follow up with care and reduce
+              avoidable gaps between inquiry
+              and booking.
             </p>
 
-
             <ul>
-
-              <li>
-                Automated email and SMS sequences
-              </li>
-
-              <li>
-                Fast lead-response structure
-              </li>
-
-              <li>
-                Seven-day nurture flow
-              </li>
-
-              <li>
-                Booking system integration
-              </li>
-
+              <li>Consent-aware email and SMS journeys</li>
+              <li>Fast lead-response structure</li>
+              <li>AI-assisted routing with human oversight</li>
+              <li>Booking and CRM integration</li>
             </ul>
-
 
             <a
               class="btn btn-outline"
-              href="contact.html"
+              href="book.html#booking"
             >
-              Learn More
+              Discuss Follow-Up
             </a>
 
           </article>
-
 
         </div>
 
       </section>
 
+      <!-- SECTION 3: THE RESULT -->
 
+      <section
+        class="result-section"
+        aria-labelledby="result-title"
+      >
 
-      <!-- =================================================
-           RESULT
-      ================================================== -->
-
-      <section class="result-section">
-
-
-        <div class="result-image reveal"></div>
-
+        <div
+          class="result-image reveal"
+          role="img"
+          aria-label="Mirel premium growth system visual"
+        ></div>
 
         <div class="result-copy reveal">
 
@@ -1217,38 +1163,58 @@
             The Result
           </p>
 
-
-          <h2>
-            All three services work together to fill your appointment book.
+          <h2 id="result-title">
+            An inquiry is not revenue.
+            The journey after it matters.
           </h2>
 
-
           <p>
-            Your clinic does not need random attention. It needs a system that makes people feel desire,
-            trust your expertise, understand your value, and take the next step.
+            I help med spa owners uncover and
+            fix revenue leaks in their patient
+            journey so more leads become booked,
+            paying, and returning patients.
           </p>
 
+          <div class="service-research-note">
+
+            In a 2011 study of 1.25 million online
+            sales leads across U.S. industries,
+            attempting contact within one hour
+            was associated with nearly 7× higher
+            lead-qualification likelihood than
+            waiting even an hour longer.
+
+            This is historical, cross-industry
+            research — not a med spa outcome
+            or guarantee.
+
+            <a
+              href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Harvard Business Review, 2011
+            </a>.
+
+          </div>
 
           <a
             class="btn btn-dark"
-            href="contact.html"
+            href="book.html"
           >
-            Book a Consultation
+            Book a Growth Strategy Review
           </a>
 
         </div>
 
-
       </section>
 
+      <!-- SECTION 4: SERVICE VISUALS -->
 
-
-      <!-- =================================================
-           SERVICE VISUALS
-      ================================================== -->
-
-      <section class="service-visuals">
-
+      <section
+        class="service-visuals"
+        aria-labelledby="visuals-title"
+      >
 
         <div class="service-visuals-header reveal">
 
@@ -1256,25 +1222,25 @@
             The System Behind The Beauty
           </p>
 
-
-          <h2>
-            Premium marketing should feel as refined as your clinic.
+          <h2 id="visuals-title">
+            Premium growth should feel
+            as refined as your clinic.
           </h2>
 
-
           <p>
-            Every campaign, page, and follow-up touchpoint is designed to feel intentional —
-            so your brand earns trust before the consultation begins.
+            Every ad, treatment page and follow-up
+            should feel like one considered patient
+            experience — creating clarity and trust
+            before the consultation.
           </p>
 
         </div>
 
-
-
         <div class="visual-grid">
 
-
-          <article class="visual-card visual-ads reveal">
+          <article
+            class="visual-card visual-ads reveal"
+          >
 
             <div class="visual-card-content">
 
@@ -1283,16 +1249,17 @@
               </span>
 
               <h3>
-                Attract patients with premium positioning.
+                Attract the right patients
+                with clarity.
               </h3>
 
             </div>
 
           </article>
 
-
-
-          <article class="visual-card visual-pages reveal">
+          <article
+            class="visual-card visual-pages reveal"
+          >
 
             <div class="visual-card-content">
 
@@ -1301,16 +1268,17 @@
               </span>
 
               <h3>
-                Turn interest into confident action.
+                Turn interest into
+                booked conversations.
               </h3>
 
             </div>
 
           </article>
 
-
-
-          <article class="visual-card visual-followup reveal">
+          <article
+            class="visual-card visual-followup reveal"
+          >
 
             <div class="visual-card-content">
 
@@ -1319,155 +1287,146 @@
               </span>
 
               <h3>
-                Nurture every qualified lead with care.
+                Follow up thoughtfully,
+                without the gaps.
               </h3>
 
             </div>
 
           </article>
 
-
         </div>
 
       </section>
 
+      <!-- SECTION 5: PROCESS -->
 
-
-      <!-- =================================================
-           PROCESS
-      ================================================== -->
-
-      <section class="process-section">
-
+      <section
+        class="process-section"
+        aria-labelledby="process-title"
+      >
 
         <p class="eyebrow reveal">
           Our Process
         </p>
 
-
-        <h2 class="reveal">
+        <h2 id="process-title" class="reveal">
           Strategic. Refined. Results-driven.
         </h2>
 
-
-
         <div class="process-grid">
-
 
           <article class="process-step reveal">
 
-            <span>
-              01
-            </span>
+            <span>01</span>
 
             <h3>
               Discover
             </h3>
 
             <p>
-              We learn your clinic, treatments, ideal patients, positioning, and growth goals.
+              We review inquiries, response times,
+              consultation bookings, treatment
+              acceptance and returning-patient
+              patterns.
             </p>
 
           </article>
 
-
-
           <article class="process-step reveal">
 
-            <span>
-              02
-            </span>
+            <span>02</span>
 
             <h3>
               Strategize
             </h3>
 
             <p>
-              We build a clear premium acquisition plan around your services and local market.
+              We prioritize revenue leaks worth
+              addressing first, shaped by your
+              treatments, patients and local
+              advertising environment.
             </p>
 
           </article>
 
-
-
           <article class="process-step reveal">
 
-            <span>
-              03
-            </span>
+            <span>03</span>
 
             <h3>
               Implement
             </h3>
 
             <p>
-              We launch your campaigns, landing pages, creative direction, and follow-up systems.
+              We connect campaigns, booking journeys
+              and AI-assisted follow-up where
+              appropriate, always with human oversight.
             </p>
 
           </article>
 
-
-
           <article class="process-step reveal">
 
-            <span>
-              04
-            </span>
+            <span>04</span>
 
             <h3>
               Grow
             </h3>
 
             <p>
-              We refine, optimize, and scale what creates the best consultation quality.
+              We measure inquiry-to-booking,
+              consultation-to-treatment and
+              patient return — then refine
+              what the data supports.
             </p>
 
           </article>
-
 
         </div>
 
       </section>
 
+      <!-- SECTION 6: FINAL CTA -->
 
+      <section
+        class="services-final"
+        aria-labelledby="final-title"
+      >
 
-      <!-- =================================================
-           FINAL CTA
-      ================================================== -->
-
-      <section class="services-final">
-
-
-        <div class="services-final-image reveal"></div>
-
+        <div
+          class="services-final-image reveal"
+          role="img"
+          aria-label="Mirel luxury aesthetic clinic editorial photograph"
+        ></div>
 
         <div class="services-final-copy reveal">
 
           <p class="eyebrow">
-            Ready For A More Premium Patient Journey?
+            Ready To Find Your Next Growth Opportunity?
           </p>
 
-
-          <h2>
-            Let’s build the system behind your next stage of growth.
+          <h2 id="final-title">
+            Make more of the demand
+            you already have.
           </h2>
 
-
           <p>
-            If your clinic is ready to attract better-fit patients, increase perceived value,
-            and create a more polished path to booking, start with a strategy call.
+            Start with a Med Spa Growth Strategy
+            Review. We’ll discuss where your
+            patient journey may be losing
+            opportunities, and which improvements
+            are worth testing first.
           </p>
-
 
           <div class="services-final-actions">
 
             <a
               class="btn btn-pink"
-              href="contact.html"
+              href="book.html"
             >
-              Book a Consultation
+              Book a Growth Strategy Review
             </a>
-
 
             <a
               class="btn btn-outline"
@@ -1480,55 +1439,38 @@
 
         </div>
 
-
       </section>
-
 
     </main>
 
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
+    <!-- FOOTER -->
 
     <footer class="footer">
 
       <a
         class="brand"
         href="index.html"
-        aria-label="Mirel Marketing Home"
+        aria-label="Mirel Marketing home"
       >
-
-        <span>
-          MIRÈL
-        </span>
-
-        <small>
-          MARKETING
-        </small>
-
+        <span>MIRÈL</span>
+        <small>MARKETING</small>
       </a>
-
 
       <a href="mailto:delora@mirelmarketing.com">
         delora@mirelmarketing.com
       </a>
 
-
       <a
-        href="https://www.instagram.com/mirelmarketing"
+        href="https://www.instagram.com/mirelpartners/"
         target="_blank"
         rel="noopener noreferrer"
       >
         Instagram
       </a>
 
-
       <a href="privacy-policy.html">
         Privacy Policy
       </a>
-
 
       <a href="terms-and-conditions.html">
         Terms &amp; Conditions
@@ -1536,357 +1478,274 @@
 
     </footer>
 
-
   </div>
 
-
-
-  <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
+  <!-- JAVASCRIPT -->
 
   <script>
+    (() => {
 
+      const nav =
+        document.querySelector('[data-nav]');
 
-    /* =====================================================
-       PERFORMANCE: LAZY LOAD WEBP BACKGROUNDS
-    ====================================================== */
+      const toggle =
+        document.querySelector('[data-menu-toggle]');
 
-    const lazyBackgrounds = [
+      const menu =
+        document.querySelector('[data-mobile-menu]');
 
-      {
-        selector: '.result-image',
-        image:
-          "linear-gradient(rgba(29,15,12,.04), rgba(29,15,12,.10)), url('images/services-mirel-system.webp')"
-      },
+      let lastScroll = window.scrollY;
 
-      {
-        selector: '.visual-ads',
-        image:
-          "url('images/services-mirel-paid-ads-system.webp')"
-      },
+      function setMenu(open) {
 
-      {
-        selector: '.visual-pages',
-        image:
-          "url('images/services-mirel-landing-page-system.webp')"
-      },
+        if (!toggle || !menu) return;
 
-      {
-        selector: '.visual-followup',
-        image:
-          "url('images/services-mirel-follow-up-system.webp')"
-      },
+        menu.classList.toggle('open', open);
 
-      {
-        selector: '.services-final-image',
-        image:
-          "linear-gradient(rgba(29,15,12,.06), rgba(29,15,12,.18)), url('images/mirel-services-final-cta.webp')"
-      }
+        toggle.setAttribute(
+          'aria-expanded',
+          String(open)
+        );
 
-    ];
+        toggle.setAttribute(
+          'aria-label',
+          open
+            ? 'Close navigation menu'
+            : 'Open navigation menu'
+        );
 
+        menu.setAttribute(
+          'aria-hidden',
+          String(!open)
+        );
 
-    const lazyBackgroundMap =
-      new Map();
+        document.body.classList.toggle(
+          'menu-open',
+          open
+        );
 
-
-    lazyBackgrounds.forEach(
-      (item) => {
-
-        const element =
-          document.querySelector(
-            item.selector
-          );
-
-
-        if (element) {
-
-          lazyBackgroundMap.set(
-            element,
-            item.image
-          );
-
+        if (open) {
+          nav?.classList.remove('hide');
         }
 
       }
-    );
 
+      toggle?.addEventListener(
+        'click',
+        event => {
 
-    const loadLazyBackground =
-      (element) => {
+          event.stopPropagation();
 
-        const image =
-          lazyBackgroundMap.get(
-            element
+          setMenu(
+            !menu?.classList.contains('open')
           );
 
-
-        if (!image) {
-          return;
         }
+      );
 
+      menu?.querySelectorAll('a').forEach(
+        link => {
+
+          link.addEventListener(
+            'click',
+            () => setMenu(false)
+          );
+
+        }
+      );
+
+      document.addEventListener(
+        'click',
+        event => {
+
+          if (
+            menu?.classList.contains('open') &&
+            !menu.contains(event.target) &&
+            !toggle?.contains(event.target)
+          ) {
+            setMenu(false);
+          }
+
+        }
+      );
+
+      document.addEventListener(
+        'keydown',
+        event => {
+
+          if (
+            event.key === 'Escape' &&
+            menu?.classList.contains('open')
+          ) {
+
+            setMenu(false);
+
+            toggle?.focus();
+
+          }
+
+        }
+      );
+
+      window.addEventListener(
+        'resize',
+        () => {
+
+          if (window.innerWidth > 760) {
+            setMenu(false);
+          }
+
+        },
+        { passive:true }
+      );
+
+      window.addEventListener(
+        'scroll',
+        () => {
+
+          const y = window.scrollY;
+
+          nav?.classList.toggle(
+            'scrolled',
+            y > 16
+          );
+
+          if (
+            y > lastScroll &&
+            y > 120 &&
+            !menu?.classList.contains('open')
+          ) {
+
+            nav?.classList.add('hide');
+
+          } else {
+
+            nav?.classList.remove('hide');
+
+          }
+
+          lastScroll = y;
+
+        },
+        { passive:true }
+      );
+
+      /* REVEAL ANIMATIONS */
+
+      const revealElements =
+        document.querySelectorAll('.reveal');
+
+      const reducedMotion =
+        window.matchMedia(
+          '(prefers-reduced-motion: reduce)'
+        ).matches;
+
+      if (
+        !reducedMotion &&
+        'IntersectionObserver' in window
+      ) {
+
+        const observer =
+          new IntersectionObserver(
+            (entries, self) => {
+
+              entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                  entry.target.classList.add(
+                    'visible'
+                  );
+
+                  self.unobserve(
+                    entry.target
+                  );
+
+                }
+
+              });
+
+            },
+            {
+              threshold:0.08,
+              rootMargin:'0px 0px 90px 0px'
+            }
+          );
+
+        revealElements.forEach(
+          el => observer.observe(el)
+        );
+
+      } else {
+
+        revealElements.forEach(
+          el => el.classList.add('visible')
+        );
+
+      }
+
+      /* BACKGROUND IMAGE LOADING */
+
+      const backgrounds = [
+        '.result-image',
+        '.visual-ads',
+        '.visual-pages',
+        '.visual-followup',
+        '.services-final-image'
+      ]
+        .map(
+          selector =>
+            document.querySelector(selector)
+        )
+        .filter(Boolean);
+
+      const activate = element => {
 
         element.classList.add(
           'lazy-bg-loaded'
         );
 
-
-        element.style.backgroundImage =
-          image;
-
       };
 
+      if ('IntersectionObserver' in window) {
 
-    if (
-      'IntersectionObserver' in window
-    ) {
+        const observer =
+          new IntersectionObserver(
+            (entries, self) => {
 
-      const backgroundObserver =
-        new IntersectionObserver(
+              entries.forEach(entry => {
 
-          (entries, observer) => {
+                if (entry.isIntersecting) {
 
-            entries.forEach(
-              (entry) => {
+                  activate(entry.target);
 
-                if (
-                  !entry.isIntersecting
-                ) {
-                  return;
+                  self.unobserve(
+                    entry.target
+                  );
+
                 }
 
+              });
 
-                loadLazyBackground(
-                  entry.target
-                );
-
-
-                observer.unobserve(
-                  entry.target
-                );
-
-              }
-            );
-
-          },
-
-          {
-            rootMargin:'1400px 0px',
-            threshold:0.01
-          }
-
-        );
-
-
-      lazyBackgroundMap.forEach(
-        (image, element) => {
-
-          backgroundObserver.observe(
-            element
-          );
-
-        }
-      );
-
-    }
-
-    else {
-
-      lazyBackgroundMap.forEach(
-        (image, element) => {
-
-          loadLazyBackground(
-            element
-          );
-
-        }
-      );
-
-    }
-
-
-
-    /* =====================================================
-       EXISTING REVEAL ANIMATION
-    ====================================================== */
-
-    const items =
-      document.querySelectorAll(
-        '.reveal'
-      );
-
-
-    const observer =
-      new IntersectionObserver(
-        (entries) => {
-
-          entries.forEach(
-            entry => {
-
-              if (
-                entry.isIntersecting
-              ) {
-
-                entry.target
-                  .classList
-                  .add('visible');
-
-              }
-
+            },
+            {
+              rootMargin:'500px 0px',
+              threshold:0.01
             }
           );
 
-        },
-        {
-          threshold:0.12
-        }
-      );
-
-
-    items.forEach(
-      item =>
-        observer.observe(item)
-    );
-
-
-
-    /* =====================================================
-       NAVIGATION
-    ====================================================== */
-
-    const nav =
-      document.querySelector(
-        '[data-nav]'
-      );
-
-
-    const menuToggle =
-      document.querySelector(
-        '[data-menu-toggle]'
-      );
-
-
-    const mobileMenu =
-      document.querySelector(
-        '[data-mobile-menu]'
-      );
-
-
-    let lastScroll = 0;
-
-
-    window.addEventListener(
-      'scroll',
-      () => {
-
-        const currentScroll =
-          window.scrollY;
-
-
-        nav.classList.toggle(
-          'scrolled',
-          currentScroll > 16
+        backgrounds.forEach(
+          element => observer.observe(element)
         );
 
+      } else {
 
-        if (
-          currentScroll > lastScroll &&
-          currentScroll > 120
-        ) {
-
-          nav.classList.add(
-            'hide'
-          );
-
-
-          mobileMenu
-            ?.classList
-            .remove('open');
-
-
-          document.body
-            .classList
-            .remove('menu-open');
-
-        }
-
-        else {
-
-          nav.classList.remove(
-            'hide'
-          );
-
-        }
-
-
-        lastScroll =
-          currentScroll;
+        backgrounds.forEach(activate);
 
       }
-    );
 
-
-
-    /* =====================================================
-       MOBILE MENU
-    ====================================================== */
-
-    if (
-      menuToggle &&
-      mobileMenu
-    ) {
-
-      menuToggle.addEventListener(
-        'click',
-        (event) => {
-
-          event.stopPropagation();
-
-
-          mobileMenu
-            .classList
-            .toggle('open');
-
-
-          document.body
-            .classList
-            .toggle('menu-open');
-
-        }
-      );
-
-
-      mobileMenu.addEventListener(
-        'click',
-        (event) => {
-
-          event.stopPropagation();
-
-        }
-      );
-
-
-      document.addEventListener(
-        'click',
-        () => {
-
-          mobileMenu
-            .classList
-            .remove('open');
-
-
-          document.body
-            .classList
-            .remove('menu-open');
-
-        }
-      );
-
-    }
-
+    })();
   </script>
-
 
 </body>
 </html>
