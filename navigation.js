@@ -184,7 +184,7 @@
     window.addEventListener(
       "resize",
       () => {
-        if (window.innerWidth > 760) {
+        if (window.innerWidth > 1250) {
           setMenu(false);
         }
       },
