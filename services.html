@@ -1511,49 +1511,6 @@
             () => setMenu(false)
           );
 
-        }
-      );
-
-      document.addEventListener(
-        'click',
-        event => {
-
-          if (
-            menu?.classList.contains('open') &&
-            !menu.contains(event.target) &&
-            !toggle?.contains(event.target)
-          ) {
-            setMenu(false);
-          }
-
-        }
-      );
-
-      document.addEventListener(
-        'keydown',
-        event => {
-
-          if (
-            event.key === 'Escape' &&
-            menu?.classList.contains('open')
-          ) {
-
-            setMenu(false);
-
-            toggle?.focus();
-
-          }
-
-        }
-      );
-
-      window.addEventListener(
-        'resize',
-        () => {
-
-
-      /* REVEAL ANIMATIONS */
-
       const revealElements =
         document.querySelectorAll('.reveal');
 
