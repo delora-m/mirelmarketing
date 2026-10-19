@@ -1,0 +1,181 @@
+
+/* ==================================================
+   MIRÈL — CENTRAL NAVIGATION DESIGN
+   Master reference: AI for Med Spas page
+
+   Controls the shared navigation only.
+   General page design remains in style.css.
+   ================================================== */
+
+/* DESKTOP — ORIGINAL AI PAGE DESIGN */
+
+@media (min-width: 1251px) {
+
+  [data-mirel-navigation] {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+  }
+
+  [data-mirel-navigation] .mirel-shared-nav {
+    position: relative;
+    width: 100%;
+    height: 96px;
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 34px;
+    padding: 0 72px;
+
+    background: rgba(251, 247, 241, .78);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+
+    border-bottom: 1px solid rgba(62, 39, 35, .10);
+
+    transition:
+      height .35s ease,
+      background .35s ease;
+  }
+
+  [data-mirel-navigation] .mirel-shared-nav.scrolled {
+    height: 82px;
+    background: rgba(251, 247, 241, .92);
+  }
+
+  /* Logo */
+
+  [data-mirel-navigation] .brand {
+    display: inline-flex;
+    flex-direction: column;
+    line-height: .9;
+    letter-spacing: .36em;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    color: #1d0f0c;
+  }
+
+  [data-mirel-navigation] .brand span {
+    font-size: 33px;
+  }
+
+  [data-mirel-navigation] .brand small {
+    margin-top: 9px;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: .48em;
+    font-weight: 500;
+  }
+
+  /* Main links */
+
+  [data-mirel-navigation] .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 29px;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 450;
+    color: rgba(0, 0, 0, .86);
+    white-space: nowrap;
+  }
+
+  [data-mirel-navigation] .nav-links a {
+    position: relative;
+    padding: 39px 0;
+    white-space: nowrap;
+  }
+
+  [data-mirel-navigation] .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 29px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      #3e2723,
+      #a9686d
+    );
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .38s ease;
+  }
+
+  [data-mirel-navigation] .nav-links a:hover::after,
+  [data-mirel-navigation] .nav-links a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  [data-mirel-navigation] .nav-links a.active {
+    color: #1d0f0c;
+  }
+
+  /* Consultation and Resources buttons */
+
+  [data-mirel-navigation] .nav-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 14px;
+    white-space: nowrap;
+  }
+
+  [data-mirel-navigation] .nav-actions .btn {
+    min-height: 45px;
+    padding: 0 24px;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 650;
+    white-space: nowrap;
+  }
+
+  [data-mirel-navigation] .mobile-menu-toggle,
+  [data-mirel-navigation] .mobile-menu {
+    display: none !important;
+  }
+}
+
+/* NARROW DESKTOP — AI PAGE PROPORTIONS */
+
+@media (min-width: 1251px) and (max-width: 1380px) {
+
+  [data-mirel-navigation] .mirel-shared-nav {
+    grid-template-columns: 205px minmax(0, 1fr) auto;
+    gap: 20px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  [data-mirel-navigation] .nav-links {
+    gap: 19px;
+    font-size: 12px;
+  }
+
+  [data-mirel-navigation] .nav-actions .btn {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+
+/* MOBILE AND TABLET
+   Existing shared mobile styling is preserved.
+   No phone redesign is introduced here. */
+
+[data-mirel-navigation] a:focus-visible,
+[data-mirel-navigation] button:focus-visible {
+  outline: 3px solid #a9686d;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-mirel-navigation] .mirel-shared-nav,
+  [data-mirel-navigation] .nav-links a::after {
+    transition: none !important;
+  }
+}
