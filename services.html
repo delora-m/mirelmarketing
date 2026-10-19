@@ -1443,73 +1443,8 @@
   <!-- JAVASCRIPT -->
 
   <script>
+    
     (() => {
-
-      const nav =
-        document.querySelector('[data-nav]');
-
-      const toggle =
-        document.querySelector('[data-menu-toggle]');
-
-      const menu =
-        document.querySelector('[data-mobile-menu]');
-
-      let lastScroll = window.scrollY;
-
-      function setMenu(open) {
-
-        if (!toggle || !menu) return;
-
-        menu.classList.toggle('open', open);
-
-        toggle.setAttribute(
-          'aria-expanded',
-          String(open)
-        );
-
-        toggle.setAttribute(
-          'aria-label',
-          open
-            ? 'Close navigation menu'
-            : 'Open navigation menu'
-        );
-
-        menu.setAttribute(
-          'aria-hidden',
-          String(!open)
-        );
-
-        document.body.classList.toggle(
-          'menu-open',
-          open
-        );
-
-        if (open) {
-          nav?.classList.remove('hide');
-        }
-
-      }
-
-      toggle?.addEventListener(
-        'click',
-        event => {
-
-          event.stopPropagation();
-
-          setMenu(
-            !menu?.classList.contains('open')
-          );
-
-        }
-      );
-
-      menu?.querySelectorAll('a').forEach(
-        link => {
-
-          link.addEventListener(
-            'click',
-            () => setMenu(false)
-          );
 
       const revealElements =
         document.querySelectorAll('.reveal');
