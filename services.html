@@ -1551,44 +1551,6 @@
         'resize',
         () => {
 
-          if (window.innerWidth > 760) {
-            setMenu(false);
-          }
-
-        },
-        { passive:true }
-      );
-
-      window.addEventListener(
-        'scroll',
-        () => {
-
-          const y = window.scrollY;
-
-          nav?.classList.toggle(
-            'scrolled',
-            y > 16
-          );
-
-          if (
-            y > lastScroll &&
-            y > 120 &&
-            !menu?.classList.contains('open')
-          ) {
-
-            nav?.classList.add('hide');
-
-          } else {
-
-            nav?.classList.remove('hide');
-
-          }
-
-          lastScroll = y;
-
-        },
-        { passive:true }
-      );
 
       /* REVEAL ANIMATIONS */
 
