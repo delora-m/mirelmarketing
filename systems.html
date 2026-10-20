@@ -184,7 +184,7 @@
     .sy-regulatory-note{max-width:1360px;margin:36px auto 0;padding:19px 23px;background:#f2e7df;border-left:2px solid #a9686d;color:#75605a;font-size:12px;line-height:1.85}
     .sy-regulatory-note a{text-decoration:underline;text-underline-offset:3px;color:var(--espresso)}
 
-    /* 09: The Mirèl Standard — restrained editorial typography instead of an image gallery. */
+    /* 09: The Mirèl Standard — add one strong visual without returning to a gallery feeling. */
     .sy-world{padding:100px 72px 105px;border-bottom:1px solid var(--line);background:linear-gradient(140deg,#fffdf9 15%,#f8f1eb 100%)}
     .sy-world-inner{max-width:1320px;margin:0 auto}
     .sy-world-header{max-width:810px;margin:0 auto 62px;text-align:center}
@@ -192,6 +192,8 @@
     .sy-world-header h2{font-family:var(--serif);color:var(--espresso-deep);font-size:clamp(46px,4.5vw,70px);line-height:1.02;letter-spacing:-.042em;font-weight:500;margin:0;text-wrap:balance}
     .sy-world-header h2 em{font-weight:400;font-style:italic;color:var(--rose)}
     .sy-world-lede{max-width:650px;margin:24px auto 0;font-size:14px;line-height:1.9;color:var(--text-soft)}
+    .sy-world-visual{margin:0 auto 44px;max-width:1120px;min-height:420px;border:1px solid var(--line);background:url('images/mirel-systems-world-patient-payment.webp') center center/cover no-repeat;position:relative;overflow:hidden}
+    .sy-world-visual::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(26,26,26,.04) 0%,rgba(26,26,26,.18) 100%)}
     .sy-world-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
     .sy-world-value{min-width:0;padding:37px 36px 38px;border-right:1px solid var(--line)}
     .sy-world-value:first-child{padding-left:0}
@@ -250,6 +252,7 @@
       .sy-final-copy{padding:65px 45px}
       .sy-world,.sy-fit{padding:80px 34px}
       .sy-world-header{margin-bottom:45px}
+      .sy-world-visual{min-height:340px;margin-bottom:36px}
       .sy-fit-inner{grid-template-columns:1fr;gap:49px;align-items:start}
     }
     @media(max-width:760px){
@@ -294,6 +297,7 @@
       .sy-world,.sy-fit{padding:66px 22px}
       .sy-world-header{margin-bottom:36px}
       .sy-world-header h2{font-size:clamp(40px,10vw,54px)}
+      .sy-world-visual{min-height:240px;margin-bottom:28px}
       .sy-world-lede{font-size:13px;margin-top:20px}
       .sy-world-values{grid-template-columns:1fr}
       .sy-world-value,.sy-world-value:first-child,.sy-world-value:last-child{padding:23px 0;border-right:0}
@@ -487,7 +491,7 @@
         </aside>
       </section>
 
-      <!-- 09 / The Mirèl Standard: patient trust and commercial discipline, without a photo gallery. -->
+      <!-- 09 / The Mirèl Standard: patient trust and commercial discipline with one restrained visual. -->
       <section class="sy-world" aria-labelledby="world-title">
         <div class="sy-world-inner">
           <header class="sy-world-header reveal">
@@ -495,6 +499,7 @@
             <h2 id="world-title">Considered at every <em>touchpoint.</em></h2>
             <p class="sy-world-lede">Growth should feel seamless to the patient and make commercial sense to the clinic. We believe both sides of that experience deserve the same level of attention.</p>
           </header>
+          <div class="sy-world-visual reveal" role="img" aria-label="Patient welcomed at a premium med spa reception"></div>
           <div class="sy-world-values">
             <article class="sy-world-value reveal">
               <span class="sy-value-index">01 / Patient Confidence</span>
