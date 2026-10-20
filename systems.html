@@ -184,28 +184,37 @@
     .sy-regulatory-note{max-width:1360px;margin:36px auto 0;padding:19px 23px;background:#f2e7df;border-left:2px solid #a9686d;color:#75605a;font-size:12px;line-height:1.85}
     .sy-regulatory-note a{text-decoration:underline;text-underline-offset:3px;color:var(--espresso)}
 
-    /* 09: Four-image editorial strip from original asset library. */
-    .sy-world{border-bottom:1px solid var(--line);background:#fbf7f1}
-    .sy-world-header{padding:66px 72px 32px;text-align:center}
-    .sy-world-header .sy-eyebrow{margin-bottom:13px}
-    .sy-world-header h2{font-family:var(--serif);color:var(--espresso-deep);font-size:clamp(37px,3.2vw,52px);line-height:1.04;letter-spacing:-.035em;font-weight:500;margin:0}
-    .sy-world-grid{display:grid;grid-template-columns:1.05fr .95fr 1fr 1fr;gap:6px}
-    .sy-world-photo{min-height:280px;background-position:center;background-size:cover;position:relative}
-    .sy-world-photo.one{background-image:url('images/mirel-systems-world-patient-payment.webp')}
-    .sy-world-photo.two{background-image:url('images/mirel-ads-system2.webp')}
-    .sy-world-photo.three{background-image:url('images/mirel-followup-system.webp')}
-    .sy-world-photo.four{background-image:url('images/mirel-systems-world-skincare.webp')}
-    .sy-world-photo::after{content:"";inset:0;position:absolute;pointer-events:none;background:linear-gradient(0deg,rgba(29,15,12,.15),transparent 45%)}
+    /* 09: The Mirèl Standard — restrained editorial typography instead of an image gallery. */
+    .sy-world{padding:100px 72px 105px;border-bottom:1px solid var(--line);background:linear-gradient(140deg,#fffdf9 15%,#f8f1eb 100%)}
+    .sy-world-inner{max-width:1320px;margin:0 auto}
+    .sy-world-header{max-width:810px;margin:0 auto 62px;text-align:center}
+    .sy-world-header .sy-eyebrow{margin-bottom:23px}
+    .sy-world-header h2{font-family:var(--serif);color:var(--espresso-deep);font-size:clamp(46px,4.5vw,70px);line-height:1.02;letter-spacing:-.042em;font-weight:500;margin:0;text-wrap:balance}
+    .sy-world-header h2 em{font-weight:400;font-style:italic;color:var(--rose)}
+    .sy-world-lede{max-width:650px;margin:24px auto 0;font-size:14px;line-height:1.9;color:var(--text-soft)}
+    .sy-world-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .sy-world-value{min-width:0;padding:37px 36px 38px;border-right:1px solid var(--line)}
+    .sy-world-value:first-child{padding-left:0}
+    .sy-world-value:last-child{padding-right:0;border-right:0}
+    .sy-world-value .sy-value-index{display:block;margin-bottom:25px;font-size:10px;letter-spacing:.19em;text-transform:uppercase;color:#96756e;font-weight:650}
+    .sy-world-value h3{font-family:var(--serif);font-weight:500;font-size:clamp(30px,2.55vw,39px);line-height:1.08;letter-spacing:-.025em;color:var(--espresso-deep);margin:0 0 17px}
+    .sy-world-value p{margin:0;max-width:330px;font-size:13px;line-height:1.85;color:var(--text-soft)}
 
-    /* 10: Qualification with existing clinic photograph. */
-    .sy-fit{display:grid;grid-template-columns:1fr 1.15fr;background:linear-gradient(120deg,#fbf7f1,#f1e6e0);border-bottom:1px solid var(--line)}
-    .sy-fit-photo{min-height:585px;background:url('images/mirel-system-clinic-space.webp') center/cover no-repeat}
-    .sy-fit-copy{padding:85px 75px;display:flex;flex-direction:column;justify-content:center}
-    .sy-fit h2{font-family:var(--serif);font-size:clamp(42px,3.75vw,61px);line-height:1.03;letter-spacing:-.038em;font-weight:500;color:var(--espresso-deep);margin:0 0 23px}
-    .sy-fit-copy>p:not(.sy-eyebrow){color:var(--text-soft);font-size:14px;line-height:1.85;margin:0 0 21px;max-width:620px}
-    .sy-fit-list{list-style:none;margin:0 0 22px;padding:0}
-    .sy-fit-list li{position:relative;border-top:1px solid var(--line);padding:13px 0 13px 28px;color:var(--text-soft);font-size:13px;line-height:1.6}
-    .sy-fit-list li::before{position:absolute;left:0;content:"✦";color:var(--rose)}
+    /* 10: A deliberate partnership — qualifying criteria without repeating product imagery. */
+    .sy-fit{padding:99px 72px 103px;background:linear-gradient(120deg,#f3e6e0 0%,#fbf7f1 58%,#f8ede7 100%);border-bottom:1px solid var(--line)}
+    .sy-fit-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:clamp(60px,7.1vw,116px);align-items:center}
+    .sy-fit-copy{min-width:0}
+    .sy-fit-copy .sy-eyebrow{margin-bottom:24px}
+    .sy-fit h2{font-family:var(--serif);font-size:clamp(46px,4.25vw,66px);line-height:1.03;letter-spacing:-.04em;font-weight:500;color:var(--espresso-deep);margin:0 0 25px;text-wrap:balance}
+    .sy-fit-copy>p:not(.sy-eyebrow){color:var(--text-soft);font-size:14px;line-height:1.9;margin:0 0 27px;max-width:530px}
+    .sy-fit-copy .sy-text-link{margin-top:4px}
+    .sy-fit-side{min-width:0;padding:10px 0}
+    .sy-fit-side-heading{margin:0 0 21px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#8e6a60;font-weight:650}
+    .sy-fit-list{list-style:none;margin:0;padding:0;border-top:1px solid rgba(62,39,35,.18)}
+    .sy-fit-list li{display:grid;grid-template-columns:45px minmax(0,1fr);gap:19px;padding:19px 0;border-bottom:1px solid rgba(62,39,35,.18);align-items:start;min-width:0}
+    .sy-fit-no{font-family:var(--serif);font-size:29px;line-height:1.03;color:var(--rose)}
+    .sy-fit-list h3{font-family:var(--serif);font-size:27px;font-weight:500;line-height:1.08;letter-spacing:-.018em;color:var(--espresso-deep);margin:0 0 6px}
+    .sy-fit-list p{font-size:12px;line-height:1.8;color:var(--text-soft);margin:0;max-width:540px}
 
     /* 11: Closing image and existing appointment destination. */
     .sy-final{display:grid;grid-template-columns:.9fr 1.1fr;background:#211411;color:#fff}
@@ -238,9 +247,10 @@
       .sy-lens:nth-child(3){border-right:0}
       .sy-journey-grid,.sy-guardrails-layout{grid-template-columns:1fr;gap:36px}
       .sy-journey-copy{position:static}
-      .sy-fit-copy,.sy-final-copy{padding:65px 45px}
-      .sy-world-header{padding:60px 34px 29px}
-      .sy-world-photo{min-height:240px}
+      .sy-final-copy{padding:65px 45px}
+      .sy-world,.sy-fit{padding:80px 34px}
+      .sy-world-header{margin-bottom:45px}
+      .sy-fit-inner{grid-template-columns:1fr;gap:49px;align-items:start}
     }
     @media(max-width:760px){
       .sy-hero{padding:46px 22px 50px;gap:37px}
@@ -281,14 +291,26 @@
       .sy-measure-card h3{font-size:33px}
       .sy-equation{padding:19px 13px;font-size:26px}
       .sy-regulatory-note{padding:18px}
-      .sy-world-grid{grid-template-columns:1fr 1fr}
-      .sy-world-photo{min-height:200px}
-      .sy-world-header{padding:48px 22px 27px}
-      .sy-fit,.sy-final{grid-template-columns:1fr}
-      .sy-fit-photo{min-height:330px}
+      .sy-world,.sy-fit{padding:66px 22px}
+      .sy-world-header{margin-bottom:36px}
+      .sy-world-header h2{font-size:clamp(40px,10vw,54px)}
+      .sy-world-lede{font-size:13px;margin-top:20px}
+      .sy-world-values{grid-template-columns:1fr}
+      .sy-world-value,.sy-world-value:first-child,.sy-world-value:last-child{padding:23px 0;border-right:0}
+      .sy-world-value:not(:last-child){border-bottom:1px solid var(--line)}
+      .sy-world-value .sy-value-index{margin-bottom:12px}
+      .sy-world-value h3{font-size:32px;margin-bottom:10px}
+      .sy-fit-inner{gap:28px}
+      .sy-fit h2{font-size:clamp(40px,9.1vw,52px)}
+      .sy-fit-copy>p:not(.sy-eyebrow){font-size:13px;margin-bottom:18px}
+      .sy-fit-side{padding:0}
+      .sy-fit-list li{grid-template-columns:35px minmax(0,1fr);gap:12px;padding:15px 0}
+      .sy-fit-no{font-size:26px}
+      .sy-fit-list h3{font-size:25px}
+      .sy-final{grid-template-columns:1fr}
       .sy-final-photo{min-height:300px}
-      .sy-fit-copy,.sy-final-copy{padding:58px 22px}
-      .sy-fit h2,.sy-final h2{font-size:clamp(39px,9.1vw,48px)}
+      .sy-final-copy{padding:58px 22px}
+      .sy-final h2{font-size:clamp(39px,9.1vw,48px)}
       .sys-page .footer-social{justify-content:flex-start;gap:0 14px}
       .sys-page .footer-social a{padding:10px 2px}
     }
@@ -296,7 +318,8 @@
       .sy-hero h1{font-size:44px}
       .sy-hero-mini{min-height:155px}
       .sy-hero-image{min-height:340px}
-      .sy-world-photo{min-height:155px}
+      .sy-world-header h2{font-size:40px}
+      .sy-fit h2{font-size:39px}
     }
     @media(max-width:1180px){
       .sys-page #mirel-site-footer::after{content:"© 2026 Mirèl Partners. All rights reserved." !important}
@@ -464,34 +487,52 @@
         </aside>
       </section>
 
-      <!-- 09 / Original Systems imagery: do not require additional uploads. -->
+      <!-- 09 / The Mirèl Standard: patient trust and commercial discipline, without a photo gallery. -->
       <section class="sy-world" aria-labelledby="world-title">
-        <div class="sy-world-header reveal">
-          <p class="sy-eyebrow">The Mirèl Standard</p>
-          <h2 id="world-title">Considered at every touchpoint.</h2>
-        </div>
-        <div class="sy-world-grid" aria-hidden="true">
-          <div class="sy-world-photo one"></div>
-          <div class="sy-world-photo two"></div>
-          <div class="sy-world-photo three"></div>
-          <div class="sy-world-photo four"></div>
+        <div class="sy-world-inner">
+          <header class="sy-world-header reveal">
+            <p class="sy-eyebrow">The Mirèl Standard</p>
+            <h2 id="world-title">Considered at every <em>touchpoint.</em></h2>
+            <p class="sy-world-lede">Growth should feel seamless to the patient and make commercial sense to the clinic. We believe both sides of that experience deserve the same level of attention.</p>
+          </header>
+          <div class="sy-world-values">
+            <article class="sy-world-value reveal">
+              <span class="sy-value-index">01 / Patient Confidence</span>
+              <h3>Protect the experience.</h3>
+              <p>Every response, booking and follow-through should reflect the care and credibility of a premium clinic.</p>
+            </article>
+            <article class="sy-world-value reveal">
+              <span class="sy-value-index">02 / Connected Execution</span>
+              <h3>Make the handoffs count.</h3>
+              <p>Marketing, reception, consultation and retention should operate as one journey, with clear ownership at each transition.</p>
+            </article>
+            <article class="sy-world-value reveal">
+              <span class="sy-value-index">03 / Commercial Judgment</span>
+              <h3>Know what growth is worth.</h3>
+              <p>Prioritize improvements against real capacity, delivery costs and contribution—not activity for its own sake.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <!-- 10 / Premium qualification, without publishing an invented revenue cutoff. -->
+      <!-- 10 / Ideal partnership criteria: editorial layout, no stock or outdated branded imagery. -->
       <section class="sy-fit" aria-labelledby="fit-title">
-        <div class="sy-fit-photo" role="img" aria-label="Refined med spa interior"></div>
-        <div class="sy-fit-copy reveal">
-          <p class="sy-eyebrow">A Deliberate Partnership</p>
-          <h2 id="fit-title">Built for established clinics ready to grow <em>with greater clarity.</em></h2>
-          <p>Mirèl is designed for med spa owners and operators who already have a real business to build on — and want to make better decisions about the next stage of growth.</p>
-          <ul class="sy-fit-list">
-            <li>You value contribution and patient experience over lead volume alone.</li>
-            <li>Your team is open to examining numbers and improving handoffs.</li>
-            <li>You have the operational capacity to serve additional suitable patients.</li>
-            <li>You want a partner who works with your existing people and systems.</li>
-          </ul>
-          <a class="sy-text-link" href="about.html">Get to Know Mirèl Partners <span aria-hidden="true">→</span></a>
+        <div class="sy-fit-inner">
+          <div class="sy-fit-copy reveal">
+            <p class="sy-eyebrow">A Deliberate Partnership</p>
+            <h2 id="fit-title">Built for established clinics ready to grow <em>with greater clarity.</em></h2>
+            <p>The strongest partnerships begin with an operating business, meaningful numbers and a team willing to improve how patients move from interest to ongoing care.</p>
+            <a class="sy-text-link" href="about.html">Get to Know Mirèl Partners <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="sy-fit-side reveal">
+            <p class="sy-fit-side-heading">Where a Partnership Can Work Best</p>
+            <ul class="sy-fit-list">
+              <li><span class="sy-fit-no" aria-hidden="true">01</span><div><h3>Established demand.</h3><p>You already have patients, inquiries or an existing growth engine with measurable room for improvement.</p></div></li>
+              <li><span class="sy-fit-no" aria-hidden="true">02</span><div><h3>Capacity to deliver.</h3><p>Your team can serve more suitable patients—or has a realistic plan to increase capacity without sacrificing quality.</p></div></li>
+              <li><span class="sy-fit-no" aria-hidden="true">03</span><div><h3>Openness to evidence.</h3><p>You are willing to examine booking, consultation, retention and cost data rather than judge success by lead volume alone.</p></div></li>
+              <li><span class="sy-fit-no" aria-hidden="true">04</span><div><h3>Shared implementation.</h3><p>Your leadership and staff can collaborate on changes, test workflows and take ownership of what follows.</p></div></li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -546,4 +587,5 @@
   <script src="navigation.js?v=1" defer></script>
 </body>
 </html>
+
 
