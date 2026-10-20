@@ -880,68 +880,6 @@
     (() => {
       'use strict';
 
-      const nav = document.querySelector('[data-nav]');
-      const menuButton = document.querySelector('[data-menu-toggle]');
-      const mobileMenu = document.querySelector('[data-mobile-menu]');
-
-      function closeMenu() {
-        if (!menuButton || !mobileMenu) return;
-        menuButton.setAttribute('aria-expanded', 'false');
-        menuButton.setAttribute('aria-label', 'Open navigation menu');
-        mobileMenu.setAttribute('aria-hidden', 'true');
-        mobileMenu.classList.remove('open', 'active', 'is-open');
-        document.body.classList.remove('menu-open');
-      }
-
-      if (menuButton && mobileMenu) {
-        menuButton.addEventListener('click', () => {
-          const willOpen = menuButton.getAttribute('aria-expanded') !== 'true';
-          if (!willOpen) {
-            closeMenu();
-            return;
-          }
-          menuButton.setAttribute('aria-expanded', 'true');
-          menuButton.setAttribute('aria-label', 'Close navigation menu');
-          mobileMenu.setAttribute('aria-hidden', 'false');
-          mobileMenu.classList.add('open', 'active', 'is-open');
-          document.body.classList.add('menu-open');
-        });
-
-        mobileMenu.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', closeMenu);
-        });
-
-        document.addEventListener('keydown', event => {
-          if (event.key === 'Escape') {
-            closeMenu();
-            if (menuButton.getAttribute('aria-expanded') === 'false') {
-              menuButton.focus();
-            }
-          }
-        });
-
-        document.addEventListener('click', event => {
-          if (
-            menuButton.getAttribute('aria-expanded') === 'true' &&
-            !mobileMenu.contains(event.target) &&
-            !menuButton.contains(event.target)
-          ) {
-            closeMenu();
-          }
-        });
-
-        window.addEventListener('resize', () => {
-          if (window.innerWidth > 760) closeMenu();
-        }, { passive:true });
-      }
-
-      if (nav) {
-        const updateNav = () => {
-          nav.classList.toggle('scrolled', window.scrollY > 20);
-        };
-        updateNav();
-        window.addEventListener('scroll', updateNav, { passive:true });
-      }
 
       const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const revealElements = document.querySelectorAll('.reveal');
