@@ -1428,7 +1428,7 @@ img{
   }
 
   .footer:after{
-    content:"© 2026 Mirel Marketing. All rights reserved.";
+    content:"© 2026 Mirèl Partners. All rights reserved.";
     grid-column:1 / -1;
     font-size:12px;
     color:var(--text-soft);
@@ -1603,7 +1603,7 @@ img{
   }
 
   #mirel-site-footer::after {
-    content: "© 2026 Mirel Marketing. All rights reserved.";
+    content: "© 2026 Mirèl Partners. All rights reserved.";    
     grid-column: 1 / -1 !important;
     grid-row: 4 !important;
     margin-top: 18px !important;
