@@ -1,1087 +1,606 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#fbf7f1">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<title>AI for Med Spas | Patient Experience & Growth Systems | Mirel</title>
-<meta name="description" content="Explore responsible AI for med spas: patient inquiries, reception, booking, follow-up, retention, marketing and growth intelligence. A strategic guide by Mirel Marketing.">
-<link rel="canonical" href="https://mirelmarketing.com/ai-for-med-spas.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Mirel Marketing">
-<meta property="og:title" content="AI for Med Spas | Mirel Marketing">
-<meta property="og:description" content="Smarter systems. More personal care. Explore responsible AI across the med spa patient journey.">
-<meta property="og:url" content="https://mirelmarketing.com/ai-for-med-spas.html">
-<meta property="og:image" content="https://mirelmarketing.com/images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%201%20mirel%20partners.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI for Med Spas | Mirel Marketing">
-<meta name="twitter:description" content="Human strategy. AI-powered execution. Measurable growth.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231d0f0c'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-size='62' text-anchor='middle' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;450;500;600;650;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf7f1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
-<link rel="stylesheet" href="navigation.css?v=1">
-<script src="navigation.js?v=1" defer></script>
+  <title>AI for Med Spas | Smarter Patient Revenue Systems | Mirèl Partners</title>
+  <meta name="description" content="Explore AI for established med spas: patient inquiry response, booking workflows, lead recovery, retention and revenue intelligence. Practical, human-supervised AI strategy from Mirèl Partners.">
+  <link rel="canonical" href="https://mirelpartners.com/ai-for-med-spas.html">
 
-<link rel="preload" as="image" type="image/webp" href="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%201%20mirel%20partners.webp" fetchpriority="high">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mirèl Partners">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://mirelpartners.com/ai-for-med-spas.html">
+  <meta property="og:title" content="AI for Med Spas | Smarter Patient Revenue Systems | Mirèl Partners">
+  <meta property="og:description" content="AI is a tool, not the growth strategy. Explore thoughtful automation across the commercial patient journey.">
+  <meta property="og:image" content="https://mirelpartners.com/images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%201%20mirel%20partners.webp">
+  <meta property="og:image:alt" content="Mirèl Partners editorial visual integrating medical aesthetics and artificial intelligence">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI for Med Spas | Mirèl Partners">
+  <meta name="twitter:description" content="Human strategy. AI-powered execution. Measurable growth.">
+  <meta name="twitter:image" content="https://mirelpartners.com/images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%201%20mirel%20partners.webp">
 
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@graph":[
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231d0f0c'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-size='62' text-anchor='middle' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap">
+
+  <!-- Existing centralized design, navigation, and footer CSS remain unchanged. -->
+  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="navigation.css?v=1">
+  <link rel="preload" as="image" type="image/webp" href="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%201%20mirel%20partners.webp" fetchpriority="high">
+
+  <script type="application/ld+json">
   {
-   "@type":"Organization",
-   "@id":"https://mirelmarketing.com/#organization",
-   "name":"Mirel Marketing",
-   "url":"https://mirelmarketing.com/",
-   "email":"delora@mirelmarketing.com",
-   "sameAs":[
-    "https://www.instagram.com/mirelpartners/",
-    "https://www.youtube.com/@mirelpartners",
-    "https://www.linkedin.com/company/mirelmarketing/"
-   ]
-  },
-  {
-   "@type":"WebPage",
-   "@id":"https://mirelmarketing.com/ai-for-med-spas.html#webpage",
-   "name":"AI for Med Spas | Patient Experience & Growth Systems",
-   "url":"https://mirelmarketing.com/ai-for-med-spas.html",
-   "description":"Responsible AI and automation opportunities for medical aesthetic clinics.",
-   "publisher":{"@id":"https://mirelmarketing.com/#organization"}
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "@id":"https://mirelpartners.com/#organization",
+        "name":"Mirèl Partners",
+        "url":"https://mirelpartners.com/",
+        "email":"delora@mirelmarketing.com",
+        "description":"Founder-led med spa revenue growth partner focused on patient acquisition, conversion, commercial automation and retention.",
+        "sameAs":[
+          "https://www.instagram.com/mirelpartners/",
+          "https://www.youtube.com/@mirelpartners",
+          "https://www.linkedin.com/company/mirelmarketing/"
+        ]
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://mirelpartners.com/#website",
+        "name":"Mirèl Partners",
+        "url":"https://mirelpartners.com/",
+        "publisher":{"@id":"https://mirelpartners.com/#organization"}
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://mirelpartners.com/ai-for-med-spas.html#webpage",
+        "url":"https://mirelpartners.com/ai-for-med-spas.html",
+        "name":"AI for Med Spas | Smarter Patient Revenue Systems",
+        "description":"A practical guide to AI and responsible automation opportunities across the med spa commercial patient journey.",
+        "inLanguage":"en",
+        "isPartOf":{"@id":"https://mirelpartners.com/#website"},
+        "about":{"@id":"https://mirelpartners.com/#organization"}
+      }
+    ]
   }
- ]
-}
-</script>
+  </script>
 
-<style>
-/* AI PAGE — STANDALONE PAGE STYLES, SHARED MIREL DESIGN */
+  <style>
+    /* AI FOR MED SPAS — page-level styles only; shared files remain untouched. */
+    .ai-page{
+      --ai-cream:#fbf7f1;
+      --ai-white:#fffdf9;
+      --ai-dark:#1d0f0c;
+      --ai-espresso:#3e2723;
+      --ai-rose:#a9686d;
+      --ai-muted:#705e55;
+      --ai-line:rgba(62,39,35,.16);
+      background:var(--ai-cream);
+      color:var(--ai-dark);
+      overflow-x:clip;
+    }
+    .ai-page *{box-sizing:border-box}
+    .ai-page section[id]{scroll-margin-top:105px}
+    .ai-page a:focus-visible,.ai-page summary:focus-visible{outline:3px solid var(--ai-rose);outline-offset:4px}
+    .ai-container{width:min(calc(100% - 144px),1280px);margin-inline:auto}
+    .ai-eyebrow{margin:0 0 21px;font:650 11px/1.6 'Inter',Arial,sans-serif;letter-spacing:.29em;text-transform:uppercase;color:#906e5c}
+    .ai-heading{margin:0 0 23px;font:500 clamp(42px,4.65vw,68px)/1.02 'Cormorant Garamond',Georgia,serif;letter-spacing:-.04em;color:var(--ai-dark);text-wrap:balance}
+    .ai-heading em,.ai-hero h1 em{color:var(--ai-rose);font-weight:400}
+    .ai-copy{margin:0;max-width:750px;font:400 15px/1.88 'Inter',Arial,sans-serif;color:var(--ai-muted)}
+    .ai-section{padding:104px 0;border-bottom:1px solid var(--ai-line)}
+    .ai-intro{max-width:850px;margin-bottom:47px}
+    .ai-text-link{display:inline-flex;gap:11px;align-items:center;width:fit-content;font-size:11px;line-height:1.6;letter-spacing:.16em;text-transform:uppercase;font-weight:650;color:var(--ai-espresso);border-bottom:1px solid rgba(62,39,35,.35);padding-bottom:6px;transition:gap .2s,border-color .2s}
+    .ai-text-link:hover{gap:16px;border-color:var(--ai-rose)}
+    .ai-page .ai-text-link:focus-visible{outline-offset:5px}
+    .ai-small-note{font-size:11px;line-height:1.75;color:var(--ai-muted)}
+    .ai-page h1,.ai-page h2,.ai-page h3,.ai-page p{overflow-wrap:break-word}
+    .ai-skip{position:fixed;top:0;left:14px;z-index:10002;padding:12px 18px;background:var(--ai-dark);color:#fff;transform:translateY(-140%)}
+    .ai-skip:focus{transform:none}
 
-.ai-page{
- --ai-cream:#fbf7f1;
- --ai-dark:#1d0f0c;
- --ai-rose:#a9686d;
- --ai-muted:#705e55;
- --ai-line:rgba(62,39,35,.16);
- background:var(--ai-cream);
- color:var(--ai-dark);
- overflow-x:clip;
-}
-.ai-page *{box-sizing:border-box}
-.ai-page section[id]{scroll-margin-top:105px}
-.ai-container{width:min(calc(100% - 144px),1280px);margin-inline:auto}
-.ai-eyebrow{
- margin:0 0 19px;
- font:650 11px/1.5 Inter,Arial,sans-serif;
- letter-spacing:.31em;
- text-transform:uppercase;
- color:#966f57;
-}
-.ai-heading{
- margin:0 0 20px;
- font:500 clamp(42px,4.7vw,68px)/.99 "Cormorant Garamond",Georgia,serif;
- letter-spacing:-.041em;
- color:var(--ai-dark);
-}
-.ai-heading em,.ai-hero h1 em{color:var(--ai-rose);font-weight:400}
-.ai-copy{margin:0;max-width:710px;font-size:16px;line-height:1.85;color:var(--ai-muted)}
-.ai-section{padding:110px 0;border-bottom:1px solid var(--ai-line)}
-.ai-intro{max-width:850px;margin-bottom:48px}
-.ai-text-link{
- display:inline-flex;align-items:center;gap:10px;
- width:fit-content;font-size:12px;line-height:1.5;font-weight:650;
- color:#3e2723;border-bottom:1px solid rgba(62,39,35,.3);
- padding-bottom:5px;transition:gap .2s,border-color .2s;
-}
-.ai-text-link:hover{gap:15px;border-color:var(--ai-rose)}
-.ai-page a:focus-visible,.ai-page summary:focus-visible,
-.ai-nav a:focus-visible,.ai-nav button:focus-visible{
- outline:3px solid var(--ai-rose);outline-offset:4px
-}
+    /* 01 / HERO — original editorial pair and intimate rose/ivory palette. */
+    .ai-hero{padding:89px 0 94px;background:radial-gradient(circle at 4% 4%,rgba(242,214,218,.48),transparent 36%),linear-gradient(107deg,#fbf7f1 35%,#f0e5dc 100%);border-bottom:1px solid var(--ai-line)}
+    .ai-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center}
+    .ai-hero h1{margin:0 0 27px;font:500 clamp(64px,6.35vw,96px)/.92 'Cormorant Garamond',Georgia,serif;letter-spacing:-.054em;color:var(--ai-dark);max-width:800px;text-wrap:balance}
+    .ai-hero-lead{max-width:605px;margin:0 0 31px;font:400 16px/1.84 'Inter',Arial,sans-serif;color:var(--ai-muted)}
+    .ai-hero-actions{display:flex;gap:13px;flex-wrap:wrap;align-items:center}
+    .ai-hero-actions .btn{max-width:100%;min-height:54px}
+    .ai-hero-note{margin:36px 0 0;font:550 10px/1.8 'Inter',Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:#795c4e}
+    .ai-visual{display:grid;grid-template-columns:1.12fr .7fr;gap:12px;height:598px;min-width:0}
+    .ai-visual-primary,.ai-visual-secondary{position:relative;overflow:hidden;min-width:0;background:#dfd4ca}
+    .ai-visual-primary img,.ai-visual-secondary img,.ai-feature-photo img,.ai-editorial-strip img,.ai-final-image img{display:block;width:100%;height:100%;object-fit:cover}
+    .ai-visual-primary img{object-position:57% center}
+    .ai-visual-secondary img{object-position:center}
+    .ai-visual-primary::after,.ai-visual-secondary::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(27,14,11,.44));pointer-events:none}
+    .ai-visual-caption{position:absolute;bottom:21px;left:20px;z-index:1;font:550 9px/1.4 'Inter',Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#fff}
+    .ai-visual-side{display:flex;flex-direction:column;gap:12px;min-width:0;min-height:0}
+    .ai-visual-secondary{flex:1}
+    .ai-visual-quote{flex-shrink:0;padding:26px 19px;background:var(--ai-dark);color:#f7e9da}
+    .ai-visual-quote strong{display:block;font:italic 400 28px/1.14 'Cormorant Garamond',Georgia,serif}
+    .ai-visual-quote small{display:block;margin-top:14px;font:500 9px/1.5 'Inter',Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase;color:#dcc0a2}
 
-/* NAVIGATION */
-.ai-nav .nav-links{gap:29px}
-.ai-nav .nav-links a{white-space:nowrap}
-.ai-nav .nav-links a.active{color:var(--ai-dark)}
-.ai-nav .mobile-menu-toggle{font-family:Arial,sans-serif}
-.ai-nav .mobile-menu a.active{color:var(--ai-rose)}
-.ai-skip{
- position:fixed;top:-100px;left:12px;z-index:10002;
- padding:12px 18px;background:var(--ai-dark);color:#fff;
-}
-.ai-skip:focus{top:12px}
+    /* 02 / Contextual data — NOT claims about agency performance or causal AI benefits. */
+    .ai-evidence-band{background:var(--ai-dark);color:#fffaf3}
+    .ai-evidence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+    .ai-evidence-item{padding:38px 31px 38px;border-right:1px solid rgba(255,255,255,.16)}
+    .ai-evidence-item:first-child{padding-left:0}
+    .ai-evidence-item:last-child{padding-right:0;border-right:0}
+    .ai-evidence-item strong{display:block;font:500 clamp(45px,5vw,64px)/1 'Cormorant Garamond',Georgia,serif;color:#f3dbcb}
+    .ai-evidence-item p{margin:12px 0 10px;font-size:12px;line-height:1.8;color:#f6eee8}
+    .ai-evidence-item a{font-size:11px;line-height:1.6;color:#e2c3ac;text-decoration:underline;text-underline-offset:4px}
+    .ai-evidence-note{margin:0;padding:0 0 26px;font-size:11px;line-height:1.7;color:#d7c9c0}
 
-/* HERO */
-.ai-hero{
- padding:88px 0 94px;
- background:
- radial-gradient(circle at 3% 4%,rgba(242,214,218,.5),transparent 34%),
- linear-gradient(107deg,#fbf7f1 35%,#f0e5dc 100%);
- border-bottom:1px solid var(--ai-line);
-}
-.ai-hero-grid{
- display:grid;grid-template-columns:1.05fr .95fr;
- align-items:center;gap:70px;
-}
-.ai-hero h1{
- margin:0 0 30px;
- font:500 clamp(62px,6.5vw,98px)/.91 "Cormorant Garamond",Georgia,serif;
- letter-spacing:-.056em;color:var(--ai-dark);max-width:780px;
-}
-.ai-hero-lead{
- font-size:17px;line-height:1.8;color:var(--ai-muted);
- max-width:600px;margin:0 0 31px;
-}
-.ai-hero-actions{display:flex;flex-wrap:wrap;gap:12px}
-.ai-hero-note{
- margin:43px 0 0;font-size:10px;line-height:1.7;
- letter-spacing:.18em;text-transform:uppercase;color:#795c4e;
-}
-.ai-visual{
- display:grid;grid-template-columns:1.12fr .7fr;
- gap:12px;min-height:600px;align-items:stretch;
-}
-.ai-visual-primary,.ai-visual-secondary{
- position:relative;overflow:hidden;min-width:0;background:#dfd4ca;
-}
-.ai-visual-primary img,.ai-visual-secondary img,.ai-feature-photo img{
- display:block;width:100%;height:100%;object-fit:cover;
-}
-.ai-visual-primary img{object-position:57% center}
-.ai-visual-secondary img{object-position:center}
-.ai-visual-primary::after,.ai-visual-secondary::after{
- content:"";position:absolute;inset:0;
- background:linear-gradient(180deg,transparent 55%,rgba(27,14,11,.46));
- pointer-events:none;
-}
-.ai-visual-caption{
- position:absolute;bottom:20px;left:22px;z-index:1;
- font-size:10px;letter-spacing:.23em;text-transform:uppercase;color:#fff;
-}
-.ai-visual-side{display:flex;flex-direction:column;gap:12px;min-width:0}
-.ai-visual-secondary{flex:1}
-.ai-visual-quote{
- flex:0 0 auto;padding:27px 20px;
- background:var(--ai-dark);color:#f7e9da;
-}
-.ai-visual-quote span{
- display:block;font:italic 400 29px/1.12 "Cormorant Garamond",Georgia,serif;
-}
-.ai-visual-quote small{
- display:block;margin-top:13px;font-size:9px;line-height:1.5;
- letter-spacing:.18em;text-transform:uppercase;color:#dcc0a2;
-}
+    /* 03 / Core point of view — explain the commercial use case before pitching software. */
+    .ai-opportunity{background:#fffdf9}
+    .ai-opportunity-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:80px;align-items:center}
+    .ai-opportunity .ai-heading{max-width:750px}
+    .ai-opportunity .ai-copy+.ai-copy{margin-top:21px}
+    .ai-opportunity-list{display:grid;border-top:1px solid var(--ai-line)}
+    .ai-opportunity-list article{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--ai-line)}
+    .ai-opportunity-list span{font:400 27px/1.2 'Cormorant Garamond',Georgia,serif;color:var(--ai-rose)}
+    .ai-opportunity-list strong{display:block;margin-bottom:6px;font:550 13px/1.5 'Inter',Arial,sans-serif;color:var(--ai-espresso)}
+    .ai-opportunity-list p{margin:0;font-size:12px;line-height:1.7;color:var(--ai-muted)}
 
-/* EVIDENCE */
-.ai-evidence-band{background:var(--ai-dark);color:#fffaf3}
-.ai-evidence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
-.ai-evidence-item{
- padding:40px 32px 42px;
- border-right:1px solid rgba(255,255,255,.16);
-}
-.ai-evidence-item:first-child{padding-left:0}
-.ai-evidence-item:last-child{border-right:0;padding-right:0}
-.ai-evidence-item strong{
- display:block;font:500 clamp(42px,5vw,68px)/1 "Cormorant Garamond",Georgia,serif;
- color:#f3dbcb;
-}
-.ai-evidence-item p{
- margin:12px 0 11px;font-size:13px;line-height:1.75;color:#f6eee8;
-}
-.ai-evidence-item a{
- font-size:11px;color:#e2c3ac;text-decoration:underline;text-underline-offset:4px;
-}
-.ai-evidence-note{
- margin:0;padding:0 0 25px;
- font-size:11px;color:#d7c9c0;line-height:1.65;
-}
+    /* 04 / Concrete capability cards with a measurement signal for each one. */
+    .ai-applications{background:linear-gradient(125deg,#f3e9e4,#fbf7f1 55%,#fffdf9)}
+    .ai-benefit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .ai-benefit{display:flex;flex-direction:column;min-height:275px;padding:34px 30px 31px;border:1px solid var(--ai-line);background:rgba(255,253,249,.78);transition:transform .24s,box-shadow .24s}
+    .ai-benefit:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(62,39,35,.08)}
+    .ai-benefit-no{display:block;margin-bottom:27px;font:550 10px/1.5 'Inter',Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase;color:#a17b65}
+    .ai-benefit h3{margin:0 0 14px;font:500 32px/1.05 'Cormorant Garamond',Georgia,serif;letter-spacing:-.025em;color:var(--ai-dark)}
+    .ai-benefit p{margin:0 0 22px;font-size:13px;line-height:1.8;color:var(--ai-muted)}
+    .ai-benefit .ai-kpi{margin-top:auto;padding-top:16px;border-top:1px solid var(--ai-line);font-size:11px;line-height:1.7;color:#735a4d}
+    .ai-benefit .ai-kpi b{font-weight:650;color:var(--ai-espresso)}
+    .ai-applications-foot{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-top:34px}
+    .ai-applications-foot p{margin:0;max-width:600px;font-size:12px;line-height:1.75;color:var(--ai-muted)}
 
-/* APPLICATIONS */
-.ai-benefit-grid{
- display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
-}
-.ai-benefit{
- display:flex;flex-direction:column;
- padding:35px 31px 34px;
- border:1px solid var(--ai-line);
- background:rgba(255,253,249,.72);
- min-height:260px;
- transition:transform .25s,box-shadow .25s;
-}
-.ai-benefit:hover{
- transform:translateY(-3px);
- box-shadow:0 18px 44px rgba(62,39,35,.08);
-}
-.ai-benefit-no{
- display:block;margin-bottom:29px;
- font-size:12px;color:#a17b65;letter-spacing:.13em;
-}
-.ai-benefit h3{
- margin:0 0 12px;
- font:500 31px/1.05 "Cormorant Garamond",Georgia,serif;
- letter-spacing:-.025em;color:var(--ai-dark);
-}
-.ai-benefit p{
- margin:0 0 20px;font-size:13px;line-height:1.75;color:var(--ai-muted);
-}
-.ai-benefit .ai-kpi{
- margin-top:auto;border-top:1px solid var(--ai-line);
- padding-top:15px;color:#7c6557;font-size:11px;font-weight:600;
-}
+    /* 05 / Walk through a genuinely useful after-hours inquiry sequence. */
+    .ai-journey{background:linear-gradient(120deg,#eee0d5 0%,#fbf7f1 65%)}
+    .ai-journey-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:80px;align-items:start}
+    .ai-journey-intro{position:static;align-self:start;transform:none;animation:none}
+    .ai-journey-intro .ai-heading{position:static;top:auto;transform:none;animation:none;transition:none}
+    .ai-flow{display:grid}
+    .ai-flow-step{display:grid;grid-template-columns:44px 1fr;gap:20px;position:relative}
+    .ai-flow-step:not(:last-child)::after{content:'';position:absolute;top:48px;left:21px;width:1px;height:calc(100% - 44px);background:rgba(62,39,35,.28)}
+    .ai-flow-count{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid rgba(62,39,35,.22);border-radius:50%;background:#fffaf5;color:#8d6e63;font-size:11px;z-index:1}
+    .ai-flow-content{padding:0 0 33px}
+    .ai-flow-content h3{margin:4px 0 10px;font:500 29px/1.1 'Cormorant Garamond',Georgia,serif;color:var(--ai-dark)}
+    .ai-flow-content p{margin:0;font-size:13px;line-height:1.85;color:var(--ai-muted)}
+    .ai-flow-disclaimer{margin:27px 0 0;padding:20px 22px;border-left:2px solid var(--ai-rose);font-size:12px;line-height:1.75;color:#735d52;background:rgba(255,255,255,.54)}
 
-/* JOURNEY — FIXED: NO STICKY TEXT OR SCROLL ANIMATION */
-.ai-journey{
- background:linear-gradient(125deg,#eee0d5 0%,#fbf7f1 64%);
-}
-.ai-journey-grid{
- display:grid;grid-template-columns:.8fr 1.2fr;
- gap:90px;align-items:start;
-}
-.ai-journey-intro{
- position:static!important;
- transform:none!important;
- animation:none!important;
- align-self:start;
-}
-.ai-journey .ai-heading{
- position:static!important;
- top:auto!important;
- transform:none!important;
- animation:none!important;
- transition:none!important;
-}
-.ai-journey-intro .ai-copy,
-.ai-journey-intro .ai-flow-disclaimer{
- position:static!important;
- transform:none!important;
-}
-.ai-flow{display:grid;gap:0}
-.ai-flow-step{
- display:grid;grid-template-columns:44px 1fr;gap:19px;position:relative;
-}
-.ai-flow-step:not(:last-child)::after{
- content:"";position:absolute;top:48px;left:21px;
- width:1px;height:calc(100% - 44px);
- background:rgba(62,39,35,.28);
-}
-.ai-flow-count{
- display:flex;align-items:center;justify-content:center;
- width:44px;height:44px;flex-shrink:0;
- border:1px solid rgba(62,39,35,.22);
- border-radius:50%;background:#fffaf5;
- color:#8d6e63;font-size:11px;z-index:1;
-}
-.ai-flow-content{padding:0 0 34px}
-.ai-flow-content h3{
- margin:4px 0 10px;
- font:500 29px/1.12 "Cormorant Garamond",Georgia,serif;
- color:var(--ai-dark);
-}
-.ai-flow-content p{
- margin:0;font-size:13px;color:var(--ai-muted);line-height:1.8;
-}
-.ai-flow-disclaimer{
- margin:15px 0 0;padding:18px 21px;
- border-left:2px solid var(--ai-rose);
- font-size:12px;line-height:1.7;color:#786057;
- background:rgba(255,255,255,.5);
-}
+    /* Editorial statement, using the original dark-espresso visual signature. */
+    .ai-pullquote{padding:77px 0;background:var(--ai-dark);color:#fff;text-align:center}
+    .ai-pullquote blockquote{margin:0 auto;max-width:980px;font:italic 400 clamp(35px,4.55vw,61px)/1.14 'Cormorant Garamond',Georgia,serif;color:#f1dbcb;text-wrap:balance}
+    .ai-pullquote p{margin:24px 0 0;font-size:10px;line-height:1.7;letter-spacing:.22em;text-transform:uppercase;color:#d2b99d}
 
-/* QUOTE */
-.ai-pullquote{
- background:var(--ai-dark);color:#fff;
- padding:76px 0;text-align:center;
-}
-.ai-pullquote blockquote{
- margin:0 auto;max-width:940px;
- font:italic 400 clamp(35px,4.5vw,60px)/1.13 "Cormorant Garamond",Georgia,serif;
- color:#f1dbcb;
-}
-.ai-pullquote p{
- margin:23px 0 0;font-size:11px;
- letter-spacing:.21em;text-transform:uppercase;color:#d2b99d;
-}
+    /* 06 / Real AI decision framework, not a tool catalogue. */
+    .ai-decision{background:#fffdf9}
+    .ai-decision-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+    .ai-decision-card{padding:34px 31px;border:1px solid var(--ai-line);background:#fbf7f1;min-height:237px}
+    .ai-decision-card span{display:block;margin-bottom:22px;font:500 10px/1.5 'Inter',Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ai-rose)}
+    .ai-decision-card h3{margin:0 0 13px;font:500 31px/1.1 'Cormorant Garamond',Georgia,serif;color:var(--ai-dark)}
+    .ai-decision-card p{margin:0;font-size:13px;line-height:1.8;color:var(--ai-muted)}
+    .ai-decision-foot{margin:31px 0 0;padding:23px 28px;border-left:2px solid var(--ai-rose);background:linear-gradient(100deg,#f4e7df,#fbf7f1);font-size:13px;line-height:1.8;color:#624f46}
 
-/* PROCESS */
-.ai-process{background:#fffaf6}
-.ai-process-grid{
- display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
- border-top:1px solid var(--ai-line);
-}
-.ai-process-step{
- padding:30px 24px 4px;border-right:1px solid var(--ai-line);
-}
-.ai-process-step:first-child{padding-left:0}
-.ai-process-step:last-child{padding-right:0;border-right:0}
-.ai-process-step b{
- display:block;font:400 37px/1 "Cormorant Garamond",Georgia,serif;
- color:#9f8171;
-}
-.ai-process-step h3{
- margin:22px 0 11px;
- font:500 26px/1 "Cormorant Garamond",Georgia,serif;
- color:var(--ai-dark);
-}
-.ai-process-step p{
- margin:0;font-size:12px;line-height:1.8;color:var(--ai-muted);
-}
+    /* 07 / Implementation sequence, corresponding to overall Mirèl operating method. */
+    .ai-process{background:#fffaf6}
+    .ai-process-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--ai-line)}
+    .ai-process-step{padding:30px 25px 5px;border-right:1px solid var(--ai-line)}
+    .ai-process-step:first-child{padding-left:0}
+    .ai-process-step:last-child{padding-right:0;border-right:0}
+    .ai-process-step b{display:block;font:400 37px/1 'Cormorant Garamond',Georgia,serif;color:#9f8171}
+    .ai-process-step h3{margin:21px 0 11px;font:500 27px/1.06 'Cormorant Garamond',Georgia,serif;color:var(--ai-dark)}
+    .ai-process-step p{margin:0;font-size:12px;line-height:1.85;color:var(--ai-muted)}
 
-/* ADDITIONAL AI IMAGE — SUBTLE EDITORIAL STRIP */
-.ai-editorial-strip{
- display:grid;grid-template-columns:1fr 1fr;
- gap:12px;padding:12px;
- background:#e9ddd4;
-}
-.ai-editorial-strip figure{
- position:relative;margin:0;height:310px;
- overflow:hidden;background:#ded2c8;
-}
-.ai-editorial-strip img{
- display:block;width:100%;height:100%;object-fit:cover;
-}
-.ai-editorial-strip figcaption{
- position:absolute;left:24px;bottom:23px;
- padding:10px 14px;background:rgba(29,15,12,.74);
- color:#fffaf5;font-size:10px;letter-spacing:.15em;
- text-transform:uppercase;
-}
+    /* Existing visuals 03–04. No new images are required. */
+    .ai-editorial-strip{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;background:#e9ddd4}
+    .ai-editorial-strip figure{position:relative;margin:0;height:312px;overflow:hidden;background:#ded2c8}
+    .ai-editorial-strip figcaption{position:absolute;left:23px;bottom:22px;padding:10px 14px;background:rgba(29,15,12,.73);color:#fffaf5;font:550 9px/1.5 'Inter',Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}
 
-/* RESPONSIBLE AI */
-.ai-feature{
- display:grid;grid-template-columns:.86fr 1.14fr;
- gap:0;background:#ede1d7;
-}
-.ai-feature-photo{
- min-height:610px;overflow:hidden;background:#e2d4cc;
-}
-.ai-feature-body{
- padding:95px clamp(48px,7vw,115px);
- display:flex;flex-direction:column;justify-content:center;
-}
-.ai-checks{
- display:grid;gap:13px;list-style:none;padding:0;margin:27px 0 0;
-}
-.ai-checks li{
- position:relative;padding-left:29px;
- font-size:14px;line-height:1.75;color:#5d4e47;
-}
-.ai-checks li::before{
- content:"";position:absolute;left:0;top:10px;
- width:8px;height:8px;border:1px solid var(--ai-rose);
- transform:rotate(45deg);
-}
+    /* 08 / Privacy, clinical limitations and human accountability. */
+    .ai-feature{display:grid;grid-template-columns:.88fr 1.12fr;background:#ede1d7}
+    .ai-feature-photo{min-height:675px;overflow:hidden;background:#e2d4cc}
+    .ai-feature-body{padding:85px clamp(42px,6.5vw,105px);display:flex;flex-direction:column;justify-content:center}
+    .ai-checks{display:grid;gap:15px;list-style:none;padding:0;margin:29px 0}
+    .ai-checks li{position:relative;padding-left:28px;font-size:13px;line-height:1.8;color:#5d4e47}
+    .ai-checks li::before{content:'';position:absolute;left:0;top:9px;width:8px;height:8px;border:1px solid var(--ai-rose);transform:rotate(45deg)}
+    .ai-compliance-note{margin:0 0 18px;font-size:12px;line-height:1.85;color:#65564e}
+    .ai-regulatory-links{display:flex;gap:14px 23px;flex-wrap:wrap;margin-top:12px}
+    .ai-regulatory-links a{font-size:11px;line-height:1.75;text-decoration:underline;text-underline-offset:3px;color:#4f3931}
 
-/* SOURCES */
-.ai-sources{
- background:linear-gradient(135deg,#f9f1eb,#fffaf6);
-}
-.ai-source-grid{
- display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;
-}
-.ai-source{
- display:flex;flex-direction:column;align-items:flex-start;
- padding:29px 30px;min-height:216px;
- border:1px solid var(--ai-line);
- background:rgba(255,255,255,.62);
-}
-.ai-source-kind{
- display:block;margin-bottom:14px;color:#986e56;
- text-transform:uppercase;letter-spacing:.22em;
- font-size:10px;font-weight:650;
-}
-.ai-source h3{
- margin:0 0 10px;
- font:500 28px/1.13 "Cormorant Garamond",Georgia,serif;
- color:var(--ai-dark);
-}
-.ai-source p{
- margin:0 0 20px;font-size:12px;line-height:1.8;color:var(--ai-muted);
-}
-.ai-source .ai-text-link{margin-top:auto}
+    /* 09 / References, each attributable to an identified authority. */
+    .ai-sources{background:linear-gradient(135deg,#f9f1eb,#fffaf6)}
+    .ai-source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+    .ai-source{display:flex;flex-direction:column;align-items:flex-start;min-height:209px;padding:29px 29px;border:1px solid var(--ai-line);background:rgba(255,255,255,.66)}
+    .ai-source-kind{display:block;margin-bottom:13px;font:650 10px/1.6 'Inter',Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#986e56}
+    .ai-source h3{margin:0 0 11px;font:500 28px/1.12 'Cormorant Garamond',Georgia,serif;color:var(--ai-dark)}
+    .ai-source p{margin:0 0 21px;font-size:12px;line-height:1.8;color:var(--ai-muted)}
+    .ai-source .ai-text-link{margin-top:auto;font-size:10px}
 
-/* FAQ */
-.ai-faq{background:#fffdf9}
-.ai-faq-list{max-width:980px}
-.ai-faq-list details{border-top:1px solid var(--ai-line)}
-.ai-faq-list details:last-child{border-bottom:1px solid var(--ai-line)}
-.ai-faq-list summary{
- padding:23px 46px 23px 0;position:relative;
- list-style:none;cursor:pointer;
- font:500 29px/1.18 "Cormorant Garamond",Georgia,serif;
- color:var(--ai-dark);
-}
-.ai-faq-list summary::-webkit-details-marker{display:none}
-.ai-faq-list summary::after{
- content:"+";position:absolute;right:8px;top:18px;
- font:400 28px/1 Arial,sans-serif;color:var(--ai-rose);
-}
-.ai-faq-list details[open] summary::after{content:"−"}
-.ai-faq-list details p{
- margin:0;padding:0 40px 24px 0;
- max-width:810px;font-size:14px;line-height:1.85;
- color:var(--ai-muted);
-}
+    /* 10 / Native, keyboard-accessible FAQ; no JS dependencies. */
+    .ai-faq{background:#fffdf9}
+    .ai-faq-list{max-width:985px}
+    .ai-faq-list details{border-top:1px solid var(--ai-line)}
+    .ai-faq-list details:last-child{border-bottom:1px solid var(--ai-line)}
+    .ai-faq-list summary{padding:24px 48px 24px 0;position:relative;list-style:none;cursor:pointer;font:500 29px/1.2 'Cormorant Garamond',Georgia,serif;color:var(--ai-dark)}
+    .ai-faq-list summary::-webkit-details-marker{display:none}
+    .ai-faq-list summary::after{content:'+';position:absolute;right:8px;top:19px;font:400 27px/1 Arial,sans-serif;color:var(--ai-rose)}
+    .ai-faq-list details[open] summary::after{content:'−'}
+    .ai-faq-list details p{margin:0;padding:0 38px 25px 0;max-width:835px;font-size:13px;line-height:1.85;color:var(--ai-muted)}
 
-/* FINAL CTA */
-.ai-final{
- position:relative;isolation:isolate;
- padding:108px 0 116px;color:#fff;
- background:#1d0f0c;text-align:center;
- overflow:hidden;
-}
-.ai-final-image{
- position:absolute;inset:0;z-index:-2;
-}
-.ai-final-image img{
- display:block;width:100%;height:100%;
- object-fit:cover;object-position:center;
-}
-.ai-final::before{
- content:"";position:absolute;inset:0;z-index:-1;
- background:linear-gradient(95deg,rgba(20,9,7,.95),rgba(62,39,35,.81));
-}
-.ai-final .ai-heading{
- color:#fff8f2;max-width:870px;margin:0 auto 21px;
-}
-.ai-final .ai-heading em{color:#eac1bd}
-.ai-final .ai-copy{
- margin:0 auto 30px;color:#ede0d7;max-width:665px;
-}
-.ai-final .btn-light{
- background:#fffaf5;color:var(--ai-dark);border-color:#fffaf5;
-}
-.ai-final .ai-hero-actions{justify-content:center}
-.ai-smallprint{
- margin:24px auto 0;max-width:660px;
- color:#ddcec6;font-size:11px;line-height:1.6;
-}
-.ai-footer-social{
- display:flex;gap:14px;align-items:center;flex-wrap:wrap;
-}
-.ai-footer-social a{font-size:11px}
-.ai-footer-social a:hover{color:var(--ai-dark)}
+    /* 11 / Final hero with image 06 and one direct action. */
+    .ai-final{position:relative;isolation:isolate;padding:108px 0 114px;background:#1d0f0c;text-align:center;color:#fff;overflow:hidden}
+    .ai-final-image{position:absolute;inset:0;z-index:-2}
+    .ai-final-image img{object-position:center}
+    .ai-final::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(95deg,rgba(20,9,7,.94),rgba(62,39,35,.77))}
+    .ai-final .ai-eyebrow{color:#d8bd9d}
+    .ai-final .ai-heading{color:#fff8f2;max-width:885px;margin:0 auto 24px}
+    .ai-final .ai-heading em{color:#eac1bd}
+    .ai-final .ai-copy{margin:0 auto 31px;max-width:720px;color:#ede0d7}
+    .ai-final .ai-hero-actions{justify-content:center}
+    .ai-final .btn-light{background:#fffaf5;color:var(--ai-dark);border-color:#fffaf5}
+    .ai-final .btn-outline{background:transparent;color:#fff8f2;border-color:rgba(255,255,255,.44)}
+    .ai-final .btn-outline:hover{background:rgba(255,255,255,.12)}
+    .ai-final-disclaimer{margin:25px auto 0;max-width:700px;color:#e2d0c5;font-size:11px;line-height:1.75}
 
-/* TABLET */
-@media(max-width:1380px){
- .ai-nav.nav{
-  gap:20px;padding-left:38px;padding-right:38px;
-  grid-template-columns:205px 1fr auto;
- }
- .ai-nav .nav-links{gap:19px;font-size:12px}
- .ai-nav .nav-actions .btn{padding-inline:17px}
- .ai-container{width:min(calc(100% - 76px),1280px)}
- .ai-hero-grid{gap:45px}
-}
-@media(max-width:1180px){
- .ai-hero-grid{gap:35px}
- .ai-hero h1{font-size:clamp(59px,7vw,83px)}
- .ai-visual{min-height:510px}
- .ai-journey-grid{gap:45px}
- .ai-process-grid{grid-template-columns:repeat(3,1fr);row-gap:33px}
- .ai-process-step:nth-child(3){border-right:0}
- .ai-process-step:nth-child(4){padding-left:0}
-}
-@media(max-width:1060px){
- .ai-nav.nav{
-  position:sticky;top:0;z-index:9999!important;
-  height:86px!important;min-height:86px!important;
-  grid-template-columns:1fr auto!important;
-  padding:14px 22px!important;background:#fbf7f1!important;
- }
- .ai-nav .nav-links,.ai-nav .nav-actions{display:none!important}
- .ai-nav .mobile-menu-toggle{
-  display:flex!important;width:54px!important;height:54px!important;
-  justify-content:center;align-items:center;
-  border:1px solid rgba(62,39,35,.18);
-  background:#fffdf9;color:#1d0f0c;font-size:26px;cursor:pointer;
- }
- .ai-nav .mobile-menu{
-  position:fixed!important;display:flex!important;
-  flex-direction:column;top:86px!important;
-  left:0!important;right:0!important;bottom:auto!important;
-  height:auto!important;max-height:calc(100dvh - 86px)!important;
-  overflow-y:auto!important;z-index:9998!important;
-  padding:26px 28px 34px!important;background:#fbf7f1!important;
-  box-shadow:0 30px 80px rgba(62,39,35,.14);
-  opacity:0!important;visibility:hidden!important;
-  pointer-events:none!important;transform:translateY(-12px)!important;
-  transition:.3s ease!important;
- }
- .ai-nav .mobile-menu.open{
-  opacity:1!important;visibility:visible!important;
-  pointer-events:auto!important;transform:translateY(0)!important;
- }
- .ai-nav .mobile-menu > a{
-  display:block!important;padding:13px 0!important;
-  font-size:16px!important;font-weight:450!important;
-  border-bottom:1px solid rgba(62,39,35,.10);color:#1d0f0c;
- }
- .ai-nav .mobile-menu-actions{
-  display:grid!important;gap:12px!important;margin-top:22px!important;
- }
- .ai-nav .mobile-menu-actions .btn{
-  width:100%!important;min-height:52px!important;
- }
- .ai-nav .mobile-menu-actions .btn-dark{color:#fff!important}
- .ai-nav .mobile-menu-actions .btn-light{color:#1d0f0c!important}
-}
-@media(max-width:900px){
- .ai-hero{padding:62px 0}
- .ai-hero-grid,.ai-journey-grid,.ai-feature{grid-template-columns:1fr}
- .ai-visual{min-height:430px;max-height:540px}
- .ai-hero h1{max-width:850px}
- .ai-section{padding:76px 0}
- .ai-benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
- .ai-feature-photo{min-height:450px;max-height:560px}
- .ai-feature-body{padding:70px 38px}
- .ai-evidence-item{padding:30px 16px}
-}
-@media(max-width:760px){
- .ai-container{width:calc(100% - 44px)}
- .ai-heading{font-size:clamp(38px,10vw,52px)}
- .ai-hero{padding:47px 0 55px}
- .ai-hero h1{font-size:clamp(55px,13vw,76px)}
- .ai-hero-lead{font-size:14px;line-height:1.75}
- .ai-hero-actions{align-items:stretch;flex-direction:column}
- .ai-hero-actions .btn{width:100%;white-space:normal;text-align:center}
- .ai-hero-note{margin-top:28px}
- .ai-visual{
-  grid-template-columns:1fr .65fr;min-height:335px;gap:8px;
- }
- .ai-visual-side{gap:8px}
- .ai-visual-quote{padding:18px 12px}
- .ai-visual-quote span{font-size:21px}
- .ai-visual-quote small{font-size:8px}
- .ai-visual-caption{left:11px;bottom:13px;font-size:8px}
- .ai-evidence-grid{grid-template-columns:1fr}
- .ai-evidence-item{
-  border-right:0;border-bottom:1px solid rgba(255,255,255,.14);
-  padding:25px 0;
- }
- .ai-evidence-item:first-child{padding-top:34px}
- .ai-evidence-item:last-child{padding-bottom:27px;border-bottom:0}
- .ai-evidence-item strong{font-size:51px}
- .ai-benefit-grid,.ai-source-grid,.ai-process-grid{grid-template-columns:1fr}
- .ai-benefit{min-height:0;padding:27px 25px}
- .ai-benefit-no{margin-bottom:20px}
- .ai-section{padding:64px 0}
- .ai-intro{margin-bottom:34px}
- .ai-copy{font-size:14px}
- .ai-process-step,.ai-process-step:first-child,.ai-process-step:nth-child(4){
-  border-right:0;border-bottom:1px solid var(--ai-line);padding:24px 0;
- }
- .ai-process-step:last-child{border-bottom:0}
- .ai-process-step h3{margin-top:10px}
- .ai-editorial-strip{grid-template-columns:1fr;gap:8px;padding:8px}
- .ai-editorial-strip figure{height:260px}
- .ai-feature-photo{min-height:350px}
- .ai-feature-body{padding:57px 22px}
- .ai-pullquote{padding:62px 0}
- .ai-source{min-height:0;padding:26px}
- .ai-faq-list summary{font-size:24px}
- .ai-faq-list details p{padding-right:0}
- .ai-final{padding:77px 0 80px}
- .ai-footer-social{justify-content:flex-start}
-}
-@media(prefers-reduced-motion:reduce){
- html{scroll-behavior:auto!important}
- .ai-page *{
-  transition-duration:.01ms!important;
-  animation-duration:.01ms!important;
- }
- .ai-benefit:hover{transform:none}
-}
-</style>
+    /* Unified footer: same DOM structure as the completed pages. */
+    .ai-footer-social{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 15px}
+    .ai-footer-social a{display:inline-flex;align-items:center;min-height:44px;font-size:11px;white-space:nowrap}
+    .footer::after{content:'© 2026 Mirèl Partners. All rights reserved.'!important}
+
+    @media(max-width:1380px){
+      .ai-container{width:min(calc(100% - 76px),1280px)}
+      .ai-hero-grid{gap:43px}
+    }
+    @media(max-width:1180px){
+      .ai-hero-grid{gap:35px}
+      .ai-hero h1{font-size:clamp(57px,6.5vw,80px)}
+      .ai-visual{height:510px}
+      .ai-process-grid{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:33px}
+      .ai-process-step:nth-child(3){border-right:0}
+      .ai-process-step:nth-child(4){padding-left:0}
+    }
+    @media(max-width:980px){
+      .ai-hero-grid,.ai-opportunity-grid,.ai-journey-grid,.ai-feature{grid-template-columns:1fr}
+      .ai-hero{padding:67px 0 71px}
+      .ai-visual{height:520px}
+      .ai-benefit-grid,.ai-decision-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .ai-section{padding:78px 0}
+      .ai-feature-photo{min-height:470px;max-height:575px}
+      .ai-feature-body{padding:70px 38px}
+      .ai-opportunity-grid,.ai-journey-grid{gap:43px}
+    }
+    @media(max-width:760px){
+      .ai-container{width:calc(100% - 44px)}
+      .ai-heading{font-size:clamp(40px,10vw,52px)}
+      .ai-eyebrow{font-size:10px;letter-spacing:.24em}
+      .ai-hero{padding:45px 0 57px}
+      .ai-hero h1{font-size:clamp(51px,12.8vw,69px)}
+      .ai-hero-lead{font-size:14px;line-height:1.78}
+      .ai-hero-actions{flex-direction:column;align-items:stretch}
+      .ai-hero-actions .btn{width:100%;white-space:normal;text-align:center;padding:12px 20px}
+      .ai-hero-note{margin-top:28px}
+      .ai-visual{grid-template-columns:1fr .65fr;height:340px;gap:8px}
+      .ai-visual-side{gap:8px}
+      .ai-visual-quote{padding:18px 12px}
+      .ai-visual-quote strong{font-size:20px}
+      .ai-visual-quote small{font-size:8px}
+      .ai-visual-caption{font-size:8px;left:11px;bottom:13px}
+      .ai-evidence-grid{grid-template-columns:1fr}
+      .ai-evidence-item{padding:26px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.14)}
+      .ai-evidence-item:first-child{padding-top:34px}
+      .ai-evidence-item:last-child{border-bottom:0;padding-bottom:26px}
+      .ai-evidence-item strong{font-size:51px}
+      .ai-section{padding:65px 0}
+      .ai-intro{margin-bottom:35px}
+      .ai-copy{font-size:14px}
+      .ai-benefit-grid,.ai-decision-grid,.ai-source-grid,.ai-process-grid{grid-template-columns:1fr}
+      .ai-benefit{min-height:auto;padding:28px 25px}
+      .ai-benefit-no{margin-bottom:21px}
+      .ai-decision-card{min-height:auto;padding:30px 25px}
+      .ai-process-step,.ai-process-step:first-child,.ai-process-step:nth-child(4){border-right:0;border-bottom:1px solid var(--ai-line);padding:25px 0}
+      .ai-process-step:last-child{border-bottom:0}
+      .ai-process-step h3{margin-top:10px}
+      .ai-editorial-strip{grid-template-columns:1fr;gap:8px;padding:8px}
+      .ai-editorial-strip figure{height:270px}
+      .ai-feature-photo{min-height:390px}
+      .ai-feature-body{padding:58px 22px}
+      .ai-source{min-height:auto;padding:27px}
+      .ai-faq-list summary{font-size:24px}
+      .ai-faq-list details p{padding-right:0}
+      .ai-pullquote{padding:61px 0}
+      .ai-final{padding:78px 0 84px}
+      .ai-footer-social{justify-content:flex-start;gap:0 14px}
+    }
+    @media(max-width:380px){
+      .ai-hero h1{font-size:clamp(47px,12.8vw,54px)}
+      .ai-visual-quote strong{font-size:18px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto!important}
+      .ai-page *{transition:none!important;animation:none!important}
+      .ai-benefit:hover{transform:none}
+    }
+  </style>
 </head>
-
 <body>
-<div class="site-shell">
-<a href="#main-content" class="ai-skip">Skip to content</a>
+  <a href="#main-content" class="ai-skip">Skip to main content</a>
+  <div class="site-shell">
 
-<!-- CENTRALIZED MIRÈL NAVIGATION -->
-<div data-mirel-navigation></div>
+    <!-- Centralized navigation from navigation.js. No duplicated menu implementation. -->
+    <div data-mirel-navigation></div>
 
-<main id="main-content" class="ai-page">
+    <main id="main-content" class="ai-page">
 
-<!-- 01 / HERO -->
-<section class="ai-hero" aria-labelledby="ai-page-title">
- <div class="ai-container ai-hero-grid">
-  <div>
-   <p class="ai-eyebrow">AI-powered growth systems for medical aesthetics</p>
-   <h1 id="ai-page-title">Smarter systems.<br><em>More personal care.</em></h1>
-   <p class="ai-hero-lead">
-    Artificial intelligence can help med spas respond more consistently,
-    simplify repetitive work and understand the patient journey.
-    The advantage is not more technology. It is knowing where to use it —
-    and where human expertise must lead.
-   </p>
-   <div class="ai-hero-actions">
-    <a class="btn btn-dark btn-large" href="book.html#booking">Explore Your AI Opportunities <span aria-hidden="true">↗</span></a>
-    <a class="btn btn-outline btn-large" href="#applications">See Practical Applications <span aria-hidden="true">↓</span></a>
-   </div>
-   <p class="ai-hero-note">Human strategy · Thoughtful automation · Measurable growth</p>
+      <!-- 01 / HERO: lead with patient revenue operations, not technology hype. -->
+      <section class="ai-hero" aria-labelledby="ai-page-title">
+        <div class="ai-container ai-hero-grid">
+          <div>
+            <p class="ai-eyebrow">AI &amp; Automation / Med Spa Growth Systems</p>
+            <h1 id="ai-page-title">Smarter systems.<br><em>Stronger patient journeys.</em></h1>
+            <p class="ai-hero-lead">The opportunity isn't to add AI everywhere. It's to strengthen the moments between patient inquiry, consultation, treatment and return — using intelligent workflows where they solve a real business problem.</p>
+            <div class="ai-hero-actions">
+              <a class="btn btn-dark btn-large" href="book.html#booking">Request a Growth Strategy Review <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-outline btn-large" href="#applications">Explore Practical Applications <span aria-hidden="true">↓</span></a>
+            </div>
+            <p class="ai-hero-note">Human Strategy · AI-Powered Execution · Measurable Growth</p>
+          </div>
+          <div class="ai-visual" aria-label="Mirèl editorial imagery combining med spas and emerging technology">
+            <div class="ai-visual-primary">
+              <img src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%201%20mirel%20partners.webp" alt="Premium medical aesthetics and artificial intelligence editorial artwork" loading="eager" fetchpriority="high" decoding="async" width="880" height="1040">
+              <span class="ai-visual-caption">A more connected patient journey</span>
+            </div>
+            <div class="ai-visual-side">
+              <div class="ai-visual-secondary">
+                <img src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%202%20mirel%20partners.webp" alt="Medical aesthetics and intelligent workflow visual in Mirèl's editorial style" loading="lazy" decoding="async" width="640" height="900">
+                <span class="ai-visual-caption">Technology with intention</span>
+              </div>
+              <div class="ai-visual-quote"><strong>Less friction.<br>More intention.</strong><small>The Mirèl approach</small></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 / Independent industry context, not Mirèl results. -->
+      <section class="ai-evidence-band" aria-label="Independent medical spa operating benchmarks">
+        <div class="ai-container">
+          <div class="ai-evidence-grid">
+            <div class="ai-evidence-item">
+              <strong>13%</strong>
+              <p>Median online booking rate in the 2026 med spa benchmark. Consultation-led practices should interpret this metric in context.</p>
+              <a href="https://www.zenoti.com/thecheckin/the-2026-beauty-and-wellness-benchmark-report-medspa-edition" target="_blank" rel="noopener noreferrer">Source: Zenoti, 2026 ↗</a>
+            </div>
+            <div class="ai-evidence-item">
+              <strong>38%</strong>
+              <p>Median reported staff utilization. Operational capacity and provider workflows matter alongside demand generation.</p>
+              <a href="https://www.zenoti.com/thecheckin/the-2026-beauty-and-wellness-benchmark-report-medspa-edition" target="_blank" rel="noopener noreferrer">Source: Zenoti, 2026 ↗</a>
+            </div>
+            <div class="ai-evidence-item">
+              <strong>$4.25M</strong>
+              <p>Annual revenue per location at the 90th-percentile benchmark — a measure of market scale, not of AI performance.</p>
+              <a href="https://www.zenoti.com/thecheckin/the-2026-beauty-and-wellness-benchmark-report-medspa-edition" target="_blank" rel="noopener noreferrer">Source: Zenoti, 2026 ↗</a>
+            </div>
+          </div>
+          <p class="ai-evidence-note">Independent industry benchmark data, not Mirèl client outcomes or evidence that AI causes the differences. Business results depend on the clinic's service mix, capacity, operating model and implementation.</p>
+        </div>
+      </section>
+
+      <!-- 03 / Connect AI to the same economics discussed on Services and Systems. -->
+      <section class="ai-section ai-opportunity" id="opportunity" aria-labelledby="ai-opportunity-title">
+        <div class="ai-container ai-opportunity-grid">
+          <div>
+            <p class="ai-eyebrow">A commercial perspective</p>
+            <h2 class="ai-heading" id="ai-opportunity-title">AI is not the strategy.<br><em>The patient journey is.</em></h2>
+            <p class="ai-copy">A clinic can invest in ads, generate qualified interest and still lose opportunities when a call goes unanswered, a booking isn't completed, or follow-up becomes inconsistent. Adding another software subscription does not solve a disconnected process.</p>
+            <p class="ai-copy">Mirèl's role is to diagnose the constraint first, then consider whether better workflows, ordinary automation, AI assistance or human training are the most sensible response.</p>
+            <div style="margin-top:29px"><a class="ai-text-link" href="systems.html#diagnostic">Explore the Mirèl Growth Diagnostic <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="ai-opportunity-list" aria-label="Where med spa workflows commonly lose momentum">
+            <article><span aria-hidden="true">01</span><div><strong>Inquiry without a timely reply</strong><p>The prospect is interested, but the next step takes too long.</p></div></article>
+            <article><span aria-hidden="true">02</span><div><strong>Conversation without a booking</strong><p>Questions remain unanswered, ownership is unclear or scheduling takes effort.</p></div></article>
+            <article><span aria-hidden="true">03</span><div><strong>Appointment without follow-through</strong><p>Confirmations, staff handoffs and permitted reminders are inconsistent.</p></div></article>
+            <article><span aria-hidden="true">04</span><div><strong>First visit without a relationship</strong><p>Suitable rebooking and retention opportunities disappear between visits.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 / Practical possibilities; no claim these have already been deployed. -->
+      <section class="ai-section ai-applications" id="applications" aria-labelledby="ai-applications-title">
+        <div class="ai-container">
+          <div class="ai-intro">
+            <p class="ai-eyebrow">Practical applications</p>
+            <h2 class="ai-heading" id="ai-applications-title">Technology where it earns<br><em>its place in the business.</em></h2>
+            <p class="ai-copy">The right workflow depends on your existing tools, staff, patient needs and data permissions. These are practical opportunities to evaluate — not a promise that every clinic needs every feature.</p>
+          </div>
+          <div class="ai-benefit-grid">
+            <article class="ai-benefit"><span class="ai-benefit-no">01 / RECEPTION</span><h3>AI-assisted first response</h3><p>Support routine questions about hours, location, services and next steps with clinic-approved information. Medical or uncertain questions go to a qualified person.</p><div class="ai-kpi"><b>Measure:</b> first-response time · missed inquiries</div></article>
+            <article class="ai-benefit"><span class="ai-benefit-no">02 / LEAD RECOVERY</span><h3>Smarter inquiry follow-up</h3><p>Identify conversations that stalled, route leads to the right person and support permission-based follow-ups without repeating irrelevant messages.</p><div class="ai-kpi"><b>Measure:</b> contact rate · inquiry-to-booking rate</div></article>
+            <article class="ai-benefit"><span class="ai-benefit-no">03 / BOOKING</span><h3>Consultation coordination</h3><p>Connect scheduling information, confirmations and administrative reminders where supported by the clinic's actual systems and communication permissions.</p><div class="ai-kpi"><b>Measure:</b> attended consultations · no-show rate</div></article>
+            <article class="ai-benefit"><span class="ai-benefit-no">04 / RETENTION</span><h3>Rebooking &amp; reactivation</h3><p>Help staff identify appropriate, consent-aware opportunities to reconnect with existing patients, without generating medical advice or treatment intervals.</p><div class="ai-kpi"><b>Measure:</b> repeat visits · retained patient value</div></article>
+            <article class="ai-benefit"><span class="ai-benefit-no">05 / TEAM OPERATIONS</span><h3>Administrative support</h3><p>Organize approved internal knowledge, routine task summaries and human handoffs so the team spends less effort navigating disconnected information.</p><div class="ai-kpi"><b>Measure:</b> administrative workload · task completion</div></article>
+            <article class="ai-benefit"><span class="ai-benefit-no">06 / INTELLIGENCE</span><h3>Revenue visibility</h3><p>Bring the commercial funnel into one view: qualified inquiries, bookings, visits, collected revenue and repeat business — with data quality checks.</p><div class="ai-kpi"><b>Measure:</b> funnel conversion · incremental contribution</div></article>
+          </div>
+          <div class="ai-applications-foot">
+            <p>Not every capability requires generative AI. In many clinics, simpler rules-based automation or clearer staff ownership may solve the problem at lower cost and risk.</p>
+            <a class="ai-text-link" href="services.html#capabilities">See our five growth capabilities <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 / Illustrative before/after flow without inventing results or availability. -->
+      <section class="ai-section ai-journey" id="patient-journey" aria-labelledby="ai-journey-title">
+        <div class="ai-container ai-journey-grid">
+          <div class="ai-journey-intro">
+            <p class="ai-eyebrow">An illustrative workflow</p>
+            <h2 class="ai-heading" id="ai-journey-title">When someone reaches out,<br><em>the next step should be clear.</em></h2>
+            <p class="ai-copy">Imagine a prospective patient submitting a question outside reception hours. The goal isn't a conversation with a robot for its own sake. It's a useful response, an accurate handoff and a next step the clinic can stand behind.</p>
+            <p class="ai-flow-disclaimer">Example only. This is a proposed design pattern, not a claim of a live Mirèl deployment. Actual implementation requires integration checks, consent, vendor review and staff approval.</p>
+          </div>
+          <div class="ai-flow">
+            <div class="ai-flow-step"><span class="ai-flow-count" aria-hidden="true">01</span><div class="ai-flow-content"><h3>The inquiry arrives</h3><p>A visitor contacts the clinic via an approved website form, messaging channel or telephone pathway.</p></div></div>
+            <div class="ai-flow-step"><span class="ai-flow-count" aria-hidden="true">02</span><div class="ai-flow-content"><h3>An approved response follows</h3><p>Routine, nonclinical information is provided using an approved knowledge base. Urgent, sensitive or uncertain requests are escalated.</p></div></div>
+            <div class="ai-flow-step"><span class="ai-flow-count" aria-hidden="true">03</span><div class="ai-flow-content"><h3>The booking path is clarified</h3><p>The visitor receives accurate consultation instructions or access to actual scheduling options, if the clinic supports integration.</p></div></div>
+            <div class="ai-flow-step"><span class="ai-flow-count" aria-hidden="true">04</span><div class="ai-flow-content"><h3>The team retains ownership</h3><p>Responsible staff receive the appropriate handoff. Confirmations and legally permitted reminders support the appointment.</p></div></div>
+            <div class="ai-flow-step"><span class="ai-flow-count" aria-hidden="true">05</span><div class="ai-flow-content"><h3>The outcome is measured</h3><p>Review response time, booking completion, attendance, exceptions and operating cost against the original baseline.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="ai-pullquote" aria-label="Mirèl Partners' approach to AI">
+        <div class="ai-container">
+          <blockquote>“The best automation removes friction from the journey — <em>without removing the human from the care.</em>”</blockquote>
+          <p>Human Strategy. AI-Powered Execution. Measurable Growth.</p>
+        </div>
+      </aside>
+
+      <!-- 06 / Make the purchasing decision intelligent, not fashionable. -->
+      <section class="ai-section ai-decision" id="decision-framework" aria-labelledby="ai-decision-title">
+        <div class="ai-container">
+          <div class="ai-intro">
+            <p class="ai-eyebrow">The investment decision</p>
+            <h2 class="ai-heading" id="ai-decision-title">Not another subscription.<br><em>A business case.</em></h2>
+            <p class="ai-copy">For an established med spa, the question is not “Can this be automated?” It is “Will improving this workflow produce meaningful value, with acceptable cost and risk?”</p>
+          </div>
+          <div class="ai-decision-grid">
+            <article class="ai-decision-card"><span>01 / IMPACT</span><h3>Where is the loss?</h3><p>Start with missed demand, delays, abandoned consultations or retention gaps. Define the baseline before proposing a new tool.</p></article>
+            <article class="ai-decision-card"><span>02 / READINESS</span><h3>Can we implement responsibly?</h3><p>Confirm integrations, data access, staff ownership, clinical escalation, vendor contracts and communication permissions.</p></article>
+            <article class="ai-decision-card"><span>03 / ECONOMICS</span><h3>Does the value outweigh the cost?</h3><p>Compare incremental contribution and capacity benefits with platform fees, setup, monitoring, errors and ongoing operating costs.</p></article>
+          </div>
+          <p class="ai-decision-foot"><strong>Our commercial standard:</strong> AI adoption should be evaluated through booked and attended consultations, collected revenue, retention and net contribution — not chatbot message counts or automated actions alone. Any improvement must be validated rather than assumed.</p>
+        </div>
+      </section>
+
+      <!-- 07 / Deployment sequence with explicit pre-launch checks. -->
+      <section class="ai-section ai-process" id="implementation" aria-labelledby="ai-process-title">
+        <div class="ai-container">
+          <div class="ai-intro">
+            <p class="ai-eyebrow">Implementation methodology</p>
+            <h2 class="ai-heading" id="ai-process-title">Diagnose first.<br><em>Automate with intention.</em></h2>
+            <p class="ai-copy">An intelligent workflow should be designed around the clinic's business and tested with its team. The path is deliberate, from first diagnosis to monitored operation.</p>
+          </div>
+          <div class="ai-process-grid">
+            <article class="ai-process-step"><b aria-hidden="true">01</b><h3>Map</h3><p>Review the journey, workload, missed handoffs, existing tools and baseline metrics.</p></article>
+            <article class="ai-process-step"><b aria-hidden="true">02</b><h3>Prioritize</h3><p>Choose a contained, meaningful use case with a clear owner and benefit hypothesis.</p></article>
+            <article class="ai-process-step"><b aria-hidden="true">03</b><h3>Design</h3><p>Specify approved content, integrations, permissions, exception rules and human review.</p></article>
+            <article class="ai-process-step"><b aria-hidden="true">04</b><h3>Validate</h3><p>Test accuracy, security, escalation, staff usability and failure cases before launch.</p></article>
+            <article class="ai-process-step"><b aria-hidden="true">05</b><h3>Optimize</h3><p>Track the KPIs and real cost, monitor issues and refine what proves valuable.</p></article>
+          </div>
+          <div style="margin-top:39px"><a class="ai-text-link" href="systems.html#our-method">Explore the full Mirèl operating method <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <!-- Original two-image technology/medical-aesthetics editorial break. -->
+      <section class="ai-editorial-strip" aria-label="Premium medical aesthetics and AI technology editorial visuals">
+        <figure><img src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%203%20mirel%20partners.webp" alt="Conceptual editorial portrayal of medical aesthetics and emerging technology" loading="lazy" decoding="async" width="1000" height="670"><figcaption>Thoughtful technology</figcaption></figure>
+        <figure><img src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%204%20mirel%20partners.webp" alt="Conceptual visual of AI-supported medical aesthetics operations" loading="lazy" decoding="async" width="1000" height="670"><figcaption>Human-centered operations</figcaption></figure>
+      </section>
+
+      <!-- 08 / Explicit boundaries and official guidance; no blanket compliance promise. -->
+      <section class="ai-feature" id="responsible-ai" aria-labelledby="ai-responsible-title">
+        <div class="ai-feature-photo">
+          <img src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%205%20mirel%20partners.webp" alt="Editorial illustration bringing together premium med spa care and responsible AI" loading="lazy" decoding="async" width="950" height="1150">
+        </div>
+        <div class="ai-feature-body">
+          <p class="ai-eyebrow">Responsibility before convenience</p>
+          <h2 class="ai-heading" id="ai-responsible-title">Protect the patient.<br><em>Protect the trust.</em></h2>
+          <p class="ai-copy">Medical aesthetics combines commercial operations with sensitive decisions. Technology must respect that boundary — and the particular rules that apply to each clinic.</p>
+          <ul class="ai-checks">
+            <li>Clinical diagnosis, treatment suitability, medical recommendations and urgent patient concerns belong with qualified professionals.</li>
+            <li>Review what patient information an AI tool may access, who can view it, retention, security controls and vendor responsibilities before connecting it.</li>
+            <li>Where HIPAA applies, evaluate business associate arrangements and required safeguards for vendors processing protected health information.</li>
+            <li>Check local email, SMS and telephone marketing requirements, consent, opt-out and any automated-contact restrictions.</li>
+            <li>Use accurate, clinic-approved content. No invented testimonials, misleading outcomes or AI-generated clinical claims.</li>
+            <li>Test hallucinations, privacy leaks, escalation, incorrect bookings and failure behavior; assign ongoing human oversight.</li>
+          </ul>
+          <p class="ai-compliance-note">A vendor's “HIPAA-ready” label or a generic automation template is not a substitute for the clinic's own compliance assessment. Rules vary by jurisdiction, provider status, use case and data flow.</p>
+          <div class="ai-regulatory-links">
+            <a href="https://www.hhs.gov/hipaa/for-professionals/special-topics/health-information-technology/cloud-computing/index.html" target="_blank" rel="noopener noreferrer">US HHS: cloud services &amp; HIPAA ↗</a>
+            <a href="https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/" target="_blank" rel="noopener noreferrer">UK ICO: electronic marketing ↗</a>
+            <a href="https://www.acma.gov.au/Industry/Marketers/Anti-Spam/Ensuring-you-dont-spam/key-elements-of-the-spam-act-ensuring-you-dont-spam-i-acma" target="_blank" rel="noopener noreferrer">Australia ACMA: spam compliance ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 / Curated primary sources instead of unsupported automation success claims. -->
+      <section class="ai-section ai-sources" id="research" aria-labelledby="ai-research-title">
+        <div class="ai-container">
+          <div class="ai-intro">
+            <p class="ai-eyebrow">Research &amp; operating guidance</p>
+            <h2 class="ai-heading" id="ai-research-title">Good technology decisions<br><em>start with evidence.</em></h2>
+            <p class="ai-copy">These sources help frame the opportunity, limitations and responsibilities of AI in med spas. They do not endorse Mirèl, describe our client results or guarantee an improvement.</p>
+          </div>
+          <div class="ai-source-grid">
+            <article class="ai-source"><span class="ai-source-kind">Zenoti / 2026 Med Spa Benchmark</span><h3>Understand the operating landscape</h3><p>Revenue, booking and staff-utilization benchmarks, with the important context that med spa booking is often consultation-led.</p><a class="ai-text-link" href="https://www.zenoti.com/thecheckin/the-2026-beauty-and-wellness-benchmark-report-medspa-edition" target="_blank" rel="noopener noreferrer">Read the report <span aria-hidden="true">↗</span></a></article>
+            <article class="ai-source"><span class="ai-source-kind">NIST / AI Risk Management Framework</span><h3>Manage AI risks throughout use</h3><p>NIST's voluntary framework sets out govern, map, measure and manage functions for responsible AI risk management.</p><a class="ai-text-link" href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener noreferrer">Explore NIST guidance <span aria-hidden="true">↗</span></a></article>
+            <article class="ai-source"><span class="ai-source-kind">US FDA / Medical AI Devices</span><h3>Separate clinical AI from operations</h3><p>The FDA's list of AI-enabled medical devices illustrates why clinical technologies require different oversight from marketing and administrative workflows.</p><a class="ai-text-link" href="https://www.fda.gov/medical-devices/artificial-intelligence-enabled-medical-devices/list-artificial-intelligence-enabled-medical-devices" target="_blank" rel="noopener noreferrer">Explore FDA information <span aria-hidden="true">↗</span></a></article>
+            <article class="ai-source"><span class="ai-source-kind">US HHS / Cloud Computing</span><h3>Evaluate cloud AI integrations</h3><p>HHS discusses business associate agreements, security assessment and vendor responsibilities when protected health information is involved.</p><a class="ai-text-link" href="https://www.hhs.gov/hipaa/for-professionals/special-topics/health-information-technology/cloud-computing/index.html" target="_blank" rel="noopener noreferrer">Read cloud guidance <span aria-hidden="true">↗</span></a></article>
+            <article class="ai-source"><span class="ai-source-kind">UK ICO / PECR</span><h3>Respect communication permissions</h3><p>Official guidance on electronic marketing consent, communication types and the distinction between marketing to people and businesses.</p><a class="ai-text-link" href="https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/" target="_blank" rel="noopener noreferrer">Explore ICO guidance <span aria-hidden="true">↗</span></a></article>
+            <article class="ai-source"><span class="ai-source-kind">Australia ACMA / Spam Act</span><h3>Protect consent and choice</h3><p>ACMA explains key consent, sender-identification and unsubscribe requirements for commercial electronic messages in Australia.</p><a class="ai-text-link" href="https://www.acma.gov.au/Industry/Marketers/Anti-Spam/Ensuring-you-dont-spam/key-elements-of-the-spam-act-ensuring-you-dont-spam-i-acma" target="_blank" rel="noopener noreferrer">Explore ACMA guidance <span aria-hidden="true">↗</span></a></article>
+          </div>
+          <p class="ai-small-note" style="margin:23px 0 0">For business education only; not medical, regulatory or legal advice. Requirements and product capabilities must be verified for the specific clinic, vendor and jurisdiction.</p>
+        </div>
+      </section>
+
+      <!-- 10 / Enterprise buyer questions, answered without overpromising capability. -->
+      <section class="ai-section ai-faq" id="faq" aria-labelledby="ai-faq-title">
+        <div class="ai-container">
+          <div class="ai-intro">
+            <p class="ai-eyebrow">Questions worth asking</p>
+            <h2 class="ai-heading" id="ai-faq-title">Less AI theatre.<br><em>More operational clarity.</em></h2>
+            <p class="ai-copy">A well-run medical aesthetics business should understand the costs, responsibilities and success criteria of a proposed workflow before approving its deployment.</p>
+          </div>
+          <div class="ai-faq-list">
+            <details><summary>Does every established med spa need an AI receptionist?</summary><p>No. If the real problem is scheduling, staffing coverage or inconsistent follow-up, simpler technology or better process ownership may be the more effective investment. We assess the constraint first.</p></details>
+            <details><summary>Can AI work with our current CRM or booking platform?</summary><p>Possibly. Compatibility depends on the vendor, integrations, permitted data fields, scheduling access, security requirements and contractual restrictions. Each proposed connection needs verification before it is sold as an available feature.</p></details>
+            <details><summary>Could this replace our reception team?</summary><p>The objective is to support your team, not to remove human care. Routine administrative steps may be assisted by AI, while empathetic conversations, exceptions and all clinical judgment retain a clear human owner.</p></details>
+            <details><summary>Does an AI vendor's HIPAA claim mean we are compliant?</summary><p>No. Applicability depends on the business and data involved. When HIPAA applies, the clinic and relevant vendors must evaluate required agreements, technical safeguards and each party's responsibilities. Other privacy and communications rules may also apply.</p></details>
+            <details><summary>What outcomes would make an AI pilot worth continuing?</summary><p>Start with baseline metrics. Consider changes in response speed, eligible appointment bookings, attendance, administrative workload, error frequency and incremental financial contribution after platform and operating costs. Evaluate the actual data rather than assuming causation.</p></details>
+            <details><summary>How is AI different from ordinary automation?</summary><p>Rules-based automation follows defined instructions, such as sending an authorized appointment reminder. AI can interpret or draft information within approved boundaries. Many useful workflows need only conventional automation, while some benefit from both.</p></details>
+            <details><summary>Is AI part of a wider Mirèl growth partnership?</summary><p>It is one of our five connected growth capabilities. The appropriate scope is determined after reviewing the clinic's acquisition, conversion, team workflows, retention, data and priorities. We do not prescribe an AI feature just to make a proposal appear more advanced.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11 / One high-intent next step. Keep original image 06. -->
+      <section class="ai-final" id="next-step" aria-labelledby="ai-final-title">
+        <div class="ai-final-image" aria-hidden="true">
+          <img src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%206%20mirel%20partners.webp" alt="" loading="lazy" decoding="async" width="1600" height="950">
+        </div>
+        <div class="ai-container">
+          <p class="ai-eyebrow">A considered next step</p>
+          <h2 class="ai-heading" id="ai-final-title">Don't start with the AI tool.<br><em>Start with the revenue leak.</em></h2>
+          <p class="ai-copy">Let's examine how inquiries become consultations, paying patients and returning relationships — and where an appropriately designed workflow could be worth testing.</p>
+          <div class="ai-hero-actions">
+            <a href="book.html#booking" class="btn btn-light btn-large">Request a Growth Strategy Review <span aria-hidden="true">↗</span></a>
+            <a href="systems.html" class="btn btn-outline btn-large">Explore Our Growth System <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="ai-final-disclaimer">A discovery conversation, not a claim of a completed implementation or a guarantee of financial results.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Exactly the footer structure used on Home / About / Services / Systems / Results. -->
+    <footer class="footer" id="mirel-site-footer">
+      <a class="brand" href="index.html" aria-label="Mirèl Partners Home"><span>MIRÈL</span><small>PARTNERS</small></a>
+      <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
+      <nav class="footer-social ai-footer-social" aria-label="Mirèl social media">
+        <a href="https://www.instagram.com/mirelpartners/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.youtube.com/@mirelpartners" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.linkedin.com/company/mirelmarketing/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+    </footer>
   </div>
 
-  <div class="ai-visual" aria-label="AI and premium aesthetics imagery">
-   <div class="ai-visual-primary">
-    <img
-     src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%201%20mirel%20partners.webp"
-     alt="Mirel editorial visual combining premium medical aesthetics with artificial intelligence"
-     loading="eager" fetchpriority="high" decoding="async">
-    <span class="ai-visual-caption">Designed around the patient</span>
-   </div>
-   <div class="ai-visual-side">
-    <div class="ai-visual-secondary">
-     <img
-      src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%202%20mirel%20partners.webp"
-      alt="Premium med spa and technology visual in Mirel's editorial style"
-      loading="lazy" decoding="async">
-     <span class="ai-visual-caption">Built for better systems</span>
-    </div>
-    <div class="ai-visual-quote">
-     <span>Less friction.<br>More intention.</span>
-     <small>The Mirèl approach</small>
-    </div>
-   </div>
-  </div>
- </div>
-</section>
-
-<!-- 02 / RESEARCH SNAPSHOT -->
-<section class="ai-evidence-band" aria-label="Industry research snapshot">
- <div class="ai-container">
-  <div class="ai-evidence-grid">
-   <div class="ai-evidence-item">
-    <strong>73%</strong>
-    <p>of med spa patients were repeat patients in the AmSpa 2024 industry report.</p>
-    <a href="https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/" target="_blank" rel="noopener noreferrer">AmSpa industry research ↗</a>
-   </div>
-   <div class="ai-evidence-item">
-    <strong>15% vs 21%</strong>
-    <p>Pooled appointment no-show rates with electronic notifications versus without, across healthcare studies.</p>
-    <a href="https://bmjopen.bmj.com/content/6/10/e012116" target="_blank" rel="noopener noreferrer">BMJ Open review ↗</a>
-   </div>
-   <div class="ai-evidence-item">
-    <strong>81%</strong>
-    <p>of physicians surveyed by the AMA in 2026 reported using AI professionally.</p>
-    <a href="https://www.ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows" target="_blank" rel="noopener noreferrer">AMA physician survey ↗</a>
-   </div>
-  </div>
-  <p class="ai-evidence-note">
-   Research context: these figures come from different populations and studies.
-   They are not claimed outcomes of Mirèl systems or proof that AI itself
-   produces the reported appointment benefits.
-  </p>
- </div>
-</section>
-
-<!-- 03 / OPPORTUNITY -->
-<section class="ai-section" id="opportunity" aria-labelledby="ai-opportunity-title">
- <div class="ai-container">
-  <div class="ai-intro">
-   <p class="ai-eyebrow">The opportunity</p>
-   <h2 class="ai-heading" id="ai-opportunity-title">
-    Your clinic does not need AI everywhere.<br>
-    <em>It needs clarity where it matters.</em>
-   </h2>
-   <p class="ai-copy">
-    A strong patient experience depends on the details: the first response,
-    a clear answer, a confirmed consultation, a thoughtful follow-up.
-    AI can assist with well-defined tasks, while conventional automation
-    handles predictable sequences and your team retains responsibility
-    for sensitive or clinical decisions.
-   </p>
-  </div>
-  <a class="ai-text-link" href="resources.html">
-   Explore free med spa growth resources <span aria-hidden="true">↗</span>
-  </a>
- </div>
-</section>
-
-<!-- 04 / PRACTICAL APPLICATIONS -->
-<section class="ai-section" id="applications" aria-labelledby="ai-applications-title">
- <div class="ai-container">
-  <div class="ai-intro">
-   <p class="ai-eyebrow">Practical applications</p>
-   <h2 class="ai-heading" id="ai-applications-title">
-    Seven ways AI can support<br>
-    <em>a more considered patient journey.</em>
-   </h2>
-   <p class="ai-copy">
-    These are potential applications, not a one-size-fits-all product list.
-    The right approach depends on your practice's systems, data permissions,
-    workflow needs and clinical oversight.
-   </p>
-  </div>
-
-  <div class="ai-benefit-grid">
-   <article class="ai-benefit">
-    <span class="ai-benefit-no">01 / RECEPTION</span>
-    <h3>AI-assisted first responses</h3>
-    <p>Support routine questions about opening hours, services and booking steps using clinic-approved information. Uncertain or medical questions are passed to a qualified person.</p>
-    <div class="ai-kpi">Measure: First-response time · Unanswered inquiries</div>
-   </article>
-   <article class="ai-benefit">
-    <span class="ai-benefit-no">02 / FOLLOW-UP</span>
-    <h3>Lead follow-up workflows</h3>
-    <p>Organize inquiries, identify missed replies and support consent-appropriate follow-ups so interested prospects receive a clear next step.</p>
-    <div class="ai-kpi">Measure: Contact rate · Inquiry-to-booking rate</div>
-   </article>
-   <article class="ai-benefit">
-    <span class="ai-benefit-no">03 / BOOKING</span>
-    <h3>Consultation coordination</h3>
-    <p>Connect approved scheduling tools with confirmations, preparation instructions and reminder sequences. Keep appointment status accurate and staff informed.</p>
-    <div class="ai-kpi">Measure: Confirmed bookings · No-show rate</div>
-   </article>
-   <article class="ai-benefit">
-    <span class="ai-benefit-no">04 / RETENTION</span>
-    <h3>Patient relationship support</h3>
-    <p>Help your team identify appropriate opportunities for rebooking and approved follow-up, without inventing treatment schedules or making clinical recommendations.</p>
-    <div class="ai-kpi">Measure: Repeat bookings · Follow-up completion</div>
-   </article>
-   <article class="ai-benefit">
-    <span class="ai-benefit-no">05 / MARKETING</span>
-    <h3>Content &amp; communication</h3>
-    <p>Draft educational content, summarize audience questions and organize campaign insights. A human reviews accuracy, claims, visuals and tone before publication.</p>
-    <div class="ai-kpi">Measure: Production time · Qualified inquiries</div>
-   </article>
-   <article class="ai-benefit">
-    <span class="ai-benefit-no">06 / OPERATIONS</span>
-    <h3>Team productivity</h3>
-    <p>Reduce repetitive administrative work through task summaries, approved knowledge retrieval and structured handoffs between reception, sales and clinic teams.</p>
-    <div class="ai-kpi">Measure: Administrative hours · Task completion</div>
-   </article>
-   <article class="ai-benefit">
-    <span class="ai-benefit-no">07 / ANALYTICS</span>
-    <h3>Revenue intelligence</h3>
-    <p>Bring inquiry, consultation, attendance and returning-patient metrics into a clearer view so your clinic can find friction before spending more to acquire traffic.</p>
-    <div class="ai-kpi">Measure: Funnel conversion · Patient retention</div>
-   </article>
-  </div>
- </div>
-</section>
-
-<!-- 05 / PATIENT JOURNEY — NON-STICKY HEADING -->
-<section class="ai-section ai-journey" id="patient-journey" aria-labelledby="ai-journey-title">
- <div class="ai-container ai-journey-grid">
-  <div class="ai-journey-intro">
-   <p class="ai-eyebrow">From inquiry to consultation</p>
-   <h2 class="ai-heading" id="ai-journey-title">
-    See the system<br>
-    <em>behind a better response.</em>
-   </h2>
-   <p class="ai-copy">
-    Consider a prospective patient who contacts your clinic after hours.
-    Instead of replacing your team, a carefully designed workflow could
-    organize that request and make the next step easier.
-   </p>
-   <p class="ai-flow-disclaimer">
-    Illustrative workflow only. Features depend on the clinic's tools,
-    consent, security assessment and staff supervision.
-   </p>
-  </div>
-
-  <div class="ai-flow">
-   <div class="ai-flow-step">
-    <span class="ai-flow-count">01</span>
-    <div class="ai-flow-content">
-     <h3>A question arrives</h3>
-     <p>A visitor sends an inquiry through a connected website, phone or communication channel.</p>
-    </div>
-   </div>
-   <div class="ai-flow-step">
-    <span class="ai-flow-count">02</span>
-    <div class="ai-flow-content">
-     <h3>A useful first response</h3>
-     <p>Approved nonclinical information is offered. Sensitive, urgent or uncertain requests follow human escalation rules.</p>
-    </div>
-   </div>
-   <div class="ai-flow-step">
-    <span class="ai-flow-count">03</span>
-    <div class="ai-flow-content">
-     <h3>A clear booking path</h3>
-     <p>If scheduling integration is available, the visitor can be guided toward genuine consultation availability.</p>
-    </div>
-   </div>
-   <div class="ai-flow-step">
-    <span class="ai-flow-count">04</span>
-    <div class="ai-flow-content">
-     <h3>Thoughtful follow-through</h3>
-     <p>Confirmations, permissible reminders and staff notifications help the experience remain organized.</p>
-    </div>
-   </div>
-   <div class="ai-flow-step">
-    <span class="ai-flow-count">05</span>
-    <div class="ai-flow-content">
-     <h3>Results you can examine</h3>
-     <p>Response speed, bookings, attendance and handoff issues are reviewed against the baseline to guide improvements.</p>
-    </div>
-   </div>
-  </div>
- </div>
-</section>
-
-<!-- 06 / PHILOSOPHY -->
-<aside class="ai-pullquote" aria-label="Mirel philosophy">
- <div class="ai-container">
-  <blockquote>
-   “The most valuable AI system is not the one that does the most.
-   It is the one that solves the right problem.”
-  </blockquote>
-  <p>Human strategy. AI-powered execution. Measurable growth.</p>
- </div>
-</aside>
-
-<!-- 07 / IMPLEMENTATION -->
-<section class="ai-section ai-process" id="implementation" aria-labelledby="ai-process-title">
- <div class="ai-container">
-  <div class="ai-intro">
-   <p class="ai-eyebrow">A thoughtful approach</p>
-   <h2 class="ai-heading" id="ai-process-title">
-    Diagnose first.<br><em>Automate with intention.</em>
-   </h2>
-   <p class="ai-copy">
-    Before introducing new technology, we believe in understanding
-    the existing patient journey. These are the five principles
-    we would use to assess and design a responsible AI opportunity.
-   </p>
-  </div>
-  <div class="ai-process-grid">
-   <article class="ai-process-step">
-    <b>01</b><h3>Discover</h3>
-    <p>Map inquiries, booking friction, staff workload and current tools. Establish a reliable baseline.</p>
-   </article>
-   <article class="ai-process-step">
-    <b>02</b><h3>Prioritize</h3>
-    <p>Choose a narrow, valuable use case. Distinguish genuine AI needs from ordinary automation.</p>
-   </article>
-   <article class="ai-process-step">
-    <b>03</b><h3>Design</h3>
-    <p>Set approved content, permissions, human handoffs and success measures before launch.</p>
-   </article>
-   <article class="ai-process-step">
-    <b>04</b><h3>Validate</h3>
-    <p>Test real scenarios, exceptions, privacy requirements and integration accuracy.</p>
-   </article>
-   <article class="ai-process-step">
-    <b>05</b><h3>Optimize</h3>
-    <p>Compare outcomes with the baseline and refine only what proves useful in practice.</p>
-   </article>
-  </div>
-  <div style="margin-top:45px">
-   <a class="ai-text-link" href="systems.html">
-    Explore how Mirèl thinks about growth systems <span aria-hidden="true">↗</span>
-   </a>
-  </div>
- </div>
-</section>
-
-<!-- 08 / AI EDITORIAL VISUALS -->
-<section class="ai-editorial-strip" aria-label="Artificial intelligence and premium med spa imagery">
- <figure>
-  <img
-   src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%203%20mirel%20partners.webp"
-   alt="Premium med spa technology and artificial intelligence editorial visual"
-   loading="lazy" decoding="async">
-  <figcaption>Thoughtful technology</figcaption>
- </figure>
- <figure>
-  <img
-   src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%204%20mirel%20partners.webp"
-   alt="Mirel visual interpretation of modern AI-supported aesthetics"
-   loading="lazy" decoding="async">
-  <figcaption>Human-centered growth</figcaption>
- </figure>
-</section>
-
-<!-- 09 / RESPONSIBLE AI -->
-<section class="ai-feature" id="responsible-ai" aria-labelledby="ai-responsible-title">
- <div class="ai-feature-photo">
-  <img
-   src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%205%20mirel%20partners.webp"
-   alt="Premium medical aesthetics and responsible AI technology visual"
-   loading="lazy" decoding="async">
- </div>
- <div class="ai-feature-body">
-  <p class="ai-eyebrow">Responsibility before convenience</p>
-  <h2 class="ai-heading" id="ai-responsible-title">
-   Technology should support trust.<br>
-   <em>Never compromise it.</em>
-  </h2>
-  <p class="ai-copy">
-   In medical aesthetics, patient trust comes first.
-   AI workflows must be designed around the clinic's actual legal,
-   operational and clinical responsibilities.
-  </p>
-  <ul class="ai-checks">
-   <li>Keep diagnosis, treatment suitability and medical decisions with qualified clinicians.</li>
-   <li>Assess patient-data permissions, vendor security and applicable privacy obligations before connecting records.</li>
-   <li>Respect marketing consent, communication preferences and appropriate escalation rules.</li>
-   <li>Never generate fake testimonials, misleading before-and-after imagery or guaranteed treatment claims.</li>
-   <li>Measure accuracy and maintain meaningful human oversight as systems change.</li>
-  </ul>
-  <div style="margin-top:27px">
-   <a class="ai-text-link" href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html" target="_blank" rel="noopener noreferrer">
-    Read HHS guidance on business associates <span aria-hidden="true">↗</span>
-   </a>
-  </div>
-  <div style="margin-top:17px">
-   <a class="ai-text-link" href="https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers" target="_blank" rel="noopener noreferrer">
-    Review FTC testimonial guidance <span aria-hidden="true">↗</span>
-   </a>
-  </div>
- </div>
-</section>
-
-<!-- 10 / RESEARCH -->
-<section class="ai-section ai-sources" id="research" aria-labelledby="ai-research-title">
- <div class="ai-container">
-  <div class="ai-intro">
-   <p class="ai-eyebrow">Research &amp; industry insights</p>
-   <h2 class="ai-heading" id="ai-research-title">
-    Better decisions begin<br><em>with better information.</em>
-   </h2>
-   <p class="ai-copy">
-    Explore primary industry reporting, healthcare research and official guidance.
-    These independent sources inform the discussion; they do not endorse Mirèl
-    or guarantee outcomes for any clinic.
-   </p>
-  </div>
-  <div class="ai-source-grid">
-   <article class="ai-source">
-    <span class="ai-source-kind">American Med Spa Association</span>
-    <h3>Medical spa industry benchmarks</h3>
-    <p>AmSpa's 2024 research provides context on repeat patients, clinic growth and business performance.</p>
-    <a class="ai-text-link" href="https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/" target="_blank" rel="noopener noreferrer">Read the industry report recap ↗</a>
-   </article>
-   <article class="ai-source">
-    <span class="ai-source-kind">BMJ Open · Peer-reviewed research</span>
-    <h3>Why reminders deserve attention</h3>
-    <p>A healthcare-wide systematic review of digital notifications, clinic attendance and missed appointments.</p>
-    <a class="ai-text-link" href="https://bmjopen.bmj.com/content/6/10/e012116" target="_blank" rel="noopener noreferrer">Read the systematic review ↗</a>
-   </article>
-   <article class="ai-source">
-    <span class="ai-source-kind">American Medical Association</span>
-    <h3>AI adoption among physicians</h3>
-    <p>A 2026 physician survey documents professional AI use and the continuing need for responsible oversight.</p>
-    <a class="ai-text-link" href="https://www.ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows" target="_blank" rel="noopener noreferrer">Explore the 2026 findings ↗</a>
-   </article>
-   <article class="ai-source">
-    <span class="ai-source-kind">NIST · AI risk framework</span>
-    <h3>Responsible AI implementation</h3>
-    <p>A voluntary framework for identifying, measuring and managing risks throughout an AI system's life cycle.</p>
-    <a class="ai-text-link" href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener noreferrer">Explore the NIST framework ↗</a>
-   </article>
-   <article class="ai-source">
-    <span class="ai-source-kind">HHS · Patient information</span>
-    <h3>Privacy &amp; vendor responsibilities</h3>
-    <p>Official US guidance explaining how certain vendors handling protected health information may be business associates.</p>
-    <a class="ai-text-link" href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html" target="_blank" rel="noopener noreferrer">Read HHS guidance ↗</a>
-   </article>
-   <article class="ai-source">
-    <span class="ai-source-kind">FDA · Clinical technology</span>
-    <h3>Where clinical AI differs</h3>
-    <p>The FDA explains its list of AI-enabled medical devices, an important distinction from administrative AI tools.</p>
-    <a class="ai-text-link" href="https://www.fda.gov/medical-devices/artificial-intelligence-enabled-medical-devices/list-artificial-intelligence-enabled-medical-devices" target="_blank" rel="noopener noreferrer">Explore the FDA device list ↗</a>
-   </article>
-  </div>
-  <p style="margin:22px 0 0;font-size:11px;line-height:1.8;color:#705e55">
-   Information is provided for business education, not as medical or legal advice.
-   Regulations and product capabilities vary by country, region, vendor and use case.
-  </p>
- </div>
-</section>
-
-<!-- 11 / FAQ -->
-<section class="ai-section ai-faq" id="faq" aria-labelledby="ai-faq-title">
- <div class="ai-container">
-  <div class="ai-intro">
-   <p class="ai-eyebrow">Common questions</p>
-   <h2 class="ai-heading" id="ai-faq-title">
-    Practical questions.<br><em>Clear answers.</em>
-   </h2>
-  </div>
-  <div class="ai-faq-list">
-   <details>
-    <summary>Do small or independent med spas need AI?</summary>
-    <p>Not necessarily. Start with the business problem. A basic reminder system or a clearer booking process may be more valuable than an advanced AI tool. The useful question is which repetitive work or missed handoff is worth improving.</p>
-   </details>
-   <details>
-    <summary>Will AI replace our reception or clinical team?</summary>
-    <p>That should not be the objective. AI may assist with repetitive administrative tasks and approved answers, while people handle clinical judgment, empathy, exceptions, complex questions and meaningful patient relationships.</p>
-   </details>
-   <details>
-    <summary>Can AI connect to the software we already use?</summary>
-    <p>Sometimes. It depends on the booking system, CRM, available integrations, data access and vendor rules. Integrations should be verified in advance rather than assumed.</p>
-   </details>
-   <details>
-    <summary>Is AI automatically compliant with patient privacy rules?</summary>
-    <p>No. A tool's marketing claims are not sufficient. The clinic must evaluate its obligations, the data involved, vendor agreements, security controls, consent, and the rules of the relevant jurisdiction before deployment.</p>
-   </details>
-   <details>
-    <summary>How should we measure whether an AI workflow is working?</summary>
-    <p>Measure the starting point first, then track a small number of meaningful indicators such as response time, booking conversion, no-shows, returning-patient activity, administrative workload and errors. Compare results over an appropriate period rather than assuming every improvement is caused by AI.</p>
-   </details>
-   <details>
-    <summary>What is the difference between AI and automation?</summary>
-    <p>Conventional automation executes predefined rules, such as sending an appointment reminder at a scheduled time. AI can help interpret or generate information when appropriately configured. Many effective workflows combine both, with human approval where needed.</p>
-   </details>
-  </div>
- </div>
-</section>
-
-<!-- 12 / FINAL CTA -->
-<section class="ai-final" id="next-step" aria-labelledby="ai-final-title">
- <div class="ai-final-image" aria-hidden="true">
-  <img
-   src="images/mirel%20marketing%20ai%20med%20spa%20artificial%20intelligence%206%20mirel%20partners.webp"
-   alt=""
-   loading="lazy" decoding="async">
- </div>
- <div class="ai-container">
-  <p class="ai-eyebrow" style="color:#d8bd9d">Your next step</p>
-  <h2 class="ai-heading" id="ai-final-title">
-   Before investing in more AI,<br>
-   <em>find the friction worth solving.</em>
-  </h2>
-  <p class="ai-copy">
-   Let's examine the moments between first inquiry, booked consultation
-   and returning patient — and identify where a smarter system may genuinely help.
-  </p>
-  <div class="ai-hero-actions">
-   <a href="book.html#booking" class="btn btn-light btn-large">
-    Book a Growth Strategy Review <span aria-hidden="true">↗</span>
-   </a>
-   <a href="resources.html" class="btn btn-outline btn-large"
-      style="color:#fff8f2;border-color:rgba(255,255,255,.46);background:transparent">
-    Explore Free Resources <span aria-hidden="true">↗</span>
-   </a>
-  </div>
-  <p class="ai-smallprint">
-   A strategic conversation, not a claim that a particular AI solution
-   has already been deployed or will produce guaranteed results.
-  </p>
- </div>
-</section>
-
-</main>
-
-<footer class="footer" id="mirel-site-footer">
- <a class="brand" href="index.html" aria-label="Mirel Marketing home">
-  <span>MIRÈL</span><small>MARKETING</small>
- </a>
- <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
- <nav class="footer-social ai-footer-social" aria-label="Social media">
-  <a href="https://www.instagram.com/mirelpartners/" target="_blank" rel="noopener noreferrer">Instagram</a>
-  <a href="https://www.youtube.com/@mirelpartners" target="_blank" rel="noopener noreferrer">YouTube</a>
-  <a href="https://www.linkedin.com/company/mirelmarketing/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
- </nav>
- <a href="privacy-policy.html">Privacy Policy</a>
- <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-</footer>
-</div>
+  <!-- Shared navigation loaded once, after markup. FAQ uses native details/summary. -->
+  <script src="navigation.js?v=1" defer></script>
 </body>
 </html>
+
