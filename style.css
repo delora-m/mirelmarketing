@@ -1779,3 +1779,15 @@ img{
     animation: none !important;
   }
 }
+
+
+/* MIRÈL PARTNERS — UNIFIED DESKTOP FOOTER ALIGNMENT */
+/* Keep one centered footer row, matching the Systems page. */
+/* Tablet and mobile copyright layouts remain unchanged. */
+
+@media (min-width: 1181px) {
+  #mirel-site-footer::after {
+    content: none !important;
+    display: none !important;
+  }
+}
