@@ -1,49 +1,55 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://mirelmarketing.com/</loc>
+    <loc>https://mirelpartners.com/</loc>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://mirelmarketing.com/about.html</loc>
+    <loc>https://mirelpartners.com/about.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mirelmarketing.com/services.html</loc>
+    <loc>https://mirelpartners.com/services.html</loc>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://mirelmarketing.com/systems.html</loc>
+    <loc>https://mirelpartners.com/systems.html</loc>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://mirelmarketing.com/results.html</loc>
+    <loc>https://mirelpartners.com/results.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mirelmarketing.com/resources.html</loc>
+    <loc>https://mirelpartners.com/ai-for-med-spas.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mirelpartners.com/resources.html</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://mirelmarketing.com/book.html</loc>
+    <loc>https://mirelpartners.com/book.html</loc>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://mirelmarketing.com/privacy-policy.html</loc>
+    <loc>https://mirelpartners.com/privacy-policy.html</loc>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://mirelmarketing.com/terms-and-conditions.html</loc>
+    <loc>https://mirelpartners.com/terms-and-conditions.html</loc>
     <priority>0.3</priority>
   </url>
 
