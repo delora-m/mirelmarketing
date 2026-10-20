@@ -1,4 +1,5 @@
+
 User-agent: *
 Allow: /
 
-Sitemap: https://mirelmarketing.com/sitemap.xml
+Sitemap: https://mirelpartners.com/sitemap.xml
