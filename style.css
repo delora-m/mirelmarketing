@@ -1791,3 +1791,44 @@ img{
     display: none !important;
   }
 }
+
+
+/* MIRÈL PARTNERS — SMALL MOBILE FOOTER FIX */
+/* Applies only to screens 359px and narrower. */
+
+@media (max-width: 359px) {
+
+  #mirel-site-footer {
+    grid-template-rows: auto auto 1px auto auto !important;
+  }
+
+  #mirel-site-footer > a[href^="mailto:"] {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 !important;
+  }
+
+  #mirel-site-footer > .footer-social {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    justify-content: center !important;
+    margin-bottom: 10px !important;
+  }
+
+  #mirel-site-footer::before {
+    grid-row: 3 !important;
+  }
+
+  #mirel-site-footer > a[href="privacy-policy.html"] {
+    grid-row: 4 !important;
+  }
+
+  #mirel-site-footer > a[href="terms-and-conditions.html"] {
+    grid-row: 4 !important;
+  }
+
+  #mirel-site-footer::after {
+    grid-row: 5 !important;
+  }
+
+}
+
