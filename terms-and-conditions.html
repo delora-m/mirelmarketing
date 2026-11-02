@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="style.css?v=8">
   <link rel="stylesheet" href="navigation.css?v=1">
   <script src="navigation.js?v=1" defer></script>
+
   <style>
     /* TERMS: page-specific editorial layout. Shared navigation and footer unchanged. */
     body.terms-page{background:#fbf7f1;color:#1d0f0c;overflow-x:clip}
@@ -57,12 +58,14 @@
     .terms-page .lt-contact h2{font:500 38px/1 'Cormorant Garamond',Georgia,serif;margin:0 0 16px}
     .terms-page .lt-contact p{font-size:13px;line-height:1.9;color:#665952;margin:0 0 12px}
     .terms-page .lt-contact p:last-child{margin:0}
+
     /* Temporary local copyright correction until shared style.css receives the final brand cleanup. */
     @media(max-width:1180px){
       .terms-page .lt-layout{grid-template-columns:190px minmax(0,1fr);gap:50px;padding:70px 34px 86px}
       .terms-page .lt-hero{padding:86px 34px 76px}
       body.terms-page .footer::after{content:'© 2026 Mirèl Partners. All rights reserved.'}
     }
+
     @media(max-width:760px){
       .terms-page .lt-hero{padding:68px 22px 60px}
       .terms-page .lt-summary{font-size:14px}
@@ -72,15 +75,25 @@
       .terms-page .lt-section{padding-bottom:34px;margin-bottom:34px}
       .terms-page .lt-contact{padding:29px 25px}
     }
-    @media(max-width:380px){.terms-page .lt-aside nav{grid-template-columns:1fr}.terms-page .lt-hero h1{font-size:50px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+
+    @media(max-width:380px){
+      .terms-page .lt-aside nav{grid-template-columns:1fr}
+      .terms-page .lt-hero h1{font-size:50px}
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto!important}
+    }
   </style>
 </head>
+
 <body class="terms-page">
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <div class="site-shell">
     <!-- Navigation is controlled centrally by navigation.js / navigation.css. -->
     <div data-mirel-navigation></div>
+
     <main id="main-content">
       <header class="lt-hero">
         <p class="lt-kicker">Mirèl Partners / Legal</p>
@@ -88,9 +101,11 @@
         <p class="lt-updated">Last updated: 20 October 2026</p>
         <p class="lt-summary">Clear terms for using the Mirèl Partners website, exploring free growth resources and arranging an introductory strategy conversation.</p>
       </header>
+
       <div class="lt-layout">
         <aside class="lt-aside" aria-label="Terms and conditions sections">
           <p>On this page</p>
+
           <nav aria-label="Terms and conditions contents">
             <a href="#about">About these terms</a>
             <a href="#permitted-use">Permitted website use</a>
@@ -111,13 +126,14 @@
             <a href="#contact">Contact</a>
           </nav>
         </aside>
+
         <div class="lt-body">
           <p class="lt-intro">A strong partnership begins with clarity. These terms address use of our public website; they are not a substitute for a separately agreed client services contract.</p>
 
           <section class="lt-section" id="about">
             <h2>01 / About Mirèl Partners and these terms</h2>
             <p>Mirèl Partners is the business name used on this website for a consultancy focused on med spa growth strategy, patient acquisition, conversion, operational workflows, retention and revenue intelligence.</p>
-            <p>These Terms &amp; Conditions (“Terms”) apply to use of <a href="https://mirelpartners.com/">mirelpartners.com</a> and its public content. “Mirèl Partners”, “we”, “us” and “our” refer to the operator of this website. To reach us, use <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>.</p>
+            <p>These Terms &amp; Conditions (“Terms”) apply to use of <a href="https://mirelpartners.com/">mirelpartners.com</a> and its public content. “Mirèl Partners”, “we”, “us” and “our” refer to the operator of this website. To reach us, use <a data-mirel-email href="mailto:delora@mirelpartners.com">delora@mirelpartners.com</a>.</p>
             <p>By using this website, you agree to comply with these Terms to the extent permitted by applicable law. If you disagree, you should not continue using the website. Any mandatory rights you have under applicable law remain unaffected.</p>
           </section>
 
@@ -212,30 +228,26 @@
 
           <section class="lt-section" id="contact">
             <h2>17 / Questions and contact</h2>
-            <p>For questions about use of the website, resources, permissions or these Terms, email <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>.</p>
+            <p>For questions about use of the website, resources, permissions or these Terms, email <a data-mirel-email href="mailto:delora@mirelpartners.com">delora@mirelpartners.com</a>.</p>
           </section>
 
           <div class="lt-contact" aria-labelledby="lt-contact-title">
             <h2 id="lt-contact-title">A question about these terms?</h2>
             <p>Contact Mirèl Partners directly. If you are considering a paid engagement, a specific service proposal and agreement will describe the commercial terms.</p>
-            <p><a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a></p>
+            <p><a data-mirel-email href="mailto:delora@mirelpartners.com">delora@mirelpartners.com</a></p>
           </div>
         </div>
       </div>
     </main>
-    <!-- Same footer structure and verified links used throughout the new site. -->
-    <footer class="footer" id="mirel-site-footer">
-      <a class="brand" href="index.html" aria-label="Mirèl Partners Home"><span>MIRÈL</span><small>PARTNERS</small></a>
-      <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
-      <nav class="footer-social" aria-label="Mirèl Partners social media">
-        <a href="https://www.instagram.com/mirelpartners/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.youtube.com/@mirelpartners" target="_blank" rel="noopener noreferrer">YouTube</a>
-        <a href="https://www.linkedin.com/company/mirelmarketing/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </nav>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-and-conditions.html" aria-current="page">Terms &amp; Conditions</a>
-    </footer>
+
+    <!-- Shared footer; content is managed by footer.js. -->
+    <footer
+      class="footer"
+      id="mirel-site-footer"
+      data-mirel-footer
+    ></footer>
   </div>
+
+  <script src="footer.js?v=1" defer></script>
 </body>
 </html>
-
