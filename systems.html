@@ -42,7 +42,7 @@
         "@id":"https://mirelpartners.com/#organization",
         "name":"Mirèl Partners",
         "url":"https://mirelpartners.com/",
-        "email":"delora@mirelmarketing.com",
+        "email":"delora@mirelpartners.com",
         "description":"Founder-led med spa revenue growth strategy, conversion optimization, retention and carefully scoped AI-assisted commercial workflows.",
         "sameAs":[
           "https://www.instagram.com/mirelpartners/",
@@ -557,17 +557,11 @@
     </main>
 
     <!-- Exact shared footer structure; keep existing email and verified social URLs. -->
-    <footer class="footer" id="mirel-site-footer">
-      <a class="brand" href="index.html" aria-label="Mirèl Partners Home"><span>MIRÈL</span><small>PARTNERS</small></a>
-      <a href="mailto:delora@mirelmarketing.com">delora@mirelmarketing.com</a>
-      <nav class="footer-social" aria-label="Mirèl social media">
-        <a href="https://www.instagram.com/mirelpartners/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.youtube.com/@mirelpartners" target="_blank" rel="noopener noreferrer">YouTube</a>
-        <a href="https://www.linkedin.com/company/mirelmarketing/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </nav>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-    </footer>
+    <footer
+  class="footer"
+  id="mirel-site-footer"
+  data-mirel-footer
+></footer>
   </div>
 
   <!-- Shared navigation is loaded exactly once; separate observer only handles reveal transitions. -->
@@ -590,6 +584,7 @@
     })();
   </script>
   <script src="navigation.js?v=1" defer></script>
+  <script src="footer.js?v=1" defer></script>
 </body>
 </html>
 
