@@ -28,7 +28,8 @@
   <link rel="preload" href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="style.css?v=9">
+  <!-- Existing shared design and navigation remain the source of truth. -->
+  <link rel="stylesheet" href="style.css?v=8">
   <link rel="stylesheet" href="navigation.css?v=1">
   <link rel="preload" as="image" href="images/hero-face.webp" type="image/webp" media="(min-width:761px)" fetchpriority="high">
 
@@ -77,216 +78,380 @@
   <script>document.documentElement.classList.add('js');</script>
 
   <style>
-    /* Home-page-only refinements — existing style.css remains the source of truth */
+    /* Home-page-only refinements. Existing style.css and navigation files are preserved. */
+    @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:swap;src:url('https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2') format('woff2')}
+    @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 500;font-display:swap;src:url('https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2') format('woff2')}
+    @font-face{font-family:'Inter';font-style:normal;font-weight:300 700;font-display:swap;src:url('https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2') format('woff2')}
     .skip-link{position:fixed;z-index:100000;top:14px;left:16px;padding:12px 18px;background:#1d0f0c;color:#fff;transform:translateY(-170%)}
     .skip-link:focus{transform:none}
     :focus-visible{outline:2px solid #a9686d;outline-offset:4px}
-  </style>
-</head>
+    .js [data-lazy-bg]:not(.bg-loaded){background-image:none!important}
+    .js .final-cta[data-lazy-bg]:not(.bg-loaded){background-image:linear-gradient(rgba(29,15,12,.70),rgba(29,15,12,.80))!important;background-color:#1d0f0c}
 
+    /* Keep original hero visual and proportions; give the longer message room. */
+    .hero{min-height:795px}
+    .hero-copy{padding-right:26px}
+    .hero h1{font-size:clamp(62px,5.6vw,84px);line-height:.95}
+    .hero-subtitle{max-width:580px}
+    .hero-note{margin-top:66px}
+    .hero-editorial{height:650px}
+    .hero .eyebrow{letter-spacing:.26em}
+    .hero .hero-positioning{font-size:13px;line-height:1.85;color:var(--text-soft);max-width:555px;margin:-14px 0 28px}
+
+    /* Original deep-espresso signature section. */
+    .authority-strip{display:flex;align-items:center;justify-content:center;padding:67px 32px;text-align:center}
+    .authority-message{max-width:1000px;margin:0 auto}
+    .authority-message h2{margin:0 0 21px;font-family:var(--serif);font-size:clamp(38px,4vw,62px);font-weight:500;line-height:1.07;letter-spacing:-.035em;color:#fff9f4}
+    .authority-message p{max-width:730px;margin:0 auto;font-size:15px;font-weight:400;line-height:1.85;color:#d9cac0}
+    .why>.section-title{font-size:clamp(44px,4.1vw,64px);max-width:990px;margin:0 auto 58px}
+    .editorial-showcase{grid-template-columns:410px 1fr}
+    .editorial-showcase .lookbook-grid{grid-template-columns:1.25fr 1fr 1fr}
+
+    /* New five-part growth architecture — local to Home, no global CSS changes. */
+    .growth-ecosystem{padding:106px 72px 100px;background:linear-gradient(135deg,#fbf7f1 0%,#fffdf9 56%,#f2e7e0 100%);border-bottom:1px solid var(--line)}
+    .ecosystem-heading{max-width:890px;margin:0 auto 53px;text-align:center}
+    .ecosystem-heading .eyebrow{margin-bottom:22px}
+    .ecosystem-heading h2{font-family:var(--serif);font-weight:500;font-size:clamp(45px,4.1vw,67px);line-height:1.02;letter-spacing:-.04em;color:var(--espresso-deep);margin:0 0 22px}
+    .ecosystem-heading h2 em{color:var(--rose);font-weight:400}
+    .ecosystem-heading>p:not(.eyebrow){font-size:15px;line-height:1.85;color:var(--text-soft);max-width:700px;margin:0 auto}
+    .ecosystem-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:1320px;margin:auto}
+    .ecosystem-card{position:relative;min-height:224px;padding:34px 40px 33px;background:rgba(255,253,249,.88);border:1px solid rgba(62,39,35,.13);transition:transform .25s ease,box-shadow .25s ease}
+    .ecosystem-card:hover{transform:translateY(-3px);box-shadow:0 20px 45px rgba(62,39,35,.07)}
+    .ecosystem-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:31px}
+    .ecosystem-number{font-family:var(--serif);font-size:30px;color:var(--rose);line-height:1}
+    .ecosystem-label{font-size:9px;letter-spacing:.23em;text-transform:uppercase;color:#9a867e}
+    .ecosystem-card h3{font-family:var(--serif);font-size:clamp(28px,2.2vw,39px);font-weight:500;line-height:1.05;color:var(--espresso-deep);margin:0 0 13px}
+    .ecosystem-card p{font-size:13px;line-height:1.85;color:var(--text-soft);margin:0;max-width:540px}
+    .ecosystem-card-wide{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.15fr;min-height:175px;gap:30px;align-items:center;background:linear-gradient(105deg,#31201d,#513831);border-color:#31201d}
+    .ecosystem-card-wide .ecosystem-top{justify-content:flex-start;gap:20px;margin-bottom:13px}
+    .ecosystem-card-wide .ecosystem-number{color:#e3c2b8}
+    .ecosystem-card-wide .ecosystem-label{color:#dbc7bf}
+    .ecosystem-card-wide h3{color:#fffaf6;margin-bottom:0}
+    .ecosystem-card-wide p{color:#e2d5ce;max-width:650px}
+    .ecosystem-link{margin:34px auto 0;display:flex;justify-content:center}
+    .ecosystem-link .text-link{min-height:44px}
+
+    /* Reuse the original 4-step map, but make delivery stages legible. */
+    .conversion-map{grid-template-columns:.9fr 1.1fr;gap:45px}
+    .map-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .map-steps article{min-height:185px;padding:20px 28px 24px}
+    .map-steps h3{margin:16px 0 14px}
+
+    /* Meaningful KPIs instead of unverified agency achievements. */
+    .metrics{grid-template-columns:315px 1fr;gap:45px}
+    .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .metric-grid article{min-height:162px;padding:23px 27px}
+    .metric-grid strong{font-size:clamp(28px,2.5vw,42px)}
+    .metric-grid span{margin-top:11px}
+
+    /* Verified third-party industry research, clearly identified as such. */
+    .industry-context{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:56px 72px;background:#f4eae4;border-bottom:1px solid var(--line)}
+    .industry-context .eyebrow{margin:0 0 17px}
+    .industry-context h2{font-family:var(--serif);font-size:clamp(33px,3vw,47px);font-weight:500;line-height:1.06;letter-spacing:-.03em;color:var(--espresso-deep);margin:0}
+    .industry-context p{color:var(--text-soft);font-size:14px;line-height:1.8;margin:0 0 12px}
+    .industry-context a{color:var(--espresso);text-decoration:underline;text-underline-offset:3px}
+    .industry-context small{display:block;font-size:11px;line-height:1.6;color:#826e66}
+    .market-note{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center;padding:67px 72px;background:linear-gradient(110deg,#fbf7f1 0%,#fffdf9 52%,#f5eae3 100%);border-bottom:1px solid var(--line)}
+    .market-note .eyebrow{margin-bottom:14px;font-size:10px;color:#795b50}
+    .market-note h2{margin:0;max-width:570px;font-family:var(--serif);font-weight:500;font-size:clamp(39px,3.2vw,54px);line-height:1.02;letter-spacing:-.035em;color:var(--espresso-deep)}
+    .market-note h2 em{font-weight:400;color:var(--rose)}
+    .market-note-right p{margin:0 0 23px;font-size:13px;line-height:1.85;color:var(--text-soft)}
+    .market-list{display:flex;flex-wrap:wrap;gap:11px 19px;list-style:none;margin:0;padding:0}
+    .market-list li{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#735c52}
+    .market-list li::before{content:'•';color:var(--rose);margin-right:8px}
+    .qualification-list ul{list-style:none;margin:0 0 25px;padding:0}
+    .qualification-list li{position:relative;padding:11px 0 11px 27px;border-top:1px solid var(--line);font-size:14px;line-height:1.6;color:var(--text-soft)}
+    .qualification-list li::before{content:'✦';position:absolute;left:0;color:var(--rose)}
+    .final-cta{min-height:460px;padding:60px 26px}
+    .final-cta>div{max-width:850px}
+    .final-cta p:not(.eyebrow){line-height:1.8}
+    .footer-social{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 15px}
+    .footer-social a{display:inline-flex;align-items:center;min-height:44px;font-size:11px;white-space:nowrap}
+    .footer::after{content:'© 2026 Mirèl Partners. All rights reserved.'!important}
+
+    @media(max-width:1180px){
+      .editorial-showcase,.conversion-map,.metrics,.market-note,.industry-context{grid-template-columns:1fr}
+      .editorial-showcase{grid-template-columns:1fr}
+      .growth-ecosystem{padding:78px 34px}
+      .market-note,.industry-context{padding:54px 34px;gap:23px}
+      .hero-editorial{height:570px}
+    }
+    @media(max-width:760px){
+      .hero{min-height:auto}
+      .hero h1{font-size:clamp(47px,11.8vw,57px)}
+      .hero .hero-positioning{font-size:12px;margin:-10px 0 24px}
+      .hero-note{margin-top:43px}
+      .hero-editorial{height:auto}
+      .authority-strip{padding:55px 22px}
+      .authority-message h2{font-size:clamp(35px,8vw,46px)}
+      .authority-message p{font-size:14px}
+      .why>.section-title{font-size:clamp(40px,9.5vw,50px);margin-bottom:15px}
+      .editorial-showcase .lookbook-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .growth-ecosystem{padding:64px 22px}
+      .ecosystem-heading{margin-bottom:33px}
+      .ecosystem-heading h2{font-size:44px}
+      .ecosystem-heading>p:not(.eyebrow){font-size:14px}
+      .ecosystem-grid{grid-template-columns:1fr;gap:11px}
+      .ecosystem-card{min-height:auto;padding:29px 26px}
+      .ecosystem-card-wide{grid-column:auto;grid-template-columns:1fr;gap:15px}
+      .ecosystem-card h3{font-size:35px}
+      .ecosystem-card-wide h3{font-size:34px}
+      .map-steps{grid-template-columns:1fr}
+      .map-steps article{min-height:auto}
+      .metric-grid{grid-template-columns:1fr 1fr}
+      .metric-grid strong{font-size:30px}
+      .metric-grid article{padding:23px 14px;min-height:150px}
+      .industry-context,.market-note{padding:46px 22px;gap:23px}
+      .market-list{gap:12px 14px}
+      .footer-social{justify-content:flex-start;gap:0 14px}
+      .footer-social a{padding:10px 2px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}.ecosystem-card{transition:none!important}}
+  </style>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+<meta name="facebook-domain-verification" content="ws8a71pdwat6rj99gdf1ijz7g2fyck" />
+  
+</head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site-shell">
+    <div data-mirel-navigation></div>
+    <main id="main-content">
 
-  <!-- Navigation will be injected by navigation.js -->
-  <div id="nav-placeholder"></div>
-
-  <main id="main-content">
-
-    <!-- HERO — existing visual structure preserved -->
-    <section class="hero">
-      <div class="container hero-inner">
+      <!-- 01 / HERO: specific problem + differentiated offer + primary action -->
+      <section class="hero reveal" aria-labelledby="home-hero-title">
         <div class="hero-copy">
           <p class="eyebrow">AI Intelligence &amp; Orchestration for Aesthetics, Wellness &amp; Longevity</p>
-          <h1>Find where your business loses revenue, <em>time and capacity.</em></h1>
-          <p class="hero-subtitle">
-            We help established aesthetic, wellness and longevity businesses identify missed revenue, reduce operational friction and turn the highest-value constraints into measurable improvements. We design intelligent systems that connect artificial intelligence, human expertise and business strategy.
-          </p>
-          <p class="hero-note">Current focus: established U.S. med spas and medical aesthetics practices</p>
-          <div class="hero-actions">
-            <a href="book.html#booking" class="btn-primary">Book a Strategy Review</a>
-            <a href="#approach" class="btn-secondary">Explore Our Approach</a>
+          <h1 id="home-hero-title">Find where your business loses revenue, <em>time and capacity.</em></h1>
+          <p class="hero-subtitle">We help established aesthetic, wellness and longevity businesses identify missed revenue, reduce operational friction and turn the highest-value constraints into measurable improvements.</p>
+          <p class="hero-positioning">We design intelligent systems that connect artificial intelligence, human expertise and business strategy.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-dark btn-large" href="book.html#booking">Book a Strategy Review</a>
+            <a class="btn btn-outline btn-large" href="#growth-ecosystem">Explore Our Approach</a>
+          </div>
+          <div class="hero-note"><span>Current focus: established U.S. med spas and medical aesthetics practices</span><i aria-hidden="true"></i></div>
+        </div>
+        <div class="hero-editorial" role="group" aria-label="Editorial imagery representing the premium med spa patient experience">
+          <div class="editorial-main img-face" role="img" aria-label="Premium beauty editorial"><span>Experience</span></div>
+          <div class="editorial-side">
+            <div class="editorial-card img-jewelry" role="img" aria-label="Luxury detail"><span>Perception</span></div>
+            <div class="editorial-card img-interior" role="img" aria-label="Refined clinic interior"><span>Trust</span></div>
           </div>
         </div>
-        <div class="hero-editorial">
-          <img src="images/hero-face.webp" alt="Mirèl Partners" loading="eager" fetchpriority="high">
+      </section>
+
+      <!-- 02 / Core commercial insight -->
+      <section class="authority-strip reveal" aria-labelledby="authority-title">
+        <div class="authority-message">
+          <h2 id="authority-title">Where does work get stuck in your business?</h2>
+          <p>A qualified inquiry waits too long for a reply. A consultation ends without a clear next step. Teams spend hours reconciling information across systems that do not talk to each other. Each gap quietly costs revenue, staff capacity or client confidence.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- PROBLEM -->
-    <section class="section">
-      <div class="container">
-        <h2>Where does work get stuck in your business?</h2>
-        <p>A qualified inquiry waits too long for a reply. A consultation ends without a clear next step. Teams spend hours reconciling information across systems that do not talk to each other. Each gap quietly costs revenue, staff capacity or client confidence.</p>
-      </div>
-    </section>
-
-    <!-- GAPS THAT MATTER -->
-    <section class="section">
-      <div class="container">
-        <h2>Find the gaps <em>that matter most.</em></h2>
-        <div class="gaps-grid">
-          <div class="gap-item">
-            <span class="number">01</span>
-            <h3>Revenue</h3>
-            <p>Qualified inquiries and consultations</p>
-          </div>
-          <div class="gap-item">
-            <span class="number">02</span>
-            <h3>Staff capacity</h3>
-            <p>Team time and operational handoffs</p>
-          </div>
-          <div class="gap-item">
-            <span class="number">03</span>
-            <h3>Client confidence</h3>
-            <p>Clear next steps and appropriate follow-up</p>
-          </div>
+      <!-- 03 / Clear operating philosophy; no invented testimonials -->
+      <section class="why reveal" aria-labelledby="why-title">
+        <h2 class="section-title" id="why-title">Find the gaps <em>that matter most.</em></h2>
+        <div class="reason-grid">
+          <article><span>01</span><h3>Revenue</h3><p>Qualified inquiries and consultations</p></article>
+          <article><span>02</span><h3>Staff capacity</h3><p>Team time and operational handoffs</p></article>
+          <article><span>03</span><h3>Client confidence</h3><p>Clear next steps and appropriate follow-up</p></article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- AI ORCHESTRATION EXAMPLE -->
-    <section class="section" id="approach">
-      <div class="container">
-        <p class="eyebrow">AI Orchestration</p>
-        <h2>What happens after a client reaches out?</h2>
-        <p>Most businesses receive inquiries through multiple channels while reception, booking, follow-up and retention live in separate systems. Where tools and permissions allow, a carefully designed workflow can route the inquiry, surface the correct next action for staff and escalate anything that requires human judgment. Leadership can then track response time, completed bookings, retention and exceptions against a clear baseline — so the organisation can see whether the change was worth the effort.</p>
-        <p class="caption">Illustrative workflow. Actual integration scope depends on the business’s systems, permissions and agreed governance rules.</p>
-        <a href="ai-for-med-spas.html" class="text-link">Explore AI Orchestration</a>
-      </div>
-    </section>
+      <!-- 04 / Preserve the signature editorial photography -->
+      <section class="editorial-showcase reveal" aria-labelledby="showcase-title">
+        <div class="showcase-intro">
+          <p class="eyebrow">AI Orchestration</p>
+          <h2 id="showcase-title">What happens after a client reaches out?</h2>
+          <p>Most businesses receive inquiries through multiple channels while reception, booking, follow-up and retention live in separate systems. Where tools and permissions allow, a carefully designed workflow can route the inquiry, surface the correct next action for staff and escalate anything that requires human judgment. Leadership can then track response time, completed bookings, retention and exceptions against a clear baseline — so the organisation can see whether the change was worth the effort. Illustrative workflow. Actual integration scope depends on the business’s systems, permissions and agreed governance rules.</p>
+          <a class="text-link" href="ai-for-med-spas.html">Explore AI Orchestration <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="lookbook-grid" aria-label="Mirèl visual direction">
+          <div class="lookbook-img tall img-skin" role="img" aria-label="Luxury brand detail" data-lazy-bg></div>
+          <div class="lookbook-img img-gold" role="img" aria-label="Warm luxury textures" data-lazy-bg></div>
+          <div class="lookbook-img img-clinic" role="img" aria-label="Med spa environment" data-lazy-bg></div>
+        </div>
+      </section>
 
-    <!-- CAPABILITIES -->
-    <section class="section">
-      <div class="container">
-        <p class="eyebrow">Business Intelligence &amp; Orchestration</p>
-        <h2>See what’s costing the business. <em>Decide what to fix first.</em></h2>
-        <p>We begin by identifying which of these gaps matter most to your numbers, then design the smallest reliable change that can improve them.</p>
-
-        <div class="capabilities-grid">
-          <article class="capability">
-            <span class="number">01</span>
-            <p class="label">Client Journey</p>
+      <!-- 05 / The complete, five-part revenue growth ecosystem -->
+      <section class="growth-ecosystem reveal" id="growth-ecosystem" aria-labelledby="ecosystem-title">
+        <div class="ecosystem-heading">
+          <p class="eyebrow">Business Intelligence &amp; Orchestration</p>
+          <h2 id="ecosystem-title">See what’s costing the business. <em>Decide what to fix first.</em></h2>
+          <p>We begin by identifying which of these gaps matter most to your numbers, then design the smallest reliable change that can improve them.</p>
+        </div>
+        <div class="ecosystem-grid">
+          <article class="ecosystem-card">
+            <div class="ecosystem-top"><span class="ecosystem-number">01</span><span class="ecosystem-label">Client Journey</span></div>
             <h3>Revenue &amp; Client Journey Intelligence</h3>
-            <p>Trace where qualified inquiries stall, consultations fail to progress or appropriate follow-up falls through. Use booking, treatment, membership and collections data to decide where investigation will create the clearest commercial return.</p>
+            <p>Trace where qualified inquiries stall, consultations fail to progress or appropriate follow-up falls through.</p>
           </article>
-
-          <article class="capability">
-            <span class="number">02</span>
-            <p class="label">Operations</p>
+          <article class="ecosystem-card">
+            <div class="ecosystem-top"><span class="ecosystem-number">02</span><span class="ecosystem-label">Revenue</span></div>
+            <h3>Revenue Data</h3>
+            <p>Use booking, treatment, membership and collections data to decide where investigation will create the clearest commercial return.</p>
+          </article>
+          <article class="ecosystem-card">
+            <div class="ecosystem-top"><span class="ecosystem-number">03</span><span class="ecosystem-label">Orchestration</span></div>
+            <h3>AI Orchestration &amp; Governance</h3>
+            <p>Coordinate existing software, approved AI tools and staff around a defined workflow.</p>
+          </article>
+          <article class="ecosystem-card">
+            <div class="ecosystem-top"><span class="ecosystem-number">04</span><span class="ecosystem-label">Operations</span></div>
             <h3>Operational &amp; Financial Intelligence</h3>
             <p>Identify repetitive work, unreliable handoffs and hidden capacity constraints. Compare the cost of changing a workflow with the staff time, scheduling capacity or financial contribution it could recover.</p>
           </article>
-
-          <article class="capability">
-            <span class="number">03</span>
-            <p class="label">Orchestration</p>
-            <h3>AI Orchestration &amp; Governance</h3>
-            <p>Coordinate existing software, approved AI tools and staff around a defined workflow. Specify what each system may access, who owns exceptions, how performance is monitored and when a human must step in.</p>
+          <article class="ecosystem-card ecosystem-card-wide">
+            <div><div class="ecosystem-top"><span class="ecosystem-number">05</span><span class="ecosystem-label">Human Oversight</span></div><h3>Workflow Governance</h3></div>
+            <p>Specify what each system may access, who owns exceptions, how performance is monitored and when a human must step in.</p>
           </article>
         </div>
+        <div class="ecosystem-link"><a class="text-link" href="services.html">Explore Our Capabilities <span aria-hidden="true">→</span></a></div>
+      </section>
 
-        <a href="services.html" class="text-link">Explore Our Capabilities</a>
-      </div>
-    </section>
-
-    <!-- HOW WE WORK -->
-    <section class="section">
-      <div class="container">
-        <p class="eyebrow">How the partnership works</p>
-        <h2>Start with the constraint. Measure what changes.</h2>
-        <p>From the first diagnostic to ongoing review, we use the evidence to decide what to change.</p>
-
-        <div class="process-grid">
-          <article>
-            <span class="number">01</span>
-            <h3>Diagnose</h3>
-            <p>Map the current workflow and establish a clear baseline.</p>
-          </article>
-          <article>
-            <span class="number">02</span>
-            <h3>Prioritize</h3>
-            <p>Compare likely business value, implementation cost, risk and demands on the team.</p>
-          </article>
-          <article>
-            <span class="number">03</span>
-            <h3>Implement</h3>
-            <p>Agree scope, ownership, permissions, escalation rules and testing before launch.</p>
-          </article>
-          <article>
-            <span class="number">04</span>
-            <h3>Optimize</h3>
-            <p>Review outcomes, exceptions and operating costs. Use the evidence to decide what to refine, expand or stop.</p>
-          </article>
+      <!-- 06 / Delivery path: disciplined method instead of magic claims -->
+      <section class="conversion-map reveal" aria-labelledby="process-title">
+        <div class="map-copy">
+          <p class="eyebrow">How the partnership works</p>
+          <h2 id="process-title">Start with the constraint. Measure what changes.</h2>
+          <p>From the first diagnostic to ongoing review, we use the evidence to decide what to change.</p>
+          <a class="text-link" href="systems.html">See How We Work <span aria-hidden="true">→</span></a>
         </div>
-        <a href="systems.html" class="text-link">See How We Work</a>
-      </div>
-    </section>
-
-    <!-- MEASUREMENT -->
-    <section class="section">
-      <div class="container">
-        <p class="eyebrow">Measurement</p>
-        <h2>How will you know the change was worth it?</h2>
-        <p>We agree what to measure before work begins. Depending on the problem, that may include attended consultations, appropriate rebooking or membership rates, staff time per task, response coverage or contribution after additional costs.</p>
-
-        <div class="metrics">
-          <div><strong>Inquiries</strong> Response coverage and response time</div>
-          <div><strong>Bookings</strong> Completed bookings and attended consultations</div>
-          <div><strong>Revenue</strong> Contribution after additional costs</div>
-          <div><strong>Retention</strong> Appropriate rebooking and membership rates</div>
+        <div class="map-steps">
+          <article><span>01</span><h3>Diagnose</h3><p>Map the current workflow and establish a clear baseline.</p></article>
+          <article><span>02</span><h3>Prioritize</h3><p>Compare likely business value, implementation cost, risk and demands on the team.</p></article>
+          <article><span>03</span><h3>Implement</h3><p>Agree scope, ownership, permissions, escalation rules and testing before launch.</p></article>
+          <article><span>04</span><h3>Optimize</h3><p>Review outcomes, exceptions and operating costs. Use the evidence to decide what to refine, expand or stop.</p></article>
         </div>
-        <a href="results.html" class="text-link">See How We Measure Impact</a>
-      </div>
-    </section>
+      </section>
 
-    <!-- WHO WE WORK WITH -->
-    <section class="section">
-      <div class="container">
-        <p class="eyebrow">Industry Focus</p>
-        <h2>For established businesses <em>ready to look deeper.</em></h2>
-        <p>Our long-term focus is the aesthetics, wellness and longevity industries.</p>
-        <ul class="focus-list">
-          <li>Aesthetics</li>
-          <li>Wellness</li>
-          <li>Longevity</li>
-        </ul>
+      <!-- 07 / Show what is actually measured; do not imply Mirèl case study results -->
+      <section class="metrics reveal" aria-labelledby="measure-title">
+        <div class="metrics-copy">
+          <p class="eyebrow">Measurement</p>
+          <h2 id="measure-title">How will you know the change was worth it?</h2>
+          <p>We agree what to measure before work begins. Depending on the problem, that may include attended consultations, appropriate rebooking or membership rates, staff time per task, response coverage or contribution after additional costs.</p>
+          <a class="btn btn-dark" href="results.html">See How We Measure Impact</a>
+        </div>
+        <div class="metric-grid">
+          <article><strong>Inquiries</strong><span>Response coverage and response time</span></article>
+          <article><strong>Bookings</strong><span>Completed bookings and attended consultations</span></article>
+          <article><strong>Revenue</strong><span>Contribution after additional costs</span></article>
+          <article><strong>Retention</strong><span>Appropriate rebooking and membership rates</span></article>
+        </div>
+      </section>
 
-        <h3>Our Current Focus</h3>
-        <h4>U.S. med spas and medical aesthetics.</h4>
-        <p>Our immediate commercial priority is established medical spas and medical aesthetics practices in the United States — businesses with existing client demand, operational complexity and a clear desire to improve how revenue, capacity and client relationships perform.</p>
-        <ul class="focus-list">
-          <li>Revenue performance</li>
-          <li>Operational capacity</li>
-          <li>Client relationships</li>
-        </ul>
-        <a href="about.html" class="text-link">About Mirèl Partners</a>
-      </div>
-    </section>
+      <!-- 08 / Third-party data, clearly separated from company results -->
+      <section class="industry-context reveal" aria-labelledby="insight-title">
+        <div>
+          <p class="eyebrow">Business Impact</p>
+          <h2 id="insight-title">What the baseline tells you</h2>
+        </div>
+        <div>
+          <p>A clear baseline gives leadership a practical basis for deciding what to <strong>keep</strong>, <strong>adjust</strong> or <strong>expand</strong>.</p>
+          <p>Compare the result with the original workflow and account for the cost of running it.</p>
+          <small>Measures are selected for each engagement.</small>
+        </div>
+      </section>
 
-    <!-- FINAL CTA -->
-    <section class="section final-cta" data-lazy-bg>
-      <div class="container">
-        <h2>A Focused First Conversation</h2>
-        <h3>What should we look at first?</h3>
-        <p>We will discuss what you are seeing, what information would clarify the constraint, and whether a focused diagnostic is the right next step.</p>
-        <ul>
-          <li>The issue you’re seeing</li>
-          <li>The workflow or team it affects</li>
-          <li>The information that could clarify the constraint</li>
-          <li>Whether a focused diagnostic makes sense</li>
-        </ul>
-        <p>Bring one real issue to a 30-minute Strategy Review.</p>
-        <a href="book.html#booking" class="btn-primary">Book a Strategy Review</a>
-      </div>
-    </section>
+      <!-- 09 / International focus -->
+      <section class="market-note reveal" aria-labelledby="market-title">
+        <div>
+          <p class="eyebrow">Industry Focus</p>
+          <h2 id="market-title">For established businesses <em>ready to look deeper.</em></h2>
+        </div>
+        <div class="market-note-right">
+          <p>Our long-term focus is the aesthetics, wellness and longevity industries.</p>
+          <ul class="market-list" aria-label="Long-term industry focus"><li>Aesthetics</li><li>Wellness</li><li>Longevity</li></ul>
+        </div>
+      </section>
 
-  </main>
+      <!-- 10 / Differentiation -->
+      <section class="difference reveal" aria-labelledby="difference-title">
+        <div class="difference-image img-necklace" data-lazy-bg role="img" aria-label="Mirèl premium brand imagery"></div>
+        <div class="difference-copy">
+          <p class="eyebrow">Our Current Focus</p>
+          <h2 id="difference-title">U.S. med spas <em>and medical aesthetics.</em></h2>
+          <p>Our immediate commercial priority is established medical spas and medical aesthetics practices in the United States — businesses with existing client demand, operational complexity and a clear desire to improve how revenue, capacity and client relationships perform.</p>
+          <ul class="proof-list">
+            <li>Revenue performance</li>
+            <li>Operational capacity</li>
+            <li>Client relationships</li>
+          </ul>
+          <a class="text-link" href="about.html">About Mirèl Partners <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
 
-  <!-- Footer will be injected by footer.js -->
-  <div id="footer-placeholder"></div>
+      <!-- 11 / Qualify for fit without excluding exceptional smaller clinics -->
+      <section class="qualification reveal" aria-labelledby="fit-title">
+        <div>
+          <p class="eyebrow">A Focused First Conversation</p>
+          <h2 id="fit-title">What should we look at first?</h2>
+        </div>
+        <div class="qualification-list">
+          <p>We will discuss what you are seeing, what information would clarify the constraint, and whether a focused diagnostic is the right next step.</p>
+          <ul>
+            <li>The issue you’re seeing</li>
+            <li>The workflow or team it affects</li>
+            <li>The information that could clarify the constraint</li>
+            <li>Whether a focused diagnostic makes sense</li>
+          </ul>
+          <a class="btn btn-outline" href="book.html#booking">Book a Strategy Review</a>
+        </div>
+      </section>
 
-  <script src="navigation.js"></script>
-  <script src="footer.js"></script>
+      <!-- 12 / Final conversion action -->
+      <section class="final-cta reveal" data-lazy-bg aria-labelledby="final-title">
+        <div>
+          <p class="eyebrow">A considered next step</p>
+          <h2 id="final-title">Book a 30-minute Strategy Review.</h2>
+          <p>Bring one real issue to a 30-minute Strategy Review.</p>
+          <a class="btn btn-pink" href="book.html#booking">Book a Strategy Review</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Keep the same shared footer structure for cross-page styling. -->
+ <footer
+  class="footer"
+  id="mirel-site-footer"
+  data-mirel-footer
+></footer>
+  </div>
+
+  <!-- Existing lazy-background and reveal behavior; no new dependencies. -->
+  <script>
+  (() => {
+    const deferred = document.querySelectorAll('[data-lazy-bg]');
+    if ('IntersectionObserver' in window) {
+      const images = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('bg-loaded');
+          observer.unobserve(entry.target);
+        });
+      }, {rootMargin:'550px 0px', threshold:0});
+      deferred.forEach(item => images.observe(item));
+    } else deferred.forEach(item => item.classList.add('bg-loaded'));
+
+    const reveals = document.querySelectorAll('.reveal');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!('IntersectionObserver' in window) || reducedMotion) {
+      reveals.forEach(item => item.classList.add('visible'));
+    } else {
+      const appearances = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        });
+      }, {threshold:0.12});
+      reveals.forEach(item => appearances.observe(item));
+    }
+  })();
+  </script>
+  <script src="navigation.js?v=1" defer></script>
+  <script src="footer.js?v=1" defer></script>
 </body>
 </html>
