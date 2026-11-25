@@ -28,7 +28,6 @@
   <link rel="preload" href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Existing shared design and navigation remain the source of truth. -->
   <link rel="stylesheet" href="style.css?v=8">
   <link rel="stylesheet" href="navigation.css?v=1">
   <link rel="preload" as="image" href="images/hero-face.webp" type="image/webp" media="(min-width:761px)" fetchpriority="high">
@@ -88,7 +87,6 @@
     .js [data-lazy-bg]:not(.bg-loaded){background-image:none!important}
     .js .final-cta[data-lazy-bg]:not(.bg-loaded){background-image:linear-gradient(rgba(29,15,12,.70),rgba(29,15,12,.80))!important;background-color:#1d0f0c}
 
-    /* Keep original hero visual and proportions; give the longer message room. */
     .hero{min-height:795px}
     .hero-copy{padding-right:26px}
     .hero h1{font-size:clamp(62px,5.6vw,84px);line-height:.95}
@@ -98,7 +96,6 @@
     .hero .eyebrow{letter-spacing:.26em}
     .hero .hero-positioning{font-size:13px;line-height:1.85;color:var(--text-soft);max-width:555px;margin:-14px 0 28px}
 
-    /* Original deep-espresso signature section. */
     .authority-strip{display:flex;align-items:center;justify-content:center;padding:67px 32px;text-align:center}
     .authority-message{max-width:1000px;margin:0 auto}
     .authority-message h2{margin:0 0 21px;font-family:var(--serif);font-size:clamp(38px,4vw,62px);font-weight:500;line-height:1.07;letter-spacing:-.035em;color:#fff9f4}
@@ -107,7 +104,6 @@
     .editorial-showcase{grid-template-columns:410px 1fr}
     .editorial-showcase .lookbook-grid{grid-template-columns:1.25fr 1fr 1fr}
 
-    /* New five-part growth architecture — local to Home, no global CSS changes. */
     .growth-ecosystem{padding:106px 72px 100px;background:linear-gradient(135deg,#fbf7f1 0%,#fffdf9 56%,#f2e7e0 100%);border-bottom:1px solid var(--line)}
     .ecosystem-heading{max-width:890px;margin:0 auto 53px;text-align:center}
     .ecosystem-heading .eyebrow{margin-bottom:22px}
@@ -131,20 +127,17 @@
     .ecosystem-link{margin:34px auto 0;display:flex;justify-content:center}
     .ecosystem-link .text-link{min-height:44px}
 
-    /* Reuse the original 4-step map, but make delivery stages legible. */
     .conversion-map{grid-template-columns:.9fr 1.1fr;gap:45px}
     .map-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
     .map-steps article{min-height:185px;padding:20px 28px 24px}
     .map-steps h3{margin:16px 0 14px}
 
-    /* Meaningful KPIs instead of unverified agency achievements. */
     .metrics{grid-template-columns:315px 1fr;gap:45px}
     .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     .metric-grid article{min-height:162px;padding:23px 27px}
     .metric-grid strong{font-size:clamp(28px,2.5vw,42px)}
     .metric-grid span{margin-top:11px}
 
-    /* Verified third-party industry research, clearly identified as such. */
     .industry-context{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:56px 72px;background:#f4eae4;border-bottom:1px solid var(--line)}
     .industry-context .eyebrow{margin:0 0 17px}
     .industry-context h2{font-family:var(--serif);font-size:clamp(33px,3vw,47px);font-weight:500;line-height:1.06;letter-spacing:-.03em;color:var(--espresso-deep);margin:0}
@@ -210,16 +203,16 @@
   </style>
   <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 
-<meta name="facebook-domain-verification" content="ws8a71pdwat6rj99gdf1ijz7g2fyck" />
-  
+  <meta name="facebook-domain-verification" content="ws8a71pdwat6rj99gdf1ijz7g2fyck">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <div class="site-shell">
     <div data-mirel-navigation></div>
-    <main id="main-content">
 
-      <!-- 01 / HERO: specific problem + differentiated offer + primary action -->
+    <main id="main-content">
+      <!-- 01 / Hero -->
       <section class="hero reveal" aria-labelledby="home-hero-title">
         <div class="hero-copy">
           <p class="eyebrow">AI Intelligence &amp; Orchestration for Aesthetics, Wellness &amp; Longevity</p>
@@ -230,7 +223,10 @@
             <a class="btn btn-dark btn-large" href="book.html#booking">Book a Strategy Review</a>
             <a class="btn btn-outline btn-large" href="#growth-ecosystem">Explore Our Approach</a>
           </div>
-          <div class="hero-note"><span>Current focus: established U.S. med spas and medical aesthetics practices</span><i aria-hidden="true"></i></div>
+          <div class="hero-note">
+            <span>Current focus: established U.S. med spas and medical aesthetics practices</span>
+            <i aria-hidden="true"></i>
+          </div>
         </div>
         <div class="hero-editorial" role="group" aria-label="Editorial imagery representing the premium med spa patient experience">
           <div class="editorial-main img-face" role="img" aria-label="Premium beauty editorial"><span>Experience</span></div>
@@ -241,7 +237,7 @@
         </div>
       </section>
 
-      <!-- 02 / Core commercial insight -->
+      <!-- 02 / Problem -->
       <section class="authority-strip reveal" aria-labelledby="authority-title">
         <div class="authority-message">
           <h2 id="authority-title">Where does work get stuck in your business?</h2>
@@ -249,22 +245,35 @@
         </div>
       </section>
 
-      <!-- 03 / Clear operating philosophy; no invented testimonials -->
+      <!-- 03 / Gaps -->
       <section class="why reveal" aria-labelledby="why-title">
         <h2 class="section-title" id="why-title">Find the gaps <em>that matter most.</em></h2>
         <div class="reason-grid">
-          <article><span>01</span><h3>Revenue</h3><p>Qualified inquiries and consultations</p></article>
-          <article><span>02</span><h3>Staff capacity</h3><p>Team time and operational handoffs</p></article>
-          <article><span>03</span><h3>Client confidence</h3><p>Clear next steps and appropriate follow-up</p></article>
+          <article>
+            <span>01</span>
+            <h3>Revenue</h3>
+            <p>Qualified inquiries and consultations</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Staff capacity</h3>
+            <p>Team time and operational handoffs</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Client confidence</h3>
+            <p>Clear next steps and appropriate follow-up</p>
+          </article>
         </div>
       </section>
 
-      <!-- 04 / Preserve the signature editorial photography -->
+      <!-- 04 / AI orchestration -->
       <section class="editorial-showcase reveal" aria-labelledby="showcase-title">
         <div class="showcase-intro">
           <p class="eyebrow">AI Orchestration</p>
           <h2 id="showcase-title">What happens after a client reaches out?</h2>
-          <p>Most businesses receive inquiries through multiple channels while reception, booking, follow-up and retention live in separate systems. Where tools and permissions allow, a carefully designed workflow can route the inquiry, surface the correct next action for staff and escalate anything that requires human judgment. Leadership can then track response time, completed bookings, retention and exceptions against a clear baseline — so the organisation can see whether the change was worth the effort. Illustrative workflow. Actual integration scope depends on the business’s systems, permissions and agreed governance rules.</p>
+          <p>Most businesses receive inquiries through multiple channels while reception, booking, follow-up and retention live in separate systems. Where tools and permissions allow, a carefully designed workflow can route the inquiry, surface the correct next action for staff and escalate anything that requires human judgment. Leadership can then track response time, completed bookings, retention and exceptions against a clear baseline — so the organisation can see whether the change was worth the effort.</p>
+          <p><small>Illustrative workflow. Actual integration scope depends on the business’s systems, permissions and agreed governance rules.</small></p>
           <a class="text-link" href="ai-for-med-spas.html">Explore AI Orchestration <span aria-hidden="true">→</span></a>
         </div>
         <div class="lookbook-grid" aria-label="Mirèl visual direction">
@@ -274,7 +283,7 @@
         </div>
       </section>
 
-      <!-- 05 / The complete, five-part revenue growth ecosystem -->
+      <!-- 05 / Capabilities -->
       <section class="growth-ecosystem reveal" id="growth-ecosystem" aria-labelledby="ecosystem-title">
         <div class="ecosystem-heading">
           <p class="eyebrow">Business Intelligence &amp; Orchestration</p>
@@ -283,34 +292,38 @@
         </div>
         <div class="ecosystem-grid">
           <article class="ecosystem-card">
-            <div class="ecosystem-top"><span class="ecosystem-number">01</span><span class="ecosystem-label">Client Journey</span></div>
+            <div class="ecosystem-top">
+              <span class="ecosystem-number">01</span>
+              <span class="ecosystem-label">Client Journey</span>
+            </div>
             <h3>Revenue &amp; Client Journey Intelligence</h3>
-            <p>Trace where qualified inquiries stall, consultations fail to progress or appropriate follow-up falls through.</p>
+            <p>Trace where qualified inquiries stall, consultations fail to progress or appropriate follow-up falls through. Use booking, treatment, membership and collections data to decide where investigation will create the clearest commercial return.</p>
           </article>
           <article class="ecosystem-card">
-            <div class="ecosystem-top"><span class="ecosystem-number">02</span><span class="ecosystem-label">Revenue</span></div>
-            <h3>Revenue Data</h3>
-            <p>Use booking, treatment, membership and collections data to decide where investigation will create the clearest commercial return.</p>
-          </article>
-          <article class="ecosystem-card">
-            <div class="ecosystem-top"><span class="ecosystem-number">03</span><span class="ecosystem-label">Orchestration</span></div>
-            <h3>AI Orchestration &amp; Governance</h3>
-            <p>Coordinate existing software, approved AI tools and staff around a defined workflow.</p>
-          </article>
-          <article class="ecosystem-card">
-            <div class="ecosystem-top"><span class="ecosystem-number">04</span><span class="ecosystem-label">Operations</span></div>
+            <div class="ecosystem-top">
+              <span class="ecosystem-number">02</span>
+              <span class="ecosystem-label">Operations</span>
+            </div>
             <h3>Operational &amp; Financial Intelligence</h3>
             <p>Identify repetitive work, unreliable handoffs and hidden capacity constraints. Compare the cost of changing a workflow with the staff time, scheduling capacity or financial contribution it could recover.</p>
           </article>
           <article class="ecosystem-card ecosystem-card-wide">
-            <div><div class="ecosystem-top"><span class="ecosystem-number">05</span><span class="ecosystem-label">Human Oversight</span></div><h3>Workflow Governance</h3></div>
-            <p>Specify what each system may access, who owns exceptions, how performance is monitored and when a human must step in.</p>
+            <div>
+              <div class="ecosystem-top">
+                <span class="ecosystem-number">03</span>
+                <span class="ecosystem-label">Human Oversight</span>
+              </div>
+              <h3>AI Orchestration &amp; Governance</h3>
+            </div>
+            <p>Coordinate existing software, approved AI tools and staff around a defined workflow. Specify what each system may access, who owns exceptions, how performance is monitored and when a human must step in.</p>
           </article>
         </div>
-        <div class="ecosystem-link"><a class="text-link" href="services.html">Explore Our Capabilities <span aria-hidden="true">→</span></a></div>
+        <div class="ecosystem-link">
+          <a class="text-link" href="services.html">Explore Our Capabilities <span aria-hidden="true">→</span></a>
+        </div>
       </section>
 
-      <!-- 06 / Delivery path: disciplined method instead of magic claims -->
+      <!-- 06 / How we work -->
       <section class="conversion-map reveal" aria-labelledby="process-title">
         <div class="map-copy">
           <p class="eyebrow">How the partnership works</p>
@@ -319,19 +332,35 @@
           <a class="text-link" href="systems.html">See How We Work <span aria-hidden="true">→</span></a>
         </div>
         <div class="map-steps">
-          <article><span>01</span><h3>Diagnose</h3><p>Map the current workflow and establish a clear baseline.</p></article>
-          <article><span>02</span><h3>Prioritize</h3><p>Compare likely business value, implementation cost, risk and demands on the team.</p></article>
-          <article><span>03</span><h3>Implement</h3><p>Agree scope, ownership, permissions, escalation rules and testing before launch.</p></article>
-          <article><span>04</span><h3>Optimize</h3><p>Review outcomes, exceptions and operating costs. Use the evidence to decide what to refine, expand or stop.</p></article>
+          <article>
+            <span>01</span>
+            <h3>Diagnose</h3>
+            <p>Map the current workflow and establish a clear baseline.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Prioritize</h3>
+            <p>Compare likely business value, implementation cost, risk and demands on the team.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Implement</h3>
+            <p>Agree scope, ownership, permissions, escalation rules and testing before launch.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Optimize</h3>
+            <p>Review outcomes, exceptions and operating costs. Use the evidence to decide what to refine, expand or stop.</p>
+          </article>
         </div>
       </section>
 
-      <!-- 07 / Show what is actually measured; do not imply Mirèl case study results -->
+      <!-- 07 / Measurement -->
       <section class="metrics reveal" aria-labelledby="measure-title">
         <div class="metrics-copy">
           <p class="eyebrow">Measurement</p>
           <h2 id="measure-title">How will you know the change was worth it?</h2>
-          <p>We agree what to measure before work begins. Depending on the problem, that may include attended consultations, appropriate rebooking or membership rates, staff time per task, response coverage or contribution after additional costs.</p>
+          <p>We agree what to measure before work begins. Depending on the problem, that may include attended consultations, appropriate rebooking or membership rates, staff time per task, response coverage or contribution after additional costs. A clear baseline gives leadership a practical basis for deciding what to keep, adjust or expand.</p>
           <a class="btn btn-dark" href="results.html">See How We Measure Impact</a>
         </div>
         <div class="metric-grid">
@@ -342,20 +371,19 @@
         </div>
       </section>
 
-      <!-- 08 / Third-party data, clearly separated from company results -->
+      <!-- 08 / Business impact -->
       <section class="industry-context reveal" aria-labelledby="insight-title">
         <div>
           <p class="eyebrow">Business Impact</p>
           <h2 id="insight-title">What the baseline tells you</h2>
         </div>
         <div>
-          <p>A clear baseline gives leadership a practical basis for deciding what to <strong>keep</strong>, <strong>adjust</strong> or <strong>expand</strong>.</p>
           <p>Compare the result with the original workflow and account for the cost of running it.</p>
           <small>Measures are selected for each engagement.</small>
         </div>
       </section>
 
-      <!-- 09 / International focus -->
+      <!-- 09 / Who we work with -->
       <section class="market-note reveal" aria-labelledby="market-title">
         <div>
           <p class="eyebrow">Industry Focus</p>
@@ -363,11 +391,15 @@
         </div>
         <div class="market-note-right">
           <p>Our long-term focus is the aesthetics, wellness and longevity industries.</p>
-          <ul class="market-list" aria-label="Long-term industry focus"><li>Aesthetics</li><li>Wellness</li><li>Longevity</li></ul>
+          <ul class="market-list" aria-label="Long-term industry focus">
+            <li>Aesthetics</li>
+            <li>Wellness</li>
+            <li>Longevity</li>
+          </ul>
         </div>
       </section>
 
-      <!-- 10 / Differentiation -->
+      <!-- 10 / Current commercial focus -->
       <section class="difference reveal" aria-labelledby="difference-title">
         <div class="difference-image img-necklace" data-lazy-bg role="img" aria-label="Mirèl premium brand imagery"></div>
         <div class="difference-copy">
@@ -383,14 +415,13 @@
         </div>
       </section>
 
-      <!-- 11 / Qualify for fit without excluding exceptional smaller clinics -->
+      <!-- 11 / Strategy review agenda -->
       <section class="qualification reveal" aria-labelledby="fit-title">
         <div>
           <p class="eyebrow">A Focused First Conversation</p>
           <h2 id="fit-title">What should we look at first?</h2>
         </div>
         <div class="qualification-list">
-          <p>We will discuss what you are seeing, what information would clarify the constraint, and whether a focused diagnostic is the right next step.</p>
           <ul>
             <li>The issue you’re seeing</li>
             <li>The workflow or team it affects</li>
@@ -401,26 +432,20 @@
         </div>
       </section>
 
-      <!-- 12 / Final conversion action -->
+      <!-- 12 / Final CTA -->
       <section class="final-cta reveal" data-lazy-bg aria-labelledby="final-title">
         <div>
           <p class="eyebrow">A considered next step</p>
           <h2 id="final-title">Book a 30-minute Strategy Review.</h2>
-          <p>Bring one real issue to a 30-minute Strategy Review.</p>
+          <p>Bring one real issue to a 30-minute Strategy Review. We will discuss what you are seeing, what information would clarify the constraint, and whether a focused diagnostic is the right next step.</p>
           <a class="btn btn-pink" href="book.html#booking">Book a Strategy Review</a>
         </div>
       </section>
     </main>
 
-    <!-- Keep the same shared footer structure for cross-page styling. -->
- <footer
-  class="footer"
-  id="mirel-site-footer"
-  data-mirel-footer
-></footer>
+    <footer class="footer" id="mirel-site-footer" data-mirel-footer></footer>
   </div>
 
-  <!-- Existing lazy-background and reveal behavior; no new dependencies. -->
   <script>
   (() => {
     const deferred = document.querySelectorAll('[data-lazy-bg]');
