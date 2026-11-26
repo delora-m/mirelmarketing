@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#241c17">
-  <title>AI Intelligence &amp; Orchestration | Mirèl Partners</title>
-  <meta name="description" content="AI intelligence and orchestration for aesthetics, wellness and longevity. Find where your business loses revenue, time and capacity, then connect the workflows that matter.">
+  <title>AI Intelligence &amp; Orchestration for Med Spas | Mirèl Partners</title>
+  <meta name="description" content="AI intelligence and orchestration for established U.S. med spas. Diagnose revenue, staff time and reporting gaps, then design connected workflows with clear ownership.">
   <link rel="canonical" href="https://mirelpartners.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mirèl Partners">
-  <meta property="og:title" content="Human-led strategy. AI-orchestrated operations. | Mirèl Partners">
+  <meta property="og:title" content="Find where your practice loses revenue, time and capacity. | Mirèl Partners">
   <meta property="og:description" content="Find where revenue, time and capacity are lost. Business intelligence, connected workflows and human-led AI for established medical aesthetics businesses.">
   <meta property="og:url" content="https://mirelpartners.com/">
   <meta property="og:image" content="https://mirelpartners.com/images/mirel-01-clinic-reception.webp">
@@ -70,7 +70,6 @@
     .button { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: .9rem 1.35rem; border: 1px solid var(--ink); color: var(--white); background: var(--ink); font: 600 .8125rem/1.4 var(--sans); text-align: center; text-decoration: none; transition: background .2s, border-color .2s; }
     .button:hover { background: var(--coffee); border-color: var(--coffee); }
     .text-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.2rem; min-height: 44px; font: 600 .8125rem/1.5 var(--sans); text-decoration: none; }
-    .text-link::after { content: "\2197"; font-size: 1.15rem; font-weight: 400; }
     .text-link span { border-bottom: 1px solid currentColor; padding-bottom: .2rem; }
     .text-link:hover span { border-color: transparent; }
     .skip { position: fixed; top: -100px; left: 1rem; z-index: 100; padding: .8rem 1rem; color: var(--white); background: var(--ink); }
@@ -411,6 +410,104 @@
       .connection-copy h2 { font-size: 2rem; }
       .editorial-photo, .hero-photo { break-inside: avoid; }
     }
+
+    /* Shared refinements: clear text, scalable icons and useful booking context. */
+    .link-arrow { display: block; width: 14px; height: 14px; flex-shrink: 0; }
+    .review-note { margin-top: 1rem; max-width: 49ch; color: var(--coffee); font-size: .875rem; line-height: 1.65; }
+    .review-note strong { color: var(--ink); }
+    .eyebrow { font-size: .75rem; letter-spacing: .13em; }
+    .photo-caption { font-size: .75rem; flex-wrap: wrap; }
+    .photo-caption span:last-child { flex-shrink: 1; }
+    .method-note, .market-note, .social-note, .workflow-disclosure, .measure-note, .capability-scope { font-size: .8125rem; }
+    .text-link { gap: .8rem; }
+    @media (max-width: 600px) {
+      .hero-lead, .about-lead, .founder-story > p, .belief-columns p, .question-columns p,
+      .fit-copy > p:not(.eyebrow), .focus-copy > p:not(.eyebrow), .fit-list li,
+      .principle p, .closing-copy > p { font-size: .9375rem; }
+      .photo-caption { gap: .25rem 1rem; }
+      .review-note { font-size: .8125rem; }
+    }
+
+    /* Revision: workflow proof before service labels; no additional image or script payload. */
+    .hero-title { font-size: clamp(3.25rem, 4.8vw, 4.7rem); max-width: 18ch; line-height: 1.02; }
+    .hero-title > em { margin-top: 0; }
+    .hero-note { grid-template-columns: 1.1fr 1fr; }
+    .hero-note p:first-child { font-size: 1.65rem; }
+    .hero-note p:last-child { max-width: 30ch; }
+    .workflow-body { display: block; }
+    .workflow-examples { padding: clamp(1.25rem, 3vw, 2.5rem); }
+    .workflow-panel > h3 { max-width: 29ch; font-size: clamp(2.1rem, 3.5vw, 3.2rem); }
+    .workflow-panel > p { max-width: 72ch; font-size: .9375rem; }
+    .workflow-panel + .workflow-panel:not([hidden]) { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+    .taskboard { margin-top: 2rem; border: 1px solid var(--line); background: var(--paper); }
+    .board-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.3rem 1.5rem; border-bottom: 1px solid var(--line); }
+    .board-top > div { min-width: 0; }
+    .board-kicker { display: block; margin-bottom: .3rem; color: var(--muted); font-size: .75rem; }
+    .board-top strong { font-size: .9375rem; font-weight: 600; }
+    .status { flex-shrink: 0; padding: .3rem .7rem; border: 1px solid #c7b49e; color: var(--coffee); background: #e9e0d5; font-size: .75rem; }
+    .task-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); }
+    .task-card { min-width: 0; background: var(--white); padding: 1.5rem; }
+    .task-label { color: var(--coffee); font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+    .task-card h4 { margin-top: .8rem; font: 600 1rem/1.5 var(--sans); letter-spacing: 0; }
+    .task-card > p:not(.task-label) { margin-top: .8rem; color: var(--muted); font-size: .875rem; }
+    .task-message { color: var(--ink) !important; }
+    .draft-card { background: #f4f0e9; }
+    .task-meta { margin-top: 1.2rem; font-size: .8125rem; }
+    .task-meta > div { display: grid; grid-template-columns: 6rem 1fr; gap: .8rem; padding-top: .5rem; }
+    .task-meta dt { color: var(--muted); }
+    .task-meta dd { margin: 0; color: var(--ink); }
+    .task-source { font-size: .8125rem !important; }
+    .board-bottom { display: flex; align-items: baseline; gap: 1.5rem; padding: 1.1rem 1.5rem; border-top: 1px solid var(--line); font-size: .8125rem; }
+    .board-bottom strong { white-space: nowrap; font-weight: 600; }
+    .board-bottom p { color: var(--muted); }
+    .workflow-scorecard { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem; }
+    .workflow-scorecard strong { font-size: .875rem; font-weight: 600; }
+    .workflow-scorecard p { margin-top: .4rem; color: var(--muted); font-size: .8125rem; }
+    .ownership { display: grid; grid-template-columns: 1fr 1.3fr; column-gap: 3rem; padding: 2rem 2.5rem; }
+    .role-controls { grid-column: 1; align-self: start; margin-top: 1rem; }
+    .role-description { grid-column: 2; grid-row: 1 / 4; padding: 0; margin: 0; border: 0; }
+    .ownership-note { grid-column: 1; margin-top: 1rem; }
+    .capability .capability-example { padding-top: 1rem; border-top: 1px solid var(--dark-line); color: var(--paper); font-size: .875rem; }
+    .capability-example strong { display: block; margin-bottom: .4rem; color: #c6ac94; font-size: .75rem; }
+    .brief-preview { margin-top: 3rem; padding: 2rem; background: var(--stone); border: 1px solid var(--line); }
+    .brief-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: end; }
+    .brief-heading .eyebrow { margin-bottom: .8rem; color: var(--muted); }
+    .brief-heading h3 { font-size: 2.1rem; }
+    .brief-heading > p { max-width: 47ch; color: var(--muted); font-size: .875rem; }
+    .brief-preview-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: 1.8rem; }
+    .brief-preview-grid > div { border-top: 1px solid #c9bdb1; padding-top: 1rem; }
+    .brief-preview-grid dt { font-size: .875rem; font-weight: 600; }
+    .brief-preview-grid dd { margin: .6rem 0 0; color: var(--coffee); font-size: .875rem; }
+    .brief-preview .diagnostic-brief { margin-top: 1.5rem; }
+    @media (max-width: 900px) {
+      .hero-title { max-width: 22ch; font-size: clamp(3.4rem, 7.5vw, 5rem); }
+      .ownership { column-gap: 2rem; padding: 2rem; }
+      .brief-preview-grid { gap: 1.2rem; }
+    }
+    @media (max-width: 600px) {
+      .hero-title { font-size: clamp(2.8rem, 10.8vw, 3.9rem); max-width: none; }
+      .hero-note { grid-template-columns: 1fr; gap: .8rem; }
+      .hero-note p:last-child { max-width: none; }
+      .workflow-examples { padding: 1.25rem; }
+      .workflow-tabs { flex-wrap: wrap; }
+      .workflow-tab { font-size: .8125rem; padding-inline: .5rem; }
+      .task-grid, .workflow-scorecard, .brief-heading, .brief-preview-grid, .ownership { grid-template-columns: 1fr; }
+      .board-top { align-items: flex-start; flex-direction: column; padding: 1.1rem; }
+      .task-card { padding: 1.2rem; }
+      .task-meta > div { grid-template-columns: 5.1rem 1fr; gap: .65rem; }
+      .board-bottom { display: block; padding: 1.1rem; }
+      .board-bottom strong { white-space: normal; }
+      .board-bottom p { margin-top: .4rem; }
+      .workflow-scorecard { gap: 1rem; }
+      .ownership { padding: 1.5rem; }
+      .role-description { grid-column: 1; grid-row: auto; margin-top: 1.5rem; }
+      .ownership-note { grid-row: auto; }
+      .brief-preview { padding: 1.4rem; }
+      .brief-heading, .brief-preview-grid { gap: 1.3rem; }
+      .connection-copy h2 { font-size: 2.5rem; }
+    }
+    @media print { .task-grid { grid-template-columns: 1fr 1fr; } .ownership { display: block; } .role-description { margin-top: 1rem; } }
+
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mirelpartners.com/#organization","name":"Mirèl Partners","url":"https://mirelpartners.com/","email":"delora@mirelpartners.com","description":"AI intelligence and orchestration for aesthetics, wellness and longevity. Current focus: established U.S. med spas and medical aesthetics practices."},{"@type":"WebSite","@id":"https://mirelpartners.com/#website","name":"Mirèl Partners","url":"https://mirelpartners.com/","publisher":{"@id":"https://mirelpartners.com/#organization"}},{"@type":"WebPage","@id":"https://mirelpartners.com/#webpage","name":"AI Intelligence & Orchestration | Mirèl Partners","url":"https://mirelpartners.com/","isPartOf":{"@id":"https://mirelpartners.com/#website"},"about":{"@id":"https://mirelpartners.com/#organization"}}]}</script>
 </head>
@@ -450,21 +547,21 @@
       <div class="wrap">
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">AI Intelligence &amp; Orchestration</p>
-            <h1 class="hero-title" id="hero-title"><span>Human-led strategy.</span><em>AI-orchestrated operations.</em></h1>
-            <p class="hero-lead"><strong>Find where your business loses revenue, time and capacity.</strong>We help established medical aesthetics businesses identify the gaps, connect the right workflows and measure what improves.</p>
+            <p class="eyebrow">AI Intelligence &amp; Orchestration<br>for established U.S. med spas</p>
+            <h1 class="hero-title" id="hero-title">Find where your practice loses <em>revenue, time and capacity.</em></h1>
+            <p class="hero-lead">We trace missed inquiries, stalled bookings and reporting gaps. Then we help your team choose the first fix, design the workflow and measure what changes.</p>
             <div class="actions">
               <a class="button" href="book.html#booking">Book a Strategy Review</a>
-              <a class="text-link" href="#approach"><span>Explore our approach</span></a>
+              <a class="text-link" href="#approach"><span>See a workflow example</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </div>
-            <p class="hero-focus">Current focus: established U.S. med spas and medical aesthetics practices.</p>
+            <p class="review-note"><strong>30 minutes with the founder.</strong> Bring one recurring operating issue. Discuss what to examine first and whether a diagnostic makes sense.</p>
           </div>
           <div class="hero-visual">
             <figure>
               <div class="hero-photo"><img src="images/mirel-01-clinic-reception.webp" width="1672" height="941" fetchpriority="high" decoding="async" alt="A contemporary medical aesthetics clinic reception with natural stone finishes and a coordinator reviewing a tablet."></div>
               <figcaption class="photo-caption"><span>Aesthetics. Wellness. Longevity.</span><span>People &amp; operations</span></figcaption>
             </figure>
-            <div class="hero-note"><p>A stronger business starts with a clearer picture.</p><p>Designed around your priorities, existing systems and team.</p></div>
+            <div class="hero-note"><p>Human-led strategy.<br>AI-orchestrated operations.</p><p>Aesthetics, wellness &amp; longevity.<br>Starting with the day-to-day realities of established U.S. med spas.</p></div>
           </div>
         </div>
         <div class="hero-principles" aria-label="The Mirèl approach">
@@ -488,58 +585,12 @@
       </div>
     </section>
 
-    <section class="connection" aria-labelledby="connection-title">
-      <div class="wrap">
-        <div class="connection-stage">
-          <div class="connection-art"><img src="images/mirel-02-ai-orchestration.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Transparent glass layers joined by fine connections: an abstract illustration of coordinated information and systems."></div>
-          <div class="connection-copy">
-            <p class="eyebrow">Business intelligence, connected</p>
-            <h2 id="connection-title">Connect your systems.<br><em>Find what’s holding your business back.</em></h2>
-            <p>Bring information, tools and people into workflows your team can oversee.</p>
-            <a class="text-link" href="#capabilities"><span>Explore the connected approach</span></a>
-          </div>
-        </div>
-        <div class="connection-foot"><span>Strategy. Intelligent systems. Human oversight.</span><span>For Aesthetics, Wellness &amp; Longevity.</span></div>
-      </div>
-    </section>
-
-    <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
-      <span class="anchor-alias" id="growth-ecosystem" aria-hidden="true"></span>
-      <div class="wrap">
-        <div class="section-head">
-          <div><p class="eyebrow">Intelligence. Orchestration. Profitability.</p><h2 id="capabilities-title">See the constraint.<br>Design the connection.</h2></div>
-          <p>Three connected capabilities. Selected around the operating problem, the available evidence and the value a change could create.</p>
-        </div>
-        <div class="capability-grid">
-          <article class="capability">
-            <span class="capability-number" aria-hidden="true">01</span>
-            <h3>Revenue &amp; Client Journey Intelligence</h3>
-            <p>Trace where inquiries stall, consultations fail to progress or appropriate follow-up falls through. Connect journey performance with collections and contribution.</p>
-            <a class="text-link" href="services.html#capabilities"><span>Explore revenue intelligence</span></a>
-          </article>
-          <article class="capability">
-            <span class="capability-number" aria-hidden="true">02</span>
-            <h3>Operational &amp; Financial Intelligence</h3>
-            <p>Make repetitive work, reporting gaps and capacity constraints visible. Compare the likely value of a change with its cost and demands on the team.</p>
-            <a class="text-link" href="services.html#capabilities"><span>Explore operational intelligence</span></a>
-          </article>
-          <article class="capability">
-            <span class="capability-number" aria-hidden="true">03</span>
-            <h3>AI Orchestration &amp; Governance</h3>
-            <p>Coordinate existing software, approved AI tools and people. Define permitted actions, exception ownership, human review and conditions for pausing a workflow.</p>
-            <a class="text-link" href="ai-for-med-spas.html"><span>Explore AI orchestration</span></a>
-          </article>
-        </div>
-        <p class="capability-scope">Implementation follows the diagnostic, supported integrations and agreed access requirements. Clinical decisions remain with qualified professionals.</p>
-      </div>
-    </section>
-
     <section class="section workflows" id="approach" aria-labelledby="workflow-title">
       <span class="anchor-alias" id="orchestration" aria-hidden="true"></span>
       <div class="wrap">
         <div class="section-head">
-          <div><p class="eyebrow muted">Our approach in practice</p><h2 id="workflow-title">Clear ownership.<br><em>Connected workflows.</em></h2></div>
-          <p>Explore two operating problems. See where information moves, what technology can support and which decisions remain with people.</p>
+          <div><p class="eyebrow muted">Our approach in practice</p><h2 id="workflow-title">See how the work<br><em>could move through your practice.</em></h2></div>
+          <p>An inquiry, a response draft and a named next step. Explore the example your reception team could recognize, then switch to a reporting workflow.</p>
         </div>
         <div class="workflow-shell">
           <div class="workflow-tabs" id="workflow-tabs" role="tablist" aria-label="Explore illustrative workflows" hidden>
@@ -549,26 +600,36 @@
           <div class="workflow-body">
             <div class="workflow-examples">
               <div class="workflow-panel" id="panel-inquiry">
-                <p class="eyebrow">From inquiry to clear ownership</p>
-                <h3>A routine question.<br>A defined next step.</h3>
-                <p>A routine, nonclinical booking question arrives after reception closes.</p>
-                <ol class="flow-list">
-                  <li><span class="flow-index" aria-hidden="true">01</span><div><h4>Use approved information.</h4><p>Where systems and permissions allow, AI supports routine questions using clinic-approved information.</p></div></li>
-                  <li><span class="flow-index" aria-hidden="true">02</span><div><h4>Make the booking path clear.</h4><p>Provide supported next steps. Assign unresolved requests and unconfirmed bookings to a named person.</p></div></li>
-                  <li><span class="flow-index" aria-hidden="true">03</span><div><h4>Keep judgment with people.</h4><p>Staff handle exceptions. Clinical questions go to qualified professionals.</p></div></li>
-                </ol>
-                <p class="workflow-measure"><strong>Review the whole workflow.</strong>Response coverage, attended consultations, staff effort and operating costs.</p>
+                <p class="eyebrow">Illustrative workflow · sample data</p>
+                <h3>What happens to a booking inquiry after reception closes?</h3>
+                <p>This proposed reception view keeps the request, approved information and next owner together.</p>
+                <div class="taskboard" aria-label="Illustrative reception task view">
+                  <div class="board-top"><div><span class="board-kicker">Reception workspace</span><strong>One inquiry. One visible next step.</strong></div><span class="status">Follow-up needed</span></div>
+                  <div class="task-grid">
+                    <article class="task-card"><p class="task-label">01 / Incoming inquiry</p><h4>“Can I book a consultation?”</h4><p class="task-message">“Do you have any consultation appointments next week? Please send me the booking link.”</p><dl class="task-meta"><div><dt>Received</dt><dd>Monday · 8:14 p.m.</dd></div><div><dt>Type</dt><dd>Routine booking question</dd></div></dl></article>
+                    <article class="task-card draft-card"><p class="task-label">02 / AI response draft</p><h4>Prepared for staff review</h4><p class="task-message">“Thanks for getting in touch. You can view consultation times through our booking page. If you need help choosing a time, our reception team can follow up when we reopen.”</p><p class="task-source">Source: clinic-approved booking guidance. Draft only; no message sent.</p></article>
+                    <article class="task-card"><p class="task-label">03 / Booking status</p><h4>Awaiting confirmation</h4><p>The inquiry remains open until a booking is confirmed or the team records another outcome.</p><dl class="task-meta"><div><dt>Current state</dt><dd>No confirmed appointment</dd></div><div><dt>Next action</dt><dd>Review and send booking guidance</dd></div></dl></article>
+                    <article class="task-card"><p class="task-label">04 / Human handoff</p><h4>Reception lead owns the follow-up</h4><dl class="task-meta"><div><dt>Review due</dt><dd>Tuesday · 9:00 a.m.</dd></div><div><dt>Owner</dt><dd>Reception lead · sample role</dd></div></dl><p class="task-source">Questions about treatment suitability go to a qualified clinician.</p></article>
+                  </div>
+                  <div class="board-bottom"><strong>The important connection</strong><p>The draft supports the team; the inquiry still has an owner and a visible booking status.</p></div>
+                </div>
+                <div class="workflow-scorecard"><div><strong>Time to first response</strong><p>Measure from inquiry arrival to the first response actually sent.</p></div><div><strong>Attended consultations</strong><p>Follow confirmed bookings through to attendance, with staff effort and costs reviewed alongside them.</p></div></div>
               </div>
               <div class="workflow-panel" id="panel-reporting">
-                <p class="eyebrow">From scattered records to review</p>
-                <h3>A clearer view.<br>A better-informed decision.</h3>
-                <p>Booking, visit, collections and cost records need to tell a consistent story.</p>
-                <ol class="flow-list">
-                  <li><span class="flow-index" aria-hidden="true">01</span><div><h4>Bring authorized records together.</h4><p>Review supported data against agreed definitions and a common reporting period.</p></div></li>
-                  <li><span class="flow-index" aria-hidden="true">02</span><div><h4>Surface the gaps.</h4><p>Identify missing records, inconsistent figures and the reconciliation the team still needs to perform.</p></div></li>
-                  <li><span class="flow-index" aria-hidden="true">03</span><div><h4>Put review with a named owner.</h4><p>A reporting owner validates discrepancies before leadership uses the information to make an operating decision.</p></div></li>
-                </ol>
-                <p class="workflow-measure"><strong>Measure the usefulness of the review.</strong>Reconciliation time, unresolved discrepancies and contribution visibility.</p>
+                <p class="eyebrow">Illustrative workflow · sample data</p>
+                <h3>Can your team explain the numbers before leadership uses them?</h3>
+                <p>A reporting view brings source records, unresolved differences and review ownership into the same place.</p>
+                <div class="taskboard" aria-label="Illustrative reporting review view">
+                  <div class="board-top"><div><span class="board-kicker">Weekly operating review</span><strong>From separate records to a reviewed picture.</strong></div><span class="status">Review required</span></div>
+                  <div class="task-grid">
+                    <article class="task-card"><p class="task-label">01 / Source records</p><h4>One agreed reporting period</h4><p>Authorized booking, attendance and collections records are matched using agreed definitions.</p><dl class="task-meta"><div><dt>Period</dt><dd>Previous calendar week</dd></div><div><dt>Sources</dt><dd>Booking system + collections export</dd></div></dl></article>
+                    <article class="task-card draft-card"><p class="task-label">02 / Exception surfaced</p><h4>A record needs reconciliation</h4><p>A completed visit has no matching collections entry in the selected export. The difference needs checking before it is treated as unpaid revenue.</p><p class="task-source">Automated flag for review; no financial conclusion inferred.</p></article>
+                    <article class="task-card"><p class="task-label">03 / Assigned review</p><h4>Practice manager checks the source</h4><dl class="task-meta"><div><dt>Next action</dt><dd>Confirm timing, record mapping or missing entry</dd></div><div><dt>Status</dt><dd>Open · awaiting validation</dd></div></dl></article>
+                    <article class="task-card"><p class="task-label">04 / Leadership decision</p><h4>Review the evidence and limits</h4><p>Leadership sees validated figures, unresolved differences and the source period before deciding what operating change to test.</p><p class="task-source">A named reporting owner signs off the review.</p></article>
+                  </div>
+                  <div class="board-bottom"><strong>The important connection</strong><p>AI can organize an exception for review. People validate the records and make the business decision.</p></div>
+                </div>
+                <div class="workflow-scorecard"><div><strong>Reconciliation time</strong><p>Track how much staff time the review requires.</p></div><div><strong>Unresolved discrepancies</strong><p>Track what remains unexplained before reporting is used.</p></div></div>
               </div>
             </div>
             <aside class="ownership" aria-labelledby="ownership-title">
@@ -585,8 +646,57 @@
               <p class="ownership-note">AI supports a defined task. People retain judgment and decision rights.</p>
             </aside>
           </div>
-          <p class="workflow-disclosure">Illustrative workflows, not live products or verified client results. Scope depends on supported systems, approved access and agreed responsibilities.</p>
+          <p class="workflow-disclosure">Design examples with fictional sample data. These views demonstrate a proposed workflow; they are not connected software or client results. An implementation requires an agreed scope, supported systems and approved access.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
+      <span class="anchor-alias" id="growth-ecosystem" aria-hidden="true"></span>
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="eyebrow">Intelligence. Orchestration. Profitability.</p><h2 id="capabilities-title">See the constraint.<br>Design the connection.</h2></div>
+          <p>Three connected capabilities. Selected around the operating problem, the available evidence and the value a change could create.</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability">
+            <span class="capability-number" aria-hidden="true">01</span>
+            <h3>Revenue &amp; Client Journey Intelligence</h3>
+            <p>Trace where inquiries stall, consultations fail to progress or appropriate follow-up falls through. Connect journey performance with collections and contribution.</p>
+            <p class="capability-example"><strong>In practice</strong>A booking inquiry stays visible until someone owns the next step.</p>
+            <a class="text-link" href="services.html#capabilities"><span>Explore revenue intelligence</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="capability">
+            <span class="capability-number" aria-hidden="true">02</span>
+            <h3>Operational &amp; Financial Intelligence</h3>
+            <p>Make repetitive work, reporting gaps and capacity constraints visible. Compare the likely value of a change with its cost and demands on the team.</p>
+            <p class="capability-example"><strong>In practice</strong>A reporting discrepancy has a source, a reviewer and a resolution.</p>
+            <a class="text-link" href="services.html#capabilities"><span>Explore operational intelligence</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="capability">
+            <span class="capability-number" aria-hidden="true">03</span>
+            <h3>AI Orchestration &amp; Governance</h3>
+            <p>Coordinate existing software, approved AI tools and people. Define permitted actions, exception ownership, human review and conditions for pausing a workflow.</p>
+            <p class="capability-example"><strong>In practice</strong>A response draft uses approved information and follows an agreed review rule.</p>
+            <a class="text-link" href="ai-for-med-spas.html"><span>Explore AI orchestration</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+        </div>
+        <p class="capability-scope">A diagnostic identifies priorities. Workflow design defines the handoffs and controls. Build, testing, handover and ongoing operation are explicitly scoped for each engagement.</p>
+      </div>
+    </section>
+
+    <section class="connection" aria-labelledby="connection-title">
+      <div class="wrap">
+        <div class="connection-stage">
+          <div class="connection-art"><img src="images/mirel-02-ai-orchestration.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Transparent glass layers joined by fine connections: an abstract illustration of coordinated information and systems."></div>
+          <div class="connection-copy">
+            <p class="eyebrow">Business intelligence, connected</p>
+            <h2 id="connection-title">Connect your systems.<br><em>Find what’s holding your business back.</em></h2>
+            <p>Human expertise sets the direction. AI supports defined tasks. Your team keeps visibility and control.</p>
+            <a class="text-link" href="#method"><span>See what the work includes</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+        <div class="connection-foot"><span>Strategy. Intelligent systems. Human oversight.</span><span>For Aesthetics, Wellness &amp; Longevity.</span></div>
       </div>
     </section>
 
@@ -594,7 +704,7 @@
       <div class="wrap">
         <div class="section-head">
           <div><p class="eyebrow muted">The Mirèl method</p><h2 id="method-title">Know what is changing.<br><em>Know who owns it.</em></h2></div>
-          <a class="text-link" href="systems.html"><span>See how we work</span></a>
+          <a class="text-link" href="systems.html"><span>See how we work</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
         <div class="method-grid">
           <div>
@@ -608,24 +718,21 @@
             <ol class="method-steps">
               <li><span class="method-number" aria-hidden="true">01</span><div><h3>Diagnose</h3><p>Map the workflow, establish a baseline and identify what the available evidence can show.</p></div></li>
               <li><span class="method-number" aria-hidden="true">02</span><div><h3>Prioritize</h3><p>Compare likely value, cost, risk and staff effort. Choose the change worth testing.</p></div></li>
-              <li><span class="method-number" aria-hidden="true">03</span><div><h3>Implement</h3><p>Define access, responsibilities, integrations and a manual fallback. Test with the people who will run it.</p></div></li>
+              <li><span class="method-number" aria-hidden="true">03</span><div><h3>Implement</h3><p>For an agreed implementation scope, build and test the workflow, access rules and manual fallback with the people who will run it.</p></div></li>
               <li><span class="method-number" aria-hidden="true">04</span><div><h3>Optimize</h3><p>Review outcomes, exceptions and operating costs. Decide what to refine, expand or stop.</p></div></li>
             </ol>
-            <p class="method-note">Deliverables, implementation responsibilities and any ongoing review are agreed for each engagement.</p>
+            <p class="method-note">Before work begins, agree what Mirèl designs or builds, what your team approves and operates, and whether monitoring or ongoing support is included.</p>
           </div>
         </div>
-        <details class="diagnostic-brief">
-          <summary>See an illustrative diagnostic brief</summary>
-          <div class="brief-content">
-            <p><strong>Example: response ownership.</strong> Example format only; a real brief follows the clinic’s diagnostic and agreed scope.</p>
-            <dl class="brief-grid">
-              <div><dt>Question to investigate</dt><dd>Are routine inquiries left unresolved when reception is unavailable?</dd></div>
-              <div><dt>Evidence needed</dt><dd>Aggregate inquiry volumes, response coverage, booking status and staff effort over an agreed period.</dd></div>
-              <div><dt>Contained test</dt><dd>One approved channel, routine nonclinical questions and a named owner for unresolved cases.</dd></div>
-              <div><dt>Decision after review</dt><dd>Continue, adjust or stop based on attendance, staff intervention, exceptions and costs.</dd></div>
-            </dl>
-          </div>
-        </details>
+        <div class="brief-preview" aria-labelledby="brief-title">
+          <div class="brief-heading"><div><p class="eyebrow">Example deliverable · illustrative</p><h3 id="brief-title">A diagnostic brief you can act on.</h3></div><p>A real brief follows an agreed diagnostic. This example shows the decisions it should make clearer.</p></div>
+          <dl class="brief-preview-grid">
+            <div><dt>Issue to investigate</dt><dd>Routine inquiries arrive when reception is unavailable and remain unresolved.</dd></div>
+            <div><dt>Evidence to examine</dt><dd>Inquiry timestamps, actual replies, booking outcomes and staff follow-up time over an agreed period.</dd></div>
+            <div><dt>First change to test</dt><dd>One booking channel, approved response guidance and a named owner for open inquiries.</dd></div>
+          </dl>
+          <details class="diagnostic-brief"><summary>What else belongs in the brief?</summary><div class="brief-content"><p>A baseline, feasibility findings, implementation scope, exception rules, success measures and a review date. Review attendance, staff intervention and total operating costs before deciding whether to continue, adjust or stop.</p></div></details>
+        </div>
       </div>
     </section>
 
@@ -656,7 +763,7 @@
             <li>Leadership is willing to examine revenue, workload and costs.</li>
             <li>Staff can test changes and take ownership of the workflow.</li>
           </ul>
-          <a class="text-link" href="about.html"><span>Get to know Mirèl Partners</span></a>
+          <a class="text-link" href="about.html"><span>Get to know Mirèl Partners</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
         <figure>
           <div class="editorial-photo"><img src="images/mirel-04-clinic-team.webp" width="1672" height="941" loading="lazy" decoding="async" alt="A practice manager and clinician coordinating their work on a tablet in a medical aesthetics clinic."></div>
@@ -673,7 +780,7 @@
           <div class="resource-note">
             <h3>Start with a better question.</h3>
             <p>Six complimentary workbooks on diagnostics, inquiries, acquisition economics, positioning, retention and responsible AI.</p>
-            <a class="text-link" href="resources.html"><span>Explore the resource library</span></a>
+            <a class="text-link" href="resources.html"><span>Explore the resource library</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </div>
         <div class="faq">
@@ -681,6 +788,7 @@
           <details><summary>Does every workflow need AI?</summary><p>No. Clearer ownership or rules-based automation may solve the problem. We consider AI where interpreting or drafting information adds enough value to justify testing, operating costs and oversight.</p></details>
           <details><summary>What stays with our team?</summary><p>Your team retains agreed approval and exception responsibilities. Clinical assessments, treatment suitability and medical recommendations remain with qualified professionals. Access, escalation and manual fallback are defined before implementation.</p></details>
           <details><summary>What happens in a Strategy Review?</summary><p>A 30-minute, founder-led conversation about one operating problem. We discuss what you are seeing, which information would clarify it and whether a focused diagnostic makes sense. A diagnostic is a separately scoped next step, subject to mutual fit.</p></details>
+          <details><summary>Do you design, build or operate the workflow?</summary><p>A diagnostic establishes what is worth changing. The proposal then specifies workflow design, any build and testing, handover, and whether monitoring or ongoing operation is included. Each responsibility has a named owner before implementation begins.</p></details>
           <details><summary>Can you guarantee a financial return?</summary><p>No fixed return is guaranteed. We agree a baseline, relevant measures and a review period, then assess observed results alongside costs and other factors that may have influenced performance.</p></details>
         </div>
       </div>
@@ -690,7 +798,7 @@
       <div class="wrap closing-grid">
         <div><p class="eyebrow">A focused first conversation</p><h2 id="closing-title">Bring one problem<br>worth examining.</h2></div>
         <div class="closing-copy">
-          <p>In a 30-minute Strategy Review, we will discuss the operating issue, the evidence that could clarify it and whether a focused diagnostic is the right next step.</p>
+          <p>Bring one recurring issue. In 30 minutes with the founder, we’ll discuss where it occurs, what evidence would clarify it and whether a focused diagnostic is worth pursuing.</p>
           <a class="button" href="book.html#booking">Book a Strategy Review</a>
           <p class="small">Business-level information is enough. Please omit patient names, records and other identifiable patient information.</p>
         </div>
@@ -780,4 +888,4 @@
 </html>
 
 
-   
+  
