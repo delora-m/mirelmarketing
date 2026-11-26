@@ -113,8 +113,42 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
 @media(max-width:360px){.hero h1{font-size:2.6rem;line-height:1}.measure-grid,.footer-top{grid-template-columns:1fr}.role-button{gap:.55rem}.role-title{font-size:.8125rem}.model-insight{min-height:205px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion-ready [data-reveal]{opacity:1!important;transform:none!important}}
 @media print{.site-header,.skip,.scenario-tabs,.role-button{display:none}.wrap{width:100%}.section,.capabilities,.closing{padding-block:1.5rem}.hero-grid,.closing-grid{grid-template-columns:1fr}.dark{background:white;color:black}.dark p,.dark .eyebrow{color:black}.orchestration-copy{position:static}[data-reveal]{opacity:1!important;transform:none!important}.operating-model{box-shadow:none}.model-insight{min-height:0}}
+
+/* Homepage film: a self-contained illustrated preview, ready for a final MP4. */
+.workflow-media{margin-top:1.4rem}
+.workflow-video{width:100%;aspect-ratio:16/9;background:var(--ink);object-fit:contain;border:1px solid var(--line)}
+.film-stage{position:relative;min-height:350px;aspect-ratio:16/10;background:var(--ink);color:var(--paper);overflow:hidden;border:1px solid #51463f}
+.film-top{position:absolute;left:1.3rem;right:1.3rem;top:1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;color:#ded8d2;font-size:.6875rem;letter-spacing:.1em;text-transform:uppercase;z-index:2}
+.film-top span:last-child{font:500 1.6rem/1 var(--serif);letter-spacing:0}
+.film-scene{position:absolute;inset:3.6rem 1.5rem 1.5rem;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1rem}
+.film-scene h4{font:500 1.8rem/1.05 var(--serif);letter-spacing:-.025em;margin:0;text-align:center;color:var(--paper)}
+.film-card{width:min(100%,380px);background:var(--paper);color:var(--ink);padding:1.25rem;border:1px solid var(--line)}
+.film-card .film-label{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--muted);margin-bottom:.65rem}
+.film-card .film-main{font:500 1.55rem/1.15 var(--serif);color:var(--ink);margin:0}
+.film-card .film-detail{border-top:1px solid var(--line);margin-top:1rem;padding-top:.75rem;font-size:.875rem;color:var(--muted);line-height:1.5}
+.film-caption{font-size:.8125rem;line-height:1.5;color:#ded8d2!important;text-align:center;max-width:44ch}
+.film-tags{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:1rem;list-style:none}
+.film-tags li{border:1px solid var(--line);padding:.5rem .65rem;font-size:.8125rem;line-height:1.4}
+.film-tools{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.8rem}
+.film-play{min-height:44px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font:600 .8125rem var(--sans);padding:.65rem 1rem}
+.film-play:hover{background:var(--coffee)}
+.film-duration{font-size:.75rem;color:var(--muted)}
+.film-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-top:.8rem}
+.film-step{position:relative;isolation:isolate;overflow:hidden;min-height:49px;padding:.7rem .5rem;border:1px solid var(--line);background:transparent;font:600 .75rem/1.35 var(--sans);text-align:center}
+.film-step::before{content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;transform-origin:left;transform:scaleX(var(--step-progress,0));background:var(--ink)}
+.film-step[aria-pressed=true]{background:var(--stone);border-color:var(--muted)}
+.film-transcript{border-top:1px solid var(--line);margin-top:1.2rem}
+.film-transcript summary{padding:.85rem 0;cursor:pointer;font-size:.8125rem;font-weight:600;min-height:44px}
+.film-transcript ol{padding-left:1.2rem;font-size:.875rem;color:var(--muted)}
+.film-transcript li{margin-bottom:.7rem}.film-transcript strong{color:var(--ink)}
+.film-notice{font-size:.8125rem;color:var(--muted);margin-bottom:.8rem}
+@media(prefers-reduced-motion:no-preference){.film-scene.entering{animation:filmSceneIn .55s var(--ease) both}@keyframes filmSceneIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}}
+@media(max-width:680px){.film-stage{min-height:460px;aspect-ratio:auto}.film-scene{inset:3.3rem 1rem 1.1rem;gap:.8rem}.film-scene h4{font-size:1.6rem}.film-card{padding:1rem}.film-card .film-main{font-size:1.4rem}.film-top{left:1rem;right:1rem;font-size:.625rem}.film-steps{grid-template-columns:1fr 1fr}.film-step{font-size:.8125rem}.film-tools{align-items:start}.film-duration{max-width:15ch;text-align:right}.film-tags{gap:.4rem}.film-tags li{padding:.4rem;font-size:.75rem}}
+@media print{.film-tools,.film-steps{display:none}.film-stage{background:white;color:black}.film-scene h4,.film-caption{color:black!important}}
+
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mirelpartners.com/#organization","name":"Mirèl Partners","url":"https://mirelpartners.com/","email":"delora@mirelpartners.com","description":"AI intelligence and orchestration for aesthetics, wellness and longevity. Current focus: established U.S. med spas and medical aesthetics practices."},{"@type":"WebSite","@id":"https://mirelpartners.com/#website","url":"https://mirelpartners.com/","name":"Mirèl Partners","publisher":{"@id":"https://mirelpartners.com/#organization"}},{"@type":"WebPage","@id":"https://mirelpartners.com/#webpage","url":"https://mirelpartners.com/","name":"AI Intelligence & Orchestration | Mirèl Partners","isPartOf":{"@id":"https://mirelpartners.com/#website"},"about":{"@id":"https://mirelpartners.com/#organization"}}]}</script>
+
+   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mirelpartners.com/#organization","name":"Mirèl Partners","url":"https://mirelpartners.com/","email":"delora@mirelpartners.com","description":"AI intelligence and orchestration for aesthetics, wellness and longevity. Current focus: established U.S. med spas and medical aesthetics practices."},{"@type":"WebSite","@id":"https://mirelpartners.com/#website","url":"https://mirelpartners.com/","name":"Mirèl Partners","publisher":{"@id":"https://mirelpartners.com/#organization"}},{"@type":"WebPage","@id":"https://mirelpartners.com/#webpage","url":"https://mirelpartners.com/","name":"AI Intelligence & Orchestration | Mirèl Partners","isPartOf":{"@id":"https://mirelpartners.com/#website"},"about":{"@id":"https://mirelpartners.com/#organization"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main-content">Skip to main content</a>
@@ -200,12 +234,49 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
       <div data-reveal>
         <div class="scenario-tabs" id="scenario-tabs" hidden role="tablist" aria-label="Explore illustrative workflows"><button id="tab-inquiry" role="tab" aria-selected="true" aria-controls="panel-inquiry" type="button">Inquiry &amp; booking</button><button id="tab-reporting" role="tab" aria-selected="false" aria-controls="panel-reporting" tabindex="-1" type="button">Revenue visibility</button></div>
         <div class="scenario-panel" id="panel-inquiry">
-          <div class="scenario-head"><p class="eyebrow">A routine inquiry after hours</p><span class="scenario-seal" aria-hidden="true">M.</span></div>
-          <ol class="flow-list">
-            <li><span class="flow-dot" aria-hidden="true"></span><div><h3>Receive the question.</h3><p>An approved channel passes only the information the workflow is authorized to use.</p></div></li>
-            <li><span class="flow-dot" aria-hidden="true"></span><div><h3>Make the next step clear.</h3><p>Clinic-approved information supports a routine, nonclinical response and a supported booking step.</p></div></li>
-            <li class="human"><span class="flow-dot" aria-hidden="true"></span><div><h3>Keep a person responsible.</h3><p>Clinical, sensitive or uncertain requests go to designated staff. Unconfirmed bookings remain visible for review.</p></div></li>
-          </ol><p class="panel-measure"><strong>Measure what the whole workflow costs and returns.</strong>Response coverage, attended consultations, staff intervention and running costs.</p>
+          <div class="scenario-head"><p class="eyebrow">From inquiry to clear ownership</p><span class="scenario-seal" aria-hidden="true">M.</span></div>
+          <!-- FINAL VIDEO: once produced, put its relative MP4 path in data-video-src.
+               Example: data-video-src="videos/mirel-inquiry-workflow.mp4"
+               An optional poster path goes in data-video-poster. Leave both empty until files exist.
+               The illustrated preview works without any external image or video files. -->
+          <figure class="workflow-media" data-video-src="" data-video-poster="" aria-label="Illustrative inquiry workflow, four stages">
+            <p class="film-notice" id="film-notice" hidden></p>
+            <video id="workflow-video" class="workflow-video" controls playsinline preload="none" hidden aria-label="From inquiry to clear ownership: illustrative workflow" aria-describedby="film-context"></video>
+            <div id="illustrated-film">
+              <div class="film-stage" aria-label="Illustrated workflow preview">
+                <div class="film-top"><span>Illustrative workflow</span><span aria-hidden="true">M.</span></div>
+                <div class="film-scene" data-scene="0">
+                  <h4>A routine inquiry arrives.</h4>
+                  <div class="film-card"><p class="film-label">After reception closes</p><p class="film-main">“What appointment times are available?”</p><p class="film-detail">A routine, nonclinical booking question.</p></div>
+                  <p class="film-caption">Start with a defined operating task.</p>
+                </div>
+                <div class="film-scene" data-scene="1" hidden>
+                  <h4>AI supports the next step.</h4>
+                  <div class="film-card"><p class="film-label">Approved information</p><p class="film-main">A clear booking path.</p><p class="film-detail">Clinic-approved information. Supported booking options.</p></div>
+                  <p class="film-caption">The system works within agreed permissions.</p>
+                </div>
+                <div class="film-scene" data-scene="2" hidden>
+                  <h4>People retain judgment.</h4>
+                  <div class="film-card"><p class="film-label">Human review</p><p class="film-main">Unresolved? Assign an owner.</p><p class="film-detail">Staff review uncertain requests and unconfirmed bookings.</p></div>
+                  <p class="film-caption">Clinical questions go to qualified professionals.</p>
+                </div>
+                <div class="film-scene" data-scene="3" hidden>
+                  <h4>Review what changed.</h4>
+                  <div class="film-card"><p class="film-label">Against the agreed baseline</p><p class="film-main">Measure the whole workflow.</p><ul class="film-tags"><li>Response coverage</li><li>Attended consultations</li><li>Staff effort</li><li>Operating costs</li></ul></div>
+                  <p class="film-caption">Use the evidence to refine, expand or stop.</p>
+                </div>
+              </div>
+              <div class="film-tools" hidden><button class="film-play" type="button" id="film-play">Play the example</button><span class="film-duration">24 seconds · No audio</span></div>
+              <div class="film-steps" role="group" aria-label="Choose an illustrative workflow stage" hidden>
+                <button class="film-step" type="button" data-film-step="0" aria-pressed="true">Inquiry</button>
+                <button class="film-step" type="button" data-film-step="1" aria-pressed="false">AI support</button>
+                <button class="film-step" type="button" data-film-step="2" aria-pressed="false">Human review</button>
+                <button class="film-step" type="button" data-film-step="3" aria-pressed="false">Measurement</button>
+              </div>
+            </div>
+            <figcaption class="scenario-disclosure" id="film-context">Illustrative workflow, not a live product or verified client result. Actual scope depends on supported systems, approved access and agreed responsibilities.</figcaption>
+          </figure>
+          <details class="film-transcript"><summary>Read the workflow</summary><ol><li><strong>Inquiry:</strong> A routine nonclinical booking question arrives after reception closes.</li><li><strong>AI support:</strong> Where systems and permissions allow, clinic-approved information supports a clear booking step.</li><li><strong>Human review:</strong> Designated staff own unresolved requests. Qualified professionals retain clinical decisions.</li><li><strong>Measurement:</strong> Review coverage, attended consultations, staff effort and operating costs against the baseline.</li></ol></details>
         </div>
         <div class="scenario-panel" id="panel-reporting">
           <div class="scenario-head"><p class="eyebrow">From scattered records to review</p><span class="scenario-seal" aria-hidden="true">M.</span></div>
@@ -213,9 +284,9 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
             <li><span class="flow-dot" aria-hidden="true"></span><div><h3>Bring authorized records together.</h3><p>Review supported booking, visit, collections and cost data against agreed definitions and a common period.</p></div></li>
             <li><span class="flow-dot" aria-hidden="true"></span><div><h3>Surface the gaps.</h3><p>Identify missing records, inconsistent figures and the manual reconciliation that the team still needs to perform.</p></div></li>
             <li class="human"><span class="flow-dot" aria-hidden="true"></span><div><h3>Put judgment with the owner.</h3><p>A named reporting owner validates discrepancies before leadership uses the information to make an operating decision.</p></div></li>
-          </ol><p class="panel-measure"><strong>Measure the quality and usefulness of the review.</strong>Reconciliation time, unresolved discrepancies and contribution visibility. AI is used only where it adds value.</p>
+          </ol><p class="panel-measure"><strong>Measure the quality and usefulness of the review.</strong>Reconciliation time, unresolved discrepancies and contribution visibility. AI is used only where it adds value.</p><p class="scenario-disclosure">Illustrative workflow, not a live product or verified client result. Scope depends on supported systems, approved access and agreed responsibilities.</p>
         </div>
-        <p class="scenario-disclosure">Illustrative workflow designs, not live products or verified client results. Feasibility depends on your systems, approved access, vendor permissions and agreed safeguards.</p>
+
       </div>
     </div>
   </section>
@@ -358,7 +429,70 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
       document.getElementById('role-description').textContent=copy[1];
     });
   });
+  /* Four-stage film: explicit play, keyboard-accessible scene controls, one finite pass.
+     Pause when the example, tab, or document is no longer visible. */
+  const film=document.querySelector('.workflow-media');
+  const illustrated=document.getElementById('illustrated-film');
+  const video=document.getElementById('workflow-video');
+  const filmScenes=Array.from(document.querySelectorAll('[data-scene]'));
+  const filmSteps=Array.from(document.querySelectorAll('[data-film-step]'));
+  const playButton=document.getElementById('film-play');
+  let filmRunning=false,filmElapsed=0,filmLast=0,filmFrame=0,filmCurrent=-1;
+  const filmLength=24000,sceneLength=6000;
+  function paintFilm(){
+    const index=Math.min(3,Math.floor(filmElapsed/sceneLength));
+    filmScenes.forEach(function(scene,i){
+      scene.hidden=i!==index;
+      if(i===index&&filmCurrent!==index&&!reduceMotion.matches){scene.classList.remove('entering');void scene.offsetWidth;scene.classList.add('entering');}
+    });
+    filmSteps.forEach(function(button,i){
+      button.setAttribute('aria-pressed',String(i===index));
+      button.style.setProperty('--step-progress',String(Math.max(0,Math.min(1,(filmElapsed-i*sceneLength)/sceneLength))));
+    });
+    filmCurrent=index;
+  }
+  function stopFilm(){
+    filmRunning=false;cancelAnimationFrame(filmFrame);filmLast=0;
+    playButton.textContent=filmElapsed>=filmLength?'Replay the example':filmElapsed>0?'Continue the example':'Play the example';
+  }
+  function tickFilm(time){
+    if(!filmRunning)return;
+    if(document.hidden||document.getElementById('panel-inquiry').hidden){stopFilm();return;}
+    if(filmLast)filmElapsed=Math.min(filmLength,filmElapsed+time-filmLast);
+    filmLast=time;paintFilm();
+    if(filmElapsed>=filmLength){stopFilm();return;}
+    filmFrame=requestAnimationFrame(tickFilm);
+  }
+  playButton.addEventListener('click',function(){
+    if(filmRunning){stopFilm();return;}
+    if(filmElapsed>=filmLength)filmElapsed=0;
+    filmRunning=true;filmLast=0;playButton.textContent='Pause the example';
+    filmFrame=requestAnimationFrame(tickFilm);
+  });
+  filmSteps.forEach(function(button,index){button.addEventListener('click',function(){stopFilm();filmElapsed=index*sceneLength;paintFilm();playButton.textContent='Play from this stage';});});
+  document.addEventListener('visibilitychange',function(){if(document.hidden){stopFilm();video.pause();}});
+  document.getElementById('tab-reporting').addEventListener('click',function(){stopFilm();video.pause();});
+  if('MutationObserver' in window){new MutationObserver(function(){if(document.getElementById('panel-inquiry').hidden){stopFilm();video.pause();}}).observe(document.getElementById('panel-inquiry'),{attributes:true,attributeFilter:['hidden']});}
+  if('IntersectionObserver' in window){new IntersectionObserver(function(entries){if(!entries[0].isIntersecting){stopFilm();video.pause();}},{threshold:0}).observe(film);}
+  reduceMotion.addEventListener('change',function(event){if(event.matches)stopFilm();});
+  film.querySelector('.film-tools').hidden=false;
+  film.querySelector('.film-steps').hidden=false;
+  paintFilm();
+  /* The produced MP4 can replace the illustrated preview with one configured path. */
+  if(film.dataset.videoSrc.trim()){
+    video.src=film.dataset.videoSrc.trim();
+    if(film.dataset.videoPoster.trim())video.poster=film.dataset.videoPoster.trim();
+    video.hidden=false;illustrated.hidden=true;
+    video.addEventListener('error',function(){
+      video.hidden=true;illustrated.hidden=false;
+      const notice=document.getElementById('film-notice');
+      notice.textContent='The video could not load. Explore the illustrated workflow below.';notice.hidden=false;
+    });
+  }
+
 })();
 </script>
 </body>
 </html>
+
+   
