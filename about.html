@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#241c17">
-  <title>About Mirèl Partners | AI Intelligence &amp; Orchestration</title>
+  <title>About Mirèl Partners &amp; Founder Irem Delora</title>
   <meta name="description" content="Meet the thinking behind Mirèl Partners. Human expertise, business strategy and AI orchestration for aesthetics, wellness and longevity. Established U.S. medical aesthetics is our starting point.">
   <link rel="canonical" href="https://mirelpartners.com/about.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mirèl Partners">
-  <meta property="og:title" content="About Mirèl Partners | Intelligence with a business purpose.">
+  <meta property="og:title" content="About Mirèl Partners &amp; Founder Irem Delora">
   <meta property="og:description" content="AI Intelligence &amp; Orchestration for Aesthetics, Wellness &amp; Longevity. Get to know our founder, principles and business-first approach to AI.">
   <meta property="og:url" content="https://mirelpartners.com/about.html">
   <meta property="og:image" content="https://mirelpartners.com/images/mirel-about-01-business-intelligence.webp">
@@ -327,6 +327,70 @@
       .editorial-photo { break-inside: avoid; }
     }
 
+
+    /* Shared refinements: clear text, scalable icons and useful booking context. */
+    .link-arrow { display: block; width: 14px; height: 14px; flex-shrink: 0; }
+    .review-note { margin-top: 1rem; max-width: 49ch; color: var(--coffee); font-size: .875rem; line-height: 1.65; }
+    .review-note strong { color: var(--ink); }
+    .eyebrow { font-size: .75rem; letter-spacing: .13em; }
+    .photo-caption { font-size: .75rem; flex-wrap: wrap; }
+    .photo-caption span:last-child { flex-shrink: 1; }
+    .method-note, .market-note, .social-note, .workflow-disclosure, .measure-note, .capability-scope { font-size: .8125rem; }
+    .text-link { gap: .8rem; }
+    @media (max-width: 600px) {
+      .hero-lead, .about-lead, .founder-story > p, .belief-columns p, .question-columns p,
+      .fit-copy > p:not(.eyebrow), .focus-copy > p:not(.eyebrow), .fit-list li,
+      .principle p, .closing-copy > p { font-size: .9375rem; }
+      .photo-caption { gap: .25rem 1rem; }
+      .review-note { font-size: .8125rem; }
+    }
+
+    /* Founder identity comes before the story; the workspace remains conceptual artwork. */
+    .about-title { font-size: clamp(3.7rem, 5.8vw, 5.5rem); line-height: 1; }
+    .founder-intro { margin-top: 1.5rem; padding-left: 1rem; border-left: 2px solid var(--gold); }
+    .founder-intro strong { display: block; font-size: 1rem; font-weight: 600; }
+    .founder-intro span { display: block; margin-top: .1rem; font-size: .8125rem; color: var(--coffee); }
+    .about-positioning { margin-top: 1.2rem; }
+    .about-focus-line p { font-size: .875rem; color: var(--coffee); }
+    .founder { margin-top: var(--space); }
+    .founder-story > .eyebrow { margin: 0 0 1rem; font-size: .75rem; color: var(--coffee); }
+    .founder-story h2 { max-width: 23ch; }
+    .founder-story > p:not(.eyebrow) { font-size: 1rem; }
+    .founder-example { margin-top: 1.8rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+    .founder-example h3 { font-size: 1.65rem; }
+    .founder-example p { margin-top: .8rem; color: var(--muted); font-size: .875rem; }
+    .founder-example .text-link { margin-top: .8rem; }
+    .engagement-outputs { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .engagement-outputs > div { padding-top: 1rem; border-top: 1px solid var(--line); }
+    .engagement-outputs dt { font-size: .875rem; font-weight: 600; }
+    .engagement-outputs dd { margin: .6rem 0 0; font-size: .875rem; color: var(--muted); }
+    .social-editorial { display: grid; grid-template-columns: 1.25fr 1fr; gap: 1.25rem; }
+    .social-feature { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(2rem, 3.8vw, 3.5rem); background: var(--ink); color: var(--paper); text-decoration: none; border: 1px solid var(--ink); transition: background .2s; }
+    .social-feature:hover { background: var(--coffee); }
+    .social-feature:focus-visible { outline-color: #876445; }
+    .social-feature > .eyebrow { color: #d0b89f; }
+    .social-feature h3 { margin-top: 2rem; max-width: 20ch; font-size: clamp(2.3rem, 3.5vw, 3.2rem); }
+    .social-feature > p:not(.eyebrow) { max-width: 37ch; margin-top: 1.3rem; color: #d0c6bd; font-size: .9375rem; }
+    .social-feature .social-action { color: var(--paper); padding-top: 3rem; }
+    .social-side { display: grid; gap: 1.25rem; }
+    .social-side .social-card h3 { margin-top: .5rem; }
+    .social-side .social-card > p:not(.eyebrow) { max-width: none; }
+    @media (max-width: 900px) {
+      .about-title { font-size: clamp(3.8rem, 8vw, 5.5rem); }
+      .engagement-outputs { gap: 1.2rem; }
+      .social-editorial { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .about-title { font-size: clamp(3rem, 12vw, 4rem); }
+      .founder { margin-top: 3rem; }
+      .founder-story > p:not(.eyebrow) { font-size: .9375rem; }
+      .engagement-outputs, .social-editorial { grid-template-columns: 1fr; }
+      .engagement-outputs { gap: 1.2rem; }
+      .social-feature { padding: 1.6rem; }
+      .social-feature h3 { margin-top: 1.3rem; }
+      .social-feature .social-action { padding-top: 2rem; }
+    }
+
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mirelpartners.com/#organization","name":"Mirèl Partners","url":"https://mirelpartners.com/","email":"delora@mirelpartners.com","description":"AI Intelligence & Orchestration for Aesthetics, Wellness & Longevity. Current focus: established U.S. med spas and medical aesthetics practices.","founder":{"@id":"https://mirelpartners.com/about.html#founder"},"sameAs":["https://www.instagram.com/mirelpartners/","https://www.youtube.com/@mirelpartners","https://www.linkedin.com/company/mirelmarketing/"]},{"@type":"Person","@id":"https://mirelpartners.com/about.html#founder","name":"Irem Delora","jobTitle":"Founder","worksFor":{"@id":"https://mirelpartners.com/#organization"}},{"@type":"AboutPage","@id":"https://mirelpartners.com/about.html#webpage","url":"https://mirelpartners.com/about.html","name":"About Mirèl Partners | AI Intelligence & Orchestration","about":{"@id":"https://mirelpartners.com/#organization"}}]}</script>
 </head>
@@ -367,28 +431,18 @@
         <div class="about-hero-grid">
           <div class="about-hero-copy">
             <p class="eyebrow">About Mirèl Partners</p>
-            <h1 class="about-title" id="about-heading"><span>Intelligence with</span><em>a business purpose.</em></h1>
+            <h1 class="about-title" id="about-heading">Meet <em>Mirèl Partners.</em></h1>
+            <p class="founder-intro"><strong>Irem Delora</strong><span>Founder, Mirèl Partners</span></p>
             <p class="about-positioning">AI Intelligence &amp; Orchestration<br>for Aesthetics, Wellness &amp; Longevity.</p>
-            <p class="about-lead">We connect artificial intelligence, human expertise and business strategy to identify where revenue, time and capacity are lost — then turn the highest-value constraints into measurable improvements.</p>
-            <div class="actions"><a class="button" href="book.html#booking">Book a Strategy Review</a><a class="text-link" href="#founder"><span>Meet the founder</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            <p class="about-lead">We help established U.S. med spas understand where revenue, staff time and capacity are lost, then design connected workflows with clear ownership and measurable outcomes.</p>
+            <div class="actions"><a class="button" href="book.html#booking">Book a Strategy Review</a><a class="text-link" href="#founder"><span>Why I founded Mirèl</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
           </div>
           <div>
             <figure><div class="editorial-photo"><img src="images/mirel-about-01-business-intelligence.webp" width="1672" height="941" fetchpriority="high" decoding="async" alt="An illustrative medical aesthetics business workspace with digital analysis tools beside a clinical consultation area."></div><figcaption class="photo-caption"><span>Aesthetics. Wellness. Longevity.</span><span>Intelligence with context</span></figcaption></figure>
-            <div class="hero-visual-note"><p class="eyebrow">A strategic business intelligence &amp; technology partner.</p><p>Designed around the business, its existing systems and the people who operate them.</p></div>
+            <div class="hero-visual-note"><p class="eyebrow">Your first conversation</p><p>A 30-minute review with the founder, focused on one recurring issue in your practice and what to examine next.</p></div>
           </div>
         </div>
-        <div class="about-focus-line"><p>Current focus: established U.S. med spas and medical aesthetics practices.</p><a class="text-link" href="services.html"><span>Explore our capabilities</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="belief-heading">
-      <div class="wrap belief-grid">
-        <p class="eyebrow">What we believe</p>
-        <div class="belief-copy">
-          <h2 id="belief-heading">The business problem<br><em>comes first.</em></h2>
-          <div class="belief-columns"><p>More activity can amplify unresolved operational gaps. An inquiry may wait for a reply, a booking may stall between systems, or reporting may leave the team reconciling the same information by hand.</p><p>We begin by understanding how the business works and which constraints matter most to its numbers. Then we design the smallest reliable change that can improve them.</p></div>
-          <blockquote class="belief-standard"><p>A system earns its place when the business can measure its value.</p><cite>The Mirèl standard</cite></blockquote>
-        </div>
+        <div class="about-focus-line"><p>Human-led strategy. AI-orchestrated operations. Defined around the way your practice works.</p><a class="text-link" href="services.html"><span>Explore our capabilities</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
       </div>
     </section>
 
@@ -400,12 +454,24 @@
           <p class="founder-visual-note">Understand the business.<br>Choose the change that matters.</p>
         </div>
         <div class="founder-story">
-          <h2 id="founder-heading">Why I built Mirèl around how businesses operate.</h2>
-          <p>My work in marketing strategy and digital execution showed me how much of a commercial outcome depends on what happens after someone shows interest.</p>
-          <p>When a clinic already has demand, the most valuable question may be where the operation is under pressure. Bookings can stall between systems. Staff can spend hours reconciling information. Leadership may have limited visibility into which services contribute to profit.</p>
-          <p>I built Mirèl Partners to understand how the business works, identify the constraint with the greatest commercial impact and design a system the team can use, oversee and improve.</p>
-          <p>AI should serve the business strategy and operate within clear governance: defined permissions, a named owner for exceptions and human judgment wherever a decision requires it.</p>
-          <div class="founder-signature"><p>Irem Delora</p><span>Founder, Mirèl Partners</span></div>
+          <p class="eyebrow">Irem Delora · Founder, Mirèl Partners</p>
+          <h2 id="founder-heading">Marketing showed me<br><em>part of the picture.</em></h2>
+          <p>My work in marketing strategy and digital execution made me look more closely at what happens after someone asks about a service. Who replies? Who owns the next step? Can the team see which changes are worth the effort?</p>
+          <p>I founded Mirèl Partners around those questions. An established practice can have demand and still lose opportunities between reception, booking, consultation and follow-up. Understanding that operating picture is where our work begins.</p>
+          <p>I see AI as part of a business system: useful for defined tasks, connected to the right information and accountable to people who can review its work. The choice of tool follows the problem we are trying to solve.</p>
+          <div class="founder-example"><h3>How that thinking becomes work</h3><p>For an unresolved booking inquiry, we map what happened, identify the missing handoff and define a response, owner and review measure.</p><a class="text-link" href="index.html#approach"><span>Explore the reception workflow</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="belief-heading">
+      <div class="wrap belief-grid">
+        <p class="eyebrow">What we believe</p>
+        <div class="belief-copy">
+          <h2 id="belief-heading">A business question.<br><em>A practical scope of work.</em></h2>
+          <div class="belief-columns"><p>We diagnose where work gets stuck, compare the likely value of a change with the effort required and design how information, software and people should connect.</p><p>Before implementation, the proposal defines what gets built and tested, who approves it, how the team takes over and whether ongoing support is included. Progress is reviewed against an agreed baseline.</p></div>
+          <dl class="engagement-outputs"><div><dt>Diagnostic brief</dt><dd>The issue, evidence, priority and first test.</dd></div><div><dt>Workflow specification</dt><dd>Actions, data sources, owners and exceptions.</dd></div><div><dt>Implementation &amp; review plan</dt><dd>Agreed build, testing, handover and measures.</dd></div></dl>
+          <blockquote class="belief-standard"><p>A system earns its place when the business can measure its value.</p><cite>The Mirèl standard</cite></blockquote>
         </div>
       </div>
     </section>
@@ -426,28 +492,29 @@
 
     <section class="section focus" aria-labelledby="fit-heading">
       <div class="wrap focus-grid">
-        <div class="focus-copy"><p class="eyebrow">Partnership fit</p><h2 id="fit-heading">Established businesses.<br><em>Meaningful complexity.</em></h2><p>We work best with operators who have existing demand, a team and a willingness to examine what is holding performance back.</p><a class="text-link" href="book.html#booking"><span>See whether we align</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        <div class="focus-copy"><p class="eyebrow">Partnership fit</p><h2 id="fit-heading">Already have demand?<br><em>Look at what happens next.</em></h2><p>We work best with established practices that already have demand and want to understand where the operation is under pressure. You may recognize the right problem before you know the right solution.</p><a class="text-link" href="book.html#booking"><span>See whether we align</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
         <div>
           <ul class="fit-list"><li><span aria-hidden="true">01</span><p>You have meaningful patient or client demand and a team managing day-to-day operations.</p></li><li><span aria-hidden="true">02</span><p>Workflows cross people or systems, with responsibilities, data or next steps that may be unclear.</p></li><li><span aria-hidden="true">03</span><p>Leadership is willing to examine the numbers behind revenue, staff workload and capacity.</p></li><li><span aria-hidden="true">04</span><p>Your team can test changes, review results and take ownership of the agreed workflow.</p></li></ul>
-          <p class="market-note"><strong>U.S. medical aesthetics is our starting point.</strong>Our immediate commercial priority is established U.S. med spas and medical aesthetics practices. Our long-term focus is aesthetics, wellness and longevity, with the aim of developing reusable intelligence and orchestration systems around recurring operating problems.</p>
+          <p class="market-note"><strong>Today, our focus is established U.S. med spas and medical aesthetics practices.</strong>Our wider field is aesthetics, wellness and longevity. The starting point remains the same: an operating issue that matters to your business and a practical way to examine it.</p>
         </div>
       </div>
     </section>
 
     <section class="section social-section" aria-labelledby="social-heading">
       <div class="wrap">
-        <div class="section-head"><div><p class="eyebrow muted">Get to know Mirèl</p><h2 id="social-heading">A closer look at<br><em>the thinking behind the work.</em></h2></div><p>Explore our social channels to get to know Mirèl Partners, our perspective on AI and the business questions behind our approach.</p></div>
-        <div class="social-grid">
-          <a class="social-card" href="https://www.linkedin.com/company/mirelmarketing/" target="_blank" rel="noopener noreferrer"><p class="eyebrow">Business perspective</p><h3>LinkedIn</h3><p>Connect with Mirèl Partners and explore our business perspective.</p><span class="social-action"><span>Visit our LinkedIn page</span><svg class="social-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-          <a class="social-card" href="https://www.youtube.com/@mirelpartners" target="_blank" rel="noopener noreferrer"><p class="eyebrow">Ideas in focus</p><h3>YouTube</h3><p>Explore our video content and the ideas behind our approach.</p><span class="social-action"><span>Explore our YouTube channel</span><svg class="social-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-          <a class="social-card" href="https://www.instagram.com/mirelpartners/" target="_blank" rel="noopener noreferrer"><p class="eyebrow">The Mirèl perspective</p><h3>Instagram</h3><p>Get a closer look at Mirèl’s ideas, identity and visual world.</p><span class="social-action"><span>Find us on Instagram</span><svg class="social-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <div class="section-head"><div><p class="eyebrow muted">Get to know Mirèl</p><h2 id="social-heading">Hear the perspective<br><em>behind the approach.</em></h2></div><p>Explore Mirèl’s videos and social channels before deciding whether a conversation feels useful for your practice.</p></div>
+        <div class="social-editorial">
+          <a class="social-feature" href="https://www.youtube.com/@mirelpartners" target="_blank" rel="noopener noreferrer"><p class="eyebrow">Start with video</p><h3>Get to know our perspective on AI and the business behind the clinic.</h3><p>Visit Mirèl Partners on YouTube and choose a video that interests you.</p><span class="social-action"><span>Explore our YouTube channel</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <div class="social-side">
+            <a class="social-card" href="https://www.linkedin.com/company/mirelmarketing/" target="_blank" rel="noopener noreferrer"><p class="eyebrow">Business perspective</p><h3>LinkedIn</h3><p>Explore Mirèl Partners’ updates and business perspective.</p><span class="social-action"><span>Visit our LinkedIn page</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+            <a class="social-card" href="https://www.instagram.com/mirelpartners/" target="_blank" rel="noopener noreferrer"><p class="eyebrow">A closer look</p><h3>Instagram</h3><p>Get to know Mirèl’s ideas and perspective at your own pace.</p><span class="social-action"><span>Find us on Instagram</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
         </div>
-        <p class="social-note">Choose a channel to explore Mirèl at your own pace.</p>
       </div>
     </section>
 
     <section class="section closing" aria-labelledby="closing-heading">
-      <div class="wrap closing-grid"><div><p class="eyebrow">A focused first conversation</p><h2 id="closing-heading">Bring one problem<br>worth examining.</h2></div><div class="closing-copy"><p>In a 30-minute Strategy Review, we’ll discuss what you are seeing, which information would clarify the constraint and whether a focused diagnostic makes sense.</p><a class="button" href="book.html#booking">Book a Strategy Review</a><p class="small">Business-level information is enough. Please omit patient names, records and other identifiable patient information.</p></div></div>
+      <div class="wrap closing-grid"><div><p class="eyebrow">A focused first conversation</p><h2 id="closing-heading">Bring one problem<br>worth examining.</h2></div><div class="closing-copy"><p>Bring one recurring issue. In 30 minutes with me, we’ll discuss where it occurs, what evidence would clarify it and whether a focused diagnostic is worth pursuing.</p><a class="button" href="book.html#booking">Book a Strategy Review</a><p class="small">Business-level information is enough. Please omit patient names, records and other identifiable patient information.</p></div></div>
     </section>
   </main>
 
@@ -487,3 +554,4 @@
   </script>
 </body>
 </html>
+
