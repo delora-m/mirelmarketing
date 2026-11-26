@@ -1,640 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fbf7f1">
+  <meta name="theme-color" content="#241c17">
   <meta name="robots" content="index, follow, max-image-preview:large">
-
-  <title>AI Intelligence &amp; Orchestration Capabilities | Mirèl Partners</title>
-  <meta name="description" content="Explore Mirèl Partners’ capabilities in revenue and client journey intelligence, operational and financial intelligence, and AI orchestration and governance.">
+  <title>Services | AI Intelligence &amp; Orchestration for Med Spas | Mirèl Partners</title>
+  <meta name="description" content="Explore business diagnostics, workflow design and scoped AI implementation for established U.S. med spas. Clear deliverables, human ownership and measurable business value.">
   <link rel="canonical" href="https://mirelpartners.com/services.html">
-
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mirèl Partners">
+  <meta property="og:title" content="Find the constraint. Design the workflow. Measure the change. | Mirèl Partners">
+  <meta property="og:description" content="Business diagnostics, connected workflow design and scoped AI implementation for established U.S. med spas.">
   <meta property="og:url" content="https://mirelpartners.com/services.html">
-  <meta property="og:title" content="AI Intelligence &amp; Orchestration Capabilities | Mirèl Partners">
-  <meta property="og:description" content="See how Mirèl Partners diagnoses operational constraints, designs intelligent systems and measures commercial impact for established medical aesthetics practices.">
-  <meta property="og:image" content="https://mirelpartners.com/images/mirel-services-hero.webp">
-  <meta property="og:image:alt" content="Editorial med spa imagery for Mirèl Partners’ intelligence and orchestration capabilities">
+  <meta property="og:image" content="https://mirelpartners.com/images/mirel-services-01-practice-diagnostic.webp">
+  <meta property="og:image:alt" content="An illustrative clinic operations review with a manager and business advisor.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Intelligence &amp; Orchestration Capabilities | Mirèl Partners">
-  <meta name="twitter:description" content="Business intelligence, workflow design and AI governance for established U.S. med spas and medical aesthetics practices.">
-  <meta name="twitter:image" content="https://mirelpartners.com/images/mirel-services-hero.webp">
-
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231d0f0c'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-size='62' text-anchor='middle' fill='%23fbf7f1'%3EM%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;450;500;600;700&display=swap">
-
-  <link rel="stylesheet" href="style.css?v=8">
-  <link rel="stylesheet" href="navigation.css?v=1">
-  <link rel="preload" href="images/mirel-services-hero.webp" as="image" type="image/webp" media="(min-width:761px)" fetchpriority="high">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://mirelpartners.com/#organization",
-        "name": "Mirèl Partners",
-        "url": "https://mirelpartners.com/",
-        "email": "delora@mirelpartners.com",
-        "description": "Strategic business intelligence and technology partner for aesthetics, wellness and longevity, with an immediate commercial focus on established U.S. med spas and medical aesthetics practices.",
-        "sameAs": [
-          "https://www.instagram.com/mirelpartners/",
-          "https://www.youtube.com/@mirelpartners",
-          "https://www.linkedin.com/company/mirelmarketing/"
-        ]
-      },
-      {
-        "@type": "Service",
-        "@id": "https://mirelpartners.com/services.html#growth-partnership",
-        "name": "AI Intelligence & Orchestration Capabilities",
-        "description": "Business diagnostics, intelligent system design, scoped implementation support and performance measurement for established medical aesthetics practices.",
-        "provider": {"@id": "https://mirelpartners.com/#organization"},
-        "audience": {"@type": "BusinessAudience", "audienceType": "Established U.S. med spas and medical aesthetics practices"},
-        "areaServed": [
-          {"@type":"Country","name":"United States"}
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "AI Intelligence & Orchestration Capabilities",
-          "itemListElement": [
-            {"@type":"OfferCatalog", "name":"Revenue & Client Journey Intelligence"},
-            {"@type":"OfferCatalog", "name":"Operational & Financial Intelligence"},
-            {"@type":"OfferCatalog", "name":"AI Orchestration & Governance"}
-          ]
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://mirelpartners.com/services.html#webpage",
-        "url": "https://mirelpartners.com/services.html",
-        "name": "AI Intelligence & Orchestration Capabilities | Mirèl Partners",
-        "isPartOf": {"@id":"https://mirelpartners.com/#website"},
-        "about": {"@id":"https://mirelpartners.com/services.html#growth-partnership"}
-      }
-    ]
-  }
-  </script>
-
-  <script>document.documentElement.classList.add('js');</script>
-
   <style>
-    /* SERVICES / MIRÈL PARTNERS — local styles, shared navigation and global brand preserved */
-    .services-page .skip-link{position:fixed;top:12px;left:14px;z-index:100000;padding:12px 18px;background:#1d0f0c;color:#fff;transform:translateY(-180%)}
-    .services-page .skip-link:focus{transform:none}
-    .services-page :focus-visible{outline:2px solid var(--rose);outline-offset:4px}
-    .services-page .sp-hero,.services-page .sp-section{position:relative;overflow:hidden}
-    .services-page .sp-hero{display:grid;grid-template-columns:.96fr 1.04fr;min-height:700px;background:linear-gradient(115deg,#fbf7f1 0%,#fbf7f1 48%,#eee1da 100%);border-bottom:1px solid var(--line)}
-    .services-page .sp-hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 5% 12%,rgba(242,214,218,.43),transparent 29%)}
-    .services-page .sp-hero-copy{display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1;padding:94px 38px 90px 72px;min-width:0}
-    .services-page .sp-hero .eyebrow{margin-bottom:27px;letter-spacing:.26em}
-    .services-page .sp-hero h1{font-family:var(--serif);font-size:clamp(56px,5.05vw,78px);line-height:.97;letter-spacing:-.05em;font-weight:500;color:var(--espresso-deep);max-width:670px;margin:0 0 29px;text-wrap:balance}
-    .services-page .sp-hero h1 em{color:var(--rose);font-weight:400}
-    .services-page .sp-hero-lede{max-width:575px;margin:0 0 30px;font-size:16px;line-height:1.86;color:var(--text-soft)}
-    .services-page .sp-hero .hero-buttons{flex-wrap:wrap;gap:12px}
-    .services-page .sp-hero-micro{display:flex;align-items:center;gap:14px;margin:53px 0 0;font-size:10px;letter-spacing:.19em;text-transform:uppercase;color:var(--espresso);line-height:1.8}
-    .services-page .sp-hero-micro::after{content:"";height:1px;width:48px;background:var(--line-dark);flex:none}
-    .services-page .sp-hero-photo{position:relative;min-height:700px;background:linear-gradient(90deg,rgba(251,247,241,.55),rgba(29,15,12,.06) 34%,rgba(29,15,12,.14)),url('images/mirel-services-hero.webp') center/cover no-repeat}
-    .services-page .sp-image-caption{position:absolute;right:36px;bottom:34px;padding:17px 22px;background:rgba(29,15,12,.74);border:1px solid rgba(255,255,255,.24);color:#f8eee9;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:10px;letter-spacing:.2em;text-transform:uppercase}
 
-    /* Operating thesis */
-    .services-page .sp-thesis{padding:65px 72px;background:linear-gradient(100deg,var(--espresso-deep),var(--espresso));color:#fff;display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:48px;border-bottom:1px solid rgba(255,255,255,.10)}
-    .services-page .sp-thesis h2{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(36px,3.7vw,54px);letter-spacing:-.035em;line-height:1.06;color:#fffaf7}
-    .services-page .sp-thesis p{font-size:15px;line-height:1.9;color:#e5d7d0;margin:0;max-width:680px}
-
-    /* Four operational and commercial handoffs */
-    .services-page .sp-handoffs{padding:90px 72px 86px;background:linear-gradient(125deg,#fffdf9,#f5ebe5 100%);border-bottom:1px solid var(--line)}
-    .services-page .sp-eyebrow{margin-bottom:19px}
-    .services-page .sp-section-title{font-family:var(--serif);font-weight:500;font-size:clamp(41px,3.8vw,62px);letter-spacing:-.043em;line-height:1.05;color:var(--espresso-deep);margin:0 0 23px;text-wrap:balance}
-    .services-page .sp-section-title em{color:var(--rose);font-weight:400}
-    .services-page .sp-section-lede{font-size:15px;line-height:1.88;color:var(--text-soft);max-width:760px;margin:0}
-    .services-page .sp-handoff-head{display:grid;grid-template-columns:.93fr 1fr;gap:65px;align-items:end;margin-bottom:55px}
-    .services-page .sp-handoff-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-left:1px solid var(--line)}
-    .services-page .sp-handoff-card{border-right:1px solid var(--line);padding:9px 27px 12px;min-width:0}
-    .services-page .sp-handoff-card .sp-no{font-family:var(--serif);font-size:34px;display:block;color:var(--rose);margin-bottom:26px}
-    .services-page .sp-handoff-card h3{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:var(--espresso);margin:0 0 14px;line-height:1.6}
-    .services-page .sp-handoff-card p{font-size:13px;line-height:1.82;color:var(--text-soft);margin:0}
-    .services-page .sp-evidence{display:grid;grid-template-columns:auto 1fr;gap:27px;align-items:center;max-width:1000px;margin:54px auto 0;padding:26px 34px;border:1px solid rgba(62,39,35,.13);background:rgba(255,253,249,.78)}
-    .services-page .sp-evidence > strong{font:500 58px/.92 var(--serif);color:var(--espresso-deep)}
-    .services-page .sp-evidence p{margin:0;font-size:12px;line-height:1.85;color:var(--text-soft)}
-    .services-page .sp-evidence a{text-decoration:underline;text-underline-offset:3px;color:var(--espresso)}
-
-    /* Capabilities */
-    .services-page .sp-capabilities{padding:105px 72px 109px;background:linear-gradient(145deg,#fbf7f1,#fffdf9 62%,#f1e5e1);border-bottom:1px solid var(--line)}
-    .services-page .sp-capabilities-head{text-align:center;max-width:930px;margin:0 auto 57px}
-    .services-page .sp-capabilities-head .sp-section-lede{margin:0 auto}
-    .services-page .sp-capabilities-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:1350px;margin:0 auto}
-    .services-page .sp-capability{padding:42px 43px 36px;min-width:0;border:1px solid rgba(62,39,35,.14);background:rgba(255,253,249,.91);display:flex;flex-direction:column}
-    .services-page .sp-capability-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:21px}
-    .services-page .sp-capability-number{font:400 31px/1 var(--serif);color:var(--rose)}
-    .services-page .sp-capability-icon{width:35px;height:35px;color:var(--espresso);opacity:.8;flex:none}
-    .services-page .sp-capability h3{font:500 clamp(31px,2.8vw,43px)/1.03 var(--serif);letter-spacing:-.035em;color:var(--espresso-deep);margin:0 0 18px}
-    .services-page .sp-capability>p{font-size:14px;line-height:1.85;color:var(--text-soft);margin:0 0 22px;max-width:550px}
-    .services-page .sp-capability ul{list-style:none;margin:0 0 27px;padding:0}
-    .services-page .sp-capability li{position:relative;padding:8px 0 8px 22px;font-size:13px;line-height:1.7;color:var(--text-soft);border-bottom:1px solid rgba(62,39,35,.08)}
-    .services-page .sp-capability li::before{content:'✦';color:var(--rose);position:absolute;left:0;top:9px;font-size:11px}
-    .services-page .sp-capability-metric{margin-top:auto;padding-top:17px;border-top:1px solid var(--line);font-size:10px;line-height:1.8;letter-spacing:.05em;color:#6b544c}
-    .services-page .sp-capability-metric b{font-weight:650;color:var(--espresso-deep)}
-    .services-page .sp-capability-wide{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:60px;padding:44px 47px;background:linear-gradient(115deg,#33211d,#51362e);border-color:#33211d}
-    .services-page .sp-capability-wide .sp-capability-top{margin-bottom:18px}
-    .services-page .sp-capability-wide .sp-capability-number,.services-page .sp-capability-wide .sp-capability-icon{color:#f0c9bd;opacity:1}
-    .services-page .sp-capability-wide h3,.services-page .sp-capability-wide .sp-capability-metric b{color:#fff9f5}
-    .services-page .sp-capability-wide>div:first-child>p{color:#eadbd4;font-size:14px;line-height:1.9;max-width:570px}
-    .services-page .sp-capability-wide ul{margin:0}
-    .services-page .sp-capability-wide li{color:#e5d8d1;border-color:rgba(255,255,255,.15)}
-    .services-page .sp-capability-wide .sp-capability-metric{border-color:rgba(255,255,255,.20);color:#e5d8d1;margin-top:15px}
-    .services-page .sp-capability-note{text-align:center;font-size:12px;line-height:1.9;color:var(--text-soft);max-width:940px;margin:31px auto 0}
-    .services-page .sp-capability-action{text-align:center;margin-top:29px}
-    .services-page .sp-capability-action a{min-height:44px}
-
-    /* Three editorial photographs */
-    .services-page .sp-editorial{padding:94px 72px;background:var(--porcelain);border-bottom:1px solid var(--line)}
-    .services-page .sp-editorial-head{max-width:900px;text-align:center;margin:0 auto 48px}
-    .services-page .sp-editorial-head p.sp-section-lede{margin:0 auto}
-    .services-page .sp-editorial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;max-width:1350px;margin:auto}
-    .services-page .sp-editorial-card{position:relative;min-height:460px;overflow:hidden;background-size:cover;background-position:center;background-color:#b8a69b}
-    .services-page .sp-editorial-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,15,12,.04) 30%,rgba(29,15,12,.77) 100%);pointer-events:none}
-    .services-page .sp-photo-ads{background-image:url('images/services-mirel-paid-ads-system.webp')}
-    .services-page .sp-photo-pages{background-image:url('images/services-mirel-landing-page-system.webp')}
-    .services-page .sp-photo-followup{background-image:url('images/services-mirel-follow-up-system.webp')}
-    .services-page .sp-editorial-caption{position:absolute;left:32px;right:25px;bottom:33px;z-index:1;color:#fff}
-    .services-page .sp-editorial-caption span{font-size:10px;text-transform:uppercase;letter-spacing:.25em;color:#f2ddd2}
-    .services-page .sp-editorial-caption h3{font:500 clamp(29px,2.8vw,41px)/1.05 var(--serif);letter-spacing:-.03em;margin:12px 0 0;color:#fffdf9}
-
-    /* Partnership model */
-    .services-page .sp-partnership{display:grid;grid-template-columns:.9fr 1.1fr;background:linear-gradient(120deg,#f4e8e1,#fbf7f1 64%);border-bottom:1px solid var(--line)}
-    .services-page .sp-partnership-image{min-height:625px;background:linear-gradient(rgba(29,15,12,.04),rgba(29,15,12,.13)),url('images/services-mirel-system.webp') center/cover no-repeat;background-color:#d2bdb3}
-    .services-page .sp-partnership-copy{padding:90px 75px 80px;display:flex;flex-direction:column;justify-content:center}
-    .services-page .sp-partnership-copy .sp-section-title{margin-bottom:24px}
-    .services-page .sp-partnership-copy>p:not(.eyebrow){font-size:15px;line-height:1.9;color:var(--text-soft);margin:0 0 24px;max-width:700px}
-    .services-page .sp-partnership-points{display:grid;grid-template-columns:1fr 1fr;gap:12px 25px;margin:0 0 30px}
-    .services-page .sp-partnership-point{padding:14px 0;border-top:1px solid var(--line);font-size:12px;line-height:1.7;color:var(--espresso)}
-
-    /* Commercial accountability */
-    .services-page .sp-economics{padding:99px 72px 102px;background:linear-gradient(110deg,#fffaf6,#f1e6de);border-bottom:1px solid var(--line)}
-    .services-page .sp-economics-wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center;max-width:1290px;margin:auto}
-    .services-page .sp-economics-copy>p:not(.eyebrow){font-size:15px;line-height:1.9;color:var(--text-soft);max-width:620px;margin:0 0 20px}
-    .services-page .sp-economics-panel{padding:38px 39px;background:#2d1d19;color:#f6eee9}
-    .services-page .sp-economics-panel h3{font:500 32px/1.08 var(--serif);margin:0 0 28px;color:#fff9f5}
-    .services-page .sp-economics-step{display:grid;grid-template-columns:32px 1fr;gap:13px;padding:17px 0;border-top:1px solid rgba(255,255,255,.19)}
-    .services-page .sp-economics-step span{font:400 26px/1 var(--serif);color:#d9b5a6}
-    .services-page .sp-economics-step strong{display:block;font-size:12px;font-weight:600;letter-spacing:.03em;margin-bottom:7px;color:#fffaf7}
-    .services-page .sp-economics-step p{font-size:12px;color:#e1d0c8;line-height:1.7;margin:0}
-    .services-page .sp-economics-foot{font-size:11px;line-height:1.75;color:#cbb9b2;margin:16px 0 0}
-
-    /* Process and partnership fit */
-    .services-page .sp-process{padding:93px 72px 95px;background:#fbf7f1;border-bottom:1px solid var(--line)}
-    .services-page .sp-process-head{text-align:center;max-width:850px;margin:0 auto 57px}
-    .services-page .sp-process-head .sp-section-lede{margin:0 auto}
-    .services-page .sp-process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:1290px;margin:auto;border-left:1px solid var(--line)}
-    .services-page .sp-process-step{border-right:1px solid var(--line);padding:4px 34px 15px;min-width:0}
-    .services-page .sp-process-step span{font:400 34px/1 var(--serif);color:var(--rose)}
-    .services-page .sp-process-step h3{font-size:11px;letter-spacing:.23em;text-transform:uppercase;margin:23px 0 14px;color:var(--espresso)}
-    .services-page .sp-process-step p{font-size:13px;line-height:1.8;color:var(--text-soft);margin:0}
-    .services-page .sp-fit{display:grid;grid-template-columns:1fr 1fr;gap:76px;padding:88px 72px;background:linear-gradient(120deg,#f7eee9,#fffdf9);border-bottom:1px solid var(--line);align-items:center}
-    .services-page .sp-fit-copy .sp-section-title{margin-bottom:20px}
-    .services-page .sp-fit-copy>p:not(.eyebrow){font-size:15px;line-height:1.88;color:var(--text-soft);margin:0;max-width:620px}
-    .services-page .sp-fit-list{list-style:none;margin:0;padding:0}
-    .services-page .sp-fit-list li{padding:20px 12px 20px 30px;border-bottom:1px solid var(--line);font-size:14px;line-height:1.7;color:var(--espresso);position:relative}
-    .services-page .sp-fit-list li:first-child{border-top:1px solid var(--line)}
-    .services-page .sp-fit-list li::before{content:'✦';position:absolute;left:1px;color:var(--rose)}
-
-    /* Native FAQ accordions */
-    .services-page .sp-faq{padding:94px 72px 96px;background:var(--porcelain);border-bottom:1px solid var(--line)}
-    .services-page .sp-faq-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:75px;max-width:1290px;margin:auto}
-    .services-page .sp-faq details{padding:22px 0;border-bottom:1px solid var(--line)}
-    .services-page .sp-faq details:first-child{border-top:1px solid var(--line)}
-    .services-page .sp-faq summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:28px;cursor:pointer;font-size:15px;line-height:1.55;font-weight:550;color:var(--espresso-deep)}
-    .services-page .sp-faq summary::-webkit-details-marker{display:none}
-    .services-page .sp-faq summary::after{content:'+';font:300 24px/1 var(--sans);color:var(--rose);flex:none}
-    .services-page .sp-faq details[open] summary::after{content:'−'}
-    .services-page .sp-faq details p{font-size:13px;line-height:1.9;color:var(--text-soft);margin:15px 34px 0 0;max-width:790px}
-
-    /* Final call to action */
-    .services-page .sp-final{display:grid;grid-template-columns:.94fr 1.06fr;background:linear-gradient(120deg,#1d0f0c,#3e2723);color:#fff}
-    .services-page .sp-final-image{min-height:530px;background:linear-gradient(rgba(29,15,12,.08),rgba(29,15,12,.18)),url('images/mirel-services-final-cta.webp') center/cover no-repeat;background-color:#6e544e}
-    .services-page .sp-final-copy{padding:87px 72px;display:flex;flex-direction:column;justify-content:center;min-width:0}
-    .services-page .sp-final-copy .eyebrow{color:#d3b0a8;margin-bottom:21px}
-    .services-page .sp-final h2{font:500 clamp(43px,4vw,62px)/1.02 var(--serif);letter-spacing:-.035em;color:#fffaf7;margin:0 0 25px;text-wrap:balance}
-    .services-page .sp-final-copy>p:not(.eyebrow){color:#e1d0c8;font-size:15px;line-height:1.88;max-width:600px;margin:0 0 33px}
-    .services-page .sp-final-actions{display:flex;gap:15px;flex-wrap:wrap}
-    .services-page .sp-final .btn-outline{color:white;background:transparent;border-color:rgba(255,255,255,.45)}
-    .services-page .sp-final .btn-outline:hover{background:rgba(255,255,255,.12)}
-    .services-page .footer-social{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 15px}
-    .services-page .footer-social a{display:inline-flex;align-items:center;min-height:44px;font-size:11px;white-space:nowrap}
-    .services-page #mirel-site-footer::after{content:'© 2026 Mirèl Partners. All rights reserved.'!important}
-    .js .services-page [data-lazy-bg]:not(.bg-loaded){background-image:none!important}
-
-    @media(max-width:1180px){
-      .services-page .sp-hero{grid-template-columns:1fr}
-      .services-page .sp-hero-copy{padding:72px 34px 57px}
-      .services-page .sp-hero h1{max-width:830px}
-      .services-page .sp-hero-photo{min-height:510px}
-      .services-page .sp-handoffs,.services-page .sp-capabilities,.services-page .sp-editorial,.services-page .sp-economics,.services-page .sp-process,.services-page .sp-faq{padding:76px 34px}
-      .services-page .sp-thesis,.services-page .sp-handoff-head,.services-page .sp-economics-wrap,.services-page .sp-fit,.services-page .sp-faq-layout{grid-template-columns:1fr;gap:25px}
-      .services-page .sp-thesis,.services-page .sp-fit{padding:64px 34px}
-      .services-page .sp-partnership-copy{padding:75px 46px}
-      .services-page .sp-process-step{padding-inline:21px}
-      .services-page .sp-final-copy{padding:75px 46px}
+    @font-face {
+      font-family: "Mirel Editorial";
+      src: url("https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
     }
-    @media(max-width:760px){
-      .services-page .sp-hero-copy{padding:57px 22px 52px}
-      .services-page .sp-hero h1{font-size:clamp(44px,11vw,59px);margin-bottom:22px}
-      .services-page .sp-hero-lede{font-size:14px}
-      .services-page .sp-hero .hero-buttons{flex-direction:column;align-items:stretch}
-      .services-page .sp-hero .hero-buttons .btn{width:100%;white-space:normal;text-align:center;padding:14px 20px;min-height:55px}
-      .services-page .sp-hero-micro{margin-top:35px;font-size:9px}
-      .services-page .sp-hero-photo{min-height:390px;background-position:center 35%}
-      .services-page .sp-image-caption{right:16px;bottom:16px;font-size:9px;padding:13px 15px}
-      .services-page .sp-thesis{padding:52px 22px;gap:19px}
-      .services-page .sp-thesis p{font-size:14px}
-      .services-page .sp-handoffs,.services-page .sp-capabilities,.services-page .sp-editorial,.services-page .sp-economics,.services-page .sp-process,.services-page .sp-faq{padding:64px 22px}
-      .services-page .sp-section-title{font-size:clamp(38px,9.4vw,49px)}
-      .services-page .sp-section-lede{font-size:14px}
-      .services-page .sp-handoff-head{margin-bottom:31px;gap:14px}
-      .services-page .sp-handoff-grid{grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line)}
-      .services-page .sp-handoff-card{padding:23px 16px;border-bottom:1px solid var(--line)}
-      .services-page .sp-handoff-card .sp-no{margin-bottom:11px}
-      .services-page .sp-handoff-card:nth-child(2n){border-right:0}
-      .services-page .sp-evidence{grid-template-columns:1fr;gap:12px;margin-top:36px;padding:25px}
-      .services-page .sp-evidence > strong{font-size:51px}
-      .services-page .sp-capabilities-head{margin-bottom:35px}
-      .services-page .sp-capabilities-grid{grid-template-columns:1fr;gap:12px}
-      .services-page .sp-capability{padding:30px 26px}
-      .services-page .sp-capability h3{font-size:37px}
-      .services-page .sp-capability-wide{grid-column:auto;grid-template-columns:1fr;gap:12px}
-      .services-page .sp-editorial-grid{grid-template-columns:1fr;gap:12px}
-      .services-page .sp-editorial-card{min-height:350px}
-      .services-page .sp-partnership{grid-template-columns:1fr}
-      .services-page .sp-partnership-image{min-height:390px}
-      .services-page .sp-partnership-copy{padding:59px 22px}
-      .services-page .sp-partnership-points{grid-template-columns:1fr 1fr;gap:5px 15px}
-      .services-page .sp-economics-panel{padding:32px 27px}
-      .services-page .sp-process-head{margin-bottom:35px}
-      .services-page .sp-process-grid{grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
-      .services-page .sp-process-step{padding:25px 18px;border-bottom:1px solid var(--line)}
-      .services-page .sp-process-step:nth-child(2n){border-right:0}
-      .services-page .sp-fit{padding:59px 22px}
-      .services-page .sp-faq-layout{gap:26px}
-      .services-page .sp-faq summary{font-size:14px}
-      .services-page .sp-final{grid-template-columns:1fr}
-      .services-page .sp-final-image{min-height:345px}
-      .services-page .sp-final-copy{padding:59px 22px}
-      .services-page .sp-final h2{font-size:clamp(42px,10vw,52px)}
-      .services-page .sp-final-actions{flex-direction:column;align-items:stretch}
-      .services-page .sp-final-actions .btn{width:100%;min-height:54px;white-space:normal;text-align:center}
-      .services-page .footer-social{justify-content:flex-start;gap:0 14px}
-      .services-page .footer-social a{padding:10px 2px}
+    :root {
+      --paper: #f8f7f4;
+      --white: #fff;
+      --ink: #241c17;
+      --coffee: #514136;
+      --muted: #6a615a;
+      --stone: #eee9e3;
+      --line: #d9d1c8;
+      --gold: #b3977e;
+      --dark-line: #55483e;
+      --serif: "Mirel Editorial", Georgia, "Times New Roman", serif;
+      --sans: Arial, Helvetica, sans-serif;
+      --space: clamp(4.5rem, 7.5vw, 7rem);
+      --ease: cubic-bezier(.22, 1, .36, 1);
     }
-    @media(max-width:380px){
-      .services-page .sp-handoff-grid,.services-page .sp-process-grid,.services-page .sp-partnership-points{grid-template-columns:1fr}
-      .services-page .sp-handoff-card,.services-page .sp-process-step{border-right:0}
-      .services-page .sp-image-caption{max-width:86%}
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.7 var(--sans); -webkit-font-smoothing: antialiased; }
+    ::selection { color: var(--paper); background: var(--coffee); }
+    h1, h2, h3, h4, p, figure, ul, ol, dl { margin: 0; }
+    h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; }
+    h1, h2 { letter-spacing: -.04em; }
+    h2 { font-size: clamp(2.8rem, 4.7vw, 4.5rem); line-height: 1.04; }
+    h3 { font-size: 1.9rem; line-height: 1.12; letter-spacing: -.02em; }
+    h1 em, h2 em { color: var(--coffee); font-style: normal; }
+    a { color: inherit; text-underline-offset: .3em; }
+    button { color: inherit; font: inherit; cursor: pointer; }
+    a, button, summary { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+    a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex="0"]:focus-visible { outline: 2px solid #876445; outline-offset: 5px; }
+    img { display: block; width: 100%; height: auto; max-width: 100%; }
+    [hidden] { display: none !important; }
+    .wrap { width: min(1280px, calc(100% - 7rem)); margin-inline: auto; }
+    .section { padding-block: var(--space); }
+    .eyebrow { font: 600 .75rem/1.6 var(--sans); text-transform: uppercase; letter-spacing: .13em; }
+    .muted { color: var(--muted); }
+    .anchor-alias { display: block; height: 0; }
+    .small { font-size: .8125rem; line-height: 1.7; }
+    .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 3rem; margin-bottom: 3rem; }
+    .section-head > div { min-width: 0; }
+    .section-head .eyebrow { margin-bottom: 1rem; }
+    .section-head h2 { max-width: 23ch; }
+    .section-head > p { max-width: 39ch; color: var(--muted); font-size: .9375rem; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: .9rem 1.35rem; border: 1px solid var(--ink); color: var(--white); background: var(--ink); font: 600 .8125rem/1.4 var(--sans); text-align: center; text-decoration: none; transition: background .2s, border-color .2s; }
+    .button:hover { background: var(--coffee); border-color: var(--coffee); }
+    .text-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.2rem; min-height: 44px; font: 600 .8125rem/1.5 var(--sans); text-decoration: none; }
+    .text-link span { border-bottom: 1px solid currentColor; padding-bottom: .2rem; }
+    .text-link:hover span { border-color: transparent; }
+    .skip { position: fixed; top: -100px; left: 1rem; z-index: 100; padding: .8rem 1rem; color: var(--white); background: var(--ink); }
+    .skip:focus { top: 1rem; }
+    .brand { display: inline-flex; flex-direction: column; align-items: flex-start; flex-shrink: 0; text-decoration: none; }
+    .brand > span { font: 500 2.05rem/.9 var(--serif); letter-spacing: .19em; }
+    .brand small { margin-top: .7rem; font: 600 .5625rem/1 var(--sans); letter-spacing: .45em; }
+
+    /* Navigation */
+    .site-header { position: sticky; top: 0; z-index: 30; background: var(--paper); border-bottom: 1px solid var(--line); }
+    .header-row { display: flex; align-items: center; justify-content: space-between; gap: 2rem; min-height: 86px; }
+    .desktop-nav { display: flex; align-items: center; gap: clamp(1rem, 1.5vw, 1.5rem); }
+    .desktop-nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: .75rem; text-decoration: none; position: relative; }
+    .desktop-nav a::after { content: ""; position: absolute; right: 0; bottom: .25rem; left: 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .2s; }
+    .desktop-nav a:hover::after, .desktop-nav a[aria-current]::after { transform: scaleX(1); }
+    .header-cta { min-height: 44px; font-size: .75rem; padding: .75rem 1rem; }
+    .mobile-menu { display: none; }
+
+    
+    /* SERVICES: one scope of work, chosen around the practice's operating constraint. */
+    .link-arrow { display: block; width: 14px; height: 14px; flex-shrink: 0; }
+    .editorial-photo { border: 1px solid var(--line); background: var(--stone); }
+    .editorial-photo img { aspect-ratio: 1672/941; }
+    .photo-caption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .3rem 1rem; margin-top: .8rem; font-size: .75rem; color: var(--muted); }
+    .services-hero { padding-block: clamp(3rem,5vw,5rem) 0; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1.08fr; align-items: center; gap: clamp(2.5rem,5vw,5rem); }
+    .hero-grid > * { min-width: 0; }
+    .hero-copy > .eyebrow { color: var(--muted); margin-bottom: 1.4rem; }
+    .hero-title { max-width: 18ch; font-size: clamp(3.4rem,5.1vw,5rem); line-height: 1.01; }
+    .hero-title span, .hero-title em { display: block; }
+    .hero-lead { max-width: 46ch; margin-top: 1.5rem; color: var(--muted); font-size: 1rem; }
+    .hero-copy .actions { margin-top: 1.7rem; }
+    .review-note { margin-top: 1.2rem; max-width: 49ch; color: var(--coffee); font-size: .8125rem; }
+    .review-note strong { color: var(--ink); font-weight: 600; }
+    .hero-visual-note { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; padding-top: 1.3rem; border-top: 1px solid var(--line); }
+    .hero-visual-note p:first-child { font: 500 1.65rem/1.17 var(--serif); letter-spacing: -.02em; }
+    .hero-visual-note p:last-child { color: var(--muted); font-size: .8125rem; }
+    .scope-strip { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); margin-top: clamp(2.5rem,4vw,4rem); border-block: 1px solid var(--line); }
+    .scope-strip > div { display: flex; align-items: center; gap: 1rem; padding: 1.1rem 1.5rem; font-size: .8125rem; }
+    .scope-strip > div:first-child { padding-left: 0; }
+    .scope-strip > div + div { border-left: 1px solid var(--line); }
+    .scope-strip span { color: var(--muted); font: 500 1.1rem var(--serif); }
+    .scope-strip strong { font-weight: 500; }
+
+    /* Entry points: choose a recognizable issue before reading a capability name. */
+    .entry-head { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: end; margin-bottom: 2.2rem; }
+    .entry-head .eyebrow { color: var(--muted); margin-bottom: 1rem; }
+    .entry-head > p { color: var(--muted); max-width: 48ch; font-size: .9375rem; }
+    .entry-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); border: 1px solid var(--line); }
+    .entry-card { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; padding: 1.5rem; text-decoration: none; transition: background .2s; }
+    .entry-card + .entry-card { border-left: 1px solid var(--line); }
+    .entry-card:hover { background: var(--white); }
+    .entry-number { color: var(--muted); font: 500 1.1rem var(--serif); }
+    .entry-card h3 { margin-top: 1rem; font-size: 1.8rem; }
+    .entry-card p { margin-top: .8rem; color: var(--muted); font-size: .875rem; }
+    .entry-action { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 1rem; margin-top: auto; padding-top: 1.3rem; font-size: .75rem; font-weight: 600; }
+
+    /* The three capabilities: issue, tangible outputs, measures. */
+    .capabilities { padding-top: 0; }
+    .capability-stack { border-top: 1px solid var(--line); }
+    .service-row { display: grid; grid-template-columns: 1.02fr 1fr; gap: clamp(2rem,5vw,5rem); padding: 3rem 0; border-bottom: 1px solid var(--line); }
+    .service-row > * { min-width: 0; }
+    .service-heading > .eyebrow { margin-bottom: 1rem; color: var(--coffee); }
+    .service-heading h3 { font-size: clamp(2.4rem,3.5vw,3.4rem); max-width: 22ch; line-height: 1.05; }
+    .service-heading > p:not(.eyebrow) { margin-top: 1.2rem; max-width: 47ch; color: var(--muted); font-size: .9375rem; }
+    .service-example { margin-top: 1.5rem; padding-left: 1rem; border-left: 2px solid var(--gold); color: var(--coffee); font-size: .875rem; }
+    .service-example strong { display: block; margin-bottom: .4rem; color: var(--ink); font-size: .75rem; font-weight: 600; }
+    .output-label { margin-bottom: .4rem; color: var(--muted); font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; }
+    .output-list { list-style: none; padding: 0; }
+    .output-list li { display: grid; grid-template-columns: 1.5rem 1fr; gap: .7rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+    .output-list li > span { color: var(--muted); font: 500 1.1rem var(--serif); }
+    .output-list strong { display: block; font-size: .875rem; font-weight: 600; }
+    .output-list p { margin-top: .3rem; color: var(--muted); font-size: .875rem; }
+    .service-measure { margin-top: 1.2rem; color: var(--muted); font-size: .8125rem; }
+    .service-measure strong { display: block; margin-bottom: .3rem; color: var(--ink); }
+    .ai-row { margin-top: 1.5rem; padding: clamp(1.5rem,3.5vw,3rem); background: var(--ink); color: var(--paper); border: 0; }
+    .ai-row .service-heading > .eyebrow { color: #c6ac94; }
+    .ai-row .service-heading > p:not(.eyebrow), .ai-row .output-list p, .ai-row .service-measure { color: #d0c6bd; }
+    .ai-row .output-label, .ai-row .output-list li > span { color: #c6ac94; }
+    .ai-row .output-list li { border-color: var(--dark-line); }
+    .ai-row .service-example { color: #d0c6bd; }
+    .ai-row .service-example strong, .ai-row .service-measure strong { color: var(--paper); }
+    .scope-note { margin-top: 1.5rem; max-width: 90ch; color: var(--muted); font-size: .8125rem; }
+
+    /* Engagement model: visible deliverables at each decision point. */
+    .engagement { background: var(--stone); }
+    .engagement-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.25rem; }
+    .engagement-card { min-width: 0; display: flex; flex-direction: column; padding: 1.8rem; border: 1px solid #cfc3b7; background: var(--paper); }
+    .engagement-card .eyebrow { color: var(--muted); }
+    .engagement-card h3 { margin-top: 1rem; font-size: 2.1rem; }
+    .engagement-card > p:not(.eyebrow) { margin-top: 1rem; color: var(--muted); font-size: .875rem; }
+    .engagement-card dl { margin-top: 1.4rem; }
+    .engagement-card dl > div { padding-top: .9rem; margin-top: .9rem; border-top: 1px solid var(--line); }
+    .engagement-card dt { font-size: .8125rem; font-weight: 600; }
+    .engagement-card dd { margin: .4rem 0 0; color: var(--muted); font-size: .875rem; }
+    .stage-decision { margin-top: auto; padding-top: 1.3rem; color: var(--coffee); font-size: .8125rem; }
+    .support-note { display: grid; grid-template-columns: .8fr 1.2fr; align-items: start; gap: 2.5rem; padding-top: 1.5rem; margin-top: 2rem; border-top: 1px solid #c9bdb1; }
+    .support-note h3 { font-size: 1.9rem; }
+    .support-note p { color: var(--coffee); font-size: .875rem; }
+
+    /* Workflow specification: semantic HTML, readable sample, no fake application controls. */
+    .specification { background: var(--white); }
+    .spec-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(2rem,4vw,4rem); align-items: start; }
+    .spec-context { min-width: 0; }
+    .spec-context h3 { font-size: 2.1rem; margin-top: 1.5rem; }
+    .spec-context > p { margin-top: .9rem; color: var(--muted); font-size: .9375rem; }
+    .spec-context .text-link { margin-top: 1.1rem; }
+    .spec-sheet { min-width: 0; border: 1px solid var(--line); background: var(--paper); }
+    .spec-top { padding: 1.5rem; border-bottom: 1px solid var(--line); }
+    .spec-top .eyebrow { color: var(--muted); }
+    .spec-top h3 { margin-top: .6rem; font-size: 2rem; }
+    .spec-top > p:not(.eyebrow) { margin-top: .6rem; color: var(--muted); font-size: .8125rem; }
+    .spec-rows { padding: 0 1.5rem; }
+    .spec-rows > div { display: grid; grid-template-columns: 7.8rem 1fr; gap: 1.2rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+    .spec-rows > div:last-child { border: 0; }
+    .spec-rows dt { font-size: .8125rem; font-weight: 600; color: var(--ink); }
+    .spec-rows dd { margin: 0; font-size: .875rem; color: var(--muted); }
+    .spec-foot { padding: 1.2rem 1.5rem; border-top: 1px solid var(--line); color: var(--coffee); background: var(--stone); font-size: .8125rem; }
+
+    /* Operating ownership and commercial assessment. */
+    .ownership-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2rem; border-top: 1px solid var(--line); }
+    .owner { padding-top: 1.5rem; min-width: 0; }
+    .owner .eyebrow { color: var(--muted); }
+    .owner h3 { margin-top: .8rem; font-size: 2rem; }
+    .owner p:not(.eyebrow) { margin-top: .8rem; color: var(--muted); font-size: .875rem; }
+    .value-check { display: grid; grid-template-columns: .8fr 1.2fr; gap: 3rem; margin-top: 3rem; padding: 2rem; background: var(--stone); }
+    .value-check h3 { font-size: 2.2rem; max-width: 18ch; }
+    .value-check p { margin-top: .8rem; max-width: 43ch; color: var(--muted); font-size: .875rem; }
+    .value-items { margin: 0; }
+    .value-items > div { padding: .8rem 0; border-top: 1px solid #c9bdb1; }
+    .value-items dt { font-size: .875rem; font-weight: 600; }
+    .value-items dd { margin: .35rem 0 0; color: var(--muted); font-size: .875rem; }
+
+    /* Questions: keep qualification and detail compact. */
+    .questions { padding-top: 0; }
+    .questions-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 5rem; }
+    .questions-copy .eyebrow { color: var(--muted); margin-bottom: 1rem; }
+    .questions-copy h2 { max-width: 19ch; }
+    .questions-copy > p:not(.eyebrow) { margin-top: 1.3rem; max-width: 36ch; color: var(--muted); font-size: .9375rem; }
+    .questions-copy .text-link { margin-top: 1.1rem; }
+    .faq details { border-top: 1px solid var(--line); }
+    .faq details:last-child { border-bottom: 1px solid var(--line); }
+    .faq summary { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 70px; padding: 1.1rem 0; font-size: .875rem; font-weight: 600; cursor: pointer; list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; flex-shrink: 0; font: 500 1.5rem var(--serif); }
+    .faq details[open] summary::after { content: "−"; }
+    .faq details p { padding: 0 1rem 1.4rem 0; max-width: 65ch; color: var(--muted); font-size: .875rem; }
+/* Closing and footer */
+    .closing { background: var(--ink); color: var(--paper); }
+    .closing-grid { display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 5rem; }
+    .closing .eyebrow { color: #c6ac94; margin-bottom: 1.25rem; }
+    .closing h2 { font-size: clamp(3.4rem, 6vw, 5.5rem); max-width: 15ch; }
+    .closing-copy > p { max-width: 43ch; color: #d0c6bd; font-size: .9375rem; }
+    .closing .button { margin-top: 1.6rem; background: var(--paper); border-color: var(--paper); color: var(--ink); }
+    .closing .button:hover { background: var(--stone); }
+    .closing-copy .small { margin-top: 1rem; color: #b9aa9d; font-size: .75rem; }
+    .site-footer { padding-block: 3rem 1.3rem; }
+    .footer-main { display: grid; grid-template-columns: 1.3fr .8fr 1fr; gap: 3rem; }
+    .footer-main p { margin-top: 1.2rem; color: var(--muted); font-size: .8125rem; }
+    .footer-links { display: flex; flex-direction: column; align-items: flex-start; }
+    .footer-links a { display: inline-flex; align-items: center; min-height: 38px; font-size: .8125rem; text-decoration: none; }
+    .footer-links a:hover { text-decoration: underline; }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; padding-top: 1.3rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .6875rem; }
+    .footer-legal { display: flex; gap: 1.5rem; }
+    .footer-legal a { min-height: 32px; }
+
+    
+    @media (max-width: 1150px) {
+      .wrap { width: calc(100% - 4rem); }
+      .desktop-nav, .header-cta { display: none; }
+      .mobile-menu { display: block; }
+      .mobile-menu > summary { min-height: 44px; padding: .65rem 1rem; border: 1px solid var(--ink); font-size: .8125rem; cursor: pointer; }
+      .mobile-menu[open] > summary { color: var(--paper); background: var(--ink); }
+      .mobile-nav { position: absolute; top: 100%; left: 0; right: 0; padding: .75rem 2rem 1.5rem; background: var(--paper); border-bottom: 1px solid var(--line); max-height: calc(100dvh - 86px); overflow-y: auto; box-shadow: 0 18px 25px #241c1710; }
+      .mobile-nav a { display: flex; align-items: center; min-height: 45px; border-bottom: 1px solid var(--line); font-size: .875rem; text-decoration: none; }
+      .mobile-nav .button { margin-top: .8rem; }
+      .hero-title { font-size: clamp(3.2rem,5.3vw,4.4rem); }
+      .entry-grid { grid-template-columns: 1fr 1fr; }
+      .entry-card:nth-child(3) { border-left: 0; }
+      .entry-card:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .engagement-grid { gap: .8rem; }
+      .engagement-card { padding: 1.4rem; }
+      .engagement-card h3 { font-size: 1.9rem; }
+      .spec-grid { grid-template-columns: .8fr 1.2fr; gap: 2rem; }
+      .spec-rows > div { grid-template-columns: 6rem 1fr; gap: 1rem; }
+      .questions-grid, .closing-grid { gap: 3rem; }
     }
-    @media(prefers-reduced-motion:reduce){
-      .services-page .reveal,.services-page .reveal.visible{opacity:1!important;transform:none!important;transition:none!important}
-      html{scroll-behavior:auto!important}
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-title { max-width: 22ch; font-size: clamp(3.6rem,7.8vw,5.2rem); }
+      .hero-title span, .hero-title em { display: inline; }
+      .hero-lead { max-width: 63ch; }
+      .hero-visual-note { grid-template-columns: 1fr 1fr; }
+      .entry-head { grid-template-columns: 1fr; gap: 1.2rem; }
+      .entry-head > p { max-width: 65ch; }
+      .section-head { align-items: flex-start; flex-direction: column; gap: 1.3rem; }
+      .section-head > p { max-width: 65ch; }
+      .service-row { gap: 2rem; }
+      .service-heading h3 { font-size: 2.5rem; }
+      .engagement-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .engagement-card { display: grid; grid-template-columns: .85fr 1.15fr; column-gap: 2rem; padding: 1.8rem; }
+      .engagement-card > .eyebrow, .engagement-card > h3, .engagement-card > p, .stage-decision { grid-column: 1; }
+      .engagement-card dl { grid-column: 2; grid-row: 1 / 6; margin-top: 0; }
+      .engagement-card dl > div:first-child { margin-top: 0; padding-top: 0; border: 0; }
+      .engagement-card h3 { font-size: 2.2rem; }
+      .spec-grid { grid-template-columns: 1fr; }
+      .spec-context { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; align-items: start; }
+      .spec-context > figure { grid-row: 1 / 5; }
+      .spec-context h3 { margin-top: 0; }
+      .spec-context .text-link { justify-self: start; }
+      .spec-rows > div { grid-template-columns: 8rem 1fr; }
+      .ownership-grid { gap: 1.4rem; }
+      .value-check { gap: 2rem; }
+      .questions-grid { grid-template-columns: 1fr; gap: 2.2rem; }
+      .questions-copy > p:not(.eyebrow) { max-width: 65ch; }
+      .closing-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .closing-copy > p { max-width: 65ch; }
+      .footer-main { grid-template-columns: 1.2fr 1fr; gap: 2rem; }
+      .footer-main > div:first-child { grid-column: 1 / -1; }
     }
+    @media (max-width: 600px) {
+      :root { --space: 4rem; }
+      html { scroll-padding-top: 6rem; }
+      .wrap { width: calc(100% - 2.5rem); }
+      .header-row { min-height: 76px; gap: 1rem; }
+      .brand > span { font-size: 1.85rem; }
+      .brand small { font-size: .5rem; }
+      .mobile-nav { padding-inline: 1.25rem; max-height: calc(100dvh - 76px); }
+      .services-hero { padding-top: 2.5rem; }
+      .hero-grid { gap: 2rem; }
+      .hero-copy > .eyebrow { font-size: .6875rem; }
+      .hero-title { font-size: clamp(2.9rem,11.5vw,4rem); max-width: none; line-height: 1.03; }
+      .hero-lead { font-size: .9375rem; margin-top: 1.3rem; }
+      .actions { gap: .75rem 1.3rem; }
+      .hero-copy .button { width: 100%; }
+      .hero-visual-note { grid-template-columns: 1fr; gap: .8rem; }
+      .hero-visual-note p:last-child { max-width: 48ch; }
+      .scope-strip { grid-template-columns: 1fr; margin-top: 2rem; }
+      .scope-strip > div { padding: .9rem 0; }
+      .scope-strip > div + div { border-left: 0; border-top: 1px solid var(--line); }
+      h2 { font-size: clamp(2.55rem,10vw,3.4rem); }
+      .entry-grid, .service-row, .support-note, .ownership-grid, .value-check { grid-template-columns: 1fr; }
+      .entry-card { padding: 1.4rem; }
+      .entry-card + .entry-card { border-left: 0; border-top: 1px solid var(--line); }
+      .entry-card h3 { font-size: 1.9rem; }
+      .entry-card p { font-size: .9375rem; }
+      .service-row { padding-block: 2rem; gap: 1.8rem; }
+      .service-heading h3 { font-size: 2.55rem; }
+      .ai-row { padding: 1.5rem; }
+      .section-head { margin-bottom: 2rem; }
+      .engagement-card { display: flex; padding: 1.5rem; }
+      .engagement-card dl { margin-top: 1.3rem; }
+      .engagement-card dl > div:first-child { padding-top: .9rem; border-top: 1px solid var(--line); }
+      .support-note { gap: 1rem; }
+      .spec-context { display: block; }
+      .spec-context h3 { margin-top: 1.4rem; }
+      .spec-top, .spec-foot { padding: 1.2rem; }
+      .spec-rows { padding-inline: 1.2rem; }
+      .spec-rows > div { grid-template-columns: 1fr; gap: .35rem; }
+      .ownership-grid { gap: .5rem; }
+      .owner + .owner { margin-top: .8rem; border-top: 1px solid var(--line); }
+      .value-check { padding: 1.5rem; gap: 1.5rem; }
+      .value-check h3 { font-size: 2.1rem; }
+      .value-check p { max-width: none; }
+      .closing h2 { font-size: clamp(3rem,12vw,4rem); }
+      .closing .button { width: 100%; }
+      .closing-copy > p { font-size: .9375rem; }
+      .footer-main { gap: 2rem 1rem; }
+      .footer-links a { font-size: .75rem; overflow-wrap: anywhere; }
+      .footer-bottom { flex-direction: column; gap: .7rem; }
+      .footer-legal { flex-wrap: wrap; gap: 1rem; }
+    }
+    @media (max-width: 350px) {
+      .wrap { width: calc(100% - 2rem); }
+      .hero-title { font-size: 2.7rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+    }
+    @media print {
+      .site-header, .skip, .actions { display: none !important; }
+      .wrap { width: 100%; }
+      .section { padding-block: 1.5rem; }
+      .hero-grid, .service-row, .spec-grid, .spec-context, .questions-grid, .closing-grid { display: block; }
+      .ai-row, .closing { color: black; background: white; }
+      .ai-row p, .closing p, .closing .eyebrow { color: black !important; }
+      .editorial-photo, .engagement-card, .spec-sheet { break-inside: avoid; }
+    }
+
   </style>
-  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mirelpartners.com/#organization","name":"Mirèl Partners","url":"https://mirelpartners.com/","email":"delora@mirelpartners.com","sameAs":["https://www.instagram.com/mirelpartners/","https://www.youtube.com/@mirelpartners","https://www.linkedin.com/company/mirelmarketing/"]},{"@type":"Service","@id":"https://mirelpartners.com/services.html#growth-partnership","name":"AI Intelligence & Orchestration","serviceType":["Revenue & Client Journey Intelligence","Operational & Financial Intelligence","AI Orchestration & Governance"],"description":"Business diagnostics, workflow design and scoped implementation for established U.S. med spas and medical aesthetics practices.","provider":{"@id":"https://mirelpartners.com/#organization"},"areaServed":{"@type":"Country","name":"United States"}},{"@type":"WebPage","@id":"https://mirelpartners.com/services.html#webpage","url":"https://mirelpartners.com/services.html","name":"Services | AI Intelligence & Orchestration for Med Spas | Mirèl Partners","about":{"@id":"https://mirelpartners.com/services.html#growth-partnership"}}]}</script>
 </head>
+<body>
+  <a class="skip" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html" aria-label="Mirèl Partners home"><span>MIRÈL</span><small>PARTNERS</small></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="systems.html">Systems</a>
+        <a href="results.html">Results</a>
+        <a href="ai-for-med-spas.html">AI for Med Spas</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+      <a class="button header-cta" href="book.html#booking">Book a Strategy Review</a>
+      <details class="mobile-menu" id="mobile-menu">
+        <summary>Menu</summary>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html" aria-current="page">Services</a>
+          <a href="systems.html">Systems</a>
+          <a href="results.html">Results</a>
+          <a href="ai-for-med-spas.html">AI for Med Spas</a>
+          <a href="resources.html">Resources</a>
+          <a class="button" href="book.html#booking">Book a Strategy Review</a>
+        </nav>
+      </details>
+    </div>
+  </header>
 
-<body class="services-page">
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  <div class="site-shell">
-    <div data-mirel-navigation></div>
-
-    <main id="main-content">
-      <!-- 01 / Hero -->
-      <section class="sp-hero" aria-labelledby="services-heading">
-        <div class="sp-hero-copy">
-          <p class="eyebrow">AI Intelligence &amp; Orchestration Capabilities</p>
-          <h1 id="services-heading">See what’s costing the business. <em>Decide what to fix first.</em></h1>
-          <p class="sp-hero-lede">We help established aesthetic, wellness and longevity businesses diagnose constraints, design intelligent systems and measure what actually changes.</p>
-          <div class="hero-buttons">
-            <a class="btn btn-dark btn-large" href="book.html#booking">Book a Strategy Review</a>
-            <a class="btn btn-outline btn-large" href="#capabilities">Explore Our Capabilities</a>
+  <main id="main-content" tabindex="-1">
+    <section class="services-hero" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">AI Intelligence &amp; Orchestration<br>for established U.S. med spas</p>
+            <h1 class="hero-title" id="services-title"><span>Find the constraint.</span> <span>Design the workflow.</span> <em>Measure the change.</em></h1>
+            <p class="hero-lead">Understand where inquiries stall, staff repeat work and reporting leaves questions unanswered. We help you choose the first fix and define the system, people and measures it needs.</p>
+            <div class="actions"><a class="button" href="book.html#booking">Book a Strategy Review</a><a class="text-link" href="#capabilities"><span>Explore the services</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            <p class="review-note"><strong>30 minutes with the founder.</strong> Bring one recurring operating issue. Discuss what to examine first and whether a focused diagnostic makes sense.</p>
           </div>
-          <p class="sp-hero-micro">Current focus: established U.S. med spas and medical aesthetics practices</p>
-        </div>
-        <div class="sp-hero-photo" role="img" aria-label="Refined premium med spa environment and services editorial photograph">
-          <span class="sp-image-caption">Human strategy. Connected systems.</span>
-        </div>
-      </section>
-
-      <!-- 02 / Strategic positioning -->
-      <section class="sp-thesis reveal" aria-labelledby="thesis-heading">
-        <h2 id="thesis-heading">AI Intelligence &amp; Orchestration for <em>Aesthetics, Wellness &amp; Longevity.</em></h2>
-        <p>Mirèl Partners is a strategic business intelligence and technology partner. We design intelligent business systems that connect artificial intelligence, human expertise and business strategy to improve profitability, efficiency and sustainable growth.</p>
-      </section>
-
-      <!-- 03 / Operational and commercial constraints -->
-      <section class="sp-handoffs sp-section" aria-labelledby="handoffs-heading">
-        <div class="sp-handoff-head">
-          <div class="reveal">
-            <p class="eyebrow sp-eyebrow">Commercial and Operational Handoffs</p>
-            <h2 class="sp-section-title" id="handoffs-heading">Where revenue, <em>time and capacity are lost</em></h2>
-          </div>
-          <p class="sp-section-lede reveal">Each handoff has a person responsible for it, information they need and a business outcome it can affect. We look for delays, missing information and avoidable staff work that limit response coverage, appointment capacity or follow-through.</p>
-        </div>
-        <div class="sp-handoff-grid">
-          <article class="sp-handoff-card reveal">
-            <span class="sp-no" aria-hidden="true">01</span>
-            <h3>Inquiry → Response</h3>
-            <p>Which qualified inquiries wait too long, and who is responsible for responding when the front desk is busy?</p>
-          </article>
-          <article class="sp-handoff-card reveal">
-            <span class="sp-no" aria-hidden="true">02</span>
-            <h3>Response → Booking</h3>
-            <p>Where do scheduling friction, unclear instructions or repeated follow-ups keep suitable inquiries from becoming attended appointments?</p>
-          </article>
-          <article class="sp-handoff-card reveal">
-            <span class="sp-no" aria-hidden="true">03</span>
-            <h3>Consultation → Treatment</h3>
-            <p>Once the clinician determines suitability, does the responsible team have the information it needs to explain next steps and follow through?</p>
-          </article>
-          <article class="sp-handoff-card reveal">
-            <span class="sp-no" aria-hidden="true">04</span>
-            <h3>First Visit → Return</h3>
-            <p>Can the team see which patients are due for appropriate follow-up, and where do rebooked visits fall through?</p>
-          </article>
-        </div>
-        <aside class="sp-evidence reveal" aria-label="Independent medical spa industry evidence">
-          <strong>37%</strong>
-          <p>Of first rebooked med spa appointments were canceled in Zenoti’s 2025 North American platform data. <strong>Independent industry benchmark.</strong> <a href="https://www.zenoti.com/thecheckin/medspa-cancellation-rate" target="_blank" rel="noopener noreferrer">Source: Zenoti, 2026 Medspa Benchmark analysis</a>.</p>
-        </aside>
-      </section>
-
-      <!-- 04 / Capabilities -->
-      <section class="sp-capabilities sp-section" id="capabilities" aria-labelledby="capabilities-heading">
-        <div class="sp-capabilities-head reveal">
-          <p class="eyebrow sp-eyebrow">Business Intelligence &amp; Orchestration</p>
-          <h2 class="sp-section-title" id="capabilities-heading">Three capabilities. <em>One operating problem at a time.</em></h2>
-          <p class="sp-section-lede">We begin by identifying which gaps matter most to your numbers. The diagnostic determines which capabilities to apply and what evidence will show whether the change is worth keeping.</p>
-        </div>
-
-        <div class="sp-capabilities-grid">
-          <article class="sp-capability reveal" id="revenue-intelligence">
-            <div class="sp-capability-top">
-              <span class="sp-capability-number">01</span>
-              <svg class="sp-capability-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2.5"/><path d="M24 3v10M45 24H35"/></svg>
-            </div>
-            <h3>Revenue &amp; Client Journey Intelligence</h3>
-            <p>Trace where qualified inquiries stall, consultations fail to progress or appropriate follow-up falls through. Use booking, treatment, membership and collections data to decide where investigation will create the clearest commercial return.</p>
-            <ul>
-              <li>Inquiry coverage and response ownership</li>
-              <li>Booking, attendance and consultation progression</li>
-              <li>Appropriate follow-up, rebooking and membership activity</li>
-              <li>Collected revenue and contribution by service</li>
-            </ul>
-            <p class="sp-capability-metric"><b>What we examine:</b> Response coverage, booking rates, consultation progression, rebooking and contribution.</p>
-          </article>
-
-          <article class="sp-capability reveal" id="conversion-systems">
-            <div class="sp-capability-top">
-              <span class="sp-capability-number">02</span>
-              <svg class="sp-capability-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="8" y="10" width="32" height="29" rx="2"/><path d="M8 18h32M15 27l6 6 12-12"/></svg>
-            </div>
-            <h3>Operational &amp; Financial Intelligence</h3>
-            <p>Identify repetitive work, unreliable handoffs and hidden capacity constraints. Compare the cost of changing a workflow with the staff time, scheduling capacity or financial contribution it could recover.</p>
-            <ul>
-              <li>Staff workload and repetitive administrative tasks</li>
-              <li>Scheduling bottlenecks and usable appointment capacity</li>
-              <li>Handoff ownership and sources of manual rework</li>
-              <li>Implementation costs, recurring costs and contribution</li>
-            </ul>
-            <p class="sp-capability-metric"><b>What we examine:</b> Staff time per task, capacity utilization, handoff reliability and contribution after costs.</p>
-          </article>
-
-          <article class="sp-capability sp-capability-wide reveal" id="ai-automation">
-            <div>
-              <div class="sp-capability-top">
-                <span class="sp-capability-number">03</span>
-                <svg class="sp-capability-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="10" y="14" width="28" height="24" rx="5"/><path d="M24 14V7M19 7h10M16 25h4M28 25h4M19 32h10"/></svg>
-              </div>
-              <h3>AI Orchestration &amp; Governance</h3>
-              <p>Coordinate existing software, approved AI tools and staff around a defined workflow. Specify what each system may access, who owns exceptions, how performance is monitored and when a human must step in.</p>
-            </div>
-            <div>
-              <ul>
-                <li>Workflow design across supported platforms</li>
-                <li>Defined permissions and approved information sources</li>
-                <li>Staff review, escalation rules and manual fallback</li>
-                <li>Testing and ongoing workflow monitoring</li>
-              </ul>
-              <p class="sp-capability-metric"><b>What we examine:</b> Exception rates, response coverage, escalation reliability and human intervention requirements.</p>
-            </div>
-          </article>
-        </div>
-
-        <p class="sp-capability-note">Implementation scope depends on the diagnostic, the systems involved and the agreed access and oversight requirements. We confirm feasible integrations and ongoing responsibilities before implementation.</p>
-        <div class="sp-capability-action">
-          <a class="text-link" href="systems.html">See How We Work <span aria-hidden="true">→</span></a>
-        </div>
-      </section>
-
-      <!-- 05 / Client experience -->
-      <section class="sp-editorial sp-section" aria-labelledby="editorial-heading">
-        <div class="sp-editorial-head reveal">
-          <p class="eyebrow sp-eyebrow">The Client Experience</p>
-          <h2 class="sp-section-title" id="editorial-heading">Reliable operations <em>shape the client experience.</em></h2>
-          <p class="sp-section-lede">A timely response, a clear booking path and appropriate follow-up each depend on the team having the right information and knowing who acts next.</p>
-        </div>
-        <div class="sp-editorial-grid">
-          <article class="sp-editorial-card sp-photo-ads reveal" data-lazy-bg>
-            <div class="sp-editorial-caption"><span>Inquiry handling</span><h3>Assign the first response.</h3></div>
-          </article>
-          <article class="sp-editorial-card sp-photo-pages reveal" data-lazy-bg>
-            <div class="sp-editorial-caption"><span>Booking</span><h3>Make the next step clear.</h3></div>
-          </article>
-          <article class="sp-editorial-card sp-photo-followup reveal" data-lazy-bg>
-            <div class="sp-editorial-caption"><span>Follow-up</span><h3>Make follow-through reliable.</h3></div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 06 / Partnership model -->
-      <section class="sp-partnership" aria-labelledby="partnership-heading">
-        <div class="sp-partnership-image" data-lazy-bg role="img" aria-label="Editorial illustration of medical aesthetics clinic operations"></div>
-        <div class="sp-partnership-copy reveal">
-          <p class="eyebrow">Your Strategic Intelligence Partner</p>
-          <h2 class="sp-section-title" id="partnership-heading">Intelligent systems <em>designed with your team.</em></h2>
-          <p>We work with the people who know your business to understand where existing processes and systems fall short. Together, we define the workflow, the systems involved and the decisions that require staff or clinical judgment.</p>
-          <p>The work may involve redesigning a handoff, improving visibility across existing tools or testing a scoped AI-enabled workflow. Your team knows who owns each step and how to intervene if something falls outside the agreed rules.</p>
-          <div class="sp-partnership-points" aria-label="Working principles">
-            <div class="sp-partnership-point">A defined business objective</div>
-            <div class="sp-partnership-point">Named owners across teams</div>
-            <div class="sp-partnership-point">Agreed permissions and escalation</div>
-            <div class="sp-partnership-point">Ongoing performance review</div>
-          </div>
-          <a class="text-link" href="about.html">Why Mirèl Partners <span aria-hidden="true">→</span></a>
-        </div>
-      </section>
-
-      <!-- 07 / Commercial accountability -->
-      <section class="sp-economics sp-section" aria-labelledby="economics-heading">
-        <div class="sp-economics-wrap">
-          <div class="sp-economics-copy reveal">
-            <p class="eyebrow sp-eyebrow">Commercial Accountability</p>
-            <h2 class="sp-section-title" id="economics-heading">Measure the change. <em>Account for the cost.</em></h2>
-            <p>We agree what to measure before work begins. A booking workflow may be assessed through attended consultations and exceptions. An administrative workflow may be assessed through staff time per task and the share of cases still requiring manual intervention.</p>
-            <p>We compare outcomes with the baseline, account for delivery and operating costs, and explain how confidently the change can be linked to the result. Leadership can then decide what to keep, adjust or expand.</p>
-          </div>
-          <div class="sp-economics-panel reveal" aria-label="How commercial performance is evaluated">
-            <h3>How we evaluate business impact.</h3>
-            <div class="sp-economics-step">
-              <span>01</span>
-              <div><strong>Establish the baseline</strong><p>Record the relevant volumes, workload, capacity and costs over an agreed period. Note where data is incomplete.</p></div>
-            </div>
-            <div class="sp-economics-step">
-              <span>02</span>
-              <div><strong>Assess incremental contribution</strong><p>Where additional revenue is attributable to the change, deduct the variable costs of delivering it. Track staff time and capacity benefits separately.</p></div>
-            </div>
-            <div class="sp-economics-step">
-              <span>03</span>
-              <div><strong>Evaluate the net outcome</strong><p>Account for implementation, software, monitoring and staff review. Check that exceptions and escalations are handled as designed.</p></div>
-            </div>
-            <p class="sp-economics-foot">We agree the metrics, attribution method and review schedule for each engagement. Actual outcomes depend on the baseline, implementation and operating conditions.</p>
+          <div>
+            <figure><div class="editorial-photo"><img src="images/mirel-services-01-practice-diagnostic.webp" width="1672" height="941" fetchpriority="high" decoding="async" alt="Editorial illustration of a clinic manager and business advisor reviewing an operating process together."></div><figcaption class="photo-caption"><span>Understand the work before changing it.</span><span>Illustrative scene</span></figcaption></figure>
+            <div class="hero-visual-note"><p>A business problem.<br>A practical scope of work.</p><p>Diagnosis, workflow design and scoped implementation, with clear ownership from the start.</p></div>
           </div>
         </div>
-      </section>
+        <div class="scope-strip" aria-label="The purpose of the engagement"><div><span aria-hidden="true">01</span><strong>Know what is worth changing.</strong></div><div><span aria-hidden="true">02</span><strong>Know what will be delivered.</strong></div><div><span aria-hidden="true">03</span><strong>Know who owns the next step.</strong></div></div>
+      </div>
+    </section>
 
-      <!-- 08 / How we work -->
-      <section class="sp-process sp-section" id="engagement" aria-labelledby="process-heading">
-        <div class="sp-process-head reveal">
-          <p class="eyebrow sp-eyebrow">How We Work Together</p>
-          <h2 class="sp-section-title" id="process-heading">Start with the constraint. <em>Measure what changes.</em></h2>
-          <p class="sp-section-lede">A Strategy Review helps determine whether a focused diagnostic makes sense. The engagement then follows the evidence, with scope and responsibilities agreed before implementation.</p>
+    <section class="section" aria-labelledby="entry-title">
+      <div class="wrap">
+        <div class="entry-head"><div><p class="eyebrow">Start with what you recognize</p><h2 id="entry-title">Where is the operation<br><em>under pressure?</em></h2></div><p>You do not need to arrive with an AI project in mind. Start with the recurring issue your team is already working around.</p></div>
+        <div class="entry-grid">
+          <a class="entry-card" href="#revenue-intelligence"><span class="entry-number" aria-hidden="true">01</span><h3>Inquiries wait.</h3><p>Reception is busy or closed, and the next response has no clear owner.</p><span class="entry-action">Inquiry &amp; booking review <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <a class="entry-card" href="#revenue-intelligence"><span class="entry-number" aria-hidden="true">02</span><h3>Next steps stall.</h3><p>A booking, consultation or appropriate follow-up ends without a clear handoff.</p><span class="entry-action">Client journey review <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <a class="entry-card" href="#operational-intelligence"><span class="entry-number" aria-hidden="true">03</span><h3>Staff repeat work.</h3><p>Your team copies information between systems and checks the same records by hand.</p><span class="entry-action">Workflow &amp; workload review <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <a class="entry-card" href="#operational-intelligence"><span class="entry-number" aria-hidden="true">04</span><h3>Numbers disagree.</h3><p>Bookings, attendance and collections tell different stories at the weekly review.</p><span class="entry-action">Reporting &amp; cost review <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
         </div>
-        <div class="sp-process-grid">
-          <article class="sp-process-step reveal">
-            <span>01</span><h3>Diagnose</h3>
-            <p>Map the current workflow and establish a clear baseline.</p>
-          </article>
-          <article class="sp-process-step reveal">
-            <span>02</span><h3>Prioritize</h3>
-            <p>Compare likely business value, implementation cost, risk and demands on the team.</p>
-          </article>
-          <article class="sp-process-step reveal">
-            <span>03</span><h3>Implement</h3>
-            <p>Agree scope, ownership, permissions, escalation rules and testing before launch.</p>
-          </article>
-          <article class="sp-process-step reveal">
-            <span>04</span><h3>Optimize</h3>
-            <p>Review outcomes, exceptions and operating costs. Use the evidence to decide what to refine, expand or stop.</p>
-          </article>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 09 / Partnership fit -->
-      <section class="sp-fit sp-section" aria-labelledby="fit-heading">
-        <div class="sp-fit-copy reveal">
-          <p class="eyebrow sp-eyebrow">Partnership Fit</p>
-          <h2 class="sp-section-title" id="fit-heading">Built for operators who want clearer commercial decisions <em>and more reliable operations.</em></h2>
-          <p>Our immediate commercial priority is established U.S. med spas and medical aesthetics practices with existing demand, operational complexity and a willingness to examine what is holding performance back.</p>
+    <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
+      <span class="anchor-alias" id="growth-partnership" aria-hidden="true"></span>
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow muted">Three connected capabilities</p><h2 id="capabilities-title">The problem determines<br><em>the work.</em></h2></div><p>We select the relevant capabilities around one operating constraint, the available evidence and the value of a feasible change.</p></div>
+        <div class="capability-stack">
+          <article class="service-row" id="revenue-intelligence" aria-labelledby="revenue-title">
+            <div class="service-heading"><p class="eyebrow">01 / Revenue &amp; client journey</p><h3 id="revenue-title">Revenue &amp; Client Journey Intelligence</h3><p>Trace where existing demand fails to progress. Review response ownership, booking friction, attendance and appropriate follow-up alongside the revenue picture.</p><div class="service-example"><strong>A question we can investigate</strong>Which inquiries remain unresolved, and what happens to the bookings they eventually produce?</div></div>
+            <div><p class="output-label">Typical outputs · tailored to scope</p><ul class="output-list"><li><span aria-hidden="true">01</span><div><strong>Journey &amp; handoff map</strong><p>The current steps, responsible roles and points where progress stalls.</p></div></li><li><span aria-hidden="true">02</span><div><strong>Diagnostic brief</strong><p>The gap to investigate, evidence available and first change worth testing.</p></div></li><li><span aria-hidden="true">03</span><div><strong>Follow-through &amp; measurement plan</strong><p>Named ownership and agreed measures for response, booking and attendance.</p></div></li></ul><p class="service-measure"><strong>Measures selected for the problem</strong>Response coverage, attended consultations, unresolved inquiries and collected revenue where reliable attribution is possible.</p></div>
+          </article>
+          <article class="service-row" id="operational-intelligence" aria-labelledby="operations-title">
+            <div class="service-heading"><span class="anchor-alias" id="conversion-systems" aria-hidden="true"></span><p class="eyebrow">02 / Operations &amp; financial visibility</p><h3 id="operations-title">Operational &amp; Financial Intelligence</h3><p>Examine repetitive administration, scheduling constraints and reporting discrepancies. Compare the cost of a change with the staff time, usable capacity or financial contribution it could recover.</p><div class="service-example"><strong>A question we can investigate</strong>Why does the team spend time reconciling the same booking and collections records every week?</div></div>
+            <div><p class="output-label">Typical outputs · tailored to scope</p><ul class="output-list"><li><span aria-hidden="true">01</span><div><strong>Workload &amp; process assessment</strong><p>Repetitive tasks, manual rework and the handoffs that consume staff time.</p></div></li><li><span aria-hidden="true">02</span><div><strong>Reporting definitions &amp; review specification</strong><p>Sources, reporting periods, reconciliation rules and a named reviewer.</p></div></li><li><span aria-hidden="true">03</span><div><strong>Prioritized business case</strong><p>Expected value, cost assumptions, data limitations and a contained test.</p></div></li></ul><p class="service-measure"><strong>Measures selected for the problem</strong>Staff time per task, reconciliation time, usable appointment capacity and contribution after relevant costs.</p></div>
+          </article>
+          <article class="service-row ai-row" id="ai-orchestration" aria-labelledby="ai-title">
+            <div class="service-heading"><span class="anchor-alias" id="ai-automation" aria-hidden="true"></span><p class="eyebrow">03 / AI, systems &amp; human oversight</p><h3 id="ai-title">AI Orchestration &amp; Governance</h3><p>Design how supported software, approved information and people work together. Define the AI task, permitted actions, human review and what happens when the workflow cannot proceed.</p><div class="service-example"><strong>A workflow we can design</strong>A routine booking inquiry becomes an approved response draft, a visible status and a named follow-up task.</div></div>
+            <div><p class="output-label">Typical outputs · tailored to scope</p><ul class="output-list"><li><span aria-hidden="true">01</span><div><strong>Workflow &amp; integration specification</strong><p>Triggers, data sources, permitted actions and supported system connections.</p></div></li><li><span aria-hidden="true">02</span><div><strong>Review &amp; exception rules</strong><p>Approval points, escalation owners, access requirements and manual fallback.</p></div></li><li><span aria-hidden="true">03</span><div><strong>Test &amp; handover plan</strong><p>Example cases, acceptance checks, staff guidance and monitoring responsibilities.</p></div></li></ul><p class="service-measure"><strong>Measures selected for the problem</strong>Task completion, exception handling, required staff intervention and total operating cost.</p></div>
+          </article>
         </div>
-        <ul class="sp-fit-list reveal">
-          <li>You have meaningful patient demand and a team managing day-to-day operations.</li>
-          <li>You have workflows across people or systems where ownership, information or next steps may be unclear.</li>
-          <li>You are willing to examine the numbers behind revenue, staff workload and capacity.</li>
-          <li>Your team can help test changes, review results and take ownership of the agreed workflow.</li>
-        </ul>
-      </section>
+        <p class="scope-note">The proposal specifies the deliverables and which build, testing, handover and ongoing support responsibilities are included. Clinical assessments and treatment decisions remain with qualified professionals.</p>
+      </div>
+    </section>
 
-      <!-- 10 / FAQ -->
-      <section class="sp-faq sp-section" aria-labelledby="faq-heading">
-        <div class="sp-faq-layout">
-          <div class="reveal">
-            <p class="eyebrow sp-eyebrow">Before We Begin</p>
-            <h2 class="sp-section-title" id="faq-heading">What to expect <em>from an engagement.</em></h2>
-            <p class="sp-section-lede">We agree the problem to address, responsibilities, technology requirements and measures of success before work begins.</p>
-          </div>
-          <div class="reveal">
-            <details>
-              <summary>How does Mirèl work with our existing team?</summary>
-              <p>We work with leadership and the staff responsible for the workflow. Together, we define what changes, who approves it, who handles exceptions and how the team will review performance. Clinical decisions remain with qualified professionals.</p>
-            </details>
-            <details>
-              <summary>Will we need to replace our CRM or booking software?</summary>
-              <p>We start with the systems you already use. We review supported integrations, data access and permissions, then consider a change in tools only if the expected value justifies the cost, disruption and ongoing maintenance.</p>
-            </details>
-            <details>
-              <summary>Can you implement AI reception and follow-up?</summary>
-              <p>We can assess and design scoped workflows for nonclinical tasks such as routing inquiries, coordinating bookings or supporting follow-up. Implementation depends on the use case, system compatibility, clinic-approved information, access permissions and testing. Staff review, escalation and fallback procedures are defined before launch.</p>
-            </details>
-            <details>
-              <summary>What technology and third-party costs should we expect?</summary>
-              <p>We work with suitable existing systems and approved third-party tools. Where a workflow requires new subscriptions, usage fees, integrations or ongoing monitoring, we identify those costs and responsibilities in the proposed scope.</p>
-            </details>
-            <details>
-              <summary>How will we judge whether the work is paying off?</summary>
-              <p>We agree a baseline, target measures and a review period. We then compare the observed results with the cost of implementing and running the workflow, accounting for other changes that may have influenced the outcome. A fixed financial return is not guaranteed.</p>
-            </details>
+    <section class="section engagement" id="engagement" aria-labelledby="engagement-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow muted">How an engagement takes shape</p><h2 id="engagement-title">A clear next step.<br><em>An agreed scope.</em></h2></div><p>A Strategy Review helps establish whether a diagnostic is useful. Each subsequent stage has its own outputs and decision point.</p></div>
+        <div class="engagement-grid">
+          <article class="engagement-card"><p class="eyebrow">Stage 01</p><h3>Diagnose &amp; prioritize</h3><p>Understand the current workflow and identify the constraint worth investigating.</p><dl><div><dt>You receive</dt><dd>A diagnostic brief, baseline findings and a prioritized recommendation.</dd></div><div><dt>Your team contributes</dt><dd>Process context, appropriate records and access to the people who own the work.</dd></div></dl><div class="stage-decision"><strong>Decision:</strong> Is the proposed change worth designing?</div></article>
+          <article class="engagement-card"><p class="eyebrow">Stage 02</p><h3>Design &amp; specify</h3><p>Define how the change should work with your existing systems and team.</p><dl><div><dt>You receive</dt><dd>A workflow specification, feasibility findings, ownership rules and an implementation scope.</dd></div><div><dt>Your team contributes</dt><dd>Review of the proposed process, approved information and operational requirements.</dd></div></dl><div class="stage-decision"><strong>Decision:</strong> Is the workflow feasible and ready to build?</div></article>
+          <article class="engagement-card"><p class="eyebrow">Stage 03 · as agreed</p><h3>Implement &amp; review</h3><p>Build and test within the agreed scope, then review how the workflow performs.</p><dl><div><dt>You receive</dt><dd>Scoped configuration or integrations, test findings, handover guidance and a review against the agreed measures.</dd></div><div><dt>Your team contributes</dt><dd>Approvals, staff testing and ownership of the live process.</dd></div></dl><div class="stage-decision"><strong>Decision:</strong> Keep, refine, expand or stop?</div></article>
+        </div>
+        <div class="support-note"><h3>Ongoing support has<br>its own responsibilities.</h3><p>If monitoring or ongoing operation is included, the scope names who checks exceptions, maintains approved information, manages changes and reviews costs. Tool access and vendor dependencies are assessed before launch.</p></div>
+      </div>
+    </section>
+
+    <section class="section specification" id="workflow-example" aria-labelledby="spec-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow muted">A closer look at a deliverable</p><h2 id="spec-title">What a workflow<br><em>specification makes clear.</em></h2></div><p>A workflow needs more than a tool recommendation. It needs rules the team can use, test and take responsibility for.</p></div>
+        <div class="spec-grid">
+          <div class="spec-context"><figure><div class="editorial-photo"><img src="images/mirel-services-02-connected-operations.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Editorial illustration of a reception coordinator using a laptop and tablet in a medical aesthetics clinic."></div><figcaption class="photo-caption"><span>Technology within the team's workflow.</span><span>Illustrative scene</span></figcaption></figure><h3>Define the handoff<br>before connecting the tools.</h3><p>This example covers routine booking questions after reception closes. The aim is a visible next step with clear responsibility.</p><a class="text-link" href="index.html#approach"><span>See the reception view</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+          <div class="spec-sheet" aria-labelledby="spec-sheet-title">
+            <div class="spec-top"><p class="eyebrow">Illustrative specification · example only</p><h3 id="spec-sheet-title">After-hours booking inquiry</h3><p>A design example, not a deployed product or a client result.</p></div>
+            <dl class="spec-rows">
+              <div><dt>Trigger</dt><dd>A routine booking question arrives through one agreed inquiry channel after reception closes.</dd></div>
+              <div><dt>Approved source</dt><dd>Clinic-approved booking guidance and the current booking link.</dd></div>
+              <div><dt>AI task</dt><dd>Prepare a response draft from that guidance and flag missing or uncertain information.</dd></div>
+              <div><dt>Human approval</dt><dd>The reception lead reviews and sends the draft in this proposed workflow.</dd></div>
+              <div><dt>Next owner</dt><dd>An unresolved inquiry remains assigned to reception until a booking or another outcome is recorded.</dd></div>
+              <div><dt>Exception route</dt><dd>Questions about treatment suitability go to a qualified clinician. Unsupported requests go to staff review.</dd></div>
+              <div><dt>Manual fallback</dt><dd>If a system connection fails, the inquiry remains in the source channel for the reception team to handle.</dd></div>
+              <div><dt>Review measures</dt><dd>Time to the first response actually sent, attended consultations, staff intervention and operating costs.</dd></div>
+            </dl>
+            <p class="spec-foot">Before implementation: confirm system compatibility, access, responsibilities, test cases and acceptance criteria.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 11 / Final call to action -->
-      <section class="sp-final" aria-labelledby="final-heading">
-        <div class="sp-final-image" data-lazy-bg role="img" aria-label="Premium aesthetic clinic editorial image for Mirèl Partners"></div>
-        <div class="sp-final-copy reveal">
-          <p class="eyebrow">Strategy Review</p>
-          <h2 id="final-heading">Bring one operating problem worth examining.</h2>
-          <p>Bring one real issue to a 30-minute Strategy Review. We will discuss what you are seeing, what information would clarify the constraint, and whether a focused diagnostic is the right next step.</p>
-          <div class="sp-final-actions">
-            <a class="btn btn-pink" href="book.html#booking">Book a Strategy Review</a>
-            <a class="btn btn-outline" href="systems.html">See How We Work</a>
-          </div>
+    <section class="section" aria-labelledby="ownership-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow muted">Responsibility stays visible</p><h2 id="ownership-title">Know who designs it.<br><em>Know who runs it.</em></h2></div><p>The scope separates business decisions, implementation tasks and day-to-day operation so the workflow has an owner after handover.</p></div>
+        <div class="ownership-grid">
+          <article class="owner"><p class="eyebrow">Mirèl Partners</p><h3>Diagnosis &amp; delivery</h3><p>We define the problem, recommend a priority and deliver the agreed design or implementation work. The proposal identifies the testing, handover and ongoing support included.</p></article>
+          <article class="owner"><p class="eyebrow">Your practice</p><h3>Approval &amp; operation</h3><p>Your team approves clinic information and access, tests the process and names an operational owner. Qualified professionals retain clinical judgment.</p></article>
+          <article class="owner"><p class="eyebrow">Technology providers</p><h3>Tools &amp; connections</h3><p>Third-party software supplies the supported platform features and integrations. Subscriptions, usage charges, vendor limits and maintenance dependencies are identified in the scope.</p></article>
         </div>
-      </section>
-    </main>
+        <div class="value-check"><div><h3>The business case includes the running cost.</h3><p>Choose the measures before the test. Review the result alongside the work and cost required to maintain it.</p></div><dl class="value-items"><div><dt>Baseline &amp; evidence</dt><dd>Agree the starting point, reporting period and limits of the available data.</dd></div><div><dt>Delivery &amp; operating cost</dt><dd>Account for implementation, software, monitoring and staff review.</dd></div><div><dt>Observed business value</dt><dd>Assess attendance, staff time, capacity and financial contribution where supported by the evidence.</dd></div></dl></div>
+      </div>
+    </section>
 
-    <footer
-      class="footer"
-      id="mirel-site-footer"
-      data-mirel-footer
-    ></footer>
-  </div>
+    <section class="section questions" aria-labelledby="questions-title">
+      <div class="wrap questions-grid">
+        <div class="questions-copy"><p class="eyebrow">Before we begin</p><h2 id="questions-title">A practical fit<br><em>for your practice.</em></h2><p>Our current focus is established U.S. med spas and medical aesthetics practices with existing demand, a team managing it and an operating issue worth examining.</p><a class="text-link" href="systems.html"><span>Explore how we work</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        <div class="faq">
+          <details><summary>Where should we start if we are unsure what is wrong?</summary><p>Bring one recurring issue to the Strategy Review: unanswered inquiries, repeated administration, a reporting gap or a difficult handoff. We discuss what you are seeing and whether a separately scoped diagnostic makes sense.</p></details>
+          <details><summary>Will we need to replace our booking software or CRM?</summary><p>We start with your existing systems. Supported integrations, vendor terms and permitted access determine what is feasible. A change in tools is considered when its expected value justifies the cost and disruption.</p></details>
+          <details><summary>Does every engagement include AI?</summary><p>No. Clearer responsibilities, a process change or rules-based automation may address the constraint. AI is considered where it adds enough value to justify testing, operating cost and human review.</p></details>
+          <details><summary>Can we start with a diagnostic without committing to a build?</summary><p>Yes. A diagnostic is a defined stage with its own scope and outputs. Any design, implementation or ongoing support is agreed separately before that work begins.</p></details>
+          <details><summary>How are fees, timing and responsibilities set?</summary><p>The proposal specifies the deliverables, required access, client responsibilities, milestones and fees. It also identifies third-party costs and whether monitoring or ongoing support is included. The scope depends on the problem and the systems involved.</p></details>
+          <details><summary>How will we judge whether the work is paying off?</summary><p>We agree a baseline, measures and a review period, then assess the observed result alongside delivery costs, running costs and other changes that may have influenced performance. A fixed financial return is not guaranteed.</p></details>
+        </div>
+      </div>
+    </section>
 
+    <section class="section closing" aria-labelledby="closing-title">
+      <div class="wrap closing-grid"><div><p class="eyebrow">A focused first conversation</p><h2 id="closing-title">Bring one problem<br>worth examining.</h2></div><div class="closing-copy"><p>In 30 minutes with the founder, we’ll discuss where the issue occurs, what evidence would clarify it and whether a focused diagnostic is worth pursuing.</p><a class="button" href="book.html#booking">Book a Strategy Review</a><p class="small">Business-level information is enough. Please omit patient names, records and other identifiable patient information.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-main">
+        <div><a class="brand" href="index.html" aria-label="Mirèl Partners home"><span>MIRÈL</span><small>PARTNERS</small></a><p>AI Intelligence &amp; Orchestration<br>for Aesthetics, Wellness &amp; Longevity.</p></div>
+        <nav class="footer-links" aria-label="Explore Mirèl"><a href="services.html">Our capabilities</a><a href="systems.html">How we work</a><a href="ai-for-med-spas.html">AI for Med Spas</a><a href="resources.html">Resources</a></nav>
+        <div class="footer-links"><a href="mailto:delora@mirelpartners.com">delora@mirelpartners.com</a><a href="https://www.instagram.com/mirelpartners/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.youtube.com/@mirelpartners" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.linkedin.com/company/mirelmarketing/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; Mirèl Partners. All rights reserved.</span><div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div></div>
+    </div>
+  </footer>
   <script>
-  (() => {
-    'use strict';
-    // Below-the-fold images are deferred; the hero stays visible on first paint.
-    const backgrounds = document.querySelectorAll('[data-lazy-bg]');
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver((entries, self) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('bg-loaded');
-          self.unobserve(entry.target);
-        });
-      }, {rootMargin:'550px 0px', threshold:0});
-      backgrounds.forEach(element => observer.observe(element));
-    } else {
-      backgrounds.forEach(element => element.classList.add('bg-loaded'));
-    }
-
-    const elements = document.querySelectorAll('.reveal');
-    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduceMotion || !('IntersectionObserver' in window)) {
-      elements.forEach(element => element.classList.add('visible'));
-    } else {
-      const observer = new IntersectionObserver((entries, self) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('visible');
-          self.unobserve(entry.target);
-        });
-      }, {threshold:0.10, rootMargin:'0px 0px 80px 0px'});
-      elements.forEach(element => observer.observe(element));
-    }
-  })();
+    (function () {
+      'use strict';
+      const menu = document.getElementById('mobile-menu');
+      if (!menu) return;
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && menu.open) {
+          menu.open = false;
+          menu.querySelector('summary').focus();
+        }
+      });
+      document.addEventListener('click', function (event) {
+        if (menu.open && !menu.contains(event.target)) menu.open = false;
+      });
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () { menu.open = false; });
+      });
+      const desktop = window.matchMedia('(min-width: 1151px)');
+      const closeMenu = function (event) { if (event.matches) menu.open = false; };
+      if (desktop.addEventListener) desktop.addEventListener('change', closeMenu);
+      else if (desktop.addListener) desktop.addListener(closeMenu);
+    })();
+  
   </script>
-  <script src="navigation.js?v=1" defer></script>
-  <script src="footer.js?v=1" defer></script>
 </body>
 </html>
+
+  
