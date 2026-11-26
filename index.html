@@ -14,9 +14,9 @@
 <meta property="og:url" content="https://mirelpartners.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
-/* MIRÈL / HUMAN-LED INTELLIGENCE EDITION
+/* MIRÈL / HUMAN-LED INTELLIGENCE — EDITORIAL IMAGE EDITION
    Page structure, styles and behavior are contained in this file.
-   The homepage animation uses the local Mirel_Homepage_Animated.webp file.
+   Four static WebP images are loaded from the images directory.
    Workflow examples and decision briefs are explicitly illustrative. */
 @font-face{font-family:Mirel Editorial;src:url('https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2') format('woff2');font-style:normal;font-weight:500;font-display:swap}
 :root{--paper:#f8f7f4;--light:#ffffff;--stone:#e9e6e1;--ink:#201814;--coffee:#3b302a;--muted:#625c56;--gold:#9d8670;--line:#d4cec7;--darkline:#6a6058;--soft:#ded8d2;--serif:'Mirel Editorial',Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif;--ease:cubic-bezier(.22,1,.36,1)}
@@ -114,7 +114,7 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion-ready [data-reveal]{opacity:1!important;transform:none!important}}
 @media print{.site-header,.skip,.scenario-tabs,.role-button{display:none}.wrap{width:100%}.section,.capabilities,.closing{padding-block:1.5rem}.hero-grid,.closing-grid{grid-template-columns:1fr}.dark{background:white;color:black}.dark p,.dark .eyebrow{color:black}.orchestration-copy{position:static}[data-reveal]{opacity:1!important;transform:none!important}.operating-model{box-shadow:none}.model-insight{min-height:0}}
 
-/* Homepage film: a self-contained illustrated preview, ready for a final MP4. */
+/* Interactive illustrated workflow; no video file is downloaded. */
 .workflow-media{margin-top:1.4rem}
 .workflow-video{width:100%;aspect-ratio:16/9;background:var(--ink);object-fit:contain;border:1px solid var(--line)}
 .film-stage{position:relative;min-height:350px;aspect-ratio:16/10;background:var(--ink);color:var(--paper);overflow:hidden;border:1px solid #51463f}
@@ -146,11 +146,162 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
 @media(max-width:680px){.film-stage{min-height:460px;aspect-ratio:auto}.film-scene{inset:3.3rem 1rem 1.1rem;gap:.8rem}.film-scene h4{font-size:1.6rem}.film-card{padding:1rem}.film-card .film-main{font-size:1.4rem}.film-top{left:1rem;right:1rem;font-size:.625rem}.film-steps{grid-template-columns:1fr 1fr}.film-step{font-size:.8125rem}.film-tools{align-items:start}.film-duration{max-width:15ch;text-align:right}.film-tags{gap:.4rem}.film-tags li{padding:.4rem;font-size:.75rem}}
 @media print{.film-tools,.film-steps{display:none}.film-stage{background:white;color:black}.film-scene h4,.film-caption{color:black!important}}
 
-/* Homepage animation: local WebP, lazy loaded with reserved layout space. */
-.homepage-animation{padding-block:1rem 2rem}
-.homepage-animation figure{overflow:hidden;border:1px solid var(--line);background:#eeedeb;aspect-ratio:16/9}
-.homepage-animation img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
-@media(max-width:680px){.homepage-animation{padding-block:.5rem 1rem}}
+
+
+/* MIRÈL / EDITORIAL IMAGE LAYOUT
+   Images retain their aspect ratio; every headline remains selectable HTML. */
+.hero-grid,.method-layout,.fit-layout,.fit-bottom{min-width:0}
+.hero-grid>* ,.method-layout>* ,.fit-layout>* ,.fit-bottom>*{min-width:0}
+.hero{padding-top:2.5rem;padding-bottom:1.5rem}
+.hero-topline{padding-bottom:2rem}
+.hero-grid{grid-template-columns:1.02fr .98fr;gap:clamp(2rem,4vw,4rem)}
+.hero h1{font-size:clamp(3.5rem,5.2vw,5.25rem);line-height:1;letter-spacing:-.045em}
+.hero-description{max-width:48ch}
+.hero-visual{position:relative;isolation:isolate;min-width:0;align-self:center}
+.hero-image-frame{position:relative;aspect-ratio:5/6;max-height:680px;background:var(--stone)}
+.hero-image-frame::before{content:"";position:absolute;inset:1rem -1rem -1rem 1rem;background:var(--stone);z-index:-1}
+.hero-image-frame img{width:100%;height:100%;object-fit:cover;object-position:65% 50%}
+.visual-caption{display:flex;justify-content:space-between;gap:1rem;margin-top:1.2rem;color:var(--muted);font:500 .6875rem/1.6 var(--sans)}
+.visual-caption span:last-child{flex-shrink:0;text-transform:uppercase;letter-spacing:.08em}
+.hero-bottom{margin-top:2.3rem}
+.connection-section{padding-block:2.5rem 0}
+.connection-stage{position:relative;isolation:isolate;display:flex;align-items:center;aspect-ratio:1672/941;min-height:500px;background:#f0ece8;overflow:hidden}
+.connection-art{position:absolute;inset:0;z-index:-1}
+.connection-art img{width:100%;height:100%;object-fit:cover}
+.connection-copy{width:49%;padding:clamp(2rem,3.5vw,3.5rem)}
+.connection-copy .eyebrow{font-size:.6875rem;letter-spacing:.12em;margin-bottom:1.5rem}
+.connection-copy h2{font-size:clamp(2.8rem,3.9vw,4rem);line-height:1.05;letter-spacing:-.035em;text-wrap:initial}
+.connection-copy h2 span{display:block}
+.connection-accent{margin-top:.4em;color:var(--coffee)}
+.connection-subtitle{font-size:.875rem;color:var(--muted);margin-top:1.5rem;max-width:30ch}
+.connection-copy .link{margin-top:1.2rem;font-size:.8125rem}
+.connection-foot{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1rem;font-size:.6875rem;color:var(--muted)}
+.connection-foot span:last-child{flex-shrink:0;text-transform:uppercase;letter-spacing:.08em}
+.thesis{padding-block:6rem}
+.orchestration-copy{position:static}
+.orchestration-copy .operating-model{margin-top:2.5rem;padding:1.4rem;max-width:none;box-shadow:none;animation:none}
+.orchestration-copy .model-insight{min-height:0}
+.orchestration-copy .model-insight h2{margin:0 0 .65rem;font-size:1.65rem}
+.orchestration-copy .role-button{grid-template-columns:.6rem 1fr;padding:.8rem;gap:.7rem}
+.orchestration-copy .role-type{display:none}
+.orchestration-copy .model-result{flex-direction:column;gap:.25rem}
+.orchestration-grid{grid-template-columns:.95fr 1.15fr;gap:clamp(2rem,4vw,4rem)}
+.method-editorial{background:var(--paper)}
+.method-heading{align-items:flex-end}
+.method-heading h2{max-width:22ch}
+.method-heading>.link{flex-shrink:0}
+.method-layout{grid-template-columns:1.1fr 1fr;gap:clamp(2rem,4vw,4rem);align-items:start}
+.method-photo{position:sticky;top:8rem}
+.method-image-frame{aspect-ratio:5/4;overflow:hidden;background:var(--stone)}
+.method-image-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.method-list li{grid-template-columns:.75fr 1.25fr;gap:1.3rem;padding-block:1.6rem}
+.method-list h3{font-size:1.9rem}
+.method-brief{margin-top:4rem;box-shadow:none;padding:2rem;background:var(--light)}
+.method-brief h3{font-size:2rem}
+.method-brief .brief-rows{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem}
+.method-brief .brief-rows div{padding-top:1rem}
+.method-brief .brief-note{padding-top:1rem;border-top:1px solid var(--line)}
+.fit-layout{grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,4rem);align-items:center}
+.fit-image-frame{aspect-ratio:5/4;overflow:hidden;background:var(--stone)}
+.fit-image-frame img{width:100%;height:100%;object-fit:cover;object-position:65% 50%}
+.fit-copy h2{font-size:clamp(3rem,4.4vw,4.6rem);max-width:18ch}
+.fit-bottom{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,4rem);align-items:start;margin-top:4.5rem;padding-top:3rem;border-top:1px solid var(--line)}
+.fit-resource .resource-line{border:0;margin:0;padding:0;max-width:42ch}
+.fit-resource .resource-line h3{font-size:2.2rem;max-width:18ch}
+.fit-resource .resource-line .link{margin-top:1rem}
+@media(min-width:1600px){.hero h1{font-size:5.5rem}}
+@media(max-width:1100px){
+ .hero h1{font-size:clamp(3.2rem,5.7vw,4.5rem)}
+ .hero .actions{gap:.65rem}.hero .button{padding-inline:1.1rem;font-size:.8125rem}
+ .connection-stage{min-height:440px}
+ .connection-copy{width:50%;padding:2rem}
+ .connection-copy h2{font-size:clamp(2.5rem,4vw,3.2rem)}
+ .connection-copy .eyebrow{max-width:25ch}
+ .method-list li{grid-template-columns:1fr;gap:.65rem}
+ .method-list h3{font-size:1.85rem}
+}
+@media(max-width:980px){
+ .hero-grid{grid-template-columns:1fr;gap:2.25rem}
+ .hero-copy{max-width:760px}
+ .hero h1{font-size:clamp(3.5rem,7.7vw,5.5rem);max-width:19ch}
+ .hero-visual{width:100%}
+ .hero-image-frame{aspect-ratio:16/9;max-height:none}
+ .hero-image-frame img{object-position:50% 50%}
+ .hero-image-frame::before{inset:.7rem -.7rem -.7rem .7rem}
+ .hero-description{max-width:58ch}
+ .hero .actions{flex-direction:row;align-items:center}
+ .hero .button{padding-inline:1.5rem;font-size:.875rem}
+ .connection-copy h2{font-size:2.65rem}
+ .connection-copy{padding:1.75rem}
+ .connection-copy .eyebrow{margin-bottom:1rem}
+ .connection-subtitle{margin-top:1rem}
+ .method-brief .brief-rows{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:900px){
+ .orchestration-grid{grid-template-columns:1fr;gap:3rem}
+ .orchestration-copy .operating-model{margin-top:2rem}
+ .orchestration-copy .model-roles{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .orchestration-copy .model-roles::before{display:none}
+ .orchestration-copy .role-button{align-items:start}
+ .method-heading{align-items:flex-start}
+ .method-layout{grid-template-columns:1fr;gap:2.5rem}
+ .method-photo{position:static}
+ .method-image-frame{aspect-ratio:16/10}
+ .method-list li{grid-template-columns:.7fr 1.3fr;gap:1.5rem}
+ .fit-layout{grid-template-columns:1fr;gap:2.5rem}
+ .fit-image-frame{aspect-ratio:16/10}
+ .fit-copy h2{max-width:24ch}
+ .fit-bottom{gap:2rem}
+}
+@media(max-width:900px){
+ .connection-stage{display:flex;flex-direction:column;align-items:stretch;aspect-ratio:auto;min-height:0;background:#f1eeeb}
+ .connection-copy{width:100%;padding:2rem 1.5rem 0;order:0}
+ .connection-copy h2{font-size:clamp(2.6rem,6.8vw,3.5rem);max-width:20ch}
+ .connection-copy .eyebrow{max-width:none}
+ .connection-subtitle{max-width:none}
+ .connection-art{position:relative;inset:auto;order:1;z-index:0;height:320px;margin-top:.5rem;overflow:hidden}
+ .connection-art img{object-fit:cover;object-position:right center}
+ .connection-foot{align-items:flex-start}
+ .connection-foot span:first-child{max-width:34ch}
+ .connection-foot span:last-child{display:none}
+ .fit-bottom{grid-template-columns:1fr;gap:2.5rem;margin-top:3rem;padding-top:2.5rem}
+ .fit-resource .resource-line{max-width:55ch}
+}
+@media(max-width:680px){
+ .hero{padding-top:1.6rem}
+ .hero-topline{padding-bottom:1.25rem}
+ .hero h1{font-size:clamp(2.8rem,10.5vw,4.1rem);line-height:1.03;max-width:none}
+ .hero h1 .serif-accent{margin-top:.15em}
+ .hero .actions{flex-direction:column;align-items:stretch}
+ .hero .button{width:100%;font-size:.875rem}
+ .hero-image-frame{aspect-ratio:5/4}
+ .hero-image-frame img{object-position:62% center}
+ .visual-caption{font-size:.625rem;gap:.6rem;margin-top:1rem}
+ .visual-caption span:last-child{letter-spacing:.03em}
+ .connection-section{padding-top:1.5rem}
+ .connection-copy{padding:1.75rem 1.25rem 0}
+ .connection-copy .eyebrow{font-size:.625rem;letter-spacing:.1em}
+ .connection-copy h2{font-size:clamp(2.4rem,9vw,3rem)}
+ .connection-subtitle{font-size:.8125rem}
+ .connection-art{height:270px}
+ .thesis{padding-block:4rem}
+ .orchestration-copy .model-roles{grid-template-columns:1fr}
+ .orchestration-copy .role-button{align-items:center;min-height:72px}
+ .method-heading{gap:1.2rem}
+ .method-heading h2{font-size:clamp(2.6rem,10vw,3.7rem)}
+ .method-image-frame{aspect-ratio:5/4}
+ .method-list li{grid-template-columns:1fr;gap:.7rem}
+ .method-brief{margin-top:2.5rem;padding:1.25rem}
+ .method-brief .brief-rows{grid-template-columns:1fr;gap:0}
+ .method-brief .brief-heading{align-items:flex-start}
+ .fit-copy h2{font-size:clamp(2.7rem,10vw,3.8rem)}
+ .fit-image-frame{aspect-ratio:5/4}
+ .fit-image-frame img{object-position:65% center}
+ .fit-resource .resource-line h3{font-size:2rem}
+}
+@media(prefers-reduced-motion:no-preference){.hero-visual{animation:heroEnter 1s .1s var(--ease) both}}
+@media print{.hero-image-frame::before{display:none}.method-photo{position:static}.connection-stage{min-height:0}.connection-copy{width:50%}.fit-layout,.fit-bottom,.method-layout{grid-template-columns:1fr}.hero-visual{break-inside:avoid}}
+
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mirelpartners.com/#organization","name":"Mirèl Partners","url":"https://mirelpartners.com/","email":"delora@mirelpartners.com","description":"AI intelligence and orchestration for aesthetics, wellness and longevity. Current focus: established U.S. med spas and medical aesthetics practices."},{"@type":"WebSite","@id":"https://mirelpartners.com/#website","url":"https://mirelpartners.com/","name":"Mirèl Partners","publisher":{"@id":"https://mirelpartners.com/#organization"}},{"@type":"WebPage","@id":"https://mirelpartners.com/#webpage","url":"https://mirelpartners.com/","name":"AI Intelligence & Orchestration | Mirèl Partners","isPartOf":{"@id":"https://mirelpartners.com/#website"},"about":{"@id":"https://mirelpartners.com/#organization"}}]}</script>
@@ -168,7 +319,8 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
   </div>
   <div class="reading-progress" aria-hidden="true"></div>
 </header>
-<main id="main-content" tabindex="-1">
+
+   <main id="main-content" tabindex="-1">
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
       <div class="hero-topline"><p class="eyebrow">AI Intelligence &amp; Orchestration</p><p class="eyebrow">Aesthetics, Wellness &amp; Longevity</p></div>
@@ -180,29 +332,31 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
           <div class="actions"><a class="button" href="book.html#booking">Book a Strategy Review</a><a class="button ghost" href="#orchestration">See the approach in practice</a></div>
           <p class="hero-foot"><strong>Current focus: established U.S. med spas and medical aesthetics practices.</strong>Designed around your business, existing systems and team.</p>
         </div>
-        <figure class="operating-model dark" aria-labelledby="model-title">
-          <div class="model-top"><p class="eyebrow" id="model-title">How the roles connect</p><span class="model-mark" aria-hidden="true">M.</span></div>
-          <p class="model-scenario">Example: a routine booking inquiry arrives after hours.</p>
-          <p class="model-hint" id="model-hint" hidden>Select a role to examine its responsibility.</p>
-          <div class="model-roles" role="group" aria-label="Responsibilities in the illustrative workflow">
-            <button type="button" class="role-button" disabled data-role="strategy" aria-pressed="true"><span class="role-dot" aria-hidden="true"></span><span><span class="role-title">Mirèl sets the design.</span><span class="role-subtitle">Business priorities, workflow and measures.</span></span><span class="role-type">Strategy</span></button>
-            <button type="button" class="role-button" disabled data-role="ai" aria-pressed="false"><span class="role-dot" aria-hidden="true"></span><span><span class="role-title">AI supports the work.</span><span class="role-subtitle">Defined tasks, approved information.</span></span><span class="role-type">Support</span></button>
-            <button type="button" class="role-button" disabled data-role="people" aria-pressed="false"><span class="role-dot" aria-hidden="true"></span><span><span class="role-title">People retain judgment.</span><span class="role-subtitle">Approvals, exceptions and clinical decisions.</span></span><span class="role-type">Control</span></button>
+        <figure class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="images/mirel-01-clinic-reception.webp" width="1672" height="941" fetchpriority="high" decoding="async" alt="A contemporary medical aesthetics clinic reception with natural stone finishes and a coordinator reviewing a tablet.">
           </div>
-          <div class="model-insight" aria-live="polite" aria-atomic="true"><h2 id="role-heading">The operating problem comes first.</h2><p id="role-description">Mirèl examines response ownership and booking friction, then defines the workflow, permitted actions and evidence needed to evaluate a change.</p></div>
-          <div class="model-result"><strong>Evaluate the whole workflow.</strong><span>Coverage / attendance / staff effort / costs</span></div>
-          <figcaption class="model-caption">Illustrative operating model, not a deployed product or client result. Scope depends on supported tools, approved access and agreed responsibilities.</figcaption>
+          <figcaption class="visual-caption"><span>Aesthetics. Wellness. Longevity.</span><span aria-hidden="true">01 / The business</span></figcaption>
         </figure>
       </div>
       <div class="hero-bottom"><p>A strategic business intelligence &amp; technology partner.</p><a class="link" href="#the-question">Understand the business case</a></div>
     </div>
   </section>
 
-  <section class="homepage-animation" aria-label="Mirèl Partners: connected systems">
+  <section class="connection-section" aria-labelledby="connection-title">
     <div class="wrap">
-      <figure>
-        <img src="Mirel_Homepage_Animated.webp" width="1280" height="720" loading="lazy" decoding="async" fetchpriority="low" alt="Connect your systems. Find what’s holding your business back. AI Intelligence and Orchestration for Aesthetics, Wellness and Longevity.">
-      </figure>
+      <div class="connection-stage">
+        <div class="connection-art">
+          <img src="images/mirel-02-ai-orchestration.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Transparent glass layers joined by fine connections, an abstract illustration of connected information and systems.">
+        </div>
+        <div class="connection-copy">
+          <p class="eyebrow muted">AI Intelligence &amp; Orchestration</p>
+          <h2 id="connection-title"><span>Connect your systems.</span><span class="connection-accent">Find what’s holding your business back.</span></h2>
+          <p class="connection-subtitle">For Aesthetics, Wellness &amp; Longevity.</p>
+          <a class="link" href="#growth-ecosystem">Explore the connected approach</a>
+        </div>
+      </div>
+      <div class="connection-foot"><span>Business strategy. Intelligent systems. Human oversight.</span><span aria-hidden="true">02 / The connection</span></div>
     </div>
   </section>
 
@@ -242,18 +396,26 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
   </section>
   <section class="section orchestration" id="orchestration" aria-labelledby="orchestration-title">
     <div class="wrap orchestration-grid">
-      <div class="orchestration-copy" data-reveal><p class="eyebrow muted">A closer look at orchestration</p><h2 id="orchestration-title">Make the next step<br>clear, owned and measurable.</h2><p class="lead">Explore two operating problems. Each example shows where information moves, what technology can support and which decisions remain with people.</p><a class="link" href="ai-for-med-spas.html">Our approach to AI for med spas</a></div>
+      <div class="orchestration-copy" data-reveal><p class="eyebrow muted">A closer look at orchestration</p><h2 id="orchestration-title">Make the next step<br>clear, owned and measurable.</h2><p class="lead">Explore two operating problems. Each example shows where information moves, what technology can support and which decisions remain with people.</p><a class="link" href="ai-for-med-spas.html">Our approach to AI for med spas</a>
+<figure class="operating-model dark" aria-labelledby="model-title">
+          <div class="model-top"><p class="eyebrow" id="model-title">How the roles connect</p><span class="model-mark" aria-hidden="true">M.</span></div>
+          <p class="model-scenario">Example: a routine booking inquiry arrives after hours.</p>
+          <p class="model-hint" id="model-hint" hidden>Select a role to examine its responsibility.</p>
+          <div class="model-roles" role="group" aria-label="Responsibilities in the illustrative workflow">
+            <button type="button" class="role-button" disabled data-role="strategy" aria-pressed="true"><span class="role-dot" aria-hidden="true"></span><span><span class="role-title">Mirèl sets the design.</span><span class="role-subtitle">Business priorities, workflow and measures.</span></span><span class="role-type">Strategy</span></button>
+            <button type="button" class="role-button" disabled data-role="ai" aria-pressed="false"><span class="role-dot" aria-hidden="true"></span><span><span class="role-title">AI supports the work.</span><span class="role-subtitle">Defined tasks, approved information.</span></span><span class="role-type">Support</span></button>
+            <button type="button" class="role-button" disabled data-role="people" aria-pressed="false"><span class="role-dot" aria-hidden="true"></span><span><span class="role-title">People retain judgment.</span><span class="role-subtitle">Approvals, exceptions and clinical decisions.</span></span><span class="role-type">Control</span></button>
+          </div>
+          <div class="model-insight" aria-live="polite" aria-atomic="true"><h2 id="role-heading">The operating problem comes first.</h2><p id="role-description">Mirèl examines response ownership and booking friction, then defines the workflow, permitted actions and evidence needed to evaluate a change.</p></div>
+          <div class="model-result"><strong>Evaluate the whole workflow.</strong><span>Coverage / attendance / staff effort / costs</span></div>
+          <figcaption class="model-caption">Illustrative operating model, not a deployed product or client result. Scope depends on supported tools, approved access and agreed responsibilities.</figcaption>
+        </figure>
+      </div>
       <div data-reveal>
         <div class="scenario-tabs" id="scenario-tabs" hidden role="tablist" aria-label="Explore illustrative workflows"><button id="tab-inquiry" role="tab" aria-selected="true" aria-controls="panel-inquiry" type="button">Inquiry &amp; booking</button><button id="tab-reporting" role="tab" aria-selected="false" aria-controls="panel-reporting" tabindex="-1" type="button">Revenue visibility</button></div>
         <div class="scenario-panel" id="panel-inquiry">
           <div class="scenario-head"><p class="eyebrow">From inquiry to clear ownership</p><span class="scenario-seal" aria-hidden="true">M.</span></div>
-          <!-- FINAL VIDEO: once produced, put its relative MP4 path in data-video-src.
-               Example: data-video-src="videos/mirel-inquiry-workflow.mp4"
-               An optional poster path goes in data-video-poster. Leave both empty until files exist.
-               The illustrated preview works without any external image or video files. -->
-          <figure class="workflow-media" data-video-src="" data-video-poster="" aria-label="Illustrative inquiry workflow, four stages">
-            <p class="film-notice" id="film-notice" hidden></p>
-            <video id="workflow-video" class="workflow-video" controls playsinline preload="none" hidden aria-label="From inquiry to clear ownership: illustrative workflow" aria-describedby="film-context"></video>
+          <figure class="workflow-media" aria-label="Illustrative inquiry workflow, four stages">
             <div id="illustrated-film">
               <div class="film-stage" aria-label="Illustrated workflow preview">
                 <div class="film-top"><span>Illustrative workflow</span><span aria-hidden="true">M.</span></div>
@@ -302,12 +464,28 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
     </div>
   </section>
 
-  <section class="section" aria-labelledby="method-title">
-    <div class="wrap method-layout">
-      <div class="method-visual" data-reveal>
-        <p class="eyebrow muted">The Mirèl method</p><h2 id="method-title">Know what is changing.<br>Know who owns it.</h2><a class="link" href="systems.html">See how we work</a>
-        <div>
-          <aside class="decision-brief" aria-labelledby="brief-title">
+  <section class="section method-editorial" aria-labelledby="method-title">
+    <div class="wrap">
+      <div class="section-heading method-heading" data-reveal>
+        <div><p class="eyebrow muted">The Mirèl method</p><h2 id="method-title">Know what is changing.<br>Know who owns it.</h2></div>
+        <a class="link" href="systems.html">See how we work</a>
+      </div>
+      <div class="method-layout">
+        <figure class="method-photo" data-reveal>
+          <div class="method-image-frame"><img src="images/mirel-03-strategy-review.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Two business professionals reviewing an illustrative chart and planning notes in a clinic setting."></div>
+          <figcaption class="visual-caption"><span>Evidence informs the decision.</span><span aria-hidden="true">03 / The method</span></figcaption>
+        </figure>
+        <div data-reveal>
+          <ol class="method-list">
+          <li><h3>Diagnose</h3><div><strong>A workflow map and baseline.</strong><p>Identify where value is lost, what the available data can show and which information is still missing.</p></div></li>
+          <li><h3>Prioritize</h3><div><strong>A practical, scoped decision.</strong><p>Compare likely value, cost, risk and staff effort. Choose the change worth testing and define what success would mean.</p></div></li>
+          <li><h3>Implement</h3><div><strong>A defined and tested workflow.</strong><p>Agree responsibilities, permitted access, integrations, exception rules and a manual fallback. Test with the people who will run it.</p></div></li>
+          <li><h3>Optimize</h3><div><strong>A review that informs the next step.</strong><p>Assess outcomes, exceptions, human intervention and costs. Decide what to refine, expand or stop.</p></div></li>
+        </ol>
+          <p class="method-note">Deliverables, implementation responsibilities and any ongoing review are agreed for each engagement. Scope follows the diagnostic and feasibility review.</p>
+        </div>
+      </div>
+      <aside class="decision-brief method-brief" data-reveal aria-labelledby="brief-title">
             <div class="brief-heading"><p class="eyebrow">Illustrative decision brief</p><span aria-hidden="true">M.</span></div>
             <h3 id="brief-title">Response ownership</h3>
             <dl class="brief-rows">
@@ -318,17 +496,6 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
             </dl>
             <p class="brief-note">Example format only. A real brief follows the clinic's diagnostic and agreed scope.</p>
           </aside>
-        </div>
-      </div>
-      <div data-reveal>
-        <ol class="method-list">
-          <li><h3>Diagnose</h3><div><strong>A workflow map and baseline.</strong><p>Identify where value is lost, what the available data can show and which information is still missing.</p></div></li>
-          <li><h3>Prioritize</h3><div><strong>A practical, scoped decision.</strong><p>Compare likely value, cost, risk and staff effort. Choose the change worth testing and define what success would mean.</p></div></li>
-          <li><h3>Implement</h3><div><strong>A defined and tested workflow.</strong><p>Agree responsibilities, permitted access, integrations, exception rules and a manual fallback. Test with the people who will run it.</p></div></li>
-          <li><h3>Optimize</h3><div><strong>A review that informs the next step.</strong><p>Assess outcomes, exceptions, human intervention and costs. Decide what to refine, expand or stop.</p></div></li>
-        </ol>
-        <p class="method-note">Deliverables, implementation responsibilities and any ongoing review are agreed for each engagement. Scope follows the diagnostic and feasibility review.</p>
-      </div>
     </div>
   </section>
 
@@ -340,15 +507,24 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
     </div>
   </section>
 
-  <section class="section" aria-labelledby="fit-title">
-    <div class="wrap fit-layout">
-      <div class="fit-copy" data-reveal><p class="eyebrow muted">Built for meaningful complexity</p><h2 id="fit-title">An established business.<br>A more intelligent operation.</h2><p class="lead">Our current focus is established U.S. med spas and medical aesthetics practices with existing demand, a team and operating constraints worth examining.</p><ul class="fit-points"><li>Work moves between people and software.</li><li>Leadership is willing to examine revenue, workload and costs.</li><li>Staff can help test changes and take ownership of the workflow.</li></ul><a class="link" href="about.html">Get to know Mirèl Partners</a><div class="resource-line"><h3>Start with a better question.</h3><p>Six complimentary workbooks on diagnostics, inquiries, acquisition economics, positioning, retention and responsible AI.</p><a class="link" href="resources.html">Explore the resource library</a></div></div>
-      <div class="faq" data-reveal><h3 class="faq-title">Before we begin</h3>
+  <section class="section fit-editorial" aria-labelledby="fit-title">
+    <div class="wrap">
+      <div class="fit-layout">
+        <figure class="fit-photo" data-reveal>
+          <div class="fit-image-frame"><img src="images/mirel-04-clinic-team.webp" width="1672" height="941" loading="lazy" decoding="async" alt="A practice manager and clinician coordinating their work on a tablet in a medical aesthetics clinic."></div>
+          <figcaption class="visual-caption"><span>Better connected. Still human-led.</span><span aria-hidden="true">04 / The people</span></figcaption>
+        </figure>
+        <div class="fit-copy" data-reveal><p class="eyebrow muted">Built for meaningful complexity</p><h2 id="fit-title">An established business.<br>A more intelligent operation.</h2><p class="lead">Our current focus is established U.S. med spas and medical aesthetics practices with existing demand, a team and operating constraints worth examining.</p><ul class="fit-points"><li>Work moves between people and software.</li><li>Leadership is willing to examine revenue, workload and costs.</li><li>Staff can help test changes and take ownership of the workflow.</li></ul><a class="link" href="about.html">Get to know Mirèl Partners</a></div>
+      </div>
+      <div class="fit-bottom">
+        <div class="fit-resource" data-reveal><div class="resource-line"><h3>Start with a better question.</h3><p>Six complimentary workbooks on diagnostics, inquiries, acquisition economics, positioning, retention and responsible AI.</p><a class="link" href="resources.html">Explore the resource library</a></div></div>
+        <div class="faq" data-reveal><h3 class="faq-title">Before we begin</h3>
         <details><summary>Do we need to replace our current software?</summary><p>We start with your existing systems. Supported integrations, permitted data and vendor terms determine what is feasible. A new tool is considered when its expected value justifies the cost and disruption.</p></details>
         <details><summary>Does every workflow need AI?</summary><p>No. Clearer ownership or rules-based automation may solve the problem. We consider AI where interpreting or drafting information adds enough value to justify testing, operating costs and oversight.</p></details>
         <details><summary>What stays with our team?</summary><p>Your team retains agreed approval and exception responsibilities. Clinical assessments, treatment suitability and medical recommendations remain with qualified professionals. Access, escalation and manual fallback are defined before implementation.</p></details>
         <details><summary>What happens in a Strategy Review?</summary><p>A 30-minute, founder-led conversation about one operating problem. We discuss what you are seeing, which information would clarify it and whether a focused diagnostic makes sense. A diagnostic is a separately scoped next step, subject to mutual fit.</p></details>
         <details><summary>Can you guarantee a financial return?</summary><p>No fixed return is guaranteed. We agree a baseline, relevant measures and a review period, then assess observed results alongside costs and other factors that may have influenced performance.</p></details>
+      </div>
       </div>
     </div>
   </section>
@@ -482,8 +658,6 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
   });
 
   const film=document.querySelector('.workflow-media');
-  const illustrated=document.getElementById('illustrated-film');
-  const video=document.getElementById('workflow-video');
   const filmScenes=Array.from(document.querySelectorAll('[data-scene]'));
   const filmSteps=Array.from(document.querySelectorAll('[data-film-step]'));
   const playButton=document.getElementById('film-play');
@@ -554,20 +728,20 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
   document.addEventListener('visibilitychange',function(){
     if(document.hidden){
       stopFilm();
-      video.pause();
+      
     }
   });
 
   document.getElementById('tab-reporting').addEventListener('click',function(){
     stopFilm();
-    video.pause();
+    
   });
 
   if('MutationObserver' in window){
     new MutationObserver(function(){
       if(document.getElementById('panel-inquiry').hidden){
         stopFilm();
-        video.pause();
+        
       }
     }).observe(document.getElementById('panel-inquiry'),{
       attributes:true,
@@ -579,7 +753,7 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
     new IntersectionObserver(function(entries){
       if(!entries[0].isIntersecting){
         stopFilm();
-        video.pause();
+        
       }
     },{threshold:0}).observe(film);
   }
@@ -592,24 +766,8 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
   film.querySelector('.film-steps').hidden=false;
   paintFilm();
 
-  if(film.dataset.videoSrc.trim()){
-    video.src=film.dataset.videoSrc.trim();
-    if(film.dataset.videoPoster.trim()){
-      video.poster=film.dataset.videoPoster.trim();
-    }
-    video.hidden=false;
-    illustrated.hidden=true;
-    video.addEventListener('error',function(){
-      video.hidden=true;
-      illustrated.hidden=false;
-      const notice=document.getElementById('film-notice');
-      notice.textContent='The video could not load. Explore the illustrated workflow below.';
-      notice.hidden=false;
-    });
-  }
+
 })();
 </script>
 </body>
 </html>
-   
-   
