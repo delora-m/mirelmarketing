@@ -15,8 +15,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
 /* MIRÈL / HUMAN-LED INTELLIGENCE EDITION
-   Everything required by this page is contained in this file.
-   This page uses CSS and SVG illustrations with no image dependencies.
+   Page structure, styles and behavior are contained in this file.
+   The homepage animation uses the local Mirel_Homepage_Animated.webp file.
    Workflow examples and decision briefs are explicitly illustrative. */
 @font-face{font-family:Mirel Editorial;src:url('https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2') format('woff2');font-style:normal;font-weight:500;font-display:swap}
 :root{--paper:#f8f7f4;--light:#ffffff;--stone:#e9e6e1;--ink:#201814;--coffee:#3b302a;--muted:#625c56;--gold:#9d8670;--line:#d4cec7;--darkline:#6a6058;--soft:#ded8d2;--serif:'Mirel Editorial',Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif;--ease:cubic-bezier(.22,1,.36,1)}
@@ -146,9 +146,14 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
 @media(max-width:680px){.film-stage{min-height:460px;aspect-ratio:auto}.film-scene{inset:3.3rem 1rem 1.1rem;gap:.8rem}.film-scene h4{font-size:1.6rem}.film-card{padding:1rem}.film-card .film-main{font-size:1.4rem}.film-top{left:1rem;right:1rem;font-size:.625rem}.film-steps{grid-template-columns:1fr 1fr}.film-step{font-size:.8125rem}.film-tools{align-items:start}.film-duration{max-width:15ch;text-align:right}.film-tags{gap:.4rem}.film-tags li{padding:.4rem;font-size:.75rem}}
 @media print{.film-tools,.film-steps{display:none}.film-stage{background:white;color:black}.film-scene h4,.film-caption{color:black!important}}
 
+/* Homepage animation: local WebP, lazy loaded with reserved layout space. */
+.homepage-animation{padding-block:1rem 2rem}
+.homepage-animation figure{overflow:hidden;border:1px solid var(--line);background:#eeedeb;aspect-ratio:16/9}
+.homepage-animation img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+@media(max-width:680px){.homepage-animation{padding-block:.5rem 1rem}}
 </style>
 
-   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mirelpartners.com/#organization","name":"Mirèl Partners","url":"https://mirelpartners.com/","email":"delora@mirelpartners.com","description":"AI intelligence and orchestration for aesthetics, wellness and longevity. Current focus: established U.S. med spas and medical aesthetics practices."},{"@type":"WebSite","@id":"https://mirelpartners.com/#website","url":"https://mirelpartners.com/","name":"Mirèl Partners","publisher":{"@id":"https://mirelpartners.com/#organization"}},{"@type":"WebPage","@id":"https://mirelpartners.com/#webpage","url":"https://mirelpartners.com/","name":"AI Intelligence & Orchestration | Mirèl Partners","isPartOf":{"@id":"https://mirelpartners.com/#website"},"about":{"@id":"https://mirelpartners.com/#organization"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mirelpartners.com/#organization","name":"Mirèl Partners","url":"https://mirelpartners.com/","email":"delora@mirelpartners.com","description":"AI intelligence and orchestration for aesthetics, wellness and longevity. Current focus: established U.S. med spas and medical aesthetics practices."},{"@type":"WebSite","@id":"https://mirelpartners.com/#website","url":"https://mirelpartners.com/","name":"Mirèl Partners","publisher":{"@id":"https://mirelpartners.com/#organization"}},{"@type":"WebPage","@id":"https://mirelpartners.com/#webpage","url":"https://mirelpartners.com/","name":"AI Intelligence & Orchestration | Mirèl Partners","isPartOf":{"@id":"https://mirelpartners.com/#website"},"about":{"@id":"https://mirelpartners.com/#organization"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main-content">Skip to main content</a>
@@ -193,6 +198,14 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
     </div>
   </section>
 
+  <section class="homepage-animation" aria-label="Mirèl Partners: connected systems">
+    <div class="wrap">
+      <figure>
+        <img src="Mirel_Homepage_Animated.webp" width="1280" height="720" loading="lazy" decoding="async" fetchpriority="low" alt="Connect your systems. Find what’s holding your business back. AI Intelligence and Orchestration for Aesthetics, Wellness and Longevity.">
+      </figure>
+    </div>
+  </section>
+
   <section class="section thesis" id="the-question" aria-labelledby="thesis-title">
     <div class="wrap thesis-grid">
       <p class="eyebrow muted" data-reveal>The question behind the work</p>
@@ -227,7 +240,6 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
       <p class="small" data-reveal>Implementation follows the diagnostic, supported integrations and agreed access requirements. Clinical decisions remain with qualified professionals.</p>
     </div>
   </section>
-
   <section class="section orchestration" id="orchestration" aria-labelledby="orchestration-title">
     <div class="wrap orchestration-grid">
       <div class="orchestration-copy" data-reveal><p class="eyebrow muted">A closer look at orchestration</p><h2 id="orchestration-title">Make the next step<br>clear, owned and measurable.</h2><p class="lead">Explore two operating problems. Each example shows where information moves, what technology can support and which decisions remain with people.</p><a class="link" href="ai-for-med-spas.html">Our approach to AI for med spas</a></div>
@@ -286,7 +298,6 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
             <li class="human"><span class="flow-dot" aria-hidden="true"></span><div><h3>Put judgment with the owner.</h3><p>A named reporting owner validates discrepancies before leadership uses the information to make an operating decision.</p></div></li>
           </ol><p class="panel-measure"><strong>Measure the quality and usefulness of the review.</strong>Reconciliation time, unresolved discrepancies and contribution visibility. AI is used only where it adds value.</p><p class="scenario-disclosure">Illustrative workflow, not a live product or verified client result. Scope depends on supported systems, approved access and agreed responsibilities.</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -356,13 +367,20 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
   const progress=document.querySelector('.reading-progress');
   const tabs=Array.from(document.querySelectorAll('[role="tab"]'));
   const panels=tabs.map(tab=>document.getElementById(tab.getAttribute('aria-controls')));
-  /* Native details navigation works without JavaScript. */
+
   document.addEventListener('keydown',function(event){
-    if(event.key==='Escape'&&menu.open){menu.open=false;menu.querySelector('summary').focus();}
+    if(event.key==='Escape'&&menu.open){
+      menu.open=false;
+      menu.querySelector('summary').focus();
+    }
   });
-  document.addEventListener('click',function(event){if(menu.open&&!menu.contains(event.target))menu.open=false;});
-  window.matchMedia('(min-width: 1201px)').addEventListener('change',function(event){if(event.matches)menu.open=false;});
-  /* Without JS both examples remain readable; with JS they become accessible tabs. */
+  document.addEventListener('click',function(event){
+    if(menu.open&&!menu.contains(event.target))menu.open=false;
+  });
+  window.matchMedia('(min-width: 1201px)').addEventListener('change',function(event){
+    if(event.matches)menu.open=false;
+  });
+
   function activateTab(index,focus){
     tabs.forEach(function(tab,i){
       const active=i===index;
@@ -377,7 +395,9 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
     panels[index].setAttribute('role','tabpanel');
     panels[index].setAttribute('aria-labelledby',tab.id);
     panels[index].tabIndex=0;
-    tab.addEventListener('click',function(){activateTab(index,false);});
+    tab.addEventListener('click',function(){
+      activateTab(index,false);
+    });
     tab.addEventListener('keydown',function(event){
       let next=index;
       if(event.key==='ArrowRight')next=(index+1)%tabs.length;
@@ -385,39 +405,70 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
       else if(event.key==='Home')next=0;
       else if(event.key==='End')next=tabs.length-1;
       else return;
-      event.preventDefault();activateTab(next,true);
+      event.preventDefault();
+      activateTab(next,true);
     });
   });
   activateTab(0,false);
   document.getElementById('scenario-tabs').hidden=false;
-  /* Only enhance reveals after the observer has been successfully created. */
+
   let revealObserver;
-  function showAll(){document.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('is-visible'));}
+  function showAll(){
+    document.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('is-visible'));
+  }
   if('IntersectionObserver' in window&&!reduceMotion.matches){
     try{
       revealObserver=new IntersectionObserver(function(entries){
-        entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target);}});
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
       },{threshold:.05,rootMargin:'0px 0px -25px 0px'});
       document.querySelectorAll('[data-reveal]').forEach(el=>revealObserver.observe(el));
       document.documentElement.classList.add('motion-ready');
-    }catch(error){showAll();}
+    }catch(error){
+      showAll();
+    }
   }
-  reduceMotion.addEventListener('change',function(event){if(event.matches){showAll();if(revealObserver)revealObserver.disconnect();}});
-  /* One scheduled visual update per frame, with no scroll blocking. */
+  reduceMotion.addEventListener('change',function(event){
+    if(event.matches){
+      showAll();
+      if(revealObserver)revealObserver.disconnect();
+    }
+  });
+
   let scheduled=false;
   function updateScroll(){
     const range=document.documentElement.scrollHeight-window.innerHeight;
     progress.style.transform='scaleX('+(range>0?Math.min(1,Math.max(0,window.scrollY/range)):0)+')';
-    header.classList.toggle('scrolled',window.scrollY>20);scheduled=false;
+    header.classList.toggle('scrolled',window.scrollY>20);
+    scheduled=false;
   }
-  window.addEventListener('scroll',function(){if(!scheduled){scheduled=true;requestAnimationFrame(updateScroll);}},{passive:true});
-  window.addEventListener('resize',updateScroll,{passive:true});updateScroll();
-  /* The human-led operating model: real controls, clearly illustrative content. */
+  window.addEventListener('scroll',function(){
+    if(!scheduled){
+      scheduled=true;
+      requestAnimationFrame(updateScroll);
+    }
+  },{passive:true});
+  window.addEventListener('resize',updateScroll,{passive:true});
+  updateScroll();
+
   const roleButtons=Array.from(document.querySelectorAll('[data-role]'));
   const roleCopy={
-    strategy:['The operating problem comes first.','Mirèl examines response ownership and booking friction, then defines the workflow, permitted actions and evidence needed to evaluate a change.'],
-    ai:['AI supports a defined task.','Where suitable tools and permissions allow, AI can support routine nonclinical responses using clinic-approved information. Uncertain or clinical requests are escalated.'],
-    people:['People keep the decision rights.','Designated staff review exceptions and unconfirmed bookings. Qualified professionals retain all clinical decisions. Leadership reviews costs and outcomes before expansion.']
+    strategy:[
+      'The operating problem comes first.',
+      'Mirèl examines response ownership and booking friction, then defines the workflow, permitted actions and evidence needed to evaluate a change.'
+    ],
+    ai:[
+      'AI supports a defined task.',
+      'Where suitable tools and permissions allow, AI can support routine nonclinical responses using clinic-approved information. Uncertain or clinical requests are escalated.'
+    ],
+    people:[
+      'People keep the decision rights.',
+      'Designated staff review exceptions and unconfirmed bookings. Qualified professionals retain all clinical decisions. Leadership reviews costs and outcomes before expansion.'
+    ]
   };
   document.getElementById('model-hint').hidden=false;
   roleButtons.forEach(function(button){
@@ -429,8 +480,7 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
       document.getElementById('role-description').textContent=copy[1];
     });
   });
-  /* Four-stage film: explicit play, keyboard-accessible scene controls, one finite pass.
-     Pause when the example, tab, or document is no longer visible. */
+
   const film=document.querySelector('.workflow-media');
   const illustrated=document.getElementById('illustrated-film');
   const video=document.getElementById('workflow-video');
@@ -439,11 +489,16 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
   const playButton=document.getElementById('film-play');
   let filmRunning=false,filmElapsed=0,filmLast=0,filmFrame=0,filmCurrent=-1;
   const filmLength=24000,sceneLength=6000;
+
   function paintFilm(){
     const index=Math.min(3,Math.floor(filmElapsed/sceneLength));
     filmScenes.forEach(function(scene,i){
       scene.hidden=i!==index;
-      if(i===index&&filmCurrent!==index&&!reduceMotion.matches){scene.classList.remove('entering');void scene.offsetWidth;scene.classList.add('entering');}
+      if(i===index&&filmCurrent!==index&&!reduceMotion.matches){
+        scene.classList.remove('entering');
+        void scene.offsetWidth;
+        scene.classList.add('entering');
+      }
     });
     filmSteps.forEach(function(button,i){
       button.setAttribute('aria-pressed',String(i===index));
@@ -451,48 +506,110 @@ footer{padding-block:3.5rem 1.5rem}.footer-top{display:grid;grid-template-column
     });
     filmCurrent=index;
   }
+
   function stopFilm(){
-    filmRunning=false;cancelAnimationFrame(filmFrame);filmLast=0;
+    filmRunning=false;
+    cancelAnimationFrame(filmFrame);
+    filmLast=0;
     playButton.textContent=filmElapsed>=filmLength?'Replay the example':filmElapsed>0?'Continue the example':'Play the example';
   }
+
   function tickFilm(time){
     if(!filmRunning)return;
-    if(document.hidden||document.getElementById('panel-inquiry').hidden){stopFilm();return;}
+    if(document.hidden||document.getElementById('panel-inquiry').hidden){
+      stopFilm();
+      return;
+    }
     if(filmLast)filmElapsed=Math.min(filmLength,filmElapsed+time-filmLast);
-    filmLast=time;paintFilm();
-    if(filmElapsed>=filmLength){stopFilm();return;}
+    filmLast=time;
+    paintFilm();
+    if(filmElapsed>=filmLength){
+      stopFilm();
+      return;
+    }
     filmFrame=requestAnimationFrame(tickFilm);
   }
+
   playButton.addEventListener('click',function(){
-    if(filmRunning){stopFilm();return;}
+    if(filmRunning){
+      stopFilm();
+      return;
+    }
     if(filmElapsed>=filmLength)filmElapsed=0;
-    filmRunning=true;filmLast=0;playButton.textContent='Pause the example';
+    filmRunning=true;
+    filmLast=0;
+    playButton.textContent='Pause the example';
     filmFrame=requestAnimationFrame(tickFilm);
   });
-  filmSteps.forEach(function(button,index){button.addEventListener('click',function(){stopFilm();filmElapsed=index*sceneLength;paintFilm();playButton.textContent='Play from this stage';});});
-  document.addEventListener('visibilitychange',function(){if(document.hidden){stopFilm();video.pause();}});
-  document.getElementById('tab-reporting').addEventListener('click',function(){stopFilm();video.pause();});
-  if('MutationObserver' in window){new MutationObserver(function(){if(document.getElementById('panel-inquiry').hidden){stopFilm();video.pause();}}).observe(document.getElementById('panel-inquiry'),{attributes:true,attributeFilter:['hidden']});}
-  if('IntersectionObserver' in window){new IntersectionObserver(function(entries){if(!entries[0].isIntersecting){stopFilm();video.pause();}},{threshold:0}).observe(film);}
-  reduceMotion.addEventListener('change',function(event){if(event.matches)stopFilm();});
-  film.querySelector('.film-tools').hidden=false;
-  film.querySelector('.film-steps').hidden=false;
-  paintFilm();
-  /* The produced MP4 can replace the illustrated preview with one configured path. */
-  if(film.dataset.videoSrc.trim()){
-    video.src=film.dataset.videoSrc.trim();
-    if(film.dataset.videoPoster.trim())video.poster=film.dataset.videoPoster.trim();
-    video.hidden=false;illustrated.hidden=true;
-    video.addEventListener('error',function(){
-      video.hidden=true;illustrated.hidden=false;
-      const notice=document.getElementById('film-notice');
-      notice.textContent='The video could not load. Explore the illustrated workflow below.';notice.hidden=false;
+
+  filmSteps.forEach(function(button,index){
+    button.addEventListener('click',function(){
+      stopFilm();
+      filmElapsed=index*sceneLength;
+      paintFilm();
+      playButton.textContent='Play from this stage';
+    });
+  });
+
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden){
+      stopFilm();
+      video.pause();
+    }
+  });
+
+  document.getElementById('tab-reporting').addEventListener('click',function(){
+    stopFilm();
+    video.pause();
+  });
+
+  if('MutationObserver' in window){
+    new MutationObserver(function(){
+      if(document.getElementById('panel-inquiry').hidden){
+        stopFilm();
+        video.pause();
+      }
+    }).observe(document.getElementById('panel-inquiry'),{
+      attributes:true,
+      attributeFilter:['hidden']
     });
   }
 
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){
+      if(!entries[0].isIntersecting){
+        stopFilm();
+        video.pause();
+      }
+    },{threshold:0}).observe(film);
+  }
+
+  reduceMotion.addEventListener('change',function(event){
+    if(event.matches)stopFilm();
+  });
+
+  film.querySelector('.film-tools').hidden=false;
+  film.querySelector('.film-steps').hidden=false;
+  paintFilm();
+
+  if(film.dataset.videoSrc.trim()){
+    video.src=film.dataset.videoSrc.trim();
+    if(film.dataset.videoPoster.trim()){
+      video.poster=film.dataset.videoPoster.trim();
+    }
+    video.hidden=false;
+    illustrated.hidden=true;
+    video.addEventListener('error',function(){
+      video.hidden=true;
+      illustrated.hidden=false;
+      const notice=document.getElementById('film-notice');
+      notice.textContent='The video could not load. Explore the illustrated workflow below.';
+      notice.hidden=false;
+    });
+  }
 })();
 </script>
 </body>
 </html>
-
+   
    
