@@ -1,21 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#241c17">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <title>Systems | AI Workflow Design &amp; Implementation | Mirèl Partners</title>
-  <meta name="description" content="See how Mirèl designs, tests and hands over AI-enabled workflows for established U.S. med spas, with clear ownership and measurable operating outcomes.">
+  <title>AI Workflow Design, Testing &amp; Handover | Mirèl Partners</title>
+  <meta name="description" content="See how Mirèl diagnoses, designs, implements and reviews AI-enabled med spa workflows, with a release test, autonomy levels, exception testing and team handover.">
   <link rel="canonical" href="https://mirelpartners.com/systems.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mirèl Partners">
-  <meta property="og:title" content="Systems | AI Workflow Design &amp; Implementation | Mirèl Partners">
-  <meta property="og:description" content="See how Mirèl designs, tests and hands over AI-enabled workflows for established U.S. med spas, with clear ownership and measurable operating outcomes.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="AI Workflow Design, Testing &amp; Handover | Mirèl Partners">
+  <meta property="og:description" content="See how Mirèl diagnoses, designs, implements and reviews AI-enabled med spa workflows, with a release test, autonomy levels, exception testing and team handover.">
   <meta property="og:url" content="https://mirelpartners.com/systems.html">
-  <meta property="og:image" content="https://mirelpartners.com/images/mirel-systems-01-team-handover.webp">
+  <meta property="og:image" content="https://mirelpartners.com/images/mirel-og-1200.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mirèl Partners: AI for the work that slips between inquiry and visit.">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Workflow Design, Testing &amp; Handover | Mirèl Partners">
+  <meta name="twitter:description" content="See how Mirèl diagnoses, designs, implements and reviews AI-enabled med spa workflows, with a release test, autonomy levels, exception testing and team handover.">
+  <meta name="twitter:image" content="https://mirelpartners.com/images/mirel-og-1200.jpg">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2" as="font" type="font/woff2" crossorigin>
   <style>
 
     @font-face {
@@ -333,84 +344,272 @@
       table { min-width: 0; }
     }
 
-  </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mirelpartners.com/#organization","name":"Mirèl Partners","url":"https://mirelpartners.com/","email":"delora@mirelpartners.com","sameAs":["https://www.instagram.com/mirelpartners/","https://www.youtube.com/@mirelpartners","https://www.linkedin.com/company/mirelmarketing/"]},{"@type":"WebPage","@id":"https://mirelpartners.com/systems.html#webpage","url":"https://mirelpartners.com/systems.html","name":"Systems | AI Workflow Design & Implementation | Mirèl Partners","description":"See how Mirèl designs, tests and hands over AI-enabled workflows for established U.S. med spas, with clear ownership and measurable operating outcomes.","about":{"@id":"https://mirelpartners.com/#organization"}}]}</script>
+  
+    /* Final shared system: clear AI proposition, practical evidence, consistent navigation. */
+    :root { --space: clamp(3.5rem,5.7vw,5.5rem); }
+    .desktop-nav { gap: clamp(.8rem,1.3vw,1.2rem); }
+    .desktop-nav a { font-size: .8125rem; }
+    .page-hero { padding-top: clamp(2.8rem,4.5vw,4.4rem); }
+    .hero-grid { gap: clamp(2.2rem,4.5vw,4rem); }
+    .hero-title { font-size: clamp(3.2rem,4.7vw,4.6rem); line-height: 1.04; }
+    .hero-lead { line-height: 1.75; }
+    .section-head h2 { max-width: 24ch; }
+    .card p:not(.eyebrow) { font-size: .9375rem; }
+    .page-index { margin-top: 2.2rem; }
+    .photo-caption { font-size: .75rem; }
+    .hero-identity { margin-top: 1.4rem; padding-left: 1rem; border-left: 2px solid var(--gold); font-size: 1rem; }
+    .hero-identity strong { display: block; font-weight: 600; }
+    .hero-identity span { display: block; font-size: .8125rem; color: var(--coffee); }
+    .workbench { border: 1px solid var(--line); background: var(--white); min-width: 0; }
+    .workbench-head { padding: 1.2rem 1.4rem; background: var(--ink); color: var(--paper); }
+    .workbench-head .eyebrow { color: #c6ac94; font-size: .6875rem; }
+    .workbench-head h2 { margin-top: .5rem; font-size: 1.8rem; letter-spacing: -.02em; }
+    .workflow-tabs { display: flex; gap: .5rem; padding: .7rem; border-bottom: 1px solid var(--line); background: var(--stone); }
+    .workflow-tab { flex: 1; min-height: 45px; padding: .6rem; border: 1px solid var(--line); font-size: .8125rem; background: var(--paper); }
+    .workflow-tab[aria-selected="true"] { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+    .workflow-panel { padding: 1.4rem; }
+    .workflow-panel + .workflow-panel:not([hidden]) { border-top: 1px solid var(--line); }
+    .workflow-panel h3 { font: 600 1rem/1.5 var(--sans); letter-spacing: 0; }
+    .workflow-panel > p { margin-top: .7rem; color: var(--muted); font-size: .875rem; }
+    .workflow-record { margin-top: 1rem; }
+    .workflow-record > div { display: grid; grid-template-columns: 6rem 1fr; gap: .8rem; padding: .8rem 0; border-top: 1px solid var(--line); }
+    .workflow-record dt { color: var(--coffee); font-size: .75rem; font-weight: 600; }
+    .workflow-record dd { margin: 0; font-size: .875rem; }
+    .workbench-foot { margin: 0; padding: .9rem 1.4rem; background: var(--paper); color: var(--muted); font-size: .75rem; border-top: 1px solid var(--line); }
+    .capability-card ul { padding: 0; list-style: none; width: 100%; margin-top: 1.1rem; }
+    .capability-card li { border-top: 1px solid var(--line); padding: .8rem 0; font-size: .875rem; color: var(--muted); }
+    .capability-card li strong { color: var(--ink); display: block; font-size: .8125rem; margin-bottom: .25rem; }
+    .capability-card.highlight { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+    .capability-card.highlight p, .capability-card.highlight li { color: #d0c6bd; }
+    .capability-card.highlight li { border-color: var(--dark-line); }
+    .capability-card.highlight li strong { color: var(--paper); }
+    .capability-card.highlight .eyebrow { color: #c6ac94; }
+    .compact-list { margin-top: 1.2rem; }
+    .editorial-row { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem,5vw,4rem); align-items: center; }
+    .editorial-row > * { min-width: 0; }
+    .editorial-row h2 { margin-bottom: 1.2rem; }
+    .editorial-row .eyebrow { margin-bottom: 1rem; color: var(--coffee); }
+    .editorial-row .actions { margin-top: 1.3rem; }
+    .founder-note { padding: 2rem; background: var(--stone); }
+    .founder-note blockquote { margin: 0; font: 500 clamp(1.9rem,3vw,2.7rem)/1.25 var(--serif); letter-spacing: -.02em; }
+    .founder-note .signature { padding-top: 1.4rem; margin-top: 1.4rem; border-top: 1px solid #c9bdb1; font-size: .875rem; }
+    .founder-note .signature strong { display: block; }
+    .founder-note .signature span { color: var(--coffee); font-size: .8125rem; }
+    .value-panel, .booking-panel, .resource-panel { min-width: 0; padding: clamp(1.5rem,3vw,2.5rem); background: var(--ink); color: var(--paper); }
+    .value-panel .eyebrow, .booking-panel .eyebrow, .resource-panel .eyebrow { color: #c6ac94; }
+    .value-panel h2, .booking-panel h2, .resource-panel h2 { font-size: 2.3rem; letter-spacing: -.02em; margin-top: 1rem; }
+    .value-panel p:not(.eyebrow), .booking-panel p:not(.eyebrow), .resource-panel p:not(.eyebrow) { margin-top: 1rem; font-size: .875rem; color: #d0c6bd; }
+    .value-panel dl { margin-top: 1.5rem; }
+    .value-panel dl > div { padding-block: .9rem; border-top: 1px solid var(--dark-line); }
+    .value-panel dt { font-size: .875rem; font-weight: 600; }
+    .value-panel dd { margin: .3rem 0 0; font-size: .8125rem; color: #d0c6bd; }
+    .booking-panel .booking-meta { margin-top: 1.2rem; }
+    .booking-panel .button, .resource-panel .button { width: 100%; margin-top: 1.4rem; background: var(--paper); border-color: var(--paper); color: var(--ink); }
+    .booking-panel a:focus-visible, .resource-panel a:focus-visible { outline-color: #e3c7ad; }
+    .summary-strip { display: flex; flex-wrap: wrap; gap: .5rem 2rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--coffee); font-size: .8125rem; }
+    .legal-hero { padding-block: 3.5rem 2rem; border-bottom: 1px solid var(--line); }
+        .legal-hero .eyebrow { color: var(--muted); margin-bottom: 1rem; }
+    .legal-hero h1 { font-size: clamp(3rem,5vw,4.8rem); line-height: 1.05; }
+    .legal-hero p:not(.eyebrow) { max-width: 70ch; margin-top: 1rem; color: var(--muted); }
+    .legal-layout { display: grid; grid-template-columns: 15rem minmax(0,1fr); gap: 4rem; padding-block: 3rem; align-items: start; }
+    .legal-toc { position: sticky; top: 7rem; }
+    .legal-toc details { padding: 1rem; border: 1px solid var(--line); }
+    .legal-toc summary { min-height: 36px; font-size: .875rem; font-weight: 600; cursor: pointer; }
+    .legal-toc nav a { display: flex; align-items: center; min-height: 40px; font-size: .8125rem; text-decoration: none; color: var(--coffee); }
+    .legal-toc nav a:hover { text-decoration: underline; }
+    .legal-copy { min-width: 0; }
+    .legal-copy > p { margin-bottom: 2rem; }
+    .legal-copy section { margin-bottom: 2rem; }
+    .legal-copy h2 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 1rem; }
+    .legal-copy h3 { margin-block: 1.2rem .5rem; font-size: 1.65rem; }
+    .legal-copy p, .legal-copy li { color: var(--coffee); font-size: .9375rem; }
+    .legal-copy p + p { margin-top: 1rem; }
+    .legal-copy ul, .legal-copy ol { padding-left: 1.4rem; margin-block: 1rem; }
+    .legal-copy li { margin-top: .5rem; }
+    .legal-copy .lp-contact, .legal-copy .lt-contact { padding: 1.4rem; background: var(--stone); margin-top: 1.5rem; }
+    .footer-identity { margin-top: 1rem; font-size: .8125rem; color: var(--coffee); }
+    @media (max-width: 900px) {
+      .editorial-row { grid-template-columns: 1fr; }
+      .legal-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .legal-toc { position: static; }
+      .hero-title { font-size: clamp(3.4rem,7.5vw,4.8rem); }
+    }
+    @media (max-width: 600px) {
+      :root { --space: 3.5rem; }
+      .page-hero { padding-top: 2.5rem; }
+      .hero-title { font-size: clamp(2.8rem,10.7vw,3.6rem); }
+      .hero-copy > .eyebrow { font-size: .6875rem; }
+      .hero-lead { font-size: .9375rem; }
+      .workflow-tabs { flex-wrap: wrap; }
+      .workflow-tab { font-size: .75rem; }
+      .workflow-record > div { grid-template-columns: 1fr; gap: .3rem; }
+      .founder-note { padding: 1.5rem; }
+      .card p:not(.eyebrow) { font-size: .9375rem; }
+      .legal-hero { padding-top: 2.5rem; }
+      .legal-copy h2 { font-size: 1.9rem; }
+      .legal-copy a { overflow-wrap: anywhere; }
+      .resource-panel h2, .booking-panel h2, .value-panel h2 { font-size: 2rem; }
+    }
+
+  
+/* Refined after browser inspection: readable text and concrete workflow evidence. */
+:root { --muted: #625b55; }
+body { font-size: 1rem; }
+.desktop-nav a { font-size: .875rem; }
+.hero-grid { align-items: center; }
+.hero-title { font-size: clamp(3rem,4.5vw,4.35rem); line-height: 1.07; text-wrap: balance; }
+.hero-lead, .intro, .card p:not(.eyebrow), .legal-copy p, .legal-copy li { font-size: 1rem; line-height: 1.75; }
+.hero-note, .small, .detail, .notice { font-size: .875rem; line-height: 1.65; }
+.hero-identity span, .founder-note .signature span { font-size: .875rem; }
+.photo-caption { font-size: .8125rem; gap: 1rem; }
+.workflow-tab, .workflow-panel > p, .workflow-record dd { font-size: .9375rem; }
+.workflow-record dt, .capability-card li, .capability-card li strong { font-size: .875rem; }
+.value-panel p:not(.eyebrow), .booking-panel p:not(.eyebrow), .resource-panel p:not(.eyebrow), .value-panel dd { font-size: .9375rem; line-height: 1.7; }
+.workbench-head { padding: 1.2rem 1.4rem; }
+.workbench-head h2 { font-size: 1.9rem; }
+.workbench-head .eyebrow { font-size: .75rem; letter-spacing: .1em; }
+.workbench-foot { font-size: .8125rem; line-height: 1.6; }
+.workflow-panel { padding: 1.25rem 1.4rem; }
+.sample-message { padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+.sample-message p { margin-top: .4rem; font-size: .9375rem; }
+.sample-label { display:block; font-size:.8125rem; font-weight:600; color:var(--coffee); }
+.sample-draft { margin-top:1rem; background:var(--paper); border-left:2px solid var(--gold); padding:1rem; }
+.sample-draft p { margin-top:.4rem; font-size:.9375rem; line-height:1.65; }
+.sample-task { margin-top:1rem; display:grid; grid-template-columns:1fr auto; gap:.4rem 1rem; padding-top:1rem; border-top:1px solid var(--line); }
+.sample-task strong { font-size:.9375rem; }
+.sample-task p { font-size:.875rem; color:var(--muted); grid-column:1/-1; line-height:1.6; }
+.sample-state { align-self:start; border:1px solid #b9ada1; padding:.25rem .5rem; font-size:.75rem; color:var(--coffee); }
+.card .concrete-example { margin-top:1rem; border-top:1px solid var(--line); padding-top:1rem; color:var(--coffee); }
+.text-link { min-height:44px; display:inline-flex; align-items:center; }
+.button { min-height:48px; }
+.resource-filter { min-height:44px; }
+.footer-identity { font-size:.875rem; }
+@media(max-width:900px) {
+ .hero-title { font-size:clamp(2.8rem,8vw,4rem); }
+ .hero-lead { max-width:60ch; }
+ .hero-grid { gap:2rem; }
+}
+@media(max-width:600px) {
+ .hero-title { font-size:clamp(2.6rem,10.6vw,3.5rem); }
+ .hero-lead, .card p:not(.eyebrow), .intro { font-size:1rem; }
+ .hero-copy>.eyebrow { font-size:.75rem; letter-spacing:.1em; }
+ .workflow-panel { padding:1rem; }
+ .workflow-tab { font-size:.875rem; }
+ .workbench-head { padding:1rem; }
+ .workbench-head h2 { font-size:1.7rem; }
+ .sample-task { grid-template-columns:1fr; }
+ .sample-state { justify-self:start; }
+ .hero-note { max-width:100%; }
+ .actions { gap:.75rem 1.25rem; }
+ .photo-caption { flex-wrap:wrap; }
+}
+
+/* ===== v3 additions: conversion, trust and clarity (additive; base system unchanged) ===== */
+.header-book { display: none; min-height: 44px; padding: .6rem .95rem; font-size: .8125rem; white-space: nowrap; }
+.trust-strip { background: var(--white); border-block: 1px solid var(--line); }
+.trust-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.trust-item { min-width: 0; padding: 1.6rem 1.5rem 1.6rem 0; margin-right: 1.5rem; border-right: 1px solid var(--line); }
+.trust-item:last-child { border-right: 0; margin-right: 0; padding-right: 0; }
+.trust-item strong { display: block; margin-bottom: .4rem; font: 600 .9375rem/1.4 var(--sans); }
+.trust-item p { color: var(--muted); font-size: .9375rem; line-height: 1.6; }
+.callout { padding: 1.3rem 1.5rem; background: var(--stone); border-left: 3px solid var(--gold); color: var(--coffee); font-size: .9375rem; line-height: 1.7; max-width: 80ch; }
+.callout strong { color: var(--ink); }
+.ladder { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; list-style: none; padding: 0; counter-reset: rung; }
+.ladder > li { display: flex; flex-direction: column; min-width: 0; padding: 1.6rem; border: 1px solid var(--line); background: var(--white); counter-increment: rung; }
+.ladder > li::before { content: "0" counter(rung); margin-bottom: 1rem; font: 500 1.4rem var(--serif); color: var(--muted); }
+.ladder h3 { font-size: 1.85rem; }
+.ladder p { margin-top: .8rem; color: var(--muted); font-size: .9375rem; line-height: 1.65; }
+.ladder .text-link { margin-top: auto; padding-top: 1.1rem; }
+.ladder .rung-meta { margin-top: 1rem; padding-top: .8rem; border-top: 1px solid var(--line); color: var(--coffee); font-size: .8125rem; }
+.flow.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.flow li > h3 { font-size: 1rem; }
+.fit-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }
+.fit-box { min-width: 0; padding: 1.8rem; border: 1px solid var(--line); background: var(--white); }
+.fit-box.muted-box { background: var(--paper); }
+.fit-box h3 { font-size: 2rem; }
+.fit-box ul { list-style: none; padding: 0; margin-top: 1.1rem; }
+.fit-box li { position: relative; padding: .75rem 0 .75rem 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9375rem; line-height: 1.6; }
+.fit-box li::before { content: ""; position: absolute; left: 0; top: 1.4rem; width: .75rem; height: 1px; background: var(--ink); }
+.path-list { list-style: none; padding: 0; }
+.path-list li { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: .9rem; padding: 1.05rem 1.4rem; border-top: 1px solid var(--line); }
+.path-list li > span { font: 500 1.35rem/1.2 var(--serif); color: var(--muted); }
+.path-list strong { display: block; font-size: 1rem; }
+.path-list p { margin-top: .25rem; color: var(--muted); font-size: .9375rem; line-height: 1.55; }
+.id-card { border: 1px solid var(--line); background: var(--white); min-width: 0; }
+.id-card-head { padding: 1.3rem 1.6rem; background: var(--ink); color: var(--paper); }
+.id-card-head .eyebrow { color: #c6ac94; font-size: .75rem; }
+.id-name { margin-top: .6rem; font: 500 clamp(2.6rem, 4vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.03em; }
+.id-role { margin-top: .4rem; color: #d0c6bd; font-size: .9375rem; }
+.id-meta { padding: .4rem 1.6rem 1rem; }
+.id-meta > div { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 1rem; padding: .95rem 0; border-bottom: 1px solid var(--line); }
+.id-meta > div:last-child { border-bottom: 0; }
+.id-meta dt { color: var(--coffee); font-size: .8125rem; font-weight: 600; }
+.id-meta dd { margin: 0; font-size: .9375rem; line-height: 1.6; }
+.id-foot { margin: 0; padding: .9rem 1.6rem; background: var(--paper); border-top: 1px solid var(--line); color: var(--muted); font-size: .8125rem; }
+.table-scroll table th[scope="row"] { min-width: 9rem; }
+.table-scroll caption { font-size: .875rem; }
+.source-line { margin-top: 1rem; color: var(--muted); font-size: .8125rem; }
+.two-col-text { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+@media (max-width: 1150px) {
+  .header-book { display: inline-flex; margin-left: auto; }
+  .header-row { gap: .75rem; }
+  .ladder { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trust-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trust-item { padding: 1.3rem 1.2rem 1.3rem 0; margin-right: 1.2rem; border-bottom: 1px solid var(--line); }
+  .trust-item:nth-child(2n) { border-right: 0; margin-right: 0; padding-right: 0; }
+  .trust-item:nth-last-child(-n+2) { border-bottom: 0; }
+  .flow.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .fit-grid, .two-col-text { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .header-book { padding: .55rem .75rem; font-size: .8125rem; }
+  .brand > span { font-size: 1.6rem; letter-spacing: .15em; }
+  .brand small { letter-spacing: .38em; }
+  .ladder, .trust-grid, .flow.four { grid-template-columns: 1fr; }
+  .trust-item, .trust-item:nth-child(2n) { padding: 1.1rem 0; margin-right: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .trust-item:last-child { border-bottom: 0; }
+  .id-meta > div { grid-template-columns: 1fr; gap: .25rem; }
+  .id-card-head, .id-meta, .id-foot { padding-inline: 1.2rem; }
+  .path-list li { padding-inline: 1rem; }
+}
+@media (max-width: 350px) { .header-book { display: none; } }
+
+</style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mirelpartners.com/#organization","name":"Mirèl Partners","url":"https://mirelpartners.com/","logo":{"@type":"ImageObject","url":"https://mirelpartners.com/icon-512.png","width":512,"height":512},"image":"https://mirelpartners.com/images/mirel-og-1200.jpg","email":"delora@mirelpartners.com","sameAs":["https://www.instagram.com/mirelpartners/","https://www.youtube.com/@mirelpartners","https://www.linkedin.com/company/mirelmarketing/"],"description":"AI Intelligence & Orchestration for Aesthetics, Wellness & Longevity. Current focus: established U.S. med spas and medical aesthetics practices.","areaServed":{"@type":"Country","name":"United States"},"knowsAbout":["AI workflow design","AI governance","Revenue intelligence","Patient journey analysis","Med spa operations","Business intelligence"],"founder":{"@id":"https://mirelpartners.com/about.html#founder"}},{"@type":"Person","@id":"https://mirelpartners.com/about.html#founder","name":"Irem Delora","jobTitle":"Founder","worksFor":{"@id":"https://mirelpartners.com/#organization"},"url":"https://mirelpartners.com/about.html"},{"@type":"WebSite","@id":"https://mirelpartners.com/#website","name":"Mirèl Partners","url":"https://mirelpartners.com/","publisher":{"@id":"https://mirelpartners.com/#organization"},"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://mirelpartners.com/systems.html#webpage","url":"https://mirelpartners.com/systems.html","name":"AI Workflow Design, Testing & Handover | Mirèl Partners","description":"See how Mirèl diagnoses, designs, implements and reviews AI-enabled med spa workflows, with a release test, autonomy levels, exception testing and team handover.","isPartOf":{"@id":"https://mirelpartners.com/#website"},"about":{"@id":"https://mirelpartners.com/#organization"},"inLanguage":"en-US","dateModified":"2026-11-27"},{"@type":"BreadcrumbList","@id":"https://mirelpartners.com/systems.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mirelpartners.com/"},{"@type":"ListItem","position":2,"name":"How We Work","item":"https://mirelpartners.com/systems.html"}]}]}</script>
 </head>
 <body>
   <a class="skip" href="#main-content">Skip to main content</a>
-  <header class="site-header">
-    <div class="wrap header-row">
-      <a class="brand" href="index.html" aria-label="Mirèl Partners home"><span>MIRÈL</span><small>PARTNERS</small></a>
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="systems.html" aria-current="page">Systems</a>
-        <a href="results.html">Results</a>
-        <a href="ai-for-med-spas.html">AI for Med Spas</a>
-        <a href="resources.html">Resources</a>
-      </nav>
-      <a class="button header-cta" href="book.html#booking">Book a Strategy Review</a>
-      <details class="mobile-menu" id="mobile-menu">
-        <summary>Menu</summary>
-        <nav class="mobile-nav" aria-label="Mobile navigation">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="systems.html" aria-current="page">Systems</a>
-          <a href="results.html">Results</a>
-          <a href="ai-for-med-spas.html">AI for Med Spas</a>
-          <a href="resources.html">Resources</a>
-          <a class="button" href="book.html#booking">Book a Strategy Review</a>
-        </nav>
-      </details>
-    </div>
-  </header>
+  <header class="site-header"><div class="wrap header-row"><a class="brand" href="index.html" aria-label="Mirèl Partners home"><span>MIRÈL</span><small>PARTNERS</small></a><nav class="desktop-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="ai-for-med-spas.html">AI for Med Spas</a><a href="systems.html" aria-current="page">How We Work</a><a href="results.html">Measurement</a><a href="about.html">About</a><a href="resources.html">Resources</a></nav><a class="button header-cta" href="book.html#booking">Book a Strategy Review</a><a class="button header-book" href="book.html#booking" aria-label="Book a Strategy Review">Book a review</a><details class="mobile-menu" id="mobile-menu"><summary>Menu</summary><nav class="mobile-nav" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="ai-for-med-spas.html">AI for Med Spas</a><a href="systems.html" aria-current="page">How We Work</a><a href="results.html">Measurement</a><a href="about.html">About</a><a href="resources.html">Resources</a><a class="button" href="book.html#booking">Book a Strategy Review</a></nav></details></div></header>
+  <main id="main-content" tabindex="-1">
 
-    <main id="main-content" tabindex="-1">
-    <section class="page-hero" aria-labelledby="page-title"><div class="wrap"><div class="hero-grid"><div class="hero-copy"><p class="eyebrow">AI Intelligence &amp; Orchestration<br>for established U.S. med spas</p><h1 class="hero-title" id="page-title">From an operating problem <em>to a workflow your team can run.</em></h1><p class="hero-lead">Connect AI assistance, existing software and people through a process that can be tested, supervised and improved. Start with one workflow and make each handoff explicit.</p><div class="actions"><a class="button" href="book.html#booking">Book a Strategy Review</a><a class="text-link" href="#our-method"><span>Explore the method</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div><p class="hero-note">Human-led strategy. AI-orchestrated operations. Scope and responsibilities agreed before implementation.</p></div><div><figure><div class="editorial-photo"><img src="images/mirel-systems-01-team-handover.webp" width="1672" height="941" fetchpriority="high" decoding="async" alt="Illustrative clinic team training at a reception workstation."></div><figcaption class="photo-caption"><span>Systems / Team adoption</span><span>Illustrative editorial image</span></figcaption></figure><div class="visual-note"><h2>Design the connection.<br>Test the handoff.</h2><p>A practical method for introducing AI into the work your team already does.</p></div></div></div><nav class="page-index" aria-label="On this page"><a href="#our-method">The method</a><a href="#patient-journey">A connected workflow</a><a href="#workflow-tests">Test scenarios</a><a href="#responsible-implementation">Before launch</a></nav></div></section>
+<section class="page-hero" aria-labelledby="page-title"><div class="wrap"><div class="hero-grid"><div class="hero-copy"><p class="eyebrow">AI Intelligence &amp; Orchestration<br>for established U.S. med spas</p><h1 class="hero-title" id="page-title">From AI idea <em>to a workflow your team can run.</em></h1><p class="hero-lead">Design how AI assistance, supported software and staff connect. Test the ordinary path, the exceptions and the handover before a workflow becomes part of daily operations.</p><div class="actions"><a class="button" href="book.html#booking">Book a Strategy Review</a><a class="text-link" href="#our-method"><span>Explore the method</span></a></div><p class="hero-note">One workflow at a time. Clear access, ownership and acceptance criteria.</p></div><div><figure><div class="editorial-photo"><img src="images/mirel-final-handover-1600.webp" srcset="images/mirel-final-handover-800.webp 800w, images/mirel-final-handover-1600.webp 1600w" sizes="(max-width: 900px) calc(100vw - 40px), (max-width: 1400px) calc((100vw - 160px)/2), 600px" width="1600" height="900" fetchpriority="high" decoding="async" alt="Illustrative clinic team reviewing a workflow during training."></div><figcaption class="photo-caption"><span>Mirèl Partners</span><span>Illustrative editorial image</span></figcaption></figure></div></div></div></section>
+    
     <section class="section " id="our-method" aria-labelledby="our-method-title"><div class="wrap"><div class="section-head"><div><p class="eyebrow muted">The Mirèl method</p><h2 id="our-method-title">One change.<br><em>Four decision points.</em></h2></div><p>The work moves forward when the evidence and operating conditions support the next step.</p></div><span class="anchor-alias" id="diagnostic" aria-hidden="true"></span><ol class="stage-list"><li class="stage"><span aria-hidden="true">01</span><div><h3>Diagnose</h3></div><div><p>Map the current task, its owner and the systems involved. Establish a baseline and record what the available data cannot show.</p><p><strong>Working output:</strong> Workflow map + baseline findings.</p></div></li><li class="stage"><span aria-hidden="true">02</span><div><h3>Prioritize &amp; design</h3></div><div><p>Choose the change worth testing. Specify the AI task, approved information, supported connections, staff review and expected value.</p><p><strong>Working output:</strong> Workflow specification + agreed test scope.</p></div></li><li class="stage"><span aria-hidden="true">03</span><div><h3>Implement &amp; validate</h3></div><div><p>Build within the agreed scope. Test routine cases, uncertain requests and failures with the people who will run the process.</p><p><strong>Working output:</strong> Test findings + launch and handover criteria.</p></div></li><li class="stage"><span aria-hidden="true">04</span><div><h3>Review &amp; improve</h3></div><div><p>Compare outcomes, staff effort, exceptions and running costs with the starting point. Decide what to keep, refine or stop.</p><p><strong>Working output:</strong> Review record + next decision.</p></div></li></ol></div></section>
-    <section class="section paper" id="patient-journey" aria-labelledby="patient-journey-title"><div class="wrap"><div class="section-head"><div><p class="eyebrow muted">Illustrative architecture</p><h2 id="patient-journey-title">AI has a task.<br><em>Every handoff has an owner.</em></h2></div><p>Example: a routine booking inquiry after reception closes. This is a proposed design, not connected software.</p></div><ol class="flow" aria-label="Illustrative inquiry workflow"><li><span>01</span><h3>Inquiry channel</h3><p>A request enters one supported channel.</p></li><li><span>02</span><h3>Approved knowledge</h3><p>Current booking guidance is the information source.</p></li><li><span>03</span><h3>AI assistance</h3><p>AI prepares a routine response draft.</p></li><li><span>04</span><h3>Human review</h3><p>Reception reviews, sends and handles exceptions.</p></li><li><span>05</span><h3>Booking record</h3><p>The next owner and booking outcome stay visible.</p></li></ol><p class="notice">Actual connections depend on the clinic’s systems, permitted access and approved implementation scope.</p></div></section>
+    <section class="section stone" id="release-test" aria-labelledby="release-test-title"><div class="wrap"><div class="section-head"><div><p class="eyebrow muted">Our release test</p><h2 id="release-test-title">Source. Owner.<br><em>Stop rule. Measure.</em></h2></div><p>Four questions we ask before any AI-assisted workflow goes live. If one cannot be answered, that is a finding, not a failure.</p></div><ol class="flow four"><li><span>01</span><h3>Source of truth</h3><p>Where does each fact live? For an appointment, it is the calendar, not the draft.</p></li><li><span>02</span><h3>Owner</h3><p>Which named person approves the output and fixes it when it is wrong?</p></li><li><span>03</span><h3>Stop rule</h3><p>What pauses it? A patient reply, an open billing issue or an unreadable calendar.</p></li><li><span>04</span><h3>Measure</h3><p>Which number shows whether it earned its place, against a baseline?</p></li></ol><div class="actions" style="margin-top:1.6rem"><a class="text-link" href="resources.html#brief"><span>Record it on the Mirèl Orchestration Brief</span></a></div></div></section><section class="section paper" id="autonomy" aria-labelledby="autonomy-title"><div class="wrap"><div class="section-head"><div><p class="eyebrow muted">How much independence AI gets</p><h2 id="autonomy-title">Four levels.<br><em>Most start at one.</em></h2></div><p>Each workflow is given the lowest level of autonomy that does the job. Anything that tells a patient something about their care stays with a qualified person.</p></div><div class="table-scroll"><table><caption>Autonomy levels used when designing an AI-assisted workflow.</caption><thead><tr><th scope="col">Level</th><th scope="col">What AI does</th><th scope="col">Who acts next</th><th scope="col">Typical use</th></tr></thead><tbody><tr><th scope="row">0 · Suggest</th><td>Analyzes and proposes. Nothing reaches a patient.</td><td>A person reads the output.</td><td>Reconciliation notes and campaign analysis.</td></tr><tr><th scope="row">1 · Draft</th><td>Prepares a draft from approved information.</td><td>A person reviews and sends.</td><td>Routine reply drafts and plan summaries.</td></tr><tr><th scope="row">2 · Approved templates</th><td>Sends fixed, approved wording on a defined trigger.</td><td>A person owns exceptions and reviews samples.</td><td>Acknowledgements and “slot no longer available” notes.</td></tr><tr><th scope="row">3 · Narrow independence</th><td>Completes low-risk administrative actions with monitoring.</td><td>A person reviews logs and can pause it.</td><td>Rare. Only where risk is low and monitoring is in place.</td></tr></tbody></table></div><p class="table-hint">On smaller screens, scroll the table horizontally.</p></div></section><section class="section paper" id="patient-journey" aria-labelledby="patient-journey-title"><div class="wrap"><div class="section-head"><div><p class="eyebrow muted">Illustrative architecture</p><h2 id="patient-journey-title">AI has a task.<br><em>Every handoff has an owner.</em></h2></div><p>Example: a routine booking inquiry after reception closes. This is a proposed design, not connected software.</p></div><ol class="flow" aria-label="Illustrative inquiry workflow"><li><span>01</span><h3>Inquiry channel</h3><p>A request enters one supported channel.</p></li><li><span>02</span><h3>Approved knowledge</h3><p>Current booking guidance is the information source.</p></li><li><span>03</span><h3>AI assistance</h3><p>AI prepares a routine response draft.</p></li><li><span>04</span><h3>Human review</h3><p>Reception reviews, sends and handles exceptions.</p></li><li><span>05</span><h3>Booking record</h3><p>The next owner and booking outcome stay visible.</p></li></ol><p class="notice">Actual connections depend on the clinic’s systems, permitted access and approved implementation scope.</p></div></section>
     <section class="section stone" id="workflow-tests" aria-labelledby="workflow-tests-title"><div class="wrap"><div class="section-head"><div><p class="eyebrow muted">Test the edges of the workflow</p><h2 id="workflow-tests-title">What happens when<br><em>the usual path breaks?</em></h2></div><p>A reliable implementation needs a defined response to uncertainty and failure, alongside routine cases.</p></div><div class="case-shell"><div class="scenario-tabs" role="tablist" aria-label="Explore workflow test cases" id="scenario-tabs" hidden><button type="button" class="scenario-tab" id="tab-routine" role="tab" aria-controls="panel-routine" aria-selected="true" tabindex="0">Routine request</button><button type="button" class="scenario-tab" id="tab-uncertain" role="tab" aria-controls="panel-uncertain" aria-selected="false" tabindex="-1">Uncertain request</button><button type="button" class="scenario-tab" id="tab-failure" role="tab" aria-controls="panel-failure" aria-selected="false" tabindex="-1">Connection failure</button></div><div class="scenario-panel" id="panel-routine"><p class="eyebrow">Example test case / Routine request</p><h3>A booking question with enough information.</h3><dl class="case-grid"><div class="case-cell"><dt>Incoming request</dt><dd>“Can you send me the consultation booking link?”</dd></div><div class="case-cell"><dt>AI task</dt><dd>Prepare a draft using the clinic-approved booking guidance.</dd></div><div class="case-cell"><dt>Team action</dt><dd>Reception checks the draft and sends the next step.</dd></div><div class="case-cell"><dt>Recorded outcome</dt><dd>Track the inquiry until a booking or another outcome is recorded.</dd></div></dl></div><div class="scenario-panel" id="panel-uncertain"><p class="eyebrow">Example test case / Uncertain request</p><h3>The request needs clinical judgment.</h3><dl class="case-grid"><div class="case-cell"><dt>Incoming request</dt><dd>“Which treatment is right for my skin condition?”</dd></div><div class="case-cell"><dt>AI boundary</dt><dd>Do not select a treatment or infer suitability.</dd></div><div class="case-cell"><dt>Team action</dt><dd>Route the request to the clinic’s designated qualified professional.</dd></div><div class="case-cell"><dt>Recorded outcome</dt><dd>Keep an assigned review task; do not mark the clinical question as resolved.</dd></div></dl></div><div class="scenario-panel" id="panel-failure"><p class="eyebrow">Example test case / Connection failure</p><h3>A required system is unavailable.</h3><dl class="case-grid"><div class="case-cell"><dt>Trigger</dt><dd>The booking connection cannot return a reliable result.</dd></div><div class="case-cell"><dt>System boundary</dt><dd>Do not invent availability or confirm an appointment.</dd></div><div class="case-cell"><dt>Team action</dt><dd>Keep the request in the source channel and assign manual follow-up.</dd></div><div class="case-cell"><dt>Recorded outcome</dt><dd>Record the failed handoff for review and resume only after validation.</dd></div></dl></div><p class="case-foot">Illustrative scenarios. A real test plan uses agreed examples, owners and acceptance criteria for the clinic’s workflow.</p></div></div></section>
-    <section class="section " id="responsible-implementation" aria-labelledby="responsible-implementation-title"><div class="wrap"><div class="section-head"><div><p class="eyebrow muted">A practical launch gate</p><h2 id="responsible-implementation-title">Ready for the team.<br><em>Ready for review.</em></h2></div></div><div class="split"><ul class="checklist"><li><strong>Information &amp; access</strong>Approved sources are current, and permitted actions are documented.</li><li><strong>Exception ownership</strong>The team knows who handles uncertainty and how to continue manually.</li><li><strong>Acceptance testing</strong>Routine cases and failures have been checked against the agreed criteria.</li><li><strong>Handover</strong>A named owner has operating guidance and knows when to pause the workflow.</li></ul><div><span class="anchor-alias" id="measurement" aria-hidden="true"></span><h3>Measure the whole workflow.</h3><p class="intro" style="margin-top:1rem">Review actual response coverage, attended consultations, staff effort and total running cost. A faster draft is useful only when the overall process improves.</p><p class="intro">Any ongoing monitoring or maintenance is explicitly included in the scope, with a review owner and schedule.</p><a class="text-link" href="results.html"><span>See how we evaluate value</span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div></div></section>
-    <section class="section closing" id="next-step" aria-labelledby="next-step-title"><div class="wrap"><div class="closing-grid"><div><p class="eyebrow">A focused next step</p><h2 id="next-step-title">Bring the workflow<br>that keeps getting stuck.</h2></div><div class="closing-copy"><p>In a 30-minute Strategy Review, discuss one operating problem, the information needed to examine it and whether a focused diagnostic would help.</p><a class="button" href="book.html#booking">Book a Strategy Review</a><p class="small">AI Intelligence &amp; Orchestration for Aesthetics, Wellness &amp; Longevity.</p></div></div></div></section>
+    <section class="section " id="responsible-implementation" aria-labelledby="responsible-implementation-title"><div class="wrap"><div class="section-head"><div><p class="eyebrow muted">A practical launch gate</p><h2 id="responsible-implementation-title">Ready for the team.<br><em>Ready for review.</em></h2></div></div><div class="split"><ul class="checklist"><li><strong>Information &amp; access</strong>Approved sources are current, and permitted actions are documented.</li><li><strong>Exception ownership</strong>The team knows who handles uncertainty and how to continue manually.</li><li><strong>Acceptance testing</strong>Routine cases and failures have been checked against the agreed criteria.</li><li><strong>Handover</strong>A named owner has operating guidance and knows when to pause the workflow.</li></ul><div><span class="anchor-alias" id="measurement" aria-hidden="true"></span><h3>Measure the whole workflow.</h3><p class="intro" style="margin-top:1rem">Review actual response coverage, attended consultations, staff effort and total running cost. A faster draft is useful only when the overall process improves.</p><p class="intro">Any ongoing monitoring or maintenance is explicitly included in the scope, with a review owner and schedule.</p><a class="text-link" href="results.html"><span>See how we evaluate value</span></a></div></div></div></section>
+    
+  <section class="section closing" id="next-step" aria-labelledby="next-step-title"><div class="wrap closing-grid"><div><p class="eyebrow">A focused first conversation</p><h2 id="next-step-title">Bring one problem<br>worth examining.</h2></div><div class="closing-copy"><p>Bring one recurring operating issue. In 30 minutes with the founder, discuss what evidence would clarify it and whether a focused diagnostic makes sense.</p><a class="button" href="book.html#booking">Book a Strategy Review</a><p class="small">30 minutes · Google Meet · Founder-led</p></div></div></section>
+  
   </main>
-  <footer class="site-footer" id="mirel-site-footer">
-    <div class="wrap">
-      <div class="footer-main">
-        <div><a class="brand" href="index.html" aria-label="Mirèl Partners home"><span>MIRÈL</span><small>PARTNERS</small></a><p>AI Intelligence &amp; Orchestration<br>for Aesthetics, Wellness &amp; Longevity.</p></div>
-        <nav class="footer-links" aria-label="Explore Mirèl"><a href="services.html">Our capabilities</a><a href="systems.html">How we work</a><a href="ai-for-med-spas.html">AI for Med Spas</a><a href="resources.html">Resources</a></nav>
-        <div class="footer-links"><a href="mailto:delora@mirelpartners.com">delora@mirelpartners.com</a><a href="https://www.instagram.com/mirelpartners/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.youtube.com/@mirelpartners" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.linkedin.com/company/mirelmarketing/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-      </div>
-      <div class="footer-bottom"><span>&copy; Mirèl Partners. All rights reserved.</span><div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div></div>
-    </div>
-  </footer>
+  <footer class="site-footer" id="mirel-site-footer"><div class="wrap"><div class="footer-main"><div><a class="brand" href="index.html" aria-label="Mirèl Partners home"><span>MIRÈL</span><small>PARTNERS</small></a><p>AI Intelligence &amp; Orchestration<br>for Aesthetics, Wellness &amp; Longevity.</p><div class="footer-identity">Irem Delora · Founder</div></div><nav class="footer-links" aria-label="Explore Mirèl"><a href="services.html">Services &amp; deliverables</a><a href="systems.html">How we work</a><a href="results.html">Measurement &amp; evidence</a><a href="ai-for-med-spas.html">AI for Med Spas</a><a href="resources.html">Free workbooks</a></nav><div class="footer-links"><a href="mailto:delora@mirelpartners.com">delora@mirelpartners.com</a><a href="contact.html">Contact Mirèl</a><a href="https://www.youtube.com/@mirelpartners" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.linkedin.com/company/mirelmarketing/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.instagram.com/mirelpartners/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div><div class="footer-bottom"><span>&copy; Mirèl Partners. All rights reserved. Examples on this site are illustrative and fictional.</span><div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div></div></div></footer>
   <script>
-
     (function () {
       'use strict';
       const menu = document.getElementById('mobile-menu');
       if (!menu) return;
       document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape' && menu.open) {
-          menu.open = false;
-          menu.querySelector('summary').focus();
-        }
+        if (event.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
       });
-      document.addEventListener('click', function (event) {
-        if (menu.open && !menu.contains(event.target)) menu.open = false;
-      });
-      menu.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () { menu.open = false; });
-      });
+      document.addEventListener('click', function (event) { if (menu.open && !menu.contains(event.target)) menu.open = false; });
+      menu.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', function () { menu.open = false; }); });
       const desktop = window.matchMedia('(min-width: 1151px)');
       const closeMenu = function (event) { if (event.matches) menu.open = false; };
       if (desktop.addEventListener) desktop.addEventListener('change', closeMenu);
       else if (desktop.addListener) desktop.addListener(closeMenu);
     })();
-  
-  
-
     (function () {
       'use strict';
       const tabs = Array.from(document.querySelectorAll('.scenario-tab'));
@@ -434,7 +633,6 @@
       });
       activate(0, false); document.getElementById('scenario-tabs').hidden = false;
     })();
-
   </script>
 </body>
 </html>
